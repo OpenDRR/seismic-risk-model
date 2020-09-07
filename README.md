@@ -12,6 +12,7 @@ The model is implemented using GEM’s OpenQuake Engine (Keller & Schneider, 201
 
 * Thumbnail with accompanying short description and links to relevant oq-model-input files used to assess probabilistic seismic risk (exposure & site models)
 * Curently using git-LFS to track model outputs in .csv, .gdp and gpkg formats
+* 
 
 ## Model Outputs
 
