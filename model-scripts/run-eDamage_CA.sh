@@ -1,11 +1,11 @@
 #!/bin/bash
 # =================================================================
-# Classical damage calculation script for CanadaSRM2
+# Event-based damage calculation script for CanadaSRM2
 # =================================================================
 #[region]
 # =================================================================
 # Baseline Conditions
-oq engine --run eDamage_[region]_b0.ini &> output/[province]/eD_[region]_b0.log;
+oq engine --run input/eDamage_[region]_b0.ini &> output/[province]/eD_[region]_b0.log;
 oq export fullreport -1 -e rst -d output/
 mv output/[province]/report*.rst output/[province]/eD_[region]_report.rst
 oq export realizations -1 -e csv -d output/[province]/
@@ -19,7 +19,7 @@ python ../../model-scripts/consequences.py -1
 mv consequences*[rlz].csv output/[province]/eD_[region]_consequences_[rlz]_b0.csv;
 deactivate
 # Level 2 Retrofit
-oq engine --run eDamage_[region]_r2.ini  &> output/[province]/eD_[region]_r2.log;
+oq engine --run input/eDamage_[region]_r2.ini  &> output/[province]/eD_[region]_r2.log;
 oq export dmg_by_asset -e csv -d output/[province]/eD_[region]_dmg_by_asset_r2.csv;
 mv output/[province]/dmg_by_asset*.csv output/[province]/eD_[region]_dmg_by_asset_r2.csv;
 source ~/oqenv/bin/activate

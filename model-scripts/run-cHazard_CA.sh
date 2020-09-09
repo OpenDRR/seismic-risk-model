@@ -5,7 +5,7 @@
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run cHazard_[province]_b0.ini &> output/[province]/cH_[province].log;
+oq engine --run input/cHazard_[province]_b0.ini &> output/[province]/cH_[province].log;
 oq export fullreport -1 -e rst -d output/[province]/
 mv output/[province]/report*.rst output/[province]/cH_[province]_report.rst
 oq export hcurves -1 -e csv -d output/[province]/
