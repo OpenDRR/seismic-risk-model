@@ -16,7 +16,7 @@ oq export dmg_by_asset -e csv -d output/{province}/
 mv output/{province}/dmg_by_asset*.csv output/{province}/eD_{region}_dmg_by_asset_b0.csv;
 source ~/oqenv/bin/activate
 python ../../model-scripts/consequences.py -1
-mv consequences*[rlz].csv output/{province}/eD_{region}_consequences_[rlz]_b0.csv;
+mv consequences*{rlz}.csv output/{province}/eD_{region}_consequences_{rlz}_b0.csv;
 deactivate
 # Level 2 Retrofit
 oq engine --run eDamage_{region}_r2.ini  &> output/{province}/eD_{region}_r2.log;
@@ -24,7 +24,7 @@ oq export dmg_by_asset -e csv -d output/{province}/eD_{region}_dmg_by_asset_r2.c
 mv output/{province}/dmg_by_asset*.csv output/{province}/eD_{region}_dmg_by_asset_r2.csv;
 source ~/oqenv/bin/activate
 python ../../model-scripts/consequences.py -1
-mv consequences*[rlz].csv output/{province}/eD_{region}_consequences_[rlz]_r2.csv;
+mv consequences*{rlz}.csv output/{province}/eD_{region}_consequences_{rlz}_r2.csv;
 deactivate
 # =================================================================
 # replicate for all regions 
