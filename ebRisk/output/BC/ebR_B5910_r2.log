@@ -1,0 +1,19 @@
+WARNING:root:Ignored unknown parameter many
+[2020-09-09 10:15:51 #824 WARNING] The parameter 'many' is unknown, ignoring
+[2020-09-09 10:15:52 #824 WARNING] Using 64 cores on gem-compute
+[2020-09-09 10:16:41 #824 ERROR] source ACMpt4: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
+[2020-09-09 10:58:42 #824 WARNING] The calculation is really big; you should set minimum_asset_loss
+  id | name
+4812 | Aggregate Event Losses
+4803 | Aggregate Loss Curves
+4804 | Aggregate Loss Curves Statistics
+4805 | Aggregate Losses
+4806 | Aggregate Losses Statistics
+4807 | Average Asset Losses Statistics
+4814 | Earthquake Ruptures
+4808 | Events
+4809 | Full Report
+4810 | Hazard Curves
+ ... | 7 additional output(s)
+Some outputs where not shown. You can see the full list with the command
+`oq engine --list-outputs`

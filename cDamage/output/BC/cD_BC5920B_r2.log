@@ -1,0 +1,104 @@
+[2020-09-08 04:06:57 #795 INFO] murray.journeay running /mnt/data/shared/git/canada-2020/canada-srm2/cDamage/input/cDamage_BC5920B_r2.ini [--hc=786]
+[2020-09-08 04:06:57 #795 INFO] Using engine version 3.10.0-gite32822a
+[2020-09-08 04:06:58 #795 WARNING] Using 64 cores on gem-compute
+[2020-09-08 04:06:58 #795 INFO] Checksum of the input files: 2314554279
+[2020-09-08 04:06:58 #795 INFO] Reading the risk model if present
+[2020-09-08 04:07:01 #795 INFO] Reading /mnt/data/shared/git/canada-2020/model-inputs/exposure/general-building-stock/oqBldgExp_BC5920B.xml
+[2020-09-08 04:07:07 #795 INFO] Using asset_hazard_distance=14 km instead of 15 km
+[2020-09-08 04:07:07 #795 INFO] Associated 60289 assets to 174 sites
+[2020-09-08 04:07:10 #795 INFO] Reducing risk model from 4224 to 655 taxonomies
+[2020-09-08 04:07:10 #795 INFO] Storing exposed_values/agg
+[2020-09-08 04:07:22 #795 INFO] Building risk inputs from 4096 realization(s)
+[2020-09-08 04:07:23 #795 INFO] Built 209 risk inputs
+[2020-09-08 04:07:37 #795 INFO] classical_damage 648.6 MB sent, 64 submitted, 19 queued
+[2020-09-08 04:18:23 #795 INFO] classical_damage   1% [65 submitted, 18 queued]
+[2020-09-08 04:18:28 #795 INFO] classical_damage   2% [66 submitted, 17 queued]
+[2020-09-08 04:18:38 #795 INFO] classical_damage   3% [67 submitted, 16 queued]
+[2020-09-08 04:19:36 #795 INFO] classical_damage   4% [68 submitted, 15 queued]
+[2020-09-08 04:19:58 #795 INFO] classical_damage   6% [69 submitted, 14 queued]
+[2020-09-08 04:21:22 #795 INFO] classical_damage   7% [70 submitted, 13 queued]
+[2020-09-08 04:21:25 #795 INFO] classical_damage   8% [71 submitted, 12 queued]
+[2020-09-08 04:21:48 #795 INFO] classical_damage   9% [72 submitted, 11 queued]
+[2020-09-08 04:22:02 #795 INFO] classical_damage  10% [73 submitted, 10 queued]
+[2020-09-08 04:22:02 #795 INFO] classical_damage  12% [74 submitted, 9 queued]
+[2020-09-08 04:22:28 #795 INFO] classical_damage  13% [75 submitted, 8 queued]
+[2020-09-08 04:22:30 #795 INFO] classical_damage  14% [76 submitted, 7 queued]
+[2020-09-08 04:23:38 #795 INFO] classical_damage  15% [77 submitted, 6 queued]
+[2020-09-08 04:23:57 #795 INFO] classical_damage  16% [78 submitted, 5 queued]
+[2020-09-08 04:24:16 #795 INFO] classical_damage  18% [79 submitted, 4 queued]
+[2020-09-08 04:25:46 #795 INFO] classical_damage  19% [80 submitted, 3 queued]
+[2020-09-08 04:26:25 #795 INFO] classical_damage  20% [81 submitted, 2 queued]
+[2020-09-08 04:27:59 #795 INFO] classical_damage  21% [82 submitted, 1 queued]
+[2020-09-08 04:28:17 #795 INFO] classical_damage  22% [83 submitted, 0 queued]
+[2020-09-08 04:28:42 #795 INFO] classical_damage  24% [83 submitted, 0 queued]
+[2020-09-08 04:28:51 #795 INFO] classical_damage  25% [83 submitted, 0 queued]
+[2020-09-08 04:29:07 #795 INFO] classical_damage  26% [83 submitted, 0 queued]
+[2020-09-08 04:29:18 #795 INFO] classical_damage  27% [83 submitted, 0 queued]
+[2020-09-08 04:29:33 #795 INFO] classical_damage  28% [83 submitted, 0 queued]
+[2020-09-08 04:29:52 #795 INFO] classical_damage  30% [83 submitted, 0 queued]
+[2020-09-08 04:30:02 #795 INFO] classical_damage  31% [83 submitted, 0 queued]
+[2020-09-08 04:31:03 #795 INFO] classical_damage  32% [83 submitted, 0 queued]
+[2020-09-08 04:31:15 #795 INFO] classical_damage  33% [83 submitted, 0 queued]
+[2020-09-08 04:31:17 #795 INFO] classical_damage  34% [83 submitted, 0 queued]
+[2020-09-08 04:31:24 #795 INFO] classical_damage  36% [83 submitted, 0 queued]
+[2020-09-08 04:31:44 #795 INFO] classical_damage  37% [83 submitted, 0 queued]
+[2020-09-08 04:32:01 #795 INFO] classical_damage  38% [83 submitted, 0 queued]
+[2020-09-08 04:32:33 #795 INFO] classical_damage  39% [83 submitted, 0 queued]
+[2020-09-08 04:32:52 #795 INFO] classical_damage  40% [83 submitted, 0 queued]
+[2020-09-08 04:32:53 #795 INFO] classical_damage  42% [83 submitted, 0 queued]
+[2020-09-08 04:33:05 #795 INFO] classical_damage  43% [83 submitted, 0 queued]
+[2020-09-08 04:33:08 #795 INFO] classical_damage  44% [83 submitted, 0 queued]
+[2020-09-08 04:33:25 #795 INFO] classical_damage  45% [83 submitted, 0 queued]
+[2020-09-08 04:33:43 #795 INFO] classical_damage  46% [83 submitted, 0 queued]
+[2020-09-08 04:33:58 #795 INFO] classical_damage  48% [83 submitted, 0 queued]
+[2020-09-08 04:33:59 #795 INFO] classical_damage  49% [83 submitted, 0 queued]
+[2020-09-08 04:34:03 #795 INFO] classical_damage  50% [83 submitted, 0 queued]
+[2020-09-08 04:34:03 #795 INFO] classical_damage  51% [83 submitted, 0 queued]
+[2020-09-08 04:34:27 #795 INFO] classical_damage  53% [83 submitted, 0 queued]
+[2020-09-08 04:34:39 #795 INFO] classical_damage  54% [83 submitted, 0 queued]
+[2020-09-08 04:34:51 #795 INFO] classical_damage  55% [83 submitted, 0 queued]
+[2020-09-08 04:35:34 #795 INFO] classical_damage  56% [83 submitted, 0 queued]
+[2020-09-08 04:35:35 #795 INFO] classical_damage  57% [83 submitted, 0 queued]
+[2020-09-08 04:35:44 #795 INFO] classical_damage  59% [83 submitted, 0 queued]
+[2020-09-08 04:36:20 #795 INFO] classical_damage  60% [83 submitted, 0 queued]
+[2020-09-08 04:36:23 #795 INFO] classical_damage  61% [83 submitted, 0 queued]
+[2020-09-08 04:36:30 #795 INFO] classical_damage  62% [83 submitted, 0 queued]
+[2020-09-08 04:36:30 #795 INFO] classical_damage  63% [83 submitted, 0 queued]
+[2020-09-08 04:36:36 #795 INFO] classical_damage  65% [83 submitted, 0 queued]
+[2020-09-08 04:36:42 #795 INFO] classical_damage  66% [83 submitted, 0 queued]
+[2020-09-08 04:37:34 #795 INFO] classical_damage  67% [83 submitted, 0 queued]
+[2020-09-08 04:37:42 #795 INFO] classical_damage  68% [83 submitted, 0 queued]
+[2020-09-08 04:37:43 #795 INFO] classical_damage  69% [83 submitted, 0 queued]
+[2020-09-08 04:37:45 #795 INFO] classical_damage  71% [83 submitted, 0 queued]
+[2020-09-08 04:38:21 #795 INFO] classical_damage  72% [83 submitted, 0 queued]
+[2020-09-08 04:38:44 #795 INFO] classical_damage  73% [83 submitted, 0 queued]
+[2020-09-08 04:39:05 #795 INFO] classical_damage  74% [83 submitted, 0 queued]
+[2020-09-08 04:40:06 #795 INFO] classical_damage  75% [83 submitted, 0 queued]
+[2020-09-08 04:40:47 #795 INFO] classical_damage  77% [83 submitted, 0 queued]
+[2020-09-08 04:41:16 #795 INFO] classical_damage  78% [83 submitted, 0 queued]
+[2020-09-08 04:41:17 #795 INFO] classical_damage  79% [83 submitted, 0 queued]
+[2020-09-08 04:41:24 #795 INFO] classical_damage  80% [83 submitted, 0 queued]
+[2020-09-08 04:42:06 #795 INFO] classical_damage  81% [83 submitted, 0 queued]
+[2020-09-08 04:43:16 #795 INFO] classical_damage  83% [83 submitted, 0 queued]
+[2020-09-08 04:43:36 #795 INFO] classical_damage  84% [83 submitted, 0 queued]
+[2020-09-08 04:43:51 #795 INFO] classical_damage  85% [83 submitted, 0 queued]
+[2020-09-08 04:44:06 #795 INFO] classical_damage  86% [83 submitted, 0 queued]
+[2020-09-08 04:44:26 #795 INFO] classical_damage  87% [83 submitted, 0 queued]
+[2020-09-08 04:44:29 #795 INFO] classical_damage  89% [83 submitted, 0 queued]
+[2020-09-08 04:44:37 #795 INFO] classical_damage  90% [83 submitted, 0 queued]
+[2020-09-08 04:44:57 #795 INFO] classical_damage  91% [83 submitted, 0 queued]
+[2020-09-08 04:45:06 #795 INFO] classical_damage  92% [83 submitted, 0 queued]
+[2020-09-08 04:45:22 #795 INFO] classical_damage  93% [83 submitted, 0 queued]
+[2020-09-08 04:45:58 #795 INFO] classical_damage  95% [83 submitted, 0 queued]
+[2020-09-08 04:46:24 #795 INFO] classical_damage  96% [83 submitted, 0 queued]
+[2020-09-08 04:46:47 #795 INFO] classical_damage  97% [83 submitted, 0 queued]
+[2020-09-08 04:48:18 #795 INFO] classical_damage  98% [83 submitted, 0 queued]
+[2020-09-08 04:48:19 #795 INFO] classical_damage 100% [83 submitted, 0 queued]
+[2020-09-08 04:48:19 #795 INFO] Received {'tot': '4.61 GB'} in 2454 seconds
+[2020-09-08 04:48:41 #795 INFO] Exposing the outputs to the database
+[2020-09-08 04:48:41 #795 INFO] Calculation 795 finished correctly in 2503 seconds
+  id | name
+4732 | Asset Damage Distributions
+4733 | Asset Damage Statistics
+4734 | Full Report
+4735 | Realizations
