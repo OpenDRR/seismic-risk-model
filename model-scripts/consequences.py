@@ -22,7 +22,7 @@ from openquake.baselib import datastore, sap
 import pandas as pd
 from tqdm import tqdm
 
-params_file = "/Users/thobbs/Documents/GitHub/openquake-models/scripts/Hazus_Consequence_Parameters.xlsx" #../scripts/Hazus_Consequence_Parameters.xlsx"
+params_file = "/mnt/data/shared/canada-2020/canada-srm2/model-scripts/Hazus_Consequence_Parameters.xlsx"
 
 def read_square_footage(xlsx):
     square_footage_df = pd.read_excel(xlsx, sheet_name="Square Footage", skiprows=1, index_col=0)
