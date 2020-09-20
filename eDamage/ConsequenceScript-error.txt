@@ -1,0 +1,47 @@
+ oqenv ▶ murray.journeay ▶ gem-compute ▶ SSH ▶ mnt ❯ data ❯ … ❯ canada-2020 ❯ canada-srm2 ❯ eDamage ▶ $ ▶  python ../model-scripts/consequences.py 1076
+Traceback (most recent call last):
+  File "../model-scripts/consequences.py", line 303, in <module>
+    calculate_consequences.callfunc()
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/baselib/sap.py", line 181, in callfunc
+    return self.func(**vars(namespace))
+  File "../model-scripts/consequences.py", line 115, in calculate_consequences
+    dstore = datastore.read(calc_id)
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/baselib/datastore.py", line 125, in read
+    hc_id = dstore['oqparam'].hazard_calculation_id
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/baselib/datastore.py", line 406, in __getitem__
+    val = self.hdf5[key]
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/baselib/hdf5.py", line 364, in __getitem__
+    cls = dotname2cls(h5attrs['__pyclass__'])
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/baselib/hdf5.py", line 204, in dotname2cls
+    return getattr(importlib.import_module(modname), clsname)
+  File "/opt/openquake/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/commonlib/oqvalidation.py", line 26, in <module>
+    from openquake.hazardlib.imt import from_string
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/hazardlib/__init__.py", line 24, in <module>
+    from openquake.hazardlib import (
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/hazardlib/calc/__init__.py", line 23, in <module>
+    from openquake.hazardlib.calc.gmf import ground_motion_fields
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/hazardlib/calc/gmf.py", line 27, in <module>
+    from openquake.hazardlib.gsim.base import ContextMaker
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/hazardlib/gsim/__init__.py", line 27, in <module>
+    import_all('openquake.hazardlib.gsim')
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/baselib/general.py", line 484, in import_all
+    importlib.import_module(modname)
+  File "/opt/openquake/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/hazardlib/gsim/__init__.py", line 27, in <module>
+    import_all('openquake.hazardlib.gsim')
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/baselib/general.py", line 484, in import_all
+    importlib.import_module(modname)
+  File "/opt/openquake/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/murray.journeay/oqsrc/oq-engine/openquake/hazardlib/gsim/armenia_2016.py", line 32, in <module>
+    from openquake.hazardlib.gsim.bindi_2014 import BindiEtAl2014Rjb
+ModuleNotFoundError: No module named 'openquake.hazardlib.gsim.bindi_2014'

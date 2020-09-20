@@ -1,31 +1,23 @@
 #!/bin/bash
 # =================================================================
-# Event-based damage calculation script for CanadaSRM2
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
 # =================================================================
-#[region]
+# {region}
 # =================================================================
 # Baseline Conditions
-oq engine --run input/eDamage_[region]_b0.ini &> output/[province]/eD_[region]_b0.log;
+oq engine --run input/eDamage_{region}_b0.ini &> output/{province}/eD_{region}.log;
 oq export fullreport -1 -e rst -d output/
-mv output/[province]/report*.rst output/[province]/eD_[region]_report.rst
-oq export realizations -1 -e csv -d output/[province]/
-mv output/[province]/realizations*.csv output/[province]/eD_[region]_rlz.csv
-oq export sourcegroups -1 -e csv -d output/[province]/
-mv output/[province]/sourcegroups*.csv output/[province]/eD_[region]_sources.csv
-oq export dmg_by_asset -1 -e csv -d output/[province]/
-mv output/[province]/dmg_by_asset*.csv output/[province]/eD_[region]_dmg_by_asset_b0.csv;
-source ~/oqenv/bin/activate
-python ../../model-scripts/consequences.py -1
-mv consequences*[rlz].csv output/[province]/eD_[region]_consequences_[rlz]_b0.csv;
-deactivate
+mv output/{province}/report*.rst output/{province}/eD_{region}_report.rst
+oq export realizations -1 -e csv -d output/{province}/
+mv output/{province}/realizations*.csv output/{province}/eD_{region}_rlz.csv
+oq export sourcegroups -1 -e csv -d output/{province}/
+mv output/{province}/sourcegroups*.csv output/{province}/eD_{region}_sources.csv
+oq export avg_damages-mean -1 -e csv -d output/{province}/
+mv output/{province}/avg_damages-mean*.csv output/{province}/eD_{region}_damages-mean_b0.csv;
 # Level 2 Retrofit
-oq engine --run input/eDamage_[region]_r2.ini  &> output/[province]/eD_[region]_r2.log;
-oq export dmg_by_asset -1 -e csv -d output/[province]/eD_[region]_dmg_by_asset_r2.csv;
-mv output/[province]/dmg_by_asset*.csv output/[province]/eD_[region]_dmg_by_asset_r2.csv;
-source ~/oqenv/bin/activate
-python ../../model-scripts/consequences.py -1
-mv consequences*[rlz].csv output/[province]/eD_[region]_consequences_[rlz]_r2.csv;
-deactivate
+oq engine --run input/eDamage_{region}_r2.ini &> output/{province}/eD_{region}.log;
+oq export avg_damages-mean -1 -e csv -d output/{province}/
+mv output/{province}/avg_damages-mean*.csv output/{province}/eD_{region}_damages-mean_r2.csv;
 # =================================================================
-# replicate for all regions 
+# repeat for other regions
 # =================================================================
