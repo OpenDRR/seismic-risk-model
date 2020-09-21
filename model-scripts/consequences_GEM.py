@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # vim: tabstop=4 shiftwidth=4 softtabstop=4
 #
-# Copyright (C) 2017-2020 Anirudh Rao, GEM Foundation
+# Copyright (C) 2017-2019 Anirudh Rao, GEM Foundation
 #
 # OpenQuake is free software: you can redistribute it and/or modify it
 # under the terms of the GNU Affero General Public License as published
@@ -22,7 +22,7 @@ from openquake.baselib import datastore, sap
 import pandas as pd
 from tqdm import tqdm
 
-params_file = "./Hazus_Consequence_Parameters.xlsx"
+params_file = "/mnt/data/shared/canada-2020/canada-srm2/model-scripts/Hazus_Consequence_Parameters.xlsx"
 
 def read_square_footage(xlsx):
     square_footage_df = pd.read_excel(xlsx, sheet_name="Square Footage", skiprows=1, index_col=0)
@@ -92,7 +92,6 @@ def read_interruption_time(xlsx):
     interruption_time_df.rename_axis("Structural Damage State", axis="columns", inplace=True)
     return interruption_time_df
 
-
 xlsx = pd.ExcelFile(params_file)
 read_params = {
     "Square Footage": read_square_footage,
@@ -113,18 +112,23 @@ read_params = {
 def calculate_consequences(job_id='-1'):
     calc_id = datastore.get_last_calc_id() if job_id=='-1' else int(job_id)
     dstore = datastore.read(calc_id)
+    #dstore = datastore.read(calc_id, mode='w')
     lt = 0 # structural damage
     stat = 0 # damage state mean values
     num_rlzs = len(dstore["weights"])
     assetcol = dstore['assetcol']
+    asset_refs = assetcol.tagcol.id
     taxonomies = assetcol.tagcol.taxonomy
 
-    # Read the asset damage table from the calculation datastore
+    # Read thse asset damage table from the calculation datastore
     calculation_mode = dstore['oqparam'].calculation_mode
     if calculation_mode == 'scenario_damage':
-        damages = dstore['avg_damages-rlzs']
+        damages = dstore['dmg_by_asset']
     elif calculation_mode == 'classical_damage':
         damages = dstore['damages-stats']
+    elif calculation_mode == 'event_based_damage':
+        damages = np.mean(dstore['dmg_by_asset'], axis=1)
+        num_rlzs = 1
     else:
         print("Consequence calculations not supported for ", calculation_mode)
         return
@@ -175,16 +179,16 @@ def calculate_consequences(job_id='-1'):
                 "debris_brick_wood_tons", "debris_concrete_steel_tons"])
 
             for asset in tqdm(assetcol):
-                asset_ref = asset['id'].decode()
+                asset_ref = asset_refs[asset["id"]]
                 asset_occ, asset_typ, code_level = taxonomies[asset['taxonomy']].split('-')
                 if calculation_mode == 'scenario_damage':
-                    # Note: engine versions <3.10 require an additional 'stat' variable
-                    # as the previous output includes mean and stddev fields
-                    # asset_damages = damages[asset['ordinal'], rlzi, lt, stat]
-                    asset_damages = damages[asset['ordinal'], rlzi, lt]
+                    asset_damages = damages[asset['ordinal'], rlzi, lt, stat]
                 elif calculation_mode == 'classical_damage':
                     asset_damages = damages[asset['ordinal'], stat, rlzi]
                     asset_damages = [max(0, d) for d in asset_damages]
+                elif calculation_mode == 'event_based_damage':
+                    #asset_damages = damages[asset['ordinal'], rlzi, lt, stat]
+                    asset_damages = damages[asset['ordinal'], lt, stat]
                 asset_damage_ratios = [d/asset['number'] for d in asset_damages]
 
                 # Repair and recovery time estimates
@@ -223,7 +227,7 @@ def calculate_consequences(job_id='-1'):
                 debris_concrete_steel = debris_concrete_steel_str + debris_concrete_steel_nst
 
                 # Estimate number of displaced occupants based on heuristics provided by Murray
-                sc_Displ3 = asset["occupants_night"] if recovery_time > 3 and recovery_time < 30 else 0
+                sc_Displ3 = asset["occupants_night"] if recovery_time > 3 else 0
                 sc_Displ30 = asset["occupants_night"] if recovery_time > 30 else 0
                 sc_Displ90 = asset["occupants_night"] if recovery_time > 90 else 0
                 sc_Displ180 = asset["occupants_night"] if recovery_time > 180 else 0
