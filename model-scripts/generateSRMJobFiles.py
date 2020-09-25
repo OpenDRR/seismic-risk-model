@@ -18,21 +18,20 @@ def main():
     provinceList = []
     for regionPair in listRegion:
         write_c_damage_config(regionPair)
+        write_c_damage_runFile(regionPair)
         write_e_damage_config(regionPair)
+        write_e_damage_runFile(regionPair)
         write_eb_risk_config(regionPair)
+        write_eb_risk_runFile(regionPair)
         provinceList.append(regionPair[1])
     
     provinceList = list(dict.fromkeys(provinceList))
 
     for province in provinceList:
         write_c_hazard_config(province)
+        write_c_hazard_runFile(province)
 
-    #write_c_damage_runFile()
-    #write_c_hazard_runFile()
-    #write_e_damage_runFile()
-    #write_eb_risk_runFile()
-
-
+    
 #Suport Functions
 def write_c_damage_config(regionPair):
     province = regionPair[1]
@@ -53,6 +52,18 @@ def write_c_damage_config(regionPair):
     configFile.write(configContents)
     configFile.close()
     # configTemplate.close()
+    return
+
+def write_c_damage_runFile(regionPair):
+    province = regionPair[1]
+    region = regionPair[0]
+    if not os.path.exists('SRMRunFiles_output'):
+        os.makedirs('SRMRunFiles_output')
+    runTemplate = open('run-cDamage_CA.sh', 'r').read()
+    runContents = runTemplate.format(**{'region':region,'province':province})
+    runFile = open('SRMRunFiles_output/run-cDamage_CA.sh', 'a')
+    runFile.write(runContents)
+    runFile.close()
     return
 
 def write_e_damage_config(regionPair):
@@ -76,6 +87,18 @@ def write_e_damage_config(regionPair):
     # configTemplate.close()
     return
 
+def write_e_damage_runFile(regionPair):
+    province = regionPair[1]
+    region = regionPair[0]
+    # if not os.path.exists('SRMRunFiles_output'):
+    #     os.makedirs('SRMRunFiles_output')
+    runTemplate = open('run-eDamage_CA.sh', 'r').read()
+    runContents = runTemplate.format(**{'region':region,'province':province})
+    runFile = open('SRMRunFiles_output/run-eDamage_CA.sh', 'a')
+    runFile.write(runContents)
+    runFile.close()
+    return
+
 def write_eb_risk_config(regionPair):
     province = regionPair[1]
     region = regionPair[0]
@@ -96,6 +119,17 @@ def write_eb_risk_config(regionPair):
     # configTemplate.close()
     return
 
+def write_eb_risk_runFile(regionPair):
+    province = regionPair[1]
+    region = regionPair[0]
+    # if not os.path.exists('SRMRunFiles_output'):
+    #     os.makedirs('SRMRunFiles_output')
+    runTemplate = open('run-ebRisk_CA.sh', 'r').read()
+    runContents = runTemplate.format(**{'region':region,'province':province})
+    runFile = open('SRMRunFiles_output/run-ebRisk_CA.sh', 'a')
+    runFile.write(runContents)
+    runFile.close()
+    return
 
 def write_c_hazard_config(province):
     if not os.path.exists('cHazard_SRMJobFiles_output'):
@@ -107,7 +141,16 @@ def write_c_hazard_config(province):
     configFile.close()
     # configTemplate.close()
     return
-    
+
+def write_c_hazard_runFile(province):
+    # if not os.path.exists('SRMRunFiles_output'):
+    #     os.makedirs('SRMRunFiles_output')
+    runTemplate = open('run-cHazard_CA.sh', 'r').read()
+    runContents = runTemplate.format(**{'province':province})
+    runFile = open('SRMRunFiles_output/run-cHazard_CA.sh', 'a')
+    runFile.write(runContents)
+    runFile.close()
+    return 
 
 def get_config_params():
     """
