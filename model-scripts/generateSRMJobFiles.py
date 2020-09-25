@@ -17,9 +17,9 @@ def main():
     
     provinceList = []
     for regionPair in listRegion:
-        #write_c_damage_config(regionPair)
-        #write_e_damage_config(regionPair)
-        #write_eb_risk_config(regionPair)
+        write_c_damage_config(regionPair)
+        write_e_damage_config(regionPair)
+        write_eb_risk_config(regionPair)
         provinceList.append(regionPair[1])
     
     provinceList = list(dict.fromkeys(provinceList))
