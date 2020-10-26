@@ -1,0 +1,732 @@
+cDamage- classical damage model for ON3515-20; retrofit
+=======================================================
+
+============== ===================
+checksum32     1_508_585_000      
+date           2020-10-26T18:30:13
+engine_version 3.11.0-git4f03c56  
+============== ===================
+
+num_sites = 2974, num_levels = 200, num_rlzs = 50
+
+Parameters
+----------
+=============================== =============================================================================================================================================================================================================================================================================================================================
+calculation_mode                'classical_damage'                                                                                                                                                                                                                                                                                                           
+number_of_logic_tree_samples    50                                                                                                                                                                                                                                                                                                                           
+maximum_distance                {'Active Shallow Crust': [(1.0, 400.0), (10.0, 400.0)], 'Stable Shallow Crust': [(1.0, 600.0), (10.0, 600.0)], 'Subduction Interface': [(1.0, 1000.0), (10.0, 1000.0)], 'Subduction IntraSlab30': [(1.0, 400), (10.0, 400)], 'Subduction IntraSlab55': [(1.0, 400), (10.0, 400)], 'default': [(1.0, 1000.0), (10.0, 1000.0)]}
+investigation_time              50.0                                                                                                                                                                                                                                                                                                                         
+ses_per_logic_tree_path         1                                                                                                                                                                                                                                                                                                                            
+truncation_level                3.0                                                                                                                                                                                                                                                                                                                          
+rupture_mesh_spacing            5.0                                                                                                                                                                                                                                                                                                                          
+complex_fault_mesh_spacing      None                                                                                                                                                                                                                                                                                                                         
+width_of_mfd_bin                0.2                                                                                                                                                                                                                                                                                                                          
+area_source_discretization      10.0                                                                                                                                                                                                                                                                                                                         
+pointsource_distance            None                                                                                                                                                                                                                                                                                                                         
+ground_motion_correlation_model None                                                                                                                                                                                                                                                                                                                         
+minimum_intensity               {}                                                                                                                                                                                                                                                                                                                           
+random_seed                     1024                                                                                                                                                                                                                                                                                                                         
+master_seed                     25                                                                                                                                                                                                                                                                                                                           
+ses_seed                        42                                                                                                                                                                                                                                                                                                                           
+=============================== =============================================================================================================================================================================================================================================================================================================================
+
+Input files
+-----------
+==================== ======================================================
+Name                 File                                                  
+==================== ======================================================
+exposure             `oqBldgExp_ON3515-20.xml <oqBldgExp_ON3515-20.xml>`_  
+job_ini              `cDamage_r2_ON3515-20.ini <cDamage_r2_ON3515-20.ini>`_
+structural_fragility `structural_fragility.xml <structural_fragility.xml>`_
+taxonomy_mapping     `UBC2GEM_TaxLUT_r2.csv <UBC2GEM_TaxLUT_r2.csv>`_      
+==================== ======================================================
+
+Composite source model
+----------------------
+========= ======= ================
+smlt_path weight  num_realizations
+========= ======= ================
+b1        0.24000 12              
+b2        0.14000 7               
+b3        0.16000 8               
+b4        0.28000 14              
+b5        0.10000 5               
+b6        0.08000 4               
+========= ======= ================
+
+Required parameters per tectonic region type
+--------------------------------------------
+====== ============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================== =============== ================= ==================================
+grp_id gsims                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          distances       siteparams        ruptparams                        
+====== ============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================== =============== ================= ==================================
+0      '[CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014]' '[CanadaSHM6_ActiveCrust_BooreEtAl2014]' '[CanadaSHM6_ActiveCrust_CampbellBozorgnia2014]' '[CanadaSHM6_ActiveCrust_ChiouYoungs2014]'                                                                                                                                                                                                                                                                                                                                                                                                                             rjb rrup rx ry0 vs30 vs30measured dip hypo_depth mag rake width ztor
+1      '[CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014]' '[CanadaSHM6_ActiveCrust_BooreEtAl2014]' '[CanadaSHM6_ActiveCrust_CampbellBozorgnia2014]' '[CanadaSHM6_ActiveCrust_ChiouYoungs2014]'                                                                                                                                                                                                                                                                                                                                                                                                                             rjb rrup rx ry0 vs30 vs30measured dip hypo_depth mag rake width ztor
+2      '[CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014]' '[CanadaSHM6_ActiveCrust_BooreEtAl2014]' '[CanadaSHM6_ActiveCrust_CampbellBozorgnia2014]' '[CanadaSHM6_ActiveCrust_ChiouYoungs2014]'                                                                                                                                                                                                                                                                                                                                                                                                                             rjb rrup rx ry0 vs30 vs30measured dip hypo_depth mag rake width ztor
+3      '[CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014]' '[CanadaSHM6_ActiveCrust_BooreEtAl2014]' '[CanadaSHM6_ActiveCrust_CampbellBozorgnia2014]' '[CanadaSHM6_ActiveCrust_ChiouYoungs2014]'                                                                                                                                                                                                                                                                                                                                                                                                                             rjb rrup rx ry0 vs30 vs30measured dip hypo_depth mag rake width ztor
+4      '[CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014]' '[CanadaSHM6_ActiveCrust_BooreEtAl2014]' '[CanadaSHM6_ActiveCrust_CampbellBozorgnia2014]' '[CanadaSHM6_ActiveCrust_ChiouYoungs2014]'                                                                                                                                                                                                                                                                                                                                                                                                                             rjb rrup rx ry0 vs30 vs30measured dip hypo_depth mag rake width ztor
+5      '[CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014]' '[CanadaSHM6_ActiveCrust_BooreEtAl2014]' '[CanadaSHM6_ActiveCrust_CampbellBozorgnia2014]' '[CanadaSHM6_ActiveCrust_ChiouYoungs2014]'                                                                                                                                                                                                                                                                                                                                                                                                                             rjb rrup rx ry0 vs30 vs30measured dip hypo_depth mag rake width ztor
+6      '[CanadaSHM6_StableCrust_AA13central]' '[CanadaSHM6_StableCrust_AA13high]' '[CanadaSHM6_StableCrust_AA13low]' '[CanadaSHM6_StableCrust_NGAEast01]' '[CanadaSHM6_StableCrust_NGAEast02]' '[CanadaSHM6_StableCrust_NGAEast03]' '[CanadaSHM6_StableCrust_NGAEast04]' '[CanadaSHM6_StableCrust_NGAEast05]' '[CanadaSHM6_StableCrust_NGAEast06]' '[CanadaSHM6_StableCrust_NGAEast07]' '[CanadaSHM6_StableCrust_NGAEast08]' '[CanadaSHM6_StableCrust_NGAEast09]' '[CanadaSHM6_StableCrust_NGAEast10]' '[CanadaSHM6_StableCrust_NGAEast11]' '[CanadaSHM6_StableCrust_NGAEast12]' '[CanadaSHM6_StableCrust_NGAEast13]' rhypo rrup      vs30              mag                               
+7      '[CanadaSHM6_StableCrust_AA13central]' '[CanadaSHM6_StableCrust_AA13high]' '[CanadaSHM6_StableCrust_AA13low]' '[CanadaSHM6_StableCrust_NGAEast01]' '[CanadaSHM6_StableCrust_NGAEast02]' '[CanadaSHM6_StableCrust_NGAEast03]' '[CanadaSHM6_StableCrust_NGAEast04]' '[CanadaSHM6_StableCrust_NGAEast05]' '[CanadaSHM6_StableCrust_NGAEast06]' '[CanadaSHM6_StableCrust_NGAEast07]' '[CanadaSHM6_StableCrust_NGAEast08]' '[CanadaSHM6_StableCrust_NGAEast09]' '[CanadaSHM6_StableCrust_NGAEast10]' '[CanadaSHM6_StableCrust_NGAEast11]' '[CanadaSHM6_StableCrust_NGAEast12]' '[CanadaSHM6_StableCrust_NGAEast13]' rhypo rrup      vs30              mag                               
+8      '[CanadaSHM6_StableCrust_AA13central]' '[CanadaSHM6_StableCrust_AA13high]' '[CanadaSHM6_StableCrust_AA13low]' '[CanadaSHM6_StableCrust_NGAEast01]' '[CanadaSHM6_StableCrust_NGAEast02]' '[CanadaSHM6_StableCrust_NGAEast03]' '[CanadaSHM6_StableCrust_NGAEast04]' '[CanadaSHM6_StableCrust_NGAEast05]' '[CanadaSHM6_StableCrust_NGAEast06]' '[CanadaSHM6_StableCrust_NGAEast07]' '[CanadaSHM6_StableCrust_NGAEast08]' '[CanadaSHM6_StableCrust_NGAEast09]' '[CanadaSHM6_StableCrust_NGAEast10]' '[CanadaSHM6_StableCrust_NGAEast11]' '[CanadaSHM6_StableCrust_NGAEast12]' '[CanadaSHM6_StableCrust_NGAEast13]' rhypo rrup      vs30              mag                               
+9      '[CanadaSHM6_StableCrust_AA13central]' '[CanadaSHM6_StableCrust_AA13high]' '[CanadaSHM6_StableCrust_AA13low]' '[CanadaSHM6_StableCrust_NGAEast01]' '[CanadaSHM6_StableCrust_NGAEast02]' '[CanadaSHM6_StableCrust_NGAEast03]' '[CanadaSHM6_StableCrust_NGAEast04]' '[CanadaSHM6_StableCrust_NGAEast05]' '[CanadaSHM6_StableCrust_NGAEast06]' '[CanadaSHM6_StableCrust_NGAEast07]' '[CanadaSHM6_StableCrust_NGAEast08]' '[CanadaSHM6_StableCrust_NGAEast09]' '[CanadaSHM6_StableCrust_NGAEast10]' '[CanadaSHM6_StableCrust_NGAEast11]' '[CanadaSHM6_StableCrust_NGAEast12]' '[CanadaSHM6_StableCrust_NGAEast13]' rhypo rrup      vs30              mag                               
+10     '[CanadaSHM6_StableCrust_AA13central]' '[CanadaSHM6_StableCrust_AA13high]' '[CanadaSHM6_StableCrust_AA13low]' '[CanadaSHM6_StableCrust_NGAEast01]' '[CanadaSHM6_StableCrust_NGAEast02]' '[CanadaSHM6_StableCrust_NGAEast03]' '[CanadaSHM6_StableCrust_NGAEast04]' '[CanadaSHM6_StableCrust_NGAEast05]' '[CanadaSHM6_StableCrust_NGAEast06]' '[CanadaSHM6_StableCrust_NGAEast07]' '[CanadaSHM6_StableCrust_NGAEast08]' '[CanadaSHM6_StableCrust_NGAEast09]' '[CanadaSHM6_StableCrust_NGAEast10]' '[CanadaSHM6_StableCrust_NGAEast11]' '[CanadaSHM6_StableCrust_NGAEast12]' '[CanadaSHM6_StableCrust_NGAEast13]' rhypo rrup      vs30              mag                               
+11     '[CanadaSHM6_StableCrust_AA13central]' '[CanadaSHM6_StableCrust_AA13high]' '[CanadaSHM6_StableCrust_AA13low]' '[CanadaSHM6_StableCrust_NGAEast01]' '[CanadaSHM6_StableCrust_NGAEast02]' '[CanadaSHM6_StableCrust_NGAEast03]' '[CanadaSHM6_StableCrust_NGAEast04]' '[CanadaSHM6_StableCrust_NGAEast05]' '[CanadaSHM6_StableCrust_NGAEast06]' '[CanadaSHM6_StableCrust_NGAEast07]' '[CanadaSHM6_StableCrust_NGAEast08]' '[CanadaSHM6_StableCrust_NGAEast09]' '[CanadaSHM6_StableCrust_NGAEast10]' '[CanadaSHM6_StableCrust_NGAEast11]' '[CanadaSHM6_StableCrust_NGAEast12]' '[CanadaSHM6_StableCrust_NGAEast13]' rhypo rrup      vs30              mag                               
+12     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SInter]' '[CanadaSHM6_Interface_AtkinsonMacias2009]' '[CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia]' '[CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia]'                                                                                                                                                                                                                                                                                                                                                                                                           rrup            backarc vs30      mag rake                          
+13     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SInter]' '[CanadaSHM6_Interface_AtkinsonMacias2009]' '[CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia]' '[CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia]'                                                                                                                                                                                                                                                                                                                                                                                                           rrup            backarc vs30      mag rake                          
+14     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SInter]' '[CanadaSHM6_Interface_AtkinsonMacias2009]' '[CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia]' '[CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia]'                                                                                                                                                                                                                                                                                                                                                                                                           rrup            backarc vs30      mag rake                          
+15     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SInter]' '[CanadaSHM6_Interface_AtkinsonMacias2009]' '[CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia]' '[CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia]'                                                                                                                                                                                                                                                                                                                                                                                                           rrup            backarc vs30      mag rake                          
+16     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SInter]' '[CanadaSHM6_Interface_AtkinsonMacias2009]' '[CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia]' '[CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia]'                                                                                                                                                                                                                                                                                                                                                                                                           rrup            backarc vs30      mag rake                          
+17     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SInter]' '[CanadaSHM6_Interface_AtkinsonMacias2009]' '[CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia]' '[CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia]'                                                                                                                                                                                                                                                                                                                                                                                                           rrup            backarc vs30      mag rake                          
+18     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab30]' '[CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia30]' '[CanadaSHM6_InSlab_GarciaEtAl2005SSlab30]' '[CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia30]'                                                                                                                                                                                                                                                                                                                                                                                                           rhypo rrup      backarc vs30      hypo_depth mag                    
+19     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab30]' '[CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia30]' '[CanadaSHM6_InSlab_GarciaEtAl2005SSlab30]' '[CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia30]'                                                                                                                                                                                                                                                                                                                                                                                                           rhypo rrup      backarc vs30      hypo_depth mag                    
+20     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab30]' '[CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia30]' '[CanadaSHM6_InSlab_GarciaEtAl2005SSlab30]' '[CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia30]'                                                                                                                                                                                                                                                                                                                                                                                                           rhypo rrup      backarc vs30      hypo_depth mag                    
+21     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab30]' '[CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia30]' '[CanadaSHM6_InSlab_GarciaEtAl2005SSlab30]' '[CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia30]'                                                                                                                                                                                                                                                                                                                                                                                                           rhypo rrup      backarc vs30      hypo_depth mag                    
+22     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab30]' '[CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia30]' '[CanadaSHM6_InSlab_GarciaEtAl2005SSlab30]' '[CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia30]'                                                                                                                                                                                                                                                                                                                                                                                                           rhypo rrup      backarc vs30      hypo_depth mag                    
+23     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab30]' '[CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia30]' '[CanadaSHM6_InSlab_GarciaEtAl2005SSlab30]' '[CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia30]'                                                                                                                                                                                                                                                                                                                                                                                                           rhypo rrup      backarc vs30      hypo_depth mag                    
+24     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab55]' '[CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia55]' '[CanadaSHM6_InSlab_GarciaEtAl2005SSlab55]' '[CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia55]'                                                                                                                                                                                                                                                                                                                                                                                                           rhypo rrup      backarc vs30      hypo_depth mag                    
+25     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab55]' '[CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia55]' '[CanadaSHM6_InSlab_GarciaEtAl2005SSlab55]' '[CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia55]'                                                                                                                                                                                                                                                                                                                                                                                                           rhypo rrup      backarc vs30      hypo_depth mag                    
+26     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab55]' '[CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia55]' '[CanadaSHM6_InSlab_GarciaEtAl2005SSlab55]' '[CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia55]'                                                                                                                                                                                                                                                                                                                                                                                                           rhypo rrup      backarc vs30      hypo_depth mag                    
+27     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab55]' '[CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia55]' '[CanadaSHM6_InSlab_GarciaEtAl2005SSlab55]' '[CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia55]'                                                                                                                                                                                                                                                                                                                                                                                                           rhypo rrup      backarc vs30      hypo_depth mag                    
+28     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab55]' '[CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia55]' '[CanadaSHM6_InSlab_GarciaEtAl2005SSlab55]' '[CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia55]'                                                                                                                                                                                                                                                                                                                                                                                                           rhypo rrup      backarc vs30      hypo_depth mag                    
+29     '[CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab55]' '[CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia55]' '[CanadaSHM6_InSlab_GarciaEtAl2005SSlab55]' '[CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia55]'                                                                                                                                                                                                                                                                                                                                                                                                           rhypo rrup      backarc vs30      hypo_depth mag                    
+====== ============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================== =============== ================= ==================================
+
+Exposure model
+--------------
+=========== ======
+#assets     91_544
+#taxonomies 563   
+=========== ======
+
+============= ======= ======= === ===== ========= ==========
+taxonomy      mean    stddev  min max   num_sites num_assets
+COM1-C3L-PC   2.71094 2.87304 1   15    128       347       
+IND6-C3L-PC   2.65517 3.08108 1   15    58        154       
+RES1-W4-LC    14      13      1   93    415       5_996     
+COM2-PC1-PC   2.48148 2.68989 1   14    54        134       
+RES1-W1-LC    75      62      1   439   454       34_187    
+COM4-W3-PC    3.68500 5.69543 1   51    200       737       
+COM1-RM1L-PC  3.96703 5.19870 1   36    182       722       
+COM2-S2L-PC   1.92982 1.81127 1   9     57        110       
+RES3A-W1-LC   10      26      1   225   220       2_268     
+RES3A-URML-PC 5.47273 12      1   88    110       602       
+RES1-W4-PC    26      24      1   240   437       11_527    
+IND4-C2L-PC   1.19231 0.49147 1   3     26        31        
+COM4-PC1-PC   2.88000 3.43832 1   16    50        144       
+RES3A-W4-PC   5.79348 12      1   86    92        533       
+RES3A-W2-PC   5.16667 6.53863 1   22    24        124       
+COM4-C1L-PC   3.84416 5.02380 1   28    77        296       
+COM4-URML-PC  5.63636 9.31589 1   55    88        496       
+RES1-URML-PC  21      23      1   221   433       9_453     
+COM3-C3L-PC   4.92655 8.32236 1   73    177       872       
+COM4-RM1L-PC  5.63200 7.60842 1   61    250       1_408     
+IND6-RM1L-PC  2.38806 2.16920 1   10    134       320       
+COM3-W3-PC    5.02817 8.53894 1   49    71        357       
+RES3D-W2-LC   4.66038 8.28563 1   45    53        247       
+COM1-W3-PC    2.89216 3.97743 1   25    102       295       
+COM1-URML-PC  3.12329 4.57413 1   36    146       456       
+COM1-PC1-PC   2.37500 2.32448 1   10    32        76        
+COM4-S2L-PC   2.81818 3.13340 1   16    55        155       
+RES3D-W2-PC   5.17647 9.83436 1   55    68        352       
+RES3A-W2-LC   3.38462 3.35506 1   12    13        44        
+RES3A-W4-LC   3.13462 4.91907 1   23    52        163       
+REL1-RM1L-PC  2.04950 1.90985 1   12    101       207       
+EDU1-RM1L-PC  1.75000 1.50000 1   4     4         7         
+RES3B-URML-PC 9.00000 11      1   39    27        243       
+IND1-RM1L-PC  2.09091 1.52815 1   6     33        69        
+COM3-C2L-LC   1.85294 1.36720 1   10    102       189       
+RES3C-URML-PC 4.05405 4.70783 1   19    37        150       
+RES3E-W2-PC   4.15686 7.81888 1   44    51        212       
+RES3C-W1-LC   4.30000 6.63402 1   28    40        172       
+RES3B-W2-PC   5.23684 8.13546 1   32    38        199       
+RES3E-W2-LC   4.16000 6.40755 1   29    25        104       
+RES3B-W4-PC   2.77273 2.30799 1   9     22        61        
+RES3B-W1-LC   4.86364 6.51223 1   22    22        107       
+RES3D-URMM-PC 3.51429 5.46847 1   24    35        123       
+RES3F-W2-PC   3.84211 6.51620 1   35    38        146       
+RES4-W3-PC    2.01754 1.58104 1   10    171       345       
+RES3C-RM1L-PC 5.48148 7.00753 1   26    27        148       
+COM3-C2L-PC   3.36364 4.09371 1   26    176       592       
+COM4-C2L-PC   2.75556 3.98951 1   23    45        124       
+COM1-S1L-PC   1.85185 1.68029 1   8     27        50        
+COM3-URML-PC  4.85227 8.28084 1   62    176       854       
+RES3F-W2-LC   2.54545 2.65861 1   11    33        84        
+RES3C-W2-PC   4.54348 5.97665 1   24    46        209       
+RES3D-RM1L-PC 2.46875 2.36894 1   11    32        79        
+RES3C-W4-PC   3.77500 5.29871 1   21    40        151       
+RES3C-W4-LC   3.00000 3.27042 1   13    24        72        
+RES3D-URML-PC 3.46341 4.69094 1   27    41        142       
+COM1-W3-LC    2.05769 2.29589 1   13    52        107       
+RES3E-URML-PC 2.14286 2.19740 1   9     21        45        
+IND1-URML-PC  2.00000 1.88562 1   10    37        74        
+COM1-S4L-LC   1.75000 1.66559 1   9     32        56        
+IND1-W3-LC    1.28261 0.54418 1   3     46        59        
+RES3E-URMM-PC 2.22727 2.63551 1   13    22        49        
+COM4-W3-LC    2.09160 2.25474 1   16    131       274       
+IND6-C2L-PC   2.24490 2.15572 1   10    49        110       
+RES3C-RM1L-LC 3.31818 4.00460 1   17    22        73        
+RES3B-W2-LC   3.21429 3.83316 1   16    28        90        
+IND1-W3-PC    1.78409 1.37673 1   9     88        157       
+RES3D-S4L-PC  2.00000 1.58114 1   5     9         18        
+COM4-S5L-PC   3.71212 4.91480 1   38    198       735       
+COM4-S4L-PC   3.17308 4.43569 1   22    52        165       
+RES3D-W4-LC   1.64286 1.09593 1   5     28        46        
+COM3-RM1L-PC  3.30147 5.04252 1   44    136       449       
+RES3D-C3L-PC  1.00000 0.0     1   1     2         2         
+COM2-S1L-PC   2.30508 2.82998 1   16    59        136       
+RES3E-C2M-PC  2.00000 1.26491 1   4     6         12        
+IND2-URML-PC  2.23077 2.35470 1   10    26        58        
+COM3-C3M-PC   1.82353 1.46779 1   7     17        31        
+IND1-PC2L-LC  1.00000 0.0     1   1     2         2         
+COM4-S2M-PC   1.38889 0.69780 1   3     18        25        
+COM4-PC2M-PC  1.09091 0.30151 1   2     11        12        
+REL1-W2-PC    3.36364 4.99333 1   36    121       407       
+RES3E-S4L-PC  1.25000 0.50000 1   2     4         5         
+RES3D-W4-PC   4.27451 6.78256 1   32    51        218       
+COM1-C1L-PC   1.47059 0.94324 1   4     17        25        
+COM2-C3M-PC   1.29412 0.77174 1   4     17        22        
+IND6-URML-PC  1.95556 1.89444 1   10    45        88        
+EDU1-W2-PC    2.58824 2.80859 1   17    102       264       
+COM1-PC2L-PC  1.28571 0.61125 1   3     14        18        
+COM1-S4L-PC   2.22222 2.69701 1   16    72        160       
+IND6-W3-PC    1.91892 2.20326 1   11    37        71        
+RES3D-C3M-PC  1.33333 0.57735 1   2     3         4         
+IND6-S1L-PC   1.75000 1.23603 1   6     28        49        
+IND1-C2L-PC   1.83333 1.30406 1   5     60        110       
+COM1-S5L-PC   2.71053 2.97102 1   16    114       309       
+COM7-RM1L-PC  2.78571 3.83316 1   16    28        78        
+COM4-RM2L-PC  1.92308 1.32045 1   5     13        25        
+COM4-URMM-PC  4.28571 5.43271 1   22    21        90        
+EDU1-S5L-PC   1.36364 0.50452 1   2     11        15        
+RES3D-S2L-PC  1.00000 NaN     1   1     1         1         
+COM1-URMM-PC  3.33333 2.30940 2   6     3         10        
+COM7-RM1L-LC  1.80000 1.13529 1   4     10        18        
+IND2-URMM-PC  1.83333 1.60208 1   5     6         11        
+COM7-URML-PC  2.56250 2.44864 1   11    16        41        
+COM7-W3-PC    2.47692 3.54484 1   21    65        161       
+IND2-PC1-PC   1.57500 1.27877 1   8     40        63        
+COM7-S3-PC    1.20000 0.44721 1   2     5         6         
+COM3-S5L-PC   1.50000 1.00000 1   3     4         6         
+COM1-C2L-PC   1.96364 1.73166 1   9     55        108       
+RES4-URML-PC  1.60000 0.82078 1   3     20        32        
+COM7-PC2L-PC  1.00000 0.0     1   1     3         3         
+RES4-C2H-PC   1.00000 0.0     1   1     2         2         
+COM2-URML-PC  2.50000 1.06904 1   4     8         20        
+RES3E-W4-PC   2.27778 2.34660 1   9     18        41        
+COM2-S3-PC    1.76000 1.12842 1   5     25        44        
+RES3F-URMM-PC 2.70000 2.07998 1   8     20        54        
+REL1-URML-PC  2.16129 1.88143 1   7     31        67        
+REL1-URMM-PC  1.00000 0.0     1   1     2         2         
+COM3-C1L-PC   3.00000 2.44949 1   6     4         12        
+EDU1-MH-PC    1.53333 0.91548 1   4     15        23        
+COM2-C2L-PC   1.98148 1.79613 1   9     54        107       
+REL1-W2-LC    1.66667 1.51338 1   9     63        105       
+COM4-C1M-PC   1.75000 0.88641 1   3     8         14        
+COM4-S1L-PC   3.12698 4.53478 1   24    63        197       
+COM4-C3L-PC   2.10000 2.19323 1   10    40        84        
+COM4-S5M-PC   2.00000 1.81779 1   8     24        48        
+EDU1-C1L-LC   1.00000 0.0     1   1     6         6         
+EDU1-W2-LC    1.71739 1.40891 1   6     46        79        
+RES3C-RM2L-PC 1.75000 0.95743 1   3     4         7         
+RES3C-C2L-PC  1.00000 NaN     1   1     1         1         
+RES3B-C1L-PC  1.00000 NaN     1   1     1         1         
+RES3E-C2H-LC  2.00000 NaN     2   2     1         2         
+RES3B-URMM-PC 1.00000 NaN     1   1     1         1         
+RES3C-C1L-PC  1.00000 0.0     1   1     6         6         
+REL1-PC1-LC   1.00000 0.0     1   1     3         3         
+COM3-W3-LC    2.41304 2.96330 1   16    46        111       
+RES3C-W2-LC   2.60000 2.76746 1   12    35        91        
+COM5-PC1-PC   1.00000 NaN     1   1     1         1         
+EDU2-URMM-PC  1.00000 NaN     1   1     1         1         
+COM5-C2L-PC   1.33333 0.51640 1   2     6         8         
+COM7-S5L-PC   2.00000 1.84391 1   7     11        22        
+COM7-C2L-PC   1.88235 1.06642 1   6     34        64        
+EDU1-S4M-PC   1.00000 NaN     1   1     1         1         
+COM4-C1L-LC   2.13462 2.35171 1   13    52        111       
+COM4-RM1L-LC  2.87879 3.12115 1   20    198       570       
+RES3F-C2H-PC  1.28571 0.75593 1   3     7         9         
+RES3D-C2L-LC  1.00000 NaN     1   1     1         1         
+GOV1-W2-PC    2.01961 2.17706 1   14    51        103       
+RES3F-C2H-LC  2.00000 1.41421 1   3     2         4         
+COM4-S3-PC    2.37500 2.49787 1   11    48        114       
+COM6-S5L-PC   1.00000 0.0     1   1     4         4         
+EDU1-C2L-PC   2.00000 NaN     2   2     1         2         
+RES4-RM1L-PC  1.48000 0.86284 1   5     50        74        
+GOV1-URML-PC  1.50000 1.30018 1   7     22        33        
+RES3F-URML-PC 1.64706 0.86177 1   3     17        28        
+RES3D-RM1L-LC 1.46667 0.99043 1   4     15        22        
+COM3-RM2L-LC  1.33333 0.88763 1   4     12        16        
+COM3-URMM-PC  1.84615 0.89872 1   3     13        24        
+COM7-S4L-PC   2.50000 3.05975 1   14    30        75        
+COM2-C3H-PC   1.00000 0.0     1   1     6         6         
+COM3-S4L-PC   1.68421 1.29326 1   6     19        32        
+GOV1-C3L-PC   1.26923 0.53349 1   3     26        33        
+GOV1-S4L-LC   1.00000 NaN     1   1     1         1         
+COM4-PC1-LC   2.04348 2.70485 1   13    23        47        
+COM1-PC1-LC   1.31250 0.60208 1   3     16        21        
+COM1-S3-PC    1.18182 0.39477 1   2     22        26        
+IND2-PC1-LC   1.30000 0.57124 1   3     20        26        
+COM4-S2L-LC   2.00000 1.32665 1   6     26        52        
+COM4-C2L-LC   1.84615 1.14354 1   4     13        24        
+IND1-C2L-LC   1.26923 0.53349 1   3     26        33        
+IND6-S1L-LC   1.07143 0.26726 1   2     14        15        
+COM4-S4L-LC   1.62500 1.45358 1   8     32        52        
+COM2-C3L-PC   1.00000 0.0     1   1     2         2         
+COM5-C2M-LC   1.00000 NaN     1   1     1         1         
+IND3-S4M-LC   1.00000 NaN     1   1     1         1         
+IND6-C3M-PC   1.46154 0.66023 1   3     13        19        
+IND6-RM1L-LC  1.77612 1.54548 1   8     67        119       
+COM5-S4L-LC   1.00000 0.0     1   1     9         9         
+COM3-RM1L-LC  1.77273 1.64511 1   9     88        156       
+COM3-C1L-LC   1.00000 0.0     1   1     4         4         
+COM1-S1L-LC   1.00000 0.0     1   1     14        14        
+COM2-C2M-LC   1.33333 0.57735 1   2     3         4         
+COM2-PC2L-PC  1.76471 1.09141 1   4     17        30        
+COM4-S1L-LC   1.70588 1.26801 1   7     34        58        
+COM2-PC2L-LC  1.77778 0.97183 1   4     9         16        
+COM4-C1M-LC   1.00000 0.0     1   1     5         5         
+COM2-S4L-PC   1.00000 0.0     1   1     3         3         
+IND6-W3-LC    1.25000 0.44426 1   2     20        25        
+COM2-S1L-LC   1.62069 1.01467 1   5     29        47        
+IND2-S3-LC    1.00000 0.0     1   1     2         2         
+RES3C-URMM-PC 2.77778 3.59784 1   12    9         25        
+COM7-PC2M-LC  1.00000 0.0     1   1     2         2         
+COM2-S2L-LC   1.58333 1.01795 1   4     24        38        
+IND3-URMM-PC  1.16667 0.38925 1   2     12        14        
+COM4-C3M-PC   1.70000 1.05935 1   4     10        17        
+RES3D-S4L-LC  1.00000 0.0     1   1     2         2         
+RES3F-C1H-PC  1.33333 0.57735 1   2     3         4         
+EDU1-S4L-PC   1.37500 0.74402 1   3     8         11        
+COM5-RM1L-LC  1.25000 0.50000 1   2     4         5         
+COM5-S3-PC    1.14286 0.37796 1   2     7         8         
+COM4-PC2L-PC  1.30000 0.65695 1   3     20        26        
+IND2-S2L-PC   1.28571 0.64365 1   3     21        27        
+COM5-RM1L-PC  1.37500 0.80623 1   4     16        22        
+COM5-S5L-PC   1.45455 0.68755 1   3     11        16        
+COM7-S2L-PC   2.38889 1.81947 1   8     18        43        
+IND2-S3-PC    1.00000 0.0     1   1     6         6         
+COM3-S1L-PC   1.27273 0.46710 1   2     11        14        
+COM7-RM2L-PC  1.63158 1.16479 1   4     19        31        
+COM2-C1L-PC   1.33333 0.65134 1   3     12        16        
+COM2-W3-PC    2.00000 1.53018 1   6     42        84        
+GOV1-S4L-PC   1.25000 0.50000 1   2     4         5         
+COM2-W3-LC    1.37500 1.25831 1   6     16        22        
+COM2-C2L-LC   1.38095 0.80475 1   4     21        29        
+IND2-W3-LC    1.00000 0.0     1   1     5         5         
+IND2-S2L-LC   1.05882 0.24254 1   2     17        18        
+COM1-RM1L-LC  2.04425 2.13135 1   15    113       231       
+IND6-C2M-PC   1.27273 0.46710 1   2     11        14        
+COM7-W3-LC    1.50000 1.25258 1   7     30        45        
+REL1-RM1L-LC  1.38983 0.94717 1   6     59        82        
+COM4-S3-LC    1.95000 1.19097 1   4     20        39        
+IND6-S4L-LC   1.00000 0.0     1   1     4         4         
+EDU1-C3L-PC   1.84615 1.14354 1   5     13        24        
+IND2-S1L-PC   1.35714 0.73102 1   4     28        38        
+AGR1-W3-PC    1.70492 1.03834 1   5     61        104       
+RES3C-S4M-PC  1.00000 0.0     1   1     2         2         
+RES3B-W4-LC   1.70588 0.91956 1   4     17        29        
+RES3C-S4L-PC  1.25000 0.50000 1   2     4         5         
+RES4-C2M-PC   1.00000 0.0     1   1     7         7         
+COM3-PC1-PC   1.35294 0.60634 1   3     17        23        
+COM1-S2L-PC   1.45833 0.72106 1   3     24        35        
+COM7-S2L-LC   1.25000 0.45227 1   2     12        15        
+COM1-S5M-PC   1.40000 0.89443 1   3     5         7         
+COM1-RM2L-LC  1.00000 0.0     1   1     4         4         
+COM7-S4L-LC   1.70000 1.25167 1   5     10        17        
+COM4-PC2M-LC  1.25000 0.50000 1   2     4         5         
+IND1-S3-PC    1.00000 0.0     1   1     10        10        
+EDU1-C1L-PC   1.33333 0.65134 1   3     12        16        
+COM2-PC1-LC   1.63158 1.06513 1   5     19        31        
+IND2-W3-PC    1.27273 0.46710 1   2     11        14        
+IND6-S4L-PC   1.00000 0.0     1   1     12        12        
+REL1-C3L-PC   1.77778 1.08604 1   5     27        48        
+COM1-C1L-LC   1.16667 0.40825 1   2     6         7         
+IND2-S5L-PC   1.00000 0.0     1   1     2         2         
+COM1-RM2L-PC  1.19048 0.40237 1   2     21        25        
+COM1-S4M-PC   1.00000 0.0     1   1     14        14        
+COM7-S1M-LC   1.00000 0.0     1   1     2         2         
+COM3-S3-LC    1.00000 NaN     1   1     1         1         
+RES3E-W4-LC   1.80000 0.83666 1   3     5         9         
+RES2-MH-PC    4.21164 4.77222 1   35    189       796       
+COM5-URML-PC  1.28571 0.46881 1   2     14        18        
+IND2-PC2L-LC  1.33333 0.51640 1   2     6         8         
+RES4-W3-LC    1.58462 1.06228 1   6     130       206       
+RES3C-RM2L-LC 1.00000 0.0     1   1     3         3         
+COM1-C2L-LC   1.44444 0.70479 1   3     18        26        
+COM3-S4L-LC   1.15385 0.37553 1   2     13        15        
+RES4-RM1M-PC  1.22917 0.47219 1   3     48        59        
+EDU1-C1M-PC   1.50000 0.70711 1   2     2         3         
+COM1-C3M-PC   1.12500 0.34157 1   2     16        18        
+IND2-C2L-PC   1.33333 0.50000 1   2     9         12        
+RES3B-C2L-PC  1.00000 0.0     1   1     2         2         
+RES3B-S5L-PC  1.00000 0.0     1   1     5         5         
+EDU1-PC1-PC   1.37500 0.74402 1   3     8         11        
+EDU2-URML-PC  1.00000 0.0     1   1     2         2         
+GOV1-S2L-PC   1.33333 0.57735 1   2     3         4         
+GOV1-RM1L-PC  1.46429 1.37389 1   8     28        41        
+COM6-W3-PC    1.00000 0.0     1   1     5         5         
+RES6-W4-PC    1.09524 0.30079 1   2     21        23        
+COM3-RM2L-PC  1.57143 1.23013 1   6     28        44        
+EDU2-W3-PC    1.33333 0.57735 1   2     3         4         
+GOV1-C2L-PC   1.50000 0.84984 1   3     10        15        
+EDU2-C2M-PC   1.00000 NaN     1   1     1         1         
+IND2-RM1L-LC  1.12500 0.44843 1   3     24        27        
+COM7-PC2M-PC  1.16667 0.40825 1   2     6         7         
+COM2-S5L-PC   1.50000 1.00000 1   3     4         6         
+COM6-MH-PC    1.00000 0.0     1   1     3         3         
+IND2-C2L-LC   1.00000 0.0     1   1     2         2         
+GOV1-W2-LC    1.38462 0.65044 1   3     13        18        
+RES3D-C1L-PC  1.00000 0.0     1   1     2         2         
+COM4-C2M-PC   1.60000 0.89443 1   3     5         8         
+RES6-C2M-PC   1.00000 0.0     1   1     3         3         
+RES6-W3-LC    1.13333 0.35187 1   2     15        17        
+RES3D-S2M-PC  1.00000 NaN     1   1     1         1         
+IND1-RM1L-LC  1.22222 0.54832 1   3     18        22        
+IND1-S3-LC    1.50000 0.70711 1   2     2         3         
+RES3E-C1H-LC  1.00000 NaN     1   1     1         1         
+IND2-RM1L-PC  1.66667 0.95038 1   5     63        105       
+GOV1-C2M-LC   1.00000 NaN     1   1     1         1         
+COM3-PC1-LC   1.20000 0.44721 1   2     5         6         
+IND2-PC2L-PC  1.37500 0.71880 1   3     16        22        
+COM1-C1M-PC   1.33333 0.57735 1   2     3         4         
+RES3B-RM1L-PC 1.61111 0.69780 1   3     18        29        
+RES3E-C2L-PC  1.00000 0.0     1   1     3         3         
+IND3-URML-PC  1.64516 0.98483 1   6     31        51        
+RES3C-S5L-PC  1.75000 1.38873 1   5     8         14        
+COM2-C2M-PC   1.00000 0.0     1   1     2         2         
+COM3-S3-PC    1.00000 0.0     1   1     5         5         
+RES3D-C2L-PC  1.00000 NaN     1   1     1         1         
+RES3F-W4-PC   2.50000 0.70711 2   3     2         5         
+COM4-S1M-PC   1.75000 0.88641 1   3     8         14        
+COM7-S1L-LC   1.00000 0.0     1   1     2         2         
+GOV1-C2L-LC   1.00000 0.0     1   1     4         4         
+COM7-S1L-PC   1.00000 0.0     1   1     7         7         
+COM2-S3-LC    1.36364 0.50452 1   2     11        15        
+COM7-C2L-LC   1.14286 0.36314 1   2     14        16        
+IND5-URML-PC  1.00000 0.0     1   1     2         2         
+RES3F-C1M-PC  1.00000 0.0     1   1     2         2         
+COM4-C2H-LC   1.66667 1.15470 1   3     3         5         
+RES6-W3-PC    1.00000 0.0     1   1     3         3         
+COM1-S4M-LC   1.00000 0.0     1   1     4         4         
+RES4-URMM-PC  1.81818 0.98165 1   4     11        20        
+COM6-C2H-PC   1.00000 0.0     1   1     2         2         
+IND5-C3L-PC   1.00000 NaN     1   1     1         1         
+COM5-W3-PC    1.50000 0.53452 1   2     8         12        
+COM4-S2H-LC   1.00000 NaN     1   1     1         1         
+COM5-S4L-PC   1.46429 0.74447 1   4     28        41        
+COM1-S2M-PC   1.00000 NaN     1   1     1         1         
+COM7-PC1-LC   1.00000 NaN     1   1     1         1         
+COM7-S5H-PC   1.00000 NaN     1   1     1         1         
+COM4-C2M-LC   1.00000 NaN     1   1     1         1         
+RES4-C2H-LC   1.00000 NaN     1   1     1         1         
+COM5-S2L-LC   1.00000 0.0     1   1     2         2         
+COM7-PC1-PC   1.00000 0.0     1   1     2         2         
+IND1-C3L-PC   1.82353 1.50977 1   7     17        31        
+GOV2-W2-LC    1.00000 0.0     1   1     5         5         
+RES3F-S4H-LC  1.00000 NaN     1   1     1         1         
+RES2-MH-LC    2.53425 2.58954 1   13    146       370       
+COM4-PC2L-LC  1.12500 0.35355 1   2     8         9         
+RES4-RM1M-LC  1.00000 0.0     1   1     18        18        
+IND1-S2L-LC   1.18182 0.40452 1   2     11        13        
+COM2-RM1L-LC  1.36170 0.64016 1   3     47        64        
+COM2-RM1M-LC  1.29412 0.57599 1   3     51        66        
+AGR1-W3-LC    1.45455 1.05089 1   7     55        80        
+COM2-RM1L-PC  1.76136 1.11411 1   5     88        155       
+COM2-RM1M-PC  1.89157 1.48990 1   7     83        157       
+RES4-C3L-PC   1.35484 0.70938 1   4     31        42        
+RES6-W4-LC    1.44444 0.52705 1   2     9         13        
+RES4-RM1L-LC  1.06897 0.37139 1   3     29        31        
+COM4-RM2L-LC  1.12500 0.35355 1   2     8         9         
+IND6-C2M-LC   1.00000 0.0     1   1     2         2         
+IND2-C3L-PC   1.25000 0.46291 1   2     8         10        
+COM7-RM2L-LC  1.14286 0.37796 1   2     7         8         
+IND1-RM2L-PC  1.00000 0.0     1   1     3         3         
+IND4-C2L-LC   1.00000 0.0     1   1     7         7         
+IND4-RM1L-PC  1.00000 0.0     1   1     14        14        
+IND6-C2L-LC   1.09524 0.30079 1   2     21        23        
+IND3-C2L-PC   1.15000 0.48936 1   3     20        23        
+RES4-C1M-LC   1.00000 0.0     1   1     4         4         
+IND3-C3L-PC   1.00000 0.0     1   1     5         5         
+IND1-S2M-PC   1.00000 0.0     1   1     3         3         
+IND6-S4M-PC   1.25000 0.44721 1   2     16        20        
+COM3-S1L-LC   1.00000 0.0     1   1     4         4         
+IND1-S2L-PC   1.32258 0.59928 1   3     31        41        
+IND1-S5M-PC   1.00000 0.0     1   1     2         2         
+GOV1-S3-PC    1.00000 NaN     1   1     1         1         
+RES3E-S4L-LC  1.00000 0.0     1   1     2         2         
+IND2-RM2L-PC  1.00000 0.0     1   1     2         2         
+REL1-C3M-PC   1.00000 NaN     1   1     1         1         
+IND6-S4M-LC   1.00000 0.0     1   1     6         6         
+COM5-W3-LC    1.33333 0.57735 1   2     3         4         
+COM1-S2L-LC   1.00000 0.0     1   1     15        15        
+COM4-S2M-LC   1.00000 0.0     1   1     5         5         
+RES4-C2L-PC   1.20000 0.44721 1   2     5         6         
+REL1-S5M-PC   1.00000 0.0     1   1     3         3         
+RES3E-S2M-PC  1.00000 NaN     1   1     1         1         
+RES4-C1M-PC   1.00000 0.0     1   1     8         8         
+GOV2-W2-PC    1.29412 0.68599 1   3     17        22        
+EDU1-C1M-LC   1.00000 NaN     1   1     1         1         
+RES3C-C3M-PC  1.00000 0.0     1   1     5         5         
+COM1-S3-LC    1.22222 0.44096 1   2     9         11        
+COM1-PC2L-LC  1.00000 0.0     1   1     4         4         
+REL1-S5L-PC   1.00000 0.0     1   1     6         6         
+REL1-PC1-PC   1.00000 0.0     1   1     8         8         
+GOV1-PC1-LC   1.00000 0.0     1   1     2         2         
+COM7-C2H-PC   1.11111 0.32338 1   2     18        20        
+RES3F-C1L-PC  1.00000 NaN     1   1     1         1         
+REL1-RM2M-PC  1.00000 NaN     1   1     1         1         
+IND3-S2L-LC   1.00000 NaN     1   1     1         1         
+IND3-C2L-LC   1.33333 0.65134 1   3     12        16        
+RES3E-C1M-PC  1.00000 NaN     1   1     1         1         
+COM7-C1L-PC   1.00000 0.0     1   1     3         3         
+RES3E-C1H-PC  1.00000 0.0     1   1     2         2         
+COM7-URMM-PC  1.35714 0.67847 1   3     28        38        
+COM6-C2L-PC   1.00000 0.0     1   1     3         3         
+RES6-W2-LC    1.00000 0.0     1   1     2         2         
+IND1-S4L-LC   1.08333 0.28868 1   2     12        13        
+IND1-S4L-PC   1.14706 0.43571 1   3     34        39        
+AGR1-URMM-PC  1.11765 0.33211 1   2     17        19        
+RES3E-C2H-PC  1.00000 0.0     1   1     2         2         
+GOV1-RM1L-LC  1.05882 0.24254 1   2     17        18        
+COM4-C2H-PC   1.60000 0.84327 1   3     10        16        
+COM6-W3-LC    1.00000 NaN     1   1     1         1         
+COM7-S1M-PC   1.50000 0.70711 1   2     2         3         
+IND3-S1L-PC   1.00000 0.0     1   1     4         4         
+REL1-RM2L-PC  1.00000 0.0     1   1     4         4         
+REL1-C2L-PC   1.00000 0.0     1   1     3         3         
+IND2-S4M-PC   1.00000 NaN     1   1     1         1         
+IND1-S1L-PC   1.00000 NaN     1   1     1         1         
+IND5-RM1L-PC  1.00000 NaN     1   1     1         1         
+COM5-S2L-PC   1.33333 0.57735 1   2     3         4         
+COM3-RM2M-PC  1.00000 0.0     1   1     4         4         
+RES3C-C2L-LC  1.00000 NaN     1   1     1         1         
+IND5-C2L-LC   1.00000 NaN     1   1     1         1         
+COM1-RM1M-PC  1.20000 0.50000 1   3     25        30        
+GOV1-RM1M-PC  1.00000 0.0     1   1     13        13        
+COM1-RM1M-LC  1.00000 0.0     1   1     7         7         
+GOV1-RM2L-PC  1.00000 0.0     1   1     2         2         
+COM2-C1L-LC   1.00000 0.0     1   1     5         5         
+IND3-C2M-PC   1.50000 0.70711 1   2     2         3         
+RES6-W2-PC    1.28571 0.48795 1   2     7         9         
+GOV2-RM1L-PC  1.00000 0.0     1   1     11        11        
+IND3-S3-PC    1.00000 0.0     1   1     2         2         
+GOV1-PC1-PC   1.00000 0.0     1   1     4         4         
+RES3E-S2H-PC  1.00000 NaN     1   1     1         1         
+IND4-W3-PC    1.00000 NaN     1   1     1         1         
+GOV2-RM1L-LC  1.00000 0.0     1   1     2         2         
+GOV2-C2L-PC   1.00000 0.0     1   1     2         2         
+COM5-MH-PC    2.00000 NaN     2   2     1         2         
+COM5-C1L-PC   1.00000 0.0     1   1     4         4         
+IND3-S2L-PC   1.00000 0.0     1   1     3         3         
+COM7-C1H-PC   1.00000 0.0     1   1     7         7         
+RES3B-RM1L-LC 1.11111 0.33333 1   2     9         10        
+EDU2-MH-PC    1.00000 NaN     1   1     1         1         
+EDU1-PC2L-PC  1.00000 NaN     1   1     1         1         
+COM7-C2H-LC   1.00000 0.0     1   1     2         2         
+RES3E-C1L-LC  1.00000 NaN     1   1     1         1         
+IND2-S1L-LC   1.50000 0.83666 1   3     6         9         
+COM4-S4M-PC   1.00000 0.0     1   1     2         2         
+IND4-URML-PC  1.00000 0.0     1   1     2         2         
+IND2-C3M-PC   1.00000 0.0     1   1     2         2         
+GOV1-RM1M-LC  1.00000 0.0     1   1     4         4         
+COM4-S2H-PC   1.00000 NaN     1   1     1         1         
+RES3C-S4L-LC  1.50000 0.70711 1   2     2         3         
+IND1-PC2L-PC  1.00000 NaN     1   1     1         1         
+IND1-C3M-PC   1.33333 0.57735 1   2     3         4         
+COM3-S2L-PC   1.00000 0.0     1   1     3         3         
+IND3-RM1L-LC  1.00000 0.0     1   1     2         2         
+IND3-RM1L-PC  1.00000 NaN     1   1     1         1         
+IND3-C2M-LC   1.00000 NaN     1   1     1         1         
+RES3E-S2L-PC  1.00000 NaN     1   1     1         1         
+IND4-S2L-PC   1.00000 NaN     1   1     1         1         
+IND4-RM2L-PC  1.00000 NaN     1   1     1         1         
+EDU1-PC1-LC   1.00000 0.0     1   1     2         2         
+RES3C-C1M-LC  2.00000 NaN     2   2     1         2         
+EDU2-C3L-PC   2.00000 NaN     2   2     1         2         
+COM7-S5M-PC   1.00000 NaN     1   1     1         1         
+COM7-C2M-PC   1.00000 NaN     1   1     1         1         
+COM2-PC2M-PC  2.00000 NaN     2   2     1         2         
+IND3-W3-PC    1.00000 0.0     1   1     2         2         
+IND2-RM2L-LC  1.00000 0.0     1   1     3         3         
+RES3F-S4M-PC  1.00000 0.0     1   1     2         2         
+EDU1-C3M-PC   1.00000 NaN     1   1     1         1         
+GOV1-S4M-PC   1.00000 NaN     1   1     1         1         
+COM5-C2L-LC   1.00000 NaN     1   1     1         1         
+COM5-C3L-PC   1.00000 NaN     1   1     1         1         
+COM5-URMM-PC  1.00000 NaN     1   1     1         1         
+RES3F-S4H-PC  1.00000 0.0     1   1     2         2         
+EDU1-S4M-LC   1.00000 NaN     1   1     1         1         
+EDU2-W3-LC    1.00000 0.0     1   1     3         3         
+IND3-PC1-LC   1.00000 NaN     1   1     1         1         
+RES3C-C1L-LC  1.00000 0.0     1   1     2         2         
+COM6-C3M-PC   1.00000 NaN     1   1     1         1         
+GOV2-C3L-PC   1.00000 0.0     1   1     2         2         
+IND2-C1L-PC   1.00000 0.0     1   1     2         2         
+REL1-RM1M-LC  1.00000 NaN     1   1     1         1         
+IND1-S5L-PC   1.00000 NaN     1   1     1         1         
+GOV1-C1L-LC   1.00000 NaN     1   1     1         1         
+RES3C-C1M-PC  1.00000 0.0     1   1     2         2         
+IND5-C2L-PC   1.00000 NaN     1   1     1         1         
+IND5-S3-PC    1.00000 NaN     1   1     1         1         
+COM5-C2M-PC   1.00000 0.0     1   1     2         2         
+IND1-RM2L-LC  1.00000 NaN     1   1     1         1         
+IND4-C2M-PC   1.00000 NaN     1   1     1         1         
+RES4-C2L-LC   1.00000 NaN     1   1     1         1         
+IND4-RM1L-LC  1.00000 0.0     1   1     2         2         
+REL1-RM1M-PC  1.00000 0.0     1   1     2         2         
+COM6-C2M-PC   1.00000 NaN     1   1     1         1         
+COM1-RM2M-PC  1.00000 NaN     1   1     1         1         
+REL1-RM2L-LC  1.00000 0.0     1   1     2         2         
+COM3-RM2M-LC  1.00000 NaN     1   1     1         1         
+IND4-C3L-PC   1.00000 0.0     1   1     2         2         
+COM4-S1M-LC   1.00000 0.0     1   1     2         2         
+IND4-C2M-LC   1.00000 NaN     1   1     1         1         
+EDU1-MH-LC    1.00000 NaN     1   1     1         1         
+IND4-S1L-PC   1.00000 NaN     1   1     1         1         
+RES3F-S4M-LC  1.00000 NaN     1   1     1         1         
+COM7-C1H-LC   1.00000 NaN     1   1     1         1         
+EDU2-S5L-PC   1.00000 NaN     1   1     1         1         
+EDU2-PC2M-PC  1.00000 NaN     1   1     1         1         
+EDU2-C2H-LC   1.00000 0.0     1   1     2         2         
+EDU2-C2L-PC   1.00000 NaN     1   1     1         1         
+AGR1-C2L-PC   1.00000 NaN     1   1     1         1         
+RES3E-C3M-PC  1.00000 NaN     1   1     1         1         
+GOV1-S2L-LC   1.00000 NaN     1   1     1         1         
+EDU2-C2H-PC   1.00000 0.0     1   1     2         2         
+GOV1-C2M-PC   1.00000 NaN     1   1     1         1         
+RES4-C2M-LC   1.00000 NaN     1   1     1         1         
+GOV1-S3-LC    1.00000 NaN     1   1     1         1         
+RES1-W1-MC    7.96296 5.91271 1   18    27        215       
+RES4-W3-MC    1.00000 0.0     1   1     8         8         
+COM4-RM1L-MC  1.12500 0.35355 1   2     8         9         
+RES3A-W1-MC   3.66667 2.95804 1   8     9         33        
+RES1-W4-MC    4.07143 2.94302 1   10    28        114       
+COM1-RM1L-MC  1.25000 0.50000 1   2     4         5         
+RES2-MH-MC    1.33333 0.51640 1   2     6         8         
+REL1-RM1L-MC  1.00000 NaN     1   1     1         1         
+RES3D-W4-MC   1.00000 0.0     1   1     3         3         
+COM3-C2L-MC   1.00000 0.0     1   1     3         3         
+GOV1-C2L-MC   1.00000 NaN     1   1     1         1         
+COM3-RM1L-MC  1.25000 0.50000 1   2     4         5         
+COM4-W3-MC    1.25000 0.50000 1   2     4         5         
+COM2-W3-MC    1.00000 0.0     1   1     2         2         
+RES3B-W1-MC   1.00000 0.0     1   1     3         3         
+RES3B-W2-MC   2.33333 1.15470 1   3     3         7         
+COM1-W3-MC    1.33333 0.57735 1   2     3         4         
+COM4-C2L-MC   1.00000 NaN     1   1     1         1         
+RES3C-RM1L-MC 2.25000 1.50000 1   4     4         9         
+RES3E-W2-MC   1.00000 0.0     1   1     2         2         
+RES3D-W2-MC   1.83333 1.60208 1   5     6         11        
+RES3F-S2H-PC  1.00000 NaN     1   1     1         1         
+RES3C-W4-MC   1.00000 0.0     1   1     3         3         
+REL1-W2-MC    1.50000 0.70711 1   2     2         3         
+COM4-C1L-MC   1.00000 NaN     1   1     1         1         
+RES3A-W4-MC   1.60000 0.89443 1   3     5         8         
+RES3C-W2-MC   1.00000 0.0     1   1     4         4         
+RES3C-S4L-MC  1.00000 NaN     1   1     1         1         
+RES3C-W1-MC   1.00000 0.0     1   1     2         2         
+IND1-RM1L-MC  1.50000 0.70711 1   2     2         3         
+COM1-S1L-MC   1.00000 NaN     1   1     1         1         
+COM4-S1L-MC   1.00000 NaN     1   1     1         1         
+COM4-S2L-MC   1.33333 0.57735 1   2     3         4         
+IND6-W3-MC    1.00000 0.0     1   1     3         3         
+GOV2-W2-MC    1.00000 NaN     1   1     1         1         
+COM2-S2L-MC   1.00000 NaN     1   1     1         1         
+COM7-W3-MC    1.00000 0.0     1   1     2         2         
+COM2-PC1-MC   1.00000 0.0     1   1     3         3         
+RES3F-C2M-PC  1.00000 NaN     1   1     1         1         
+RES3F-S2M-PC  1.00000 NaN     1   1     1         1         
+COM4-S4L-MC   1.00000 NaN     1   1     1         1         
+GOV2-URML-PC  1.00000 NaN     1   1     1         1         
+RES3D-C1M-PC  1.00000 NaN     1   1     1         1         
+COM5-S1L-PC   1.00000 NaN     1   1     1         1         
+RES3F-S5M-PC  1.00000 NaN     1   1     1         1         
+RES4-RM1L-MC  1.00000 NaN     1   1     1         1         
+RES3F-W2-MC   1.00000 NaN     1   1     1         1         
+COM3-W3-MC    1.00000 0.0     1   1     3         3         
+COM2-C2L-MC   1.50000 0.70711 1   2     2         3         
+COM1-RM2L-MC  1.00000 0.0     1   1     2         2         
+AGR1-W3-MC    1.00000 NaN     1   1     1         1         
+IND6-S1L-MC   1.00000 NaN     1   1     1         1         
+COM1-S3-MC    1.00000 NaN     1   1     1         1         
+COM2-S1L-MC   1.00000 0.0     1   1     2         2         
+COM1-C2L-MC   1.00000 0.0     1   1     2         2         
+COM2-RM1L-MC  1.00000 NaN     1   1     1         1         
+IND3-S1L-LC   1.00000 NaN     1   1     1         1         
+EDU1-C1L-MC   1.00000 NaN     1   1     1         1         
+COM3-S4L-MC   1.00000 NaN     1   1     1         1         
+IND3-C2L-MC   1.00000 NaN     1   1     1         1         
+IND2-PC1-MC   2.00000 NaN     2   2     1         2         
+COM4-S2M-MC   1.00000 NaN     1   1     1         1         
+IND6-C2L-MC   2.00000 NaN     2   2     1         2         
+REL1-PC1-MC   1.00000 NaN     1   1     1         1         
+COM7-S4L-MC   1.00000 NaN     1   1     1         1         
+COM1-S4L-MC   1.00000 NaN     1   1     1         1         
+COM2-RM1M-MC  1.00000 NaN     1   1     1         1         
+*ALL*         30      141     0   3_419 2_974     91_544    
+============= ======= ======= === ===== ========= ==========
+
+Slowest sources
+---------------
+========== ==== ============ ========= ========= ============
+source_id  code multiplicity calc_time num_sites eff_ruptures
+========== ==== ============ ========= ========= ============
+OBGH       A    1            457_683   1_664     299_936     
+OBG2       A    1            437_530   1_573     305_536     
+IRB2       A    1            350_184   1_397     265_523     
+SGL2       A    1            142_291   1_603     98_224      
+SCCEHYBR-W A    1            131_561   546       155_210     
+SCCECR-W   A    1            124_285   498       150_512     
+SCCEHYBH-W A    1            121_565   549       155_288     
+SEB        A    1            118_951   738       123_600     
+SCCECH-W   A    1            116_660   545       155_148     
+IRM2       A    1            82_163    1_140     69_130      
+SVH        A    1            81_155    830       76_416      
+SEBN       A    1            75_319    924       70_423      
+NAN        A    1            62_197    300       84_325      
+IRME       A    1            61_855    1_417     45_741      
+NAI2       A    1            48_118    342       62_888      
+NANHY      A    1            44_018    297       59_922      
+SGL        A    1            41_671    1_599     28_384      
+CMF2       A    1            40_774    243       56_911      
+CHV        A    1            40_059    281       55_296      
+ADRS       A    1            37_233    1_074     32_816      
+========== ==== ============ ========= ========= ============
+
+Computation times by source typology
+------------------------------------
+==== =========
+code calc_time
+==== =========
+A    3_240_900
+C    0.0      
+S    0.0      
+==== =========
+
+Information about the tasks
+---------------------------
+================== ======= ======= ======= === =======
+operation-duration mean    stddev  min     max outputs
+classical_damage   6.71753 2.64340 2.87130 14  149    
+================== ======= ======= ======= === =======
+
+Data transfer
+-------------
+================ =================================== ========
+task             sent                                received
+classical_damage riskinputs=21.23 MB param=288.83 KB 92.42 MB
+================ =================================== ========
+
+Slowest operations
+------------------
+============================= ======== ========= ======
+calc_1348                     time_sec memory_mb counts
+============================= ======== ========= ======
+total classical_damage        1_001    140       472   
+computing risk                820      0.0       472   
+ClassicalDamageCalculator.run 47       669       1     
+getting hazard                18       0.0       472   
+importing inputs              18       496       1     
+reading exposure              14       355       1     
+building riskinputs           0.50777  17        1     
+============================= ======== ========= ======
