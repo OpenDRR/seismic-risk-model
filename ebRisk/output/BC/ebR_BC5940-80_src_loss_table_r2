@@ -1,0 +1,208 @@
+#,,,"generated_by='OpenQuake engine 3.11.0-git2a40780', start_date='2020-10-12T17:06:05', checksum=1948253112, investigation_time=1.0, risk_investigation_time=1.0"
+source,loss_type,loss_value,trt
+AKC,contents,5.28741E+08,Subduction Interface
+AKC,nonstructural,1.74845E+09,Subduction Interface
+AKC,structural,1.56537E+09,Subduction Interface
+BRO,contents,1.08077E+05,Active Shallow Crust
+BRO,nonstructural,4.57896E+05,Active Shallow Crust
+BRO,structural,3.28407E+07,Active Shallow Crust
+CAS,contents,1.37307E+07,Active Shallow Crust
+CAS,nonstructural,3.26509E+07,Active Shallow Crust
+CAS,structural,5.95939E+08,Active Shallow Crust
+CDT_B0,contents,8.90025E-03,Active Shallow Crust
+CDT_B0,nonstructural,1.20435E+01,Active Shallow Crust
+CDT_B0,structural,1.68607E+02,Active Shallow Crust
+CDT_B8,contents,1.37472E-02,Active Shallow Crust
+CDT_B8,nonstructural,1.00012E+01,Active Shallow Crust
+CDT_B8,structural,2.56647E+02,Active Shallow Crust
+CISB-27,contents,1.20346E+07,Subduction Interface
+CISB-27,nonstructural,2.78026E+07,Subduction Interface
+CISB-27,structural,3.36875E+08,Subduction Interface
+CISI-31,contents,6.80864E+06,Subduction Interface
+CISI-31,nonstructural,1.61613E+07,Subduction Interface
+CISI-31,structural,1.81782E+08,Subduction Interface
+CISO-23,contents,4.65096E+06,Subduction Interface
+CISO-23,nonstructural,1.01881E+07,Subduction Interface
+CISO-23,structural,1.50273E+08,Subduction Interface
+CSF_B0,contents,6.48611E+05,Active Shallow Crust
+CSF_B0,nonstructural,1.78360E+06,Active Shallow Crust
+CSF_B0,structural,1.24412E+07,Active Shallow Crust
+CSF_B8,contents,6.72960E+05,Active Shallow Crust
+CSF_B8,nonstructural,1.63996E+06,Active Shallow Crust
+CSF_B8,structural,1.92057E+07,Active Shallow Crust
+CST,contents,1.69500E+08,Active Shallow Crust
+CST,nonstructural,5.92660E+08,Active Shallow Crust
+CST,structural,1.41169E+09,Active Shallow Crust
+DMFF,contents,5.19883E+04,Active Shallow Crust
+DMFF,nonstructural,1.35327E+05,Active Shallow Crust
+DMFF,structural,2.77624E+06,Active Shallow Crust
+DMFM,contents,1.15427E+04,Active Shallow Crust
+DMFM,nonstructural,2.42052E+04,Active Shallow Crust
+DMFM,structural,2.39101E+06,Active Shallow Crust
+DMFS,contents,3.80489E+03,Active Shallow Crust
+DMFS,nonstructural,9.35758E+03,Active Shallow Crust
+DMFS,structural,1.17359E+06,Active Shallow Crust
+DRF_B0,contents,2.69065E+04,Active Shallow Crust
+DRF_B0,nonstructural,4.04584E+04,Active Shallow Crust
+DRF_B0,structural,2.08223E+06,Active Shallow Crust
+DRF_B8,contents,3.41962E+04,Active Shallow Crust
+DRF_B8,nonstructural,4.22290E+04,Active Shallow Crust
+DRF_B8,structural,3.29718E+06,Active Shallow Crust
+DSR,contents,1.87422E+07,Active Shallow Crust
+DSR,nonstructural,5.04301E+07,Active Shallow Crust
+DSR,structural,1.98443E+08,Active Shallow Crust
+EDF_B0,contents,3.29433E+05,Active Shallow Crust
+EDF_B0,nonstructural,1.41436E+06,Active Shallow Crust
+EDF_B0,structural,3.96750E+06,Active Shallow Crust
+EDF_B8,contents,3.87523E+05,Active Shallow Crust
+EDF_B8,nonstructural,1.74136E+06,Active Shallow Crust
+EDF_B8,structural,6.84947E+06,Active Shallow Crust
+EISB,contents,2.87040E+06,Subduction Interface
+EISB,nonstructural,4.70827E+06,Subduction Interface
+EISB,structural,1.79975E+08,Subduction Interface
+EISI,contents,1.31857E+06,Subduction Interface
+EISI,nonstructural,2.68737E+06,Subduction Interface
+EISI,structural,4.81480E+07,Subduction Interface
+EISO,contents,4.50432E+05,Subduction Interface
+EISO,nonstructural,7.12612E+05,Subduction Interface
+EISO,structural,6.02016E+07,Subduction Interface
+EXP,contents,6.78015E+05,Active Shallow Crust
+EXP,nonstructural,1.06258E+06,Active Shallow Crust
+EXP,structural,2.86503E+08,Active Shallow Crust
+FHL,contents,3.54184E+07,Active Shallow Crust
+FHL,nonstructural,7.04558E+07,Active Shallow Crust
+FHL,structural,1.88304E+09,Active Shallow Crust
+FTH,contents,3.25910E+08,Stable Shallow Crust
+FTH,nonstructural,9.81760E+08,Stable Shallow Crust
+FTH,structural,2.57114E+09,Stable Shallow Crust
+FWFA,contents,5.41971E+05,Active Shallow Crust
+FWFA,nonstructural,6.29561E+05,Active Shallow Crust
+FWFA,structural,1.41306E+08,Active Shallow Crust
+FWF_B0,contents,3.40241E+06,Active Shallow Crust
+FWF_B0,nonstructural,1.08387E+07,Active Shallow Crust
+FWF_B0,structural,7.36492E+07,Active Shallow Crust
+FWF_B8,contents,3.88906E+06,Active Shallow Crust
+FWF_B8,nonstructural,1.03103E+07,Active Shallow Crust
+FWF_B8,structural,1.43804E+08,Active Shallow Crust
+GCB,contents,1.06869E+06,Active Shallow Crust
+GCB,nonstructural,2.88167E+06,Active Shallow Crust
+GCB,structural,8.24784E+07,Active Shallow Crust
+GOA,contents,7.71634E+01,Active Shallow Crust
+GOA,nonstructural,3.41241E+02,Active Shallow Crust
+GOA,structural,7.38882E+03,Active Shallow Crust
+GTPC,contents,2.03603E+06,Subduction IntraSlab55
+GTPC,nonstructural,3.45191E+06,Subduction IntraSlab55
+GTPC,structural,3.00672E+08,Subduction IntraSlab55
+GTPE,contents,1.29344E+06,Subduction IntraSlab55
+GTPE,nonstructural,2.28073E+06,Subduction IntraSlab55
+GTPE,structural,1.44676E+08,Subduction IntraSlab55
+GTPW,contents,7.21057E+05,Subduction IntraSlab55
+GTPW,nonstructural,1.32537E+06,Subduction IntraSlab55
+GTPW,structural,1.43007E+08,Subduction IntraSlab55
+HEC,contents,3.42350E+08,Active Shallow Crust
+HEC,nonstructural,1.04402E+09,Active Shallow Crust
+HEC,structural,2.10390E+09,Active Shallow Crust
+HGT_B0,contents,2.30693E+09,Subduction Interface
+HGT_B0,nonstructural,6.04883E+09,Subduction Interface
+HGT_B0,structural,6.48139E+09,Subduction Interface
+HGT_B8,contents,2.75843E+09,Subduction Interface
+HGT_B8,nonstructural,7.29826E+09,Subduction Interface
+HGT_B8,structural,8.24396E+09,Subduction Interface
+JDFF,contents,4.66572E+02,Active Shallow Crust
+JDFF,nonstructural,1.53230E+03,Active Shallow Crust
+JDFF,structural,7.31871E+05,Active Shallow Crust
+JDFN,contents,7.26895E+03,Subduction IntraSlab30
+JDFN,nonstructural,1.49303E+04,Subduction IntraSlab30
+JDFN,structural,5.39000E+06,Subduction IntraSlab30
+LDFC,contents,2.99153E+03,Active Shallow Crust
+LDFC,nonstructural,6.92277E+03,Active Shallow Crust
+LDFC,structural,7.52528E+05,Active Shallow Crust
+LRFF,contents,1.74637E+03,Active Shallow Crust
+LRFF,nonstructural,4.28286E+03,Active Shallow Crust
+LRFF,structural,3.34870E+05,Active Shallow Crust
+LRFM,contents,6.72076E+02,Active Shallow Crust
+LRFM,nonstructural,1.69487E+03,Active Shallow Crust
+LRFM,structural,4.20521E+05,Active Shallow Crust
+LRFS,contents,1.65138E+03,Active Shallow Crust
+LRFS,nonstructural,2.76003E+03,Active Shallow Crust
+LRFS,structural,6.64105E+05,Active Shallow Crust
+MKM,contents,4.33345E+06,Active Shallow Crust
+MKM,nonstructural,1.87025E+07,Active Shallow Crust
+MKM,structural,1.75422E+08,Active Shallow Crust
+NBC,contents,5.86419E+08,Active Shallow Crust
+NBC,nonstructural,2.01387E+09,Active Shallow Crust
+NBC,structural,3.19792E+09,Active Shallow Crust
+NOFR,contents,4.21377E+04,Active Shallow Crust
+NOFR,nonstructural,1.54448E+05,Active Shallow Crust
+NOFR,structural,3.68711E+07,Active Shallow Crust
+OFS,contents,9.13792E+04,Active Shallow Crust
+OFS,nonstructural,1.29109E+05,Active Shallow Crust
+OFS,structural,2.11226E+08,Active Shallow Crust
+OLM,contents,4.77220E+03,Active Shallow Crust
+OLM,nonstructural,1.78250E+04,Active Shallow Crust
+OLM,structural,1.89241E+06,Active Shallow Crust
+PGT,contents,1.83117E+06,Active Shallow Crust
+PGT,nonstructural,4.39189E+06,Active Shallow Crust
+PGT,structural,4.12008E+08,Active Shallow Crust
+QCFA,contents,4.63317E+08,Active Shallow Crust
+QCFA,nonstructural,1.15621E+09,Active Shallow Crust
+QCFA,structural,1.00809E+10,Active Shallow Crust
+QCSS_B0,contents,4.26534E+08,Active Shallow Crust
+QCSS_B0,nonstructural,1.27874E+09,Active Shallow Crust
+QCSS_B0,structural,2.10267E+09,Active Shallow Crust
+QCSS_B8,contents,5.75110E+08,Active Shallow Crust
+QCSS_B8,nonstructural,1.72378E+09,Active Shallow Crust
+QCSS_B8,structural,3.85446E+09,Active Shallow Crust
+ROCN,contents,2.70752E+08,Active Shallow Crust
+ROCN,nonstructural,8.68790E+08,Active Shallow Crust
+ROCN,structural,2.26336E+09,Active Shallow Crust
+ROCS,contents,3.44775E+08,Active Shallow Crust
+ROCS,nonstructural,1.17932E+09,Active Shallow Crust
+ROCS,structural,3.30551E+09,Active Shallow Crust
+SBC,contents,5.24091E+08,Active Shallow Crust
+SBC,nonstructural,1.89169E+09,Active Shallow Crust
+SBC,structural,3.94808E+09,Active Shallow Crust
+SCCECH-W,contents,3.18602E+04,Stable Shallow Crust
+SCCECH-W,nonstructural,4.62406E+04,Stable Shallow Crust
+SCCECH-W,structural,5.77352E+06,Stable Shallow Crust
+SCCECR-W,contents,4.96830E+04,Stable Shallow Crust
+SCCECR-W,nonstructural,7.31044E+04,Stable Shallow Crust
+SCCECR-W,structural,8.05212E+06,Stable Shallow Crust
+SCCEHYBH-W,contents,1.42340E+05,Stable Shallow Crust
+SCCEHYBH-W,nonstructural,2.21366E+05,Stable Shallow Crust
+SCCEHYBH-W,structural,1.03681E+07,Stable Shallow Crust
+SCCEHYBR-W,contents,1.47400E+05,Stable Shallow Crust
+SCCEHYBR-W,nonstructural,2.62554E+05,Stable Shallow Crust
+SCCEHYBR-W,structural,1.06361E+07,Stable Shallow Crust
+SCCWCH,contents,4.07857E+06,Stable Shallow Crust
+SCCWCH,nonstructural,6.94146E+06,Stable Shallow Crust
+SCCWCH,structural,1.54265E+08,Stable Shallow Crust
+VICM,contents,7.07894E+06,Active Shallow Crust
+VICM,nonstructural,1.65222E+07,Active Shallow Crust
+VICM,structural,4.78742E+08,Active Shallow Crust
+WCD_B0,contents,4.00783E-03,Active Shallow Crust
+WCD_B0,nonstructural,7.45553E+00,Active Shallow Crust
+WCD_B0,structural,4.12017E+01,Active Shallow Crust
+WCD_B8,nonstructural,1.52451E+00,Active Shallow Crust
+WCD_B8,structural,2.19729E+01,Active Shallow Crust
+WIN_B0,contents,1.49347E+06,Subduction Interface
+WIN_B0,nonstructural,2.34470E+06,Subduction Interface
+WIN_B0,structural,1.56377E+08,Subduction Interface
+WIN_B8,contents,1.29739E+06,Subduction Interface
+WIN_B8,nonstructural,2.05733E+06,Subduction Interface
+WIN_B8,structural,1.44579E+08,Subduction Interface
+WLB,contents,6.62558E+02,Stable Shallow Crust
+WLB,nonstructural,8.65314E+02,Stable Shallow Crust
+WLB,structural,5.55915E+04,Stable Shallow Crust
+WMR,contents,1.28190E-02,Active Shallow Crust
+WMR,nonstructural,1.00226E+01,Active Shallow Crust
+WMR,structural,2.35011E+02,Active Shallow Crust
+WSE,contents,1.04970E+04,Active Shallow Crust
+WSE,nonstructural,9.21186E+03,Active Shallow Crust
+WSE,structural,1.37447E+07,Active Shallow Crust
+YAK,contents,2.80391E+05,Active Shallow Crust
+YAK,nonstructural,6.05073E+05,Active Shallow Crust
+YAK,structural,2.64955E+07,Active Shallow Crust
+YUS,contents,1.27486E+07,Active Shallow Crust
+YUS,nonstructural,3.52115E+07,Active Shallow Crust
+YUS,structural,8.76910E+07,Active Shallow Crust
