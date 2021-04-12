@@ -1,0 +1,226 @@
+[2021-04-12 21:40:02 #333 INFO] root running /root/storage/canada-srm2/cDamage/input/cDamage_r1_BC5920B.ini [--hc=327]
+[2021-04-12 21:40:02 #333 INFO] Using engine version 3.11.0-git213801bb4d
+[2021-04-12 21:40:02 #333 WARNING] An error occurred while calling https://api.openquake.org/engine/latest to check if the installed version of the engine is up to date.
+{"message":"API rate limit exceeded for 195.201.39.154. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+[2021-04-12 21:40:02 #333 WARNING] Using 96 cores on ip-10-70-136-95
+[2021-04-12 21:40:02 #333 INFO] Checksum of the input files: 1508585000
+[2021-04-12 21:40:02 #333 INFO] Reading the risk model if present
+[2021-04-12 21:40:05 #333 INFO] Reading /root/storage/openquake-inputs/exposure/general-building-stock/oqBldgExp_BC5920B.xml
+[2021-04-12 21:40:08 #333 INFO] Associated 22209 assets to 1932 sites
+[2021-04-12 21:40:10 #333 INFO] Reducing risk model from 4224 to 398 taxonomies
+[2021-04-12 21:40:10 #333 INFO] Storing risk model
+[2021-04-12 21:40:11 #333 INFO] Building risk inputs from 50 realization(s)
+[2021-04-12 21:40:11 #333 INFO] Built 1932 risk inputs
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+[2021-04-12 21:40:13 #333 INFO] Sent 220 tasks, 9.97 MB in 0 seconds
+[2021-04-12 21:40:18 #333 INFO] classical_damage   1% [220 submitted, 0 queued]
+[2021-04-12 21:40:19 #333 INFO] classical_damage   2% [220 submitted, 0 queued]
+[2021-04-12 21:40:19 #333 INFO] classical_damage   3% [220 submitted, 0 queued]
+[2021-04-12 21:40:19 #333 INFO] classical_damage   4% [220 submitted, 0 queued]
+[2021-04-12 21:40:19 #333 INFO] classical_damage   5% [220 submitted, 0 queued]
+[2021-04-12 21:40:20 #333 INFO] classical_damage   6% [220 submitted, 0 queued]
+[2021-04-12 21:40:20 #333 INFO] classical_damage   7% [220 submitted, 0 queued]
+[2021-04-12 21:40:20 #333 INFO] classical_damage   8% [220 submitted, 0 queued]
+[2021-04-12 21:40:20 #333 INFO] classical_damage   9% [220 submitted, 0 queued]
+[2021-04-12 21:40:20 #333 INFO] classical_damage  10% [220 submitted, 0 queued]
+[2021-04-12 21:40:20 #333 INFO] classical_damage  11% [220 submitted, 0 queued]
+[2021-04-12 21:40:20 #333 INFO] classical_damage  12% [220 submitted, 0 queued]
+[2021-04-12 21:40:20 #333 INFO] classical_damage  13% [220 submitted, 0 queued]
+[2021-04-12 21:40:20 #333 INFO] classical_damage  14% [220 submitted, 0 queued]
+[2021-04-12 21:40:20 #333 INFO] classical_damage  15% [220 submitted, 0 queued]
+[2021-04-12 21:40:20 #333 INFO] classical_damage  16% [220 submitted, 0 queued]
+[2021-04-12 21:40:20 #333 INFO] classical_damage  17% [220 submitted, 0 queued]
+[2021-04-12 21:40:23 #333 INFO] classical_damage  18% [220 submitted, 0 queued]
+[2021-04-12 21:40:23 #333 INFO] classical_damage  19% [220 submitted, 0 queued]
+[2021-04-12 21:40:23 #333 INFO] classical_damage  20% [220 submitted, 0 queued]
+[2021-04-12 21:40:23 #333 INFO] classical_damage  21% [220 submitted, 0 queued]
+[2021-04-12 21:40:23 #333 INFO] classical_damage  22% [220 submitted, 0 queued]
+[2021-04-12 21:40:23 #333 INFO] classical_damage  23% [220 submitted, 0 queued]
+[2021-04-12 21:40:23 #333 INFO] classical_damage  24% [220 submitted, 0 queued]
+[2021-04-12 21:40:23 #333 INFO] classical_damage  25% [220 submitted, 0 queued]
+[2021-04-12 21:40:24 #333 INFO] classical_damage  26% [220 submitted, 0 queued]
+[2021-04-12 21:40:24 #333 INFO] classical_damage  27% [220 submitted, 0 queued]
+[2021-04-12 21:40:24 #333 INFO] classical_damage  28% [220 submitted, 0 queued]
+[2021-04-12 21:40:24 #333 INFO] classical_damage  29% [220 submitted, 0 queued]
+[2021-04-12 21:40:24 #333 INFO] classical_damage  30% [220 submitted, 0 queued]
+[2021-04-12 21:40:24 #333 INFO] classical_damage  31% [220 submitted, 0 queued]
+[2021-04-12 21:40:24 #333 INFO] classical_damage  32% [220 submitted, 0 queued]
+[2021-04-12 21:40:24 #333 INFO] classical_damage  33% [220 submitted, 0 queued]
+[2021-04-12 21:40:24 #333 INFO] classical_damage  34% [220 submitted, 0 queued]
+[2021-04-12 21:40:24 #333 INFO] classical_damage  35% [220 submitted, 0 queued]
+[2021-04-12 21:40:24 #333 INFO] classical_damage  36% [220 submitted, 0 queued]
+[2021-04-12 21:40:25 #333 INFO] classical_damage  37% [220 submitted, 0 queued]
+[2021-04-12 21:40:25 #333 INFO] classical_damage  38% [220 submitted, 0 queued]
+[2021-04-12 21:40:25 #333 INFO] classical_damage  39% [220 submitted, 0 queued]
+[2021-04-12 21:40:25 #333 INFO] classical_damage  40% [220 submitted, 0 queued]
+[2021-04-12 21:40:25 #333 INFO] classical_damage  41% [220 submitted, 0 queued]
+[2021-04-12 21:40:25 #333 INFO] classical_damage  42% [220 submitted, 0 queued]
+[2021-04-12 21:40:25 #333 INFO] classical_damage  43% [220 submitted, 0 queued]
+[2021-04-12 21:40:26 #333 INFO] classical_damage  44% [220 submitted, 0 queued]
+[2021-04-12 21:40:27 #333 INFO] classical_damage  45% [220 submitted, 0 queued]
+[2021-04-12 21:40:27 #333 INFO] classical_damage  46% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  47% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  48% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  49% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  50% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  51% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  52% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  53% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  54% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  55% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  56% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  57% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  58% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  59% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  60% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  61% [220 submitted, 0 queued]
+[2021-04-12 21:40:28 #333 INFO] classical_damage  62% [220 submitted, 0 queued]
+[2021-04-12 21:40:29 #333 INFO] classical_damage  63% [220 submitted, 0 queued]
+[2021-04-12 21:40:29 #333 INFO] classical_damage  64% [220 submitted, 0 queued]
+[2021-04-12 21:40:29 #333 INFO] classical_damage  65% [220 submitted, 0 queued]
+[2021-04-12 21:40:29 #333 INFO] classical_damage  66% [220 submitted, 0 queued]
+[2021-04-12 21:40:29 #333 INFO] classical_damage  67% [220 submitted, 0 queued]
+[2021-04-12 21:40:29 #333 INFO] classical_damage  68% [220 submitted, 0 queued]
+[2021-04-12 21:40:29 #333 INFO] classical_damage  69% [220 submitted, 0 queued]
+[2021-04-12 21:40:29 #333 INFO] classical_damage  70% [220 submitted, 0 queued]
+[2021-04-12 21:40:29 #333 INFO] classical_damage  71% [220 submitted, 0 queued]
+[2021-04-12 21:40:30 #333 INFO] classical_damage  72% [220 submitted, 0 queued]
+[2021-04-12 21:40:30 #333 INFO] classical_damage  73% [220 submitted, 0 queued]
+[2021-04-12 21:40:30 #333 INFO] classical_damage  74% [220 submitted, 0 queued]
+[2021-04-12 21:40:30 #333 INFO] classical_damage  75% [220 submitted, 0 queued]
+[2021-04-12 21:40:30 #333 INFO] classical_damage  76% [220 submitted, 0 queued]
+[2021-04-12 21:40:30 #333 INFO] classical_damage  77% [220 submitted, 0 queued]
+[2021-04-12 21:40:30 #333 INFO] classical_damage  78% [220 submitted, 0 queued]
+[2021-04-12 21:40:31 #333 INFO] classical_damage  79% [220 submitted, 0 queued]
+[2021-04-12 21:40:31 #333 INFO] classical_damage  80% [220 submitted, 0 queued]
+[2021-04-12 21:40:31 #333 INFO] classical_damage  81% [220 submitted, 0 queued]
+[2021-04-12 21:40:31 #333 INFO] classical_damage  82% [220 submitted, 0 queued]
+[2021-04-12 21:40:31 #333 INFO] classical_damage  83% [220 submitted, 0 queued]
+[2021-04-12 21:40:31 #333 INFO] classical_damage  84% [220 submitted, 0 queued]
+[2021-04-12 21:40:32 #333 INFO] classical_damage  85% [220 submitted, 0 queued]
+[2021-04-12 21:40:32 #333 INFO] classical_damage  86% [220 submitted, 0 queued]
+[2021-04-12 21:40:32 #333 INFO] classical_damage  87% [220 submitted, 0 queued]
+[2021-04-12 21:40:32 #333 INFO] classical_damage  88% [220 submitted, 0 queued]
+[2021-04-12 21:40:33 #333 INFO] classical_damage  89% [220 submitted, 0 queued]
+[2021-04-12 21:40:33 #333 INFO] classical_damage  90% [220 submitted, 0 queued]
+[2021-04-12 21:40:34 #333 INFO] classical_damage  91% [220 submitted, 0 queued]
+[2021-04-12 21:40:34 #333 INFO] classical_damage  92% [220 submitted, 0 queued]
+[2021-04-12 21:40:34 #333 INFO] classical_damage  93% [220 submitted, 0 queued]
+[2021-04-12 21:40:34 #333 INFO] classical_damage  94% [220 submitted, 0 queued]
+[2021-04-12 21:40:35 #333 INFO] classical_damage  95% [220 submitted, 0 queued]
+[2021-04-12 21:40:35 #333 INFO] classical_damage  96% [220 submitted, 0 queued]
+[2021-04-12 21:40:36 #333 INFO] classical_damage  97% [220 submitted, 0 queued]
+[2021-04-12 21:40:36 #333 INFO] classical_damage  98% [220 submitted, 0 queued]
+[2021-04-12 21:40:37 #333 INFO] classical_damage  99% [220 submitted, 0 queued]
+[2021-04-12 21:40:38 #333 INFO] classical_damage 100% [220 submitted, 0 queued]
+[2021-04-12 21:40:38 #333 INFO] Received {'tot': '24.48 MB'} in 24 seconds
+[2021-04-12 21:40:38 #333 INFO] 
+========== ========= ====== ======== ========= ========
+loss_type  no_damage slight moderate extensive complete
+========== ========= ====== ======== ========= ========
+structural 96_049    5_306  653      224       258     
+========== ========= ====== ======== ========= ========
+[2021-04-12 21:40:38 #333 INFO] Exposing the outputs to the database
+[2021-04-12 21:40:38 #333 INFO] Stored 33.97 MB on /root/oqdata/calc_333.hdf5 in 35 seconds
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+  id | name
+1430 | Asset Damage Distributions
+1431 | Asset Damage Statistics
+1432 | Full Report
+1433 | Realizations

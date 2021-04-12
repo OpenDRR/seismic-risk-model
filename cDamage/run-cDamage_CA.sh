@@ -105,35 +105,35 @@
 # BC5920A
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cDamage_b0_BC5920A.ini --hc 1470&> output/BC/BC5920A.log;
-oq export fullreport -1 -e rst -d output/BC/
-mv output/BC/report_*.rst output/BC/
-oq export realizations -1 -e csv -d output/BC/
-mv output/BC/realizations*.csv output/BC/cD_BC5920A_rlz.csv
-oq export damages-stats -e csv -d output/BC
-mv output/BC/damages-mean_*.csv output/BC/cD_BC5920A_dmg-mean_b0.csv;
+#oq engine --run input/cDamage_b0_BC5920A.ini --hc 327 &> output/BC/BC5920A.log;
+#oq export fullreport -1 -e rst -d output/BC/
+#mv output/BC/report_*.rst output/BC/
+#oq export realizations -1 -e csv -d output/BC/
+#mv output/BC/realizations*.csv output/BC/cD_BC5920A_rlz.csv
+#oq export damages-stats -e csv -d output/BC
+#mv output/BC/damages-mean_*.csv output/BC/cD_BC5920A_dmg-mean_b0.csv;
  # Retrofit Conditions
-oq engine --run input/cDamage_r2_BC5920A.ini --hc 1470&> output/BC/BC5920A.log;
+oq engine --run input/cDamage_r1_BC5920A.ini --hc 327 &> output/BC/BC5920A.log;
 oq export fullreport -1 -e rst -d output/BC/
 oq export damages-stats -e csv -d output/BC
-mv output/BC/damages-mean_*.csv output/BC/cD_BC5920A_dmg-mean_r2.csv;
+mv output/BC/damages-mean_*.csv output/BC/cD_BC5920A_dmg-mean_r1.csv;
 #
 # =================================================================
 # BC5920B
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cDamage_b0_BC5920B.ini --hc 1470&> output/BC/BC5920B.log;
-oq export fullreport -1 -e rst -d output/BC/
-mv output/BC/report_*.rst output/BC/
-oq export realizations -1 -e csv -d output/BC/
-mv output/BC/realizations*.csv output/BC/cD_BC5920B_rlz.csv
-oq export damages-stats -e csv -d output/BC
-mv output/BC/damages-mean_*.csv output/BC/cD_BC5920B_dmg-mean_b0.csv;
+#oq engine --run input/cDamage_b0_BC5920B.ini --hc 327 &> output/BC/BC5920B.log;
+#oq export fullreport -1 -e rst -d output/BC/
+#mv output/BC/report_*.rst output/BC/
+#oq export realizations -1 -e csv -d output/BC/
+#mv output/BC/realizations*.csv output/BC/cD_BC5920B_rlz.csv
+#oq export damages-stats -e csv -d output/BC
+#mv output/BC/damages-mean_*.csv output/BC/cD_BC5920B_dmg-mean_b0.csv;
  # Retrofit Conditions
-oq engine --run input/cDamage_r2_BC5920B.ini --hc 1470&> output/BC/BC5920B.log;
+oq engine --run input/cDamage_r1_BC5920B.ini --hc 327 &> output/BC/BC5920B.log;
 oq export fullreport -1 -e rst -d output/BC/
 oq export damages-stats -e csv -d output/BC
-mv output/BC/damages-mean_*.csv output/BC/cD_BC5920B_dmg-mean_r2.csv;
+mv output/BC/damages-mean_*.csv output/BC/cD_BC5920B_dmg-mean_r1.csv;
 #
 # =================================================================
 # BC5930
