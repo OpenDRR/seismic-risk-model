@@ -1,0 +1,252 @@
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 120.61 KB in ['output/BC/report_338.rst']
+<Monitor export[root], duration=1.585118293762207s, memory=29.26 MB>
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 1.29 KB in ['output/BC/realizations_338.csv']
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Traceback (most recent call last):
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/datastore.py", line 551, in __getitem__
+    val = self.hdf5[key]
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/hdf5.py", line 360, in __getitem__
+    h5obj = super().__getitem__(path)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/root/storage/openquake/oqenv/lib/python3.6/site-packages/h5py/_hl/group.py", line 264, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5o.pyx", line 190, in h5py.h5o.open
+KeyError: "Unable to open object (object 'avg_losses-rlzs' doesn't exist)"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/storage/openquake/oqenv/bin/oq", line 11, in <module>
+    load_entry_point('openquake.engine', 'console_scripts', 'oq')()
+  File "/root/storage/openquake/src/oq-engine/openquake/commands/__main__.py", line 54, in oq
+    parser.callfunc()
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/sap.py", line 181, in callfunc
+    return self.func(**vars(namespace))
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/sap.py", line 251, in main
+    return func(**kw)
+  File "/root/storage/openquake/src/oq-engine/openquake/commands/export.py", line 39, in export
+    fnames = export_((datastore_key, fmt), dstore)
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/general.py", line 576, in __call__
+    return self[key](obj, *args, **kw)
+  File "/root/storage/openquake/src/oq-engine/openquake/calculators/export/risk.py", line 139, in export_avg_losses
+    name, value, tags = _get_data(dstore, dskey, oq.hazard_stats())
+  File "/root/storage/openquake/src/oq-engine/openquake/calculators/export/risk.py", line 121, in _get_data
+    dstore[name + '-rlzs'][()], statfuncs, weights)
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/datastore.py", line 561, in __getitem__
+    raise KeyError('No %r found in %s' % (key, self))
+KeyError: "No 'avg_losses-rlzs' found in <DataStore /root/oqdata/calc_338.hdf5 open>"
+mv: cannot stat 'output/BC/avg_losses-mean*.csv': No such file or directory
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Traceback (most recent call last):
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/datastore.py", line 551, in __getitem__
+    val = self.hdf5[key]
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/hdf5.py", line 360, in __getitem__
+    h5obj = super().__getitem__(path)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/root/storage/openquake/oqenv/lib/python3.6/site-packages/h5py/_hl/group.py", line 264, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5o.pyx", line 190, in h5py.h5o.open
+KeyError: "Unable to open object (object 'agg_curves-stats' doesn't exist)"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/storage/openquake/oqenv/bin/oq", line 11, in <module>
+    load_entry_point('openquake.engine', 'console_scripts', 'oq')()
+  File "/root/storage/openquake/src/oq-engine/openquake/commands/__main__.py", line 54, in oq
+    parser.callfunc()
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/sap.py", line 181, in callfunc
+    return self.func(**vars(namespace))
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/sap.py", line 251, in main
+    return func(**kw)
+  File "/root/storage/openquake/src/oq-engine/openquake/commands/export.py", line 39, in export
+    fnames = export_((datastore_key, fmt), dstore)
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/general.py", line 576, in __call__
+    return self[key](obj, *args, **kw)
+  File "/root/storage/openquake/src/oq-engine/openquake/calculators/export/risk.py", line 101, in export_agg_curve_rlzs
+    aw = hdf5.ArrayWrapper.from_(dstore[ekey[0]], 'loss_value')
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/datastore.py", line 561, in __getitem__
+    raise KeyError('No %r found in %s' % (key, self))
+KeyError: "No 'agg_curves-stats' found in <DataStore /root/oqdata/calc_338.hdf5 open>"
+mv: cannot stat 'output/BC/agg_curves-stats*.csv': No such file or directory
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Traceback (most recent call last):
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/datastore.py", line 551, in __getitem__
+    val = self.hdf5[key]
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/hdf5.py", line 360, in __getitem__
+    h5obj = super().__getitem__(path)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/root/storage/openquake/oqenv/lib/python3.6/site-packages/h5py/_hl/group.py", line 264, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5o.pyx", line 190, in h5py.h5o.open
+KeyError: "Unable to open object (object 'agg_losses-rlzs' doesn't exist)"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/storage/openquake/oqenv/bin/oq", line 11, in <module>
+    load_entry_point('openquake.engine', 'console_scripts', 'oq')()
+  File "/root/storage/openquake/src/oq-engine/openquake/commands/__main__.py", line 54, in oq
+    parser.callfunc()
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/sap.py", line 181, in callfunc
+    return self.func(**vars(namespace))
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/sap.py", line 251, in main
+    return func(**kw)
+  File "/root/storage/openquake/src/oq-engine/openquake/commands/export.py", line 39, in export
+    fnames = export_((datastore_key, fmt), dstore)
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/general.py", line 576, in __call__
+    return self[key](obj, *args, **kw)
+  File "/root/storage/openquake/src/oq-engine/openquake/calculators/export/risk.py", line 166, in export_agg_losses
+    name, value, tags = _get_data(dstore, dskey, oq.hazard_stats())
+  File "/root/storage/openquake/src/oq-engine/openquake/calculators/export/risk.py", line 121, in _get_data
+    dstore[name + '-rlzs'][()], statfuncs, weights)
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/datastore.py", line 561, in __getitem__
+    raise KeyError('No %r found in %s' % (key, self))
+KeyError: "No 'agg_losses-rlzs' found in <DataStore /root/oqdata/calc_338.hdf5 open>"
+mv: cannot stat 'output/BC/agg_losses-mean*.csv': No such file or directory
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Traceback (most recent call last):
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/datastore.py", line 551, in __getitem__
+    val = self.hdf5[key]
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/hdf5.py", line 360, in __getitem__
+    h5obj = super().__getitem__(path)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/root/storage/openquake/oqenv/lib/python3.6/site-packages/h5py/_hl/group.py", line 264, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5o.pyx", line 190, in h5py.h5o.open
+KeyError: "Unable to open object (object 'avg_losses-rlzs' doesn't exist)"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/storage/openquake/oqenv/bin/oq", line 11, in <module>
+    load_entry_point('openquake.engine', 'console_scripts', 'oq')()
+  File "/root/storage/openquake/src/oq-engine/openquake/commands/__main__.py", line 54, in oq
+    parser.callfunc()
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/sap.py", line 181, in callfunc
+    return self.func(**vars(namespace))
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/sap.py", line 251, in main
+    return func(**kw)
+  File "/root/storage/openquake/src/oq-engine/openquake/commands/export.py", line 39, in export
+    fnames = export_((datastore_key, fmt), dstore)
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/general.py", line 576, in __call__
+    return self[key](obj, *args, **kw)
+  File "/root/storage/openquake/src/oq-engine/openquake/calculators/export/risk.py", line 139, in export_avg_losses
+    name, value, tags = _get_data(dstore, dskey, oq.hazard_stats())
+  File "/root/storage/openquake/src/oq-engine/openquake/calculators/export/risk.py", line 121, in _get_data
+    dstore[name + '-rlzs'][()], statfuncs, weights)
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/datastore.py", line 561, in __getitem__
+    raise KeyError('No %r found in %s' % (key, self))
+KeyError: "No 'avg_losses-rlzs' found in <DataStore /root/oqdata/calc_339.hdf5 open>"
+mv: cannot stat 'output/BC/avg_losses-mean*.csv': No such file or directory
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Traceback (most recent call last):
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/datastore.py", line 551, in __getitem__
+    val = self.hdf5[key]
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/hdf5.py", line 360, in __getitem__
+    h5obj = super().__getitem__(path)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/root/storage/openquake/oqenv/lib/python3.6/site-packages/h5py/_hl/group.py", line 264, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5o.pyx", line 190, in h5py.h5o.open
+KeyError: "Unable to open object (object 'agg_curves-stats' doesn't exist)"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/storage/openquake/oqenv/bin/oq", line 11, in <module>
+    load_entry_point('openquake.engine', 'console_scripts', 'oq')()
+  File "/root/storage/openquake/src/oq-engine/openquake/commands/__main__.py", line 54, in oq
+    parser.callfunc()
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/sap.py", line 181, in callfunc
+    return self.func(**vars(namespace))
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/sap.py", line 251, in main
+    return func(**kw)
+  File "/root/storage/openquake/src/oq-engine/openquake/commands/export.py", line 39, in export
+    fnames = export_((datastore_key, fmt), dstore)
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/general.py", line 576, in __call__
+    return self[key](obj, *args, **kw)
+  File "/root/storage/openquake/src/oq-engine/openquake/calculators/export/risk.py", line 101, in export_agg_curve_rlzs
+    aw = hdf5.ArrayWrapper.from_(dstore[ekey[0]], 'loss_value')
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/datastore.py", line 561, in __getitem__
+    raise KeyError('No %r found in %s' % (key, self))
+KeyError: "No 'agg_curves-stats' found in <DataStore /root/oqdata/calc_339.hdf5 open>"
+mv: cannot stat 'output/BC/agg_curves-stats*.csv': No such file or directory
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Traceback (most recent call last):
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/datastore.py", line 551, in __getitem__
+    val = self.hdf5[key]
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/hdf5.py", line 360, in __getitem__
+    h5obj = super().__getitem__(path)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/root/storage/openquake/oqenv/lib/python3.6/site-packages/h5py/_hl/group.py", line 264, in __getitem__
+    oid = h5o.open(self.id, self._e(name), lapl=self._lapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5o.pyx", line 190, in h5py.h5o.open
+KeyError: "Unable to open object (object 'agg_losses-rlzs' doesn't exist)"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/storage/openquake/oqenv/bin/oq", line 11, in <module>
+    load_entry_point('openquake.engine', 'console_scripts', 'oq')()
+  File "/root/storage/openquake/src/oq-engine/openquake/commands/__main__.py", line 54, in oq
+    parser.callfunc()
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/sap.py", line 181, in callfunc
+    return self.func(**vars(namespace))
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/sap.py", line 251, in main
+    return func(**kw)
+  File "/root/storage/openquake/src/oq-engine/openquake/commands/export.py", line 39, in export
+    fnames = export_((datastore_key, fmt), dstore)
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/general.py", line 576, in __call__
+    return self[key](obj, *args, **kw)
+  File "/root/storage/openquake/src/oq-engine/openquake/calculators/export/risk.py", line 166, in export_agg_losses
+    name, value, tags = _get_data(dstore, dskey, oq.hazard_stats())
+  File "/root/storage/openquake/src/oq-engine/openquake/calculators/export/risk.py", line 121, in _get_data
+    dstore[name + '-rlzs'][()], statfuncs, weights)
+  File "/root/storage/openquake/src/oq-engine/openquake/baselib/datastore.py", line 561, in __getitem__
+    raise KeyError('No %r found in %s' % (key, self))
+KeyError: "No 'agg_losses-rlzs' found in <DataStore /root/oqdata/calc_339.hdf5 open>"
+mv: cannot stat 'output/BC/agg_losses-mean*.csv': No such file or directory
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 98.91 KB in ['output/BC/report_340.rst']
+<Monitor export[root], duration=1.0036413669586182s, memory=10.88 MB>
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 1.29 KB in ['output/BC/realizations_340.csv']
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 7.13 MB in ['output/BC/avg_losses-mean_340.csv']
+<Monitor export[root], duration=2.8362603187561035s, memory=1.53 MB>
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 3.21 MB in ['output/BC/agg_curves-stats_340.csv']
+/root/storage/openquake/src/oq-engine/openquake/calculators/export/risk.py:184: RuntimeWarning: invalid value encountered in float_scalars
+  loss, evalue, loss / evalue)
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 734.81 KB in ['output/BC/agg_losses-mean_340.csv', 'output/BC/agg_losses-quantile-0.05_340.csv', 'output/BC/agg_losses-quantile-0.5_340.csv', 'output/BC/agg_losses-quantile-0.95_340.csv']
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 7.13 MB in ['output/BC/avg_losses-mean_341.csv']
+<Monitor export[root], duration=2.8372323513031006s, memory=1.62 MB>
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 809.71 KB in ['output/BC/agg_curves-stats_341.csv']
+/root/storage/openquake/src/oq-engine/openquake/calculators/export/risk.py:184: RuntimeWarning: invalid value encountered in float_scalars
+  loss, evalue, loss / evalue)
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 183.7 KB in ['output/BC/agg_losses-mean_341.csv']

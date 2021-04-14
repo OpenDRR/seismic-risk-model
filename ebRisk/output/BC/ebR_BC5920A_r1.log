@@ -1,164 +1,16 @@
-[2021-04-14 15:48:52 #338 INFO] root running /root/storage/canada-srm2/ebRisk/input/ebRisk_b0_BC5920A.ini [--hc=None]
-[2021-04-14 15:48:52 #338 INFO] Using engine version 3.11.0-git213801bb4d
-[2021-04-14 15:48:53 #338 WARNING] Version v3.11.3 of the engine is available, but you are still using version 3.11.0-git213801bb4d
-[2021-04-14 15:48:53 #338 WARNING] Using 96 cores on ip-10-70-136-95
-[2021-04-14 15:48:53 #338 INFO] Validated nationalModel.xml in 0.01 seconds
-[2021-04-14 15:48:53 #338 INFO] Checksum of the input files: 1828460365
-[2021-04-14 15:48:53 #338 INFO] Reading the risk model if present
-[2021-04-14 15:49:12 #338 INFO] Reading /root/storage/openquake-inputs/exposure/general-building-stock/oqBldgExp_BC5920A.xml
-[2021-04-14 15:49:23 #338 INFO] Extracting the hazard sites from the site model
-[2021-04-14 15:49:25 #338 INFO] Associated 100303 assets to 3972 sites
-[2021-04-14 15:49:31 #338 INFO] Reducing risk model from 7260 to 1166 taxonomies
-[2021-04-14 15:49:33 #338 INFO] Reading the CompositeSourceModel
-[2021-04-14 15:49:33 #338 INFO] Considering 50 logic tree paths out of 24_576
-[2021-04-14 15:49:33 #338 INFO] Reading the source model(s) in parallel
-here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
-[2021-04-14 15:49:36 #338 INFO] read_source_model  16% [6 submitted, 0 queued]
-[2021-04-14 15:49:36 #338 INFO] read_source_model  33% [6 submitted, 0 queued]
-[2021-04-14 15:49:36 #338 INFO] read_source_model  50% [6 submitted, 0 queued]
-[2021-04-14 15:49:36 #338 INFO] read_source_model  66% [6 submitted, 0 queued]
-[2021-04-14 15:49:36 #338 INFO] read_source_model  83% [6 submitted, 0 queued]
-[2021-04-14 15:49:36 #338 INFO] read_source_model 100% [6 submitted, 0 queued]
-[2021-04-14 15:49:36 #338 INFO] Received {'/root/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Harctic_simplified_collapsedRates.xml': '139.87 KB', '/root/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Harctic_simplified_collapsedRates.xml': '134.12 KB', '/root/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Rarctic_simplified_collapsedRates.xml': '133.41 KB', '/root/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Rarctic_simplified_collapsedRates.xml': '127.66 KB', '/root/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Harctic_simplified_collapsedRates.xml': '118.84 KB', '/root/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Rarctic_simplified_collapsedRates.xml': '112.59 KB'} in 0 seconds
+WARNING:root:The parameter 'quantile_loss_curves' is unknown, ignoring
+[2021-04-14 16:07:26 #339 WARNING] Version v3.11.3 of the engine is available, but you are still using version 3.11.0-git213801bb4d
+[2021-04-14 16:07:26 #339 WARNING] Using 96 cores on ip-10-70-136-95
 here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
 here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
 here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
 here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
 here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
 here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
-[2021-04-14 15:49:36 #338 WARNING] There are multiple different sources with the same ID [<AreaSource GNSHY;0>, <AreaSource GNSHY;1>]
-[2021-04-14 15:49:36 #338 INFO] 6 effective smlt realization(s)
-[2021-04-14 15:49:36 #338 INFO] There are 13 groups and 196 sources with len(et_ids)=3.85
-[2021-04-14 15:49:36 #338 INFO] Checking the sources bounding box
-[2021-04-14 15:49:36 #338 ERROR] source ACM: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
-[2021-04-14 15:49:36 #338 INFO] Rupture floating factor = 1.6303030303030304
-[2021-04-14 15:49:36 #338 INFO] Rupture spinning factor = 3.278787878787879
-[2021-04-14 15:49:36 #338 INFO] gzipping the input files
-[2021-04-14 15:49:41 #338 INFO] Storing risk model
-[2021-04-14 15:49:47 #338 INFO] minimum_intensity={'SA(0.3)': 0.1, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05, 'SA(0.5)': 0.1}
-[2021-04-14 15:49:47 #338 INFO] Building ruptures
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Subduction IntraSlab30, 1 source(s)>
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Subduction IntraSlab55, 4 source(s)>
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Subduction Interface, 13 source(s)>
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Stable Shallow Crust, 29 source(s)>
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Stable Shallow Crust, 4 source(s)>
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Stable Shallow Crust, 6 source(s)>
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Stable Shallow Crust, 18 source(s)>
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Stable Shallow Crust, 10 source(s)>
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Stable Shallow Crust, 38 source(s)>
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Stable Shallow Crust, 14 source(s)>
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Active Shallow Crust, 57 source(s)>
-[2021-04-14 15:51:34 #338 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
-[2021-04-14 15:51:37 #338 INFO] Sent 96 tasks, 89.77 MB in 0 seconds
-[2021-04-14 15:51:37 #338 INFO] sample_ruptures   1% [98 submitted, 4 queued]
-[2021-04-14 15:51:37 #338 INFO] sample_ruptures   2% [99 submitted, 3 queued]
-[2021-04-14 15:51:37 #338 INFO] sample_ruptures   3% [100 submitted, 2 queued]
-[2021-04-14 15:51:37 #338 INFO] sample_ruptures   4% [101 submitted, 1 queued]
-[2021-04-14 15:51:37 #338 INFO] sample_ruptures   5% [102 submitted, 0 queued]
-[2021-04-14 15:51:37 #338 INFO] sample_ruptures   6% [102 submitted, 0 queued]
-[2021-04-14 15:51:37 #338 INFO] sample_ruptures   7% [102 submitted, 0 queued]
-[2021-04-14 15:51:37 #338 INFO] sample_ruptures   8% [102 submitted, 0 queued]
-[2021-04-14 15:51:37 #338 INFO] sample_ruptures   9% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  10% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  11% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  12% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  13% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  14% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  15% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  16% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  17% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  18% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  19% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  20% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  21% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  22% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  23% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  24% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  25% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  26% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  27% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  28% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  29% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  30% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  31% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  32% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  33% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  34% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  35% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  36% [102 submitted, 0 queued]
-[2021-04-14 15:51:38 #338 INFO] sample_ruptures  37% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  38% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  39% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  40% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  41% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  42% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  43% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  44% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  45% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  46% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  47% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  48% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  49% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  50% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  51% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  52% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  53% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  54% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  55% [102 submitted, 0 queued]
-[2021-04-14 15:51:39 #338 INFO] sample_ruptures  56% [102 submitted, 0 queued]
-[2021-04-14 15:51:42 #338 INFO] sample_ruptures  57% [102 submitted, 0 queued]
-[2021-04-14 15:51:44 #338 INFO] sample_ruptures  58% [102 submitted, 0 queued]
-[2021-04-14 15:51:46 #338 INFO] sample_ruptures  59% [102 submitted, 0 queued]
-[2021-04-14 15:51:47 #338 INFO] sample_ruptures  60% [102 submitted, 0 queued]
-[2021-04-14 15:51:50 #338 INFO] sample_ruptures  61% [102 submitted, 0 queued]
-[2021-04-14 15:51:50 #338 INFO] sample_ruptures  62% [102 submitted, 0 queued]
-[2021-04-14 15:51:51 #338 INFO] sample_ruptures  63% [102 submitted, 0 queued]
-[2021-04-14 15:51:52 #338 INFO] sample_ruptures  64% [102 submitted, 0 queued]
-[2021-04-14 15:51:55 #338 INFO] sample_ruptures  65% [102 submitted, 0 queued]
-[2021-04-14 15:52:01 #338 INFO] sample_ruptures  66% [102 submitted, 0 queued]
-[2021-04-14 15:52:10 #338 INFO] sample_ruptures  67% [102 submitted, 0 queued]
-[2021-04-14 15:52:12 #338 INFO] sample_ruptures  68% [102 submitted, 0 queued]
-[2021-04-14 15:52:13 #338 INFO] sample_ruptures  69% [102 submitted, 0 queued]
-[2021-04-14 15:52:18 #338 INFO] sample_ruptures  70% [102 submitted, 0 queued]
-[2021-04-14 15:52:19 #338 INFO] sample_ruptures  71% [102 submitted, 0 queued]
-[2021-04-14 15:52:20 #338 INFO] sample_ruptures  72% [102 submitted, 0 queued]
-[2021-04-14 15:52:22 #338 INFO] sample_ruptures  73% [102 submitted, 0 queued]
-[2021-04-14 15:52:23 #338 INFO] sample_ruptures  74% [102 submitted, 0 queued]
-[2021-04-14 15:52:24 #338 INFO] sample_ruptures  75% [102 submitted, 0 queued]
-[2021-04-14 15:52:26 #338 INFO] sample_ruptures  76% [102 submitted, 0 queued]
-[2021-04-14 15:52:28 #338 INFO] sample_ruptures  77% [102 submitted, 0 queued]
-[2021-04-14 15:52:28 #338 INFO] sample_ruptures  78% [102 submitted, 0 queued]
-[2021-04-14 15:52:28 #338 INFO] sample_ruptures  79% [102 submitted, 0 queued]
-[2021-04-14 15:52:29 #338 INFO] sample_ruptures  80% [102 submitted, 0 queued]
-[2021-04-14 15:52:29 #338 INFO] sample_ruptures  81% [102 submitted, 0 queued]
-[2021-04-14 15:52:31 #338 INFO] sample_ruptures  82% [102 submitted, 0 queued]
-[2021-04-14 15:52:38 #338 INFO] sample_ruptures  83% [102 submitted, 0 queued]
-[2021-04-14 15:52:39 #338 INFO] sample_ruptures  84% [102 submitted, 0 queued]
-[2021-04-14 15:52:40 #338 INFO] sample_ruptures  85% [102 submitted, 0 queued]
-[2021-04-14 15:52:42 #338 INFO] sample_ruptures  86% [102 submitted, 0 queued]
-[2021-04-14 15:52:52 #338 INFO] sample_ruptures  87% [102 submitted, 0 queued]
-[2021-04-14 15:52:56 #338 INFO] sample_ruptures  88% [102 submitted, 0 queued]
-[2021-04-14 15:52:58 #338 INFO] sample_ruptures  89% [102 submitted, 0 queued]
-[2021-04-14 15:53:16 #338 INFO] sample_ruptures  90% [102 submitted, 0 queued]
-[2021-04-14 15:53:30 #338 INFO] sample_ruptures  91% [102 submitted, 0 queued]
-[2021-04-14 15:53:42 #338 INFO] sample_ruptures  92% [102 submitted, 0 queued]
-[2021-04-14 15:54:23 #338 INFO] sample_ruptures  93% [102 submitted, 0 queued]
-[2021-04-14 15:54:25 #338 INFO] sample_ruptures  94% [102 submitted, 0 queued]
-[2021-04-14 15:55:25 #338 INFO] sample_ruptures  95% [102 submitted, 0 queued]
-[2021-04-14 15:55:50 #338 INFO] sample_ruptures  96% [102 submitted, 0 queued]
-[2021-04-14 15:56:09 #338 INFO] sample_ruptures  97% [102 submitted, 0 queued]
-[2021-04-14 15:58:46 #338 INFO] sample_ruptures  98% [102 submitted, 0 queued]
-[2021-04-14 16:00:03 #338 INFO] sample_ruptures  99% [102 submitted, 0 queued]
-[2021-04-14 16:06:15 #338 INFO] sample_ruptures 100% [102 submitted, 0 queued]
-[2021-04-14 16:06:15 #338 INFO] Received {'rup_array': '254.25 MB', 'calc_times': '25 KB', 'eff_ruptures': '4.28 KB'} in 879 seconds
-[2021-04-14 16:06:15 #338 INFO] There are 50 realization(s)
-[2021-04-14 16:06:15 #338 INFO] Reordering the ruptures and storing the events
-[2021-04-14 16:06:17 #338 INFO] The following 73289 rupture seeds are duplicated: [31654153 31654285 31654286 ... 57355134 57355566 57356230]
-[2021-04-14 16:06:17 #338 INFO] Associating event_id -> rlz_id for 2_198_154 events and 1_046_903 ruptures
-[2021-04-14 16:06:52 #338 INFO] Sent 210 tasks, 113.03 MB in 32 seconds
-[2021-04-14 16:06:58 #338 INFO] Received {'tot': '21.02 MB'} in 5 seconds
-[2021-04-14 16:07:13 #338 CRITICAL] 
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+[2021-04-14 16:08:10 #339 WARNING] There are multiple different sources with the same ID [<AreaSource GNSHY;0>, <AreaSource GNSHY;1>]
+[2021-04-14 16:08:10 #339 ERROR] source ACM: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
+[2021-04-14 16:25:59 #339 CRITICAL] 
 Traceback (most recent call last):
   File "/root/storage/openquake/src/oq-engine/openquake/calculators/base.py", line 245, in run
     self.pre_execute()
@@ -168,7 +20,7 @@ Traceback (most recent call last):
     ' reduce the aggregate_by\n%s = %d' % (msg, tot))
 ValueError: Producing too many aggregate loss curves, please reduce the aggregate_by
 (loss_types=4) * (fsauid=95) * (GenOcc=6) * (GenType=7) = 15960
-[2021-04-14 16:07:13 #338 CRITICAL] Traceback (most recent call last):
+[2021-04-14 16:25:59 #339 CRITICAL] Traceback (most recent call last):
   File "/root/storage/openquake/src/oq-engine/openquake/engine/engine.py", line 308, in run_calc
     calc.run(exports=exports, **kw)
   File "/root/storage/openquake/src/oq-engine/openquake/calculators/base.py", line 245, in run
@@ -180,7 +32,6 @@ ValueError: Producing too many aggregate loss curves, please reduce the aggregat
 ValueError: Producing too many aggregate loss curves, please reduce the aggregate_by
 (loss_types=4) * (fsauid=95) * (GenOcc=6) * (GenType=7) = 15960
 
-here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
 here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
 here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
 here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5

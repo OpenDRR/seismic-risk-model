@@ -1,18 +1,18 @@
-ebRisk-Stochastic ebRisk model for BC5920B; baseline
-====================================================
+eDamage-Stochastic event-based damage model for BC5920B; retrofit
+=================================================================
 
 ============== ====================
-checksum32     1_828_460_365       
-date           2021-04-14T16:55:51 
+checksum32     389_173_040         
+date           2021-04-14T07:14:01 
 engine_version 3.11.0-git213801bb4d
 ============== ====================
 
-num_sites = 1932, num_levels = 5, num_rlzs = 50
+num_sites = 1932, num_levels = 3, num_rlzs = 50
 
 Parameters
 ----------
 =============================== =============================================================================================================================================================================================================================================================================================================================
-calculation_mode                'ebrisk'                                                                                                                                                                                                                                                                                                                     
+calculation_mode                'event_based_damage'                                                                                                                                                                                                                                                                                                         
 number_of_logic_tree_samples    50                                                                                                                                                                                                                                                                                                                           
 maximum_distance                {'Active Shallow Crust': [(1.0, 400.0), (10.0, 400.0)], 'Stable Shallow Crust': [(1.0, 600.0), (10.0, 600.0)], 'Subduction Interface': [(1.0, 1000.0), (10.0, 1000.0)], 'Subduction IntraSlab30': [(1.0, 400), (10.0, 400)], 'Subduction IntraSlab55': [(1.0, 400), (10.0, 400)], 'default': [(1.0, 1000.0), (10.0, 1000.0)]}
 investigation_time              1.0                                                                                                                                                                                                                                                                                                                          
@@ -24,29 +24,25 @@ width_of_mfd_bin                0.2
 area_source_discretization      10.0                                                                                                                                                                                                                                                                                                                         
 pointsource_distance            None                                                                                                                                                                                                                                                                                                                         
 ground_motion_correlation_model None                                                                                                                                                                                                                                                                                                                         
-minimum_intensity               {'SA(0.3)': 0.1, 'SA(0.5)': 0.1, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05}                                                                                                                                                                                                                                          
+minimum_intensity               {'SA(0.3)': 0.1, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05, 'default': 0.1}                                                                                                                                                                                                                                          
 random_seed                     24                                                                                                                                                                                                                                                                                                                           
 master_seed                     25                                                                                                                                                                                                                                                                                                                           
 ses_seed                        23                                                                                                                                                                                                                                                                                                                           
-avg_losses                      True                                                                                                                                                                                                                                                                                                                         
 =============================== =============================================================================================================================================================================================================================================================================================================================
 
 Input files
 -----------
-=========================== ============================================================================
-Name                        File                                                                        
-=========================== ============================================================================
-contents_vulnerability      `vulnerability_contents_CAN.xml <vulnerability_contents_CAN.xml>`_          
-exposure                    `oqBldgExp_BC5920B.xml <oqBldgExp_BC5920B.xml>`_                            
-gsim_logic_tree             `OQ_classes_NGASa0p3weights.xml <OQ_classes_NGASa0p3weights.xml>`_          
-job_ini                     `ebRisk_b0_BC5920B.ini <ebRisk_b0_BC5920B.ini>`_                            
-nonstructural_vulnerability `vulnerability_nonstructural_CAN.xml <vulnerability_nonstructural_CAN.xml>`_
-occupants_vulnerability     `vulnerability_occupants_CAN.xml <vulnerability_occupants_CAN.xml>`_        
-site_model                  `site-vgrid_BC.csv <site-vgrid_BC.csv>`_                                    
-source_model_logic_tree     `nationalModel.xml <nationalModel.xml>`_                                    
-structural_vulnerability    `vulnerability_structural_CAN.xml <vulnerability_structural_CAN.xml>`_      
-taxonomy_mapping            `CanSRM1_TaxMap_b0.csv <CanSRM1_TaxMap_b0.csv>`_                            
-=========================== ============================================================================
+======================= ==================================================================
+Name                    File                                                              
+======================= ==================================================================
+exposure                `oqBldgExp_BC5920B.xml <oqBldgExp_BC5920B.xml>`_                  
+gsim_logic_tree         `OQ_classes_NGASa0p3weights.xml <OQ_classes_NGASa0p3weights.xml>`_
+job_ini                 `eDamage_r1_BC5920B.ini <eDamage_r1_BC5920B.ini>`_                
+site_model              `site-vgrid_BC.csv <site-vgrid_BC.csv>`_                          
+source_model_logic_tree `nationalModel.xml <nationalModel.xml>`_                          
+structural_fragility    `structural_fragility_CAN.xml <structural_fragility_CAN.xml>`_    
+taxonomy_mapping        `CanSRM1_TaxMap_r1.csv <CanSRM1_TaxMap_r1.csv>`_                  
+======================= ==================================================================
 
 Composite source model
 ----------------------
@@ -997,8 +993,8 @@ Computation times by source typology
 ==== =========
 code calc_time
 ==== =========
-A    1_486    
-C    41       
+A    1_492    
+C    40       
 S    17       
 ==== =========
 
@@ -1006,51 +1002,47 @@ Information about the tasks
 ---------------------------
 ================== ====== ======= ====== ======= =======
 operation-duration counts mean    stddev min     max    
-ebrisk             41     336     23%    191     463    
-get_eid_rlz        210    1.86676 43%    0.54160 4.42345
-post_ebrisk        672    28      10%    16      31     
-read_source_model  6      0.16356 11%    0.13538 0.18890
-sample_ruptures    102    44      241%   0.00161 738    
-start_ebrisk       210    167     51%    2.31103 488    
+compute_gmfs       210    133     56%    44      355    
+get_eid_rlz        210    1.86079 43%    0.54498 4.46048
+read_source_model  6      0.16100 9%     0.13648 0.18353
+sample_ruptures    102    44      240%   0.00179 736    
+scenario_damage    220    733     33%    90      1_690  
 ================== ====== ======= ====== ======= =======
 
 Data transfer
 -------------
-================= ================================================== =========
-task              sent                                               received 
-read_source_model converter=2.95 KB fname=918 B                      766.52 KB
-sample_ruptures   param=69.3 MB srcfilter=10.63 MB sources=459.86 KB 318.26 MB
-get_eid_rlz       proxies=150.1 MB                                   29.64 MB 
-start_ebrisk      rgetter=152.47 MB param=1.61 MB                    378.63 MB
-ebrisk            rupgetter=40.02 MB param=327.76 KB                 567.73 MB
-post_ebrisk       dstore=95.81 KB aggkey=14.07 KB                    8.58 MB  
-================= ================================================== =========
+================= =================================================== =========
+task              sent                                                received 
+read_source_model converter=2.95 KB fname=918 B                       766.52 KB
+sample_ruptures   param=69.22 MB srcfilter=10.63 MB sources=459.86 KB 318.26 MB
+get_eid_rlz       proxies=150.1 MB                                    29.64 MB 
+compute_gmfs      rupgetter=152.47 MB param=1.38 MB                   2.42 GB  
+scenario_damage   riskinputs=2.59 GB param=1.59 MB                    1.59 GB  
+================= =================================================== =========
 
 Slowest operations
 ------------------
-=========================================== ======== ========= =========
-calc_340, maxmem=64.1 GB                    time_sec memory_mb counts   
-=========================================== ======== ========= =========
-getting hazard                              36_719   107       251      
-total start_ebrisk                          35_151   511       251      
-total post_ebrisk                           18_998   24        672      
-total ebrisk                                13_780   581       41       
-getting ruptures                            9_754    0.0       1_391_121
-aggregating losses                          5_034    0.0       292_534  
-total sample_ruptures                       4_522    672       117      
-computing risk                              4_484    0.0       292_534  
-EbriskCalculator.run                        2_037    617       1        
-getting crmodel                             1_335    323       250      
-EventBasedCalculator.run                    959      588       1        
-total get_eid_rlz                           392      1.47656   210      
-PostRiskCalculator.run                      253      1.42188   1        
-saving ruptures and events                  75       43        1        
-saving losses_by_event and event_loss_table 47       0.00391   250      
-importing inputs                            36       417       1        
-getting assets                              31       7.92188   250      
-saving ruptures                             9.53238  22        27       
-composite source model                      2.96397  0.86719   1        
-reading exposure                            1.87593  0.0       1        
-total read_source_model                     0.98135  2.60938   6        
-saving avg_losses                           0.57263  0.0       250      
-=========================================== ======== ========= =========
+============================ ======== ========= =========
+calc_337, maxmem=42.9 GB     time_sec memory_mb counts   
+============================ ======== ========= =========
+total scenario_damage        161_418  445       220      
+computing risk               161_098  0.0       1_932    
+total compute_gmfs           28_078   210       210      
+getting ruptures             10_132   74        1_391_080
+total sample_ruptures        4_532    672       117      
+ScenarioDamageCalculator.run 3_467    3_402     1        
+EventBasedCalculator.run     1_410    1_640     1        
+total get_eid_rlz            390      1.56250   210      
+saving gmfs                  318      464       210      
+saving dd_data               84       6.87891   220      
+saving ruptures and events   72       38        1        
+getting hazard               48       0.0       1_932    
+building riskinputs          21       1_630     1        
+reading GMFs                 18       4_076     1        
+importing inputs             14       206       1        
+saving ruptures              9.55532  23        27       
+composite source model       2.76479  4.08594   1        
+reading exposure             1.95072  8.63672   1        
+total read_source_model      0.96599  2.71484   6        
+aggregating hcurves          0.06532  0.0       210      
+============================ ======== ========= =========
