@@ -5,19 +5,17 @@
 # {region}
 # =================================================================
 # Baseline Conditions
-oq engine --run input/eDamage_{region}_b0.ini &> output/{province}/eD_{region}.log;
-oq export fullreport -1 -e rst -d output/
-mv output/{province}/report*.rst output/{province}/eD_{region}_report.rst
+oq engine --run input/eDamage_b0_{region}.ini &> output/{province}/eD_{region}_b0.log;
+oq export fullreport -1 -e rst -d output/{province}/
+mv output/{province}/report*.rst output/{province}/eD_{region}_report_b0.csv
 oq export realizations -1 -e csv -d output/{province}/
 mv output/{province}/realizations*.csv output/{province}/eD_{region}_rlz.csv
-oq export sourcegroups -1 -e csv -d output/{province}/
-mv output/{province}/sourcegroups*.csv output/{province}/eD_{region}_sources.csv
-oq export avg_damages-mean -1 -e csv -d output/{province}/
+oq export damages-stats -1 -e csv -d output/{province}/
 mv output/{province}/avg_damages-mean*.csv output/{province}/eD_{region}_damages-mean_b0.csv;
-# Level 2 Retrofit
-oq engine --run input/eDamage_{region}_r2.ini &> output/{province}/eD_{region}.log;
-oq export avg_damages-mean -1 -e csv -d output/{province}/
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_{region}.ini &> output/{province}/eD_{region}_r1.log;
+oq export fullreport -1 -e rst -d output/{province}/
+mv output/{province}/report*.rst output/{province}/eD_{region}_report_r1.csv
+oq export damages-stats -1 -e csv -d output/{province}/
 mv output/{province}/avg_damages-mean*.csv output/{province}/eD_{region}_damages-mean_r2.csv;
-# =================================================================
-# repeat for other regions
 # =================================================================
