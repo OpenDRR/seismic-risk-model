@@ -6,7 +6,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_AB.ini &> output/AB/cH_AB.log;
+oq engine --run input/cHazard_AB.ini > output/AB/cH_AB.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/AB/cH_AB_report.rst
 oq export hcurves -1 -e csv -d output/temp/
@@ -35,7 +35,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_BC.ini &> output/BC/cH_BC.log;
+oq engine --run input/cHazard_BC.ini > output/BC/cH_BC.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/BC/cH_BC_report.rst
 oq export hcurves -1 -e csv -d output/temp/
@@ -64,7 +64,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_MB.ini &> output/MB/cH_MB.log;
+oq engine --run input/cHazard_MB.ini > output/MB/cH_MB.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/MB/cH_MB_report.rst
 oq export hcurves -1 -e csv -d output/temp/
@@ -93,7 +93,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_NB.ini &> output/NB/cH_NB.log;
+oq engine --run input/cHazard_NB.ini > output/NB/cH_NB.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/NB/cH_NB_report.rst
 oq export hcurves -1 -e csv -d output/temp/
@@ -122,7 +122,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_NL.ini &> output/NL/cH_NL.log;
+oq engine --run input/cHazard_NL.ini > output/NL/cH_NL.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/NL/cH_NL_report.rst
 oq export hcurves -1 -e csv -d output/temp/
@@ -151,7 +151,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_NS.ini &> output/NS/cH_NS.log;
+oq engine --run input/cHazard_NS.ini > output/NS/cH_NS.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/NS/cH_NS_report.rst
 oq export hcurves -1 -e csv -d output/temp/
@@ -180,7 +180,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_NT.ini &> output/NT/cH_NT.log;
+oq engine --run input/cHazard_NT.ini > output/NT/cH_NT.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/NT/cH_NT_report.rst
 oq export hcurves -1 -e csv -d output/temp/
@@ -209,7 +209,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_NU.ini &> output/NU/cH_NU.log;
+oq engine --run input/cHazard_NU.ini > output/NU/cH_NU.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/NU/cH_NU_report.rst
 oq export hcurves -1 -e csv -d output/temp/
@@ -238,7 +238,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_ON.ini &> output/ON/cH_ON.log;
+oq engine --run input/cHazard_ON.ini > output/ON/cH_ON.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/ON/cH_ON_report.rst
 oq export hcurves -1 -e csv -d output/temp/
@@ -267,7 +267,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_PE.ini &> output/PE/cH_PE.log;
+oq engine --run input/cHazard_PE.ini > output/PE/cH_PE.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/PE/cH_PE_report.rst
 oq export hcurves -1 -e csv -d output/temp/
@@ -296,7 +296,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_QC.ini &> output/QC/cH_QC.log;
+oq engine --run input/cHazard_QC.ini > output/QC/cH_QC.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/QC/cH_QC_report.rst
 oq export hcurves -1 -e csv -d output/temp/
@@ -325,7 +325,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_SK.ini &> output/SK/cH_SK.log;
+oq engine --run input/cHazard_SK.ini > output/SK/cH_SK.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/SK/cH_SK_report.rst
 oq export hcurves -1 -e csv -d output/temp/
@@ -354,7 +354,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_YT.ini &> output/YT/cH_YT.log;
+oq engine --run input/cHazard_YT.ini > output/YT/cH_YT.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/YT/cH_YT_report.rst
 oq export hcurves -1 -e csv -d output/temp/

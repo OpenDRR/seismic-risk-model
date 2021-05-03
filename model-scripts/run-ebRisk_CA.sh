@@ -6,7 +6,7 @@ mkdir -p output/temp; rm -f output/temp/*
 # {region}
 # =================================================================
 # Baseline Conditions
-oq engine --run input/ebRisk_b0_{region}.ini &> output/{province}/ebR_{region}_b0.log;
+oq engine --run input/ebRisk_b0_{region}.ini > output/{province}/ebR_{region}_b0.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/{province}/ebR_{region}_report_b0.csv
 oq export realizations -1 -e csv -d output/temp/
@@ -29,7 +29,7 @@ mv output/temp/agg_losses-quantile-0.95*.csv output/{province}/ebR_{region}_agg_
 oq export src_loss_table -1 -e csv -d output/temp/
 mv output/temp/src_loss_table_*.csv output/{province}/ebR_{region}_src_loss_table_b0.csv;
  # Retrofit Conditions
-oq engine --run input/ebRisk_r1_{region}.ini &> output/{province}/ebR_{region}_r1.log;
+oq engine --run input/ebRisk_r1_{region}.ini > output/{province}/ebR_{region}_r1.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/{province}/ebR_{region}_report_r1.csv
 oq export avg_losses-stats -1 -e csv -d output/temp/

@@ -6,7 +6,7 @@ mkdir -p output/temp; rm -f output/temp/*
 #[province]
 # =================================================================
 # Baseline Conditions
-oq engine --run input/cHazard_{province}.ini &> output/{province}/cH_{province}.log;
+oq engine --run input/cHazard_{province}.ini > output/{province}/cH_{province}.log;
 oq export fullreport -1 -e rst -d output/temp/
 mv output/temp/report*.rst output/{province}/cH_{province}_report.rst
 oq export hcurves -1 -e csv -d output/temp/
