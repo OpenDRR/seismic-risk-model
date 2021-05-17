@@ -3,7 +3,7 @@ ebRisk-Stochastic ebRisk model for Canada; baseline
 
 ============== ====================
 checksum32     80_830_090          
-date           2021-05-14T18:06:01 
+date           2021-05-17T18:24:19 
 engine_version 3.11.3-git0cccb86798
 ============== ====================
 
@@ -12,7 +12,7 @@ num_sites = 230630, num_levels = 5, num_rlzs = 50
 Parameters
 ----------
 =============================== =============================================================================================================================================================================================================================================================================================================================
-calculation_mode                'ebrisk'                                                                                                                                                                                                                                                                                                                     
+calculation_mode                'preclassical'                                                                                                                                                                                                                                                                                                               
 number_of_logic_tree_samples    50                                                                                                                                                                                                                                                                                                                           
 maximum_distance                {'Active Shallow Crust': [(1.0, 400.0), (10.0, 400.0)], 'Stable Shallow Crust': [(1.0, 600.0), (10.0, 600.0)], 'Subduction Interface': [(1.0, 1000.0), (10.0, 1000.0)], 'Subduction IntraSlab30': [(1.0, 400), (10.0, 400)], 'Subduction IntraSlab55': [(1.0, 400), (10.0, 400)], 'default': [(1.0, 1000.0), (10.0, 1000.0)]}
 investigation_time              1.0                                                                                                                                                                                                                                                                                                                          
@@ -28,7 +28,6 @@ minimum_intensity               {'SA(0.3)': 0.02, 'SA(0.6)': 0.05, 'SA(1.0)': 0.
 random_seed                     24                                                                                                                                                                                                                                                                                                                           
 master_seed                     25                                                                                                                                                                                                                                                                                                                           
 ses_seed                        23                                                                                                                                                                                                                                                                                                                           
-avg_losses                      True                                                                                                                                                                                                                                                                                                                         
 =============================== =============================================================================================================================================================================================================================================================================================================================
 
 Input files
@@ -1786,6 +1785,26 @@ Slowest sources
 ========= ==== ========= ========= ============
 source_id code calc_time num_sites eff_ruptures
 ========= ==== ========= ========= ============
+ECM-N     A    16        995       347_840     
+ACM       A    15        9_610     288_640     
+BOU       A    14        1_024     749_448     
+SCCECR-W  A    13        9_578     298_632     
+IRB2      A    12        5_389     529_536     
+SCCECH-W  A    11        9_577     313_584     
+AOBH      A    11        4_450     600_256     
+AOBHY     A    11        4_450     375_160     
+SCCEHYH-W A    11        9_578     314_112     
+SCCEHYR-W A    11        9_578     304_272     
+IRME      A    11        5_378     65_688      
+ECMHY-S   A    10        3_359     96_576      
+ECM-S     A    9.64770   3_359     257_536     
+FTH       A    8.33954   4_008     1_491_048   
+GRL       A    6.74491   7         314_940     
+SEB       A    6.37957   5_353     307_272     
+INOR      A    5.53179   1         322_500     
+SEBS      A    5.23020   5_276     105_640     
+INOH      A    5.01007   1         271_620     
+BFB       A    4.37366   3         135_488     
 ========= ==== ========= ========= ============
 
 Computation times by source typology
@@ -1793,57 +1812,36 @@ Computation times by source typology
 ==== ========= ========= ============
 code calc_time num_sites eff_ruptures
 ==== ========= ========= ============
-A    22_079    0         0           
-C    11        0         0           
-S    304       0         0           
+A    336       408_512   30_640_648  
+C    4.77240   8_426     192         
+S    2.18336   17_881    16_962      
 ==== ========= ========= ============
 
 Information about the tasks
 ---------------------------
 ================== ====== ======= ====== ======= =======
 operation-duration counts mean    stddev min     max    
-ebrisk             1_266  16_365  18%    10_709  39_943 
-get_eid_rlz        213    30      53%    1.08400 64     
-read_source_model  6      0.16462 8%     0.14478 0.18399
-sample_ruptures    101    397     95%    3.10831 1_772  
-start_ebrisk       213    7_311   63%    651     21_867 
+preclassical       23     19      131%   0.07349 96     
+read_source_model  6      0.41824 21%    0.23306 0.51805
 ================== ====== ======= ====== ======= =======
 
 Data transfer
 -------------
-================= ================================================== =========
-task              sent                                               received 
-read_source_model converter=2.83 KB fname=912 B                      760.72 KB
-sample_ruptures   srcfilter=1.17 GB param=51.44 MB sources=450.88 KB 3.38 GB  
-get_eid_rlz       proxies=1.62 GB                                    348.33 MB
-start_ebrisk      rgetter=1.63 GB param=1.84 MB                      11.2 GB  
-ebrisk            rupgetter=1.36 GB param=16.3 MB                    64.63 GB 
-================= ================================================== =========
+================= =================================================== =========
+task              sent                                                received 
+read_source_model converter=2.83 KB fname=912 B                       760.72 KB
+preclassical      srcfilter=284.67 MB srcs=241.97 KB params=101.25 KB 57.67 MB 
+================= =================================================== =========
 
 Slowest operations
 ------------------
-========================== ========== ========= ==========
-calc_91, maxmem=692.4 GB   time_sec   memory_mb counts    
-========================== ========== ========= ==========
-total ebrisk               20_717_824 588       1_266     
-getting hazard             17_489_750 21_548    1_479     
-aggregating losses         3_134_122  0.0       84_189_460
-total start_ebrisk         1_557_336  909       1_990     
-computing risk             1_393_863  0.0       84_189_460
-EbriskCalculator.run       246_638    11_720    1         
-getting ruptures           224_116    0.0       13_419_381
-total sample_ruptures      40_175     1_587     177       
-getting assets             14_893     556       1_479     
-averaging losses           14_799     0.0       84_189_460
-getting crmodel            9_152      273       1_479     
-total get_eid_rlz          6_553      11        213       
-EventBasedCalculator.run   3_403      11_666    1         
-saving ruptures and events 842        687       1         
-importing inputs           676        10_790    1         
-reading exposure           198        495       1         
-saving ruptures            134        166       177       
-saving avg_losses          65         0.22266   1_479     
-saving agg_loss_table      15         0.25000   1_479     
-composite source model     8.92814    0.98438   1         
-total read_source_model    0.98771    2.69141   6         
-========================== ========== ========= ==========
+======================= ======== ========= ======
+calc_93, maxmem=19.7 GB time_sec memory_mb counts
+======================= ======== ========= ======
+total preclassical      449      36        23    
+splitting sources       343      35        23    
+reading exposure        337      495       1     
+weighting sources       106      1.79297   23    
+composite source model  22       1.23828   1     
+total read_source_model 2.50946  2.78516   6     
+======================= ======== ========= ======
