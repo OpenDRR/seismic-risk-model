@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nrml xmlns="http://openquake.org/xmlns/nrml/0.4">
+	<exposureModel id="ex1" category="buildings" taxonomySource="GEM taxonomy">
+		<description></description>
+		<conversions>
+			<costTypes>
+				<costType name="structural" type="aggregated" unit="CAD"
+                          retrofittedType="aggregated" retrofittedUnit="CAD"/>
+				<costType name="nonstructural" type="aggregated" unit="CAD"/>
+				<costType name="contents" type="aggregated" unit="CAD"/>
+			</costTypes>
+		</conversions>
+		<occupancyPeriods>day night transit</occupancyPeriods>
+		<tagNames> SauidID LandUse GenOcc OccClass GenType BldgType BldEpoch SSC_Zone EqDesLev sauid dauid adauid fsauid csduid csdname cduid cdname SAC eruid ername pruid prname 
+
+ </tagNames>
+	 <assets>  
+        TESTEXPO.csv
+    </assets>
+	</exposureModel>
+</nrml>
