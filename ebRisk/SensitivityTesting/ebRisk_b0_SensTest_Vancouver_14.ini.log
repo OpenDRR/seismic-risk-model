@@ -1,0 +1,466 @@
+[2021-07-12 05:23:01.14 #85 INFO] root running /mnt/storage/canada-srm2/ebRisk/SensitivityTesting/ebRisk_b0_SensTest_Vancouver_14.ini [--hc=None]
+[2021-07-12 05:23:01.15 #85 INFO] Using engine version 3.11.3-git29ac352f7d
+[2021-07-12 05:23:01.51 #85 WARNING] Using 96 cores on ip-10-70-136-127
+[2021-07-12 05:23:01.53 #85 INFO] Validated nationalModel.xml in 0.01 seconds
+[2021-07-12 05:23:01.60 #85 INFO] Checksum of the input files: 2938986221
+[2021-07-12 05:23:01.61 #85 INFO] Reading the risk model if present
+[2021-07-12 05:23:24.13 #85 INFO] Reading /mnt/storage/canada-srm2/ebRisk/SensitivityTesting/TESTEXPO_Vancouver.xml
+[2021-07-12 05:23:24.16 #85 INFO] Extracting the hazard sites from the site model
+[2021-07-12 05:23:26.03 #85 INFO] Associated 177 assets to 6 sites
+[2021-07-12 05:23:26.61 #85 INFO] Reducing risk model from 7260 to 97 taxonomies
+[2021-07-12 05:23:27.35 #85 INFO] minimum_asset_loss={'contents': 0, 'nonstructural': 0, 'occupants': 0, 'structural': 0}
+[2021-07-12 05:23:27.36 #85 INFO] Storing 6 aggregation keys
+[2021-07-12 05:23:27.43 #85 INFO] Considering 2_400 logic tree paths out of 24_576
+[2021-07-12 05:23:27.48 #85 INFO] Reading the source model(s) in parallel
+[2021-07-12 05:23:29.94 #85 INFO] read_source_model  16% [6 submitted, 0 queued]
+[2021-07-12 05:23:29.97 #85 INFO] read_source_model  33% [6 submitted, 0 queued]
+[2021-07-12 05:23:30.00 #85 INFO] read_source_model  50% [6 submitted, 0 queued]
+[2021-07-12 05:23:30.04 #85 INFO] read_source_model  66% [6 submitted, 0 queued]
+[2021-07-12 05:23:30.07 #85 INFO] read_source_model  83% [6 submitted, 0 queued]
+[2021-07-12 05:23:30.09 #85 INFO] read_source_model 100% [6 submitted, 0 queued]
+[2021-07-12 05:23:30.09 #85 INFO] Mean time per core=0s, std=0.0s, min=0s, max=0s
+[2021-07-12 05:23:30.09 #85 INFO] Received {'/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Harctic_simplified_collapsedRates.xml': '138.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Harctic_simplified_collapsedRates.xml': '133.09 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Rarctic_simplified_collapsedRates.xml': '132.34 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Rarctic_simplified_collapsedRates.xml': '126.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Harctic_simplified_collapsedRates.xml': '117.99 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Rarctic_simplified_collapsedRates.xml': '111.84 KB'} in 0 seconds
+[2021-07-12 05:23:30.34 #85 INFO] There are multiple different sources with the same ID [<AreaSource SCCYA;0>, <AreaSource SCCYA;1>]
+[2021-07-12 05:23:30.35 #85 INFO] There are 13 groups and 196 sources with len(et_ids)=3.85
+[2021-07-12 05:23:30.37 #85 INFO] Checking the sources bounding box
+[2021-07-12 05:23:30.39 #85 ERROR] source ACM: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
+[2021-07-12 05:23:30.50 #85 INFO] Rupture floating factor = 1.6303030303030304
+[2021-07-12 05:23:30.51 #85 INFO] Rupture spinning factor = 3.278787878787879
+[2021-07-12 05:23:30.51 #85 INFO] gzipping the input files
+[2021-07-12 05:23:34.05 #85 INFO] Storing risk model
+[2021-07-12 05:23:34.12 #85 INFO] minimum_intensity={'default': 0.1, 'SA(0.3)': 0.1, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05}
+[2021-07-12 05:23:34.18 #85 INFO] Building ruptures
+[2021-07-12 05:25:11.28 #85 INFO] Sending <SourceGroup Subduction IntraSlab30, 1 source(s)>
+[2021-07-12 05:25:11.28 #85 INFO] Sending <SourceGroup Subduction IntraSlab55, 4 source(s)>
+[2021-07-12 05:25:11.29 #85 INFO] Sending <SourceGroup Subduction Interface, 13 source(s)>
+[2021-07-12 05:25:11.29 #85 INFO] Sending <SourceGroup Stable Shallow Crust, 29 source(s)>
+[2021-07-12 05:25:11.30 #85 INFO] Sending <SourceGroup Stable Shallow Crust, 4 source(s)>
+[2021-07-12 05:25:11.30 #85 INFO] Sending <SourceGroup Stable Shallow Crust, 6 source(s)>
+[2021-07-12 05:25:11.31 #85 INFO] Sending <SourceGroup Stable Shallow Crust, 18 source(s)>
+[2021-07-12 05:25:11.31 #85 INFO] Sending <SourceGroup Stable Shallow Crust, 10 source(s)>
+[2021-07-12 05:25:11.32 #85 INFO] Sending <SourceGroup Stable Shallow Crust, 38 source(s)>
+[2021-07-12 05:25:11.32 #85 INFO] Sending <SourceGroup Stable Shallow Crust, 14 source(s)>
+[2021-07-12 05:25:11.33 #85 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-07-12 05:25:11.33 #85 INFO] Sending <SourceGroup Active Shallow Crust, 57 source(s)>
+[2021-07-12 05:25:11.34 #85 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-07-12 05:25:13.48 #85 INFO] Sent 96 tasks, 60.31 MB in 0 seconds
+[2021-07-12 05:25:14.98 #85 INFO] sample_ruptures   1% [98 submitted, 3 queued]
+[2021-07-12 05:25:15.00 #85 INFO] sample_ruptures   2% [99 submitted, 2 queued]
+[2021-07-12 05:25:15.02 #85 INFO] sample_ruptures   3% [100 submitted, 1 queued]
+[2021-07-12 05:25:15.04 #85 INFO] sample_ruptures   4% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.06 #85 INFO] sample_ruptures   5% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.07 #85 INFO] sample_ruptures   6% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.09 #85 INFO] sample_ruptures   7% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.10 #85 INFO] sample_ruptures   8% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.12 #85 INFO] sample_ruptures   9% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.13 #85 INFO] sample_ruptures  10% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.15 #85 INFO] sample_ruptures  11% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.16 #85 INFO] sample_ruptures  12% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.18 #85 INFO] sample_ruptures  13% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.19 #85 INFO] sample_ruptures  14% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.21 #85 INFO] sample_ruptures  15% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.22 #85 INFO] sample_ruptures  16% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.24 #85 INFO] sample_ruptures  17% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.25 #85 INFO] sample_ruptures  18% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.27 #85 INFO] sample_ruptures  19% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.28 #85 INFO] sample_ruptures  20% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.30 #85 INFO] sample_ruptures  21% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.31 #85 INFO] sample_ruptures  22% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.33 #85 INFO] sample_ruptures  23% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.35 #85 INFO] sample_ruptures  24% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.37 #85 INFO] sample_ruptures  25% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.38 #85 INFO] sample_ruptures  26% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.40 #85 INFO] sample_ruptures  27% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.41 #85 INFO] sample_ruptures  28% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.43 #85 INFO] sample_ruptures  29% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.45 #85 INFO] sample_ruptures  30% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.47 #85 INFO] sample_ruptures  31% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.49 #85 INFO] sample_ruptures  32% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.51 #85 INFO] sample_ruptures  33% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.54 #85 INFO] sample_ruptures  34% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.56 #85 INFO] sample_ruptures  35% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.57 #85 INFO] sample_ruptures  36% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.59 #85 INFO] sample_ruptures  37% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.61 #85 INFO] sample_ruptures  38% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.62 #85 INFO] sample_ruptures  39% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.64 #85 INFO] sample_ruptures  40% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.65 #85 INFO] sample_ruptures  41% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.67 #85 INFO] sample_ruptures  42% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.68 #85 INFO] sample_ruptures  43% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.70 #85 INFO] sample_ruptures  44% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.71 #85 INFO] sample_ruptures  45% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.73 #85 INFO] sample_ruptures  46% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.74 #85 INFO] sample_ruptures  47% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.76 #85 INFO] sample_ruptures  48% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.77 #85 INFO] sample_ruptures  49% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.79 #85 INFO] sample_ruptures  50% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.80 #85 INFO] sample_ruptures  51% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.82 #85 INFO] sample_ruptures  52% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.83 #85 INFO] sample_ruptures  53% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.85 #85 INFO] sample_ruptures  54% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.86 #85 INFO] sample_ruptures  55% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.88 #85 INFO] sample_ruptures  56% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.89 #85 INFO] sample_ruptures  57% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.90 #85 INFO] sample_ruptures  58% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.92 #85 INFO] sample_ruptures  59% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.94 #85 INFO] sample_ruptures  60% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.95 #85 INFO] sample_ruptures  61% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.96 #85 INFO] sample_ruptures  62% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.98 #85 INFO] sample_ruptures  63% [101 submitted, 0 queued]
+[2021-07-12 05:25:15.99 #85 INFO] sample_ruptures  64% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.01 #85 INFO] sample_ruptures  65% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.02 #85 INFO] sample_ruptures  66% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.04 #85 INFO] sample_ruptures  67% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.05 #85 INFO] sample_ruptures  68% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.07 #85 INFO] sample_ruptures  69% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.08 #85 INFO] sample_ruptures  70% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.10 #85 INFO] sample_ruptures  71% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.11 #85 INFO] sample_ruptures  72% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.19 #85 INFO] sample_ruptures  73% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.21 #85 INFO] sample_ruptures  74% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.22 #85 INFO] sample_ruptures  75% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.24 #85 INFO] sample_ruptures  76% [101 submitted, 0 queued]
+[2021-07-12 05:25:16.25 #85 INFO] sample_ruptures  77% [101 submitted, 0 queued]
+[2021-07-12 05:25:27.46 #85 INFO] sample_ruptures  78% [101 submitted, 0 queued]
+[2021-07-12 05:25:55.65 #85 INFO] sample_ruptures  79% [101 submitted, 0 queued]
+[2021-07-12 05:27:48.62 #85 INFO] sample_ruptures  80% [101 submitted, 0 queued]
+[2021-07-12 05:27:54.06 #85 INFO] sample_ruptures  81% [101 submitted, 0 queued]
+[2021-07-12 05:27:57.94 #85 INFO] sample_ruptures  82% [101 submitted, 0 queued]
+[2021-07-12 05:29:56.94 #85 INFO] sample_ruptures  83% [101 submitted, 0 queued]
+[2021-07-12 05:30:07.77 #85 INFO] sample_ruptures  84% [101 submitted, 0 queued]
+[2021-07-12 05:30:12.07 #85 INFO] sample_ruptures  85% [101 submitted, 0 queued]
+[2021-07-12 05:30:14.29 #85 INFO] sample_ruptures  86% [101 submitted, 0 queued]
+[2021-07-12 05:30:26.66 #85 INFO] sample_ruptures  87% [101 submitted, 0 queued]
+[2021-07-12 05:30:30.34 #85 INFO] sample_ruptures  88% [101 submitted, 0 queued]
+[2021-07-12 05:31:07.90 #85 INFO] sample_ruptures  89% [101 submitted, 0 queued]
+[2021-07-12 05:32:37.39 #85 INFO] sample_ruptures  90% [101 submitted, 0 queued]
+[2021-07-12 05:33:31.98 #85 INFO] sample_ruptures  91% [101 submitted, 0 queued]
+[2021-07-12 05:34:24.38 #85 INFO] sample_ruptures  92% [101 submitted, 0 queued]
+[2021-07-12 05:37:20.87 #85 INFO] sample_ruptures  93% [101 submitted, 0 queued]
+[2021-07-12 05:39:35.12 #85 INFO] sample_ruptures  94% [101 submitted, 0 queued]
+[2021-07-12 05:43:01.88 #85 INFO] sample_ruptures  95% [101 submitted, 0 queued]
+[2021-07-12 05:44:21.06 #85 INFO] sample_ruptures  96% [101 submitted, 0 queued]
+[2021-07-12 05:46:04.04 #85 INFO] sample_ruptures  97% [101 submitted, 0 queued]
+[2021-07-12 05:48:06.56 #85 INFO] sample_ruptures  98% [101 submitted, 0 queued]
+[2021-07-12 05:50:57.36 #85 INFO] sample_ruptures  99% [101 submitted, 0 queued]
+[2021-07-12 05:56:01.67 #85 INFO] sample_ruptures 100% [101 submitted, 0 queued]
+[2021-07-12 05:56:01.68 #85 INFO] Mean time per core=155s, std=368.7s, min=0s, max=1846s
+[2021-07-12 05:56:01.68 #85 INFO] Received {'rup_array': '1.55 GB', 'calc_times': '21.04 KB', 'eff_ruptures': '4.04 KB'} in 1848 seconds
+[2021-07-12 05:56:01.76 #85 INFO] There are 2400 realization(s)
+[2021-07-12 05:56:02.38 #85 INFO] Reordering the ruptures and storing the events
+[2021-07-12 05:56:14.67 #85 INFO] Associating event_id -> rlz_id for 180_356_790 events and 7_284_637 ruptures
+[2021-07-12 06:00:32.25 #85 INFO] Sent 210 tasks, 778.39 MB in 237 seconds
+[2021-07-12 06:18:23.37 #85 INFO] Mean time per core=244s, std=235.6s, min=33s, max=1222s
+[2021-07-12 06:18:23.38 #85 INFO] Received {'tot': '1.68 GB'} in 1071 seconds
+[2021-07-12 06:31:21.44 #85 INFO] minimum_intensity={'SA(0.3)': 0.1, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05, 'SA(0.5)': 0.1}
+[2021-07-12 06:31:21.45 #85 INFO] Sending 7_284_637 ruptures
+[2021-07-12 06:37:07.22 #85 INFO] Sent 210 tasks, 787.71 MB in 324 seconds
+[2021-07-12 06:38:29.18 #85 INFO] start_ebrisk   1% [210 submitted, 0 queued]
+[2021-07-12 06:43:44.27 #85 INFO] start_ebrisk   2% [210 submitted, 0 queued]
+[2021-07-12 06:44:07.45 #85 INFO] start_ebrisk   3% [210 submitted, 0 queued]
+[2021-07-12 06:44:27.22 #85 INFO] start_ebrisk   4% [210 submitted, 0 queued]
+[2021-07-12 06:44:43.29 #85 INFO] start_ebrisk   5% [210 submitted, 0 queued]
+[2021-07-12 06:44:59.15 #85 INFO] start_ebrisk   6% [210 submitted, 0 queued]
+[2021-07-12 06:45:18.61 #85 INFO] start_ebrisk   7% [210 submitted, 0 queued]
+[2021-07-12 06:45:40.88 #85 INFO] start_ebrisk   8% [210 submitted, 0 queued]
+[2021-07-12 06:46:04.62 #85 INFO] start_ebrisk   9% [210 submitted, 0 queued]
+[2021-07-12 06:46:18.96 #85 INFO] start_ebrisk  10% [210 submitted, 0 queued]
+[2021-07-12 06:46:51.85 #85 INFO] start_ebrisk  11% [210 submitted, 0 queued]
+[2021-07-12 06:47:37.37 #85 INFO] start_ebrisk  12% [210 submitted, 0 queued]
+[2021-07-12 06:47:39.64 #85 INFO] start_ebrisk  13% [210 submitted, 0 queued]
+[2021-07-12 06:47:57.48 #85 INFO] start_ebrisk  14% [210 submitted, 0 queued]
+[2021-07-12 06:48:28.21 #85 INFO] start_ebrisk  15% [210 submitted, 0 queued]
+[2021-07-12 06:48:37.93 #85 INFO] start_ebrisk  16% [210 submitted, 0 queued]
+[2021-07-12 06:48:39.02 #85 INFO] start_ebrisk  17% [210 submitted, 0 queued]
+[2021-07-12 06:48:49.93 #85 INFO] start_ebrisk  18% [210 submitted, 0 queued]
+[2021-07-12 06:48:55.39 #85 INFO] start_ebrisk  19% [210 submitted, 0 queued]
+[2021-07-12 06:49:04.11 #85 INFO] start_ebrisk  20% [210 submitted, 0 queued]
+[2021-07-12 06:49:12.55 #85 INFO] start_ebrisk  21% [210 submitted, 0 queued]
+[2021-07-12 06:49:29.56 #85 INFO] start_ebrisk  22% [210 submitted, 0 queued]
+[2021-07-12 06:49:47.53 #85 INFO] start_ebrisk  23% [210 submitted, 0 queued]
+[2021-07-12 06:50:25.92 #85 INFO] start_ebrisk  24% [210 submitted, 0 queued]
+[2021-07-12 06:50:37.93 #85 INFO] start_ebrisk  25% [210 submitted, 0 queued]
+[2021-07-12 06:50:42.06 #85 INFO] start_ebrisk  26% [210 submitted, 0 queued]
+[2021-07-12 06:50:53.74 #85 INFO] start_ebrisk  27% [210 submitted, 0 queued]
+[2021-07-12 06:51:05.48 #85 INFO] start_ebrisk  28% [210 submitted, 0 queued]
+[2021-07-12 06:52:01.24 #85 INFO] start_ebrisk  29% [210 submitted, 0 queued]
+[2021-07-12 06:52:01.35 #85 INFO] start_ebrisk  30% [210 submitted, 0 queued]
+[2021-07-12 06:52:01.48 #85 INFO] start_ebrisk  31% [210 submitted, 0 queued]
+[2021-07-12 06:52:03.82 #85 INFO] start_ebrisk  32% [210 submitted, 0 queued]
+[2021-07-12 06:53:21.92 #85 INFO] start_ebrisk  33% [210 submitted, 0 queued]
+[2021-07-12 06:53:40.84 #85 INFO] start_ebrisk  34% [210 submitted, 0 queued]
+[2021-07-12 06:54:38.45 #85 INFO] start_ebrisk  35% [210 submitted, 0 queued]
+[2021-07-12 06:56:23.50 #85 INFO] start_ebrisk  36% [210 submitted, 0 queued]
+[2021-07-12 06:58:18.89 #85 INFO] start_ebrisk  37% [210 submitted, 0 queued]
+[2021-07-12 06:59:28.94 #85 INFO] start_ebrisk  38% [210 submitted, 0 queued]
+[2021-07-12 06:59:48.46 #85 INFO] start_ebrisk  39% [210 submitted, 0 queued]
+[2021-07-12 07:00:29.46 #85 INFO] start_ebrisk  40% [210 submitted, 0 queued]
+[2021-07-12 07:01:00.89 #85 INFO] start_ebrisk  41% [210 submitted, 0 queued]
+[2021-07-12 07:01:58.04 #85 INFO] start_ebrisk  42% [210 submitted, 0 queued]
+[2021-07-12 07:02:44.14 #85 INFO] start_ebrisk  43% [210 submitted, 0 queued]
+[2021-07-12 07:02:58.48 #85 INFO] start_ebrisk  44% [210 submitted, 0 queued]
+[2021-07-12 07:04:14.38 #85 INFO] start_ebrisk  45% [210 submitted, 0 queued]
+[2021-07-12 07:04:28.88 #85 INFO] start_ebrisk  46% [210 submitted, 0 queued]
+[2021-07-12 07:04:42.86 #85 INFO] start_ebrisk  47% [210 submitted, 0 queued]
+[2021-07-12 07:05:14.39 #85 INFO] start_ebrisk  48% [210 submitted, 0 queued]
+[2021-07-12 07:05:25.01 #85 INFO] start_ebrisk  49% [210 submitted, 0 queued]
+[2021-07-12 07:06:26.35 #85 INFO] start_ebrisk  50% [210 submitted, 0 queued]
+[2021-07-12 07:07:16.26 #85 INFO] start_ebrisk  51% [210 submitted, 0 queued]
+[2021-07-12 07:07:34.62 #85 INFO] start_ebrisk  52% [210 submitted, 0 queued]
+[2021-07-12 07:07:47.83 #85 INFO] start_ebrisk  53% [210 submitted, 0 queued]
+[2021-07-12 07:08:09.10 #85 INFO] start_ebrisk  54% [210 submitted, 0 queued]
+[2021-07-12 07:09:03.93 #85 INFO] start_ebrisk  55% [210 submitted, 0 queued]
+[2021-07-12 07:09:11.23 #85 INFO] start_ebrisk  56% [210 submitted, 0 queued]
+[2021-07-12 07:09:33.71 #85 INFO] start_ebrisk  57% [210 submitted, 0 queued]
+[2021-07-12 07:10:20.70 #85 INFO] start_ebrisk  58% [210 submitted, 0 queued]
+[2021-07-12 07:10:33.51 #85 INFO] start_ebrisk  59% [210 submitted, 0 queued]
+[2021-07-12 07:11:05.54 #85 INFO] start_ebrisk  60% [210 submitted, 0 queued]
+[2021-07-12 07:12:19.03 #85 INFO] start_ebrisk  61% [210 submitted, 0 queued]
+[2021-07-12 07:13:42.27 #85 INFO] start_ebrisk  62% [210 submitted, 0 queued]
+[2021-07-12 07:14:40.67 #85 INFO] start_ebrisk  63% [210 submitted, 0 queued]
+[2021-07-12 07:15:05.78 #85 INFO] start_ebrisk  64% [210 submitted, 0 queued]
+[2021-07-12 07:17:16.40 #85 INFO] start_ebrisk  65% [210 submitted, 0 queued]
+[2021-07-12 07:18:51.21 #85 INFO] start_ebrisk  66% [210 submitted, 0 queued]
+[2021-07-12 07:19:13.26 #85 INFO] start_ebrisk  67% [210 submitted, 0 queued]
+[2021-07-12 07:19:52.42 #85 INFO] start_ebrisk  68% [210 submitted, 0 queued]
+[2021-07-12 07:21:02.46 #85 INFO] start_ebrisk  69% [210 submitted, 0 queued]
+[2021-07-12 07:21:23.54 #85 INFO] start_ebrisk  70% [210 submitted, 0 queued]
+[2021-07-12 07:22:21.48 #85 INFO] start_ebrisk  71% [210 submitted, 0 queued]
+[2021-07-12 07:23:08.47 #85 INFO] start_ebrisk  72% [210 submitted, 0 queued]
+[2021-07-12 07:23:10.49 #85 INFO] start_ebrisk  73% [210 submitted, 0 queued]
+[2021-07-12 07:24:19.32 #85 INFO] start_ebrisk  74% [210 submitted, 0 queued]
+[2021-07-12 07:25:17.22 #85 INFO] start_ebrisk  75% [210 submitted, 0 queued]
+[2021-07-12 07:25:36.65 #85 INFO] start_ebrisk  76% [210 submitted, 0 queued]
+[2021-07-12 07:26:16.53 #85 INFO] start_ebrisk  77% [210 submitted, 0 queued]
+[2021-07-12 07:26:56.19 #85 INFO] start_ebrisk  78% [210 submitted, 0 queued]
+[2021-07-12 07:27:04.84 #85 INFO] start_ebrisk  79% [210 submitted, 0 queued]
+[2021-07-12 07:27:21.91 #85 INFO] start_ebrisk  80% [210 submitted, 0 queued]
+[2021-07-12 07:29:22.22 #85 INFO] start_ebrisk  81% [210 submitted, 0 queued]
+[2021-07-12 07:29:56.28 #85 INFO] start_ebrisk  82% [210 submitted, 0 queued]
+[2021-07-12 07:31:25.47 #85 INFO] start_ebrisk  83% [210 submitted, 0 queued]
+[2021-07-12 07:31:44.97 #85 INFO] start_ebrisk  84% [210 submitted, 0 queued]
+[2021-07-12 07:32:17.73 #85 INFO] start_ebrisk  85% [210 submitted, 0 queued]
+[2021-07-12 07:34:02.05 #85 INFO] start_ebrisk  86% [210 submitted, 0 queued]
+[2021-07-12 07:34:32.74 #85 INFO] start_ebrisk  87% [210 submitted, 0 queued]
+[2021-07-12 07:36:34.23 #85 INFO] start_ebrisk  88% [210 submitted, 0 queued]
+[2021-07-12 07:37:53.55 #85 INFO] start_ebrisk  89% [210 submitted, 0 queued]
+[2021-07-12 07:38:08.52 #85 INFO] start_ebrisk  90% [210 submitted, 0 queued]
+[2021-07-12 07:40:14.78 #85 INFO] start_ebrisk  91% [210 submitted, 0 queued]
+[2021-07-12 07:49:31.52 #85 INFO] start_ebrisk  92% [210 submitted, 0 queued]
+[2021-07-12 07:52:43.81 #85 INFO] start_ebrisk  93% [210 submitted, 0 queued]
+[2021-07-12 07:53:27.12 #85 INFO] start_ebrisk  94% [210 submitted, 0 queued]
+[2021-07-12 07:56:27.26 #85 INFO] start_ebrisk  95% [210 submitted, 0 queued]
+[2021-07-12 07:58:48.94 #85 INFO] start_ebrisk  96% [210 submitted, 0 queued]
+[2021-07-12 08:03:50.50 #85 INFO] start_ebrisk  97% [210 submitted, 0 queued]
+[2021-07-12 08:13:40.32 #85 INFO] start_ebrisk  98% [210 submitted, 0 queued]
+[2021-07-12 08:17:34.27 #85 INFO] start_ebrisk  99% [210 submitted, 0 queued]
+[2021-07-12 08:20:16.56 #85 INFO] start_ebrisk 100% [210 submitted, 0 queued]
+[2021-07-12 08:20:16.57 #85 INFO] Mean time per core=3442s, std=1063.5s, min=2085s, max=6492s
+[2021-07-12 08:20:16.57 #85 INFO] Received {'alt': '1.78 GB', 'gmf_info': '34.31 MB', 'losses_by_A': '590.09 KB', 'momenta': '121.92 KB', 'events_per_sid': '4.18 KB'} in 6189 seconds
+[2021-07-12 08:20:16.64 #85 INFO] Produced 1.4 GB of GMFs
+[2021-07-12 08:20:20.15 #85 INFO] Stored 1.78 GB in the agg_loss_table
+[2021-07-12 08:20:20.16 #85 INFO] Building the src_loss_table
+[2021-07-12 08:22:11.25 #85 INFO] Sending 11.22 MB of losses
+[2021-07-12 08:22:11.33 #85 INFO] Sending 11.12 MB of losses
+[2021-07-12 08:22:11.40 #85 INFO] Sending 11.16 MB of losses
+[2021-07-12 08:22:11.47 #85 INFO] Sending 15.83 MB of losses
+[2021-07-12 08:22:11.55 #85 INFO] Sending 17.3 MB of losses
+[2021-07-12 08:22:11.62 #85 INFO] Sending 12.42 MB of losses
+[2021-07-12 08:22:11.70 #85 INFO] Sending 10.5 MB of losses
+[2021-07-12 08:22:11.77 #85 INFO] Sending 10.47 MB of losses
+[2021-07-12 08:22:11.84 #85 INFO] Sending 11.3 MB of losses
+[2021-07-12 08:22:11.91 #85 INFO] Sending 14.85 MB of losses
+[2021-07-12 08:22:11.99 #85 INFO] Sending 14.86 MB of losses
+[2021-07-12 08:22:12.07 #85 INFO] Sending 21.37 MB of losses
+[2021-07-12 08:22:12.16 #85 INFO] Sending 26.53 MB of losses
+[2021-07-12 08:22:12.25 #85 INFO] Sending 30.34 MB of losses
+[2021-07-12 08:22:12.35 #85 INFO] Sending 10.02 MB of losses
+[2021-07-12 08:22:12.43 #85 INFO] Sending 10.15 MB of losses
+[2021-07-12 08:22:12.51 #85 INFO] Sending 10.74 MB of losses
+[2021-07-12 08:22:12.59 #85 INFO] Sending 15.62 MB of losses
+[2021-07-12 08:22:12.68 #85 INFO] Sending 16.26 MB of losses
+[2021-07-12 08:22:12.77 #85 INFO] Sending 9.17 MB of losses
+[2021-07-12 08:22:12.85 #85 INFO] Sending 9.66 MB of losses
+[2021-07-12 08:22:12.93 #85 INFO] Sending 9.47 MB of losses
+[2021-07-12 08:22:13.02 #85 INFO] Sending 11.76 MB of losses
+[2021-07-12 08:22:13.10 #85 INFO] Sending 13.66 MB of losses
+[2021-07-12 08:22:13.19 #85 INFO] Sending 14.11 MB of losses
+[2021-07-12 08:22:13.28 #85 INFO] Sending 21.27 MB of losses
+[2021-07-12 08:22:13.37 #85 INFO] Sending 28.05 MB of losses
+[2021-07-12 08:22:13.46 #85 INFO] Sending 20.54 MB of losses
+[2021-07-12 08:22:13.53 #85 INFO] Sending 9.14 MB of losses
+[2021-07-12 08:22:13.60 #85 INFO] Sending 9.28 MB of losses
+[2021-07-12 08:22:13.67 #85 INFO] Sending 11.33 MB of losses
+[2021-07-12 08:22:13.74 #85 INFO] Sending 14.25 MB of losses
+[2021-07-12 08:22:13.81 #85 INFO] Sending 13.09 MB of losses
+[2021-07-12 08:22:13.88 #85 INFO] Sending 8.68 MB of losses
+[2021-07-12 08:22:13.96 #85 INFO] Sending 8.86 MB of losses
+[2021-07-12 08:22:14.03 #85 INFO] Sending 8.6 MB of losses
+[2021-07-12 08:22:14.11 #85 INFO] Sending 11.8 MB of losses
+[2021-07-12 08:22:14.19 #85 INFO] Sending 12.46 MB of losses
+[2021-07-12 08:22:14.26 #85 INFO] Sending 14.94 MB of losses
+[2021-07-12 08:22:14.35 #85 INFO] Sending 19.62 MB of losses
+[2021-07-12 08:22:14.44 #85 INFO] Sending 29.33 MB of losses
+[2021-07-12 08:22:14.52 #85 INFO] Sending 11.08 MB of losses
+[2021-07-12 08:22:14.60 #85 INFO] Sending 7.58 MB of losses
+[2021-07-12 08:22:14.68 #85 INFO] Sending 7.62 MB of losses
+[2021-07-12 08:22:14.75 #85 INFO] Sending 10.2 MB of losses
+[2021-07-12 08:22:14.82 #85 INFO] Sending 11.7 MB of losses
+[2021-07-12 08:22:14.90 #85 INFO] Sending 9.21 MB of losses
+[2021-07-12 08:22:14.98 #85 INFO] Sending 7.01 MB of losses
+[2021-07-12 08:22:15.06 #85 INFO] Sending 7.22 MB of losses
+[2021-07-12 08:22:15.14 #85 INFO] Sending 7.42 MB of losses
+[2021-07-12 08:22:15.22 #85 INFO] Sending 9.88 MB of losses
+[2021-07-12 08:22:15.30 #85 INFO] Sending 10.31 MB of losses
+[2021-07-12 08:22:15.39 #85 INFO] Sending 13.52 MB of losses
+[2021-07-12 08:22:15.48 #85 INFO] Sending 16.99 MB of losses
+[2021-07-12 08:22:15.57 #85 INFO] Sending 23.31 MB of losses
+[2021-07-12 08:22:15.65 #85 INFO] Sending 8.34 MB of losses
+[2021-07-12 08:22:15.73 #85 INFO] Sending 8.44 MB of losses
+[2021-07-12 08:22:15.81 #85 INFO] Sending 8.54 MB of losses
+[2021-07-12 08:22:15.88 #85 INFO] Sending 12.55 MB of losses
+[2021-07-12 08:22:15.97 #85 INFO] Sending 13.37 MB of losses
+[2021-07-12 08:22:16.05 #85 INFO] Sending 8.39 MB of losses
+[2021-07-12 08:22:16.12 #85 INFO] Sending 8.01 MB of losses
+[2021-07-12 08:22:16.20 #85 INFO] Sending 7.86 MB of losses
+[2021-07-12 08:22:16.27 #85 INFO] Sending 9.22 MB of losses
+[2021-07-12 08:22:16.34 #85 INFO] Sending 11.2 MB of losses
+[2021-07-12 08:22:16.42 #85 INFO] Sending 11.25 MB of losses
+[2021-07-12 08:22:16.51 #85 INFO] Sending 17.07 MB of losses
+[2021-07-12 08:22:16.60 #85 INFO] Sending 21.79 MB of losses
+[2021-07-12 08:22:16.68 #85 INFO] Sending 18.52 MB of losses
+[2021-07-12 08:22:16.76 #85 INFO] Sending 4.57 MB of losses
+[2021-07-12 08:22:16.83 #85 INFO] Sending 4.79 MB of losses
+[2021-07-12 08:22:16.90 #85 INFO] Sending 5.41 MB of losses
+[2021-07-12 08:22:16.96 #85 INFO] Sending 7.26 MB of losses
+[2021-07-12 08:22:17.03 #85 INFO] Sending 7.18 MB of losses
+[2021-07-12 08:22:17.10 #85 INFO] Sending 4.26 MB of losses
+[2021-07-12 08:22:17.17 #85 INFO] Sending 4.53 MB of losses
+[2021-07-12 08:22:17.25 #85 INFO] Sending 4.41 MB of losses
+[2021-07-12 08:22:17.32 #85 INFO] Sending 5.79 MB of losses
+[2021-07-12 08:22:17.40 #85 INFO] Sending 6.31 MB of losses
+[2021-07-12 08:22:17.48 #85 INFO] Sending 7.14 MB of losses
+[2021-07-12 08:22:17.56 #85 INFO] Sending 9.96 MB of losses
+[2021-07-12 08:22:17.63 #85 INFO] Sending 13.87 MB of losses
+[2021-07-12 08:22:17.70 #85 INFO] Sending 13 MB of losses
+[2021-07-12 08:22:17.77 #85 INFO] Sending 11 MB of losses
+[2021-07-12 08:22:17.85 #85 INFO] Sending 11.12 MB of losses
+[2021-07-12 08:22:17.92 #85 INFO] Sending 14.19 MB of losses
+[2021-07-12 08:22:18.00 #85 INFO] Sending 17.31 MB of losses
+[2021-07-12 08:22:18.08 #85 INFO] Sending 14.19 MB of losses
+[2021-07-12 08:22:18.15 #85 INFO] Sending 10.36 MB of losses
+[2021-07-12 08:22:18.23 #85 INFO] Sending 10.6 MB of losses
+[2021-07-12 08:22:18.31 #85 INFO] Sending 10.37 MB of losses
+[2021-07-12 08:22:18.38 #85 INFO] Sending 14.59 MB of losses
+[2021-07-12 08:22:18.45 #85 INFO] Sending 14.88 MB of losses
+[2021-07-12 08:22:18.53 #85 INFO] Sending 19.02 MB of losses
+[2021-07-12 08:22:18.62 #85 INFO] Sending 23.25 MB of losses
+[2021-07-12 08:22:18.71 #85 INFO] Sending 37.13 MB of losses
+[2021-07-12 08:22:18.79 #85 INFO] Sent 96 tasks, 1.19 GB in 7 seconds
+[2021-07-12 08:22:19.53 #85 INFO] post_risk   1% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.55 #85 INFO] post_risk   2% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.56 #85 INFO] post_risk   3% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.58 #85 INFO] post_risk   4% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.59 #85 INFO] post_risk   5% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.60 #85 INFO] post_risk   6% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.62 #85 INFO] post_risk   7% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.63 #85 INFO] post_risk   8% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.64 #85 INFO] post_risk   9% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.66 #85 INFO] post_risk  10% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.67 #85 INFO] post_risk  11% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.69 #85 INFO] post_risk  12% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.70 #85 INFO] post_risk  13% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.71 #85 INFO] post_risk  14% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.73 #85 INFO] post_risk  15% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.74 #85 INFO] post_risk  16% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.76 #85 INFO] post_risk  17% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.77 #85 INFO] post_risk  18% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.78 #85 INFO] post_risk  19% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.80 #85 INFO] post_risk  20% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.81 #85 INFO] post_risk  21% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.82 #85 INFO] post_risk  22% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.84 #85 INFO] post_risk  23% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.85 #85 INFO] post_risk  25% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.86 #85 INFO] post_risk  26% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.88 #85 INFO] post_risk  27% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.89 #85 INFO] post_risk  28% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.90 #85 INFO] post_risk  29% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.92 #85 INFO] post_risk  30% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.93 #85 INFO] post_risk  31% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.94 #85 INFO] post_risk  32% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.96 #85 INFO] post_risk  33% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.97 #85 INFO] post_risk  34% [96 submitted, 0 queued]
+[2021-07-12 08:22:19.99 #85 INFO] post_risk  35% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.00 #85 INFO] post_risk  36% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.02 #85 INFO] post_risk  37% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.03 #85 INFO] post_risk  38% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.05 #85 INFO] post_risk  39% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.06 #85 INFO] post_risk  40% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.07 #85 INFO] post_risk  41% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.09 #85 INFO] post_risk  42% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.10 #85 INFO] post_risk  43% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.11 #85 INFO] post_risk  44% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.13 #85 INFO] post_risk  45% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.14 #85 INFO] post_risk  46% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.16 #85 INFO] post_risk  47% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.17 #85 INFO] post_risk  48% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.18 #85 INFO] post_risk  50% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.20 #85 INFO] post_risk  51% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.21 #85 INFO] post_risk  52% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.22 #85 INFO] post_risk  53% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.24 #85 INFO] post_risk  54% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.25 #85 INFO] post_risk  55% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.26 #85 INFO] post_risk  56% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.28 #85 INFO] post_risk  57% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.29 #85 INFO] post_risk  58% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.31 #85 INFO] post_risk  59% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.32 #85 INFO] post_risk  60% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.33 #85 INFO] post_risk  61% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.35 #85 INFO] post_risk  62% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.36 #85 INFO] post_risk  63% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.37 #85 INFO] post_risk  64% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.39 #85 INFO] post_risk  65% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.40 #85 INFO] post_risk  66% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.41 #85 INFO] post_risk  67% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.43 #85 INFO] post_risk  68% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.44 #85 INFO] post_risk  69% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.46 #85 INFO] post_risk  70% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.47 #85 INFO] post_risk  71% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.48 #85 INFO] post_risk  72% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.50 #85 INFO] post_risk  73% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.51 #85 INFO] post_risk  75% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.53 #85 INFO] post_risk  76% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.54 #85 INFO] post_risk  77% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.55 #85 INFO] post_risk  78% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.57 #85 INFO] post_risk  79% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.58 #85 INFO] post_risk  80% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.59 #85 INFO] post_risk  81% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.61 #85 INFO] post_risk  82% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.62 #85 INFO] post_risk  83% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.64 #85 INFO] post_risk  84% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.65 #85 INFO] post_risk  85% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.66 #85 INFO] post_risk  86% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.68 #85 INFO] post_risk  87% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.69 #85 INFO] post_risk  88% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.70 #85 INFO] post_risk  89% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.72 #85 INFO] post_risk  90% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.73 #85 INFO] post_risk  91% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.74 #85 INFO] post_risk  92% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.76 #85 INFO] post_risk  93% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.77 #85 INFO] post_risk  94% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.78 #85 INFO] post_risk  95% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.80 #85 INFO] post_risk  96% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.81 #85 INFO] post_risk  97% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.82 #85 INFO] post_risk  98% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.85 #85 INFO] post_risk 100% [96 submitted, 0 queued]
+[2021-07-12 08:22:20.85 #85 INFO] Mean time per core=0s, std=0.2s, min=0s, max=1s
+[2021-07-12 08:22:20.89 #85 INFO] Received {'tot': '4.39 MB'} in 2 seconds
+[2021-07-12 08:22:30.77 #85 INFO] Total portfolio loss
+==== ============= ============= ========= =============
+loss contents      nonstructural occupants structural   
+==== ============= ============= ========= =============
+avg  3_091_430_935 9_156_878_940 271       8_341_704_319
+==== ============= ============= ========= =============
+[2021-07-12 08:22:30.78 #85 INFO] Sanity check on agg_losses
+[2021-07-12 08:22:37.65 #85 INFO] Exposing the outputs to the database
+[2021-07-12 08:22:37.90 #85 INFO] Stored 6.11 GB on /root/oqdata/calc_85.hdf5 in 10776 seconds
