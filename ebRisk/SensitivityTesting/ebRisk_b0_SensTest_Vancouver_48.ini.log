@@ -1,0 +1,176 @@
+[2021-07-25 00:13:15.34 #129 INFO] root running /mnt/storage/canada-srm2/ebRisk/SensitivityTesting/ebRisk_b0_SensTest_Vancouver_48.ini [--hc=None]
+[2021-07-25 00:13:15.34 #129 INFO] Using engine version 3.11.3-git29ac352f7d
+[2021-07-25 00:13:16.02 #129 WARNING] Using 96 cores on ip-10-70-136-127
+[2021-07-25 00:13:16.04 #129 INFO] Validated nationalModel.xml in 0.01 seconds
+[2021-07-25 00:13:16.16 #129 INFO] Checksum of the input files: 2947178073
+[2021-07-25 00:13:16.18 #129 INFO] Reading the risk model if present
+[2021-07-25 00:13:42.78 #129 INFO] Reading /mnt/storage/canada-srm2/ebRisk/SensitivityTesting/TESTEXPO_Vancouver.xml
+[2021-07-25 00:13:42.81 #129 INFO] Extracting the hazard sites from the site model
+[2021-07-25 00:13:44.66 #129 INFO] Associated 177 assets to 6 sites
+[2021-07-25 00:13:45.37 #129 INFO] Reducing risk model from 7260 to 97 taxonomies
+[2021-07-25 00:13:46.13 #129 INFO] minimum_asset_loss={'contents': 0, 'nonstructural': 0, 'occupants': 0, 'structural': 0}
+[2021-07-25 00:13:46.14 #129 INFO] Storing 6 aggregation keys
+[2021-07-25 00:13:46.23 #129 INFO] Total number of logic tree paths = 24_576
+[2021-07-25 00:13:46.23 #129 INFO] Reading the source model(s) in parallel
+[2021-07-25 00:13:49.76 #129 INFO] read_source_model  16% [6 submitted, 0 queued]
+[2021-07-25 00:13:49.84 #129 INFO] read_source_model  33% [6 submitted, 0 queued]
+[2021-07-25 00:13:49.85 #129 INFO] read_source_model  50% [6 submitted, 0 queued]
+[2021-07-25 00:13:49.87 #129 INFO] read_source_model  66% [6 submitted, 0 queued]
+[2021-07-25 00:13:49.89 #129 INFO] read_source_model  83% [6 submitted, 0 queued]
+[2021-07-25 00:13:50.11 #129 INFO] read_source_model 100% [6 submitted, 0 queued]
+[2021-07-25 00:13:50.12 #129 INFO] Mean time per core=0s, std=0.0s, min=0s, max=0s
+[2021-07-25 00:13:50.12 #129 INFO] Received {'/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Harctic_simplified_collapsedRates.xml': '138.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Harctic_simplified_collapsedRates.xml': '133.09 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Rarctic_simplified_collapsedRates.xml': '132.34 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Rarctic_simplified_collapsedRates.xml': '126.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Harctic_simplified_collapsedRates.xml': '117.99 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Rarctic_simplified_collapsedRates.xml': '111.84 KB'} in 1 seconds
+[2021-07-25 00:13:50.42 #129 INFO] There are multiple different sources with the same ID [<AreaSource SCCYA;0>, <AreaSource SCCYA;1>]
+[2021-07-25 00:13:50.43 #129 INFO] There are 13 groups and 196 sources with len(et_ids)=3.85
+[2021-07-25 00:13:50.45 #129 INFO] Checking the sources bounding box
+[2021-07-25 00:13:50.47 #129 ERROR] source ACM: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
+[2021-07-25 00:13:50.59 #129 INFO] Rupture floating factor = 1.6303030303030304
+[2021-07-25 00:13:50.59 #129 INFO] Rupture spinning factor = 3.278787878787879
+[2021-07-25 00:13:50.60 #129 INFO] gzipping the input files
+[2021-07-25 00:13:54.05 #129 INFO] Storing risk model
+[2021-07-25 00:13:54.13 #129 INFO] minimum_intensity={'default': 0.1, 'SA(0.3)': 0.1, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05}
+[2021-07-25 00:13:54.88 #129 INFO] Building ruptures
+[2021-07-25 00:15:42.11 #129 INFO] Sending <SourceGroup Subduction IntraSlab30, 1 source(s)>
+[2021-07-25 00:15:42.12 #129 INFO] Sending <SourceGroup Subduction IntraSlab55, 4 source(s)>
+[2021-07-25 00:15:42.13 #129 INFO] Sending <SourceGroup Subduction Interface, 13 source(s)>
+[2021-07-25 00:15:42.13 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 29 source(s)>
+[2021-07-25 00:15:42.14 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 4 source(s)>
+[2021-07-25 00:15:42.14 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 6 source(s)>
+[2021-07-25 00:15:42.15 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 18 source(s)>
+[2021-07-25 00:15:42.15 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 10 source(s)>
+[2021-07-25 00:15:42.16 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 38 source(s)>
+[2021-07-25 00:15:42.16 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 14 source(s)>
+[2021-07-25 00:15:42.17 #129 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-07-25 00:15:42.17 #129 INFO] Sending <SourceGroup Active Shallow Crust, 57 source(s)>
+[2021-07-25 00:15:42.18 #129 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-07-25 00:15:46.28 #129 INFO] Sent 96 tasks, 60.31 MB in 1 seconds
+[2021-07-25 00:15:47.21 #129 INFO] sample_ruptures   1% [98 submitted, 3 queued]
+[2021-07-25 00:15:47.30 #129 INFO] sample_ruptures   2% [99 submitted, 2 queued]
+[2021-07-25 00:15:47.42 #129 INFO] sample_ruptures   3% [100 submitted, 1 queued]
+[2021-07-25 00:15:47.50 #129 INFO] sample_ruptures   4% [101 submitted, 0 queued]
+[2021-07-25 00:15:47.58 #129 INFO] sample_ruptures   5% [101 submitted, 0 queued]
+[2021-07-25 00:15:47.68 #129 INFO] sample_ruptures   6% [101 submitted, 0 queued]
+[2021-07-25 00:15:47.74 #129 INFO] sample_ruptures   7% [101 submitted, 0 queued]
+[2021-07-25 00:15:47.80 #129 INFO] sample_ruptures   8% [101 submitted, 0 queued]
+[2021-07-25 00:15:47.85 #129 INFO] sample_ruptures   9% [101 submitted, 0 queued]
+[2021-07-25 00:15:47.91 #129 INFO] sample_ruptures  10% [101 submitted, 0 queued]
+[2021-07-25 00:15:47.95 #129 INFO] sample_ruptures  11% [101 submitted, 0 queued]
+[2021-07-25 00:15:47.98 #129 INFO] sample_ruptures  12% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.01 #129 INFO] sample_ruptures  13% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.04 #129 INFO] sample_ruptures  14% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.08 #129 INFO] sample_ruptures  15% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.12 #129 INFO] sample_ruptures  16% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.15 #129 INFO] sample_ruptures  17% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.18 #129 INFO] sample_ruptures  18% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.22 #129 INFO] sample_ruptures  19% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.27 #129 INFO] sample_ruptures  20% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.30 #129 INFO] sample_ruptures  21% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.33 #129 INFO] sample_ruptures  22% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.36 #129 INFO] sample_ruptures  23% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.39 #129 INFO] sample_ruptures  24% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.42 #129 INFO] sample_ruptures  25% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.45 #129 INFO] sample_ruptures  26% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.48 #129 INFO] sample_ruptures  27% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.50 #129 INFO] sample_ruptures  28% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.53 #129 INFO] sample_ruptures  29% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.56 #129 INFO] sample_ruptures  30% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.59 #129 INFO] sample_ruptures  31% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.61 #129 INFO] sample_ruptures  32% [101 submitted, 0 queued]
+[2021-07-25 00:15:48.64 #129 INFO] sample_ruptures  33% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.40 #129 INFO] sample_ruptures  34% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.43 #129 INFO] sample_ruptures  35% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.46 #129 INFO] sample_ruptures  36% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.49 #129 INFO] sample_ruptures  37% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.52 #129 INFO] sample_ruptures  38% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.55 #129 INFO] sample_ruptures  39% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.58 #129 INFO] sample_ruptures  40% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.61 #129 INFO] sample_ruptures  41% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.64 #129 INFO] sample_ruptures  42% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.66 #129 INFO] sample_ruptures  43% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.69 #129 INFO] sample_ruptures  44% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.72 #129 INFO] sample_ruptures  45% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.75 #129 INFO] sample_ruptures  46% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.78 #129 INFO] sample_ruptures  47% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.80 #129 INFO] sample_ruptures  48% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.83 #129 INFO] sample_ruptures  49% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.86 #129 INFO] sample_ruptures  50% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.89 #129 INFO] sample_ruptures  51% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.92 #129 INFO] sample_ruptures  52% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.95 #129 INFO] sample_ruptures  53% [101 submitted, 0 queued]
+[2021-07-25 00:15:49.97 #129 INFO] sample_ruptures  54% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.00 #129 INFO] sample_ruptures  55% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.03 #129 INFO] sample_ruptures  56% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.06 #129 INFO] sample_ruptures  57% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.09 #129 INFO] sample_ruptures  58% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.11 #129 INFO] sample_ruptures  59% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.14 #129 INFO] sample_ruptures  60% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.17 #129 INFO] sample_ruptures  61% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.20 #129 INFO] sample_ruptures  62% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.23 #129 INFO] sample_ruptures  63% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.26 #129 INFO] sample_ruptures  64% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.28 #129 INFO] sample_ruptures  65% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.31 #129 INFO] sample_ruptures  66% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.33 #129 INFO] sample_ruptures  67% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.36 #129 INFO] sample_ruptures  68% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.39 #129 INFO] sample_ruptures  69% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.42 #129 INFO] sample_ruptures  70% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.45 #129 INFO] sample_ruptures  71% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.47 #129 INFO] sample_ruptures  72% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.50 #129 INFO] sample_ruptures  73% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.53 #129 INFO] sample_ruptures  74% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.56 #129 INFO] sample_ruptures  75% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.58 #129 INFO] sample_ruptures  76% [101 submitted, 0 queued]
+[2021-07-25 00:15:50.61 #129 INFO] sample_ruptures  77% [101 submitted, 0 queued]
+[2021-07-25 00:16:01.31 #129 INFO] sample_ruptures  78% [101 submitted, 0 queued]
+[2021-07-25 00:16:35.79 #129 INFO] sample_ruptures  79% [101 submitted, 0 queued]
+[2021-07-25 00:19:21.03 #129 INFO] sample_ruptures  80% [101 submitted, 0 queued]
+[2021-07-25 00:19:49.98 #129 INFO] sample_ruptures  81% [101 submitted, 0 queued]
+[2021-07-25 00:22:42.14 #129 INFO] sample_ruptures  82% [101 submitted, 0 queued]
+[2021-07-25 00:23:51.33 #129 INFO] sample_ruptures  83% [101 submitted, 0 queued]
+[2021-07-25 00:24:57.27 #129 INFO] sample_ruptures  84% [101 submitted, 0 queued]
+[2021-07-25 00:24:57.29 #129 INFO] sample_ruptures  85% [101 submitted, 0 queued]
+[2021-07-25 00:25:03.59 #129 INFO] sample_ruptures  86% [101 submitted, 0 queued]
+[2021-07-25 00:25:12.71 #129 INFO] sample_ruptures  87% [101 submitted, 0 queued]
+[2021-07-25 00:25:25.87 #129 INFO] sample_ruptures  88% [101 submitted, 0 queued]
+[2021-07-25 00:26:26.16 #129 INFO] sample_ruptures  89% [101 submitted, 0 queued]
+[2021-07-25 00:27:06.80 #129 INFO] sample_ruptures  90% [101 submitted, 0 queued]
+[2021-07-25 00:30:21.48 #129 INFO] sample_ruptures  91% [101 submitted, 0 queued]
+[2021-07-25 00:31:35.26 #129 INFO] sample_ruptures  92% [101 submitted, 0 queued]
+[2021-07-25 00:35:53.26 #129 INFO] sample_ruptures  93% [101 submitted, 0 queued]
+[2021-07-25 00:42:56.48 #129 INFO] sample_ruptures  94% [101 submitted, 0 queued]
+[2021-07-25 00:57:44.63 #129 INFO] sample_ruptures  95% [101 submitted, 0 queued]
+[2021-07-25 01:02:47.33 #129 INFO] sample_ruptures  96% [101 submitted, 0 queued]
+[2021-07-25 01:36:41.21 #129 INFO] sample_ruptures  97% [101 submitted, 0 queued]
+[2021-07-25 01:53:01.19 #129 INFO] sample_ruptures  98% [101 submitted, 0 queued]
+[2021-07-25 02:10:24.73 #129 INFO] sample_ruptures  99% [101 submitted, 0 queued]
+[2021-07-25 02:18:21.97 #129 INFO] sample_ruptures 100% [101 submitted, 0 queued]
+[2021-07-25 02:18:21.97 #129 INFO] Mean time per core=553s, std=1477.5s, min=0s, max=7355s
+[2021-07-25 02:18:21.98 #129 INFO] Received {'rup_array': '2.61 GB', 'calc_times': '21.04 KB', 'eff_ruptures': '4.04 KB'} in 7357 seconds
+[2021-07-25 02:18:22.59 #129 INFO] There are 24576 realization(s)
+[2021-07-25 02:18:22.61 #129 WARNING] The logic tree has 24576 realizations(!), please consider sampling it
+[2021-07-25 02:18:23.65 #129 INFO] Reordering the ruptures and storing the events
+[2021-07-25 02:18:44.83 #129 CRITICAL] 
+[2021-07-25 02:18:44.84 #129 CRITICAL] 
+[2021-07-25 02:18:44.85 #129 CRITICAL] Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/ebrisk.py", line 169, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 295, in execute
+    self.build_events_from_sources()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 189, in build_events_from_sources
+    imp.import_rups(self.datastore.getitem('ruptures')[()])
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/calc.py", line 298, in import_rups
+    self.save_events(rup_array)
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/calc.py", line 308, in save_events
+    self.check_overflow(E)  # check the number of events
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/calc.py", line 376, in check_overflow
+    raise ValueError(
+ValueError: The ebrisk calculator is restricted to 4294967296 events, got 13074908501
+
