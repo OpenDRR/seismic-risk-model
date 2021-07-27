@@ -1,0 +1,15 @@
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 138.78 KB in ['output/BC/report_327.rst']
+<Monitor export[root], duration=2.8566665649414062s, memory=11.48 MB>
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 44.13 MB in ['output/BC/hazard_curve-mean-PGA_327.csv', 'output/BC/hazard_curve-mean-SA(0.1)_327.csv', 'output/BC/hazard_curve-mean-SA(0.2)_327.csv', 'output/BC/hazard_curve-mean-SA(0.3)_327.csv', 'output/BC/hazard_curve-mean-SA(0.5)_327.csv', 'output/BC/hazard_curve-mean-SA(0.6)_327.csv', 'output/BC/hazard_curve-mean-SA(1.0)_327.csv', 'output/BC/hazard_curve-mean-SA(2.0)_327.csv']
+<Monitor export[root], duration=16.213033199310303s, memory=3.43 MB>
+mv: target 'output/BC/cH_BC_hcurves_PGA.csv' is not a directory
+mv: cannot stat 'output/BC/*SA*5.0*.csv': No such file or directory
+mv: cannot stat 'output/BC/*SA*10.0*.csv': No such file or directory
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 4.37 MB in ['output/BC/hazard_map-mean_327.csv']
+<Monitor export[root], duration=1.733191967010498s, memory=3.91 MB>
+here:  /root/storage/openquake/src/oq-engine/openquake/hazardlib/gsim/NBCC2020_tables/BC17/BC17_2k_V2.hdf5
+Exported 4.37 MB in ['output/BC/hazard_uhs-mean_327.csv']
+<Monitor export[root], duration=1.9000024795532227s, memory=3.93 MB>

@@ -1,0 +1,1615 @@
+[2021-07-17 08:52:57.09 #120 INFO] root running /mnt/storage/canada-srm2/ebRisk/SensitivityTesting/ebRisk_b0_SensTest_Vancouver_46.ini [--hc=None]
+[2021-07-17 08:52:57.09 #120 INFO] Using engine version 3.11.3-git29ac352f7d
+[2021-07-17 08:52:57.46 #120 WARNING] Using 96 cores on ip-10-70-136-127
+[2021-07-17 08:52:57.48 #120 INFO] Validated nationalModel.xml in 0.01 seconds
+[2021-07-17 08:52:57.55 #120 INFO] Checksum of the input files: 2947178073
+[2021-07-17 08:52:57.55 #120 INFO] Reading the risk model if present
+[2021-07-17 08:53:20.09 #120 INFO] Reading /mnt/storage/canada-srm2/ebRisk/SensitivityTesting/TESTEXPO_Vancouver.xml
+[2021-07-17 08:53:20.12 #120 INFO] Extracting the hazard sites from the site model
+[2021-07-17 08:53:21.99 #120 INFO] Associated 177 assets to 6 sites
+[2021-07-17 08:53:22.58 #120 INFO] Reducing risk model from 7260 to 97 taxonomies
+[2021-07-17 08:53:23.33 #120 INFO] minimum_asset_loss={'contents': 0, 'nonstructural': 0, 'occupants': 0, 'structural': 0}
+[2021-07-17 08:53:23.33 #120 INFO] Storing 6 aggregation keys
+[2021-07-17 08:53:23.41 #120 INFO] Total number of logic tree paths = 24_576
+[2021-07-17 08:53:23.41 #120 INFO] Reading the source model(s) in parallel
+[2021-07-17 08:53:25.91 #120 INFO] read_source_model  16% [6 submitted, 0 queued]
+[2021-07-17 08:53:25.99 #120 INFO] read_source_model  33% [6 submitted, 0 queued]
+[2021-07-17 08:53:26.02 #120 INFO] read_source_model  50% [6 submitted, 0 queued]
+[2021-07-17 08:53:26.04 #120 INFO] read_source_model  66% [6 submitted, 0 queued]
+[2021-07-17 08:53:26.07 #120 INFO] read_source_model  83% [6 submitted, 0 queued]
+[2021-07-17 08:53:26.09 #120 INFO] read_source_model 100% [6 submitted, 0 queued]
+[2021-07-17 08:53:26.09 #120 INFO] Mean time per core=0s, std=0.0s, min=0s, max=0s
+[2021-07-17 08:53:26.10 #120 INFO] Received {'/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Harctic_simplified_collapsedRates.xml': '138.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Harctic_simplified_collapsedRates.xml': '133.09 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Rarctic_simplified_collapsedRates.xml': '132.34 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Rarctic_simplified_collapsedRates.xml': '126.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Harctic_simplified_collapsedRates.xml': '117.99 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Rarctic_simplified_collapsedRates.xml': '111.84 KB'} in 0 seconds
+[2021-07-17 08:53:26.36 #120 INFO] There are multiple different sources with the same ID [<AreaSource SCCYA;0>, <AreaSource SCCYA;1>]
+[2021-07-17 08:53:26.36 #120 INFO] There are 13 groups and 196 sources with len(et_ids)=3.85
+[2021-07-17 08:53:26.38 #120 INFO] Checking the sources bounding box
+[2021-07-17 08:53:26.41 #120 ERROR] source ACM: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
+[2021-07-17 08:53:26.51 #120 INFO] Rupture floating factor = 1.6303030303030304
+[2021-07-17 08:53:26.52 #120 INFO] Rupture spinning factor = 3.278787878787879
+[2021-07-17 08:53:26.52 #120 INFO] gzipping the input files
+[2021-07-17 08:53:29.97 #120 INFO] Storing risk model
+[2021-07-17 08:53:30.05 #120 INFO] minimum_intensity={'default': 0.1, 'SA(0.3)': 0.1, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05}
+[2021-07-17 08:53:30.56 #120 INFO] Building ruptures
+[2021-07-17 08:55:07.41 #120 INFO] Sending <SourceGroup Subduction IntraSlab30, 1 source(s)>
+[2021-07-17 08:55:07.41 #120 INFO] Sending <SourceGroup Subduction IntraSlab55, 4 source(s)>
+[2021-07-17 08:55:07.42 #120 INFO] Sending <SourceGroup Subduction Interface, 13 source(s)>
+[2021-07-17 08:55:07.42 #120 INFO] Sending <SourceGroup Stable Shallow Crust, 29 source(s)>
+[2021-07-17 08:55:07.43 #120 INFO] Sending <SourceGroup Stable Shallow Crust, 4 source(s)>
+[2021-07-17 08:55:07.43 #120 INFO] Sending <SourceGroup Stable Shallow Crust, 6 source(s)>
+[2021-07-17 08:55:07.44 #120 INFO] Sending <SourceGroup Stable Shallow Crust, 18 source(s)>
+[2021-07-17 08:55:07.44 #120 INFO] Sending <SourceGroup Stable Shallow Crust, 10 source(s)>
+[2021-07-17 08:55:07.45 #120 INFO] Sending <SourceGroup Stable Shallow Crust, 38 source(s)>
+[2021-07-17 08:55:07.45 #120 INFO] Sending <SourceGroup Stable Shallow Crust, 14 source(s)>
+[2021-07-17 08:55:07.46 #120 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-07-17 08:55:07.46 #120 INFO] Sending <SourceGroup Active Shallow Crust, 57 source(s)>
+[2021-07-17 08:55:07.47 #120 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-07-17 08:55:09.48 #120 INFO] Sent 96 tasks, 60.31 MB in 0 seconds
+[2021-07-17 08:55:10.23 #120 INFO] sample_ruptures   1% [98 submitted, 3 queued]
+[2021-07-17 08:55:10.27 #120 INFO] sample_ruptures   2% [99 submitted, 2 queued]
+[2021-07-17 08:55:11.14 #120 INFO] sample_ruptures   3% [100 submitted, 1 queued]
+[2021-07-17 08:55:11.17 #120 INFO] sample_ruptures   4% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.19 #120 INFO] sample_ruptures   5% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.20 #120 INFO] sample_ruptures   6% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.22 #120 INFO] sample_ruptures   7% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.23 #120 INFO] sample_ruptures   8% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.25 #120 INFO] sample_ruptures   9% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.26 #120 INFO] sample_ruptures  10% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.28 #120 INFO] sample_ruptures  11% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.29 #120 INFO] sample_ruptures  12% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.30 #120 INFO] sample_ruptures  13% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.32 #120 INFO] sample_ruptures  14% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.34 #120 INFO] sample_ruptures  15% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.35 #120 INFO] sample_ruptures  16% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.36 #120 INFO] sample_ruptures  17% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.38 #120 INFO] sample_ruptures  18% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.39 #120 INFO] sample_ruptures  19% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.41 #120 INFO] sample_ruptures  20% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.42 #120 INFO] sample_ruptures  21% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.43 #120 INFO] sample_ruptures  22% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.45 #120 INFO] sample_ruptures  23% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.46 #120 INFO] sample_ruptures  24% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.47 #120 INFO] sample_ruptures  25% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.49 #120 INFO] sample_ruptures  26% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.50 #120 INFO] sample_ruptures  27% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.51 #120 INFO] sample_ruptures  28% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.53 #120 INFO] sample_ruptures  29% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.54 #120 INFO] sample_ruptures  30% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.55 #120 INFO] sample_ruptures  31% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.57 #120 INFO] sample_ruptures  32% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.58 #120 INFO] sample_ruptures  33% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.59 #120 INFO] sample_ruptures  34% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.61 #120 INFO] sample_ruptures  35% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.62 #120 INFO] sample_ruptures  36% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.63 #120 INFO] sample_ruptures  37% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.65 #120 INFO] sample_ruptures  38% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.66 #120 INFO] sample_ruptures  39% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.67 #120 INFO] sample_ruptures  40% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.69 #120 INFO] sample_ruptures  41% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.70 #120 INFO] sample_ruptures  42% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.72 #120 INFO] sample_ruptures  43% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.73 #120 INFO] sample_ruptures  44% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.75 #120 INFO] sample_ruptures  45% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.76 #120 INFO] sample_ruptures  46% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.77 #120 INFO] sample_ruptures  47% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.79 #120 INFO] sample_ruptures  48% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.80 #120 INFO] sample_ruptures  49% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.81 #120 INFO] sample_ruptures  50% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.83 #120 INFO] sample_ruptures  51% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.84 #120 INFO] sample_ruptures  52% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.85 #120 INFO] sample_ruptures  53% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.87 #120 INFO] sample_ruptures  54% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.88 #120 INFO] sample_ruptures  55% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.89 #120 INFO] sample_ruptures  56% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.91 #120 INFO] sample_ruptures  57% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.92 #120 INFO] sample_ruptures  58% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.93 #120 INFO] sample_ruptures  59% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.95 #120 INFO] sample_ruptures  60% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.96 #120 INFO] sample_ruptures  61% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.98 #120 INFO] sample_ruptures  62% [101 submitted, 0 queued]
+[2021-07-17 08:55:11.99 #120 INFO] sample_ruptures  63% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.00 #120 INFO] sample_ruptures  64% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.02 #120 INFO] sample_ruptures  65% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.03 #120 INFO] sample_ruptures  66% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.04 #120 INFO] sample_ruptures  67% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.06 #120 INFO] sample_ruptures  68% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.07 #120 INFO] sample_ruptures  69% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.09 #120 INFO] sample_ruptures  70% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.10 #120 INFO] sample_ruptures  71% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.11 #120 INFO] sample_ruptures  72% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.13 #120 INFO] sample_ruptures  73% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.14 #120 INFO] sample_ruptures  74% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.19 #120 INFO] sample_ruptures  75% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.21 #120 INFO] sample_ruptures  76% [101 submitted, 0 queued]
+[2021-07-17 08:55:12.22 #120 INFO] sample_ruptures  77% [101 submitted, 0 queued]
+[2021-07-17 08:55:23.60 #120 INFO] sample_ruptures  78% [101 submitted, 0 queued]
+[2021-07-17 08:55:51.58 #120 INFO] sample_ruptures  79% [101 submitted, 0 queued]
+[2021-07-17 08:57:52.85 #120 INFO] sample_ruptures  80% [101 submitted, 0 queued]
+[2021-07-17 08:58:10.92 #120 INFO] sample_ruptures  81% [101 submitted, 0 queued]
+[2021-07-17 08:59:16.88 #120 INFO] sample_ruptures  82% [101 submitted, 0 queued]
+[2021-07-17 09:00:35.27 #120 INFO] sample_ruptures  83% [101 submitted, 0 queued]
+[2021-07-17 09:01:14.44 #120 INFO] sample_ruptures  84% [101 submitted, 0 queued]
+[2021-07-17 09:01:20.89 #120 INFO] sample_ruptures  85% [101 submitted, 0 queued]
+[2021-07-17 09:01:34.14 #120 INFO] sample_ruptures  86% [101 submitted, 0 queued]
+[2021-07-17 09:01:34.92 #120 INFO] sample_ruptures  87% [101 submitted, 0 queued]
+[2021-07-17 09:01:42.53 #120 INFO] sample_ruptures  88% [101 submitted, 0 queued]
+[2021-07-17 09:01:55.45 #120 INFO] sample_ruptures  89% [101 submitted, 0 queued]
+[2021-07-17 09:02:59.14 #120 INFO] sample_ruptures  90% [101 submitted, 0 queued]
+[2021-07-17 09:05:12.26 #120 INFO] sample_ruptures  91% [101 submitted, 0 queued]
+[2021-07-17 09:05:19.42 #120 INFO] sample_ruptures  92% [101 submitted, 0 queued]
+[2021-07-17 09:10:08.32 #120 INFO] sample_ruptures  93% [101 submitted, 0 queued]
+[2021-07-17 09:12:48.30 #120 INFO] sample_ruptures  94% [101 submitted, 0 queued]
+[2021-07-17 09:19:23.59 #120 INFO] sample_ruptures  95% [101 submitted, 0 queued]
+[2021-07-17 09:29:09.57 #120 INFO] sample_ruptures  96% [101 submitted, 0 queued]
+[2021-07-17 09:36:07.20 #120 INFO] sample_ruptures  97% [101 submitted, 0 queued]
+[2021-07-17 09:43:55.56 #120 INFO] sample_ruptures  98% [101 submitted, 0 queued]
+[2021-07-17 09:55:14.97 #120 INFO] sample_ruptures  99% [101 submitted, 0 queued]
+[2021-07-17 09:55:57.15 #120 INFO] sample_ruptures 100% [101 submitted, 0 queued]
+[2021-07-17 09:55:57.16 #120 INFO] Mean time per core=249s, std=701.4s, min=0s, max=3646s
+[2021-07-17 09:55:57.17 #120 INFO] Received {'rup_array': '2.21 GB', 'calc_times': '21.04 KB', 'eff_ruptures': '4.04 KB'} in 3648 seconds
+[2021-07-17 09:55:57.62 #120 INFO] There are 24576 realization(s)
+[2021-07-17 09:55:57.64 #120 WARNING] The logic tree has 24576 realizations(!), please consider sampling it
+[2021-07-17 09:55:58.55 #120 INFO] Reordering the ruptures and storing the events
+[2021-07-17 09:56:15.82 #120 INFO] Associating event_id -> rlz_id for 1_307_425_710 events and 10_527_600 ruptures
+[2021-07-17 10:03:52.29 #120 INFO] Sent 210 tasks, 1.1 GB in 426 seconds
+[2021-07-17 13:56:45.79 #120 INFO] Mean time per core=3355s, std=3326.6s, min=549s, max=14244s
+[2021-07-17 13:56:45.80 #120 INFO] Received {'tot': '12.18 GB'} in 13973 seconds
+[2021-07-17 15:35:02.20 #120 WARNING] The calculation is really big; consider setting minimum_asset_loss
+[2021-07-17 15:35:02.21 #120 INFO] minimum_intensity={'SA(0.3)': 0.1, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05, 'SA(0.5)': 0.1}
+[2021-07-17 15:35:02.22 #120 INFO] Sending 10_527_600 ruptures
+[2021-07-17 15:35:41.57 #120 DEBUG] produced subtask
+[2021-07-17 15:35:41.63 #120 DEBUG] produced subtask
+[2021-07-17 15:35:41.68 #120 DEBUG] produced subtask
+[2021-07-17 15:35:41.73 #120 DEBUG] produced subtask
+[2021-07-17 15:35:41.79 #120 DEBUG] produced subtask
+[2021-07-17 15:35:41.84 #120 DEBUG] produced subtask
+[2021-07-17 15:35:42.86 #120 DEBUG] produced subtask
+[2021-07-17 15:35:42.91 #120 DEBUG] produced subtask
+[2021-07-17 15:35:42.97 #120 DEBUG] produced subtask
+[2021-07-17 15:35:43.03 #120 DEBUG] produced subtask
+[2021-07-17 15:35:43.09 #120 DEBUG] produced subtask
+[2021-07-17 15:35:43.15 #120 DEBUG] produced subtask
+[2021-07-17 15:35:44.41 #120 DEBUG] produced subtask
+[2021-07-17 15:35:44.44 #120 DEBUG] produced subtask
+[2021-07-17 15:35:44.46 #120 DEBUG] produced subtask
+[2021-07-17 15:35:44.48 #120 DEBUG] produced subtask
+[2021-07-17 15:35:44.50 #120 DEBUG] produced subtask
+[2021-07-17 15:35:44.52 #120 DEBUG] produced subtask
+[2021-07-17 15:35:44.66 #120 DEBUG] produced subtask
+[2021-07-17 15:35:44.69 #120 DEBUG] produced subtask
+[2021-07-17 15:35:44.71 #120 DEBUG] produced subtask
+[2021-07-17 15:35:44.73 #120 DEBUG] produced subtask
+[2021-07-17 15:35:44.75 #120 DEBUG] produced subtask
+[2021-07-17 15:35:44.77 #120 DEBUG] produced subtask
+[2021-07-17 15:35:49.30 #120 DEBUG] produced subtask
+[2021-07-17 15:35:49.53 #120 DEBUG] produced subtask
+[2021-07-17 15:35:49.78 #120 DEBUG] produced subtask
+[2021-07-17 15:35:49.98 #120 DEBUG] produced subtask
+[2021-07-17 15:35:50.04 #120 DEBUG] produced subtask
+[2021-07-17 15:35:50.10 #120 DEBUG] produced subtask
+[2021-07-17 15:36:04.54 #120 DEBUG] produced subtask
+[2021-07-17 15:36:04.63 #120 DEBUG] produced subtask
+[2021-07-17 15:36:04.70 #120 DEBUG] produced subtask
+[2021-07-17 15:36:04.77 #120 DEBUG] produced subtask
+[2021-07-17 15:36:04.82 #120 DEBUG] produced subtask
+[2021-07-17 15:36:05.65 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.21 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.22 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.24 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.25 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.26 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.28 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.66 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.67 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.69 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.70 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.72 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.73 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.90 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.92 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.93 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.94 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.96 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.97 #120 DEBUG] produced subtask
+[2021-07-17 15:36:17.99 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.01 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.02 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.03 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.04 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.06 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.22 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.24 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.25 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.27 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.28 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.30 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.37 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.39 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.40 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.42 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.43 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.44 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.63 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.64 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.66 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.66 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.67 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.68 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.69 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.69 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.70 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.71 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.72 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.73 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.97 #120 DEBUG] produced subtask
+[2021-07-17 15:36:18.99 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.00 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.01 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.03 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.04 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.12 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.13 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.15 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.16 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.17 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.18 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.19 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.21 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.23 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.25 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.26 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.28 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.34 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.35 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.35 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.36 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.38 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.39 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.40 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.51 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.52 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.53 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.54 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.55 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.55 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.56 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.56 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.57 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.57 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.57 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.58 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.59 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.59 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.60 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.60 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.61 #120 DEBUG] produced subtask
+[2021-07-17 15:36:19.62 #120 DEBUG] produced subtask
+[2021-07-17 15:36:22.71 #120 DEBUG] produced subtask
+[2021-07-17 15:36:22.73 #120 DEBUG] produced subtask
+[2021-07-17 15:36:22.77 #120 DEBUG] produced subtask
+[2021-07-17 15:36:23.16 #120 DEBUG] produced subtask
+[2021-07-17 15:36:23.55 #120 DEBUG] produced subtask
+[2021-07-17 15:36:23.94 #120 DEBUG] produced subtask
+[2021-07-17 15:36:29.79 #120 DEBUG] produced subtask
+[2021-07-17 15:36:29.85 #120 DEBUG] produced subtask
+[2021-07-17 15:36:29.90 #120 DEBUG] produced subtask
+[2021-07-17 15:36:29.96 #120 DEBUG] produced subtask
+[2021-07-17 15:36:30.02 #120 DEBUG] produced subtask
+[2021-07-17 15:36:30.07 #120 DEBUG] produced subtask
+[2021-07-17 15:36:31.05 #120 DEBUG] produced subtask
+[2021-07-17 15:36:31.11 #120 DEBUG] produced subtask
+[2021-07-17 15:36:31.17 #120 DEBUG] produced subtask
+[2021-07-17 15:36:31.23 #120 DEBUG] produced subtask
+[2021-07-17 15:36:31.28 #120 DEBUG] produced subtask
+[2021-07-17 15:36:31.34 #120 DEBUG] produced subtask
+[2021-07-17 15:36:32.82 #120 DEBUG] produced subtask
+[2021-07-17 15:36:32.86 #120 DEBUG] produced subtask
+[2021-07-17 15:36:32.89 #120 DEBUG] produced subtask
+[2021-07-17 15:36:32.91 #120 DEBUG] produced subtask
+[2021-07-17 15:36:32.91 #120 DEBUG] produced subtask
+[2021-07-17 15:36:32.93 #120 DEBUG] produced subtask
+[2021-07-17 15:36:32.94 #120 DEBUG] produced subtask
+[2021-07-17 15:36:32.95 #120 DEBUG] produced subtask
+[2021-07-17 15:36:32.96 #120 DEBUG] produced subtask
+[2021-07-17 15:36:32.98 #120 DEBUG] produced subtask
+[2021-07-17 15:36:33.01 #120 DEBUG] produced subtask
+[2021-07-17 15:36:33.03 #120 DEBUG] produced subtask
+[2021-07-17 15:36:36.76 #120 DEBUG] produced subtask
+[2021-07-17 15:36:37.54 #120 DEBUG] produced subtask
+[2021-07-17 15:36:37.97 #120 DEBUG] produced subtask
+[2021-07-17 15:36:37.99 #120 DEBUG] produced subtask
+[2021-07-17 15:36:38.00 #120 DEBUG] produced subtask
+[2021-07-17 15:36:38.02 #120 DEBUG] produced subtask
+[2021-07-17 15:36:38.25 #120 DEBUG] produced subtask
+[2021-07-17 15:36:38.57 #120 DEBUG] produced subtask
+[2021-07-17 15:36:38.87 #120 DEBUG] produced subtask
+[2021-07-17 15:36:39.12 #120 DEBUG] produced subtask
+[2021-07-17 15:36:39.19 #120 DEBUG] produced subtask
+[2021-07-17 15:36:39.26 #120 DEBUG] produced subtask
+[2021-07-17 15:36:42.09 #120 DEBUG] produced subtask
+[2021-07-17 15:36:42.39 #120 DEBUG] produced subtask
+[2021-07-17 15:36:42.67 #120 DEBUG] produced subtask
+[2021-07-17 15:36:42.95 #120 DEBUG] produced subtask
+[2021-07-17 15:36:43.23 #120 DEBUG] produced subtask
+[2021-07-17 15:36:43.50 #120 DEBUG] produced subtask
+[2021-07-17 15:36:53.28 #120 DEBUG] produced subtask
+[2021-07-17 15:36:53.35 #120 DEBUG] produced subtask
+[2021-07-17 15:36:53.40 #120 DEBUG] produced subtask
+[2021-07-17 15:36:53.46 #120 DEBUG] produced subtask
+[2021-07-17 15:36:53.52 #120 DEBUG] produced subtask
+[2021-07-17 15:36:54.30 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.51 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.52 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.54 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.55 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.57 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.59 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.68 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.70 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.72 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.73 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.75 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.77 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.94 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.97 #120 DEBUG] produced subtask
+[2021-07-17 15:37:05.99 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.01 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.03 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.05 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.15 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.17 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.19 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.21 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.22 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.24 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.34 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.36 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.38 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.39 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.41 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.43 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.74 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.76 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.78 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.81 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.83 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.85 #120 DEBUG] produced subtask
+[2021-07-17 15:37:06.99 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.01 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.01 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.03 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.03 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.06 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.06 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.08 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.09 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.10 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.11 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.12 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.20 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.22 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.24 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.26 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.27 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.29 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.37 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.39 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.41 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.43 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.45 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.47 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.69 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.71 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.72 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.73 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.74 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.74 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.76 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.76 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.78 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.78 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.80 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.82 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.84 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.88 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.89 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.90 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.92 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.93 #120 DEBUG] produced subtask
+[2021-07-17 15:37:07.94 #120 DEBUG] produced subtask
+[2021-07-17 15:37:08.31 #120 DEBUG] produced subtask
+[2021-07-17 15:37:08.32 #120 DEBUG] produced subtask
+[2021-07-17 15:37:08.34 #120 DEBUG] produced subtask
+[2021-07-17 15:37:08.35 #120 DEBUG] produced subtask
+[2021-07-17 15:37:08.35 #120 DEBUG] produced subtask
+[2021-07-17 15:37:08.37 #120 DEBUG] produced subtask
+[2021-07-17 15:37:08.37 #120 DEBUG] produced subtask
+[2021-07-17 15:37:08.38 #120 DEBUG] produced subtask
+[2021-07-17 15:37:08.38 #120 DEBUG] produced subtask
+[2021-07-17 15:37:08.40 #120 DEBUG] produced subtask
+[2021-07-17 15:37:08.42 #120 DEBUG] produced subtask
+[2021-07-17 15:37:08.43 #120 DEBUG] produced subtask
+[2021-07-17 15:37:10.83 #120 DEBUG] produced subtask
+[2021-07-17 15:37:10.85 #120 DEBUG] produced subtask
+[2021-07-17 15:37:10.89 #120 DEBUG] produced subtask
+[2021-07-17 15:37:11.30 #120 DEBUG] produced subtask
+[2021-07-17 15:37:11.69 #120 DEBUG] produced subtask
+[2021-07-17 15:37:12.10 #120 DEBUG] produced subtask
+[2021-07-17 15:37:17.08 #120 DEBUG] produced subtask
+[2021-07-17 15:37:18.60 #120 DEBUG] produced subtask
+[2021-07-17 15:37:18.94 #120 DEBUG] produced subtask
+[2021-07-17 15:37:19.17 #120 DEBUG] produced subtask
+[2021-07-17 15:37:19.28 #120 DEBUG] produced subtask
+[2021-07-17 15:37:19.38 #120 DEBUG] produced subtask
+[2021-07-17 15:37:19.49 #120 DEBUG] produced subtask
+[2021-07-17 15:37:19.59 #120 DEBUG] produced subtask
+[2021-07-17 15:37:19.86 #120 DEBUG] produced subtask
+[2021-07-17 15:37:20.06 #120 DEBUG] produced subtask
+[2021-07-17 15:37:20.16 #120 DEBUG] produced subtask
+[2021-07-17 15:37:20.26 #120 DEBUG] produced subtask
+[2021-07-17 15:37:20.37 #120 DEBUG] produced subtask
+[2021-07-17 15:37:20.46 #120 DEBUG] produced subtask
+[2021-07-17 15:37:20.56 #120 DEBUG] produced subtask
+[2021-07-17 15:37:21.23 #120 DEBUG] produced subtask
+[2021-07-17 15:37:21.26 #120 DEBUG] produced subtask
+[2021-07-17 15:37:21.29 #120 DEBUG] produced subtask
+[2021-07-17 15:37:21.32 #120 DEBUG] produced subtask
+[2021-07-17 15:37:21.35 #120 DEBUG] produced subtask
+[2021-07-17 15:37:21.38 #120 DEBUG] produced subtask
+[2021-07-17 15:37:21.62 #120 DEBUG] produced subtask
+[2021-07-17 15:37:21.86 #120 DEBUG] produced subtask
+[2021-07-17 15:37:21.89 #120 DEBUG] produced subtask
+[2021-07-17 15:37:21.93 #120 DEBUG] produced subtask
+[2021-07-17 15:37:21.96 #120 DEBUG] produced subtask
+[2021-07-17 15:37:21.99 #120 DEBUG] produced subtask
+[2021-07-17 15:37:22.03 #120 DEBUG] produced subtask
+[2021-07-17 15:37:22.53 #120 DEBUG] produced subtask
+[2021-07-17 15:37:22.97 #120 DEBUG] produced subtask
+[2021-07-17 15:37:24.82 #120 DEBUG] produced subtask
+[2021-07-17 15:37:25.99 #120 DEBUG] produced subtask
+[2021-07-17 15:37:26.65 #120 DEBUG] produced subtask
+[2021-07-17 15:37:26.68 #120 DEBUG] produced subtask
+[2021-07-17 15:37:26.70 #120 DEBUG] produced subtask
+[2021-07-17 15:37:26.72 #120 DEBUG] produced subtask
+[2021-07-17 15:37:31.53 #120 DEBUG] produced subtask
+[2021-07-17 15:37:32.08 #120 DEBUG] produced subtask
+[2021-07-17 15:37:32.57 #120 DEBUG] produced subtask
+[2021-07-17 15:37:33.07 #120 DEBUG] produced subtask
+[2021-07-17 15:37:33.59 #120 DEBUG] produced subtask
+[2021-07-17 15:37:34.09 #120 DEBUG] produced subtask
+[2021-07-17 15:37:35.04 #120 DEBUG] produced subtask
+[2021-07-17 15:37:35.43 #120 DEBUG] produced subtask
+[2021-07-17 15:37:35.83 #120 DEBUG] produced subtask
+[2021-07-17 15:37:36.16 #120 DEBUG] produced subtask
+[2021-07-17 15:37:36.25 #120 DEBUG] produced subtask
+[2021-07-17 15:37:36.34 #120 DEBUG] produced subtask
+[2021-07-17 15:37:52.37 #120 DEBUG] produced subtask
+[2021-07-17 15:37:52.47 #120 DEBUG] produced subtask
+[2021-07-17 15:37:52.57 #120 DEBUG] produced subtask
+[2021-07-17 15:37:52.66 #120 DEBUG] produced subtask
+[2021-07-17 15:37:52.75 #120 DEBUG] produced subtask
+[2021-07-17 15:37:54.08 #120 DEBUG] produced subtask
+[2021-07-17 15:38:03.64 #120 DEBUG] produced subtask
+[2021-07-17 15:38:03.66 #120 DEBUG] produced subtask
+[2021-07-17 15:38:03.68 #120 DEBUG] produced subtask
+[2021-07-17 15:38:03.71 #120 DEBUG] produced subtask
+[2021-07-17 15:38:03.73 #120 DEBUG] produced subtask
+[2021-07-17 15:38:03.75 #120 DEBUG] produced subtask
+[2021-07-17 15:38:03.98 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.00 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.02 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.04 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.06 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.08 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.12 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.14 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.16 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.17 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.19 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.21 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.34 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.37 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.39 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.41 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.43 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.45 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.88 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.91 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.92 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.95 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.97 #120 DEBUG] produced subtask
+[2021-07-17 15:38:04.99 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.15 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.17 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.19 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.21 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.23 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.25 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.87 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.90 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.92 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.92 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.94 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.95 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.96 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.97 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.97 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.99 #120 DEBUG] produced subtask
+[2021-07-17 15:38:05.97 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.00 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.00 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.01 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.03 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.05 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.07 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.09 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.40 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.43 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.45 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.47 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.49 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.51 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.68 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.70 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.72 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.74 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.76 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.77 #120 DEBUG] produced subtask
+[2021-07-17 15:38:06.93 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.03 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.05 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.07 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.09 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.11 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.13 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.16 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.18 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.21 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.24 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.26 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.28 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.33 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.36 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.37 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.39 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.40 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.41 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.41 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.42 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.43 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.45 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.46 #120 DEBUG] produced subtask
+[2021-07-17 15:38:07.48 #120 DEBUG] produced subtask
+[2021-07-17 15:38:08.36 #120 DEBUG] produced subtask
+[2021-07-17 15:38:09.31 #120 DEBUG] produced subtask
+[2021-07-17 15:38:10.39 #120 DEBUG] produced subtask
+[2021-07-17 15:38:12.39 #120 DEBUG] produced subtask
+[2021-07-17 15:38:13.35 #120 DEBUG] produced subtask
+[2021-07-17 15:38:13.80 #120 DEBUG] produced subtask
+[2021-07-17 15:38:16.92 #120 DEBUG] produced subtask
+[2021-07-17 15:38:16.96 #120 DEBUG] produced subtask
+[2021-07-17 15:38:17.02 #120 DEBUG] produced subtask
+[2021-07-17 15:38:17.73 #120 DEBUG] produced subtask
+[2021-07-17 15:38:18.42 #120 DEBUG] produced subtask
+[2021-07-17 15:38:19.09 #120 DEBUG] produced subtask
+[2021-07-17 15:38:24.13 #120 DEBUG] produced subtask
+[2021-07-17 15:38:24.24 #120 DEBUG] produced subtask
+[2021-07-17 15:38:24.33 #120 DEBUG] produced subtask
+[2021-07-17 15:38:24.43 #120 DEBUG] produced subtask
+[2021-07-17 15:38:24.53 #120 DEBUG] produced subtask
+[2021-07-17 15:38:24.63 #120 DEBUG] produced subtask
+[2021-07-17 15:38:26.13 #120 DEBUG] produced subtask
+[2021-07-17 15:38:26.23 #120 DEBUG] produced subtask
+[2021-07-17 15:38:26.32 #120 DEBUG] produced subtask
+[2021-07-17 15:38:26.42 #120 DEBUG] produced subtask
+[2021-07-17 15:38:26.51 #120 DEBUG] produced subtask
+[2021-07-17 15:38:26.61 #120 DEBUG] produced subtask
+[2021-07-17 15:38:27.36 #120 DEBUG] produced subtask
+[2021-07-17 15:38:27.39 #120 DEBUG] produced subtask
+[2021-07-17 15:38:27.41 #120 DEBUG] produced subtask
+[2021-07-17 15:38:27.44 #120 DEBUG] produced subtask
+[2021-07-17 15:38:27.47 #120 DEBUG] produced subtask
+[2021-07-17 15:38:27.50 #120 DEBUG] produced subtask
+[2021-07-17 15:38:28.44 #120 DEBUG] produced subtask
+[2021-07-17 15:38:28.48 #120 DEBUG] produced subtask
+[2021-07-17 15:38:28.51 #120 DEBUG] produced subtask
+[2021-07-17 15:38:28.54 #120 DEBUG] produced subtask
+[2021-07-17 15:38:28.57 #120 DEBUG] produced subtask
+[2021-07-17 15:38:28.60 #120 DEBUG] produced subtask
+[2021-07-17 15:38:32.91 #120 DEBUG] produced subtask
+[2021-07-17 15:38:34.16 #120 DEBUG] produced subtask
+[2021-07-17 15:38:34.83 #120 DEBUG] produced subtask
+[2021-07-17 15:38:34.86 #120 DEBUG] produced subtask
+[2021-07-17 15:38:34.88 #120 DEBUG] produced subtask
+[2021-07-17 15:38:34.90 #120 DEBUG] produced subtask
+[2021-07-17 15:38:36.15 #120 DEBUG] produced subtask
+[2021-07-17 15:38:36.56 #120 DEBUG] produced subtask
+[2021-07-17 15:38:36.98 #120 DEBUG] produced subtask
+[2021-07-17 15:38:37.37 #120 DEBUG] produced subtask
+[2021-07-17 15:38:37.46 #120 DEBUG] produced subtask
+[2021-07-17 15:38:37.56 #120 DEBUG] produced subtask
+[2021-07-17 15:38:41.23 #120 DEBUG] produced subtask
+[2021-07-17 15:38:41.69 #120 DEBUG] produced subtask
+[2021-07-17 15:38:42.12 #120 DEBUG] produced subtask
+[2021-07-17 15:38:42.55 #120 DEBUG] produced subtask
+[2021-07-17 15:38:43.08 #120 DEBUG] produced subtask
+[2021-07-17 15:38:43.54 #120 DEBUG] produced subtask
+[2021-07-17 15:39:00.48 #120 DEBUG] produced subtask
+[2021-07-17 15:39:00.59 #120 DEBUG] produced subtask
+[2021-07-17 15:39:00.68 #120 DEBUG] produced subtask
+[2021-07-17 15:39:00.77 #120 DEBUG] produced subtask
+[2021-07-17 15:39:00.87 #120 DEBUG] produced subtask
+[2021-07-17 15:39:02.21 #120 DEBUG] produced subtask
+[2021-07-17 15:39:08.47 #120 DEBUG] produced subtask
+[2021-07-17 15:39:08.49 #120 DEBUG] produced subtask
+[2021-07-17 15:39:08.51 #120 DEBUG] produced subtask
+[2021-07-17 15:39:08.53 #120 DEBUG] produced subtask
+[2021-07-17 15:39:08.55 #120 DEBUG] produced subtask
+[2021-07-17 15:39:08.57 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.07 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.10 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.10 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.12 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.13 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.16 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.16 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.18 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.18 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.20 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.21 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.24 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.36 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.38 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.41 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.43 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.44 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.47 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.67 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.70 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.71 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.73 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.76 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.78 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.93 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.95 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.97 #120 DEBUG] produced subtask
+[2021-07-17 15:39:09.99 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.01 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.03 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.23 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.25 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.27 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.30 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.32 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.34 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.48 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.50 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.52 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.52 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.54 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.56 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.56 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.58 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.59 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.60 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.61 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.63 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.79 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.80 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.82 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.84 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.86 #120 DEBUG] produced subtask
+[2021-07-17 15:39:10.88 #120 DEBUG] produced subtask
+[2021-07-17 15:39:11.22 #120 DEBUG] produced subtask
+[2021-07-17 15:39:11.25 #120 DEBUG] produced subtask
+[2021-07-17 15:39:11.27 #120 DEBUG] produced subtask
+[2021-07-17 15:39:11.29 #120 DEBUG] produced subtask
+[2021-07-17 15:39:11.32 #120 DEBUG] produced subtask
+[2021-07-17 15:39:11.34 #120 DEBUG] produced subtask
+[2021-07-17 15:39:11.38 #120 DEBUG] produced subtask
+[2021-07-17 15:39:11.41 #120 DEBUG] produced subtask
+[2021-07-17 15:39:11.42 #120 DEBUG] produced subtask
+[2021-07-17 15:39:11.44 #120 DEBUG] produced subtask
+[2021-07-17 15:39:11.46 #120 DEBUG] produced subtask
+[2021-07-17 15:39:11.48 #120 DEBUG] produced subtask
+[2021-07-17 15:39:12.21 #120 DEBUG] produced subtask
+[2021-07-17 15:39:12.23 #120 DEBUG] produced subtask
+[2021-07-17 15:39:12.25 #120 DEBUG] produced subtask
+[2021-07-17 15:39:12.27 #120 DEBUG] produced subtask
+[2021-07-17 15:39:12.29 #120 DEBUG] produced subtask
+[2021-07-17 15:39:12.31 #120 DEBUG] produced subtask
+[2021-07-17 15:39:19.06 #120 DEBUG] produced subtask
+[2021-07-17 15:39:19.08 #120 DEBUG] produced subtask
+[2021-07-17 15:39:19.09 #120 DEBUG] produced subtask
+[2021-07-17 15:39:19.11 #120 DEBUG] produced subtask
+[2021-07-17 15:39:19.13 #120 DEBUG] produced subtask
+[2021-07-17 15:39:19.14 #120 DEBUG] produced subtask
+[2021-07-17 15:39:29.29 #120 DEBUG] produced subtask
+[2021-07-17 15:39:29.33 #120 DEBUG] produced subtask
+[2021-07-17 15:39:29.39 #120 DEBUG] produced subtask
+[2021-07-17 15:39:30.09 #120 DEBUG] produced subtask
+[2021-07-17 15:39:30.60 #120 DEBUG] produced subtask
+[2021-07-17 15:39:30.76 #120 DEBUG] produced subtask
+[2021-07-17 15:39:31.43 #120 DEBUG] produced subtask
+[2021-07-17 15:39:32.08 #120 DEBUG] produced subtask
+[2021-07-17 15:39:33.80 #120 DEBUG] produced subtask
+[2021-07-17 15:39:35.46 #120 DEBUG] produced subtask
+[2021-07-17 15:39:36.35 #120 DEBUG] produced subtask
+[2021-07-17 15:39:36.78 #120 DEBUG] produced subtask
+[2021-07-17 15:39:38.33 #120 DEBUG] produced subtask
+[2021-07-17 15:39:39.79 #120 DEBUG] produced subtask
+[2021-07-17 15:39:40.64 #120 DEBUG] produced subtask
+[2021-07-17 15:39:40.66 #120 DEBUG] produced subtask
+[2021-07-17 15:39:40.68 #120 DEBUG] produced subtask
+[2021-07-17 15:39:40.70 #120 DEBUG] produced subtask
+[2021-07-17 15:39:47.09 #120 DEBUG] produced subtask
+[2021-07-17 15:39:47.54 #120 DEBUG] produced subtask
+[2021-07-17 15:39:47.98 #120 DEBUG] produced subtask
+[2021-07-17 15:39:48.41 #120 DEBUG] produced subtask
+[2021-07-17 15:39:48.84 #120 DEBUG] produced subtask
+[2021-07-17 15:39:49.64 #120 DEBUG] produced subtask
+[2021-07-17 15:40:16.82 #120 DEBUG] produced subtask
+[2021-07-17 15:40:16.84 #120 DEBUG] produced subtask
+[2021-07-17 15:40:16.86 #120 DEBUG] produced subtask
+[2021-07-17 15:40:16.87 #120 DEBUG] produced subtask
+[2021-07-17 15:40:16.89 #120 DEBUG] produced subtask
+[2021-07-17 15:40:16.91 #120 DEBUG] produced subtask
+[2021-07-17 15:40:21.94 #120 DEBUG] produced subtask
+[2021-07-17 15:40:43.50 #120 DEBUG] produced subtask
+[2021-07-17 15:40:44.96 #120 DEBUG] produced subtask
+[2021-07-17 15:40:46.65 #120 DEBUG] produced subtask
+[2021-07-17 15:40:48.35 #120 DEBUG] produced subtask
+[2021-07-17 15:40:49.26 #120 DEBUG] produced subtask
+[2021-07-17 15:40:49.79 #120 DEBUG] produced subtask
+[2021-07-17 15:41:27.76 #120 DEBUG] produced subtask
+[2021-07-17 15:41:28.16 #120 DEBUG] produced subtask
+[2021-07-17 15:41:28.57 #120 DEBUG] produced subtask
+[2021-07-17 15:41:28.91 #120 DEBUG] produced subtask
+[2021-07-17 15:41:29.00 #120 DEBUG] produced subtask
+[2021-07-17 15:41:29.10 #120 DEBUG] produced subtask
+[2021-07-17 15:41:42.92 #120 DEBUG] produced subtask
+[2021-07-17 15:41:43.02 #120 DEBUG] produced subtask
+[2021-07-17 15:41:43.11 #120 DEBUG] produced subtask
+[2021-07-17 15:41:43.20 #120 DEBUG] produced subtask
+[2021-07-17 15:41:43.29 #120 DEBUG] produced subtask
+[2021-07-17 15:41:43.38 #120 DEBUG] produced subtask
+[2021-07-17 15:41:52.65 #120 DEBUG] produced subtask
+[2021-07-17 15:41:52.76 #120 DEBUG] produced subtask
+[2021-07-17 15:41:52.87 #120 DEBUG] produced subtask
+[2021-07-17 15:41:52.98 #120 DEBUG] produced subtask
+[2021-07-17 15:41:53.08 #120 DEBUG] produced subtask
+[2021-07-17 15:41:53.18 #120 DEBUG] produced subtask
+[2021-07-17 15:42:32.45 #120 INFO] Sent 210 tasks, 1.11 GB in 419 seconds
+[2021-07-17 15:42:33.75 #120 INFO] start_ebrisk   1% [832 submitted, 0 queued]
+[2021-07-17 15:43:01.90 #120 DEBUG] produced subtask
+[2021-07-17 15:43:01.93 #120 DEBUG] produced subtask
+[2021-07-17 15:43:01.98 #120 DEBUG] produced subtask
+[2021-07-17 15:43:02.01 #120 DEBUG] produced subtask
+[2021-07-17 15:43:02.04 #120 DEBUG] produced subtask
+[2021-07-17 15:43:02.08 #120 DEBUG] produced subtask
+[2021-07-17 15:43:06.57 #120 DEBUG] produced subtask
+[2021-07-17 15:43:06.60 #120 DEBUG] produced subtask
+[2021-07-17 15:43:06.63 #120 DEBUG] produced subtask
+[2021-07-17 15:43:06.66 #120 DEBUG] produced subtask
+[2021-07-17 15:43:06.69 #120 DEBUG] produced subtask
+[2021-07-17 15:43:06.72 #120 DEBUG] produced subtask
+[2021-07-17 15:43:20.31 #120 INFO] start_ebrisk   2% [844 submitted, 0 queued]
+[2021-07-17 15:43:26.41 #120 DEBUG] produced subtask
+[2021-07-17 15:43:26.51 #120 DEBUG] produced subtask
+[2021-07-17 15:43:26.61 #120 DEBUG] produced subtask
+[2021-07-17 15:43:26.70 #120 DEBUG] produced subtask
+[2021-07-17 15:43:26.79 #120 DEBUG] produced subtask
+[2021-07-17 15:43:27.07 #120 DEBUG] produced subtask
+[2021-07-17 15:43:27.09 #120 DEBUG] produced subtask
+[2021-07-17 15:43:27.11 #120 DEBUG] produced subtask
+[2021-07-17 15:43:27.13 #120 DEBUG] produced subtask
+[2021-07-17 15:43:27.15 #120 DEBUG] produced subtask
+[2021-07-17 15:43:27.17 #120 DEBUG] produced subtask
+[2021-07-17 15:43:28.12 #120 DEBUG] produced subtask
+[2021-07-17 15:43:33.37 #120 DEBUG] produced subtask
+[2021-07-17 15:43:33.39 #120 DEBUG] produced subtask
+[2021-07-17 15:43:33.41 #120 DEBUG] produced subtask
+[2021-07-17 15:43:33.43 #120 DEBUG] produced subtask
+[2021-07-17 15:43:33.45 #120 DEBUG] produced subtask
+[2021-07-17 15:43:33.47 #120 DEBUG] produced subtask
+[2021-07-17 15:43:38.68 #120 DEBUG] produced subtask
+[2021-07-17 15:43:38.71 #120 DEBUG] produced subtask
+[2021-07-17 15:43:38.73 #120 DEBUG] produced subtask
+[2021-07-17 15:43:38.75 #120 DEBUG] produced subtask
+[2021-07-17 15:43:38.77 #120 DEBUG] produced subtask
+[2021-07-17 15:43:38.79 #120 DEBUG] produced subtask
+[2021-07-17 15:43:39.99 #120 DEBUG] produced subtask
+[2021-07-17 15:43:40.00 #120 DEBUG] produced subtask
+[2021-07-17 15:43:40.03 #120 DEBUG] produced subtask
+[2021-07-17 15:43:40.05 #120 DEBUG] produced subtask
+[2021-07-17 15:43:40.06 #120 DEBUG] produced subtask
+[2021-07-17 15:43:40.09 #120 DEBUG] produced subtask
+[2021-07-17 15:43:40.16 #120 DEBUG] produced subtask
+[2021-07-17 15:43:40.19 #120 DEBUG] produced subtask
+[2021-07-17 15:43:40.20 #120 DEBUG] produced subtask
+[2021-07-17 15:43:40.22 #120 DEBUG] produced subtask
+[2021-07-17 15:43:40.24 #120 DEBUG] produced subtask
+[2021-07-17 15:43:40.26 #120 DEBUG] produced subtask
+[2021-07-17 15:43:41.20 #120 DEBUG] produced subtask
+[2021-07-17 15:43:41.22 #120 DEBUG] produced subtask
+[2021-07-17 15:43:41.24 #120 DEBUG] produced subtask
+[2021-07-17 15:43:41.26 #120 DEBUG] produced subtask
+[2021-07-17 15:43:41.28 #120 DEBUG] produced subtask
+[2021-07-17 15:43:41.30 #120 DEBUG] produced subtask
+[2021-07-17 15:43:50.48 #120 DEBUG] produced subtask
+[2021-07-17 15:43:50.50 #120 DEBUG] produced subtask
+[2021-07-17 15:43:50.52 #120 DEBUG] produced subtask
+[2021-07-17 15:43:50.54 #120 DEBUG] produced subtask
+[2021-07-17 15:43:50.57 #120 DEBUG] produced subtask
+[2021-07-17 15:43:50.58 #120 DEBUG] produced subtask
+[2021-07-17 15:43:52.30 #120 DEBUG] produced subtask
+[2021-07-17 15:43:52.32 #120 DEBUG] produced subtask
+[2021-07-17 15:43:52.34 #120 DEBUG] produced subtask
+[2021-07-17 15:43:52.36 #120 DEBUG] produced subtask
+[2021-07-17 15:43:52.38 #120 DEBUG] produced subtask
+[2021-07-17 15:43:52.40 #120 DEBUG] produced subtask
+[2021-07-17 15:43:53.44 #120 DEBUG] produced subtask
+[2021-07-17 15:43:54.63 #120 DEBUG] produced subtask
+[2021-07-17 15:43:55.31 #120 DEBUG] produced subtask
+[2021-07-17 15:43:55.33 #120 DEBUG] produced subtask
+[2021-07-17 15:43:55.35 #120 DEBUG] produced subtask
+[2021-07-17 15:43:55.37 #120 DEBUG] produced subtask
+[2021-07-17 15:43:58.44 #120 DEBUG] produced subtask
+[2021-07-17 15:43:58.46 #120 DEBUG] produced subtask
+[2021-07-17 15:43:58.48 #120 DEBUG] produced subtask
+[2021-07-17 15:43:58.49 #120 DEBUG] produced subtask
+[2021-07-17 15:43:58.51 #120 DEBUG] produced subtask
+[2021-07-17 15:43:58.53 #120 DEBUG] produced subtask
+[2021-07-17 15:44:03.43 #120 DEBUG] produced subtask
+[2021-07-17 15:44:03.46 #120 DEBUG] produced subtask
+[2021-07-17 15:44:03.51 #120 DEBUG] produced subtask
+[2021-07-17 15:44:04.19 #120 DEBUG] produced subtask
+[2021-07-17 15:44:04.86 #120 DEBUG] produced subtask
+[2021-07-17 15:44:05.54 #120 DEBUG] produced subtask
+[2021-07-17 15:44:07.22 #120 INFO] start_ebrisk   3% [916 submitted, 0 queued]
+[2021-07-17 15:44:08.07 #120 DEBUG] produced subtask
+[2021-07-17 15:44:08.32 #120 DEBUG] produced subtask
+[2021-07-17 15:44:08.34 #120 DEBUG] produced subtask
+[2021-07-17 15:44:08.36 #120 DEBUG] produced subtask
+[2021-07-17 15:44:08.38 #120 DEBUG] produced subtask
+[2021-07-17 15:44:08.40 #120 DEBUG] produced subtask
+[2021-07-17 15:44:08.42 #120 DEBUG] produced subtask
+[2021-07-17 15:44:08.53 #120 DEBUG] produced subtask
+[2021-07-17 15:44:08.97 #120 DEBUG] produced subtask
+[2021-07-17 15:44:09.40 #120 DEBUG] produced subtask
+[2021-07-17 15:44:09.84 #120 DEBUG] produced subtask
+[2021-07-17 15:44:10.28 #120 DEBUG] produced subtask
+[2021-07-17 15:44:15.14 #120 DEBUG] produced subtask
+[2021-07-17 15:44:15.16 #120 DEBUG] produced subtask
+[2021-07-17 15:44:15.18 #120 DEBUG] produced subtask
+[2021-07-17 15:44:15.20 #120 DEBUG] produced subtask
+[2021-07-17 15:44:15.22 #120 DEBUG] produced subtask
+[2021-07-17 15:44:15.24 #120 DEBUG] produced subtask
+[2021-07-17 15:44:21.80 #120 DEBUG] produced subtask
+[2021-07-17 15:44:21.82 #120 DEBUG] produced subtask
+[2021-07-17 15:44:21.84 #120 DEBUG] produced subtask
+[2021-07-17 15:44:21.86 #120 DEBUG] produced subtask
+[2021-07-17 15:44:21.88 #120 DEBUG] produced subtask
+[2021-07-17 15:44:21.90 #120 DEBUG] produced subtask
+[2021-07-17 15:44:24.59 #120 DEBUG] produced subtask
+[2021-07-17 15:44:24.61 #120 DEBUG] produced subtask
+[2021-07-17 15:44:24.63 #120 DEBUG] produced subtask
+[2021-07-17 15:44:24.65 #120 DEBUG] produced subtask
+[2021-07-17 15:44:24.67 #120 DEBUG] produced subtask
+[2021-07-17 15:44:24.68 #120 DEBUG] produced subtask
+[2021-07-17 15:44:28.68 #120 DEBUG] produced subtask
+[2021-07-17 15:44:28.70 #120 DEBUG] produced subtask
+[2021-07-17 15:44:28.71 #120 DEBUG] produced subtask
+[2021-07-17 15:44:28.73 #120 DEBUG] produced subtask
+[2021-07-17 15:44:28.75 #120 DEBUG] produced subtask
+[2021-07-17 15:44:28.76 #120 DEBUG] produced subtask
+[2021-07-17 15:44:44.61 #120 DEBUG] produced subtask
+[2021-07-17 15:44:44.62 #120 DEBUG] produced subtask
+[2021-07-17 15:44:44.64 #120 DEBUG] produced subtask
+[2021-07-17 15:44:44.66 #120 DEBUG] produced subtask
+[2021-07-17 15:44:44.67 #120 DEBUG] produced subtask
+[2021-07-17 15:44:44.69 #120 DEBUG] produced subtask
+[2021-07-17 15:44:44.84 #120 DEBUG] produced subtask
+[2021-07-17 15:44:58.53 #120 DEBUG] produced subtask
+[2021-07-17 15:44:58.63 #120 DEBUG] produced subtask
+[2021-07-17 15:44:58.72 #120 DEBUG] produced subtask
+[2021-07-17 15:44:58.81 #120 DEBUG] produced subtask
+[2021-07-17 15:44:58.90 #120 DEBUG] produced subtask
+[2021-07-17 15:44:58.99 #120 DEBUG] produced subtask
+[2021-07-17 15:45:01.60 #120 INFO] start_ebrisk   4% [965 submitted, 0 queued]
+[2021-07-17 15:45:04.35 #120 DEBUG] produced subtask
+[2021-07-17 15:45:04.39 #120 DEBUG] produced subtask
+[2021-07-17 15:45:04.43 #120 DEBUG] produced subtask
+[2021-07-17 15:45:04.46 #120 DEBUG] produced subtask
+[2021-07-17 15:45:04.49 #120 DEBUG] produced subtask
+[2021-07-17 15:45:04.52 #120 DEBUG] produced subtask
+[2021-07-17 15:45:06.01 #120 DEBUG] produced subtask
+[2021-07-17 15:45:06.11 #120 DEBUG] produced subtask
+[2021-07-17 15:45:06.20 #120 DEBUG] produced subtask
+[2021-07-17 15:45:06.26 #120 DEBUG] produced subtask
+[2021-07-17 15:45:06.30 #120 DEBUG] produced subtask
+[2021-07-17 15:45:06.39 #120 DEBUG] produced subtask
+[2021-07-17 15:45:06.48 #120 DEBUG] produced subtask
+[2021-07-17 15:45:07.70 #120 DEBUG] produced subtask
+[2021-07-17 15:45:09.55 #120 DEBUG] produced subtask
+[2021-07-17 15:45:10.58 #120 DEBUG] produced subtask
+[2021-07-17 15:45:10.97 #120 DEBUG] produced subtask
+[2021-07-17 15:45:11.22 #120 DEBUG] produced subtask
+[2021-07-17 15:45:11.37 #120 DEBUG] produced subtask
+[2021-07-17 15:45:11.70 #120 DEBUG] produced subtask
+[2021-07-17 15:45:11.79 #120 DEBUG] produced subtask
+[2021-07-17 15:45:11.88 #120 DEBUG] produced subtask
+[2021-07-17 15:45:12.11 #120 DEBUG] produced subtask
+[2021-07-17 15:45:12.54 #120 DEBUG] produced subtask
+[2021-07-17 15:45:12.94 #120 DEBUG] produced subtask
+[2021-07-17 15:45:12.97 #120 DEBUG] produced subtask
+[2021-07-17 15:45:13.00 #120 DEBUG] produced subtask
+[2021-07-17 15:45:13.04 #120 DEBUG] produced subtask
+[2021-07-17 15:45:13.07 #120 DEBUG] produced subtask
+[2021-07-17 15:45:13.10 #120 DEBUG] produced subtask
+[2021-07-17 15:45:34.40 #120 DEBUG] produced subtask
+[2021-07-17 15:45:34.42 #120 DEBUG] produced subtask
+[2021-07-17 15:45:34.44 #120 DEBUG] produced subtask
+[2021-07-17 15:45:34.46 #120 DEBUG] produced subtask
+[2021-07-17 15:45:34.48 #120 DEBUG] produced subtask
+[2021-07-17 15:45:34.50 #120 DEBUG] produced subtask
+[2021-07-17 15:45:36.35 #120 DEBUG] produced subtask
+[2021-07-17 15:45:36.46 #120 DEBUG] produced subtask
+[2021-07-17 15:45:36.55 #120 DEBUG] produced subtask
+[2021-07-17 15:45:36.64 #120 DEBUG] produced subtask
+[2021-07-17 15:45:36.73 #120 DEBUG] produced subtask
+[2021-07-17 15:45:38.07 #120 DEBUG] produced subtask
+[2021-07-17 15:45:45.79 #120 DEBUG] produced subtask
+[2021-07-17 15:45:45.81 #120 DEBUG] produced subtask
+[2021-07-17 15:45:45.84 #120 DEBUG] produced subtask
+[2021-07-17 15:45:45.85 #120 DEBUG] produced subtask
+[2021-07-17 15:45:45.88 #120 DEBUG] produced subtask
+[2021-07-17 15:45:45.90 #120 DEBUG] produced subtask
+[2021-07-17 15:45:48.98 #120 DEBUG] produced subtask
+[2021-07-17 15:45:49.00 #120 DEBUG] produced subtask
+[2021-07-17 15:45:49.02 #120 DEBUG] produced subtask
+[2021-07-17 15:45:49.04 #120 DEBUG] produced subtask
+[2021-07-17 15:45:49.06 #120 DEBUG] produced subtask
+[2021-07-17 15:45:49.08 #120 DEBUG] produced subtask
+[2021-07-17 15:45:54.61 #120 DEBUG] produced subtask
+[2021-07-17 15:45:54.63 #120 DEBUG] produced subtask
+[2021-07-17 15:45:54.65 #120 DEBUG] produced subtask
+[2021-07-17 15:45:54.67 #120 DEBUG] produced subtask
+[2021-07-17 15:45:54.69 #120 DEBUG] produced subtask
+[2021-07-17 15:45:54.71 #120 DEBUG] produced subtask
+[2021-07-17 15:45:55.88 #120 DEBUG] produced subtask
+[2021-07-17 15:45:55.90 #120 DEBUG] produced subtask
+[2021-07-17 15:45:55.92 #120 DEBUG] produced subtask
+[2021-07-17 15:45:55.94 #120 DEBUG] produced subtask
+[2021-07-17 15:45:55.96 #120 DEBUG] produced subtask
+[2021-07-17 15:45:55.98 #120 DEBUG] produced subtask
+[2021-07-17 15:45:57.49 #120 DEBUG] produced subtask
+[2021-07-17 15:45:58.66 #120 DEBUG] produced subtask
+[2021-07-17 15:45:59.34 #120 DEBUG] produced subtask
+[2021-07-17 15:45:59.36 #120 DEBUG] produced subtask
+[2021-07-17 15:45:59.38 #120 DEBUG] produced subtask
+[2021-07-17 15:45:59.40 #120 DEBUG] produced subtask
+[2021-07-17 15:46:03.42 #120 DEBUG] produced subtask
+[2021-07-17 15:46:03.46 #120 DEBUG] produced subtask
+[2021-07-17 15:46:03.52 #120 DEBUG] produced subtask
+[2021-07-17 15:46:04.30 #120 DEBUG] produced subtask
+[2021-07-17 15:46:04.98 #120 DEBUG] produced subtask
+[2021-07-17 15:46:05.65 #120 DEBUG] produced subtask
+[2021-07-17 15:46:07.50 #120 DEBUG] produced subtask
+[2021-07-17 15:46:07.52 #120 DEBUG] produced subtask
+[2021-07-17 15:46:07.54 #120 DEBUG] produced subtask
+[2021-07-17 15:46:07.56 #120 DEBUG] produced subtask
+[2021-07-17 15:46:07.58 #120 DEBUG] produced subtask
+[2021-07-17 15:46:07.60 #120 DEBUG] produced subtask
+[2021-07-17 15:46:13.27 #120 DEBUG] produced subtask
+[2021-07-17 15:46:13.76 #120 DEBUG] produced subtask
+[2021-07-17 15:46:14.21 #120 DEBUG] produced subtask
+[2021-07-17 15:46:14.66 #120 DEBUG] produced subtask
+[2021-07-17 15:46:15.11 #120 DEBUG] produced subtask
+[2021-07-17 15:46:15.36 #120 DEBUG] produced subtask
+[2021-07-17 15:46:15.38 #120 DEBUG] produced subtask
+[2021-07-17 15:46:15.40 #120 DEBUG] produced subtask
+[2021-07-17 15:46:15.43 #120 DEBUG] produced subtask
+[2021-07-17 15:46:15.45 #120 DEBUG] produced subtask
+[2021-07-17 15:46:15.47 #120 DEBUG] produced subtask
+[2021-07-17 15:46:15.57 #120 DEBUG] produced subtask
+[2021-07-17 15:46:16.93 #120 DEBUG] produced subtask
+[2021-07-17 15:46:16.95 #120 DEBUG] produced subtask
+[2021-07-17 15:46:16.97 #120 DEBUG] produced subtask
+[2021-07-17 15:46:16.99 #120 DEBUG] produced subtask
+[2021-07-17 15:46:17.01 #120 DEBUG] produced subtask
+[2021-07-17 15:46:17.03 #120 DEBUG] produced subtask
+[2021-07-17 15:46:19.06 #120 DEBUG] produced subtask
+[2021-07-17 15:46:19.08 #120 DEBUG] produced subtask
+[2021-07-17 15:46:19.10 #120 DEBUG] produced subtask
+[2021-07-17 15:46:19.12 #120 DEBUG] produced subtask
+[2021-07-17 15:46:19.14 #120 DEBUG] produced subtask
+[2021-07-17 15:46:19.15 #120 INFO] start_ebrisk   5% [1069 submitted, 0 queued]
+[2021-07-17 15:46:19.16 #120 DEBUG] produced subtask
+[2021-07-17 15:46:20.32 #120 DEBUG] produced subtask
+[2021-07-17 15:46:20.35 #120 DEBUG] produced subtask
+[2021-07-17 15:46:20.36 #120 DEBUG] produced subtask
+[2021-07-17 15:46:20.38 #120 DEBUG] produced subtask
+[2021-07-17 15:46:20.40 #120 DEBUG] produced subtask
+[2021-07-17 15:46:20.42 #120 DEBUG] produced subtask
+[2021-07-17 15:46:20.46 #120 DEBUG] produced subtask
+[2021-07-17 15:46:20.48 #120 DEBUG] produced subtask
+[2021-07-17 15:46:20.50 #120 DEBUG] produced subtask
+[2021-07-17 15:46:20.52 #120 DEBUG] produced subtask
+[2021-07-17 15:46:20.54 #120 DEBUG] produced subtask
+[2021-07-17 15:46:20.56 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.15 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.15 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.17 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.18 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.19 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.20 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.21 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.22 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.23 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.24 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.26 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.26 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.58 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.61 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.62 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.64 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.66 #120 DEBUG] produced subtask
+[2021-07-17 15:46:23.68 #120 DEBUG] produced subtask
+[2021-07-17 15:46:35.51 #120 DEBUG] produced subtask
+[2021-07-17 15:46:35.53 #120 DEBUG] produced subtask
+[2021-07-17 15:46:35.54 #120 DEBUG] produced subtask
+[2021-07-17 15:46:35.56 #120 DEBUG] produced subtask
+[2021-07-17 15:46:35.58 #120 DEBUG] produced subtask
+[2021-07-17 15:46:35.60 #120 DEBUG] produced subtask
+[2021-07-17 15:46:37.19 #120 DEBUG] produced subtask
+[2021-07-17 15:46:38.88 #120 INFO] start_ebrisk   6% [1110 submitted, 0 queued]
+[2021-07-17 15:46:39.09 #120 DEBUG] produced subtask
+[2021-07-17 15:46:39.11 #120 DEBUG] produced subtask
+[2021-07-17 15:46:39.12 #120 DEBUG] produced subtask
+[2021-07-17 15:46:39.14 #120 DEBUG] produced subtask
+[2021-07-17 15:46:39.15 #120 DEBUG] produced subtask
+[2021-07-17 15:46:39.79 #120 DEBUG] produced subtask
+[2021-07-17 15:46:39.80 #120 DEBUG] produced subtask
+[2021-07-17 15:46:39.82 #120 DEBUG] produced subtask
+[2021-07-17 15:46:39.83 #120 DEBUG] produced subtask
+[2021-07-17 15:46:39.84 #120 DEBUG] produced subtask
+[2021-07-17 15:46:48.85 #120 DEBUG] produced subtask
+[2021-07-17 15:46:48.86 #120 DEBUG] produced subtask
+[2021-07-17 15:46:48.88 #120 DEBUG] produced subtask
+[2021-07-17 15:46:48.89 #120 DEBUG] produced subtask
+[2021-07-17 15:46:48.90 #120 DEBUG] produced subtask
+[2021-07-17 15:46:49.84 #120 DEBUG] produced subtask
+[2021-07-17 15:46:49.85 #120 DEBUG] produced subtask
+[2021-07-17 15:46:49.86 #120 DEBUG] produced subtask
+[2021-07-17 15:46:49.87 #120 DEBUG] produced subtask
+[2021-07-17 15:46:49.88 #120 DEBUG] produced subtask
+[2021-07-17 15:46:51.30 #120 DEBUG] produced subtask
+[2021-07-17 15:46:51.31 #120 DEBUG] produced subtask
+[2021-07-17 15:46:51.32 #120 DEBUG] produced subtask
+[2021-07-17 15:46:51.33 #120 DEBUG] produced subtask
+[2021-07-17 15:46:51.34 #120 DEBUG] produced subtask
+[2021-07-17 15:47:10.68 #120 DEBUG] produced subtask
+[2021-07-17 15:47:12.11 #120 DEBUG] produced subtask
+[2021-07-17 15:47:13.81 #120 DEBUG] produced subtask
+[2021-07-17 15:47:15.50 #120 DEBUG] produced subtask
+[2021-07-17 15:47:16.41 #120 DEBUG] produced subtask
+[2021-07-17 15:47:16.85 #120 DEBUG] produced subtask
+[2021-07-17 15:47:25.87 #120 DEBUG] produced subtask
+[2021-07-17 15:47:25.89 #120 DEBUG] produced subtask
+[2021-07-17 15:47:25.90 #120 DEBUG] produced subtask
+[2021-07-17 15:47:25.91 #120 DEBUG] produced subtask
+[2021-07-17 15:47:25.92 #120 DEBUG] produced subtask
+[2021-07-17 15:47:37.91 #120 DEBUG] produced subtask
+[2021-07-17 15:47:38.05 #120 DEBUG] produced subtask
+[2021-07-17 15:47:38.18 #120 DEBUG] produced subtask
+[2021-07-17 15:47:38.32 #120 DEBUG] produced subtask
+[2021-07-17 15:47:41.54 #120 DEBUG] produced subtask
+[2021-07-17 15:47:41.68 #120 DEBUG] produced subtask
+[2021-07-17 15:47:41.82 #120 DEBUG] produced subtask
+[2021-07-17 15:47:41.96 #120 DEBUG] produced subtask
+[2021-07-17 15:47:45.44 #120 DEBUG] produced subtask
+[2021-07-17 15:47:45.58 #120 DEBUG] produced subtask
+[2021-07-17 15:47:45.72 #120 DEBUG] produced subtask
+[2021-07-17 15:47:45.86 #120 DEBUG] produced subtask
+[2021-07-17 15:47:48.29 #120 DEBUG] produced subtask
+[2021-07-17 15:47:48.42 #120 DEBUG] produced subtask
+[2021-07-17 15:47:48.55 #120 DEBUG] produced subtask
+[2021-07-17 15:47:48.62 #120 DEBUG] produced subtask
+[2021-07-17 15:47:48.69 #120 DEBUG] produced subtask
+[2021-07-17 15:47:48.76 #120 DEBUG] produced subtask
+[2021-07-17 15:47:48.90 #120 DEBUG] produced subtask
+[2021-07-17 15:47:49.03 #120 DEBUG] produced subtask
+[2021-07-17 15:47:49.83 #120 DEBUG] produced subtask
+[2021-07-17 15:47:49.86 #120 DEBUG] produced subtask
+[2021-07-17 15:47:49.86 #120 DEBUG] produced subtask
+[2021-07-17 15:47:49.90 #120 DEBUG] produced subtask
+[2021-07-17 15:47:49.94 #120 DEBUG] produced subtask
+[2021-07-17 15:47:49.97 #120 DEBUG] produced subtask
+[2021-07-17 15:47:50.00 #120 DEBUG] produced subtask
+[2021-07-17 15:47:50.01 #120 DEBUG] produced subtask
+[2021-07-17 15:47:50.15 #120 DEBUG] produced subtask
+[2021-07-17 15:47:50.30 #120 DEBUG] produced subtask
+[2021-07-17 15:47:50.78 #120 INFO] start_ebrisk   7% [1176 submitted, 0 queued]
+[2021-07-17 15:47:50.82 #120 DEBUG] produced subtask
+[2021-07-17 15:47:50.85 #120 DEBUG] produced subtask
+[2021-07-17 15:47:50.89 #120 DEBUG] produced subtask
+[2021-07-17 15:47:50.92 #120 DEBUG] produced subtask
+[2021-07-17 15:47:50.95 #120 DEBUG] produced subtask
+[2021-07-17 15:47:50.98 #120 DEBUG] produced subtask
+[2021-07-17 15:47:53.62 #120 DEBUG] produced subtask
+[2021-07-17 15:47:53.66 #120 DEBUG] produced subtask
+[2021-07-17 15:47:53.70 #120 DEBUG] produced subtask
+[2021-07-17 15:47:53.74 #120 DEBUG] produced subtask
+[2021-07-17 15:47:53.78 #120 DEBUG] produced subtask
+[2021-07-17 15:47:53.82 #120 DEBUG] produced subtask
+[2021-07-17 15:47:54.35 #120 DEBUG] produced subtask
+[2021-07-17 15:47:54.39 #120 DEBUG] produced subtask
+[2021-07-17 15:47:54.43 #120 DEBUG] produced subtask
+[2021-07-17 15:47:54.48 #120 DEBUG] produced subtask
+[2021-07-17 15:47:54.52 #120 DEBUG] produced subtask
+[2021-07-17 15:47:54.56 #120 DEBUG] produced subtask
+[2021-07-17 15:47:55.20 #120 DEBUG] produced subtask
+[2021-07-17 15:47:57.46 #120 DEBUG] produced subtask
+[2021-07-17 15:47:57.61 #120 DEBUG] produced subtask
+[2021-07-17 15:47:57.77 #120 DEBUG] produced subtask
+[2021-07-17 15:47:57.92 #120 DEBUG] produced subtask
+[2021-07-17 15:47:58.03 #120 DEBUG] produced subtask
+[2021-07-17 15:47:58.06 #120 DEBUG] produced subtask
+[2021-07-17 15:48:05.07 #120 DEBUG] produced subtask
+[2021-07-17 15:48:05.23 #120 DEBUG] produced subtask
+[2021-07-17 15:48:05.38 #120 DEBUG] produced subtask
+[2021-07-17 15:48:05.53 #120 DEBUG] produced subtask
+[2021-07-17 15:48:05.65 #120 DEBUG] produced subtask
+[2021-07-17 15:48:05.68 #120 DEBUG] produced subtask
+[2021-07-17 15:48:09.42 #120 DEBUG] produced subtask
+[2021-07-17 15:48:09.46 #120 DEBUG] produced subtask
+[2021-07-17 15:48:09.49 #120 DEBUG] produced subtask
+[2021-07-17 15:48:09.52 #120 DEBUG] produced subtask
+[2021-07-17 15:48:09.55 #120 DEBUG] produced subtask
+[2021-07-17 15:48:09.58 #120 DEBUG] produced subtask
+[2021-07-17 15:48:21.68 #120 DEBUG] produced subtask
+[2021-07-17 15:48:21.72 #120 DEBUG] produced subtask
+[2021-07-17 15:48:21.75 #120 DEBUG] produced subtask
+[2021-07-17 15:48:21.78 #120 DEBUG] produced subtask
+[2021-07-17 15:48:21.81 #120 DEBUG] produced subtask
+[2021-07-17 15:48:21.84 #120 DEBUG] produced subtask
+[2021-07-17 15:48:28.09 #120 DEBUG] produced subtask
+[2021-07-17 15:48:28.12 #120 DEBUG] produced subtask
+[2021-07-17 15:48:28.16 #120 DEBUG] produced subtask
+[2021-07-17 15:48:28.20 #120 DEBUG] produced subtask
+[2021-07-17 15:48:28.24 #120 DEBUG] produced subtask
+[2021-07-17 15:48:28.28 #120 DEBUG] produced subtask
+[2021-07-17 15:48:33.30 #120 DEBUG] produced subtask
+[2021-07-17 15:48:33.35 #120 DEBUG] produced subtask
+[2021-07-17 15:48:33.39 #120 DEBUG] produced subtask
+[2021-07-17 15:48:33.43 #120 DEBUG] produced subtask
+[2021-07-17 15:48:33.47 #120 DEBUG] produced subtask
+[2021-07-17 15:48:33.51 #120 DEBUG] produced subtask
+[2021-07-17 15:48:39.35 #120 DEBUG] produced subtask
+[2021-07-17 15:49:07.82 #120 DEBUG] produced subtask
+[2021-07-17 15:49:07.97 #120 DEBUG] produced subtask
+[2021-07-17 15:49:08.12 #120 DEBUG] produced subtask
+[2021-07-17 15:49:08.27 #120 DEBUG] produced subtask
+[2021-07-17 15:49:08.38 #120 DEBUG] produced subtask
+[2021-07-17 15:49:08.41 #120 DEBUG] produced subtask
+[2021-07-17 15:49:17.78 #120 DEBUG] produced subtask
+[2021-07-17 15:49:17.81 #120 DEBUG] produced subtask
+[2021-07-17 15:49:17.84 #120 DEBUG] produced subtask
+[2021-07-17 15:49:17.88 #120 DEBUG] produced subtask
+[2021-07-17 15:49:17.91 #120 DEBUG] produced subtask
+[2021-07-17 15:49:17.94 #120 DEBUG] produced subtask
+[2021-07-17 15:49:48.11 #120 DEBUG] produced subtask
+[2021-07-17 15:49:48.14 #120 DEBUG] produced subtask
+[2021-07-17 15:49:48.18 #120 DEBUG] produced subtask
+[2021-07-17 15:49:48.21 #120 DEBUG] produced subtask
+[2021-07-17 15:49:48.24 #120 DEBUG] produced subtask
+[2021-07-17 15:49:48.27 #120 DEBUG] produced subtask
+[2021-07-17 15:50:17.38 #120 DEBUG] produced subtask
+[2021-07-17 15:50:17.42 #120 DEBUG] produced subtask
+[2021-07-17 15:50:17.46 #120 DEBUG] produced subtask
+[2021-07-17 15:50:17.50 #120 DEBUG] produced subtask
+[2021-07-17 15:50:17.55 #120 DEBUG] produced subtask
+[2021-07-17 15:50:17.59 #120 DEBUG] produced subtask
+[2021-07-17 15:50:41.06 #120 DEBUG] produced subtask
+[2021-07-17 15:50:41.10 #120 DEBUG] produced subtask
+[2021-07-17 15:50:41.14 #120 DEBUG] produced subtask
+[2021-07-17 15:50:41.18 #120 DEBUG] produced subtask
+[2021-07-17 15:50:41.22 #120 DEBUG] produced subtask
+[2021-07-17 15:50:41.27 #120 DEBUG] produced subtask
+[2021-07-17 15:50:43.48 #120 DEBUG] produced subtask
+[2021-07-17 15:50:43.52 #120 DEBUG] produced subtask
+[2021-07-17 15:50:55.03 #120 DEBUG] produced subtask
+[2021-07-17 15:50:55.19 #120 DEBUG] produced subtask
+[2021-07-17 15:50:55.34 #120 DEBUG] produced subtask
+[2021-07-17 15:50:55.50 #120 DEBUG] produced subtask
+[2021-07-17 15:50:55.61 #120 DEBUG] produced subtask
+[2021-07-17 15:50:55.64 #120 DEBUG] produced subtask
+[2021-07-17 15:51:00.07 #120 DEBUG] produced subtask
+[2021-07-17 15:51:00.10 #120 DEBUG] produced subtask
+[2021-07-17 15:51:00.13 #120 DEBUG] produced subtask
+[2021-07-17 15:51:00.16 #120 DEBUG] produced subtask
+[2021-07-17 15:51:00.19 #120 DEBUG] produced subtask
+[2021-07-17 15:51:00.23 #120 DEBUG] produced subtask
+[2021-07-17 15:51:04.58 #120 DEBUG] produced subtask
+[2021-07-17 15:51:04.61 #120 DEBUG] produced subtask
+[2021-07-17 15:51:04.64 #120 DEBUG] produced subtask
+[2021-07-17 15:51:04.67 #120 DEBUG] produced subtask
+[2021-07-17 15:51:04.70 #120 DEBUG] produced subtask
+[2021-07-17 15:51:04.73 #120 DEBUG] produced subtask
+[2021-07-17 15:51:13.51 #120 DEBUG] produced subtask
+[2021-07-17 15:51:13.55 #120 DEBUG] produced subtask
+[2021-07-17 15:51:13.57 #120 DEBUG] produced subtask
+[2021-07-17 15:51:13.59 #120 DEBUG] produced subtask
+[2021-07-17 15:51:13.61 #120 DEBUG] produced subtask
+[2021-07-17 15:51:13.63 #120 DEBUG] produced subtask
+[2021-07-17 15:51:13.65 #120 DEBUG] produced subtask
+[2021-07-17 15:51:13.68 #120 DEBUG] produced subtask
+[2021-07-17 15:51:13.69 #120 DEBUG] produced subtask
+[2021-07-17 15:51:13.72 #120 DEBUG] produced subtask
+[2021-07-17 15:51:13.73 #120 DEBUG] produced subtask
+[2021-07-17 15:51:13.77 #120 DEBUG] produced subtask
+[2021-07-17 15:51:22.45 #120 DEBUG] produced subtask
+[2021-07-17 15:51:51.12 #120 INFO] start_ebrisk   8% [1295 submitted, 0 queued]
+[2021-07-17 15:51:53.55 #120 DEBUG] produced subtask
+[2021-07-17 15:51:53.58 #120 DEBUG] produced subtask
+[2021-07-17 15:51:53.61 #120 DEBUG] produced subtask
+[2021-07-17 15:51:53.65 #120 DEBUG] produced subtask
+[2021-07-17 15:51:53.68 #120 DEBUG] produced subtask
+[2021-07-17 15:51:53.71 #120 DEBUG] produced subtask
+[2021-07-17 15:52:01.33 #120 DEBUG] produced subtask
+[2021-07-17 15:52:01.49 #120 DEBUG] produced subtask
+[2021-07-17 15:52:01.64 #120 DEBUG] produced subtask
+[2021-07-17 15:52:01.80 #120 DEBUG] produced subtask
+[2021-07-17 15:52:01.91 #120 DEBUG] produced subtask
+[2021-07-17 15:52:01.94 #120 DEBUG] produced subtask
+[2021-07-17 15:52:15.17 #120 DEBUG] produced subtask
+[2021-07-17 15:52:15.20 #120 DEBUG] produced subtask
+[2021-07-17 15:52:15.23 #120 DEBUG] produced subtask
+[2021-07-17 15:52:15.27 #120 DEBUG] produced subtask
+[2021-07-17 15:52:15.30 #120 DEBUG] produced subtask
+[2021-07-17 15:52:15.33 #120 DEBUG] produced subtask
+[2021-07-17 15:52:18.53 #120 DEBUG] produced subtask
+[2021-07-17 15:52:18.57 #120 DEBUG] produced subtask
+[2021-07-17 15:52:18.60 #120 DEBUG] produced subtask
+[2021-07-17 15:52:18.65 #120 DEBUG] produced subtask
+[2021-07-17 15:52:18.69 #120 DEBUG] produced subtask
+[2021-07-17 15:52:18.72 #120 DEBUG] produced subtask
+[2021-07-17 15:52:22.17 #120 DEBUG] produced subtask
+[2021-07-17 15:52:22.21 #120 DEBUG] produced subtask
+[2021-07-17 15:52:22.25 #120 DEBUG] produced subtask
+[2021-07-17 15:52:22.29 #120 DEBUG] produced subtask
+[2021-07-17 15:52:22.33 #120 DEBUG] produced subtask
+[2021-07-17 15:52:22.37 #120 DEBUG] produced subtask
+[2021-07-17 15:52:24.15 #120 DEBUG] produced subtask
+[2021-07-17 15:52:28.47 #120 DEBUG] produced subtask
+[2021-07-17 15:52:28.51 #120 DEBUG] produced subtask
+[2021-07-17 15:52:28.54 #120 DEBUG] produced subtask
+[2021-07-17 15:52:28.57 #120 DEBUG] produced subtask
+[2021-07-17 15:52:28.60 #120 DEBUG] produced subtask
+[2021-07-17 15:52:28.63 #120 DEBUG] produced subtask
+[2021-07-17 15:52:30.97 #120 DEBUG] produced subtask
+[2021-07-17 15:52:31.00 #120 DEBUG] produced subtask
+[2021-07-17 15:52:31.03 #120 DEBUG] produced subtask
+[2021-07-17 15:52:31.06 #120 DEBUG] produced subtask
+[2021-07-17 15:52:31.10 #120 DEBUG] produced subtask
+[2021-07-17 15:52:31.13 #120 DEBUG] produced subtask
+[2021-07-17 15:52:33.20 #120 DEBUG] produced subtask
+[2021-07-17 15:52:33.24 #120 DEBUG] produced subtask
+[2021-07-17 15:52:33.28 #120 DEBUG] produced subtask
+[2021-07-17 15:52:33.32 #120 DEBUG] produced subtask
+[2021-07-17 15:52:33.36 #120 DEBUG] produced subtask
+[2021-07-17 15:52:33.40 #120 DEBUG] produced subtask
+[2021-07-17 15:52:34.87 #120 DEBUG] produced subtask
+[2021-07-17 15:52:35.03 #120 DEBUG] produced subtask
+[2021-07-17 15:52:35.18 #120 DEBUG] produced subtask
+[2021-07-17 15:52:35.33 #120 DEBUG] produced subtask
+[2021-07-17 15:52:35.38 #120 DEBUG] produced subtask
+[2021-07-17 15:52:35.41 #120 DEBUG] produced subtask
+[2021-07-17 15:52:35.44 #120 DEBUG] produced subtask
+[2021-07-17 15:52:35.45 #120 DEBUG] produced subtask
+[2021-07-17 15:52:35.47 #120 DEBUG] produced subtask
+[2021-07-17 15:52:35.49 #120 DEBUG] produced subtask
+[2021-07-17 15:52:35.53 #120 DEBUG] produced subtask
+[2021-07-17 15:52:35.58 #120 DEBUG] produced subtask
+[2021-07-17 15:52:38.16 #120 DEBUG] produced subtask
+[2021-07-17 15:53:03.67 #120 INFO] start_ebrisk   9% [1357 submitted, 0 queued]
+[2021-07-17 15:54:40.88 #120 INFO] start_ebrisk  10% [1357 submitted, 0 queued]
+[2021-07-17 15:57:53.05 #120 INFO] start_ebrisk  11% [1357 submitted, 0 queued]
+[2021-07-17 16:00:09.24 #120 INFO] start_ebrisk  12% [1357 submitted, 0 queued]
+[2021-07-17 16:03:08.98 #120 INFO] start_ebrisk  13% [1357 submitted, 0 queued]
+[2021-07-17 16:07:55.67 #120 INFO] start_ebrisk  14% [1357 submitted, 0 queued]
+[2021-07-17 16:09:51.10 #120 INFO] start_ebrisk  15% [1357 submitted, 0 queued]
+[2021-07-17 16:11:35.25 #120 INFO] start_ebrisk  16% [1357 submitted, 0 queued]
+[2021-07-17 16:14:48.98 #120 INFO] start_ebrisk  17% [1357 submitted, 0 queued]
+[2021-07-17 16:17:15.09 #120 INFO] start_ebrisk  18% [1357 submitted, 0 queued]
+[2021-07-17 16:19:18.32 #120 INFO] start_ebrisk  19% [1357 submitted, 0 queued]
+[2021-07-17 16:23:12.44 #120 INFO] start_ebrisk  20% [1357 submitted, 0 queued]
+[2021-07-17 16:25:41.31 #120 INFO] start_ebrisk  21% [1357 submitted, 0 queued]
+[2021-07-17 16:27:50.47 #120 INFO] start_ebrisk  22% [1357 submitted, 0 queued]
+[2021-07-17 16:31:54.15 #120 INFO] start_ebrisk  23% [1357 submitted, 0 queued]
+[2021-07-17 16:35:47.86 #120 INFO] start_ebrisk  24% [1357 submitted, 0 queued]
+[2021-07-17 16:38:06.76 #120 INFO] start_ebrisk  25% [1357 submitted, 0 queued]
+[2021-07-17 16:41:34.89 #120 INFO] start_ebrisk  26% [1357 submitted, 0 queued]
+[2021-07-17 16:43:52.70 #120 INFO] start_ebrisk  27% [1357 submitted, 0 queued]
+[2021-07-17 16:48:42.23 #120 INFO] start_ebrisk  28% [1357 submitted, 0 queued]
+[2021-07-17 16:51:55.23 #120 INFO] start_ebrisk  29% [1357 submitted, 0 queued]
+[2021-07-17 16:55:25.66 #120 INFO] start_ebrisk  30% [1357 submitted, 0 queued]
+[2021-07-17 16:58:52.96 #120 INFO] start_ebrisk  31% [1357 submitted, 0 queued]
+[2021-07-17 17:03:10.47 #120 INFO] start_ebrisk  32% [1357 submitted, 0 queued]
+[2021-07-17 17:06:24.44 #120 INFO] start_ebrisk  33% [1357 submitted, 0 queued]
+[2021-07-17 17:10:30.71 #120 INFO] start_ebrisk  34% [1357 submitted, 0 queued]
+[2021-07-17 17:14:12.31 #120 INFO] start_ebrisk  35% [1357 submitted, 0 queued]
+[2021-07-17 17:19:37.52 #120 INFO] start_ebrisk  36% [1357 submitted, 0 queued]
+[2021-07-17 17:21:54.13 #120 INFO] start_ebrisk  37% [1357 submitted, 0 queued]
+[2021-07-17 17:26:45.65 #120 INFO] start_ebrisk  38% [1357 submitted, 0 queued]
+[2021-07-17 17:29:36.50 #120 INFO] start_ebrisk  39% [1357 submitted, 0 queued]
+[2021-07-17 17:34:48.70 #120 INFO] start_ebrisk  40% [1357 submitted, 0 queued]
+[2021-07-17 17:37:15.23 #120 INFO] start_ebrisk  41% [1357 submitted, 0 queued]
+[2021-07-17 17:42:25.70 #120 INFO] start_ebrisk  42% [1357 submitted, 0 queued]
+[2021-07-17 17:44:54.78 #120 INFO] start_ebrisk  43% [1357 submitted, 0 queued]
+[2021-07-17 17:50:00.66 #120 INFO] start_ebrisk  44% [1357 submitted, 0 queued]
+[2021-07-17 17:52:22.87 #120 INFO] start_ebrisk  45% [1357 submitted, 0 queued]
+[2021-07-17 17:56:37.15 #120 INFO] start_ebrisk  46% [1357 submitted, 0 queued]
+[2021-07-17 18:00:17.48 #120 INFO] start_ebrisk  47% [1357 submitted, 0 queued]
+[2021-07-17 18:03:44.27 #120 INFO] start_ebrisk  48% [1357 submitted, 0 queued]
+[2021-07-17 18:07:19.59 #120 INFO] start_ebrisk  49% [1357 submitted, 0 queued]
+[2021-07-17 18:12:58.29 #120 INFO] start_ebrisk  50% [1357 submitted, 0 queued]
+[2021-07-17 18:16:26.53 #120 INFO] start_ebrisk  51% [1357 submitted, 0 queued]
+[2021-07-17 18:20:16.17 #120 INFO] start_ebrisk  52% [1357 submitted, 0 queued]
+[2021-07-17 18:24:38.59 #120 INFO] start_ebrisk  53% [1357 submitted, 0 queued]
+[2021-07-17 18:29:16.36 #120 INFO] start_ebrisk  54% [1357 submitted, 0 queued]
+[2021-07-17 18:33:08.38 #120 INFO] start_ebrisk  55% [1357 submitted, 0 queued]
+[2021-07-17 18:36:10.65 #120 INFO] start_ebrisk  56% [1357 submitted, 0 queued]
+[2021-07-17 18:41:12.50 #120 INFO] start_ebrisk  57% [1357 submitted, 0 queued]
+[2021-07-17 18:44:47.22 #120 INFO] start_ebrisk  58% [1357 submitted, 0 queued]
+[2021-07-17 18:48:01.43 #120 INFO] start_ebrisk  59% [1357 submitted, 0 queued]
+[2021-07-17 18:50:18.61 #120 INFO] start_ebrisk  60% [1357 submitted, 0 queued]
+[2021-07-17 18:52:07.63 #120 INFO] start_ebrisk  61% [1357 submitted, 0 queued]
+[2021-07-17 18:55:34.28 #120 INFO] start_ebrisk  62% [1357 submitted, 0 queued]
+[2021-07-17 18:58:18.25 #120 INFO] start_ebrisk  63% [1357 submitted, 0 queued]
+[2021-07-17 19:03:07.03 #120 INFO] start_ebrisk  64% [1357 submitted, 0 queued]
+[2021-07-17 19:06:37.03 #120 INFO] start_ebrisk  65% [1357 submitted, 0 queued]
+[2021-07-17 19:09:44.18 #120 INFO] start_ebrisk  66% [1357 submitted, 0 queued]
+[2021-07-17 19:12:37.31 #120 INFO] start_ebrisk  67% [1357 submitted, 0 queued]
+[2021-07-17 19:14:13.49 #120 INFO] start_ebrisk  68% [1357 submitted, 0 queued]
+[2021-07-17 19:21:31.54 #120 INFO] start_ebrisk  69% [1357 submitted, 0 queued]
+[2021-07-17 19:25:01.78 #120 INFO] start_ebrisk  70% [1357 submitted, 0 queued]
+[2021-07-17 19:27:40.95 #120 INFO] start_ebrisk  71% [1357 submitted, 0 queued]
+[2021-07-17 19:29:43.45 #120 INFO] start_ebrisk  72% [1357 submitted, 0 queued]
+[2021-07-17 19:31:26.68 #120 INFO] start_ebrisk  73% [1357 submitted, 0 queued]
+[2021-07-17 19:36:28.34 #120 INFO] start_ebrisk  74% [1357 submitted, 0 queued]
+[2021-07-17 19:40:21.18 #120 INFO] start_ebrisk  75% [1357 submitted, 0 queued]
+[2021-07-17 19:44:40.05 #120 INFO] start_ebrisk  76% [1357 submitted, 0 queued]
+[2021-07-17 19:46:18.76 #120 INFO] start_ebrisk  77% [1357 submitted, 0 queued]
+[2021-07-17 19:49:43.43 #120 INFO] start_ebrisk  78% [1357 submitted, 0 queued]
+[2021-07-17 19:54:01.01 #120 INFO] start_ebrisk  79% [1357 submitted, 0 queued]
+[2021-07-17 19:59:00.20 #120 INFO] start_ebrisk  80% [1357 submitted, 0 queued]
+[2021-07-17 20:06:19.79 #120 INFO] start_ebrisk  81% [1357 submitted, 0 queued]
+[2021-07-17 20:13:47.24 #120 INFO] start_ebrisk  82% [1357 submitted, 0 queued]
+[2021-07-17 20:16:57.79 #120 INFO] start_ebrisk  83% [1357 submitted, 0 queued]
+[2021-07-17 20:19:13.37 #120 INFO] start_ebrisk  84% [1357 submitted, 0 queued]
+[2021-07-17 20:21:26.81 #120 INFO] start_ebrisk  85% [1357 submitted, 0 queued]
+[2021-07-17 20:33:25.24 #120 INFO] start_ebrisk  86% [1357 submitted, 0 queued]
+[2021-07-17 20:37:59.13 #120 INFO] start_ebrisk  87% [1357 submitted, 0 queued]
+[2021-07-17 20:41:04.91 #120 INFO] start_ebrisk  88% [1357 submitted, 0 queued]
+[2021-07-17 20:43:23.75 #120 INFO] start_ebrisk  89% [1357 submitted, 0 queued]
+[2021-07-17 20:47:57.18 #120 INFO] start_ebrisk  90% [1357 submitted, 0 queued]
+[2021-07-17 20:51:16.52 #120 INFO] start_ebrisk  91% [1357 submitted, 0 queued]
+[2021-07-17 20:58:53.70 #120 INFO] start_ebrisk  92% [1357 submitted, 0 queued]
+[2021-07-17 21:02:56.37 #120 INFO] start_ebrisk  93% [1357 submitted, 0 queued]
+[2021-07-17 21:05:52.42 #120 INFO] start_ebrisk  94% [1357 submitted, 0 queued]
+[2021-07-17 21:08:52.82 #120 INFO] start_ebrisk  95% [1357 submitted, 0 queued]
+[2021-07-17 21:12:43.87 #120 INFO] start_ebrisk  96% [1357 submitted, 0 queued]
+[2021-07-17 21:14:47.17 #120 INFO] start_ebrisk  97% [1357 submitted, 0 queued]
+[2021-07-17 21:18:52.97 #120 INFO] start_ebrisk  98% [1357 submitted, 0 queued]
+[2021-07-17 21:24:14.36 #120 INFO] start_ebrisk  99% [1357 submitted, 0 queued]
+[2021-07-17 21:55:53.54 #120 INFO] start_ebrisk 100% [1357 submitted, 0 queued]
+[2021-07-17 21:55:53.55 #120 INFO] Mean time per core=20284s, std=618.2s, min=19487s, max=22720s
+[2021-07-17 21:55:53.55 #120 INFO] Received {'alt': '13.01 GB', 'gmf_info': '65.56 MB', 'losses_by_A': '3.77 MB', 'momenta': '798.47 KB', 'events_per_sid': '27.4 KB'} in 22401 seconds
+[2021-07-17 21:55:53.90 #120 INFO] Produced 10.24 GB of GMFs
+[2021-07-17 21:57:07.09 #120 INFO] Stored 13.01 GB in the agg_loss_table
+[2021-07-17 21:57:07.09 #120 INFO] Building the src_loss_table
+[2021-07-17 22:12:08.64 #120 INFO] Sending 114.82 MB of losses
+[2021-07-17 22:12:10.06 #120 INFO] Sending 115.83 MB of losses
+[2021-07-17 22:12:10.85 #120 INFO] Sending 114.02 MB of losses
+[2021-07-17 22:12:11.63 #120 INFO] Sending 116.73 MB of losses
+[2021-07-17 22:12:12.41 #120 INFO] Sending 113.76 MB of losses
+[2021-07-17 22:12:13.19 #120 INFO] Sending 116.39 MB of losses
+[2021-07-17 22:12:14.01 #120 INFO] Sending 114.73 MB of losses
+[2021-07-17 22:12:14.89 #120 INFO] Sending 115.35 MB of losses
+[2021-07-17 22:12:15.74 #120 INFO] Sending 115.47 MB of losses
+[2021-07-17 22:12:16.58 #120 INFO] Sending 114.53 MB of losses
+[2021-07-17 22:12:17.43 #120 INFO] Sending 116.27 MB of losses
+[2021-07-17 22:12:18.22 #120 INFO] Sending 113.69 MB of losses
+[2021-07-17 22:12:19.01 #120 INFO] Sending 116.79 MB of losses
+[2021-07-17 22:12:19.77 #120 INFO] Sending 111.46 MB of losses
+[2021-07-17 22:12:20.53 #120 INFO] Sending 105.68 MB of losses
+[2021-07-17 22:12:21.35 #120 INFO] Sending 105.67 MB of losses
+[2021-07-17 22:12:22.11 #120 INFO] Sending 104.87 MB of losses
+[2021-07-17 22:12:22.88 #120 INFO] Sending 106.34 MB of losses
+[2021-07-17 22:12:23.61 #120 INFO] Sending 104.52 MB of losses
+[2021-07-17 22:12:24.41 #120 INFO] Sending 106.93 MB of losses
+[2021-07-17 22:12:25.17 #120 INFO] Sending 104.33 MB of losses
+[2021-07-17 22:12:25.91 #120 INFO] Sending 106.15 MB of losses
+[2021-07-17 22:12:26.71 #120 INFO] Sending 105.24 MB of losses
+[2021-07-17 22:12:27.48 #120 INFO] Sending 105.27 MB of losses
+[2021-07-17 22:12:28.26 #120 INFO] Sending 106.04 MB of losses
+[2021-07-17 22:12:29.03 #120 INFO] Sending 104.76 MB of losses
+[2021-07-17 22:12:29.80 #120 INFO] Sending 106.56 MB of losses
+[2021-07-17 22:12:30.56 #120 INFO] Sending 99.02 MB of losses
+[2021-07-17 22:12:31.32 #120 INFO] Sending 98.01 MB of losses
+[2021-07-17 22:12:32.12 #120 INFO] Sending 95.9 MB of losses
+[2021-07-17 22:12:32.92 #120 INFO] Sending 97.04 MB of losses
+[2021-07-17 22:12:33.66 #120 INFO] Sending 96.87 MB of losses
+[2021-07-17 22:12:34.38 #120 INFO] Sending 96.26 MB of losses
+[2021-07-17 22:12:35.11 #120 INFO] Sending 97.52 MB of losses
+[2021-07-17 22:12:35.84 #120 INFO] Sending 95.75 MB of losses
+[2021-07-17 22:12:36.73 #120 INFO] Sending 98.12 MB of losses
+[2021-07-17 22:12:37.60 #120 INFO] Sending 95.41 MB of losses
+[2021-07-17 22:12:38.32 #120 INFO] Sending 97.57 MB of losses
+[2021-07-17 22:12:39.15 #120 INFO] Sending 96.41 MB of losses
+[2021-07-17 22:12:39.99 #120 INFO] Sending 96.63 MB of losses
+[2021-07-17 22:12:40.80 #120 INFO] Sending 97.12 MB of losses
+[2021-07-17 22:12:41.63 #120 INFO] Sending 80.54 MB of losses
+[2021-07-17 22:12:42.50 #120 INFO] Sending 79 MB of losses
+[2021-07-17 22:12:43.30 #120 INFO] Sending 77.59 MB of losses
+[2021-07-17 22:12:44.05 #120 INFO] Sending 79.17 MB of losses
+[2021-07-17 22:12:44.80 #120 INFO] Sending 77.89 MB of losses
+[2021-07-17 22:12:45.59 #120 INFO] Sending 78.72 MB of losses
+[2021-07-17 22:12:46.39 #120 INFO] Sending 78.52 MB of losses
+[2021-07-17 22:12:47.19 #120 INFO] Sending 78.07 MB of losses
+[2021-07-17 22:12:48.00 #120 INFO] Sending 78.78 MB of losses
+[2021-07-17 22:12:48.78 #120 INFO] Sending 77.88 MB of losses
+[2021-07-17 22:12:49.60 #120 INFO] Sending 79.31 MB of losses
+[2021-07-17 22:12:50.37 #120 INFO] Sending 77.57 MB of losses
+[2021-07-17 22:12:51.71 #120 INFO] Sending 78.92 MB of losses
+[2021-07-17 22:12:52.48 #120 INFO] Sending 79.28 MB of losses
+[2021-07-17 22:12:53.30 #120 INFO] Sending 87.25 MB of losses
+[2021-07-17 22:12:54.08 #120 INFO] Sending 87.48 MB of losses
+[2021-07-17 22:12:54.88 #120 INFO] Sending 86.56 MB of losses
+[2021-07-17 22:12:55.67 #120 INFO] Sending 88.14 MB of losses
+[2021-07-17 22:12:56.50 #120 INFO] Sending 86 MB of losses
+[2021-07-17 22:12:57.31 #120 INFO] Sending 88.6 MB of losses
+[2021-07-17 22:12:58.12 #120 INFO] Sending 86.55 MB of losses
+[2021-07-17 22:12:58.93 #120 INFO] Sending 87.67 MB of losses
+[2021-07-17 22:12:59.70 #120 INFO] Sending 87.34 MB of losses
+[2021-07-17 22:13:00.45 #120 INFO] Sending 86.86 MB of losses
+[2021-07-17 22:13:01.21 #120 INFO] Sending 87.84 MB of losses
+[2021-07-17 22:13:02.00 #120 INFO] Sending 86.3 MB of losses
+[2021-07-17 22:13:02.79 #120 INFO] Sending 88.52 MB of losses
+[2021-07-17 22:13:03.61 #120 INFO] Sending 70.04 MB of losses
+[2021-07-17 22:13:04.42 #120 INFO] Sending 49.37 MB of losses
+[2021-07-17 22:13:05.13 #120 INFO] Sending 49.01 MB of losses
+[2021-07-17 22:13:05.81 #120 INFO] Sending 48.97 MB of losses
+[2021-07-17 22:13:06.54 #120 INFO] Sending 49.31 MB of losses
+[2021-07-17 22:13:07.25 #120 INFO] Sending 48.83 MB of losses
+[2021-07-17 22:13:08.01 #120 INFO] Sending 49.61 MB of losses
+[2021-07-17 22:13:08.74 #120 INFO] Sending 48.58 MB of losses
+[2021-07-17 22:13:09.44 #120 INFO] Sending 49.57 MB of losses
+[2021-07-17 22:13:10.16 #120 INFO] Sending 48.87 MB of losses
+[2021-07-17 22:13:10.89 #120 INFO] Sending 49.25 MB of losses
+[2021-07-17 22:13:11.59 #120 INFO] Sending 49.27 MB of losses
+[2021-07-17 22:13:12.30 #120 INFO] Sending 48.77 MB of losses
+[2021-07-17 22:13:13.09 #120 INFO] Sending 49.41 MB of losses
+[2021-07-17 22:13:13.88 #120 INFO] Sending 95.45 MB of losses
+[2021-07-17 22:13:14.77 #120 INFO] Sending 116.7 MB of losses
+[2021-07-17 22:13:15.60 #120 INFO] Sending 113.74 MB of losses
+[2021-07-17 22:13:16.47 #120 INFO] Sending 116.25 MB of losses
+[2021-07-17 22:13:17.34 #120 INFO] Sending 114.69 MB of losses
+[2021-07-17 22:13:18.18 #120 INFO] Sending 115.42 MB of losses
+[2021-07-17 22:13:19.07 #120 INFO] Sending 115.52 MB of losses
+[2021-07-17 22:13:19.87 #120 INFO] Sending 114.54 MB of losses
+[2021-07-17 22:13:20.74 #120 INFO] Sending 116.29 MB of losses
+[2021-07-17 22:13:21.55 #120 INFO] Sending 113.66 MB of losses
+[2021-07-17 22:13:22.30 #120 INFO] Sending 116.76 MB of losses
+[2021-07-17 22:13:23.06 #120 INFO] Sending 114.23 MB of losses
+[2021-07-17 22:13:23.84 #120 INFO] Sending 115.84 MB of losses
+[2021-07-17 22:13:24.70 #120 INFO] Sending 115.1 MB of losses
+[2021-07-17 22:13:25.50 #120 INFO] Sent 96 tasks, 8.75 GB in 76 seconds
+[2021-07-17 22:13:30.35 #120 INFO] post_risk   1% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.37 #120 INFO] post_risk   2% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.39 #120 INFO] post_risk   3% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.40 #120 INFO] post_risk   4% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.42 #120 INFO] post_risk   5% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.43 #120 INFO] post_risk   6% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.44 #120 INFO] post_risk   7% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.46 #120 INFO] post_risk   8% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.47 #120 INFO] post_risk   9% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.49 #120 INFO] post_risk  10% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.50 #120 INFO] post_risk  11% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.52 #120 INFO] post_risk  12% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.53 #120 INFO] post_risk  13% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.55 #120 INFO] post_risk  14% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.56 #120 INFO] post_risk  15% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.57 #120 INFO] post_risk  16% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.59 #120 INFO] post_risk  17% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.60 #120 INFO] post_risk  18% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.62 #120 INFO] post_risk  19% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.63 #120 INFO] post_risk  20% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.65 #120 INFO] post_risk  21% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.66 #120 INFO] post_risk  22% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.68 #120 INFO] post_risk  23% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.69 #120 INFO] post_risk  25% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.71 #120 INFO] post_risk  26% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.72 #120 INFO] post_risk  27% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.74 #120 INFO] post_risk  28% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.75 #120 INFO] post_risk  29% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.76 #120 INFO] post_risk  30% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.78 #120 INFO] post_risk  31% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.80 #120 INFO] post_risk  32% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.81 #120 INFO] post_risk  33% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.82 #120 INFO] post_risk  34% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.84 #120 INFO] post_risk  35% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.85 #120 INFO] post_risk  36% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.87 #120 INFO] post_risk  37% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.88 #120 INFO] post_risk  38% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.89 #120 INFO] post_risk  39% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.91 #120 INFO] post_risk  40% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.92 #120 INFO] post_risk  41% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.94 #120 INFO] post_risk  42% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.95 #120 INFO] post_risk  43% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.97 #120 INFO] post_risk  44% [96 submitted, 0 queued]
+[2021-07-17 22:13:30.98 #120 INFO] post_risk  45% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.02 #120 INFO] post_risk  46% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.03 #120 INFO] post_risk  47% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.05 #120 INFO] post_risk  48% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.06 #120 INFO] post_risk  50% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.08 #120 INFO] post_risk  51% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.09 #120 INFO] post_risk  52% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.11 #120 INFO] post_risk  53% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.12 #120 INFO] post_risk  54% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.14 #120 INFO] post_risk  55% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.15 #120 INFO] post_risk  56% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.16 #120 INFO] post_risk  57% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.18 #120 INFO] post_risk  58% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.19 #120 INFO] post_risk  59% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.21 #120 INFO] post_risk  60% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.22 #120 INFO] post_risk  61% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.23 #120 INFO] post_risk  62% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.25 #120 INFO] post_risk  63% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.26 #120 INFO] post_risk  64% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.28 #120 INFO] post_risk  65% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.29 #120 INFO] post_risk  66% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.30 #120 INFO] post_risk  67% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.32 #120 INFO] post_risk  68% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.33 #120 INFO] post_risk  69% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.35 #120 INFO] post_risk  70% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.36 #120 INFO] post_risk  71% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.38 #120 INFO] post_risk  72% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.39 #120 INFO] post_risk  73% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.41 #120 INFO] post_risk  75% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.42 #120 INFO] post_risk  76% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.43 #120 INFO] post_risk  77% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.45 #120 INFO] post_risk  78% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.46 #120 INFO] post_risk  79% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.48 #120 INFO] post_risk  80% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.49 #120 INFO] post_risk  81% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.50 #120 INFO] post_risk  82% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.52 #120 INFO] post_risk  83% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.53 #120 INFO] post_risk  84% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.55 #120 INFO] post_risk  85% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.56 #120 INFO] post_risk  86% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.58 #120 INFO] post_risk  87% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.59 #120 INFO] post_risk  88% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.61 #120 INFO] post_risk  89% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.62 #120 INFO] post_risk  90% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.63 #120 INFO] post_risk  91% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.65 #120 INFO] post_risk  92% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.66 #120 INFO] post_risk  93% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.68 #120 INFO] post_risk  94% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.69 #120 INFO] post_risk  95% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.71 #120 INFO] post_risk  96% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.72 #120 INFO] post_risk  97% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.74 #120 INFO] post_risk  98% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.75 #120 INFO] post_risk 100% [96 submitted, 0 queued]
+[2021-07-17 22:13:31.76 #120 INFO] Mean time per core=2s, std=0.4s, min=2s, max=3s
+[2021-07-17 22:13:32.07 #120 INFO] Received {'tot': '44.95 MB'} in 6 seconds
+[2021-07-17 22:15:28.17 #120 INFO] Total portfolio loss
+==== ============= ============= ========= =============
+loss contents      nonstructural occupants structural   
+==== ============= ============= ========= =============
+avg  2_200_949_233 6_518_748_216 192       5_934_841_126
+==== ============= ============= ========= =============
+[2021-07-17 22:15:28.18 #120 INFO] Sanity check on agg_losses
+[2021-07-17 22:16:48.89 #120 INFO] Exposing the outputs to the database
+[2021-07-17 22:16:50.08 #120 INFO] Stored 36.85 GB on /root/oqdata/calc_120.hdf5 in 48232 seconds

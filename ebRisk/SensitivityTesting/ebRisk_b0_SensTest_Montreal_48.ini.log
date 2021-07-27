@@ -1,0 +1,2792 @@
+[2021-07-11 01:33:51.95 #74 INFO] root running /mnt/storage/canada-srm2/ebRisk/SensitivityTesting/ebRisk_b0_SensTest_Montreal_48.ini [--hc=None]
+[2021-07-11 01:33:51.95 #74 INFO] Using engine version 3.11.3-git29ac352f7d
+[2021-07-11 01:33:52.35 #74 WARNING] Using 96 cores on ip-10-70-136-127
+[2021-07-11 01:33:52.37 #74 INFO] Validated nationalModel.xml in 0.01 seconds
+[2021-07-11 01:33:52.44 #74 INFO] Checksum of the input files: 2947178073
+[2021-07-11 01:33:52.45 #74 INFO] Reading the risk model if present
+[2021-07-11 01:34:14.62 #74 INFO] Reading /mnt/storage/canada-srm2/ebRisk/SensitivityTesting/TESTEXPO_Montreal.xml
+[2021-07-11 01:34:14.64 #74 INFO] Extracting the hazard sites from the site model
+[2021-07-11 01:34:17.76 #74 INFO] Associated 185 assets to 5 sites
+[2021-07-11 01:34:18.19 #74 INFO] Reducing risk model from 7260 to 107 taxonomies
+[2021-07-11 01:34:19.39 #74 INFO] minimum_asset_loss={'contents': 0, 'nonstructural': 0, 'occupants': 0, 'structural': 0}
+[2021-07-11 01:34:19.40 #74 INFO] Storing 6 aggregation keys
+[2021-07-11 01:34:19.47 #74 INFO] Total number of logic tree paths = 24_576
+[2021-07-11 01:34:19.48 #74 INFO] Reading the source model(s) in parallel
+[2021-07-11 01:34:21.95 #74 INFO] read_source_model  16% [6 submitted, 0 queued]
+[2021-07-11 01:34:22.31 #74 INFO] read_source_model  33% [6 submitted, 0 queued]
+[2021-07-11 01:34:22.33 #74 INFO] read_source_model  50% [6 submitted, 0 queued]
+[2021-07-11 01:34:22.34 #74 INFO] read_source_model  66% [6 submitted, 0 queued]
+[2021-07-11 01:34:22.35 #74 INFO] read_source_model  83% [6 submitted, 0 queued]
+[2021-07-11 01:34:22.37 #74 INFO] read_source_model 100% [6 submitted, 0 queued]
+[2021-07-11 01:34:22.37 #74 INFO] Mean time per core=0s, std=0.0s, min=0s, max=0s
+[2021-07-11 01:34:22.38 #74 INFO] Received {'/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Harctic_simplified_collapsedRates.xml': '138.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Harctic_simplified_collapsedRates.xml': '133.09 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Rarctic_simplified_collapsedRates.xml': '132.34 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Rarctic_simplified_collapsedRates.xml': '126.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Harctic_simplified_collapsedRates.xml': '117.99 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Rarctic_simplified_collapsedRates.xml': '111.84 KB'} in 1 seconds
+[2021-07-11 01:34:22.64 #74 INFO] There are multiple different sources with the same ID [<AreaSource SCCYA;0>, <AreaSource SCCYA;1>]
+[2021-07-11 01:34:22.65 #74 INFO] There are 13 groups and 196 sources with len(et_ids)=3.85
+[2021-07-11 01:34:22.67 #74 INFO] Checking the sources bounding box
+[2021-07-11 01:34:22.69 #74 ERROR] source ACM: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
+[2021-07-11 01:34:22.80 #74 INFO] Rupture floating factor = 1.6303030303030304
+[2021-07-11 01:34:22.81 #74 INFO] Rupture spinning factor = 3.278787878787879
+[2021-07-11 01:34:22.81 #74 INFO] gzipping the input files
+[2021-07-11 01:34:26.81 #74 INFO] Storing risk model
+[2021-07-11 01:34:26.88 #74 INFO] minimum_intensity={'default': 0.1, 'SA(0.3)': 0.1, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05}
+[2021-07-11 01:34:27.28 #74 INFO] Building ruptures
+[2021-07-11 01:36:03.26 #74 INFO] Sending <SourceGroup Subduction IntraSlab30, 1 source(s)>
+[2021-07-11 01:36:03.26 #74 INFO] Sending <SourceGroup Subduction IntraSlab55, 4 source(s)>
+[2021-07-11 01:36:03.27 #74 INFO] Sending <SourceGroup Subduction Interface, 13 source(s)>
+[2021-07-11 01:36:03.27 #74 INFO] Sending <SourceGroup Stable Shallow Crust, 29 source(s)>
+[2021-07-11 01:36:03.28 #74 INFO] Sending <SourceGroup Stable Shallow Crust, 4 source(s)>
+[2021-07-11 01:36:03.28 #74 INFO] Sending <SourceGroup Stable Shallow Crust, 6 source(s)>
+[2021-07-11 01:36:03.29 #74 INFO] Sending <SourceGroup Stable Shallow Crust, 18 source(s)>
+[2021-07-11 01:36:03.29 #74 INFO] Sending <SourceGroup Stable Shallow Crust, 10 source(s)>
+[2021-07-11 01:36:03.30 #74 INFO] Sending <SourceGroup Stable Shallow Crust, 38 source(s)>
+[2021-07-11 01:36:03.30 #74 INFO] Sending <SourceGroup Stable Shallow Crust, 14 source(s)>
+[2021-07-11 01:36:03.31 #74 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-07-11 01:36:03.31 #74 INFO] Sending <SourceGroup Active Shallow Crust, 57 source(s)>
+[2021-07-11 01:36:03.32 #74 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-07-11 01:36:05.45 #74 INFO] Sent 96 tasks, 60.31 MB in 0 seconds
+[2021-07-11 01:36:06.21 #74 INFO] sample_ruptures   1% [98 submitted, 3 queued]
+[2021-07-11 01:36:06.27 #74 INFO] sample_ruptures   2% [99 submitted, 2 queued]
+[2021-07-11 01:36:06.32 #74 INFO] sample_ruptures   3% [100 submitted, 1 queued]
+[2021-07-11 01:36:06.35 #74 INFO] sample_ruptures   4% [101 submitted, 0 queued]
+[2021-07-11 01:36:06.40 #74 INFO] sample_ruptures   5% [101 submitted, 0 queued]
+[2021-07-11 01:36:06.43 #74 INFO] sample_ruptures   6% [101 submitted, 0 queued]
+[2021-07-11 01:36:06.47 #74 INFO] sample_ruptures   7% [101 submitted, 0 queued]
+[2021-07-11 01:36:06.50 #74 INFO] sample_ruptures   8% [101 submitted, 0 queued]
+[2021-07-11 01:36:06.53 #74 INFO] sample_ruptures   9% [101 submitted, 0 queued]
+[2021-07-11 01:36:06.55 #74 INFO] sample_ruptures  10% [101 submitted, 0 queued]
+[2021-07-11 01:36:06.57 #74 INFO] sample_ruptures  11% [101 submitted, 0 queued]
+[2021-07-11 01:36:06.59 #74 INFO] sample_ruptures  12% [101 submitted, 0 queued]
+[2021-07-11 01:36:06.62 #74 INFO] sample_ruptures  13% [101 submitted, 0 queued]
+[2021-07-11 01:36:06.64 #74 INFO] sample_ruptures  14% [101 submitted, 0 queued]
+[2021-07-11 01:36:06.67 #74 INFO] sample_ruptures  15% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.07 #74 INFO] sample_ruptures  16% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.09 #74 INFO] sample_ruptures  17% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.10 #74 INFO] sample_ruptures  18% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.12 #74 INFO] sample_ruptures  19% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.13 #74 INFO] sample_ruptures  20% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.15 #74 INFO] sample_ruptures  21% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.16 #74 INFO] sample_ruptures  22% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.18 #74 INFO] sample_ruptures  23% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.19 #74 INFO] sample_ruptures  24% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.21 #74 INFO] sample_ruptures  25% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.22 #74 INFO] sample_ruptures  26% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.24 #74 INFO] sample_ruptures  27% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.25 #74 INFO] sample_ruptures  28% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.27 #74 INFO] sample_ruptures  29% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.28 #74 INFO] sample_ruptures  30% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.30 #74 INFO] sample_ruptures  31% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.31 #74 INFO] sample_ruptures  32% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.32 #74 INFO] sample_ruptures  33% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.34 #74 INFO] sample_ruptures  34% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.35 #74 INFO] sample_ruptures  35% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.37 #74 INFO] sample_ruptures  36% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.38 #74 INFO] sample_ruptures  37% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.40 #74 INFO] sample_ruptures  38% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.41 #74 INFO] sample_ruptures  39% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.43 #74 INFO] sample_ruptures  40% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.44 #74 INFO] sample_ruptures  41% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.46 #74 INFO] sample_ruptures  42% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.47 #74 INFO] sample_ruptures  43% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.48 #74 INFO] sample_ruptures  44% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.50 #74 INFO] sample_ruptures  45% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.51 #74 INFO] sample_ruptures  46% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.53 #74 INFO] sample_ruptures  47% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.54 #74 INFO] sample_ruptures  48% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.56 #74 INFO] sample_ruptures  49% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.57 #74 INFO] sample_ruptures  50% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.59 #74 INFO] sample_ruptures  51% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.60 #74 INFO] sample_ruptures  52% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.62 #74 INFO] sample_ruptures  53% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.63 #74 INFO] sample_ruptures  54% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.65 #74 INFO] sample_ruptures  55% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.66 #74 INFO] sample_ruptures  56% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.68 #74 INFO] sample_ruptures  57% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.69 #74 INFO] sample_ruptures  58% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.71 #74 INFO] sample_ruptures  59% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.72 #74 INFO] sample_ruptures  60% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.74 #74 INFO] sample_ruptures  61% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.75 #74 INFO] sample_ruptures  62% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.76 #74 INFO] sample_ruptures  63% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.78 #74 INFO] sample_ruptures  64% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.80 #74 INFO] sample_ruptures  65% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.82 #74 INFO] sample_ruptures  66% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.83 #74 INFO] sample_ruptures  67% [101 submitted, 0 queued]
+[2021-07-11 01:36:07.85 #74 INFO] sample_ruptures  68% [101 submitted, 0 queued]
+[2021-07-11 01:36:32.43 #74 INFO] sample_ruptures  69% [101 submitted, 0 queued]
+[2021-07-11 01:36:35.88 #74 INFO] sample_ruptures  70% [101 submitted, 0 queued]
+[2021-07-11 01:36:45.78 #74 INFO] sample_ruptures  71% [101 submitted, 0 queued]
+[2021-07-11 01:36:46.46 #74 INFO] sample_ruptures  72% [101 submitted, 0 queued]
+[2021-07-11 01:37:00.37 #74 INFO] sample_ruptures  73% [101 submitted, 0 queued]
+[2021-07-11 01:37:19.01 #74 INFO] sample_ruptures  74% [101 submitted, 0 queued]
+[2021-07-11 01:37:57.05 #74 INFO] sample_ruptures  75% [101 submitted, 0 queued]
+[2021-07-11 01:38:06.80 #74 INFO] sample_ruptures  76% [101 submitted, 0 queued]
+[2021-07-11 01:38:20.99 #74 INFO] sample_ruptures  77% [101 submitted, 0 queued]
+[2021-07-11 01:38:22.22 #74 INFO] sample_ruptures  78% [101 submitted, 0 queued]
+[2021-07-11 01:38:34.21 #74 INFO] sample_ruptures  79% [101 submitted, 0 queued]
+[2021-07-11 01:38:36.38 #74 INFO] sample_ruptures  80% [101 submitted, 0 queued]
+[2021-07-11 01:38:43.30 #74 INFO] sample_ruptures  81% [101 submitted, 0 queued]
+[2021-07-11 01:38:44.45 #74 INFO] sample_ruptures  82% [101 submitted, 0 queued]
+[2021-07-11 01:38:50.32 #74 INFO] sample_ruptures  83% [101 submitted, 0 queued]
+[2021-07-11 01:38:51.12 #74 INFO] sample_ruptures  84% [101 submitted, 0 queued]
+[2021-07-11 01:38:54.90 #74 INFO] sample_ruptures  85% [101 submitted, 0 queued]
+[2021-07-11 01:39:30.59 #74 INFO] sample_ruptures  86% [101 submitted, 0 queued]
+[2021-07-11 01:39:31.47 #74 INFO] sample_ruptures  87% [101 submitted, 0 queued]
+[2021-07-11 01:39:34.18 #74 INFO] sample_ruptures  88% [101 submitted, 0 queued]
+[2021-07-11 01:42:05.15 #74 INFO] sample_ruptures  89% [101 submitted, 0 queued]
+[2021-07-11 01:42:26.61 #74 INFO] sample_ruptures  90% [101 submitted, 0 queued]
+[2021-07-11 01:42:41.55 #74 INFO] sample_ruptures  91% [101 submitted, 0 queued]
+[2021-07-11 01:42:49.07 #74 INFO] sample_ruptures  92% [101 submitted, 0 queued]
+[2021-07-11 01:42:55.40 #74 INFO] sample_ruptures  93% [101 submitted, 0 queued]
+[2021-07-11 01:43:02.38 #74 INFO] sample_ruptures  94% [101 submitted, 0 queued]
+[2021-07-11 01:43:17.33 #74 INFO] sample_ruptures  95% [101 submitted, 0 queued]
+[2021-07-11 01:44:35.23 #74 INFO] sample_ruptures  96% [101 submitted, 0 queued]
+[2021-07-11 01:46:01.42 #74 INFO] sample_ruptures  97% [101 submitted, 0 queued]
+[2021-07-11 01:46:34.10 #74 INFO] sample_ruptures  98% [101 submitted, 0 queued]
+[2021-07-11 01:48:38.35 #74 INFO] sample_ruptures  99% [101 submitted, 0 queued]
+[2021-07-11 01:48:38.41 #74 INFO] sample_ruptures 100% [101 submitted, 0 queued]
+[2021-07-11 01:48:38.42 #74 INFO] Mean time per core=97s, std=179.2s, min=0s, max=751s
+[2021-07-11 01:48:38.43 #74 INFO] Received {'rup_array': '769.97 MB', 'calc_times': '22.58 KB', 'eff_ruptures': '4.25 KB'} in 753 seconds
+[2021-07-11 01:48:38.87 #74 INFO] There are 24576 realization(s)
+[2021-07-11 01:48:38.89 #74 WARNING] The logic tree has 24576 realizations(!), please consider sampling it
+[2021-07-11 01:48:39.19 #74 INFO] Reordering the ruptures and storing the events
+[2021-07-11 01:48:44.96 #74 INFO] Associating event_id -> rlz_id for 2_583_373_097 events and 3_702_453 ruptures
+[2021-07-11 01:51:30.72 #74 INFO] Sent 194 tasks, 395.7 MB in 154 seconds
+[2021-07-11 03:18:32.77 #74 INFO] Mean time per core=1358s, std=993.2s, min=569s, max=5335s
+[2021-07-11 03:18:32.78 #74 INFO] Received {'tot': '24.06 GB'} in 5222 seconds
+[2021-07-11 06:40:35.83 #74 WARNING] The calculation is really big; consider setting minimum_asset_loss
+[2021-07-11 06:40:35.84 #74 INFO] minimum_intensity={'SA(0.3)': 0.1, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05, 'SA(0.5)': 0.1}
+[2021-07-11 06:40:35.84 #74 INFO] Sending 3_702_453 ruptures
+[2021-07-11 06:40:49.19 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.21 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.22 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.23 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.25 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.26 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.27 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.28 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.28 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.29 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.30 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.31 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.31 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.31 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.32 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.32 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.33 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.33 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.35 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.35 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.34 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.36 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.36 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.37 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.38 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.38 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.39 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.39 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.40 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.41 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.41 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.42 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.42 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.43 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.44 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.45 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.45 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.47 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.48 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.50 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.51 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.53 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.54 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.56 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.57 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.58 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.60 #74 DEBUG] produced subtask
+[2021-07-11 06:40:49.61 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.08 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.09 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.10 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.12 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.13 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.14 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.16 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.17 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.18 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.19 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.21 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.21 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.22 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.23 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.24 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.25 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.25 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.27 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.28 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.29 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.29 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.30 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.31 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.31 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.32 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.32 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.33 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.34 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.35 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.35 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.36 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.37 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.37 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.39 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.40 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.41 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.41 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.42 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.44 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.45 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.47 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.48 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.49 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.50 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.51 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.53 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.54 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.55 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.57 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.58 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.59 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.61 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.62 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.63 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.64 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.65 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.66 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.67 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.69 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.70 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.79 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.80 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.81 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.82 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.84 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.85 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.85 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.86 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.86 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.87 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.88 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.88 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.89 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.89 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.90 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.91 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.92 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.92 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.93 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.94 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.95 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.96 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.97 #74 DEBUG] produced subtask
+[2021-07-11 06:40:50.99 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.26 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.27 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.29 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.29 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.30 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.30 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.31 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.32 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.32 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.33 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.34 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.34 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.35 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.36 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.37 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.37 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.38 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.38 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.39 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.39 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.40 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.41 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.41 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.42 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.44 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.44 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.45 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.47 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.48 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.50 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.51 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.52 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.53 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.54 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.56 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.57 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.58 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.58 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.61 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.62 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.63 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.64 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.65 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.66 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.67 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.68 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.69 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.70 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.70 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.71 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.74 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.75 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.76 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.77 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.78 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.79 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.80 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.81 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.82 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.83 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.85 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.85 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.86 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.86 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.87 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.88 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.88 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.90 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.91 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.92 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.93 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.94 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.95 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.97 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.98 #74 DEBUG] produced subtask
+[2021-07-11 06:40:51.99 #74 DEBUG] produced subtask
+[2021-07-11 06:40:52.24 #74 DEBUG] produced subtask
+[2021-07-11 06:40:52.26 #74 DEBUG] produced subtask
+[2021-07-11 06:40:52.28 #74 DEBUG] produced subtask
+[2021-07-11 06:40:52.29 #74 DEBUG] produced subtask
+[2021-07-11 06:40:52.31 #74 DEBUG] produced subtask
+[2021-07-11 06:40:52.33 #74 DEBUG] produced subtask
+[2021-07-11 06:40:52.34 #74 DEBUG] produced subtask
+[2021-07-11 06:40:52.35 #74 DEBUG] produced subtask
+[2021-07-11 06:40:52.36 #74 DEBUG] produced subtask
+[2021-07-11 06:40:52.37 #74 DEBUG] produced subtask
+[2021-07-11 06:40:52.38 #74 DEBUG] produced subtask
+[2021-07-11 06:40:52.39 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.00 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.02 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.04 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.05 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.07 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.08 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.10 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.11 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.12 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.14 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.16 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.18 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.26 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.28 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.29 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.31 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.32 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.34 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.35 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.37 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.38 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.39 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.41 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.42 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.50 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.53 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.54 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.56 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.58 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.59 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.61 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.62 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.64 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.65 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.67 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.68 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.75 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.77 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.80 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.82 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.85 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.87 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.89 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.92 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.94 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.95 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.97 #74 DEBUG] produced subtask
+[2021-07-11 06:40:53.99 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.00 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.02 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.03 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.04 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.06 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.07 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.08 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.09 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.10 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.12 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.13 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.14 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.49 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.55 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.62 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.63 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.64 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.65 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.67 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.68 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.69 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.70 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.70 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.71 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.73 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.74 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.90 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.97 #74 DEBUG] produced subtask
+[2021-07-11 06:40:57.98 #74 DEBUG] produced subtask
+[2021-07-11 06:40:58.00 #74 DEBUG] produced subtask
+[2021-07-11 06:40:58.02 #74 DEBUG] produced subtask
+[2021-07-11 06:40:58.06 #74 DEBUG] produced subtask
+[2021-07-11 06:40:58.08 #74 DEBUG] produced subtask
+[2021-07-11 06:40:58.09 #74 DEBUG] produced subtask
+[2021-07-11 06:40:58.11 #74 DEBUG] produced subtask
+[2021-07-11 06:40:58.13 #74 DEBUG] produced subtask
+[2021-07-11 06:41:01.79 #74 DEBUG] produced subtask
+[2021-07-11 06:41:01.81 #74 DEBUG] produced subtask
+[2021-07-11 06:41:01.83 #74 DEBUG] produced subtask
+[2021-07-11 06:41:01.84 #74 DEBUG] produced subtask
+[2021-07-11 06:41:01.85 #74 DEBUG] produced subtask
+[2021-07-11 06:41:01.87 #74 DEBUG] produced subtask
+[2021-07-11 06:41:01.88 #74 DEBUG] produced subtask
+[2021-07-11 06:41:01.90 #74 DEBUG] produced subtask
+[2021-07-11 06:41:01.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:01.92 #74 DEBUG] produced subtask
+[2021-07-11 06:41:01.94 #74 DEBUG] produced subtask
+[2021-07-11 06:41:01.95 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.00 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.01 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.03 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.04 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.06 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.07 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.10 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.11 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.13 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.16 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.18 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.19 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.21 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.24 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.27 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.29 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.30 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.33 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.35 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.95 #74 DEBUG] produced subtask
+[2021-07-11 06:41:02.99 #74 DEBUG] produced subtask
+[2021-07-11 06:41:03.03 #74 DEBUG] produced subtask
+[2021-07-11 06:41:03.05 #74 DEBUG] produced subtask
+[2021-07-11 06:41:03.06 #74 DEBUG] produced subtask
+[2021-07-11 06:41:03.08 #74 DEBUG] produced subtask
+[2021-07-11 06:41:03.10 #74 DEBUG] produced subtask
+[2021-07-11 06:41:03.11 #74 DEBUG] produced subtask
+[2021-07-11 06:41:03.13 #74 DEBUG] produced subtask
+[2021-07-11 06:41:03.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:03.16 #74 DEBUG] produced subtask
+[2021-07-11 06:41:03.17 #74 DEBUG] produced subtask
+[2021-07-11 06:41:05.61 #74 DEBUG] produced subtask
+[2021-07-11 06:41:05.63 #74 DEBUG] produced subtask
+[2021-07-11 06:41:05.66 #74 DEBUG] produced subtask
+[2021-07-11 06:41:05.68 #74 DEBUG] produced subtask
+[2021-07-11 06:41:05.70 #74 DEBUG] produced subtask
+[2021-07-11 06:41:05.73 #74 DEBUG] produced subtask
+[2021-07-11 06:41:05.78 #74 DEBUG] produced subtask
+[2021-07-11 06:41:05.81 #74 DEBUG] produced subtask
+[2021-07-11 06:41:05.84 #74 DEBUG] produced subtask
+[2021-07-11 06:41:05.87 #74 DEBUG] produced subtask
+[2021-07-11 06:41:05.90 #74 DEBUG] produced subtask
+[2021-07-11 06:41:05.93 #74 DEBUG] produced subtask
+[2021-07-11 06:41:06.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:06.17 #74 DEBUG] produced subtask
+[2021-07-11 06:41:06.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:06.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:06.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:06.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:06.27 #74 DEBUG] produced subtask
+[2021-07-11 06:41:06.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:06.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:06.40 #74 DEBUG] produced subtask
+[2021-07-11 06:41:06.44 #74 DEBUG] produced subtask
+[2021-07-11 06:41:06.48 #74 DEBUG] produced subtask
+[2021-07-11 06:41:07.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:07.45 #74 DEBUG] produced subtask
+[2021-07-11 06:41:07.54 #74 DEBUG] produced subtask
+[2021-07-11 06:41:07.63 #74 DEBUG] produced subtask
+[2021-07-11 06:41:07.72 #74 DEBUG] produced subtask
+[2021-07-11 06:41:07.74 #74 DEBUG] produced subtask
+[2021-07-11 06:41:07.76 #74 DEBUG] produced subtask
+[2021-07-11 06:41:07.77 #74 DEBUG] produced subtask
+[2021-07-11 06:41:07.78 #74 DEBUG] produced subtask
+[2021-07-11 06:41:07.80 #74 DEBUG] produced subtask
+[2021-07-11 06:41:07.81 #74 DEBUG] produced subtask
+[2021-07-11 06:41:07.83 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.27 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.29 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.30 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.30 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.31 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.33 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.35 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.38 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.39 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.37 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.39 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.41 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.41 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.41 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.42 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.43 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.43 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.44 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.44 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.45 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.46 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.47 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.47 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.48 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.49 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.50 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.50 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.51 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.52 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.53 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.55 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.57 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.58 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.59 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.60 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.62 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.63 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.64 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.65 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.67 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.68 #74 DEBUG] produced subtask
+[2021-07-11 06:41:08.69 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.11 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.13 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.16 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.19 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.24 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.27 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.29 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.44 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.46 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.48 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.49 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.50 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.51 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.52 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.54 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.55 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.56 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.56 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.57 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.59 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.59 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.60 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.59 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.62 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.62 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.64 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.65 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.65 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.66 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.68 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.69 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.69 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.71 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.73 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.74 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.74 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.77 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.78 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.83 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.83 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.83 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.85 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.86 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.88 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.89 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.89 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.90 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.93 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.93 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.95 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.93 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.97 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.98 #74 DEBUG] produced subtask
+[2021-07-11 06:41:09.99 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.00 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.02 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.03 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.04 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.06 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.11 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.12 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.14 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.14 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.18 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.18 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.19 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.21 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.24 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.26 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.26 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.27 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.30 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.37 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.37 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.38 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.39 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.41 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.42 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.42 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.43 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.44 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.46 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.46 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.47 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.48 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.49 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.50 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.52 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.53 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.55 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.59 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.61 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.62 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.63 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.63 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.64 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.65 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.65 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.66 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.66 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.67 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.67 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.69 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.68 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.69 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.71 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.71 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.71 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.72 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.73 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.74 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.74 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.75 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.75 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.76 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.77 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.77 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.79 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.80 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.80 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.77 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.81 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.85 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.85 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.86 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.87 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.87 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.89 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.89 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.92 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.94 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.96 #74 DEBUG] produced subtask
+[2021-07-11 06:41:10.98 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.02 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.07 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.12 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.13 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.14 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.17 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.18 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.18 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.19 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.19 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.21 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.24 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.26 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.26 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.29 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.31 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.35 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.38 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.46 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.48 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.49 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.49 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.51 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.52 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.53 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.54 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.55 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.57 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.58 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.59 #74 DEBUG] produced subtask
+[2021-07-11 06:41:11.60 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.29 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.37 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.38 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.39 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.41 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.42 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.43 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.45 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.46 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.88 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.93 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.95 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.97 #74 DEBUG] produced subtask
+[2021-07-11 06:41:12.99 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.01 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.03 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.06 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.08 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.10 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.12 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.31 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.38 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.40 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.43 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.45 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.47 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.49 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.51 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.54 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.56 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.78 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.82 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.84 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.87 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.89 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.93 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.95 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.96 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.97 #74 DEBUG] produced subtask
+[2021-07-11 06:41:13.98 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.00 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.00 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.02 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.02 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.04 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.05 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.06 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.14 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.58 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.79 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.90 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.92 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.92 #74 DEBUG] produced subtask
+[2021-07-11 06:41:14.96 #74 DEBUG] produced subtask
+[2021-07-11 06:41:15.00 #74 DEBUG] produced subtask
+[2021-07-11 06:41:15.02 #74 DEBUG] produced subtask
+[2021-07-11 06:41:15.05 #74 DEBUG] produced subtask
+[2021-07-11 06:41:15.06 #74 DEBUG] produced subtask
+[2021-07-11 06:41:15.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:15.12 #74 DEBUG] produced subtask
+[2021-07-11 06:41:15.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:15.17 #74 DEBUG] produced subtask
+[2021-07-11 06:41:15.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:15.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.33 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.54 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.72 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.79 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.82 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.85 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.88 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.94 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.94 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.96 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.96 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.97 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.98 #74 DEBUG] produced subtask
+[2021-07-11 06:41:17.99 #74 DEBUG] produced subtask
+[2021-07-11 06:41:18.00 #74 DEBUG] produced subtask
+[2021-07-11 06:41:18.01 #74 DEBUG] produced subtask
+[2021-07-11 06:41:18.01 #74 DEBUG] produced subtask
+[2021-07-11 06:41:18.02 #74 DEBUG] produced subtask
+[2021-07-11 06:41:18.03 #74 DEBUG] produced subtask
+[2021-07-11 06:41:18.04 #74 DEBUG] produced subtask
+[2021-07-11 06:41:18.05 #74 DEBUG] produced subtask
+[2021-07-11 06:41:18.07 #74 DEBUG] produced subtask
+[2021-07-11 06:41:18.08 #74 DEBUG] produced subtask
+[2021-07-11 06:41:19.03 #74 DEBUG] produced subtask
+[2021-07-11 06:41:19.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:19.16 #74 DEBUG] produced subtask
+[2021-07-11 06:41:19.17 #74 DEBUG] produced subtask
+[2021-07-11 06:41:19.19 #74 DEBUG] produced subtask
+[2021-07-11 06:41:19.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:19.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:19.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:19.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:19.26 #74 DEBUG] produced subtask
+[2021-07-11 06:41:19.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:19.29 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.06 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.08 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.11 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.12 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.14 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.16 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.18 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.19 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.46 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.46 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.48 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.48 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.50 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.51 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.51 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.53 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.53 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.54 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.55 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.56 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.57 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.57 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.59 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.59 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.60 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.61 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.61 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.63 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.64 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.65 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.68 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.70 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.88 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.93 #74 DEBUG] produced subtask
+[2021-07-11 06:41:23.98 #74 DEBUG] produced subtask
+[2021-07-11 06:41:24.02 #74 DEBUG] produced subtask
+[2021-07-11 06:41:24.03 #74 DEBUG] produced subtask
+[2021-07-11 06:41:24.04 #74 DEBUG] produced subtask
+[2021-07-11 06:41:24.06 #74 DEBUG] produced subtask
+[2021-07-11 06:41:24.07 #74 DEBUG] produced subtask
+[2021-07-11 06:41:24.08 #74 DEBUG] produced subtask
+[2021-07-11 06:41:24.10 #74 DEBUG] produced subtask
+[2021-07-11 06:41:24.11 #74 DEBUG] produced subtask
+[2021-07-11 06:41:24.12 #74 DEBUG] produced subtask
+[2021-07-11 06:41:26.83 #74 DEBUG] produced subtask
+[2021-07-11 06:41:26.85 #74 DEBUG] produced subtask
+[2021-07-11 06:41:26.86 #74 DEBUG] produced subtask
+[2021-07-11 06:41:26.87 #74 DEBUG] produced subtask
+[2021-07-11 06:41:26.88 #74 DEBUG] produced subtask
+[2021-07-11 06:41:26.89 #74 DEBUG] produced subtask
+[2021-07-11 06:41:26.90 #74 DEBUG] produced subtask
+[2021-07-11 06:41:26.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:26.92 #74 DEBUG] produced subtask
+[2021-07-11 06:41:26.94 #74 DEBUG] produced subtask
+[2021-07-11 06:41:26.95 #74 DEBUG] produced subtask
+[2021-07-11 06:41:26.96 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.26 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.29 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.31 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.35 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.38 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.39 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.40 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.42 #74 DEBUG] produced subtask
+[2021-07-11 06:41:27.43 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.13 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.18 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.37 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.42 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.47 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.52 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.92 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.95 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.97 #74 DEBUG] produced subtask
+[2021-07-11 06:41:28.99 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.01 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.02 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.04 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.14 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.19 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.24 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.29 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.52 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.67 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.82 #74 DEBUG] produced subtask
+[2021-07-11 06:41:29.97 #74 DEBUG] produced subtask
+[2021-07-11 06:41:30.01 #74 DEBUG] produced subtask
+[2021-07-11 06:41:30.03 #74 DEBUG] produced subtask
+[2021-07-11 06:41:30.05 #74 DEBUG] produced subtask
+[2021-07-11 06:41:30.07 #74 DEBUG] produced subtask
+[2021-07-11 06:41:30.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:30.11 #74 DEBUG] produced subtask
+[2021-07-11 06:41:30.13 #74 DEBUG] produced subtask
+[2021-07-11 06:41:30.95 #74 DEBUG] produced subtask
+[2021-07-11 06:41:30.99 #74 DEBUG] produced subtask
+[2021-07-11 06:41:31.04 #74 DEBUG] produced subtask
+[2021-07-11 06:41:31.08 #74 DEBUG] produced subtask
+[2021-07-11 06:41:31.13 #74 DEBUG] produced subtask
+[2021-07-11 06:41:31.18 #74 DEBUG] produced subtask
+[2021-07-11 06:41:31.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:31.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:31.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:31.37 #74 DEBUG] produced subtask
+[2021-07-11 06:41:31.42 #74 DEBUG] produced subtask
+[2021-07-11 06:41:31.48 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.33 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.38 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.40 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.42 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.43 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.45 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.47 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.48 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.50 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.51 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.52 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.53 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.54 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.56 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.57 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.60 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.61 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.63 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.65 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.66 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.68 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.70 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.71 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.75 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.77 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.79 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.81 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.82 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.84 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.86 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.88 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.89 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.92 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.92 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.94 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.94 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.95 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.97 #74 DEBUG] produced subtask
+[2021-07-11 06:41:32.97 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.00 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.00 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.01 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.02 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.03 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.04 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.05 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.05 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.07 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.07 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.08 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.10 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.11 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.11 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.12 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.13 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.14 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.16 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.16 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.17 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.18 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.21 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.21 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.24 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.26 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.27 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.29 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.37 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.38 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.39 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.40 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.42 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.43 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.43 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.45 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.47 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.48 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.48 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.50 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.51 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.52 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.53 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.54 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.55 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.57 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.58 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.59 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.60 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.62 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.64 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.65 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.67 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.69 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.79 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.82 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.83 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.85 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.86 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.88 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.89 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.90 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.92 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.93 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.92 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.94 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.95 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.96 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.97 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.98 #74 DEBUG] produced subtask
+[2021-07-11 06:41:33.98 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.00 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.02 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.03 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.05 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.05 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.07 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.08 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.08 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.08 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.10 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.10 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.11 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.12 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.13 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.13 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.17 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.18 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.10 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.14 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.19 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.21 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.24 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.26 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.26 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.27 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.27 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.30 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.30 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.31 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.30 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.33 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.33 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.33 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.35 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.38 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.38 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.42 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.44 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.65 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.68 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.68 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.69 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.70 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.71 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.72 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.73 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.74 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.74 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.75 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.76 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.76 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.78 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.77 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.79 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.79 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.80 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.81 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.81 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.82 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.83 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.83 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.85 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.86 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.83 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.87 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.87 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.89 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.90 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.92 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.93 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.94 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.96 #74 DEBUG] produced subtask
+[2021-07-11 06:41:34.97 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.12 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.14 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.16 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.17 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.24 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.26 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.27 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.29 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.31 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.33 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.47 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.49 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.50 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.52 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.53 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.55 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.58 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.60 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.62 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.64 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.66 #74 DEBUG] produced subtask
+[2021-07-11 06:41:35.68 #74 DEBUG] produced subtask
+[2021-07-11 06:41:36.51 #74 DEBUG] produced subtask
+[2021-07-11 06:41:36.53 #74 DEBUG] produced subtask
+[2021-07-11 06:41:36.55 #74 DEBUG] produced subtask
+[2021-07-11 06:41:36.57 #74 DEBUG] produced subtask
+[2021-07-11 06:41:36.59 #74 DEBUG] produced subtask
+[2021-07-11 06:41:36.60 #74 DEBUG] produced subtask
+[2021-07-11 06:41:36.62 #74 DEBUG] produced subtask
+[2021-07-11 06:41:36.80 #74 DEBUG] produced subtask
+[2021-07-11 06:41:36.96 #74 DEBUG] produced subtask
+[2021-07-11 06:41:37.12 #74 DEBUG] produced subtask
+[2021-07-11 06:41:37.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:37.44 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.55 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.58 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.60 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.62 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.63 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.65 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.67 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.69 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.72 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.72 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.74 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.76 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.78 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.81 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.83 #74 DEBUG] produced subtask
+[2021-07-11 06:41:42.89 #74 DEBUG] produced subtask
+[2021-07-11 06:41:43.06 #74 DEBUG] produced subtask
+[2021-07-11 06:41:43.12 #74 DEBUG] produced subtask
+[2021-07-11 06:41:43.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:43.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:43.35 #74 DEBUG] produced subtask
+[2021-07-11 06:41:43.56 #74 DEBUG] produced subtask
+[2021-07-11 06:41:43.78 #74 DEBUG] produced subtask
+[2021-07-11 06:41:43.99 #74 DEBUG] produced subtask
+[2021-07-11 06:41:44.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:44.17 #74 DEBUG] produced subtask
+[2021-07-11 06:41:44.19 #74 DEBUG] produced subtask
+[2021-07-11 06:41:44.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:44.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:44.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:44.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:44.27 #74 DEBUG] produced subtask
+[2021-07-11 06:41:44.28 #74 DEBUG] produced subtask
+[2021-07-11 06:41:44.31 #74 DEBUG] produced subtask
+[2021-07-11 06:41:44.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:44.34 #74 DEBUG] produced subtask
+[2021-07-11 06:41:46.57 #74 DEBUG] produced subtask
+[2021-07-11 06:41:46.66 #74 DEBUG] produced subtask
+[2021-07-11 06:41:46.77 #74 DEBUG] produced subtask
+[2021-07-11 06:41:46.79 #74 DEBUG] produced subtask
+[2021-07-11 06:41:46.81 #74 DEBUG] produced subtask
+[2021-07-11 06:41:46.82 #74 DEBUG] produced subtask
+[2021-07-11 06:41:46.84 #74 DEBUG] produced subtask
+[2021-07-11 06:41:46.85 #74 DEBUG] produced subtask
+[2021-07-11 06:41:46.87 #74 DEBUG] produced subtask
+[2021-07-11 06:41:46.90 #74 DEBUG] produced subtask
+[2021-07-11 06:41:46.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:46.93 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.32 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.36 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.40 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.44 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.52 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.58 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.62 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.66 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.73 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.78 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.85 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.86 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.87 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.88 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.90 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.91 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.92 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.94 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.94 #74 DEBUG] produced subtask
+[2021-07-11 06:41:47.98 #74 DEBUG] produced subtask
+[2021-07-11 06:41:48.00 #74 DEBUG] produced subtask
+[2021-07-11 06:41:48.01 #74 DEBUG] produced subtask
+[2021-07-11 06:41:48.30 #74 DEBUG] produced subtask
+[2021-07-11 06:41:48.62 #74 DEBUG] produced subtask
+[2021-07-11 06:41:49.52 #74 DEBUG] produced subtask
+[2021-07-11 06:41:49.57 #74 DEBUG] produced subtask
+[2021-07-11 06:41:49.61 #74 DEBUG] produced subtask
+[2021-07-11 06:41:49.66 #74 DEBUG] produced subtask
+[2021-07-11 06:41:49.70 #74 DEBUG] produced subtask
+[2021-07-11 06:41:49.74 #74 DEBUG] produced subtask
+[2021-07-11 06:41:49.78 #74 DEBUG] produced subtask
+[2021-07-11 06:41:49.82 #74 DEBUG] produced subtask
+[2021-07-11 06:41:49.86 #74 DEBUG] produced subtask
+[2021-07-11 06:41:49.90 #74 DEBUG] produced subtask
+[2021-07-11 06:41:49.93 #74 DEBUG] produced subtask
+[2021-07-11 06:41:49.96 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.06 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.08 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.09 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.11 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.13 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.14 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.16 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.17 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.19 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.20 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.22 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:53.25 #74 DEBUG] produced subtask
+[2021-07-11 06:41:54.39 #74 DEBUG] produced subtask
+[2021-07-11 06:41:54.63 #74 DEBUG] produced subtask
+[2021-07-11 06:41:54.76 #74 DEBUG] produced subtask
+[2021-07-11 06:41:54.89 #74 DEBUG] produced subtask
+[2021-07-11 06:41:55.02 #74 DEBUG] produced subtask
+[2021-07-11 06:41:55.11 #74 DEBUG] produced subtask
+[2021-07-11 06:41:55.15 #74 DEBUG] produced subtask
+[2021-07-11 06:41:55.19 #74 DEBUG] produced subtask
+[2021-07-11 06:41:55.23 #74 DEBUG] produced subtask
+[2021-07-11 06:41:55.27 #74 DEBUG] produced subtask
+[2021-07-11 06:41:55.31 #74 DEBUG] produced subtask
+[2021-07-11 06:41:55.36 #74 DEBUG] produced subtask
+[2021-07-11 06:42:10.80 #74 DEBUG] produced subtask
+[2021-07-11 06:42:10.82 #74 DEBUG] produced subtask
+[2021-07-11 06:42:10.83 #74 DEBUG] produced subtask
+[2021-07-11 06:42:10.86 #74 DEBUG] produced subtask
+[2021-07-11 06:42:10.88 #74 DEBUG] produced subtask
+[2021-07-11 06:42:10.89 #74 DEBUG] produced subtask
+[2021-07-11 06:42:10.91 #74 DEBUG] produced subtask
+[2021-07-11 06:42:10.92 #74 DEBUG] produced subtask
+[2021-07-11 06:42:10.93 #74 DEBUG] produced subtask
+[2021-07-11 06:42:11.02 #74 DEBUG] produced subtask
+[2021-07-11 06:42:11.24 #74 DEBUG] produced subtask
+[2021-07-11 06:42:11.46 #74 DEBUG] produced subtask
+[2021-07-11 06:42:11.68 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.16 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.18 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.19 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.21 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.22 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.34 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.45 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.57 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.58 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.60 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.62 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.64 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.67 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.68 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.71 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.71 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.73 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.75 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.75 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.78 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.78 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.81 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.83 #74 DEBUG] produced subtask
+[2021-07-11 06:42:19.84 #74 DEBUG] produced subtask
+[2021-07-11 06:42:23.36 #74 DEBUG] produced subtask
+[2021-07-11 06:42:23.59 #74 DEBUG] produced subtask
+[2021-07-11 06:42:23.81 #74 DEBUG] produced subtask
+[2021-07-11 06:42:24.03 #74 DEBUG] produced subtask
+[2021-07-11 06:42:24.12 #74 DEBUG] produced subtask
+[2021-07-11 06:42:24.17 #74 DEBUG] produced subtask
+[2021-07-11 06:42:24.22 #74 DEBUG] produced subtask
+[2021-07-11 06:42:24.26 #74 DEBUG] produced subtask
+[2021-07-11 06:42:24.28 #74 DEBUG] produced subtask
+[2021-07-11 06:42:24.31 #74 DEBUG] produced subtask
+[2021-07-11 06:42:24.33 #74 DEBUG] produced subtask
+[2021-07-11 06:42:24.36 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.04 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.19 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.20 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.24 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.24 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.26 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.28 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.28 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.30 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.32 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.33 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.34 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.36 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.37 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.38 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.39 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.41 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.41 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.45 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.49 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.57 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.63 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.71 #74 DEBUG] produced subtask
+[2021-07-11 06:42:52.76 #74 DEBUG] produced subtask
+[2021-07-11 06:42:54.54 #74 DEBUG] produced subtask
+[2021-07-11 06:42:54.56 #74 DEBUG] produced subtask
+[2021-07-11 06:42:54.58 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.03 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.04 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.06 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.08 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.09 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.11 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.13 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.14 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.16 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.17 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.19 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.20 #74 DEBUG] produced subtask
+[2021-07-11 06:43:00.21 #74 DEBUG] produced subtask
+[2021-07-11 06:43:26.40 #74 INFO] Sent 194 tasks, 610.84 MB in 158 seconds
+[2021-07-11 06:43:32.06 #74 DEBUG] produced subtask
+[2021-07-11 06:43:32.08 #74 DEBUG] produced subtask
+[2021-07-11 06:43:32.09 #74 DEBUG] produced subtask
+[2021-07-11 06:43:32.10 #74 DEBUG] produced subtask
+[2021-07-11 06:43:32.12 #74 DEBUG] produced subtask
+[2021-07-11 06:43:32.13 #74 DEBUG] produced subtask
+[2021-07-11 06:43:32.14 #74 DEBUG] produced subtask
+[2021-07-11 06:43:32.15 #74 DEBUG] produced subtask
+[2021-07-11 06:43:32.17 #74 DEBUG] produced subtask
+[2021-07-11 06:43:32.19 #74 DEBUG] produced subtask
+[2021-07-11 06:43:32.20 #74 DEBUG] produced subtask
+[2021-07-11 06:43:32.21 #74 DEBUG] produced subtask
+[2021-07-11 06:43:51.29 #74 DEBUG] produced subtask
+[2021-07-11 06:43:51.31 #74 DEBUG] produced subtask
+[2021-07-11 06:43:51.33 #74 DEBUG] produced subtask
+[2021-07-11 06:43:51.35 #74 DEBUG] produced subtask
+[2021-07-11 06:43:51.37 #74 DEBUG] produced subtask
+[2021-07-11 06:43:51.39 #74 DEBUG] produced subtask
+[2021-07-11 06:43:51.41 #74 DEBUG] produced subtask
+[2021-07-11 06:43:51.43 #74 DEBUG] produced subtask
+[2021-07-11 06:43:51.46 #74 DEBUG] produced subtask
+[2021-07-11 06:43:51.64 #74 DEBUG] produced subtask
+[2021-07-11 06:43:51.81 #74 DEBUG] produced subtask
+[2021-07-11 06:43:51.98 #74 DEBUG] produced subtask
+[2021-07-11 06:43:59.41 #74 INFO] start_ebrisk   1% [1529 submitted, 0 queued]
+[2021-07-11 06:44:02.86 #74 DEBUG] produced subtask
+[2021-07-11 06:44:03.02 #74 DEBUG] produced subtask
+[2021-07-11 06:44:03.04 #74 DEBUG] produced subtask
+[2021-07-11 06:44:03.06 #74 DEBUG] produced subtask
+[2021-07-11 06:44:03.08 #74 DEBUG] produced subtask
+[2021-07-11 06:44:03.09 #74 DEBUG] produced subtask
+[2021-07-11 06:44:03.11 #74 DEBUG] produced subtask
+[2021-07-11 06:44:03.13 #74 DEBUG] produced subtask
+[2021-07-11 06:44:03.14 #74 DEBUG] produced subtask
+[2021-07-11 06:44:03.16 #74 DEBUG] produced subtask
+[2021-07-11 06:44:03.18 #74 DEBUG] produced subtask
+[2021-07-11 06:44:03.19 #74 DEBUG] produced subtask
+[2021-07-11 06:51:13.17 #74 DEBUG] produced subtask
+[2021-07-11 06:51:13.19 #74 DEBUG] produced subtask
+[2021-07-11 06:51:13.21 #74 DEBUG] produced subtask
+[2021-07-11 06:51:13.22 #74 DEBUG] produced subtask
+[2021-07-11 06:51:13.24 #74 DEBUG] produced subtask
+[2021-07-11 06:51:13.26 #74 DEBUG] produced subtask
+[2021-07-11 06:51:13.28 #74 DEBUG] produced subtask
+[2021-07-11 06:51:13.29 #74 DEBUG] produced subtask
+[2021-07-11 06:51:13.31 #74 DEBUG] produced subtask
+[2021-07-11 06:51:13.33 #74 DEBUG] produced subtask
+[2021-07-11 06:51:13.34 #74 DEBUG] produced subtask
+[2021-07-11 06:51:13.36 #74 DEBUG] produced subtask
+[2021-07-11 06:51:34.31 #74 DEBUG] produced subtask
+[2021-07-11 06:51:34.32 #74 DEBUG] produced subtask
+[2021-07-11 06:51:34.34 #74 DEBUG] produced subtask
+[2021-07-11 06:51:34.36 #74 DEBUG] produced subtask
+[2021-07-11 06:51:34.37 #74 DEBUG] produced subtask
+[2021-07-11 06:51:34.39 #74 DEBUG] produced subtask
+[2021-07-11 06:51:34.40 #74 DEBUG] produced subtask
+[2021-07-11 06:51:34.42 #74 DEBUG] produced subtask
+[2021-07-11 06:51:34.44 #74 DEBUG] produced subtask
+[2021-07-11 06:51:34.45 #74 DEBUG] produced subtask
+[2021-07-11 06:51:34.47 #74 DEBUG] produced subtask
+[2021-07-11 06:51:34.49 #74 DEBUG] produced subtask
+[2021-07-11 06:51:49.74 #74 DEBUG] produced subtask
+[2021-07-11 06:51:49.76 #74 DEBUG] produced subtask
+[2021-07-11 06:51:49.78 #74 DEBUG] produced subtask
+[2021-07-11 06:51:49.80 #74 DEBUG] produced subtask
+[2021-07-11 06:51:49.81 #74 DEBUG] produced subtask
+[2021-07-11 06:51:49.83 #74 DEBUG] produced subtask
+[2021-07-11 06:51:49.85 #74 DEBUG] produced subtask
+[2021-07-11 06:51:49.87 #74 DEBUG] produced subtask
+[2021-07-11 06:51:49.88 #74 DEBUG] produced subtask
+[2021-07-11 06:51:49.90 #74 DEBUG] produced subtask
+[2021-07-11 06:51:49.91 #74 DEBUG] produced subtask
+[2021-07-11 06:51:49.93 #74 DEBUG] produced subtask
+[2021-07-11 06:51:54.96 #74 DEBUG] produced subtask
+[2021-07-11 06:51:54.98 #74 DEBUG] produced subtask
+[2021-07-11 06:51:54.99 #74 DEBUG] produced subtask
+[2021-07-11 06:51:55.01 #74 DEBUG] produced subtask
+[2021-07-11 06:51:55.02 #74 DEBUG] produced subtask
+[2021-07-11 06:51:55.04 #74 DEBUG] produced subtask
+[2021-07-11 06:51:55.06 #74 DEBUG] produced subtask
+[2021-07-11 06:51:55.07 #74 DEBUG] produced subtask
+[2021-07-11 06:51:55.09 #74 DEBUG] produced subtask
+[2021-07-11 06:51:55.10 #74 DEBUG] produced subtask
+[2021-07-11 06:51:55.12 #74 DEBUG] produced subtask
+[2021-07-11 06:51:55.14 #74 DEBUG] produced subtask
+[2021-07-11 06:52:02.14 #74 DEBUG] produced subtask
+[2021-07-11 06:52:02.17 #74 DEBUG] produced subtask
+[2021-07-11 06:52:02.18 #74 DEBUG] produced subtask
+[2021-07-11 06:52:02.20 #74 DEBUG] produced subtask
+[2021-07-11 06:52:02.22 #74 DEBUG] produced subtask
+[2021-07-11 06:52:02.23 #74 DEBUG] produced subtask
+[2021-07-11 06:52:02.25 #74 DEBUG] produced subtask
+[2021-07-11 06:52:02.27 #74 DEBUG] produced subtask
+[2021-07-11 06:52:02.29 #74 DEBUG] produced subtask
+[2021-07-11 06:52:02.30 #74 DEBUG] produced subtask
+[2021-07-11 06:52:02.32 #74 DEBUG] produced subtask
+[2021-07-11 06:52:02.34 #74 DEBUG] produced subtask
+[2021-07-11 06:52:14.23 #74 DEBUG] produced subtask
+[2021-07-11 06:52:14.25 #74 DEBUG] produced subtask
+[2021-07-11 06:52:14.26 #74 DEBUG] produced subtask
+[2021-07-11 06:52:14.28 #74 DEBUG] produced subtask
+[2021-07-11 06:52:14.29 #74 DEBUG] produced subtask
+[2021-07-11 06:52:14.31 #74 DEBUG] produced subtask
+[2021-07-11 06:52:14.32 #74 DEBUG] produced subtask
+[2021-07-11 06:52:14.34 #74 DEBUG] produced subtask
+[2021-07-11 06:52:14.36 #74 DEBUG] produced subtask
+[2021-07-11 06:52:14.37 #74 DEBUG] produced subtask
+[2021-07-11 06:52:14.39 #74 DEBUG] produced subtask
+[2021-07-11 06:52:14.40 #74 DEBUG] produced subtask
+[2021-07-11 06:52:15.01 #74 DEBUG] produced subtask
+[2021-07-11 06:52:15.03 #74 DEBUG] produced subtask
+[2021-07-11 06:52:15.05 #74 DEBUG] produced subtask
+[2021-07-11 06:52:15.06 #74 DEBUG] produced subtask
+[2021-07-11 06:52:15.08 #74 DEBUG] produced subtask
+[2021-07-11 06:52:15.10 #74 DEBUG] produced subtask
+[2021-07-11 06:52:15.12 #74 DEBUG] produced subtask
+[2021-07-11 06:52:15.13 #74 DEBUG] produced subtask
+[2021-07-11 06:52:15.15 #74 DEBUG] produced subtask
+[2021-07-11 06:52:15.16 #74 DEBUG] produced subtask
+[2021-07-11 06:52:15.18 #74 DEBUG] produced subtask
+[2021-07-11 06:52:15.20 #74 DEBUG] produced subtask
+[2021-07-11 06:52:20.76 #74 DEBUG] produced subtask
+[2021-07-11 06:52:20.78 #74 DEBUG] produced subtask
+[2021-07-11 06:52:20.80 #74 DEBUG] produced subtask
+[2021-07-11 06:52:20.81 #74 DEBUG] produced subtask
+[2021-07-11 06:52:20.83 #74 DEBUG] produced subtask
+[2021-07-11 06:52:20.85 #74 DEBUG] produced subtask
+[2021-07-11 06:52:20.86 #74 DEBUG] produced subtask
+[2021-07-11 06:52:20.88 #74 DEBUG] produced subtask
+[2021-07-11 06:52:20.89 #74 DEBUG] produced subtask
+[2021-07-11 06:52:20.91 #74 DEBUG] produced subtask
+[2021-07-11 06:52:20.93 #74 DEBUG] produced subtask
+[2021-07-11 06:52:20.94 #74 DEBUG] produced subtask
+[2021-07-11 06:52:41.65 #74 DEBUG] produced subtask
+[2021-07-11 06:52:41.67 #74 DEBUG] produced subtask
+[2021-07-11 06:52:41.69 #74 DEBUG] produced subtask
+[2021-07-11 06:52:41.71 #74 DEBUG] produced subtask
+[2021-07-11 06:52:41.72 #74 DEBUG] produced subtask
+[2021-07-11 06:52:41.74 #74 DEBUG] produced subtask
+[2021-07-11 06:52:41.76 #74 DEBUG] produced subtask
+[2021-07-11 06:52:41.78 #74 DEBUG] produced subtask
+[2021-07-11 06:52:41.79 #74 DEBUG] produced subtask
+[2021-07-11 06:52:41.81 #74 DEBUG] produced subtask
+[2021-07-11 06:52:41.83 #74 DEBUG] produced subtask
+[2021-07-11 06:52:41.84 #74 DEBUG] produced subtask
+[2021-07-11 06:52:46.64 #74 DEBUG] produced subtask
+[2021-07-11 06:52:46.66 #74 DEBUG] produced subtask
+[2021-07-11 06:52:46.67 #74 DEBUG] produced subtask
+[2021-07-11 06:52:46.70 #74 DEBUG] produced subtask
+[2021-07-11 06:52:46.71 #74 DEBUG] produced subtask
+[2021-07-11 06:52:46.73 #74 DEBUG] produced subtask
+[2021-07-11 06:52:46.74 #74 DEBUG] produced subtask
+[2021-07-11 06:52:46.76 #74 DEBUG] produced subtask
+[2021-07-11 06:52:46.78 #74 DEBUG] produced subtask
+[2021-07-11 06:52:46.79 #74 DEBUG] produced subtask
+[2021-07-11 06:52:46.81 #74 DEBUG] produced subtask
+[2021-07-11 06:52:46.83 #74 DEBUG] produced subtask
+[2021-07-11 06:53:05.82 #74 DEBUG] produced subtask
+[2021-07-11 06:53:05.84 #74 DEBUG] produced subtask
+[2021-07-11 06:53:05.85 #74 DEBUG] produced subtask
+[2021-07-11 06:53:05.87 #74 DEBUG] produced subtask
+[2021-07-11 06:53:05.89 #74 DEBUG] produced subtask
+[2021-07-11 06:53:05.90 #74 DEBUG] produced subtask
+[2021-07-11 06:53:05.92 #74 DEBUG] produced subtask
+[2021-07-11 06:53:05.94 #74 DEBUG] produced subtask
+[2021-07-11 06:53:05.95 #74 DEBUG] produced subtask
+[2021-07-11 06:53:05.97 #74 DEBUG] produced subtask
+[2021-07-11 06:53:05.99 #74 DEBUG] produced subtask
+[2021-07-11 06:53:06.00 #74 DEBUG] produced subtask
+[2021-07-11 06:53:15.98 #74 DEBUG] produced subtask
+[2021-07-11 06:53:16.00 #74 DEBUG] produced subtask
+[2021-07-11 06:53:16.02 #74 DEBUG] produced subtask
+[2021-07-11 06:53:16.04 #74 DEBUG] produced subtask
+[2021-07-11 06:53:16.06 #74 DEBUG] produced subtask
+[2021-07-11 06:53:16.08 #74 DEBUG] produced subtask
+[2021-07-11 06:53:16.10 #74 DEBUG] produced subtask
+[2021-07-11 06:53:16.11 #74 DEBUG] produced subtask
+[2021-07-11 06:53:16.13 #74 DEBUG] produced subtask
+[2021-07-11 06:53:16.15 #74 DEBUG] produced subtask
+[2021-07-11 06:53:16.17 #74 DEBUG] produced subtask
+[2021-07-11 06:53:16.19 #74 DEBUG] produced subtask
+[2021-07-11 06:53:17.57 #74 DEBUG] produced subtask
+[2021-07-11 06:53:17.59 #74 DEBUG] produced subtask
+[2021-07-11 06:53:17.61 #74 DEBUG] produced subtask
+[2021-07-11 06:53:17.62 #74 DEBUG] produced subtask
+[2021-07-11 06:53:17.64 #74 DEBUG] produced subtask
+[2021-07-11 06:53:17.66 #74 DEBUG] produced subtask
+[2021-07-11 06:53:17.68 #74 DEBUG] produced subtask
+[2021-07-11 06:53:17.70 #74 DEBUG] produced subtask
+[2021-07-11 06:53:17.72 #74 DEBUG] produced subtask
+[2021-07-11 06:53:17.74 #74 DEBUG] produced subtask
+[2021-07-11 06:53:17.75 #74 DEBUG] produced subtask
+[2021-07-11 06:53:17.77 #74 DEBUG] produced subtask
+[2021-07-11 06:53:24.67 #74 DEBUG] produced subtask
+[2021-07-11 06:53:24.69 #74 DEBUG] produced subtask
+[2021-07-11 06:53:24.71 #74 DEBUG] produced subtask
+[2021-07-11 06:53:24.73 #74 DEBUG] produced subtask
+[2021-07-11 06:53:24.75 #74 DEBUG] produced subtask
+[2021-07-11 06:53:24.76 #74 DEBUG] produced subtask
+[2021-07-11 06:53:24.78 #74 DEBUG] produced subtask
+[2021-07-11 06:53:24.80 #74 DEBUG] produced subtask
+[2021-07-11 06:53:24.82 #74 DEBUG] produced subtask
+[2021-07-11 06:53:24.83 #74 DEBUG] produced subtask
+[2021-07-11 06:53:24.84 #74 DEBUG] produced subtask
+[2021-07-11 06:53:24.85 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.02 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.04 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.05 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.07 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.08 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.09 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.10 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.12 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.13 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.14 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.16 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.17 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.19 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.22 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.23 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.25 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.26 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.27 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.29 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.30 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.31 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.33 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.34 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.36 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.37 #74 DEBUG] produced subtask
+[2021-07-11 06:53:27.38 #74 DEBUG] produced subtask
+[2021-07-11 06:53:29.21 #74 DEBUG] produced subtask
+[2021-07-11 06:53:29.22 #74 DEBUG] produced subtask
+[2021-07-11 06:53:29.23 #74 DEBUG] produced subtask
+[2021-07-11 06:53:29.25 #74 DEBUG] produced subtask
+[2021-07-11 06:53:29.27 #74 DEBUG] produced subtask
+[2021-07-11 06:53:29.29 #74 DEBUG] produced subtask
+[2021-07-11 06:53:29.31 #74 DEBUG] produced subtask
+[2021-07-11 06:53:29.33 #74 DEBUG] produced subtask
+[2021-07-11 06:53:29.35 #74 DEBUG] produced subtask
+[2021-07-11 06:53:29.37 #74 DEBUG] produced subtask
+[2021-07-11 06:53:29.38 #74 DEBUG] produced subtask
+[2021-07-11 06:53:29.40 #74 DEBUG] produced subtask
+[2021-07-11 06:53:53.25 #74 DEBUG] produced subtask
+[2021-07-11 06:53:53.26 #74 DEBUG] produced subtask
+[2021-07-11 06:53:53.27 #74 DEBUG] produced subtask
+[2021-07-11 06:53:53.29 #74 DEBUG] produced subtask
+[2021-07-11 06:53:53.30 #74 DEBUG] produced subtask
+[2021-07-11 06:53:53.32 #74 DEBUG] produced subtask
+[2021-07-11 06:53:53.33 #74 DEBUG] produced subtask
+[2021-07-11 06:53:53.34 #74 DEBUG] produced subtask
+[2021-07-11 06:53:53.36 #74 DEBUG] produced subtask
+[2021-07-11 06:53:53.37 #74 DEBUG] produced subtask
+[2021-07-11 06:53:53.39 #74 DEBUG] produced subtask
+[2021-07-11 06:53:53.40 #74 DEBUG] produced subtask
+[2021-07-11 06:54:05.81 #74 DEBUG] produced subtask
+[2021-07-11 06:54:05.83 #74 DEBUG] produced subtask
+[2021-07-11 06:54:05.84 #74 DEBUG] produced subtask
+[2021-07-11 06:54:05.86 #74 DEBUG] produced subtask
+[2021-07-11 06:54:05.87 #74 DEBUG] produced subtask
+[2021-07-11 06:54:05.89 #74 DEBUG] produced subtask
+[2021-07-11 06:54:05.90 #74 DEBUG] produced subtask
+[2021-07-11 06:54:05.92 #74 DEBUG] produced subtask
+[2021-07-11 06:54:05.93 #74 DEBUG] produced subtask
+[2021-07-11 06:54:05.95 #74 DEBUG] produced subtask
+[2021-07-11 06:54:06.04 #74 INFO] start_ebrisk   2% [1768 submitted, 0 queued]
+[2021-07-11 06:54:06.22 #74 DEBUG] produced subtask
+[2021-07-11 06:54:06.53 #74 DEBUG] produced subtask
+[2021-07-11 06:54:14.73 #74 DEBUG] produced subtask
+[2021-07-11 06:54:14.77 #74 DEBUG] produced subtask
+[2021-07-11 06:54:14.81 #74 DEBUG] produced subtask
+[2021-07-11 06:54:14.85 #74 DEBUG] produced subtask
+[2021-07-11 06:54:14.89 #74 DEBUG] produced subtask
+[2021-07-11 06:54:14.93 #74 DEBUG] produced subtask
+[2021-07-11 06:54:14.97 #74 DEBUG] produced subtask
+[2021-07-11 06:54:15.02 #74 DEBUG] produced subtask
+[2021-07-11 06:54:15.06 #74 DEBUG] produced subtask
+[2021-07-11 06:54:15.10 #74 DEBUG] produced subtask
+[2021-07-11 06:54:15.14 #74 DEBUG] produced subtask
+[2021-07-11 06:54:15.18 #74 DEBUG] produced subtask
+[2021-07-11 06:54:17.99 #74 DEBUG] produced subtask
+[2021-07-11 06:54:18.03 #74 DEBUG] produced subtask
+[2021-07-11 06:54:18.08 #74 DEBUG] produced subtask
+[2021-07-11 06:54:18.12 #74 DEBUG] produced subtask
+[2021-07-11 06:54:18.16 #74 DEBUG] produced subtask
+[2021-07-11 06:54:18.20 #74 DEBUG] produced subtask
+[2021-07-11 06:54:18.24 #74 DEBUG] produced subtask
+[2021-07-11 06:54:18.28 #74 DEBUG] produced subtask
+[2021-07-11 06:54:18.32 #74 DEBUG] produced subtask
+[2021-07-11 06:54:18.36 #74 DEBUG] produced subtask
+[2021-07-11 06:54:18.39 #74 DEBUG] produced subtask
+[2021-07-11 06:54:18.42 #74 DEBUG] produced subtask
+[2021-07-11 06:54:20.53 #74 DEBUG] produced subtask
+[2021-07-11 06:54:20.75 #74 DEBUG] produced subtask
+[2021-07-11 06:54:20.87 #74 DEBUG] produced subtask
+[2021-07-11 06:54:21.00 #74 DEBUG] produced subtask
+[2021-07-11 06:54:21.12 #74 DEBUG] produced subtask
+[2021-07-11 06:54:21.21 #74 DEBUG] produced subtask
+[2021-07-11 06:54:21.25 #74 DEBUG] produced subtask
+[2021-07-11 06:54:21.29 #74 DEBUG] produced subtask
+[2021-07-11 06:54:21.33 #74 DEBUG] produced subtask
+[2021-07-11 06:54:21.37 #74 DEBUG] produced subtask
+[2021-07-11 06:54:21.41 #74 DEBUG] produced subtask
+[2021-07-11 06:54:21.45 #74 DEBUG] produced subtask
+[2021-07-11 06:54:24.60 #74 DEBUG] produced subtask
+[2021-07-11 06:54:24.66 #74 DEBUG] produced subtask
+[2021-07-11 06:54:24.78 #74 DEBUG] produced subtask
+[2021-07-11 06:54:24.80 #74 DEBUG] produced subtask
+[2021-07-11 06:54:24.81 #74 DEBUG] produced subtask
+[2021-07-11 06:54:24.83 #74 DEBUG] produced subtask
+[2021-07-11 06:54:24.85 #74 DEBUG] produced subtask
+[2021-07-11 06:54:24.86 #74 DEBUG] produced subtask
+[2021-07-11 06:54:24.88 #74 DEBUG] produced subtask
+[2021-07-11 06:54:24.89 #74 DEBUG] produced subtask
+[2021-07-11 06:54:24.91 #74 DEBUG] produced subtask
+[2021-07-11 06:54:24.93 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.08 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.09 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.11 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.12 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.14 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.15 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.17 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.18 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.20 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.21 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.23 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.24 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.25 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.27 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.28 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.30 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.32 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.33 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.35 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.37 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.38 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.40 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.41 #74 DEBUG] produced subtask
+[2021-07-11 06:54:32.43 #74 DEBUG] produced subtask
+[2021-07-11 06:54:43.10 #74 DEBUG] produced subtask
+[2021-07-11 06:54:43.13 #74 DEBUG] produced subtask
+[2021-07-11 06:54:43.15 #74 DEBUG] produced subtask
+[2021-07-11 06:54:43.17 #74 DEBUG] produced subtask
+[2021-07-11 06:54:43.19 #74 DEBUG] produced subtask
+[2021-07-11 06:54:43.21 #74 DEBUG] produced subtask
+[2021-07-11 06:54:43.24 #74 DEBUG] produced subtask
+[2021-07-11 06:54:43.25 #74 DEBUG] produced subtask
+[2021-07-11 06:54:43.27 #74 DEBUG] produced subtask
+[2021-07-11 06:54:43.28 #74 DEBUG] produced subtask
+[2021-07-11 06:54:43.30 #74 DEBUG] produced subtask
+[2021-07-11 06:54:43.32 #74 DEBUG] produced subtask
+[2021-07-11 06:54:48.13 #74 DEBUG] produced subtask
+[2021-07-11 06:54:48.15 #74 DEBUG] produced subtask
+[2021-07-11 06:54:48.16 #74 DEBUG] produced subtask
+[2021-07-11 06:54:48.18 #74 DEBUG] produced subtask
+[2021-07-11 06:54:48.19 #74 DEBUG] produced subtask
+[2021-07-11 06:54:48.30 #74 DEBUG] produced subtask
+[2021-07-11 06:54:48.42 #74 DEBUG] produced subtask
+[2021-07-11 06:54:48.53 #74 DEBUG] produced subtask
+[2021-07-11 06:54:48.61 #74 DEBUG] produced subtask
+[2021-07-11 06:54:48.63 #74 DEBUG] produced subtask
+[2021-07-11 06:54:48.66 #74 DEBUG] produced subtask
+[2021-07-11 06:54:48.68 #74 DEBUG] produced subtask
+[2021-07-11 06:54:51.69 #74 DEBUG] produced subtask
+[2021-07-11 06:54:51.71 #74 DEBUG] produced subtask
+[2021-07-11 06:54:51.72 #74 DEBUG] produced subtask
+[2021-07-11 06:54:51.74 #74 DEBUG] produced subtask
+[2021-07-11 06:54:51.75 #74 DEBUG] produced subtask
+[2021-07-11 06:54:51.76 #74 DEBUG] produced subtask
+[2021-07-11 06:54:51.77 #74 DEBUG] produced subtask
+[2021-07-11 06:54:51.79 #74 DEBUG] produced subtask
+[2021-07-11 06:54:51.80 #74 DEBUG] produced subtask
+[2021-07-11 06:54:51.89 #74 DEBUG] produced subtask
+[2021-07-11 06:54:52.10 #74 DEBUG] produced subtask
+[2021-07-11 06:54:52.31 #74 DEBUG] produced subtask
+[2021-07-11 06:54:54.51 #74 DEBUG] produced subtask
+[2021-07-11 06:54:54.73 #74 DEBUG] produced subtask
+[2021-07-11 06:54:54.94 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.16 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.24 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.29 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.35 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.38 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.41 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.43 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.46 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.48 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.49 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.50 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.54 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.58 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.62 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.66 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.70 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.75 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.79 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.83 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.87 #74 DEBUG] produced subtask
+[2021-07-11 06:54:55.91 #74 DEBUG] produced subtask
+[2021-07-11 06:54:58.96 #74 DEBUG] produced subtask
+[2021-07-11 06:54:59.16 #74 DEBUG] produced subtask
+[2021-07-11 06:54:59.18 #74 DEBUG] produced subtask
+[2021-07-11 06:54:59.19 #74 DEBUG] produced subtask
+[2021-07-11 06:54:59.21 #74 DEBUG] produced subtask
+[2021-07-11 06:54:59.23 #74 DEBUG] produced subtask
+[2021-07-11 06:54:59.24 #74 DEBUG] produced subtask
+[2021-07-11 06:54:59.26 #74 DEBUG] produced subtask
+[2021-07-11 06:54:59.28 #74 DEBUG] produced subtask
+[2021-07-11 06:54:59.29 #74 DEBUG] produced subtask
+[2021-07-11 06:54:59.31 #74 DEBUG] produced subtask
+[2021-07-11 06:54:59.33 #74 DEBUG] produced subtask
+[2021-07-11 06:55:03.17 #74 DEBUG] produced subtask
+[2021-07-11 06:55:03.20 #74 DEBUG] produced subtask
+[2021-07-11 06:55:03.22 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.21 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.25 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.29 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.32 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.36 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.39 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.43 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.47 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.50 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.54 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.57 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.61 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.81 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.84 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.88 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.91 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.95 #74 DEBUG] produced subtask
+[2021-07-11 06:55:27.98 #74 DEBUG] produced subtask
+[2021-07-11 06:55:28.02 #74 DEBUG] produced subtask
+[2021-07-11 06:55:28.05 #74 DEBUG] produced subtask
+[2021-07-11 06:55:28.09 #74 DEBUG] produced subtask
+[2021-07-11 06:55:28.12 #74 DEBUG] produced subtask
+[2021-07-11 06:55:28.16 #74 DEBUG] produced subtask
+[2021-07-11 06:55:28.19 #74 DEBUG] produced subtask
+[2021-07-11 06:55:46.35 #74 DEBUG] produced subtask
+[2021-07-11 06:55:46.38 #74 DEBUG] produced subtask
+[2021-07-11 06:55:46.42 #74 DEBUG] produced subtask
+[2021-07-11 06:55:46.45 #74 DEBUG] produced subtask
+[2021-07-11 06:55:46.48 #74 DEBUG] produced subtask
+[2021-07-11 06:55:46.52 #74 DEBUG] produced subtask
+[2021-07-11 06:55:46.55 #74 DEBUG] produced subtask
+[2021-07-11 06:55:46.59 #74 DEBUG] produced subtask
+[2021-07-11 06:55:46.62 #74 DEBUG] produced subtask
+[2021-07-11 06:55:46.65 #74 DEBUG] produced subtask
+[2021-07-11 06:55:46.69 #74 DEBUG] produced subtask
+[2021-07-11 06:55:46.72 #74 DEBUG] produced subtask
+[2021-07-11 06:55:57.25 #74 DEBUG] produced subtask
+[2021-07-11 06:55:57.32 #74 DEBUG] produced subtask
+[2021-07-11 06:55:57.38 #74 DEBUG] produced subtask
+[2021-07-11 06:55:57.45 #74 DEBUG] produced subtask
+[2021-07-11 06:55:57.51 #74 DEBUG] produced subtask
+[2021-07-11 06:55:57.57 #74 DEBUG] produced subtask
+[2021-07-11 06:55:57.64 #74 DEBUG] produced subtask
+[2021-07-11 06:55:57.70 #74 DEBUG] produced subtask
+[2021-07-11 06:55:57.76 #74 DEBUG] produced subtask
+[2021-07-11 06:55:57.81 #74 DEBUG] produced subtask
+[2021-07-11 06:55:57.84 #74 DEBUG] produced subtask
+[2021-07-11 06:55:57.87 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.03 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.06 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.08 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.10 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.12 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.14 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.16 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.17 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.18 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.19 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.20 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.22 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.23 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.24 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.25 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.26 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.27 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.27 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.30 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.34 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.36 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.37 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.39 #74 DEBUG] produced subtask
+[2021-07-11 06:56:06.41 #74 DEBUG] produced subtask
+[2021-07-11 06:56:09.81 #74 DEBUG] produced subtask
+[2021-07-11 06:56:09.83 #74 DEBUG] produced subtask
+[2021-07-11 06:56:09.85 #74 DEBUG] produced subtask
+[2021-07-11 06:56:09.87 #74 DEBUG] produced subtask
+[2021-07-11 06:56:09.88 #74 DEBUG] produced subtask
+[2021-07-11 06:56:09.90 #74 DEBUG] produced subtask
+[2021-07-11 06:56:09.92 #74 DEBUG] produced subtask
+[2021-07-11 06:56:09.94 #74 DEBUG] produced subtask
+[2021-07-11 06:56:09.96 #74 DEBUG] produced subtask
+[2021-07-11 06:56:09.98 #74 DEBUG] produced subtask
+[2021-07-11 06:56:09.99 #74 DEBUG] produced subtask
+[2021-07-11 06:56:10.01 #74 DEBUG] produced subtask
+[2021-07-11 06:56:16.24 #74 DEBUG] produced subtask
+[2021-07-11 06:56:16.27 #74 DEBUG] produced subtask
+[2021-07-11 06:56:16.31 #74 DEBUG] produced subtask
+[2021-07-11 06:56:16.34 #74 DEBUG] produced subtask
+[2021-07-11 06:56:16.37 #74 DEBUG] produced subtask
+[2021-07-11 06:56:16.40 #74 DEBUG] produced subtask
+[2021-07-11 06:56:16.43 #74 DEBUG] produced subtask
+[2021-07-11 06:56:16.46 #74 DEBUG] produced subtask
+[2021-07-11 06:56:16.73 #74 DEBUG] produced subtask
+[2021-07-11 06:56:17.01 #74 DEBUG] produced subtask
+[2021-07-11 06:56:17.29 #74 DEBUG] produced subtask
+[2021-07-11 06:56:17.61 #74 DEBUG] produced subtask
+[2021-07-11 06:56:18.37 #74 DEBUG] produced subtask
+[2021-07-11 06:56:18.39 #74 DEBUG] produced subtask
+[2021-07-11 06:56:18.41 #74 DEBUG] produced subtask
+[2021-07-11 06:56:18.42 #74 DEBUG] produced subtask
+[2021-07-11 06:56:18.44 #74 DEBUG] produced subtask
+[2021-07-11 06:56:18.46 #74 DEBUG] produced subtask
+[2021-07-11 06:56:18.48 #74 DEBUG] produced subtask
+[2021-07-11 06:56:18.50 #74 DEBUG] produced subtask
+[2021-07-11 06:56:18.52 #74 DEBUG] produced subtask
+[2021-07-11 06:56:18.58 #74 DEBUG] produced subtask
+[2021-07-11 06:56:18.63 #74 DEBUG] produced subtask
+[2021-07-11 06:56:18.68 #74 DEBUG] produced subtask
+[2021-07-11 06:56:24.51 #74 DEBUG] produced subtask
+[2021-07-11 06:56:24.90 #74 DEBUG] produced subtask
+[2021-07-11 06:56:25.28 #74 DEBUG] produced subtask
+[2021-07-11 06:56:25.65 #74 DEBUG] produced subtask
+[2021-07-11 06:56:26.03 #74 DEBUG] produced subtask
+[2021-07-11 06:56:26.40 #74 DEBUG] produced subtask
+[2021-07-11 06:56:26.55 #74 DEBUG] produced subtask
+[2021-07-11 06:56:26.62 #74 DEBUG] produced subtask
+[2021-07-11 06:56:26.68 #74 DEBUG] produced subtask
+[2021-07-11 06:56:26.75 #74 DEBUG] produced subtask
+[2021-07-11 06:56:26.81 #74 DEBUG] produced subtask
+[2021-07-11 06:56:26.88 #74 DEBUG] produced subtask
+[2021-07-11 06:56:35.03 #74 DEBUG] produced subtask
+[2021-07-11 06:56:35.05 #74 DEBUG] produced subtask
+[2021-07-11 06:56:35.07 #74 DEBUG] produced subtask
+[2021-07-11 06:56:35.09 #74 DEBUG] produced subtask
+[2021-07-11 06:56:35.11 #74 DEBUG] produced subtask
+[2021-07-11 06:56:35.12 #74 DEBUG] produced subtask
+[2021-07-11 06:56:35.14 #74 DEBUG] produced subtask
+[2021-07-11 06:56:35.16 #74 DEBUG] produced subtask
+[2021-07-11 06:56:35.18 #74 DEBUG] produced subtask
+[2021-07-11 06:56:35.20 #74 DEBUG] produced subtask
+[2021-07-11 06:56:35.22 #74 DEBUG] produced subtask
+[2021-07-11 06:56:35.23 #74 DEBUG] produced subtask
+[2021-07-11 06:56:38.02 #74 DEBUG] produced subtask
+[2021-07-11 06:56:38.07 #74 DEBUG] produced subtask
+[2021-07-11 06:56:38.13 #74 DEBUG] produced subtask
+[2021-07-11 06:56:38.18 #74 DEBUG] produced subtask
+[2021-07-11 06:56:38.24 #74 DEBUG] produced subtask
+[2021-07-11 06:56:38.29 #74 DEBUG] produced subtask
+[2021-07-11 06:56:38.34 #74 DEBUG] produced subtask
+[2021-07-11 06:56:38.39 #74 DEBUG] produced subtask
+[2021-07-11 06:56:38.44 #74 DEBUG] produced subtask
+[2021-07-11 06:56:38.50 #74 DEBUG] produced subtask
+[2021-07-11 06:56:38.53 #74 DEBUG] produced subtask
+[2021-07-11 06:56:38.55 #74 DEBUG] produced subtask
+[2021-07-11 06:56:58.72 #74 DEBUG] produced subtask
+[2021-07-11 06:56:58.74 #74 DEBUG] produced subtask
+[2021-07-11 06:56:58.76 #74 DEBUG] produced subtask
+[2021-07-11 06:56:58.78 #74 DEBUG] produced subtask
+[2021-07-11 06:56:58.80 #74 DEBUG] produced subtask
+[2021-07-11 06:56:58.82 #74 DEBUG] produced subtask
+[2021-07-11 06:56:58.84 #74 DEBUG] produced subtask
+[2021-07-11 06:56:58.85 #74 DEBUG] produced subtask
+[2021-07-11 06:56:58.87 #74 DEBUG] produced subtask
+[2021-07-11 06:56:58.89 #74 DEBUG] produced subtask
+[2021-07-11 06:56:58.91 #74 DEBUG] produced subtask
+[2021-07-11 06:56:58.93 #74 DEBUG] produced subtask
+[2021-07-11 06:57:01.99 #74 DEBUG] produced subtask
+[2021-07-11 06:57:02.01 #74 DEBUG] produced subtask
+[2021-07-11 06:57:02.03 #74 DEBUG] produced subtask
+[2021-07-11 06:57:02.04 #74 DEBUG] produced subtask
+[2021-07-11 06:57:02.06 #74 DEBUG] produced subtask
+[2021-07-11 06:57:02.08 #74 DEBUG] produced subtask
+[2021-07-11 06:57:02.10 #74 DEBUG] produced subtask
+[2021-07-11 06:57:02.12 #74 DEBUG] produced subtask
+[2021-07-11 06:57:02.13 #74 DEBUG] produced subtask
+[2021-07-11 06:57:02.15 #74 DEBUG] produced subtask
+[2021-07-11 06:57:02.17 #74 DEBUG] produced subtask
+[2021-07-11 06:57:02.19 #74 DEBUG] produced subtask
+[2021-07-11 06:57:13.71 #74 INFO] start_ebrisk   3% [2086 submitted, 0 queued]
+[2021-07-11 06:57:14.80 #74 DEBUG] produced subtask
+[2021-07-11 06:57:14.82 #74 DEBUG] produced subtask
+[2021-07-11 06:57:14.84 #74 DEBUG] produced subtask
+[2021-07-11 06:57:14.85 #74 DEBUG] produced subtask
+[2021-07-11 06:57:14.87 #74 DEBUG] produced subtask
+[2021-07-11 06:57:14.89 #74 DEBUG] produced subtask
+[2021-07-11 06:57:14.91 #74 DEBUG] produced subtask
+[2021-07-11 06:57:14.93 #74 DEBUG] produced subtask
+[2021-07-11 06:57:14.94 #74 DEBUG] produced subtask
+[2021-07-11 06:57:14.96 #74 DEBUG] produced subtask
+[2021-07-11 06:57:14.98 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.00 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.28 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.30 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.32 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.34 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.36 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.38 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.39 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.41 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.43 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.45 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.47 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.49 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.74 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.76 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.78 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.80 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.81 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.83 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.85 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.87 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.89 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.91 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.92 #74 DEBUG] produced subtask
+[2021-07-11 06:57:15.94 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.10 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.12 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.14 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.15 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.17 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.17 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.20 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.20 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.22 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.23 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.24 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.25 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.26 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.26 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.28 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.28 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.31 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.31 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.33 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.33 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.36 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.38 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.40 #74 DEBUG] produced subtask
+[2021-07-11 06:57:20.42 #74 DEBUG] produced subtask
+[2021-07-11 06:57:31.36 #74 DEBUG] produced subtask
+[2021-07-11 06:57:31.38 #74 DEBUG] produced subtask
+[2021-07-11 06:57:31.39 #74 DEBUG] produced subtask
+[2021-07-11 06:57:31.41 #74 DEBUG] produced subtask
+[2021-07-11 06:57:31.43 #74 DEBUG] produced subtask
+[2021-07-11 06:57:31.45 #74 DEBUG] produced subtask
+[2021-07-11 06:57:31.46 #74 DEBUG] produced subtask
+[2021-07-11 06:57:31.48 #74 DEBUG] produced subtask
+[2021-07-11 06:57:31.50 #74 DEBUG] produced subtask
+[2021-07-11 06:57:31.51 #74 DEBUG] produced subtask
+[2021-07-11 06:57:31.53 #74 DEBUG] produced subtask
+[2021-07-11 06:57:31.55 #74 DEBUG] produced subtask
+[2021-07-11 06:57:34.99 #74 DEBUG] produced subtask
+[2021-07-11 06:57:35.01 #74 DEBUG] produced subtask
+[2021-07-11 06:57:35.03 #74 DEBUG] produced subtask
+[2021-07-11 06:57:35.05 #74 DEBUG] produced subtask
+[2021-07-11 06:57:35.07 #74 DEBUG] produced subtask
+[2021-07-11 06:57:35.09 #74 DEBUG] produced subtask
+[2021-07-11 06:57:35.10 #74 DEBUG] produced subtask
+[2021-07-11 06:57:35.12 #74 DEBUG] produced subtask
+[2021-07-11 06:57:35.14 #74 DEBUG] produced subtask
+[2021-07-11 06:57:35.16 #74 DEBUG] produced subtask
+[2021-07-11 06:57:35.17 #74 DEBUG] produced subtask
+[2021-07-11 06:57:35.19 #74 DEBUG] produced subtask
+[2021-07-11 06:57:38.93 #74 DEBUG] produced subtask
+[2021-07-11 06:57:38.95 #74 DEBUG] produced subtask
+[2021-07-11 06:57:38.97 #74 DEBUG] produced subtask
+[2021-07-11 06:57:38.98 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.00 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.02 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.04 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.05 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.07 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.09 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.11 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.12 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.20 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.22 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.24 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.25 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.27 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.29 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.30 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.32 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.34 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.36 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.37 #74 DEBUG] produced subtask
+[2021-07-11 06:57:39.39 #74 DEBUG] produced subtask
+[2021-07-11 06:57:40.18 #74 DEBUG] produced subtask
+[2021-07-11 06:57:40.20 #74 DEBUG] produced subtask
+[2021-07-11 06:57:40.21 #74 DEBUG] produced subtask
+[2021-07-11 06:57:40.23 #74 DEBUG] produced subtask
+[2021-07-11 06:57:40.25 #74 DEBUG] produced subtask
+[2021-07-11 06:57:40.27 #74 DEBUG] produced subtask
+[2021-07-11 06:57:40.29 #74 DEBUG] produced subtask
+[2021-07-11 06:57:40.30 #74 DEBUG] produced subtask
+[2021-07-11 06:57:40.32 #74 DEBUG] produced subtask
+[2021-07-11 06:57:40.34 #74 DEBUG] produced subtask
+[2021-07-11 06:57:40.36 #74 DEBUG] produced subtask
+[2021-07-11 06:57:40.38 #74 DEBUG] produced subtask
+[2021-07-11 06:57:48.39 #74 DEBUG] produced subtask
+[2021-07-11 06:57:48.42 #74 DEBUG] produced subtask
+[2021-07-11 06:57:48.45 #74 DEBUG] produced subtask
+[2021-07-11 06:57:48.47 #74 DEBUG] produced subtask
+[2021-07-11 06:57:48.50 #74 DEBUG] produced subtask
+[2021-07-11 06:57:48.53 #74 DEBUG] produced subtask
+[2021-07-11 06:57:48.56 #74 DEBUG] produced subtask
+[2021-07-11 06:57:48.59 #74 DEBUG] produced subtask
+[2021-07-11 06:57:48.62 #74 DEBUG] produced subtask
+[2021-07-11 06:57:48.65 #74 DEBUG] produced subtask
+[2021-07-11 06:57:48.67 #74 DEBUG] produced subtask
+[2021-07-11 06:57:48.70 #74 DEBUG] produced subtask
+[2021-07-11 06:58:34.58 #74 DEBUG] produced subtask
+[2021-07-11 06:58:34.63 #74 DEBUG] produced subtask
+[2021-07-11 06:58:34.67 #74 DEBUG] produced subtask
+[2021-07-11 06:58:34.72 #74 DEBUG] produced subtask
+[2021-07-11 06:58:34.76 #74 DEBUG] produced subtask
+[2021-07-11 06:58:34.80 #74 DEBUG] produced subtask
+[2021-07-11 06:58:34.84 #74 DEBUG] produced subtask
+[2021-07-11 06:58:34.88 #74 DEBUG] produced subtask
+[2021-07-11 06:58:34.92 #74 DEBUG] produced subtask
+[2021-07-11 06:58:34.96 #74 DEBUG] produced subtask
+[2021-07-11 06:58:35.01 #74 DEBUG] produced subtask
+[2021-07-11 06:58:35.04 #74 DEBUG] produced subtask
+[2021-07-11 06:58:39.03 #74 DEBUG] produced subtask
+[2021-07-11 06:58:39.06 #74 DEBUG] produced subtask
+[2021-07-11 06:58:39.10 #74 DEBUG] produced subtask
+[2021-07-11 06:58:39.14 #74 DEBUG] produced subtask
+[2021-07-11 06:58:39.17 #74 DEBUG] produced subtask
+[2021-07-11 06:58:39.21 #74 DEBUG] produced subtask
+[2021-07-11 06:58:39.24 #74 DEBUG] produced subtask
+[2021-07-11 06:58:39.27 #74 DEBUG] produced subtask
+[2021-07-11 06:58:39.31 #74 DEBUG] produced subtask
+[2021-07-11 06:58:39.34 #74 DEBUG] produced subtask
+[2021-07-11 06:58:39.38 #74 DEBUG] produced subtask
+[2021-07-11 06:58:39.41 #74 DEBUG] produced subtask
+[2021-07-11 06:58:41.44 #74 DEBUG] produced subtask
+[2021-07-11 06:58:41.48 #74 DEBUG] produced subtask
+[2021-07-11 06:58:41.51 #74 DEBUG] produced subtask
+[2021-07-11 06:58:41.55 #74 DEBUG] produced subtask
+[2021-07-11 06:58:41.58 #74 DEBUG] produced subtask
+[2021-07-11 06:58:41.62 #74 DEBUG] produced subtask
+[2021-07-11 06:58:41.65 #74 DEBUG] produced subtask
+[2021-07-11 06:58:41.69 #74 DEBUG] produced subtask
+[2021-07-11 06:58:41.72 #74 DEBUG] produced subtask
+[2021-07-11 06:58:41.76 #74 DEBUG] produced subtask
+[2021-07-11 06:58:41.79 #74 DEBUG] produced subtask
+[2021-07-11 06:58:41.83 #74 DEBUG] produced subtask
+[2021-07-11 06:59:03.11 #74 DEBUG] produced subtask
+[2021-07-11 06:59:03.14 #74 DEBUG] produced subtask
+[2021-07-11 06:59:03.16 #74 DEBUG] produced subtask
+[2021-07-11 06:59:03.18 #74 DEBUG] produced subtask
+[2021-07-11 06:59:03.20 #74 DEBUG] produced subtask
+[2021-07-11 06:59:03.21 #74 DEBUG] produced subtask
+[2021-07-11 06:59:03.23 #74 DEBUG] produced subtask
+[2021-07-11 06:59:03.25 #74 DEBUG] produced subtask
+[2021-07-11 06:59:03.27 #74 DEBUG] produced subtask
+[2021-07-11 06:59:03.29 #74 DEBUG] produced subtask
+[2021-07-11 06:59:03.30 #74 DEBUG] produced subtask
+[2021-07-11 06:59:03.32 #74 DEBUG] produced subtask
+[2021-07-11 06:59:06.70 #74 DEBUG] produced subtask
+[2021-07-11 06:59:06.77 #74 DEBUG] produced subtask
+[2021-07-11 06:59:06.83 #74 DEBUG] produced subtask
+[2021-07-11 06:59:06.89 #74 DEBUG] produced subtask
+[2021-07-11 06:59:06.96 #74 DEBUG] produced subtask
+[2021-07-11 06:59:07.02 #74 DEBUG] produced subtask
+[2021-07-11 06:59:07.08 #74 DEBUG] produced subtask
+[2021-07-11 06:59:07.14 #74 DEBUG] produced subtask
+[2021-07-11 06:59:07.20 #74 DEBUG] produced subtask
+[2021-07-11 06:59:07.24 #74 DEBUG] produced subtask
+[2021-07-11 06:59:07.28 #74 DEBUG] produced subtask
+[2021-07-11 06:59:07.31 #74 DEBUG] produced subtask
+[2021-07-11 06:59:16.72 #74 DEBUG] produced subtask
+[2021-07-11 06:59:16.76 #74 DEBUG] produced subtask
+[2021-07-11 06:59:16.80 #74 DEBUG] produced subtask
+[2021-07-11 06:59:16.83 #74 DEBUG] produced subtask
+[2021-07-11 06:59:16.87 #74 DEBUG] produced subtask
+[2021-07-11 06:59:16.90 #74 DEBUG] produced subtask
+[2021-07-11 06:59:16.93 #74 DEBUG] produced subtask
+[2021-07-11 06:59:16.97 #74 DEBUG] produced subtask
+[2021-07-11 06:59:17.27 #74 DEBUG] produced subtask
+[2021-07-11 06:59:17.60 #74 DEBUG] produced subtask
+[2021-07-11 06:59:17.93 #74 DEBUG] produced subtask
+[2021-07-11 06:59:18.26 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.77 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.79 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.81 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.83 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.84 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.85 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.87 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.89 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.91 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.93 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.95 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.97 #74 DEBUG] produced subtask
+[2021-07-11 06:59:20.99 #74 DEBUG] produced subtask
+[2021-07-11 06:59:21.29 #74 DEBUG] produced subtask
+[2021-07-11 06:59:21.69 #74 DEBUG] produced subtask
+[2021-07-11 06:59:22.07 #74 DEBUG] produced subtask
+[2021-07-11 06:59:22.46 #74 DEBUG] produced subtask
+[2021-07-11 06:59:22.85 #74 DEBUG] produced subtask
+[2021-07-11 06:59:23.00 #74 DEBUG] produced subtask
+[2021-07-11 06:59:23.06 #74 DEBUG] produced subtask
+[2021-07-11 06:59:23.13 #74 DEBUG] produced subtask
+[2021-07-11 06:59:23.20 #74 DEBUG] produced subtask
+[2021-07-11 06:59:23.26 #74 DEBUG] produced subtask
+[2021-07-11 06:59:23.33 #74 DEBUG] produced subtask
+[2021-07-11 06:59:29.05 #74 DEBUG] produced subtask
+[2021-07-11 06:59:29.07 #74 DEBUG] produced subtask
+[2021-07-11 06:59:29.09 #74 DEBUG] produced subtask
+[2021-07-11 06:59:29.11 #74 DEBUG] produced subtask
+[2021-07-11 06:59:29.13 #74 DEBUG] produced subtask
+[2021-07-11 06:59:29.15 #74 DEBUG] produced subtask
+[2021-07-11 06:59:29.17 #74 DEBUG] produced subtask
+[2021-07-11 06:59:29.19 #74 DEBUG] produced subtask
+[2021-07-11 06:59:29.21 #74 DEBUG] produced subtask
+[2021-07-11 06:59:29.23 #74 DEBUG] produced subtask
+[2021-07-11 06:59:29.25 #74 DEBUG] produced subtask
+[2021-07-11 06:59:29.27 #74 DEBUG] produced subtask
+[2021-07-11 06:59:38.74 #74 DEBUG] produced subtask
+[2021-07-11 06:59:38.76 #74 DEBUG] produced subtask
+[2021-07-11 06:59:38.78 #74 DEBUG] produced subtask
+[2021-07-11 06:59:38.80 #74 DEBUG] produced subtask
+[2021-07-11 06:59:38.81 #74 DEBUG] produced subtask
+[2021-07-11 06:59:38.83 #74 DEBUG] produced subtask
+[2021-07-11 06:59:38.85 #74 DEBUG] produced subtask
+[2021-07-11 06:59:38.87 #74 DEBUG] produced subtask
+[2021-07-11 06:59:38.89 #74 DEBUG] produced subtask
+[2021-07-11 06:59:38.94 #74 DEBUG] produced subtask
+[2021-07-11 06:59:38.99 #74 DEBUG] produced subtask
+[2021-07-11 06:59:39.04 #74 DEBUG] produced subtask
+[2021-07-11 06:59:43.93 #74 DEBUG] produced subtask
+[2021-07-11 06:59:43.95 #74 DEBUG] produced subtask
+[2021-07-11 06:59:43.97 #74 DEBUG] produced subtask
+[2021-07-11 06:59:43.98 #74 DEBUG] produced subtask
+[2021-07-11 06:59:44.00 #74 DEBUG] produced subtask
+[2021-07-11 06:59:44.02 #74 DEBUG] produced subtask
+[2021-07-11 06:59:44.04 #74 DEBUG] produced subtask
+[2021-07-11 06:59:44.05 #74 DEBUG] produced subtask
+[2021-07-11 06:59:44.07 #74 DEBUG] produced subtask
+[2021-07-11 06:59:44.09 #74 DEBUG] produced subtask
+[2021-07-11 06:59:44.11 #74 DEBUG] produced subtask
+[2021-07-11 06:59:44.13 #74 DEBUG] produced subtask
+[2021-07-11 06:59:49.28 #74 DEBUG] produced subtask
+[2021-07-11 06:59:49.33 #74 DEBUG] produced subtask
+[2021-07-11 06:59:49.39 #74 DEBUG] produced subtask
+[2021-07-11 06:59:49.44 #74 DEBUG] produced subtask
+[2021-07-11 06:59:49.49 #74 DEBUG] produced subtask
+[2021-07-11 06:59:49.55 #74 DEBUG] produced subtask
+[2021-07-11 06:59:49.60 #74 DEBUG] produced subtask
+[2021-07-11 06:59:49.66 #74 DEBUG] produced subtask
+[2021-07-11 06:59:49.71 #74 DEBUG] produced subtask
+[2021-07-11 06:59:49.77 #74 DEBUG] produced subtask
+[2021-07-11 06:59:49.80 #74 DEBUG] produced subtask
+[2021-07-11 06:59:49.82 #74 DEBUG] produced subtask
+[2021-07-11 06:59:58.38 #74 DEBUG] produced subtask
+[2021-07-11 06:59:58.40 #74 DEBUG] produced subtask
+[2021-07-11 06:59:58.42 #74 DEBUG] produced subtask
+[2021-07-11 06:59:58.44 #74 DEBUG] produced subtask
+[2021-07-11 06:59:58.46 #74 DEBUG] produced subtask
+[2021-07-11 06:59:58.47 #74 DEBUG] produced subtask
+[2021-07-11 06:59:58.49 #74 DEBUG] produced subtask
+[2021-07-11 06:59:58.51 #74 DEBUG] produced subtask
+[2021-07-11 06:59:58.53 #74 DEBUG] produced subtask
+[2021-07-11 06:59:58.55 #74 DEBUG] produced subtask
+[2021-07-11 06:59:58.57 #74 DEBUG] produced subtask
+[2021-07-11 06:59:58.59 #74 DEBUG] produced subtask
+[2021-07-11 07:00:00.72 #74 DEBUG] produced subtask
+[2021-07-11 07:00:00.74 #74 DEBUG] produced subtask
+[2021-07-11 07:00:00.76 #74 DEBUG] produced subtask
+[2021-07-11 07:00:00.78 #74 DEBUG] produced subtask
+[2021-07-11 07:00:00.79 #74 DEBUG] produced subtask
+[2021-07-11 07:00:00.81 #74 DEBUG] produced subtask
+[2021-07-11 07:00:00.83 #74 DEBUG] produced subtask
+[2021-07-11 07:00:00.84 #74 DEBUG] produced subtask
+[2021-07-11 07:00:00.86 #74 DEBUG] produced subtask
+[2021-07-11 07:00:00.88 #74 DEBUG] produced subtask
+[2021-07-11 07:00:00.89 #74 DEBUG] produced subtask
+[2021-07-11 07:00:00.91 #74 DEBUG] produced subtask
+[2021-07-11 07:00:11.13 #74 DEBUG] produced subtask
+[2021-07-11 07:00:11.15 #74 DEBUG] produced subtask
+[2021-07-11 07:00:11.16 #74 DEBUG] produced subtask
+[2021-07-11 07:00:11.18 #74 DEBUG] produced subtask
+[2021-07-11 07:00:11.20 #74 DEBUG] produced subtask
+[2021-07-11 07:00:11.22 #74 DEBUG] produced subtask
+[2021-07-11 07:00:11.23 #74 DEBUG] produced subtask
+[2021-07-11 07:00:11.25 #74 DEBUG] produced subtask
+[2021-07-11 07:00:11.27 #74 DEBUG] produced subtask
+[2021-07-11 07:00:11.28 #74 DEBUG] produced subtask
+[2021-07-11 07:00:11.30 #74 DEBUG] produced subtask
+[2021-07-11 07:00:11.32 #74 DEBUG] produced subtask
+[2021-07-11 07:00:52.11 #74 DEBUG] produced subtask
+[2021-07-11 07:00:52.13 #74 DEBUG] produced subtask
+[2021-07-11 07:00:52.15 #74 DEBUG] produced subtask
+[2021-07-11 07:00:52.17 #74 DEBUG] produced subtask
+[2021-07-11 07:00:52.19 #74 DEBUG] produced subtask
+[2021-07-11 07:00:52.20 #74 DEBUG] produced subtask
+[2021-07-11 07:00:52.22 #74 DEBUG] produced subtask
+[2021-07-11 07:00:52.24 #74 DEBUG] produced subtask
+[2021-07-11 07:00:52.26 #74 DEBUG] produced subtask
+[2021-07-11 07:00:52.28 #74 DEBUG] produced subtask
+[2021-07-11 07:00:52.30 #74 DEBUG] produced subtask
+[2021-07-11 07:00:52.32 #74 DEBUG] produced subtask
+[2021-07-11 07:01:11.75 #74 DEBUG] produced subtask
+[2021-07-11 07:01:11.77 #74 DEBUG] produced subtask
+[2021-07-11 07:01:11.78 #74 DEBUG] produced subtask
+[2021-07-11 07:01:11.80 #74 DEBUG] produced subtask
+[2021-07-11 07:01:11.82 #74 DEBUG] produced subtask
+[2021-07-11 07:01:11.84 #74 DEBUG] produced subtask
+[2021-07-11 07:01:11.85 #74 DEBUG] produced subtask
+[2021-07-11 07:01:11.87 #74 DEBUG] produced subtask
+[2021-07-11 07:01:11.89 #74 DEBUG] produced subtask
+[2021-07-11 07:01:11.90 #74 DEBUG] produced subtask
+[2021-07-11 07:01:11.92 #74 DEBUG] produced subtask
+[2021-07-11 07:01:11.94 #74 DEBUG] produced subtask
+[2021-07-11 07:02:38.67 #74 DEBUG] produced subtask
+[2021-07-11 07:02:38.69 #74 DEBUG] produced subtask
+[2021-07-11 07:02:38.71 #74 DEBUG] produced subtask
+[2021-07-11 07:02:38.73 #74 DEBUG] produced subtask
+[2021-07-11 07:02:38.74 #74 DEBUG] produced subtask
+[2021-07-11 07:02:38.76 #74 DEBUG] produced subtask
+[2021-07-11 07:02:38.78 #74 DEBUG] produced subtask
+[2021-07-11 07:02:38.80 #74 DEBUG] produced subtask
+[2021-07-11 07:02:38.82 #74 DEBUG] produced subtask
+[2021-07-11 07:02:38.83 #74 DEBUG] produced subtask
+[2021-07-11 07:02:38.85 #74 DEBUG] produced subtask
+[2021-07-11 07:02:38.87 #74 DEBUG] produced subtask
+[2021-07-11 07:02:53.20 #74 DEBUG] produced subtask
+[2021-07-11 07:02:53.22 #74 DEBUG] produced subtask
+[2021-07-11 07:02:53.23 #74 DEBUG] produced subtask
+[2021-07-11 07:02:53.25 #74 DEBUG] produced subtask
+[2021-07-11 07:02:53.27 #74 DEBUG] produced subtask
+[2021-07-11 07:02:53.29 #74 DEBUG] produced subtask
+[2021-07-11 07:02:53.30 #74 DEBUG] produced subtask
+[2021-07-11 07:02:53.32 #74 DEBUG] produced subtask
+[2021-07-11 07:02:53.34 #74 DEBUG] produced subtask
+[2021-07-11 07:02:53.35 #74 DEBUG] produced subtask
+[2021-07-11 07:02:53.37 #74 DEBUG] produced subtask
+[2021-07-11 07:02:53.39 #74 DEBUG] produced subtask
+[2021-07-11 07:03:31.73 #74 DEBUG] produced subtask
+[2021-07-11 07:03:31.75 #74 DEBUG] produced subtask
+[2021-07-11 07:03:31.76 #74 DEBUG] produced subtask
+[2021-07-11 07:03:31.78 #74 DEBUG] produced subtask
+[2021-07-11 07:03:31.80 #74 DEBUG] produced subtask
+[2021-07-11 07:03:31.82 #74 DEBUG] produced subtask
+[2021-07-11 07:03:31.84 #74 DEBUG] produced subtask
+[2021-07-11 07:03:31.85 #74 DEBUG] produced subtask
+[2021-07-11 07:03:31.87 #74 DEBUG] produced subtask
+[2021-07-11 07:03:31.89 #74 DEBUG] produced subtask
+[2021-07-11 07:03:31.91 #74 DEBUG] produced subtask
+[2021-07-11 07:03:31.92 #74 DEBUG] produced subtask
+[2021-07-11 07:03:37.65 #74 DEBUG] produced subtask
+[2021-07-11 07:03:37.67 #74 DEBUG] produced subtask
+[2021-07-11 07:03:37.69 #74 DEBUG] produced subtask
+[2021-07-11 07:03:37.71 #74 DEBUG] produced subtask
+[2021-07-11 07:03:37.73 #74 DEBUG] produced subtask
+[2021-07-11 07:03:37.75 #74 DEBUG] produced subtask
+[2021-07-11 07:03:37.76 #74 DEBUG] produced subtask
+[2021-07-11 07:03:37.78 #74 DEBUG] produced subtask
+[2021-07-11 07:03:37.80 #74 DEBUG] produced subtask
+[2021-07-11 07:03:37.82 #74 DEBUG] produced subtask
+[2021-07-11 07:03:37.84 #74 DEBUG] produced subtask
+[2021-07-11 07:03:37.85 #74 DEBUG] produced subtask
+[2021-07-11 07:03:45.95 #74 DEBUG] produced subtask
+[2021-07-11 07:03:45.97 #74 DEBUG] produced subtask
+[2021-07-11 07:03:45.99 #74 DEBUG] produced subtask
+[2021-07-11 07:03:46.00 #74 DEBUG] produced subtask
+[2021-07-11 07:03:46.02 #74 DEBUG] produced subtask
+[2021-07-11 07:03:46.04 #74 DEBUG] produced subtask
+[2021-07-11 07:03:46.06 #74 DEBUG] produced subtask
+[2021-07-11 07:03:46.08 #74 DEBUG] produced subtask
+[2021-07-11 07:03:46.10 #74 DEBUG] produced subtask
+[2021-07-11 07:03:46.11 #74 DEBUG] produced subtask
+[2021-07-11 07:03:46.13 #74 DEBUG] produced subtask
+[2021-07-11 07:03:46.15 #74 DEBUG] produced subtask
+[2021-07-11 07:03:58.76 #74 DEBUG] produced subtask
+[2021-07-11 07:03:58.78 #74 DEBUG] produced subtask
+[2021-07-11 07:03:58.80 #74 DEBUG] produced subtask
+[2021-07-11 07:03:58.82 #74 DEBUG] produced subtask
+[2021-07-11 07:03:58.83 #74 DEBUG] produced subtask
+[2021-07-11 07:03:58.85 #74 DEBUG] produced subtask
+[2021-07-11 07:03:58.87 #74 DEBUG] produced subtask
+[2021-07-11 07:03:58.89 #74 DEBUG] produced subtask
+[2021-07-11 07:03:58.91 #74 DEBUG] produced subtask
+[2021-07-11 07:03:58.92 #74 DEBUG] produced subtask
+[2021-07-11 07:03:58.94 #74 DEBUG] produced subtask
+[2021-07-11 07:03:58.96 #74 DEBUG] produced subtask
+[2021-07-11 07:04:09.79 #74 DEBUG] produced subtask
+[2021-07-11 07:04:09.81 #74 DEBUG] produced subtask
+[2021-07-11 07:04:09.83 #74 DEBUG] produced subtask
+[2021-07-11 07:04:09.85 #74 DEBUG] produced subtask
+[2021-07-11 07:04:09.87 #74 DEBUG] produced subtask
+[2021-07-11 07:04:09.89 #74 DEBUG] produced subtask
+[2021-07-11 07:04:09.90 #74 DEBUG] produced subtask
+[2021-07-11 07:04:09.92 #74 DEBUG] produced subtask
+[2021-07-11 07:04:09.94 #74 DEBUG] produced subtask
+[2021-07-11 07:04:09.96 #74 DEBUG] produced subtask
+[2021-07-11 07:04:09.98 #74 DEBUG] produced subtask
+[2021-07-11 07:04:10.00 #74 DEBUG] produced subtask
+[2021-07-11 07:04:17.91 #74 DEBUG] produced subtask
+[2021-07-11 07:04:17.94 #74 DEBUG] produced subtask
+[2021-07-11 07:04:17.97 #74 DEBUG] produced subtask
+[2021-07-11 07:04:18.00 #74 DEBUG] produced subtask
+[2021-07-11 07:04:18.03 #74 DEBUG] produced subtask
+[2021-07-11 07:04:18.06 #74 DEBUG] produced subtask
+[2021-07-11 07:04:18.09 #74 DEBUG] produced subtask
+[2021-07-11 07:04:18.12 #74 DEBUG] produced subtask
+[2021-07-11 07:04:18.15 #74 DEBUG] produced subtask
+[2021-07-11 07:04:18.18 #74 DEBUG] produced subtask
+[2021-07-11 07:04:18.21 #74 DEBUG] produced subtask
+[2021-07-11 07:04:18.24 #74 DEBUG] produced subtask
+[2021-07-11 07:04:48.59 #74 INFO] start_ebrisk   4% [2518 submitted, 0 queued]
+[2021-07-11 07:10:10.81 #74 INFO] start_ebrisk   5% [2518 submitted, 0 queued]
+[2021-07-11 07:15:20.94 #74 INFO] start_ebrisk   6% [2518 submitted, 0 queued]
+[2021-07-11 07:21:29.58 #74 INFO] start_ebrisk   7% [2518 submitted, 0 queued]
+[2021-07-11 07:26:37.15 #74 INFO] start_ebrisk   8% [2518 submitted, 0 queued]
+[2021-07-11 07:32:58.86 #74 INFO] start_ebrisk   9% [2518 submitted, 0 queued]
+[2021-07-11 07:38:13.55 #74 INFO] start_ebrisk  10% [2518 submitted, 0 queued]
+[2021-07-11 07:43:24.43 #74 INFO] start_ebrisk  11% [2518 submitted, 0 queued]
+[2021-07-11 07:50:08.40 #74 INFO] start_ebrisk  12% [2518 submitted, 0 queued]
+[2021-07-11 07:55:09.35 #74 INFO] start_ebrisk  13% [2518 submitted, 0 queued]
+[2021-07-11 08:00:39.83 #74 INFO] start_ebrisk  14% [2518 submitted, 0 queued]
+[2021-07-11 08:06:30.55 #74 INFO] start_ebrisk  15% [2518 submitted, 0 queued]
+[2021-07-11 08:12:48.63 #74 INFO] start_ebrisk  16% [2518 submitted, 0 queued]
+[2021-07-11 08:17:17.39 #74 INFO] start_ebrisk  17% [2518 submitted, 0 queued]
+[2021-07-11 08:24:10.14 #74 INFO] start_ebrisk  18% [2518 submitted, 0 queued]
+[2021-07-11 08:28:24.56 #74 INFO] start_ebrisk  19% [2518 submitted, 0 queued]
+[2021-07-11 08:34:34.72 #74 INFO] start_ebrisk  20% [2518 submitted, 0 queued]
+[2021-07-11 08:39:34.47 #74 INFO] start_ebrisk  21% [2518 submitted, 0 queued]
+[2021-07-11 08:44:10.10 #74 INFO] start_ebrisk  22% [2518 submitted, 0 queued]
+[2021-07-11 08:49:09.95 #74 INFO] start_ebrisk  23% [2518 submitted, 0 queued]
+[2021-07-11 08:54:18.11 #74 INFO] start_ebrisk  24% [2518 submitted, 0 queued]
+[2021-07-11 09:00:55.60 #74 INFO] start_ebrisk  25% [2518 submitted, 0 queued]
+[2021-07-11 09:05:47.18 #74 INFO] start_ebrisk  26% [2518 submitted, 0 queued]
+[2021-07-11 09:09:57.14 #74 INFO] start_ebrisk  27% [2518 submitted, 0 queued]
+[2021-07-11 09:14:02.14 #74 INFO] start_ebrisk  28% [2518 submitted, 0 queued]
+[2021-07-11 09:20:43.98 #74 INFO] start_ebrisk  29% [2518 submitted, 0 queued]
+[2021-07-11 09:24:48.56 #74 INFO] start_ebrisk  30% [2518 submitted, 0 queued]
+[2021-07-11 09:29:50.68 #74 INFO] start_ebrisk  31% [2518 submitted, 0 queued]
+[2021-07-11 09:34:22.48 #74 INFO] start_ebrisk  32% [2518 submitted, 0 queued]
+[2021-07-11 09:38:50.40 #74 INFO] start_ebrisk  33% [2518 submitted, 0 queued]
+[2021-07-11 09:43:31.11 #74 INFO] start_ebrisk  34% [2518 submitted, 0 queued]
+[2021-07-11 09:48:54.65 #74 INFO] start_ebrisk  35% [2518 submitted, 0 queued]
+[2021-07-11 09:53:42.17 #74 INFO] start_ebrisk  36% [2518 submitted, 0 queued]
+[2021-07-11 09:57:41.70 #74 INFO] start_ebrisk  37% [2518 submitted, 0 queued]
+[2021-07-11 10:03:52.98 #74 INFO] start_ebrisk  38% [2518 submitted, 0 queued]
+[2021-07-11 10:08:32.10 #74 INFO] start_ebrisk  39% [2518 submitted, 0 queued]
+[2021-07-11 10:13:04.16 #74 INFO] start_ebrisk  40% [2518 submitted, 0 queued]
+[2021-07-11 10:18:40.49 #74 INFO] start_ebrisk  41% [2518 submitted, 0 queued]
+[2021-07-11 10:23:48.71 #74 INFO] start_ebrisk  42% [2518 submitted, 0 queued]
+[2021-07-11 10:28:44.21 #74 INFO] start_ebrisk  43% [2518 submitted, 0 queued]
+[2021-07-11 10:34:35.08 #74 INFO] start_ebrisk  44% [2518 submitted, 0 queued]
+[2021-07-11 10:39:26.96 #74 INFO] start_ebrisk  45% [2518 submitted, 0 queued]
+[2021-07-11 10:45:58.38 #74 INFO] start_ebrisk  46% [2518 submitted, 0 queued]
+[2021-07-11 10:49:54.76 #74 INFO] start_ebrisk  47% [2518 submitted, 0 queued]
+[2021-07-11 10:55:38.94 #74 INFO] start_ebrisk  48% [2518 submitted, 0 queued]
+[2021-07-11 11:00:24.27 #74 INFO] start_ebrisk  49% [2518 submitted, 0 queued]
+[2021-07-11 11:05:57.75 #74 INFO] start_ebrisk  50% [2518 submitted, 0 queued]
+[2021-07-11 11:11:06.80 #74 INFO] start_ebrisk  51% [2518 submitted, 0 queued]
+[2021-07-11 11:16:21.98 #74 INFO] start_ebrisk  52% [2518 submitted, 0 queued]
+[2021-07-11 11:20:57.09 #74 INFO] start_ebrisk  53% [2518 submitted, 0 queued]
+[2021-07-11 11:25:48.51 #74 INFO] start_ebrisk  54% [2518 submitted, 0 queued]
+[2021-07-11 11:32:04.10 #74 INFO] start_ebrisk  55% [2518 submitted, 0 queued]
+[2021-07-11 11:36:48.93 #74 INFO] start_ebrisk  56% [2518 submitted, 0 queued]
+[2021-07-11 11:41:39.34 #74 INFO] start_ebrisk  57% [2518 submitted, 0 queued]
+[2021-07-11 11:47:04.14 #74 INFO] start_ebrisk  58% [2518 submitted, 0 queued]
+[2021-07-11 11:52:14.85 #74 INFO] start_ebrisk  59% [2518 submitted, 0 queued]
+[2021-07-11 11:58:51.34 #74 INFO] start_ebrisk  60% [2518 submitted, 0 queued]
+[2021-07-11 12:03:20.89 #74 INFO] start_ebrisk  61% [2518 submitted, 0 queued]
+[2021-07-11 12:06:56.39 #74 INFO] start_ebrisk  62% [2518 submitted, 0 queued]
+[2021-07-11 12:11:58.08 #74 INFO] start_ebrisk  63% [2518 submitted, 0 queued]
+[2021-07-11 12:15:45.34 #74 INFO] start_ebrisk  64% [2518 submitted, 0 queued]
+[2021-07-11 12:20:42.71 #74 INFO] start_ebrisk  65% [2518 submitted, 0 queued]
+[2021-07-11 12:25:07.03 #74 INFO] start_ebrisk  66% [2518 submitted, 0 queued]
+[2021-07-11 12:28:03.56 #74 INFO] start_ebrisk  67% [2518 submitted, 0 queued]
+[2021-07-11 12:29:51.57 #74 INFO] start_ebrisk  68% [2518 submitted, 0 queued]
+[2021-07-11 12:36:47.77 #74 INFO] start_ebrisk  69% [2518 submitted, 0 queued]
+[2021-07-11 12:45:35.73 #74 INFO] start_ebrisk  70% [2518 submitted, 0 queued]
+[2021-07-11 12:52:09.20 #74 INFO] start_ebrisk  71% [2518 submitted, 0 queued]
+[2021-07-11 12:53:41.92 #74 INFO] start_ebrisk  72% [2518 submitted, 0 queued]
+[2021-07-11 12:59:52.09 #74 INFO] start_ebrisk  73% [2518 submitted, 0 queued]
+[2021-07-11 13:10:37.03 #74 INFO] start_ebrisk  74% [2518 submitted, 0 queued]
+[2021-07-11 13:16:18.33 #74 INFO] start_ebrisk  75% [2518 submitted, 0 queued]
+[2021-07-11 13:22:23.87 #74 INFO] start_ebrisk  76% [2518 submitted, 0 queued]
+[2021-07-11 13:27:54.95 #74 INFO] start_ebrisk  77% [2518 submitted, 0 queued]
+[2021-07-11 13:32:30.81 #74 INFO] start_ebrisk  78% [2518 submitted, 0 queued]
+[2021-07-11 13:42:17.92 #74 INFO] start_ebrisk  79% [2518 submitted, 0 queued]
+[2021-07-11 13:44:49.87 #74 INFO] start_ebrisk  80% [2518 submitted, 0 queued]
+[2021-07-11 13:56:04.98 #74 INFO] start_ebrisk  81% [2518 submitted, 0 queued]
+[2021-07-11 13:58:40.18 #74 INFO] start_ebrisk  82% [2518 submitted, 0 queued]
+[2021-07-11 14:02:37.03 #74 INFO] start_ebrisk  83% [2518 submitted, 0 queued]
+[2021-07-11 14:13:12.09 #74 INFO] start_ebrisk  84% [2518 submitted, 0 queued]
+[2021-07-11 14:18:41.09 #74 INFO] start_ebrisk  85% [2518 submitted, 0 queued]
+[2021-07-11 14:29:48.75 #74 INFO] start_ebrisk  86% [2518 submitted, 0 queued]
+[2021-07-11 14:34:08.61 #74 INFO] start_ebrisk  87% [2518 submitted, 0 queued]
+[2021-07-11 14:38:15.94 #74 INFO] start_ebrisk  88% [2518 submitted, 0 queued]
+[2021-07-11 14:44:26.35 #74 INFO] start_ebrisk  89% [2518 submitted, 0 queued]
+[2021-07-11 14:54:00.22 #74 INFO] start_ebrisk  90% [2518 submitted, 0 queued]
+[2021-07-11 14:57:51.97 #74 INFO] start_ebrisk  91% [2518 submitted, 0 queued]
+[2021-07-11 15:04:10.98 #74 INFO] start_ebrisk  92% [2518 submitted, 0 queued]
+[2021-07-11 15:10:20.79 #74 INFO] start_ebrisk  93% [2518 submitted, 0 queued]
+[2021-07-11 15:15:41.20 #74 INFO] start_ebrisk  94% [2518 submitted, 0 queued]
+[2021-07-11 15:19:30.95 #74 INFO] start_ebrisk  95% [2518 submitted, 0 queued]
+[2021-07-11 15:26:14.28 #74 INFO] start_ebrisk  96% [2518 submitted, 0 queued]
+[2021-07-11 15:33:40.34 #74 INFO] start_ebrisk  97% [2518 submitted, 0 queued]
+[2021-07-11 15:40:03.27 #74 INFO] start_ebrisk  98% [2518 submitted, 0 queued]
+[2021-07-11 15:43:44.28 #74 INFO] start_ebrisk  99% [2518 submitted, 0 queued]
+[2021-07-11 16:18:42.11 #74 INFO] start_ebrisk 100% [2518 submitted, 0 queued]
+[2021-07-11 16:18:42.13 #74 INFO] Mean time per core=32478s, std=704.1s, min=31510s, max=34623s
+[2021-07-11 16:18:42.14 #74 INFO] Received {'alt': '28.7 GB', 'gmf_info': '33.7 MB', 'losses_by_A': '7.05 MB', 'momenta': '1.21 MB', 'events_per_sid': '49.1 KB'} in 34515 seconds
+[2021-07-11 16:18:42.21 #74 INFO] Produced 18.51 GB of GMFs
+[2021-07-11 16:19:31.20 #74 INFO] Stored 28.69 GB in the agg_loss_table
+[2021-07-11 16:19:31.21 #74 INFO] Building the src_loss_table
+[2021-07-11 16:49:13.39 #74 INFO] Sending 246.45 MB of losses
+[2021-07-11 16:49:14.60 #74 INFO] Sending 250.8 MB of losses
+[2021-07-11 16:49:15.76 #74 INFO] Sending 255.5 MB of losses
+[2021-07-11 16:49:16.89 #74 INFO] Sending 256.33 MB of losses
+[2021-07-11 16:49:17.96 #74 INFO] Sending 234.98 MB of losses
+[2021-07-11 16:49:18.98 #74 INFO] Sending 224.97 MB of losses
+[2021-07-11 16:49:20.11 #74 INFO] Sending 228.24 MB of losses
+[2021-07-11 16:49:21.23 #74 INFO] Sending 230.31 MB of losses
+[2021-07-11 16:49:22.35 #74 INFO] Sending 219.98 MB of losses
+[2021-07-11 16:49:23.78 #74 INFO] Sending 229.4 MB of losses
+[2021-07-11 16:49:24.84 #74 INFO] Sending 232.82 MB of losses
+[2021-07-11 16:49:25.98 #74 INFO] Sending 233.62 MB of losses
+[2021-07-11 16:49:27.09 #74 INFO] Sending 225.63 MB of losses
+[2021-07-11 16:49:28.27 #74 INFO] Sending 218.09 MB of losses
+[2021-07-11 16:49:29.27 #74 INFO] Sending 191.13 MB of losses
+[2021-07-11 16:49:30.25 #74 INFO] Sending 191.68 MB of losses
+[2021-07-11 16:49:31.11 #74 INFO] Sending 184.67 MB of losses
+[2021-07-11 16:49:31.99 #74 INFO] Sending 188.36 MB of losses
+[2021-07-11 16:49:33.01 #74 INFO] Sending 176.61 MB of losses
+[2021-07-11 16:49:33.92 #74 INFO] Sending 172.24 MB of losses
+[2021-07-11 16:49:34.87 #74 INFO] Sending 164.91 MB of losses
+[2021-07-11 16:49:35.67 #74 INFO] Sending 169.22 MB of losses
+[2021-07-11 16:49:36.55 #74 INFO] Sending 173.13 MB of losses
+[2021-07-11 16:49:37.51 #74 INFO] Sending 184.93 MB of losses
+[2021-07-11 16:49:38.36 #74 INFO] Sending 179.04 MB of losses
+[2021-07-11 16:49:39.36 #74 INFO] Sending 181.65 MB of losses
+[2021-07-11 16:49:40.25 #74 INFO] Sending 184.43 MB of losses
+[2021-07-11 16:49:41.40 #74 INFO] Sending 200.72 MB of losses
+[2021-07-11 16:49:42.46 #74 INFO] Sending 205.22 MB of losses
+[2021-07-11 16:49:43.60 #74 INFO] Sending 209.08 MB of losses
+[2021-07-11 16:49:44.62 #74 INFO] Sending 212.49 MB of losses
+[2021-07-11 16:49:45.63 #74 INFO] Sending 213.25 MB of losses
+[2021-07-11 16:49:46.66 #74 INFO] Sending 182.69 MB of losses
+[2021-07-11 16:49:47.63 #74 INFO] Sending 187.57 MB of losses
+[2021-07-11 16:49:48.56 #74 INFO] Sending 189.23 MB of losses
+[2021-07-11 16:49:49.49 #74 INFO] Sending 191.41 MB of losses
+[2021-07-11 16:49:50.48 #74 INFO] Sending 188.64 MB of losses
+[2021-07-11 16:49:51.49 #74 INFO] Sending 197.78 MB of losses
+[2021-07-11 16:49:52.47 #74 INFO] Sending 201.02 MB of losses
+[2021-07-11 16:49:53.43 #74 INFO] Sending 201.65 MB of losses
+[2021-07-11 16:49:54.37 #74 INFO] Sending 195.03 MB of losses
+[2021-07-11 16:49:55.53 #74 INFO] Sending 233.79 MB of losses
+[2021-07-11 16:49:56.56 #74 INFO] Sending 246.61 MB of losses
+[2021-07-11 16:49:57.58 #74 INFO] Sending 247.19 MB of losses
+[2021-07-11 16:49:58.60 #74 INFO] Sending 237.71 MB of losses
+[2021-07-11 16:49:59.67 #74 INFO] Sending 235.18 MB of losses
+[2021-07-11 16:50:00.67 #74 INFO] Sending 220.02 MB of losses
+[2021-07-11 16:50:01.76 #74 INFO] Sending 222.09 MB of losses
+[2021-07-11 16:50:02.78 #74 INFO] Sending 211.94 MB of losses
+[2021-07-11 16:50:03.86 #74 INFO] Sending 217.3 MB of losses
+[2021-07-11 16:50:04.97 #74 INFO] Sending 225.69 MB of losses
+[2021-07-11 16:50:06.12 #74 INFO] Sending 227.75 MB of losses
+[2021-07-11 16:50:07.18 #74 INFO] Sending 219.88 MB of losses
+[2021-07-11 16:50:08.25 #74 INFO] Sending 222.98 MB of losses
+[2021-07-11 16:50:09.29 #74 INFO] Sending 226.15 MB of losses
+[2021-07-11 16:50:10.39 #74 INFO] Sending 220.85 MB of losses
+[2021-07-11 16:50:11.46 #74 INFO] Sending 212.95 MB of losses
+[2021-07-11 16:50:12.44 #74 INFO] Sending 216.61 MB of losses
+[2021-07-11 16:50:13.30 #74 INFO] Sending 220.19 MB of losses
+[2021-07-11 16:50:14.30 #74 INFO] Sending 207.62 MB of losses
+[2021-07-11 16:50:15.46 #74 INFO] Sending 189.34 MB of losses
+[2021-07-11 16:50:17.01 #74 INFO] Sending 194.12 MB of losses
+[2021-07-11 16:50:18.08 #74 INFO] Sending 195.99 MB of losses
+[2021-07-11 16:50:19.00 #74 INFO] Sending 198.27 MB of losses
+[2021-07-11 16:50:19.98 #74 INFO] Sending 200.59 MB of losses
+[2021-07-11 16:50:20.91 #74 INFO] Sending 203.54 MB of losses
+[2021-07-11 16:50:21.91 #74 INFO] Sending 206.72 MB of losses
+[2021-07-11 16:50:22.98 #74 INFO] Sending 207.6 MB of losses
+[2021-07-11 16:50:23.96 #74 INFO] Sending 177.76 MB of losses
+[2021-07-11 16:50:24.81 #74 INFO] Sending 148.83 MB of losses
+[2021-07-11 16:50:25.62 #74 INFO] Sending 150.78 MB of losses
+[2021-07-11 16:50:26.42 #74 INFO] Sending 151.21 MB of losses
+[2021-07-11 16:50:27.22 #74 INFO] Sending 146.19 MB of losses
+[2021-07-11 16:50:28.04 #74 INFO] Sending 135.24 MB of losses
+[2021-07-11 16:50:28.92 #74 INFO] Sending 133.63 MB of losses
+[2021-07-11 16:50:29.73 #74 INFO] Sending 135.17 MB of losses
+[2021-07-11 16:50:30.55 #74 INFO] Sending 129.87 MB of losses
+[2021-07-11 16:50:31.35 #74 INFO] Sending 136.77 MB of losses
+[2021-07-11 16:50:32.15 #74 INFO] Sending 147.78 MB of losses
+[2021-07-11 16:50:32.94 #74 INFO] Sending 148.24 MB of losses
+[2021-07-11 16:50:33.75 #74 INFO] Sending 143.89 MB of losses
+[2021-07-11 16:50:34.48 #74 INFO] Sending 145.82 MB of losses
+[2021-07-11 16:50:35.30 #74 INFO] Sending 221.11 MB of losses
+[2021-07-11 16:50:36.35 #74 INFO] Sending 256.37 MB of losses
+[2021-07-11 16:50:37.34 #74 INFO] Sending 246.55 MB of losses
+[2021-07-11 16:50:38.46 #74 INFO] Sending 250.69 MB of losses
+[2021-07-11 16:50:39.55 #74 INFO] Sending 251.43 MB of losses
+[2021-07-11 16:50:40.79 #74 INFO] Sending 230.3 MB of losses
+[2021-07-11 16:50:41.77 #74 INFO] Sending 219.78 MB of losses
+[2021-07-11 16:50:42.65 #74 INFO] Sending 224.97 MB of losses
+[2021-07-11 16:50:43.74 #74 INFO] Sending 228.35 MB of losses
+[2021-07-11 16:50:44.73 #74 INFO] Sending 232.8 MB of losses
+[2021-07-11 16:50:45.76 #74 INFO] Sending 225.63 MB of losses
+[2021-07-11 16:50:46.73 #74 INFO] Sending 228.62 MB of losses
+[2021-07-11 16:50:47.71 #74 INFO] Sending 232.82 MB of losses
+[2021-07-11 16:50:48.70 #74 INFO] Sending 233.69 MB of losses
+[2021-07-11 16:50:49.97 #74 INFO] Sent 96 tasks, 19.21 GB in 96 seconds
+[2021-07-11 16:50:53.52 #74 INFO] post_risk   1% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.54 #74 INFO] post_risk   2% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.55 #74 INFO] post_risk   3% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.57 #74 INFO] post_risk   4% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.58 #74 INFO] post_risk   5% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.60 #74 INFO] post_risk   6% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.61 #74 INFO] post_risk   7% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.62 #74 INFO] post_risk   8% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.64 #74 INFO] post_risk   9% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.65 #74 INFO] post_risk  10% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.67 #74 INFO] post_risk  11% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.68 #74 INFO] post_risk  12% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.69 #74 INFO] post_risk  13% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.71 #74 INFO] post_risk  14% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.72 #74 INFO] post_risk  15% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.74 #74 INFO] post_risk  16% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.75 #74 INFO] post_risk  17% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.76 #74 INFO] post_risk  18% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.78 #74 INFO] post_risk  19% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.79 #74 INFO] post_risk  20% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.81 #74 INFO] post_risk  21% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.82 #74 INFO] post_risk  22% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.83 #74 INFO] post_risk  23% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.85 #74 INFO] post_risk  25% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.86 #74 INFO] post_risk  26% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.88 #74 INFO] post_risk  27% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.89 #74 INFO] post_risk  28% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.90 #74 INFO] post_risk  29% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.92 #74 INFO] post_risk  30% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.93 #74 INFO] post_risk  31% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.95 #74 INFO] post_risk  32% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.96 #74 INFO] post_risk  33% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.98 #74 INFO] post_risk  34% [96 submitted, 0 queued]
+[2021-07-11 16:50:53.99 #74 INFO] post_risk  35% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.01 #74 INFO] post_risk  36% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.02 #74 INFO] post_risk  37% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.03 #74 INFO] post_risk  38% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.05 #74 INFO] post_risk  39% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.06 #74 INFO] post_risk  40% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.07 #74 INFO] post_risk  41% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.09 #74 INFO] post_risk  42% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.10 #74 INFO] post_risk  43% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.11 #74 INFO] post_risk  44% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.13 #74 INFO] post_risk  45% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.15 #74 INFO] post_risk  46% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.17 #74 INFO] post_risk  47% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.18 #74 INFO] post_risk  48% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.20 #74 INFO] post_risk  50% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.21 #74 INFO] post_risk  51% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.22 #74 INFO] post_risk  52% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.24 #74 INFO] post_risk  53% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.25 #74 INFO] post_risk  54% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.26 #74 INFO] post_risk  55% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.28 #74 INFO] post_risk  56% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.29 #74 INFO] post_risk  57% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.31 #74 INFO] post_risk  58% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.32 #74 INFO] post_risk  59% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.33 #74 INFO] post_risk  60% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.35 #74 INFO] post_risk  61% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.36 #74 INFO] post_risk  62% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.37 #74 INFO] post_risk  63% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.39 #74 INFO] post_risk  64% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.40 #74 INFO] post_risk  65% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.42 #74 INFO] post_risk  66% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.43 #74 INFO] post_risk  67% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.44 #74 INFO] post_risk  68% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.46 #74 INFO] post_risk  69% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.47 #74 INFO] post_risk  70% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.48 #74 INFO] post_risk  71% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.50 #74 INFO] post_risk  72% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.52 #74 INFO] post_risk  73% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.53 #74 INFO] post_risk  75% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.54 #74 INFO] post_risk  76% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.56 #74 INFO] post_risk  77% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.57 #74 INFO] post_risk  78% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.58 #74 INFO] post_risk  79% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.60 #74 INFO] post_risk  80% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.61 #74 INFO] post_risk  81% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.63 #74 INFO] post_risk  82% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.64 #74 INFO] post_risk  83% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.66 #74 INFO] post_risk  84% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.67 #74 INFO] post_risk  85% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.68 #74 INFO] post_risk  86% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.70 #74 INFO] post_risk  87% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.71 #74 INFO] post_risk  88% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.73 #74 INFO] post_risk  89% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.74 #74 INFO] post_risk  90% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.75 #74 INFO] post_risk  91% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.77 #74 INFO] post_risk  92% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.78 #74 INFO] post_risk  93% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.80 #74 INFO] post_risk  94% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.81 #74 INFO] post_risk  95% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.83 #74 INFO] post_risk  96% [96 submitted, 0 queued]
+[2021-07-11 16:50:54.89 #74 INFO] post_risk  97% [96 submitted, 0 queued]
+[2021-07-11 16:50:55.14 #74 INFO] post_risk  98% [96 submitted, 0 queued]
+[2021-07-11 16:50:57.34 #74 INFO] post_risk 100% [96 submitted, 0 queued]
+[2021-07-11 16:50:57.35 #74 INFO] Mean time per core=6s, std=0.7s, min=4s, max=7s
+[2021-07-11 16:50:57.63 #74 INFO] Received {'tot': '44.95 MB'} in 7 seconds
+[2021-07-11 16:53:23.69 #74 INFO] Total portfolio loss
+==== ============= ============== ========= ==============
+loss contents      nonstructural  occupants structural    
+==== ============= ============== ========= ==============
+avg  8_329_871_980 26_133_291_551 1_992     20_388_781_564
+==== ============= ============== ========= ==============
+[2021-07-11 16:53:23.69 #74 INFO] Sanity check on agg_losses
+[2021-07-11 16:54:36.42 #74 INFO] Exposing the outputs to the database
+[2021-07-11 16:54:37.53 #74 INFO] Stored 72.75 GB on /root/oqdata/calc_74.hdf5 in 55245 seconds
