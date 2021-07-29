@@ -1,12 +1,12 @@
 #!/bin/bash
 
 ### SETUP AWS KILL 
-shut_down_ec2_instance() {
-    echo "Shutting down EC2 instance"
-    sudo shutdown
-    }
+#shut_down_ec2_instance() {
+#    echo "Shutting down EC2 instance"
+#    sudo shutdown
+#    }
 
-trap "shut_down_ec2_instance" ERR
+#trap "shut_down_ec2_instance" ERR
 
 
 #mkdir -p output/temp; rm -f output/temp/*
@@ -3858,4 +3858,4 @@ mv output/temp/src_loss_table_*.csv output/BC/ebR_BC5920A_src_loss_table_r1.csv;
 #mv output/temp/src_loss_table_*.csv output/YT/ebR_YT_src_loss_table_r1.csv;
 ## =================================================================
 
-shut_down_ec2_instance
+#shut_down_ec2_instance
