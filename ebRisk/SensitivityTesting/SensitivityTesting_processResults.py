@@ -11,11 +11,14 @@ SensDir='/Users/thobbs/Documents/GitHub/canada-srm2/ebRisk/SensitivityTesting'
 ##############################################################
 
 ## Use log files to fill out data frame with TESTLOC, TESTNUM, RUNNUM, NUMSES, NUMBRANCH, RS, and LOSSES
-city='Montreal'
-#city='Vancouver'
+#city='Montreal'
+city='Vancouver'
 files = glob.glob(str(SensDir)+"/*"+city+"*.ini.log")
 df = pd.DataFrame(columns=range(9))
 df.columns = ('TESTLOC', 'TESTNUM', 'RUNNUM', 'NUMSES', 'NUMBRANCH', 'RS', 'MEANLOSS', 'FIVELOSS', 'NIFILOSS')
+
+### What return period?
+RP = 500
 
 for log in files:
     
@@ -45,7 +48,6 @@ for log in files:
                 RS = line.split(' = ')[1].split('\n')[0]
     
     #grab the 500 yr loss (mean, 5, 95)
-    RP = 50
     meandf = pd.read_csv('agg_curves-mean_'+str(RUNNUM)+'.csv', skiprows=1)
     meandf = meandf[(meandf['GenType'] == '*total*')]
     meandf = meandf[(meandf['return_period'] == RP)]
@@ -72,11 +74,11 @@ df['EFFYEARS'] = df['NUMSES']*df['NUMBRANCH']
 df.to_csv('RESULTS.csv')
 
 df = pd.read_csv('RESULTS.csv')
-#print(df)
-#print("Max loss is "+str(df['MEANLOSS'].max()))
-#print("Min loss is "+str(df['MEANLOSS'].min()))
+# remove full enumeration
+df = df[df['NUMBRANCH'] != 0]
 
 # Plot
+fig, ax = plt.subplots(figsize=(14, 6))
 #### Pick which variable you want to plot by:
 #xvar = df['NUMBRANCH']; xlab = 'Number of Logic Tree Branch Samples'
 #xvar = df['NUMSES']; xlab = 'Number of Stochastic Event Sets'
@@ -87,24 +89,28 @@ y_errormax = df['NIFILOSS']-df['MEANLOSS']
 y_error = [y_errormin, y_errormax]
 
 ### below: top lines will colour results by random seed, lower lines will color by eff years.
-#colors = {1:((0.7), (0.2), (0.4)), 17:(0.0, 0.6, 0.1), 46:(0.4, 0.9, 0.9)}
-#df['color'] = df['RS'].map(colors)
-colors = {0:(0.1, 0.1, 0.1), 50:((0.2), (0.2), (0.2)), 200:(0.3, 0.3, 0.3), 800:(0.5, 0.5, 0.5), 1600:(0.7, 0.7, 0.7), 2400:(0.9, 0.9, 0.9)}
-df['color'] = df['NUMBRANCH'].map(colors)
+colors = {1:((221/255), (170/255), (51/255)), 17:((187/255), (85/255), (102/255)), 46:((0/255), (68/255), (136/255))}
+df['color'] = df['RS'].map(colors)
+#colors = {0:(0.1, 0.1, 0.1), 50:((0.2), (0.2), (0.2)), 200:(0.3, 0.3, 0.3), 800:(0.5, 0.5, 0.5), 1600:(0.7, 0.7, 0.7), 2400:(0.9, 0.9, 0.9)}
+#df['color'] = df['NUMBRANCH'].map(colors)
 #### also [un]comment the correct scatter line (w/ scatter_kwargs)
 
-#scatter_kwargs = {"zorder":100}
-#error_kwargs = {"lw":.5, "zorder":0}
-#plt.errorbar(xvar, df['MEANLOSS'], yerr=y_error, fmt='none', ecolor=df['color'], **error_kwargs)
-#plt.scatter(xvar, df['FIVELOSS'], c=df['color'], marker='x')
-#plt.scatter(xvar, df['NIFILOSS'], c=df['color'], marker='x')
-##plt.scatter(xvar, df['MEANLOSS'], c=df['color'], label='RS', **scatter_kwargs)
+scatter_kwargs = {"zorder":100}
+error_kwargs = {"lw":.5, "zorder":0}
+plt.errorbar(xvar, df['MEANLOSS'], yerr=y_error, fmt='none', ecolor=df['color'], **error_kwargs)
+plt.scatter(xvar, df['FIVELOSS'], c=df['color'], marker='x')
+plt.scatter(xvar, df['NIFILOSS'], c=df['color'], marker='x')
+plt.scatter(xvar, df['MEANLOSS'], c=df['color'], label='RS', **scatter_kwargs)
 #plt.scatter(xvar, df['MEANLOSS'], c=df['color'], label='NUMBRANCH', **scatter_kwargs)
-#plt.xlabel(xlab)
-#plt.ylabel(str(RP)+' Year Total Loss [$]')
-#plt.title('Results of '+city+' Exposure Sensitivity Tests - Mean, 5%, and 95%')
+plt.xlabel(xlab)
+plt.ylabel(str(RP)+' Year Total Loss [$]')
+plt.title('Results of '+city+' Exposure Sensitivity Tests - Mean, 5%, and 95%')
+markers = [plt.Line2D([0,0],[0,0],color=color, marker='o', linestyle='') for color in colors.values()]
+plt.legend(markers, colors.keys(), numpoints=1, title="Random Seeds", loc="upper right")
 #plt.legend()
-#plt.show()
+#legend1 = ax.legend(colors, loc="upper right", )
+#ax.add_artist(legend1)
+plt.show()
 
 ##### Once preferred parameters are selected, calculate how much they differ from full enumeration
 branch = 2400; SES = 500000
@@ -121,6 +127,10 @@ full_min = full['FIVELOSS'].mean(); full_min = "${:,.0f}".format(full_min)
 full_max = full['NIFILOSS'].mean(); full_max = "${:,.0f}".format(full_max)
 
 print("Preferred result is "+pref_mean+" ("+pref_min+" - "+pref_max+")")
-print("Full enumeration result is "+full_mean+" ("+full_min+" - "+full_max+")")
+#print("Full enumeration result is "+full_mean+" ("+full_min+" - "+full_max+")")
 
-print("Preferred result is "+"{:2.0f}%".format(diff)+" higher than the full enumeration.")
+#print("Preferred result is "+"{:2.0f}%".format(diff)+" higher than the full enumeration.")
+
+print("Spread in mean values is "+"${:,.0f}".format(df['MEANLOSS'].max()-df['MEANLOSS'].min()))
+df['spread'] = df['NIFILOSS'] - df['FIVELOSS']
+print("Spread in tightest interval is "+"${:,.0f}".format(df['spread'].min()))
