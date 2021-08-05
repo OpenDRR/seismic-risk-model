@@ -16,7 +16,7 @@ USAGE: run_OQebRisk.sh
 
 ### SETUP REGIONS
 #declare -a regions=("AB4810-20" "AB4830" "AB4840-50" "AB4860" "AB4870-80" "BC5910" "BC5920A" "BC5920B" "BC5930" "BC5940-80" "MB4610-40" "MB4650-80" "NB" "NL" "NS" "NT" "NU" "ON3510" "ON3515-20" "ON3530A" "ON3530B" "ON3540" "ON3550" "ON3560-70" "ON3580" "ON3590-95" "PE" "QC2410-20" "QC2425-33" "QC2435" "QC2440" "QC2445-55" "QC2460-70" "QC2475-90" "SK4710-30" "SK4740-60" "YT")
-declare -a regions=("BC5920B") #for testing only
+declare -a regions=("BC5920A") #for testing only
 
 ### SETUP CALCULATIONS
 declare -a calcs=("b0" "b0_EP" "r1" "r1_EP")
