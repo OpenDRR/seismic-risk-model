@@ -1,0 +1,452 @@
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_CampbellBozorgnia2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_ChiouYoungs2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2021-08-05 20:53:17 #132 INFO] root running /mnt/storage/canada-srm2/eDamage/input/eDamage_b0_AB4810-20.ini [--hc=None]
+[2021-08-05 20:53:17 #132 INFO] Using engine version 3.11.3-git29ac352f7d
+[2021-08-05 20:53:17 #132 WARNING] Using 96 cores on ip-10-70-136-127
+[2021-08-05 20:53:17 #132 INFO] Validated nationalModel.xml in 0.01 seconds
+[2021-08-05 20:53:17 #132 INFO] Checksum of the input files: 2936889068
+[2021-08-05 20:53:17 #132 INFO] Reading the risk model if present
+[2021-08-05 20:53:20 #132 INFO] Reading /mnt/storage/openquake-inputs/exposure/general-building-stock/oqBldgExp_AB4810-20.xml
+[2021-08-05 20:53:28 #132 INFO] Extracting the hazard sites from the site model
+[2021-08-05 20:53:32 #132 INFO] Associated 62681 assets to 15610 sites
+[2021-08-05 20:53:36 #132 INFO] Reducing risk model from 4224 to 504 taxonomies
+[2021-08-05 20:53:38 #132 INFO] minimum_asset_loss={'structural': 0}
+[2021-08-05 20:53:39 #132 INFO] Considering 1_600 logic tree paths out of 24_576
+[2021-08-05 20:53:39 #132 INFO] Reading the source model(s) in parallel
+[2021-08-05 20:53:41 #132 INFO] read_source_model  16% [6 submitted, 0 queued]
+[2021-08-05 20:53:41 #132 INFO] read_source_model  33% [6 submitted, 0 queued]
+[2021-08-05 20:53:41 #132 INFO] read_source_model  50% [6 submitted, 0 queued]
+[2021-08-05 20:53:41 #132 INFO] read_source_model  66% [6 submitted, 0 queued]
+[2021-08-05 20:53:41 #132 INFO] read_source_model  83% [6 submitted, 0 queued]
+[2021-08-05 20:53:41 #132 INFO] read_source_model 100% [6 submitted, 0 queued]
+[2021-08-05 20:53:41 #132 INFO] Mean time per core=0s, std=0.0s, min=0s, max=0s
+[2021-08-05 20:53:41 #132 INFO] Received {'/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Harctic_simplified_collapsedRates.xml': '138.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Harctic_simplified_collapsedRates.xml': '133.09 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Rarctic_simplified_collapsedRates.xml': '132.34 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Rarctic_simplified_collapsedRates.xml': '126.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Harctic_simplified_collapsedRates.xml': '117.99 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Rarctic_simplified_collapsedRates.xml': '111.84 KB'} in 1 seconds
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2021-08-05 20:53:41 #132 INFO] There are multiple different sources with the same ID [<AreaSource SCCYA;0>, <AreaSource SCCYA;1>]
+[2021-08-05 20:53:41 #132 INFO] There are 13 groups and 196 sources with len(et_ids)=3.85
+[2021-08-05 20:53:41 #132 INFO] Checking the sources bounding box
+[2021-08-05 20:53:41 #132 ERROR] source ACM: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
+[2021-08-05 20:53:42 #132 INFO] Rupture floating factor = 1.6303030303030304
+[2021-08-05 20:53:42 #132 INFO] Rupture spinning factor = 3.278787878787879
+[2021-08-05 20:53:42 #132 INFO] gzipping the input files
+[2021-08-05 20:53:43 #132 INFO] Storing risk model
+[2021-08-05 20:53:44 #132 INFO] minimum_intensity={'SA(0.3)': 0.02, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05}
+[2021-08-05 20:53:44 #132 INFO] Building ruptures
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Subduction IntraSlab30, 1 source(s)>
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Subduction IntraSlab55, 4 source(s)>
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Subduction Interface, 13 source(s)>
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Stable Shallow Crust, 29 source(s)>
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Stable Shallow Crust, 4 source(s)>
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Stable Shallow Crust, 6 source(s)>
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Stable Shallow Crust, 18 source(s)>
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Stable Shallow Crust, 10 source(s)>
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Stable Shallow Crust, 38 source(s)>
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Stable Shallow Crust, 14 source(s)>
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Active Shallow Crust, 57 source(s)>
+[2021-08-05 20:55:18 #132 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-08-05 20:55:20 #132 INFO] Sent 96 tasks, 137.37 MB in 0 seconds
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures   1% [98 submitted, 3 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures   2% [99 submitted, 2 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures   3% [100 submitted, 1 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures   4% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures   5% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures   6% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures   7% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures   8% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures   9% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  10% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  11% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  12% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  13% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  14% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  15% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  16% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  17% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  18% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  19% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  20% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  21% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  22% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  23% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  24% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  25% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  26% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  27% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  28% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  29% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  30% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  31% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  32% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  33% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  34% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  35% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  36% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  37% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  38% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  39% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  40% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  41% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  42% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  43% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  44% [101 submitted, 0 queued]
+[2021-08-05 20:55:22 #132 INFO] sample_ruptures  45% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  46% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  47% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  48% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  49% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  50% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  51% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  52% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  53% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  54% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  55% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  56% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  57% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  58% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  59% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  60% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  61% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  62% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  63% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  64% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  65% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  66% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  67% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  68% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  69% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  70% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  71% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  72% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  73% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  74% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  75% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  76% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  77% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  78% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  79% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  80% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  81% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  82% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  83% [101 submitted, 0 queued]
+[2021-08-05 20:55:23 #132 INFO] sample_ruptures  84% [101 submitted, 0 queued]
+[2021-08-05 20:55:34 #132 INFO] sample_ruptures  85% [101 submitted, 0 queued]
+[2021-08-05 21:00:56 #132 INFO] sample_ruptures  86% [101 submitted, 0 queued]
+[2021-08-05 21:00:58 #132 INFO] sample_ruptures  87% [101 submitted, 0 queued]
+[2021-08-05 21:01:11 #132 INFO] sample_ruptures  88% [101 submitted, 0 queued]
+[2021-08-05 21:02:08 #132 INFO] sample_ruptures  89% [101 submitted, 0 queued]
+[2021-08-05 21:02:29 #132 INFO] sample_ruptures  90% [101 submitted, 0 queued]
+[2021-08-05 21:03:16 #132 INFO] sample_ruptures  91% [101 submitted, 0 queued]
+[2021-08-05 21:04:35 #132 INFO] sample_ruptures  92% [101 submitted, 0 queued]
+[2021-08-05 21:05:27 #132 INFO] sample_ruptures  93% [101 submitted, 0 queued]
+[2021-08-05 21:08:07 #132 INFO] sample_ruptures  94% [101 submitted, 0 queued]
+[2021-08-05 21:09:19 #132 INFO] sample_ruptures  95% [101 submitted, 0 queued]
+[2021-08-05 21:09:28 #132 INFO] sample_ruptures  96% [101 submitted, 0 queued]
+[2021-08-05 21:13:57 #132 INFO] sample_ruptures  97% [101 submitted, 0 queued]
+[2021-08-05 21:31:44 #132 INFO] sample_ruptures  98% [101 submitted, 0 queued]
+[2021-08-05 21:59:09 #132 INFO] sample_ruptures  99% [101 submitted, 0 queued]
+[2021-08-05 22:06:03 #132 INFO] sample_ruptures 100% [101 submitted, 0 queued]
+[2021-08-05 22:06:03 #132 INFO] Mean time per core=192s, std=656.4s, min=0s, max=4232s
+[2021-08-05 22:06:03 #132 INFO] Received {'rup_array': '1.06 GB', 'calc_times': '20.32 KB', 'eff_ruptures': '3.99 KB'} in 4243 seconds
+[2021-08-05 22:06:03 #132 INFO] There are 1600 realization(s)
+[2021-08-05 22:06:03 #132 INFO] Reordering the ruptures and storing the events
+[2021-08-05 22:06:11 #132 INFO] Associating event_id -> rlz_id for 24_225_248 events and 5_017_260 ruptures
+[2021-08-05 22:09:02 #132 INFO] Sent 202 tasks, 536.17 MB in 157 seconds
+[2021-08-05 22:12:32 #132 INFO] Mean time per core=120s, std=53.6s, min=35s, max=261s
+[2021-08-05 22:12:32 #132 INFO] Received {'tot': '231.08 MB'} in 210 seconds
+[2021-08-05 22:14:23 #132 INFO] Reading 5_017_260 ruptures
+[2021-08-05 22:16:30 #132 INFO] Sent 96 tasks, 191.71 MB in 13 seconds
+[2021-08-06 05:54:02 #132 INFO] compute_gmfs   1% [99 submitted, 103 queued]
+[2021-08-06 10:02:38 #132 INFO] compute_gmfs   2% [101 submitted, 101 queued]
+[2021-08-06 10:28:33 #132 INFO] compute_gmfs   3% [103 submitted, 99 queued]
+[2021-08-06 11:59:13 #132 INFO] compute_gmfs   4% [105 submitted, 97 queued]
+[2021-08-06 12:17:13 #132 INFO] compute_gmfs   5% [107 submitted, 95 queued]
+[2021-08-06 19:02:52 #132 WARNING] Using over 98% of the memory in ip-10-70-136-127!
+[2021-08-06 19:02:53 #132 INFO] Received {'gmfdata': '2.55 GB', 'sig_eps': '42.86 MB', 'times': '6.74 MB', 'hcurves': '65 B'} in 74796 seconds
+[2021-08-06 19:02:53 #132 CRITICAL] 
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_common.py", line 340, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1517, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_common.py", line 343, in wrapper
+    return fun(self)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1559, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_common.py", line 604, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/14544/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 474, in _init
+    self.create_time()
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 824, in create_time
+    self._create_time = self._proc.create_time()
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1517, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1729, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1524, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=14544)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 336, in execute
+    acc = smap.reduce(self.agg_dicts, self.acc0())
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 827, in reduce
+    return self.submit_all().reduce(agg, acc)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 586, in reduce
+    for result in self:
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 575, in __iter__
+    yield from self._iter()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 553, in _iter
+    mem_gb = (memory_rss(os.getpid()) + sum(
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 554, in <genexpr>
+    memory_rss(pid) for pid in Starmap.pids)) / GB
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/performance.py", line 110, in memory_rss
+    return psutil.Process(pid).memory_info().rss
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 447, in __init__
+    self._init(pid)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 487, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 14544
+[2021-08-06 19:02:54 #132 CRITICAL] 
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_common.py", line 340, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1517, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_common.py", line 343, in wrapper
+    return fun(self)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1559, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_common.py", line 604, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/14544/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 474, in _init
+    self.create_time()
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 824, in create_time
+    self._create_time = self._proc.create_time()
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1517, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1729, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1524, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=14544)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/scenario_damage.py", line 155, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 336, in execute
+    acc = smap.reduce(self.agg_dicts, self.acc0())
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 827, in reduce
+    return self.submit_all().reduce(agg, acc)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 586, in reduce
+    for result in self:
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 575, in __iter__
+    yield from self._iter()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 553, in _iter
+    mem_gb = (memory_rss(os.getpid()) + sum(
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 554, in <genexpr>
+    memory_rss(pid) for pid in Starmap.pids)) / GB
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/performance.py", line 110, in memory_rss
+    return psutil.Process(pid).memory_info().rss
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 447, in __init__
+    self._init(pid)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 487, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 14544
+[2021-08-06 19:02:54 #132 CRITICAL] Traceback (most recent call last):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_common.py", line 340, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1517, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_common.py", line 343, in wrapper
+    return fun(self)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1559, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_common.py", line 604, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/14544/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 474, in _init
+    self.create_time()
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 824, in create_time
+    self._create_time = self._proc.create_time()
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1517, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1729, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1524, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=14544)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/scenario_damage.py", line 155, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 336, in execute
+    acc = smap.reduce(self.agg_dicts, self.acc0())
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 827, in reduce
+    return self.submit_all().reduce(agg, acc)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 586, in reduce
+    for result in self:
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 575, in __iter__
+    yield from self._iter()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 553, in _iter
+    mem_gb = (memory_rss(os.getpid()) + sum(
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 554, in <genexpr>
+    memory_rss(pid) for pid in Starmap.pids)) / GB
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/performance.py", line 110, in memory_rss
+    return psutil.Process(pid).memory_info().rss
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 447, in __init__
+    self._init(pid)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 487, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 14544
+
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2021-08-06 19:03:00 #132 INFO] Stopping the workers
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_common.py", line 340, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1517, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_common.py", line 343, in wrapper
+    return fun(self)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1559, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_common.py", line 604, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/14544/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 474, in _init
+    self.create_time()
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 824, in create_time
+    self._create_time = self._proc.create_time()
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1517, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1729, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/_pslinux.py", line 1524, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=14544)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/bin/oq", line 33, in <module>
+    sys.exit(load_entry_point('openquake.engine', 'console_scripts', 'oq')())
+  File "/home/ssm-user/src/oq-engine/openquake/commands/__main__.py", line 44, in oq
+    sap.run(commands, prog='oq')
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 225, in run
+    return _run(parser(funcdict, **parserkw), argv)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 216, in _run
+    return func(**dic)
+  File "/home/ssm-user/src/oq-engine/openquake/commands/engine.py", line 164, in main
+    run_jobs(job_inis, log_level, log_file, exports, **pars)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 407, in run_jobs
+    run_calc(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/scenario_damage.py", line 155, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 336, in execute
+    acc = smap.reduce(self.agg_dicts, self.acc0())
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 827, in reduce
+    return self.submit_all().reduce(agg, acc)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 586, in reduce
+    for result in self:
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 575, in __iter__
+    yield from self._iter()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 553, in _iter
+    mem_gb = (memory_rss(os.getpid()) + sum(
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 554, in <genexpr>
+    memory_rss(pid) for pid in Starmap.pids)) / GB
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/performance.py", line 110, in memory_rss
+    return psutil.Process(pid).memory_info().rss
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 447, in __init__
+    self._init(pid)
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/psutil/__init__.py", line 487, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 14544
