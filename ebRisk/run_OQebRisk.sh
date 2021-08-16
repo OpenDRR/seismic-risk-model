@@ -43,7 +43,7 @@ for region in "${regions[@]}"; do
             oq export realizations $calcnum -e csv -d output/temp/
             mv output/temp/realizations*.csv output/${prov}/ebR_${region}_rlz_b0.csv 
         fi
-        if [[ ${calc} !~ "_EP" ]]; then 
+        if [[ ${calc} == *"_EP"* ]]; then 
             oq export avg_losses-stats $calcnum -e csv -d output/temp/
             mv output/temp/avg_losses-mean*.csv output/${prov}/ebR_${region}_avg_losses-stats_${calc}.csv;
             mv output/temp/avg_losses-quantile-0.05*.csv output/${prov}/ebR_${region}_avg_losses-q05_${calc}.csv;
