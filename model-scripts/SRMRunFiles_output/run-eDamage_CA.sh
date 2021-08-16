@@ -6732,3 +6732,15239 @@ mv output/temp/avg_damages-mean*.csv output/YT/eD_YT_damages-mean_r1.csv;
 oq export src_loss_table -1 -e csv -d output/temp/
 mv output/temp/src_loss_table_*.csv output/YT/eD_YT_src_loss_table_r1.csv;
 # =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4812
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4812.ini > output/AB/eD_AB4812_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4812_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4812_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4812_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4812_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4812.ini > output/AB/eD_AB4812_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4812_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4812_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4812_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4813
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4813.ini > output/AB/eD_AB4813_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4813_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4813_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4813_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4813_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4813.ini > output/AB/eD_AB4813_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4813_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4813_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4813_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4816
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4816.ini > output/AB/eD_AB4816_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4816_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4816_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4816_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4816_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4816.ini > output/AB/eD_AB4816_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4816_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4816_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4816_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4817
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4817.ini > output/AB/eD_AB4817_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4817_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4817_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4817_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4817_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4817.ini > output/AB/eD_AB4817_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4817_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4817_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4817_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4818
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4818.ini > output/AB/eD_AB4818_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4818_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4818_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4818_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4818_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4818.ini > output/AB/eD_AB4818_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4818_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4818_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4818_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4819
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4819.ini > output/AB/eD_AB4819_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4819_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4819_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4819_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4819_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4819.ini > output/AB/eD_AB4819_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4819_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4819_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4819_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4801
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4801.ini > output/AB/eD_AB4801_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4801_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4801_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4801_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4801_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4801.ini > output/AB/eD_AB4801_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4801_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4801_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4801_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4802
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4802.ini > output/AB/eD_AB4802_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4802_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4802_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4802_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4802_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4802.ini > output/AB/eD_AB4802_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4802_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4802_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4802_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4803
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4803.ini > output/AB/eD_AB4803_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4803_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4803_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4803_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4803_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4803.ini > output/AB/eD_AB4803_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4803_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4803_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4803_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4804
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4804.ini > output/AB/eD_AB4804_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4804_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4804_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4804_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4804_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4804.ini > output/AB/eD_AB4804_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4804_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4804_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4804_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4805
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4805.ini > output/AB/eD_AB4805_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4805_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4805_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4805_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4805_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4805.ini > output/AB/eD_AB4805_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4805_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4805_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4805_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4806
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4806.ini > output/AB/eD_AB4806_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4806_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4806_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4806_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4806_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4806.ini > output/AB/eD_AB4806_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4806_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4806_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4806_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4807
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4807.ini > output/AB/eD_AB4807_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4807_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4807_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4807_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4807_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4807.ini > output/AB/eD_AB4807_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4807_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4807_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4807_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4808
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4808.ini > output/AB/eD_AB4808_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4808_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4808_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4808_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4808_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4808.ini > output/AB/eD_AB4808_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4808_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4808_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4808_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4809
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4809.ini > output/AB/eD_AB4809_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4809_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4809_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4809_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4809_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4809.ini > output/AB/eD_AB4809_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4809_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4809_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4809_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4810
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4810.ini > output/AB/eD_AB4810_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4810_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4810_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4810_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4810_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4810.ini > output/AB/eD_AB4810_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4810_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4810_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4810_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4811
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4811.ini > output/AB/eD_AB4811_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4811_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4811_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4811_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4811_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4811.ini > output/AB/eD_AB4811_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4811_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4811_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4811_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4814
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4814.ini > output/AB/eD_AB4814_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4814_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4814_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4814_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4814_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4814.ini > output/AB/eD_AB4814_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4814_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4814_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4814_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4815
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4815.ini > output/AB/eD_AB4815_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4815_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4815_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4815_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4815_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4815.ini > output/AB/eD_AB4815_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4815_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4815_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4815_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5949
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5949.ini > output/BC/eD_BC5949_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5949_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5949_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5949_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5949_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5949.ini > output/BC/eD_BC5949_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5949_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5949_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5949_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5951
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5951.ini > output/BC/eD_BC5951_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5951_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5951_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5951_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5951_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5951.ini > output/BC/eD_BC5951_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5951_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5951_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5951_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5953
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5953.ini > output/BC/eD_BC5953_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5953_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5953_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5953_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5953_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5953.ini > output/BC/eD_BC5953_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5953_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5953_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5953_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5955
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5955.ini > output/BC/eD_BC5955_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5955_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5955_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5955_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5955_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5955.ini > output/BC/eD_BC5955_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5955_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5955_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5955_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5957
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5957.ini > output/BC/eD_BC5957_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5957_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5957_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5957_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5957_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5957.ini > output/BC/eD_BC5957_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5957_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5957_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5957_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5959
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5959.ini > output/BC/eD_BC5959_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5959_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5959_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5959_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5959_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5959.ini > output/BC/eD_BC5959_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5959_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5959_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5959_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5901
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5901.ini > output/BC/eD_BC5901_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5901_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5901_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5901_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5901_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5901.ini > output/BC/eD_BC5901_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5901_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5901_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5901_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5903
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5903.ini > output/BC/eD_BC5903_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5903_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5903_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5903_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5903_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5903.ini > output/BC/eD_BC5903_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5903_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5903_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5903_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5905
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5905.ini > output/BC/eD_BC5905_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5905_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5905_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5905_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5905_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5905.ini > output/BC/eD_BC5905_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5905_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5905_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5905_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5907
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5907.ini > output/BC/eD_BC5907_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5907_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5907_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5907_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5907_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5907.ini > output/BC/eD_BC5907_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5907_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5907_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5907_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5909
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5909.ini > output/BC/eD_BC5909_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5909_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5909_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5909_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5909_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5909.ini > output/BC/eD_BC5909_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5909_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5909_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5909_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5915
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5915.ini > output/BC/eD_BC5915_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5915_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5915_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5915_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5915_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5915.ini > output/BC/eD_BC5915_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5915_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5915_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5915_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5917
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5917.ini > output/BC/eD_BC5917_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5917_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5917_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5917_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5917_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5917.ini > output/BC/eD_BC5917_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5917_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5917_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5917_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5919
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5919.ini > output/BC/eD_BC5919_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5919_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5919_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5919_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5919_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5919.ini > output/BC/eD_BC5919_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5919_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5919_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5919_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5921
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5921.ini > output/BC/eD_BC5921_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5921_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5921_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5921_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5921_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5921.ini > output/BC/eD_BC5921_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5921_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5921_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5921_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5923
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5923.ini > output/BC/eD_BC5923_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5923_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5923_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5923_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5923_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5923.ini > output/BC/eD_BC5923_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5923_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5923_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5923_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5924
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5924.ini > output/BC/eD_BC5924_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5924_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5924_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5924_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5924_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5924.ini > output/BC/eD_BC5924_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5924_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5924_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5924_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5926
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5926.ini > output/BC/eD_BC5926_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5926_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5926_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5926_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5926_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5926.ini > output/BC/eD_BC5926_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5926_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5926_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5926_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5927
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5927.ini > output/BC/eD_BC5927_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5927_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5927_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5927_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5927_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5927.ini > output/BC/eD_BC5927_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5927_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5927_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5927_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5929
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5929.ini > output/BC/eD_BC5929_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5929_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5929_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5929_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5929_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5929.ini > output/BC/eD_BC5929_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5929_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5929_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5929_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5931
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5931.ini > output/BC/eD_BC5931_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5931_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5931_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5931_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5931_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5931.ini > output/BC/eD_BC5931_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5931_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5931_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5931_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5933
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5933.ini > output/BC/eD_BC5933_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5933_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5933_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5933_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5933_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5933.ini > output/BC/eD_BC5933_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5933_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5933_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5933_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5935
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5935.ini > output/BC/eD_BC5935_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5935_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5935_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5935_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5935_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5935.ini > output/BC/eD_BC5935_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5935_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5935_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5935_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5937
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5937.ini > output/BC/eD_BC5937_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5937_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5937_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5937_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5937_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5937.ini > output/BC/eD_BC5937_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5937_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5937_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5937_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5939
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5939.ini > output/BC/eD_BC5939_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5939_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5939_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5939_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5939_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5939.ini > output/BC/eD_BC5939_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5939_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5939_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5939_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5941
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5941.ini > output/BC/eD_BC5941_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5941_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5941_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5941_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5941_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5941.ini > output/BC/eD_BC5941_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5941_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5941_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5941_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5943
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5943.ini > output/BC/eD_BC5943_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5943_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5943_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5943_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5943_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5943.ini > output/BC/eD_BC5943_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5943_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5943_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5943_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5945
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5945.ini > output/BC/eD_BC5945_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5945_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5945_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5945_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5945_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5945.ini > output/BC/eD_BC5945_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5945_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5945_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5945_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5947
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5947.ini > output/BC/eD_BC5947_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5947_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5947_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5947_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5947_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5947.ini > output/BC/eD_BC5947_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5947_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5947_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5947_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4621
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4621.ini > output/MB/eD_MB4621_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4621_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4621_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4621_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4621_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4621.ini > output/MB/eD_MB4621_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4621_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4621_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4621_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4622
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4622.ini > output/MB/eD_MB4622_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4622_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4622_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4622_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4622_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4622.ini > output/MB/eD_MB4622_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4622_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4622_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4622_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4623
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4623.ini > output/MB/eD_MB4623_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4623_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4623_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4623_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4623_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4623.ini > output/MB/eD_MB4623_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4623_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4623_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4623_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4601
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4601.ini > output/MB/eD_MB4601_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4601_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4601_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4601_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4601_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4601.ini > output/MB/eD_MB4601_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4601_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4601_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4601_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4602
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4602.ini > output/MB/eD_MB4602_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4602_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4602_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4602_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4602_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4602.ini > output/MB/eD_MB4602_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4602_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4602_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4602_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4603
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4603.ini > output/MB/eD_MB4603_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4603_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4603_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4603_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4603_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4603.ini > output/MB/eD_MB4603_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4603_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4603_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4603_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4604
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4604.ini > output/MB/eD_MB4604_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4604_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4604_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4604_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4604_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4604.ini > output/MB/eD_MB4604_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4604_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4604_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4604_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4605
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4605.ini > output/MB/eD_MB4605_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4605_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4605_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4605_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4605_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4605.ini > output/MB/eD_MB4605_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4605_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4605_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4605_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4606
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4606.ini > output/MB/eD_MB4606_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4606_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4606_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4606_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4606_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4606.ini > output/MB/eD_MB4606_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4606_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4606_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4606_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4607
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4607.ini > output/MB/eD_MB4607_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4607_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4607_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4607_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4607_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4607.ini > output/MB/eD_MB4607_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4607_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4607_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4607_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4608
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4608.ini > output/MB/eD_MB4608_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4608_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4608_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4608_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4608_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4608.ini > output/MB/eD_MB4608_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4608_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4608_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4608_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4609
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4609.ini > output/MB/eD_MB4609_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4609_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4609_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4609_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4609_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4609.ini > output/MB/eD_MB4609_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4609_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4609_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4609_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4610
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4610.ini > output/MB/eD_MB4610_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4610_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4610_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4610_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4610_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4610.ini > output/MB/eD_MB4610_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4610_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4610_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4610_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4611
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4611.ini > output/MB/eD_MB4611_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4611_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4611_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4611_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4611_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4611.ini > output/MB/eD_MB4611_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4611_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4611_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4611_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4612
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4612.ini > output/MB/eD_MB4612_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4612_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4612_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4612_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4612_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4612.ini > output/MB/eD_MB4612_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4612_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4612_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4612_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4613
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4613.ini > output/MB/eD_MB4613_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4613_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4613_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4613_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4613_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4613.ini > output/MB/eD_MB4613_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4613_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4613_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4613_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4614
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4614.ini > output/MB/eD_MB4614_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4614_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4614_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4614_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4614_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4614.ini > output/MB/eD_MB4614_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4614_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4614_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4614_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4615
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4615.ini > output/MB/eD_MB4615_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4615_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4615_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4615_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4615_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4615.ini > output/MB/eD_MB4615_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4615_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4615_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4615_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4616
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4616.ini > output/MB/eD_MB4616_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4616_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4616_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4616_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4616_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4616.ini > output/MB/eD_MB4616_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4616_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4616_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4616_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4617
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4617.ini > output/MB/eD_MB4617_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4617_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4617_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4617_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4617_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4617.ini > output/MB/eD_MB4617_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4617_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4617_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4617_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4618
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4618.ini > output/MB/eD_MB4618_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4618_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4618_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4618_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4618_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4618.ini > output/MB/eD_MB4618_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4618_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4618_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4618_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4619
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4619.ini > output/MB/eD_MB4619_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4619_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4619_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4619_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4619_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4619.ini > output/MB/eD_MB4619_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4619_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4619_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4619_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4620
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4620.ini > output/MB/eD_MB4620_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4620_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4620_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4620_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4620_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4620.ini > output/MB/eD_MB4620_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4620_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4620_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4620_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1308
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1308.ini > output/NB/eD_NB1308_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1308_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1308_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1308_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1308_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1308.ini > output/NB/eD_NB1308_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1308_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1308_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1308_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1309
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1309.ini > output/NB/eD_NB1309_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1309_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1309_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1309_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1309_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1309.ini > output/NB/eD_NB1309_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1309_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1309_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1309_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1312
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1312.ini > output/NB/eD_NB1312_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1312_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1312_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1312_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1312_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1312.ini > output/NB/eD_NB1312_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1312_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1312_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1312_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1313
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1313.ini > output/NB/eD_NB1313_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1313_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1313_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1313_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1313_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1313.ini > output/NB/eD_NB1313_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1313_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1313_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1313_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1314
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1314.ini > output/NB/eD_NB1314_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1314_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1314_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1314_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1314_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1314.ini > output/NB/eD_NB1314_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1314_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1314_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1314_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1315
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1315.ini > output/NB/eD_NB1315_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1315_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1315_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1315_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1315_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1315.ini > output/NB/eD_NB1315_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1315_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1315_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1315_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1301
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1301.ini > output/NB/eD_NB1301_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1301_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1301_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1301_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1301_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1301.ini > output/NB/eD_NB1301_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1301_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1301_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1301_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1302
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1302.ini > output/NB/eD_NB1302_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1302_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1302_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1302_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1302_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1302.ini > output/NB/eD_NB1302_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1302_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1302_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1302_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1303
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1303.ini > output/NB/eD_NB1303_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1303_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1303_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1303_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1303_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1303.ini > output/NB/eD_NB1303_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1303_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1303_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1303_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1304
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1304.ini > output/NB/eD_NB1304_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1304_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1304_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1304_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1304_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1304.ini > output/NB/eD_NB1304_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1304_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1304_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1304_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1305
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1305.ini > output/NB/eD_NB1305_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1305_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1305_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1305_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1305_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1305.ini > output/NB/eD_NB1305_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1305_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1305_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1305_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1306
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1306.ini > output/NB/eD_NB1306_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1306_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1306_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1306_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1306_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1306.ini > output/NB/eD_NB1306_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1306_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1306_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1306_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1307
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1307.ini > output/NB/eD_NB1307_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1307_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1307_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1307_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1307_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1307.ini > output/NB/eD_NB1307_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1307_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1307_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1307_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1310
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1310.ini > output/NB/eD_NB1310_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1310_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1310_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1310_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1310_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1310.ini > output/NB/eD_NB1310_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1310_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1310_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1310_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1311
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1311.ini > output/NB/eD_NB1311_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1311_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1311_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1311_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1311_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1311.ini > output/NB/eD_NB1311_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1311_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1311_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1311_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1011
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1011.ini > output/NL/eD_NL1011_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1011_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1011_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1011_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1011_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1011.ini > output/NL/eD_NL1011_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1011_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1011_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1011_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1001
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1001.ini > output/NL/eD_NL1001_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1001_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1001_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1001_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1001_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1001.ini > output/NL/eD_NL1001_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1001_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1001_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1001_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1002
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1002.ini > output/NL/eD_NL1002_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1002_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1002_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1002_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1002_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1002.ini > output/NL/eD_NL1002_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1002_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1002_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1002_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1003
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1003.ini > output/NL/eD_NL1003_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1003_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1003_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1003_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1003_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1003.ini > output/NL/eD_NL1003_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1003_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1003_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1003_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1004
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1004.ini > output/NL/eD_NL1004_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1004_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1004_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1004_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1004_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1004.ini > output/NL/eD_NL1004_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1004_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1004_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1004_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1005
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1005.ini > output/NL/eD_NL1005_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1005_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1005_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1005_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1005_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1005.ini > output/NL/eD_NL1005_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1005_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1005_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1005_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1006
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1006.ini > output/NL/eD_NL1006_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1006_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1006_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1006_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1006_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1006.ini > output/NL/eD_NL1006_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1006_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1006_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1006_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1007
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1007.ini > output/NL/eD_NL1007_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1007_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1007_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1007_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1007_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1007.ini > output/NL/eD_NL1007_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1007_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1007_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1007_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1008
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1008.ini > output/NL/eD_NL1008_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1008_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1008_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1008_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1008_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1008.ini > output/NL/eD_NL1008_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1008_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1008_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1008_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1009
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1009.ini > output/NL/eD_NL1009_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1009_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1009_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1009_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1009_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1009.ini > output/NL/eD_NL1009_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1009_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1009_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1009_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1010
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1010.ini > output/NL/eD_NL1010_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1010_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1010_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1010_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1010_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1010.ini > output/NL/eD_NL1010_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1010_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1010_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1010_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1215
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1215.ini > output/NS/eD_NS1215_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1215_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1215_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1215_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1215_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1215.ini > output/NS/eD_NS1215_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1215_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1215_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1215_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1218
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1218.ini > output/NS/eD_NS1218_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1218_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1218_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1218_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1218_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1218.ini > output/NS/eD_NS1218_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1218_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1218_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1218_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1201
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1201.ini > output/NS/eD_NS1201_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1201_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1201_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1201_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1201_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1201.ini > output/NS/eD_NS1201_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1201_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1201_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1201_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1202
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1202.ini > output/NS/eD_NS1202_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1202_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1202_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1202_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1202_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1202.ini > output/NS/eD_NS1202_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1202_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1202_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1202_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1203
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1203.ini > output/NS/eD_NS1203_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1203_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1203_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1203_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1203_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1203.ini > output/NS/eD_NS1203_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1203_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1203_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1203_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1204
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1204.ini > output/NS/eD_NS1204_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1204_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1204_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1204_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1204_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1204.ini > output/NS/eD_NS1204_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1204_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1204_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1204_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1205
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1205.ini > output/NS/eD_NS1205_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1205_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1205_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1205_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1205_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1205.ini > output/NS/eD_NS1205_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1205_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1205_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1205_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1206
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1206.ini > output/NS/eD_NS1206_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1206_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1206_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1206_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1206_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1206.ini > output/NS/eD_NS1206_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1206_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1206_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1206_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1207
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1207.ini > output/NS/eD_NS1207_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1207_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1207_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1207_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1207_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1207.ini > output/NS/eD_NS1207_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1207_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1207_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1207_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1208
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1208.ini > output/NS/eD_NS1208_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1208_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1208_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1208_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1208_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1208.ini > output/NS/eD_NS1208_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1208_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1208_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1208_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1209
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1209.ini > output/NS/eD_NS1209_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1209_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1209_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1209_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1209_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1209.ini > output/NS/eD_NS1209_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1209_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1209_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1209_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1210
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1210.ini > output/NS/eD_NS1210_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1210_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1210_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1210_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1210_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1210.ini > output/NS/eD_NS1210_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1210_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1210_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1210_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1211
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1211.ini > output/NS/eD_NS1211_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1211_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1211_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1211_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1211_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1211.ini > output/NS/eD_NS1211_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1211_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1211_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1211_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1212
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1212.ini > output/NS/eD_NS1212_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1212_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1212_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1212_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1212_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1212.ini > output/NS/eD_NS1212_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1212_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1212_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1212_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1213
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1213.ini > output/NS/eD_NS1213_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1213_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1213_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1213_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1213_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1213.ini > output/NS/eD_NS1213_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1213_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1213_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1213_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1214
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1214.ini > output/NS/eD_NS1214_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1214_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1214_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1214_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1214_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1214.ini > output/NS/eD_NS1214_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1214_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1214_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1214_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1216
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1216.ini > output/NS/eD_NS1216_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1216_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1216_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1216_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1216_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1216.ini > output/NS/eD_NS1216_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1216_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1216_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1216_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1217
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1217.ini > output/NS/eD_NS1217_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1217_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1217_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1217_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1217_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1217.ini > output/NS/eD_NS1217_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1217_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1217_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1217_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT6101
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NT6101.ini > output/NT/eD_NT6101_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6101_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/eD_NT6101_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6101_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6101_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NT6101.ini > output/NT/eD_NT6101_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6101_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6101_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6101_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT6104
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NT6104.ini > output/NT/eD_NT6104_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6104_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/eD_NT6104_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6104_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6104_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NT6104.ini > output/NT/eD_NT6104_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6104_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6104_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6104_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT6105
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NT6105.ini > output/NT/eD_NT6105_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6105_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/eD_NT6105_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6105_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6105_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NT6105.ini > output/NT/eD_NT6105_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6105_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6105_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6105_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT6106
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NT6106.ini > output/NT/eD_NT6106_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6106_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/eD_NT6106_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6106_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6106_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NT6106.ini > output/NT/eD_NT6106_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6106_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6106_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6106_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT6102
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NT6102.ini > output/NT/eD_NT6102_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6102_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/eD_NT6102_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6102_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6102_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NT6102.ini > output/NT/eD_NT6102_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6102_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6102_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6102_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT6103
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NT6103.ini > output/NT/eD_NT6103_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6103_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/eD_NT6103_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6103_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6103_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NT6103.ini > output/NT/eD_NT6103_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6103_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6103_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6103_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NU6204
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NU6204.ini > output/NU/eD_NU6204_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/eD_NU6204_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NU/eD_NU6204_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NU/eD_NU6204_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/eD_NU6204_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NU6204.ini > output/NU/eD_NU6204_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/eD_NU6204_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NU/eD_NU6204_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/eD_NU6204_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NU6208
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NU6208.ini > output/NU/eD_NU6208_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/eD_NU6208_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NU/eD_NU6208_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NU/eD_NU6208_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/eD_NU6208_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NU6208.ini > output/NU/eD_NU6208_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/eD_NU6208_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NU/eD_NU6208_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/eD_NU6208_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NU6205
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NU6205.ini > output/NU/eD_NU6205_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/eD_NU6205_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NU/eD_NU6205_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NU/eD_NU6205_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/eD_NU6205_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NU6205.ini > output/NU/eD_NU6205_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/eD_NU6205_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NU/eD_NU6205_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/eD_NU6205_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3560
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3560.ini > output/ON/eD_ON3560_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3560_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3560_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3560_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3560_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3560.ini > output/ON/eD_ON3560_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3560_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3560_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3560_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3548
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3548.ini > output/ON/eD_ON3548_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3548_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3548_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3548_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3548_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3548.ini > output/ON/eD_ON3548_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3548_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3548_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3548_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3552
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3552.ini > output/ON/eD_ON3552_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3552_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3552_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3552_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3552_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3552.ini > output/ON/eD_ON3552_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3552_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3552_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3552_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3553
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3553.ini > output/ON/eD_ON3553_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3553_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3553_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3553_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3553_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3553.ini > output/ON/eD_ON3553_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3553_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3553_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3553_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3554
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3554.ini > output/ON/eD_ON3554_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3554_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3554_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3554_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3554_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3554.ini > output/ON/eD_ON3554_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3554_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3554_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3554_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3556
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3556.ini > output/ON/eD_ON3556_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3556_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3556_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3556_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3556_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3556.ini > output/ON/eD_ON3556_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3556_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3556_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3556_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3557
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3557.ini > output/ON/eD_ON3557_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3557_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3557_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3557_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3557_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3557.ini > output/ON/eD_ON3557_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3557_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3557_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3557_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3558
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3558.ini > output/ON/eD_ON3558_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3558_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3558_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3558_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3558_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3558.ini > output/ON/eD_ON3558_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3558_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3558_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3558_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3559
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3559.ini > output/ON/eD_ON3559_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3559_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3559_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3559_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3559_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3559.ini > output/ON/eD_ON3559_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3559_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3559_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3559_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3501
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3501.ini > output/ON/eD_ON3501_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3501_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3501_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3501_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3501_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3501.ini > output/ON/eD_ON3501_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3501_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3501_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3501_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3502
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3502.ini > output/ON/eD_ON3502_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3502_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3502_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3502_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3502_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3502.ini > output/ON/eD_ON3502_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3502_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3502_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3502_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3506
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3506.ini > output/ON/eD_ON3506_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3506_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3506_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3506_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3506_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3506.ini > output/ON/eD_ON3506_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3506_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3506_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3506_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3507
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3507.ini > output/ON/eD_ON3507_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3507_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3507_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3507_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3507_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3507.ini > output/ON/eD_ON3507_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3507_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3507_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3507_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3509
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3509.ini > output/ON/eD_ON3509_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3509_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3509_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3509_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3509_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3509.ini > output/ON/eD_ON3509_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3509_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3509_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3509_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3510
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3510.ini > output/ON/eD_ON3510_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3510_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3510_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3510_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3510_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3510.ini > output/ON/eD_ON3510_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3510_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3510_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3510_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3511
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3511.ini > output/ON/eD_ON3511_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3511_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3511_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3511_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3511_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3511.ini > output/ON/eD_ON3511_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3511_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3511_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3511_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3512
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3512.ini > output/ON/eD_ON3512_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3512_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3512_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3512_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3512_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3512.ini > output/ON/eD_ON3512_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3512_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3512_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3512_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3513
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3513.ini > output/ON/eD_ON3513_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3513_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3513_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3513_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3513_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3513.ini > output/ON/eD_ON3513_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3513_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3513_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3513_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3514
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3514.ini > output/ON/eD_ON3514_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3514_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3514_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3514_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3514_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3514.ini > output/ON/eD_ON3514_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3514_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3514_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3514_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3515
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3515.ini > output/ON/eD_ON3515_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3515_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3515_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3515_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3515_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3515.ini > output/ON/eD_ON3515_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3515_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3515_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3515_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3516
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3516.ini > output/ON/eD_ON3516_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3516_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3516_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3516_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3516_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3516.ini > output/ON/eD_ON3516_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3516_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3516_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3516_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3518
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3518.ini > output/ON/eD_ON3518_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3518_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3518_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3518_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3518_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3518.ini > output/ON/eD_ON3518_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3518_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3518_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3518_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3519
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3519.ini > output/ON/eD_ON3519_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3519_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3519_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3519_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3519_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3519.ini > output/ON/eD_ON3519_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3519_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3519_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3519_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3520
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3520.ini > output/ON/eD_ON3520_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3520_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3520_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3520_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3520_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3520.ini > output/ON/eD_ON3520_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3520_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3520_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3520_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3521
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3521.ini > output/ON/eD_ON3521_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3521_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3521_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3521_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3521_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3521.ini > output/ON/eD_ON3521_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3521_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3521_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3521_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3522
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3522.ini > output/ON/eD_ON3522_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3522_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3522_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3522_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3522_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3522.ini > output/ON/eD_ON3522_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3522_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3522_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3522_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3523
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3523.ini > output/ON/eD_ON3523_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3523_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3523_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3523_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3523_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3523.ini > output/ON/eD_ON3523_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3523_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3523_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3523_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3524
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3524.ini > output/ON/eD_ON3524_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3524_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3524_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3524_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3524_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3524.ini > output/ON/eD_ON3524_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3524_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3524_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3524_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3525
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3525.ini > output/ON/eD_ON3525_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3525_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3525_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3525_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3525_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3525.ini > output/ON/eD_ON3525_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3525_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3525_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3525_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3526
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3526.ini > output/ON/eD_ON3526_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3526_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3526_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3526_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3526_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3526.ini > output/ON/eD_ON3526_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3526_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3526_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3526_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3528
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3528.ini > output/ON/eD_ON3528_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3528_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3528_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3528_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3528_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3528.ini > output/ON/eD_ON3528_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3528_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3528_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3528_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3529
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3529.ini > output/ON/eD_ON3529_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3529_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3529_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3529_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3529_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3529.ini > output/ON/eD_ON3529_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3529_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3529_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3529_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3530
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3530.ini > output/ON/eD_ON3530_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3530_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3530_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3530_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3530_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3530.ini > output/ON/eD_ON3530_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3530_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3530_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3530_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3531
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3531.ini > output/ON/eD_ON3531_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3531_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3531_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3531_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3531_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3531.ini > output/ON/eD_ON3531_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3531_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3531_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3531_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3532
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3532.ini > output/ON/eD_ON3532_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3532_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3532_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3532_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3532_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3532.ini > output/ON/eD_ON3532_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3532_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3532_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3532_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3534
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3534.ini > output/ON/eD_ON3534_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3534_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3534_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3534_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3534_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3534.ini > output/ON/eD_ON3534_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3534_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3534_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3534_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3536
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3536.ini > output/ON/eD_ON3536_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3536_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3536_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3536_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3536_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3536.ini > output/ON/eD_ON3536_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3536_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3536_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3536_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3537
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3537.ini > output/ON/eD_ON3537_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3537_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3537_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3537_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3537_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3537.ini > output/ON/eD_ON3537_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3537_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3537_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3537_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3538
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3538.ini > output/ON/eD_ON3538_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3538_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3538_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3538_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3538_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3538.ini > output/ON/eD_ON3538_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3538_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3538_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3538_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3539
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3539.ini > output/ON/eD_ON3539_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3539_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3539_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3539_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3539_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3539.ini > output/ON/eD_ON3539_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3539_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3539_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3539_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3540
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3540.ini > output/ON/eD_ON3540_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3540_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3540_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3540_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3540_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3540.ini > output/ON/eD_ON3540_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3540_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3540_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3540_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3541
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3541.ini > output/ON/eD_ON3541_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3541_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3541_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3541_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3541_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3541.ini > output/ON/eD_ON3541_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3541_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3541_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3541_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3542
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3542.ini > output/ON/eD_ON3542_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3542_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3542_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3542_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3542_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3542.ini > output/ON/eD_ON3542_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3542_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3542_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3542_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3543
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3543.ini > output/ON/eD_ON3543_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3543_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3543_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3543_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3543_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3543.ini > output/ON/eD_ON3543_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3543_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3543_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3543_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3544
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3544.ini > output/ON/eD_ON3544_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3544_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3544_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3544_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3544_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3544.ini > output/ON/eD_ON3544_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3544_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3544_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3544_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3546
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3546.ini > output/ON/eD_ON3546_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3546_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3546_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3546_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3546_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3546.ini > output/ON/eD_ON3546_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3546_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3546_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3546_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3547
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3547.ini > output/ON/eD_ON3547_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3547_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3547_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3547_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3547_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3547.ini > output/ON/eD_ON3547_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3547_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3547_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3547_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3549
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3549.ini > output/ON/eD_ON3549_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3549_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3549_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3549_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3549_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3549.ini > output/ON/eD_ON3549_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3549_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3549_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3549_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3551
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3551.ini > output/ON/eD_ON3551_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3551_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3551_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3551_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3551_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3551.ini > output/ON/eD_ON3551_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3551_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3551_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3551_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# PE1103
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_PE1103.ini > output/PE/eD_PE1103_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/eD_PE1103_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/PE/eD_PE1103_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/PE/eD_PE1103_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/eD_PE1103_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_PE1103.ini > output/PE/eD_PE1103_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/eD_PE1103_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/PE/eD_PE1103_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/eD_PE1103_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# PE1101
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_PE1101.ini > output/PE/eD_PE1101_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/eD_PE1101_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/PE/eD_PE1101_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/PE/eD_PE1101_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/eD_PE1101_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_PE1101.ini > output/PE/eD_PE1101_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/eD_PE1101_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/PE/eD_PE1101_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/eD_PE1101_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# PE1102
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_PE1102.ini > output/PE/eD_PE1102_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/eD_PE1102_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/PE/eD_PE1102_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/PE/eD_PE1102_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/eD_PE1102_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_PE1102.ini > output/PE/eD_PE1102_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/eD_PE1102_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/PE/eD_PE1102_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/eD_PE1102_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2499
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2499.ini > output/QC/eD_QC2499_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2499_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2499_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2499_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2499_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2499.ini > output/QC/eD_QC2499_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2499_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2499_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2499_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2403
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2403.ini > output/QC/eD_QC2403_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2403_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2403_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2403_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2403_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2403.ini > output/QC/eD_QC2403_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2403_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2403_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2403_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2404
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2404.ini > output/QC/eD_QC2404_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2404_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2404_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2404_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2404_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2404.ini > output/QC/eD_QC2404_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2404_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2404_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2404_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2401
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2401.ini > output/QC/eD_QC2401_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2401_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2401_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2401_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2401_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2401.ini > output/QC/eD_QC2401_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2401_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2401_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2401_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2402
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2402.ini > output/QC/eD_QC2402_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2402_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2402_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2402_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2402_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2402.ini > output/QC/eD_QC2402_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2402_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2402_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2402_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2405
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2405.ini > output/QC/eD_QC2405_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2405_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2405_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2405_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2405_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2405.ini > output/QC/eD_QC2405_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2405_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2405_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2405_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2406
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2406.ini > output/QC/eD_QC2406_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2406_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2406_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2406_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2406_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2406.ini > output/QC/eD_QC2406_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2406_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2406_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2406_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2407
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2407.ini > output/QC/eD_QC2407_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2407_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2407_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2407_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2407_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2407.ini > output/QC/eD_QC2407_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2407_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2407_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2407_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2408
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2408.ini > output/QC/eD_QC2408_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2408_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2408_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2408_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2408_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2408.ini > output/QC/eD_QC2408_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2408_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2408_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2408_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2409
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2409.ini > output/QC/eD_QC2409_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2409_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2409_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2409_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2409_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2409.ini > output/QC/eD_QC2409_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2409_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2409_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2409_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2410
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2410.ini > output/QC/eD_QC2410_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2410_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2410_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2410_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2410_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2410.ini > output/QC/eD_QC2410_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2410_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2410_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2410_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2411
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2411.ini > output/QC/eD_QC2411_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2411_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2411_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2411_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2411_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2411.ini > output/QC/eD_QC2411_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2411_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2411_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2411_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2412
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2412.ini > output/QC/eD_QC2412_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2412_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2412_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2412_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2412_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2412.ini > output/QC/eD_QC2412_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2412_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2412_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2412_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2413
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2413.ini > output/QC/eD_QC2413_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2413_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2413_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2413_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2413_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2413.ini > output/QC/eD_QC2413_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2413_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2413_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2413_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2414
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2414.ini > output/QC/eD_QC2414_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2414_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2414_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2414_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2414_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2414.ini > output/QC/eD_QC2414_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2414_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2414_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2414_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2415
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2415.ini > output/QC/eD_QC2415_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2415_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2415_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2415_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2415_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2415.ini > output/QC/eD_QC2415_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2415_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2415_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2415_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2416
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2416.ini > output/QC/eD_QC2416_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2416_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2416_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2416_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2416_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2416.ini > output/QC/eD_QC2416_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2416_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2416_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2416_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2417
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2417.ini > output/QC/eD_QC2417_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2417_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2417_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2417_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2417_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2417.ini > output/QC/eD_QC2417_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2417_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2417_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2417_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2418
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2418.ini > output/QC/eD_QC2418_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2418_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2418_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2418_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2418_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2418.ini > output/QC/eD_QC2418_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2418_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2418_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2418_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2419
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2419.ini > output/QC/eD_QC2419_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2419_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2419_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2419_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2419_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2419.ini > output/QC/eD_QC2419_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2419_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2419_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2419_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2420
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2420.ini > output/QC/eD_QC2420_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2420_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2420_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2420_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2420_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2420.ini > output/QC/eD_QC2420_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2420_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2420_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2420_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2421
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2421.ini > output/QC/eD_QC2421_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2421_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2421_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2421_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2421_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2421.ini > output/QC/eD_QC2421_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2421_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2421_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2421_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2422
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2422.ini > output/QC/eD_QC2422_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2422_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2422_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2422_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2422_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2422.ini > output/QC/eD_QC2422_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2422_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2422_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2422_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2423
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2423.ini > output/QC/eD_QC2423_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2423_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2423_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2423_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2423_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2423.ini > output/QC/eD_QC2423_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2423_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2423_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2423_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2425
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2425.ini > output/QC/eD_QC2425_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2425_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2425_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2425_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2425_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2425.ini > output/QC/eD_QC2425_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2425_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2425_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2425_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2434
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2434.ini > output/QC/eD_QC2434_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2434_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2434_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2434_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2434_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2434.ini > output/QC/eD_QC2434_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2434_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2434_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2434_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2435
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2435.ini > output/QC/eD_QC2435_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2435_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2435_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2435_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2435_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2435.ini > output/QC/eD_QC2435_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2435_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2435_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2435_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2436
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2436.ini > output/QC/eD_QC2436_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2436_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2436_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2436_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2436_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2436.ini > output/QC/eD_QC2436_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2436_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2436_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2436_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2451
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2451.ini > output/QC/eD_QC2451_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2451_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2451_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2451_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2451_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2451.ini > output/QC/eD_QC2451_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2451_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2451_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2451_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2462
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2462.ini > output/QC/eD_QC2462_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2462_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2462_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2462_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2462_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2462.ini > output/QC/eD_QC2462_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2462_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2462_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2462_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2479
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2479.ini > output/QC/eD_QC2479_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2479_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2479_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2479_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2479_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2479.ini > output/QC/eD_QC2479_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2479_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2479_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2479_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2483
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2483.ini > output/QC/eD_QC2483_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2483_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2483_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2483_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2483_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2483.ini > output/QC/eD_QC2483_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2483_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2483_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2483_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2485
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2485.ini > output/QC/eD_QC2485_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2485_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2485_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2485_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2485_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2485.ini > output/QC/eD_QC2485_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2485_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2485_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2485_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2486
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2486.ini > output/QC/eD_QC2486_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2486_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2486_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2486_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2486_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2486.ini > output/QC/eD_QC2486_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2486_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2486_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2486_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2487
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2487.ini > output/QC/eD_QC2487_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2487_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2487_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2487_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2487_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2487.ini > output/QC/eD_QC2487_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2487_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2487_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2487_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2488
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2488.ini > output/QC/eD_QC2488_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2488_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2488_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2488_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2488_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2488.ini > output/QC/eD_QC2488_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2488_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2488_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2488_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2489
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2489.ini > output/QC/eD_QC2489_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2489_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2489_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2489_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2489_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2489.ini > output/QC/eD_QC2489_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2489_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2489_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2489_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2490
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2490.ini > output/QC/eD_QC2490_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2490_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2490_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2490_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2490_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2490.ini > output/QC/eD_QC2490_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2490_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2490_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2490_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2491
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2491.ini > output/QC/eD_QC2491_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2491_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2491_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2491_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2491_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2491.ini > output/QC/eD_QC2491_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2491_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2491_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2491_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2492
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2492.ini > output/QC/eD_QC2492_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2492_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2492_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2492_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2492_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2492.ini > output/QC/eD_QC2492_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2492_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2492_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2492_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2493
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2493.ini > output/QC/eD_QC2493_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2493_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2493_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2493_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2493_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2493.ini > output/QC/eD_QC2493_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2493_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2493_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2493_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2494
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2494.ini > output/QC/eD_QC2494_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2494_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2494_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2494_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2494_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2494.ini > output/QC/eD_QC2494_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2494_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2494_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2494_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2495
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2495.ini > output/QC/eD_QC2495_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2495_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2495_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2495_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2495_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2495.ini > output/QC/eD_QC2495_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2495_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2495_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2495_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2496
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2496.ini > output/QC/eD_QC2496_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2496_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2496_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2496_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2496_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2496.ini > output/QC/eD_QC2496_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2496_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2496_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2496_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2497
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2497.ini > output/QC/eD_QC2497_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2497_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2497_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2497_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2497_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2497.ini > output/QC/eD_QC2497_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2497_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2497_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2497_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2498
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2498.ini > output/QC/eD_QC2498_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2498_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2498_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2498_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2498_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2498.ini > output/QC/eD_QC2498_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2498_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2498_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2498_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2426
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2426.ini > output/QC/eD_QC2426_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2426_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2426_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2426_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2426_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2426.ini > output/QC/eD_QC2426_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2426_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2426_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2426_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2427
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2427.ini > output/QC/eD_QC2427_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2427_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2427_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2427_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2427_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2427.ini > output/QC/eD_QC2427_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2427_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2427_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2427_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2428
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2428.ini > output/QC/eD_QC2428_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2428_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2428_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2428_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2428_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2428.ini > output/QC/eD_QC2428_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2428_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2428_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2428_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2429
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2429.ini > output/QC/eD_QC2429_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2429_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2429_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2429_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2429_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2429.ini > output/QC/eD_QC2429_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2429_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2429_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2429_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2430
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2430.ini > output/QC/eD_QC2430_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2430_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2430_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2430_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2430_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2430.ini > output/QC/eD_QC2430_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2430_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2430_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2430_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2431
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2431.ini > output/QC/eD_QC2431_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2431_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2431_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2431_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2431_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2431.ini > output/QC/eD_QC2431_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2431_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2431_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2431_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2432
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2432.ini > output/QC/eD_QC2432_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2432_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2432_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2432_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2432_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2432.ini > output/QC/eD_QC2432_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2432_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2432_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2432_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2433
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2433.ini > output/QC/eD_QC2433_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2433_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2433_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2433_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2433_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2433.ini > output/QC/eD_QC2433_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2433_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2433_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2433_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2437
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2437.ini > output/QC/eD_QC2437_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2437_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2437_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2437_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2437_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2437.ini > output/QC/eD_QC2437_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2437_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2437_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2437_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2438
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2438.ini > output/QC/eD_QC2438_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2438_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2438_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2438_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2438_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2438.ini > output/QC/eD_QC2438_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2438_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2438_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2438_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2439
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2439.ini > output/QC/eD_QC2439_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2439_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2439_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2439_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2439_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2439.ini > output/QC/eD_QC2439_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2439_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2439_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2439_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2440
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2440.ini > output/QC/eD_QC2440_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2440_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2440_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2440_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2440_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2440.ini > output/QC/eD_QC2440_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2440_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2440_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2440_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2441
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2441.ini > output/QC/eD_QC2441_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2441_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2441_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2441_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2441_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2441.ini > output/QC/eD_QC2441_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2441_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2441_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2441_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2442
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2442.ini > output/QC/eD_QC2442_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2442_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2442_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2442_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2442_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2442.ini > output/QC/eD_QC2442_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2442_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2442_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2442_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2443
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2443.ini > output/QC/eD_QC2443_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2443_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2443_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2443_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2443_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2443.ini > output/QC/eD_QC2443_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2443_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2443_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2443_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2444
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2444.ini > output/QC/eD_QC2444_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2444_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2444_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2444_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2444_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2444.ini > output/QC/eD_QC2444_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2444_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2444_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2444_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2445
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2445.ini > output/QC/eD_QC2445_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2445_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2445_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2445_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2445_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2445.ini > output/QC/eD_QC2445_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2445_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2445_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2445_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2446
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2446.ini > output/QC/eD_QC2446_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2446_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2446_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2446_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2446_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2446.ini > output/QC/eD_QC2446_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2446_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2446_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2446_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2447
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2447.ini > output/QC/eD_QC2447_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2447_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2447_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2447_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2447_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2447.ini > output/QC/eD_QC2447_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2447_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2447_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2447_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2448
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2448.ini > output/QC/eD_QC2448_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2448_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2448_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2448_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2448_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2448.ini > output/QC/eD_QC2448_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2448_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2448_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2448_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2449
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2449.ini > output/QC/eD_QC2449_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2449_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2449_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2449_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2449_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2449.ini > output/QC/eD_QC2449_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2449_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2449_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2449_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2450
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2450.ini > output/QC/eD_QC2450_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2450_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2450_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2450_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2450_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2450.ini > output/QC/eD_QC2450_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2450_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2450_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2450_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2452
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2452.ini > output/QC/eD_QC2452_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2452_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2452_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2452_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2452_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2452.ini > output/QC/eD_QC2452_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2452_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2452_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2452_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2453
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2453.ini > output/QC/eD_QC2453_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2453_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2453_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2453_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2453_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2453.ini > output/QC/eD_QC2453_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2453_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2453_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2453_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2454
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2454.ini > output/QC/eD_QC2454_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2454_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2454_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2454_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2454_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2454.ini > output/QC/eD_QC2454_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2454_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2454_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2454_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2455
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2455.ini > output/QC/eD_QC2455_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2455_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2455_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2455_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2455_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2455.ini > output/QC/eD_QC2455_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2455_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2455_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2455_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2456
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2456.ini > output/QC/eD_QC2456_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2456_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2456_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2456_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2456_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2456.ini > output/QC/eD_QC2456_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2456_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2456_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2456_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2457
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2457.ini > output/QC/eD_QC2457_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2457_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2457_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2457_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2457_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2457.ini > output/QC/eD_QC2457_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2457_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2457_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2457_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2458
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2458.ini > output/QC/eD_QC2458_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2458_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2458_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2458_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2458_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2458.ini > output/QC/eD_QC2458_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2458_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2458_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2458_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2459
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2459.ini > output/QC/eD_QC2459_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2459_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2459_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2459_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2459_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2459.ini > output/QC/eD_QC2459_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2459_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2459_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2459_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2460
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2460.ini > output/QC/eD_QC2460_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2460_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2460_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2460_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2460_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2460.ini > output/QC/eD_QC2460_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2460_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2460_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2460_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2461
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2461.ini > output/QC/eD_QC2461_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2461_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2461_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2461_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2461_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2461.ini > output/QC/eD_QC2461_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2461_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2461_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2461_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2463
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2463.ini > output/QC/eD_QC2463_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2463_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2463_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2463_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2463_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2463.ini > output/QC/eD_QC2463_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2463_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2463_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2463_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2464
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2464.ini > output/QC/eD_QC2464_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2464_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2464_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2464_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2464_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2464.ini > output/QC/eD_QC2464_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2464_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2464_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2464_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2465
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2465.ini > output/QC/eD_QC2465_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2465_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2465_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2465_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2465_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2465.ini > output/QC/eD_QC2465_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2465_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2465_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2465_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2466
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2466.ini > output/QC/eD_QC2466_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2466_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2466_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2466_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2466_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2466.ini > output/QC/eD_QC2466_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2466_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2466_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2466_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2467
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2467.ini > output/QC/eD_QC2467_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2467_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2467_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2467_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2467_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2467.ini > output/QC/eD_QC2467_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2467_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2467_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2467_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2468
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2468.ini > output/QC/eD_QC2468_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2468_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2468_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2468_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2468_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2468.ini > output/QC/eD_QC2468_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2468_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2468_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2468_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2469
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2469.ini > output/QC/eD_QC2469_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2469_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2469_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2469_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2469_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2469.ini > output/QC/eD_QC2469_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2469_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2469_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2469_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2470
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2470.ini > output/QC/eD_QC2470_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2470_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2470_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2470_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2470_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2470.ini > output/QC/eD_QC2470_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2470_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2470_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2470_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2471
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2471.ini > output/QC/eD_QC2471_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2471_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2471_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2471_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2471_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2471.ini > output/QC/eD_QC2471_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2471_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2471_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2471_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2472
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2472.ini > output/QC/eD_QC2472_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2472_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2472_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2472_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2472_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2472.ini > output/QC/eD_QC2472_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2472_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2472_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2472_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2473
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2473.ini > output/QC/eD_QC2473_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2473_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2473_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2473_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2473_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2473.ini > output/QC/eD_QC2473_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2473_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2473_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2473_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2474
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2474.ini > output/QC/eD_QC2474_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2474_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2474_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2474_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2474_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2474.ini > output/QC/eD_QC2474_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2474_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2474_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2474_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2475
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2475.ini > output/QC/eD_QC2475_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2475_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2475_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2475_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2475_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2475.ini > output/QC/eD_QC2475_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2475_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2475_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2475_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2476
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2476.ini > output/QC/eD_QC2476_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2476_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2476_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2476_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2476_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2476.ini > output/QC/eD_QC2476_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2476_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2476_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2476_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2477
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2477.ini > output/QC/eD_QC2477_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2477_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2477_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2477_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2477_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2477.ini > output/QC/eD_QC2477_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2477_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2477_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2477_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2478
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2478.ini > output/QC/eD_QC2478_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2478_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2478_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2478_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2478_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2478.ini > output/QC/eD_QC2478_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2478_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2478_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2478_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2480
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2480.ini > output/QC/eD_QC2480_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2480_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2480_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2480_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2480_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2480.ini > output/QC/eD_QC2480_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2480_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2480_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2480_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2481
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2481.ini > output/QC/eD_QC2481_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2481_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2481_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2481_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2481_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2481.ini > output/QC/eD_QC2481_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2481_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2481_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2481_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2482
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2482.ini > output/QC/eD_QC2482_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2482_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2482_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2482_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2482_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2482.ini > output/QC/eD_QC2482_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2482_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2482_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2482_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2484
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2484.ini > output/QC/eD_QC2484_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2484_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2484_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2484_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2484_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2484.ini > output/QC/eD_QC2484_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2484_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2484_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2484_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4718
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4718.ini > output/SK/eD_SK4718_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4718_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4718_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4718_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4718_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4718.ini > output/SK/eD_SK4718_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4718_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4718_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4718_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4701
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4701.ini > output/SK/eD_SK4701_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4701_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4701_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4701_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4701_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4701.ini > output/SK/eD_SK4701_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4701_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4701_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4701_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4702
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4702.ini > output/SK/eD_SK4702_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4702_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4702_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4702_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4702_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4702.ini > output/SK/eD_SK4702_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4702_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4702_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4702_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4703
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4703.ini > output/SK/eD_SK4703_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4703_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4703_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4703_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4703_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4703.ini > output/SK/eD_SK4703_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4703_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4703_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4703_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4704
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4704.ini > output/SK/eD_SK4704_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4704_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4704_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4704_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4704_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4704.ini > output/SK/eD_SK4704_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4704_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4704_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4704_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4705
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4705.ini > output/SK/eD_SK4705_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4705_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4705_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4705_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4705_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4705.ini > output/SK/eD_SK4705_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4705_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4705_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4705_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4706
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4706.ini > output/SK/eD_SK4706_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4706_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4706_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4706_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4706_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4706.ini > output/SK/eD_SK4706_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4706_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4706_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4706_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4707
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4707.ini > output/SK/eD_SK4707_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4707_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4707_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4707_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4707_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4707.ini > output/SK/eD_SK4707_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4707_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4707_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4707_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4708
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4708.ini > output/SK/eD_SK4708_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4708_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4708_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4708_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4708_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4708.ini > output/SK/eD_SK4708_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4708_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4708_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4708_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4709
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4709.ini > output/SK/eD_SK4709_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4709_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4709_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4709_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4709_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4709.ini > output/SK/eD_SK4709_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4709_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4709_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4709_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4710
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4710.ini > output/SK/eD_SK4710_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4710_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4710_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4710_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4710_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4710.ini > output/SK/eD_SK4710_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4710_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4710_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4710_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4711
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4711.ini > output/SK/eD_SK4711_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4711_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4711_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4711_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4711_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4711.ini > output/SK/eD_SK4711_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4711_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4711_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4711_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4712
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4712.ini > output/SK/eD_SK4712_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4712_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4712_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4712_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4712_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4712.ini > output/SK/eD_SK4712_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4712_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4712_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4712_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4713
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4713.ini > output/SK/eD_SK4713_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4713_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4713_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4713_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4713_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4713.ini > output/SK/eD_SK4713_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4713_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4713_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4713_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4714
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4714.ini > output/SK/eD_SK4714_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4714_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4714_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4714_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4714_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4714.ini > output/SK/eD_SK4714_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4714_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4714_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4714_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4715
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4715.ini > output/SK/eD_SK4715_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4715_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4715_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4715_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4715_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4715.ini > output/SK/eD_SK4715_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4715_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4715_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4715_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4716
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4716.ini > output/SK/eD_SK4716_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4716_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4716_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4716_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4716_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4716.ini > output/SK/eD_SK4716_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4716_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4716_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4716_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4717
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4717.ini > output/SK/eD_SK4717_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4717_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4717_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4717_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4717_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4717.ini > output/SK/eD_SK4717_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4717_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4717_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4717_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# YT6001
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_YT6001.ini > output/YT/eD_YT6001_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/YT/eD_YT6001_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/YT/eD_YT6001_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/YT/eD_YT6001_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/YT/eD_YT6001_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_YT6001.ini > output/YT/eD_YT6001_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/YT/eD_YT6001_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/YT/eD_YT6001_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/YT/eD_YT6001_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4812
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4812.ini > output/AB/eD_AB4812_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4812_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4812_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4812_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4812_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4812.ini > output/AB/eD_AB4812_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4812_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4812_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4812_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4813
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4813.ini > output/AB/eD_AB4813_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4813_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4813_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4813_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4813_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4813.ini > output/AB/eD_AB4813_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4813_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4813_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4813_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4816
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4816.ini > output/AB/eD_AB4816_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4816_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4816_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4816_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4816_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4816.ini > output/AB/eD_AB4816_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4816_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4816_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4816_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4817
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4817.ini > output/AB/eD_AB4817_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4817_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4817_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4817_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4817_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4817.ini > output/AB/eD_AB4817_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4817_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4817_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4817_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4818
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4818.ini > output/AB/eD_AB4818_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4818_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4818_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4818_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4818_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4818.ini > output/AB/eD_AB4818_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4818_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4818_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4818_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4819
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4819.ini > output/AB/eD_AB4819_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4819_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4819_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4819_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4819_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4819.ini > output/AB/eD_AB4819_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4819_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4819_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4819_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4801
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4801.ini > output/AB/eD_AB4801_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4801_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4801_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4801_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4801_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4801.ini > output/AB/eD_AB4801_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4801_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4801_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4801_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4802
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4802.ini > output/AB/eD_AB4802_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4802_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4802_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4802_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4802_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4802.ini > output/AB/eD_AB4802_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4802_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4802_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4802_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4803
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4803.ini > output/AB/eD_AB4803_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4803_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4803_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4803_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4803_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4803.ini > output/AB/eD_AB4803_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4803_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4803_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4803_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4804
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4804.ini > output/AB/eD_AB4804_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4804_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4804_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4804_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4804_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4804.ini > output/AB/eD_AB4804_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4804_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4804_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4804_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4805
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4805.ini > output/AB/eD_AB4805_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4805_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4805_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4805_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4805_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4805.ini > output/AB/eD_AB4805_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4805_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4805_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4805_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4806
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4806.ini > output/AB/eD_AB4806_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4806_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4806_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4806_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4806_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4806.ini > output/AB/eD_AB4806_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4806_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4806_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4806_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4807
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4807.ini > output/AB/eD_AB4807_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4807_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4807_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4807_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4807_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4807.ini > output/AB/eD_AB4807_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4807_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4807_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4807_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4808
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4808.ini > output/AB/eD_AB4808_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4808_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4808_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4808_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4808_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4808.ini > output/AB/eD_AB4808_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4808_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4808_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4808_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4809
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4809.ini > output/AB/eD_AB4809_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4809_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4809_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4809_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4809_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4809.ini > output/AB/eD_AB4809_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4809_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4809_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4809_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4810
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4810.ini > output/AB/eD_AB4810_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4810_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4810_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4810_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4810_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4810.ini > output/AB/eD_AB4810_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4810_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4810_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4810_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4811
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4811.ini > output/AB/eD_AB4811_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4811_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4811_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4811_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4811_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4811.ini > output/AB/eD_AB4811_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4811_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4811_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4811_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4814
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4814.ini > output/AB/eD_AB4814_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4814_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4814_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4814_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4814_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4814.ini > output/AB/eD_AB4814_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4814_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4814_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4814_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB4815
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_AB4815.ini > output/AB/eD_AB4815_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4815_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/eD_AB4815_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4815_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4815_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_AB4815.ini > output/AB/eD_AB4815_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/eD_AB4815_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/AB/eD_AB4815_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/eD_AB4815_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5949
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5949.ini > output/BC/eD_BC5949_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5949_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5949_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5949_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5949_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5949.ini > output/BC/eD_BC5949_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5949_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5949_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5949_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5951
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5951.ini > output/BC/eD_BC5951_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5951_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5951_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5951_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5951_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5951.ini > output/BC/eD_BC5951_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5951_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5951_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5951_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5953
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5953.ini > output/BC/eD_BC5953_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5953_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5953_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5953_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5953_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5953.ini > output/BC/eD_BC5953_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5953_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5953_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5953_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5955
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5955.ini > output/BC/eD_BC5955_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5955_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5955_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5955_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5955_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5955.ini > output/BC/eD_BC5955_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5955_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5955_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5955_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5957
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5957.ini > output/BC/eD_BC5957_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5957_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5957_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5957_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5957_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5957.ini > output/BC/eD_BC5957_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5957_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5957_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5957_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5959
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5959.ini > output/BC/eD_BC5959_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5959_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5959_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5959_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5959_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5959.ini > output/BC/eD_BC5959_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5959_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5959_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5959_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5901
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5901.ini > output/BC/eD_BC5901_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5901_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5901_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5901_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5901_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5901.ini > output/BC/eD_BC5901_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5901_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5901_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5901_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5903
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5903.ini > output/BC/eD_BC5903_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5903_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5903_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5903_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5903_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5903.ini > output/BC/eD_BC5903_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5903_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5903_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5903_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5905
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5905.ini > output/BC/eD_BC5905_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5905_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5905_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5905_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5905_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5905.ini > output/BC/eD_BC5905_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5905_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5905_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5905_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5907
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5907.ini > output/BC/eD_BC5907_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5907_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5907_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5907_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5907_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5907.ini > output/BC/eD_BC5907_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5907_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5907_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5907_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5909
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5909.ini > output/BC/eD_BC5909_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5909_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5909_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5909_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5909_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5909.ini > output/BC/eD_BC5909_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5909_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5909_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5909_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5915
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5915.ini > output/BC/eD_BC5915_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5915_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5915_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5915_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5915_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5915.ini > output/BC/eD_BC5915_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5915_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5915_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5915_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5917
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5917.ini > output/BC/eD_BC5917_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5917_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5917_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5917_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5917_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5917.ini > output/BC/eD_BC5917_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5917_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5917_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5917_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5919
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5919.ini > output/BC/eD_BC5919_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5919_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5919_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5919_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5919_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5919.ini > output/BC/eD_BC5919_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5919_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5919_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5919_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5921
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5921.ini > output/BC/eD_BC5921_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5921_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5921_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5921_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5921_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5921.ini > output/BC/eD_BC5921_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5921_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5921_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5921_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5923
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5923.ini > output/BC/eD_BC5923_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5923_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5923_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5923_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5923_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5923.ini > output/BC/eD_BC5923_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5923_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5923_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5923_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5924
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5924.ini > output/BC/eD_BC5924_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5924_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5924_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5924_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5924_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5924.ini > output/BC/eD_BC5924_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5924_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5924_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5924_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5926
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5926.ini > output/BC/eD_BC5926_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5926_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5926_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5926_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5926_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5926.ini > output/BC/eD_BC5926_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5926_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5926_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5926_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5927
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5927.ini > output/BC/eD_BC5927_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5927_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5927_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5927_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5927_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5927.ini > output/BC/eD_BC5927_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5927_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5927_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5927_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5929
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5929.ini > output/BC/eD_BC5929_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5929_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5929_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5929_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5929_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5929.ini > output/BC/eD_BC5929_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5929_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5929_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5929_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5931
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5931.ini > output/BC/eD_BC5931_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5931_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5931_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5931_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5931_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5931.ini > output/BC/eD_BC5931_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5931_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5931_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5931_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5933
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5933.ini > output/BC/eD_BC5933_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5933_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5933_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5933_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5933_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5933.ini > output/BC/eD_BC5933_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5933_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5933_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5933_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5935
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5935.ini > output/BC/eD_BC5935_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5935_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5935_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5935_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5935_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5935.ini > output/BC/eD_BC5935_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5935_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5935_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5935_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5937
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5937.ini > output/BC/eD_BC5937_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5937_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5937_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5937_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5937_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5937.ini > output/BC/eD_BC5937_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5937_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5937_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5937_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5939
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5939.ini > output/BC/eD_BC5939_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5939_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5939_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5939_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5939_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5939.ini > output/BC/eD_BC5939_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5939_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5939_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5939_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5941
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5941.ini > output/BC/eD_BC5941_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5941_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5941_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5941_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5941_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5941.ini > output/BC/eD_BC5941_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5941_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5941_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5941_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5943
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5943.ini > output/BC/eD_BC5943_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5943_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5943_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5943_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5943_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5943.ini > output/BC/eD_BC5943_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5943_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5943_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5943_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5945
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5945.ini > output/BC/eD_BC5945_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5945_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5945_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5945_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5945_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5945.ini > output/BC/eD_BC5945_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5945_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5945_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5945_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC5947
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC5947.ini > output/BC/eD_BC5947_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5947_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC5947_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5947_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5947_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC5947.ini > output/BC/eD_BC5947_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC5947_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC5947_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC5947_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4621
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4621.ini > output/MB/eD_MB4621_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4621_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4621_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4621_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4621_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4621.ini > output/MB/eD_MB4621_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4621_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4621_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4621_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4622
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4622.ini > output/MB/eD_MB4622_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4622_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4622_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4622_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4622_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4622.ini > output/MB/eD_MB4622_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4622_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4622_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4622_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4623
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4623.ini > output/MB/eD_MB4623_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4623_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4623_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4623_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4623_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4623.ini > output/MB/eD_MB4623_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4623_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4623_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4623_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4601
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4601.ini > output/MB/eD_MB4601_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4601_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4601_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4601_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4601_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4601.ini > output/MB/eD_MB4601_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4601_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4601_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4601_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4602
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4602.ini > output/MB/eD_MB4602_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4602_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4602_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4602_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4602_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4602.ini > output/MB/eD_MB4602_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4602_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4602_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4602_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4603
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4603.ini > output/MB/eD_MB4603_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4603_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4603_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4603_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4603_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4603.ini > output/MB/eD_MB4603_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4603_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4603_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4603_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4604
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4604.ini > output/MB/eD_MB4604_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4604_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4604_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4604_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4604_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4604.ini > output/MB/eD_MB4604_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4604_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4604_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4604_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4605
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4605.ini > output/MB/eD_MB4605_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4605_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4605_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4605_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4605_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4605.ini > output/MB/eD_MB4605_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4605_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4605_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4605_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4606
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4606.ini > output/MB/eD_MB4606_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4606_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4606_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4606_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4606_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4606.ini > output/MB/eD_MB4606_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4606_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4606_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4606_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4607
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4607.ini > output/MB/eD_MB4607_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4607_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4607_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4607_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4607_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4607.ini > output/MB/eD_MB4607_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4607_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4607_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4607_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4608
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4608.ini > output/MB/eD_MB4608_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4608_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4608_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4608_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4608_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4608.ini > output/MB/eD_MB4608_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4608_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4608_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4608_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4609
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4609.ini > output/MB/eD_MB4609_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4609_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4609_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4609_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4609_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4609.ini > output/MB/eD_MB4609_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4609_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4609_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4609_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4610
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4610.ini > output/MB/eD_MB4610_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4610_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4610_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4610_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4610_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4610.ini > output/MB/eD_MB4610_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4610_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4610_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4610_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4611
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4611.ini > output/MB/eD_MB4611_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4611_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4611_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4611_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4611_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4611.ini > output/MB/eD_MB4611_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4611_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4611_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4611_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4612
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4612.ini > output/MB/eD_MB4612_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4612_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4612_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4612_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4612_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4612.ini > output/MB/eD_MB4612_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4612_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4612_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4612_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4613
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4613.ini > output/MB/eD_MB4613_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4613_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4613_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4613_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4613_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4613.ini > output/MB/eD_MB4613_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4613_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4613_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4613_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4614
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4614.ini > output/MB/eD_MB4614_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4614_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4614_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4614_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4614_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4614.ini > output/MB/eD_MB4614_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4614_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4614_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4614_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4615
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4615.ini > output/MB/eD_MB4615_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4615_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4615_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4615_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4615_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4615.ini > output/MB/eD_MB4615_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4615_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4615_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4615_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4616
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4616.ini > output/MB/eD_MB4616_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4616_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4616_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4616_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4616_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4616.ini > output/MB/eD_MB4616_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4616_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4616_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4616_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4617
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4617.ini > output/MB/eD_MB4617_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4617_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4617_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4617_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4617_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4617.ini > output/MB/eD_MB4617_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4617_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4617_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4617_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4618
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4618.ini > output/MB/eD_MB4618_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4618_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4618_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4618_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4618_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4618.ini > output/MB/eD_MB4618_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4618_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4618_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4618_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4619
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4619.ini > output/MB/eD_MB4619_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4619_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4619_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4619_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4619_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4619.ini > output/MB/eD_MB4619_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4619_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4619_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4619_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB4620
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_MB4620.ini > output/MB/eD_MB4620_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4620_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/eD_MB4620_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4620_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4620_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_MB4620.ini > output/MB/eD_MB4620_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/eD_MB4620_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/MB/eD_MB4620_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/eD_MB4620_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1308
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1308.ini > output/NB/eD_NB1308_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1308_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1308_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1308_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1308_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1308.ini > output/NB/eD_NB1308_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1308_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1308_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1308_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1309
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1309.ini > output/NB/eD_NB1309_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1309_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1309_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1309_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1309_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1309.ini > output/NB/eD_NB1309_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1309_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1309_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1309_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1312
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1312.ini > output/NB/eD_NB1312_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1312_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1312_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1312_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1312_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1312.ini > output/NB/eD_NB1312_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1312_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1312_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1312_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1313
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1313.ini > output/NB/eD_NB1313_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1313_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1313_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1313_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1313_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1313.ini > output/NB/eD_NB1313_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1313_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1313_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1313_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1314
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1314.ini > output/NB/eD_NB1314_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1314_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1314_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1314_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1314_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1314.ini > output/NB/eD_NB1314_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1314_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1314_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1314_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1315
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1315.ini > output/NB/eD_NB1315_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1315_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1315_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1315_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1315_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1315.ini > output/NB/eD_NB1315_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1315_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1315_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1315_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1301
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1301.ini > output/NB/eD_NB1301_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1301_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1301_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1301_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1301_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1301.ini > output/NB/eD_NB1301_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1301_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1301_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1301_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1302
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1302.ini > output/NB/eD_NB1302_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1302_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1302_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1302_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1302_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1302.ini > output/NB/eD_NB1302_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1302_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1302_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1302_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1303
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1303.ini > output/NB/eD_NB1303_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1303_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1303_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1303_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1303_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1303.ini > output/NB/eD_NB1303_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1303_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1303_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1303_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1304
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1304.ini > output/NB/eD_NB1304_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1304_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1304_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1304_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1304_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1304.ini > output/NB/eD_NB1304_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1304_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1304_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1304_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1305
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1305.ini > output/NB/eD_NB1305_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1305_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1305_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1305_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1305_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1305.ini > output/NB/eD_NB1305_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1305_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1305_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1305_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1306
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1306.ini > output/NB/eD_NB1306_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1306_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1306_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1306_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1306_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1306.ini > output/NB/eD_NB1306_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1306_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1306_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1306_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1307
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1307.ini > output/NB/eD_NB1307_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1307_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1307_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1307_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1307_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1307.ini > output/NB/eD_NB1307_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1307_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1307_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1307_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1310
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1310.ini > output/NB/eD_NB1310_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1310_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1310_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1310_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1310_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1310.ini > output/NB/eD_NB1310_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1310_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1310_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1310_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB1311
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NB1311.ini > output/NB/eD_NB1311_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1311_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/eD_NB1311_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1311_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1311_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NB1311.ini > output/NB/eD_NB1311_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/eD_NB1311_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NB/eD_NB1311_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/eD_NB1311_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1011
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1011.ini > output/NL/eD_NL1011_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1011_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1011_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1011_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1011_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1011.ini > output/NL/eD_NL1011_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1011_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1011_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1011_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1001
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1001.ini > output/NL/eD_NL1001_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1001_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1001_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1001_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1001_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1001.ini > output/NL/eD_NL1001_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1001_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1001_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1001_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1002
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1002.ini > output/NL/eD_NL1002_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1002_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1002_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1002_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1002_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1002.ini > output/NL/eD_NL1002_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1002_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1002_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1002_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1003
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1003.ini > output/NL/eD_NL1003_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1003_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1003_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1003_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1003_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1003.ini > output/NL/eD_NL1003_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1003_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1003_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1003_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1004
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1004.ini > output/NL/eD_NL1004_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1004_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1004_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1004_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1004_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1004.ini > output/NL/eD_NL1004_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1004_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1004_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1004_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1005
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1005.ini > output/NL/eD_NL1005_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1005_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1005_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1005_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1005_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1005.ini > output/NL/eD_NL1005_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1005_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1005_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1005_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1006
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1006.ini > output/NL/eD_NL1006_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1006_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1006_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1006_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1006_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1006.ini > output/NL/eD_NL1006_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1006_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1006_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1006_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1007
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1007.ini > output/NL/eD_NL1007_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1007_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1007_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1007_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1007_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1007.ini > output/NL/eD_NL1007_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1007_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1007_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1007_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1008
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1008.ini > output/NL/eD_NL1008_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1008_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1008_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1008_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1008_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1008.ini > output/NL/eD_NL1008_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1008_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1008_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1008_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1009
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1009.ini > output/NL/eD_NL1009_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1009_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1009_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1009_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1009_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1009.ini > output/NL/eD_NL1009_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1009_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1009_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1009_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL1010
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NL1010.ini > output/NL/eD_NL1010_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1010_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/eD_NL1010_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1010_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1010_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NL1010.ini > output/NL/eD_NL1010_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/eD_NL1010_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NL/eD_NL1010_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/eD_NL1010_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1215
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1215.ini > output/NS/eD_NS1215_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1215_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1215_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1215_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1215_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1215.ini > output/NS/eD_NS1215_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1215_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1215_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1215_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1218
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1218.ini > output/NS/eD_NS1218_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1218_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1218_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1218_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1218_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1218.ini > output/NS/eD_NS1218_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1218_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1218_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1218_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1201
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1201.ini > output/NS/eD_NS1201_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1201_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1201_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1201_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1201_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1201.ini > output/NS/eD_NS1201_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1201_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1201_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1201_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1202
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1202.ini > output/NS/eD_NS1202_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1202_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1202_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1202_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1202_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1202.ini > output/NS/eD_NS1202_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1202_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1202_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1202_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1203
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1203.ini > output/NS/eD_NS1203_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1203_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1203_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1203_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1203_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1203.ini > output/NS/eD_NS1203_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1203_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1203_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1203_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1204
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1204.ini > output/NS/eD_NS1204_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1204_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1204_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1204_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1204_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1204.ini > output/NS/eD_NS1204_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1204_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1204_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1204_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1205
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1205.ini > output/NS/eD_NS1205_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1205_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1205_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1205_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1205_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1205.ini > output/NS/eD_NS1205_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1205_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1205_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1205_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1206
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1206.ini > output/NS/eD_NS1206_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1206_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1206_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1206_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1206_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1206.ini > output/NS/eD_NS1206_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1206_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1206_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1206_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1207
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1207.ini > output/NS/eD_NS1207_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1207_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1207_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1207_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1207_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1207.ini > output/NS/eD_NS1207_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1207_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1207_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1207_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1208
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1208.ini > output/NS/eD_NS1208_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1208_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1208_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1208_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1208_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1208.ini > output/NS/eD_NS1208_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1208_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1208_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1208_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1209
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1209.ini > output/NS/eD_NS1209_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1209_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1209_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1209_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1209_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1209.ini > output/NS/eD_NS1209_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1209_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1209_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1209_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1210
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1210.ini > output/NS/eD_NS1210_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1210_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1210_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1210_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1210_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1210.ini > output/NS/eD_NS1210_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1210_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1210_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1210_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1211
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1211.ini > output/NS/eD_NS1211_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1211_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1211_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1211_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1211_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1211.ini > output/NS/eD_NS1211_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1211_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1211_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1211_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1212
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1212.ini > output/NS/eD_NS1212_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1212_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1212_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1212_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1212_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1212.ini > output/NS/eD_NS1212_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1212_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1212_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1212_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1213
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1213.ini > output/NS/eD_NS1213_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1213_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1213_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1213_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1213_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1213.ini > output/NS/eD_NS1213_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1213_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1213_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1213_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1214
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1214.ini > output/NS/eD_NS1214_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1214_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1214_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1214_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1214_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1214.ini > output/NS/eD_NS1214_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1214_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1214_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1214_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1216
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1216.ini > output/NS/eD_NS1216_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1216_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1216_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1216_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1216_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1216.ini > output/NS/eD_NS1216_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1216_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1216_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1216_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS1217
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NS1217.ini > output/NS/eD_NS1217_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1217_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/eD_NS1217_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1217_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1217_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NS1217.ini > output/NS/eD_NS1217_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/eD_NS1217_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NS/eD_NS1217_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/eD_NS1217_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT6101
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NT6101.ini > output/NT/eD_NT6101_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6101_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/eD_NT6101_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6101_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6101_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NT6101.ini > output/NT/eD_NT6101_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6101_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6101_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6101_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT6104
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NT6104.ini > output/NT/eD_NT6104_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6104_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/eD_NT6104_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6104_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6104_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NT6104.ini > output/NT/eD_NT6104_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6104_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6104_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6104_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT6105
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NT6105.ini > output/NT/eD_NT6105_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6105_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/eD_NT6105_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6105_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6105_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NT6105.ini > output/NT/eD_NT6105_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6105_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6105_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6105_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT6106
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NT6106.ini > output/NT/eD_NT6106_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6106_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/eD_NT6106_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6106_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6106_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NT6106.ini > output/NT/eD_NT6106_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6106_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6106_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6106_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT6102
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NT6102.ini > output/NT/eD_NT6102_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6102_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/eD_NT6102_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6102_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6102_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NT6102.ini > output/NT/eD_NT6102_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6102_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6102_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6102_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT6103
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NT6103.ini > output/NT/eD_NT6103_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6103_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/eD_NT6103_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6103_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6103_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NT6103.ini > output/NT/eD_NT6103_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/eD_NT6103_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NT/eD_NT6103_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/eD_NT6103_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NU6204
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NU6204.ini > output/NU/eD_NU6204_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/eD_NU6204_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NU/eD_NU6204_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NU/eD_NU6204_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/eD_NU6204_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NU6204.ini > output/NU/eD_NU6204_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/eD_NU6204_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NU/eD_NU6204_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/eD_NU6204_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NU6208
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NU6208.ini > output/NU/eD_NU6208_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/eD_NU6208_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NU/eD_NU6208_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NU/eD_NU6208_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/eD_NU6208_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NU6208.ini > output/NU/eD_NU6208_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/eD_NU6208_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NU/eD_NU6208_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/eD_NU6208_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NU6205
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_NU6205.ini > output/NU/eD_NU6205_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/eD_NU6205_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NU/eD_NU6205_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NU/eD_NU6205_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/eD_NU6205_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_NU6205.ini > output/NU/eD_NU6205_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/eD_NU6205_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/NU/eD_NU6205_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/eD_NU6205_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3560
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3560.ini > output/ON/eD_ON3560_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3560_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3560_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3560_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3560_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3560.ini > output/ON/eD_ON3560_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3560_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3560_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3560_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3548
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3548.ini > output/ON/eD_ON3548_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3548_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3548_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3548_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3548_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3548.ini > output/ON/eD_ON3548_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3548_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3548_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3548_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3552
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3552.ini > output/ON/eD_ON3552_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3552_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3552_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3552_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3552_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3552.ini > output/ON/eD_ON3552_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3552_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3552_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3552_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3553
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3553.ini > output/ON/eD_ON3553_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3553_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3553_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3553_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3553_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3553.ini > output/ON/eD_ON3553_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3553_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3553_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3553_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3554
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3554.ini > output/ON/eD_ON3554_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3554_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3554_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3554_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3554_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3554.ini > output/ON/eD_ON3554_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3554_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3554_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3554_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3556
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3556.ini > output/ON/eD_ON3556_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3556_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3556_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3556_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3556_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3556.ini > output/ON/eD_ON3556_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3556_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3556_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3556_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3557
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3557.ini > output/ON/eD_ON3557_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3557_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3557_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3557_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3557_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3557.ini > output/ON/eD_ON3557_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3557_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3557_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3557_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3558
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3558.ini > output/ON/eD_ON3558_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3558_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3558_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3558_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3558_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3558.ini > output/ON/eD_ON3558_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3558_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3558_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3558_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3559
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3559.ini > output/ON/eD_ON3559_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3559_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3559_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3559_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3559_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3559.ini > output/ON/eD_ON3559_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3559_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3559_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3559_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3501
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3501.ini > output/ON/eD_ON3501_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3501_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3501_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3501_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3501_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3501.ini > output/ON/eD_ON3501_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3501_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3501_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3501_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3502
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3502.ini > output/ON/eD_ON3502_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3502_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3502_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3502_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3502_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3502.ini > output/ON/eD_ON3502_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3502_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3502_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3502_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3506
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3506.ini > output/ON/eD_ON3506_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3506_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3506_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3506_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3506_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3506.ini > output/ON/eD_ON3506_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3506_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3506_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3506_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3507
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3507.ini > output/ON/eD_ON3507_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3507_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3507_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3507_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3507_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3507.ini > output/ON/eD_ON3507_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3507_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3507_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3507_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3509
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3509.ini > output/ON/eD_ON3509_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3509_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3509_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3509_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3509_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3509.ini > output/ON/eD_ON3509_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3509_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3509_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3509_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3510
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3510.ini > output/ON/eD_ON3510_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3510_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3510_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3510_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3510_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3510.ini > output/ON/eD_ON3510_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3510_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3510_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3510_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3511
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3511.ini > output/ON/eD_ON3511_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3511_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3511_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3511_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3511_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3511.ini > output/ON/eD_ON3511_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3511_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3511_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3511_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3512
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3512.ini > output/ON/eD_ON3512_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3512_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3512_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3512_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3512_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3512.ini > output/ON/eD_ON3512_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3512_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3512_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3512_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3513
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3513.ini > output/ON/eD_ON3513_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3513_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3513_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3513_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3513_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3513.ini > output/ON/eD_ON3513_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3513_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3513_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3513_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3514
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3514.ini > output/ON/eD_ON3514_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3514_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3514_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3514_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3514_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3514.ini > output/ON/eD_ON3514_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3514_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3514_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3514_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3515
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3515.ini > output/ON/eD_ON3515_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3515_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3515_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3515_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3515_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3515.ini > output/ON/eD_ON3515_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3515_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3515_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3515_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3516
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3516.ini > output/ON/eD_ON3516_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3516_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3516_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3516_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3516_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3516.ini > output/ON/eD_ON3516_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3516_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3516_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3516_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3518
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3518.ini > output/ON/eD_ON3518_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3518_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3518_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3518_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3518_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3518.ini > output/ON/eD_ON3518_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3518_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3518_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3518_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3519
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3519.ini > output/ON/eD_ON3519_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3519_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3519_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3519_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3519_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3519.ini > output/ON/eD_ON3519_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3519_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3519_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3519_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3520
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3520.ini > output/ON/eD_ON3520_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3520_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3520_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3520_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3520_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3520.ini > output/ON/eD_ON3520_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3520_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3520_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3520_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3521
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3521.ini > output/ON/eD_ON3521_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3521_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3521_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3521_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3521_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3521.ini > output/ON/eD_ON3521_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3521_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3521_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3521_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3522
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3522.ini > output/ON/eD_ON3522_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3522_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3522_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3522_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3522_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3522.ini > output/ON/eD_ON3522_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3522_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3522_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3522_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3523
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3523.ini > output/ON/eD_ON3523_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3523_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3523_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3523_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3523_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3523.ini > output/ON/eD_ON3523_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3523_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3523_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3523_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3524
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3524.ini > output/ON/eD_ON3524_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3524_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3524_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3524_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3524_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3524.ini > output/ON/eD_ON3524_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3524_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3524_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3524_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3525
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3525.ini > output/ON/eD_ON3525_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3525_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3525_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3525_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3525_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3525.ini > output/ON/eD_ON3525_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3525_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3525_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3525_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3526
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3526.ini > output/ON/eD_ON3526_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3526_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3526_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3526_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3526_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3526.ini > output/ON/eD_ON3526_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3526_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3526_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3526_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3528
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3528.ini > output/ON/eD_ON3528_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3528_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3528_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3528_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3528_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3528.ini > output/ON/eD_ON3528_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3528_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3528_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3528_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3529
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3529.ini > output/ON/eD_ON3529_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3529_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3529_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3529_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3529_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3529.ini > output/ON/eD_ON3529_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3529_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3529_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3529_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3530
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3530.ini > output/ON/eD_ON3530_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3530_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3530_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3530_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3530_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3530.ini > output/ON/eD_ON3530_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3530_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3530_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3530_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3531
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3531.ini > output/ON/eD_ON3531_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3531_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3531_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3531_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3531_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3531.ini > output/ON/eD_ON3531_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3531_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3531_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3531_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3532
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3532.ini > output/ON/eD_ON3532_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3532_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3532_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3532_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3532_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3532.ini > output/ON/eD_ON3532_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3532_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3532_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3532_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3534
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3534.ini > output/ON/eD_ON3534_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3534_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3534_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3534_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3534_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3534.ini > output/ON/eD_ON3534_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3534_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3534_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3534_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3536
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3536.ini > output/ON/eD_ON3536_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3536_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3536_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3536_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3536_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3536.ini > output/ON/eD_ON3536_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3536_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3536_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3536_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3537
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3537.ini > output/ON/eD_ON3537_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3537_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3537_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3537_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3537_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3537.ini > output/ON/eD_ON3537_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3537_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3537_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3537_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3538
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3538.ini > output/ON/eD_ON3538_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3538_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3538_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3538_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3538_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3538.ini > output/ON/eD_ON3538_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3538_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3538_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3538_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3539
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3539.ini > output/ON/eD_ON3539_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3539_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3539_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3539_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3539_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3539.ini > output/ON/eD_ON3539_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3539_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3539_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3539_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3540
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3540.ini > output/ON/eD_ON3540_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3540_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3540_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3540_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3540_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3540.ini > output/ON/eD_ON3540_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3540_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3540_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3540_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3541
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3541.ini > output/ON/eD_ON3541_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3541_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3541_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3541_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3541_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3541.ini > output/ON/eD_ON3541_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3541_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3541_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3541_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3542
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3542.ini > output/ON/eD_ON3542_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3542_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3542_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3542_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3542_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3542.ini > output/ON/eD_ON3542_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3542_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3542_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3542_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3543
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3543.ini > output/ON/eD_ON3543_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3543_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3543_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3543_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3543_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3543.ini > output/ON/eD_ON3543_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3543_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3543_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3543_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3544
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3544.ini > output/ON/eD_ON3544_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3544_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3544_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3544_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3544_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3544.ini > output/ON/eD_ON3544_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3544_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3544_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3544_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3546
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3546.ini > output/ON/eD_ON3546_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3546_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3546_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3546_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3546_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3546.ini > output/ON/eD_ON3546_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3546_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3546_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3546_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3547
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3547.ini > output/ON/eD_ON3547_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3547_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3547_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3547_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3547_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3547.ini > output/ON/eD_ON3547_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3547_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3547_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3547_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3549
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3549.ini > output/ON/eD_ON3549_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3549_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3549_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3549_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3549_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3549.ini > output/ON/eD_ON3549_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3549_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3549_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3549_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON3551
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_ON3551.ini > output/ON/eD_ON3551_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3551_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/eD_ON3551_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3551_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3551_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_ON3551.ini > output/ON/eD_ON3551_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/eD_ON3551_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/ON/eD_ON3551_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/eD_ON3551_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# PE1103
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_PE1103.ini > output/PE/eD_PE1103_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/eD_PE1103_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/PE/eD_PE1103_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/PE/eD_PE1103_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/eD_PE1103_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_PE1103.ini > output/PE/eD_PE1103_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/eD_PE1103_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/PE/eD_PE1103_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/eD_PE1103_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# PE1101
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_PE1101.ini > output/PE/eD_PE1101_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/eD_PE1101_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/PE/eD_PE1101_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/PE/eD_PE1101_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/eD_PE1101_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_PE1101.ini > output/PE/eD_PE1101_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/eD_PE1101_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/PE/eD_PE1101_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/eD_PE1101_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# PE1102
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_PE1102.ini > output/PE/eD_PE1102_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/eD_PE1102_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/PE/eD_PE1102_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/PE/eD_PE1102_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/eD_PE1102_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_PE1102.ini > output/PE/eD_PE1102_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/eD_PE1102_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/PE/eD_PE1102_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/eD_PE1102_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2499
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2499.ini > output/QC/eD_QC2499_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2499_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2499_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2499_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2499_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2499.ini > output/QC/eD_QC2499_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2499_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2499_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2499_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2403
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2403.ini > output/QC/eD_QC2403_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2403_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2403_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2403_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2403_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2403.ini > output/QC/eD_QC2403_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2403_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2403_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2403_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2404
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2404.ini > output/QC/eD_QC2404_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2404_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2404_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2404_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2404_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2404.ini > output/QC/eD_QC2404_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2404_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2404_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2404_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2401
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2401.ini > output/QC/eD_QC2401_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2401_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2401_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2401_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2401_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2401.ini > output/QC/eD_QC2401_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2401_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2401_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2401_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2402
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2402.ini > output/QC/eD_QC2402_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2402_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2402_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2402_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2402_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2402.ini > output/QC/eD_QC2402_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2402_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2402_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2402_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2405
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2405.ini > output/QC/eD_QC2405_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2405_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2405_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2405_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2405_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2405.ini > output/QC/eD_QC2405_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2405_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2405_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2405_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2406
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2406.ini > output/QC/eD_QC2406_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2406_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2406_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2406_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2406_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2406.ini > output/QC/eD_QC2406_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2406_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2406_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2406_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2407
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2407.ini > output/QC/eD_QC2407_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2407_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2407_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2407_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2407_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2407.ini > output/QC/eD_QC2407_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2407_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2407_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2407_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2408
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2408.ini > output/QC/eD_QC2408_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2408_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2408_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2408_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2408_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2408.ini > output/QC/eD_QC2408_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2408_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2408_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2408_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2409
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2409.ini > output/QC/eD_QC2409_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2409_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2409_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2409_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2409_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2409.ini > output/QC/eD_QC2409_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2409_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2409_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2409_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2410
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2410.ini > output/QC/eD_QC2410_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2410_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2410_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2410_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2410_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2410.ini > output/QC/eD_QC2410_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2410_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2410_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2410_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2411
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2411.ini > output/QC/eD_QC2411_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2411_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2411_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2411_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2411_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2411.ini > output/QC/eD_QC2411_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2411_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2411_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2411_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2412
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2412.ini > output/QC/eD_QC2412_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2412_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2412_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2412_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2412_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2412.ini > output/QC/eD_QC2412_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2412_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2412_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2412_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2413
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2413.ini > output/QC/eD_QC2413_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2413_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2413_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2413_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2413_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2413.ini > output/QC/eD_QC2413_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2413_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2413_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2413_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2414
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2414.ini > output/QC/eD_QC2414_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2414_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2414_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2414_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2414_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2414.ini > output/QC/eD_QC2414_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2414_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2414_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2414_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2415
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2415.ini > output/QC/eD_QC2415_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2415_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2415_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2415_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2415_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2415.ini > output/QC/eD_QC2415_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2415_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2415_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2415_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2416
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2416.ini > output/QC/eD_QC2416_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2416_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2416_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2416_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2416_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2416.ini > output/QC/eD_QC2416_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2416_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2416_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2416_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2417
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2417.ini > output/QC/eD_QC2417_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2417_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2417_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2417_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2417_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2417.ini > output/QC/eD_QC2417_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2417_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2417_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2417_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2418
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2418.ini > output/QC/eD_QC2418_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2418_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2418_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2418_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2418_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2418.ini > output/QC/eD_QC2418_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2418_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2418_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2418_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2419
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2419.ini > output/QC/eD_QC2419_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2419_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2419_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2419_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2419_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2419.ini > output/QC/eD_QC2419_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2419_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2419_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2419_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2420
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2420.ini > output/QC/eD_QC2420_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2420_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2420_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2420_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2420_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2420.ini > output/QC/eD_QC2420_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2420_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2420_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2420_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2421
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2421.ini > output/QC/eD_QC2421_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2421_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2421_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2421_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2421_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2421.ini > output/QC/eD_QC2421_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2421_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2421_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2421_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2422
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2422.ini > output/QC/eD_QC2422_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2422_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2422_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2422_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2422_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2422.ini > output/QC/eD_QC2422_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2422_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2422_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2422_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2423
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2423.ini > output/QC/eD_QC2423_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2423_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2423_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2423_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2423_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2423.ini > output/QC/eD_QC2423_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2423_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2423_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2423_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2425
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2425.ini > output/QC/eD_QC2425_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2425_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2425_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2425_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2425_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2425.ini > output/QC/eD_QC2425_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2425_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2425_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2425_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2434
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2434.ini > output/QC/eD_QC2434_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2434_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2434_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2434_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2434_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2434.ini > output/QC/eD_QC2434_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2434_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2434_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2434_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2435
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2435.ini > output/QC/eD_QC2435_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2435_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2435_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2435_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2435_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2435.ini > output/QC/eD_QC2435_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2435_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2435_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2435_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2436
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2436.ini > output/QC/eD_QC2436_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2436_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2436_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2436_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2436_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2436.ini > output/QC/eD_QC2436_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2436_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2436_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2436_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2451
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2451.ini > output/QC/eD_QC2451_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2451_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2451_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2451_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2451_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2451.ini > output/QC/eD_QC2451_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2451_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2451_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2451_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2462
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2462.ini > output/QC/eD_QC2462_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2462_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2462_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2462_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2462_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2462.ini > output/QC/eD_QC2462_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2462_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2462_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2462_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2479
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2479.ini > output/QC/eD_QC2479_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2479_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2479_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2479_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2479_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2479.ini > output/QC/eD_QC2479_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2479_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2479_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2479_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2483
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2483.ini > output/QC/eD_QC2483_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2483_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2483_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2483_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2483_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2483.ini > output/QC/eD_QC2483_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2483_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2483_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2483_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2485
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2485.ini > output/QC/eD_QC2485_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2485_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2485_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2485_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2485_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2485.ini > output/QC/eD_QC2485_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2485_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2485_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2485_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2486
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2486.ini > output/QC/eD_QC2486_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2486_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2486_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2486_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2486_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2486.ini > output/QC/eD_QC2486_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2486_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2486_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2486_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2487
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2487.ini > output/QC/eD_QC2487_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2487_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2487_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2487_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2487_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2487.ini > output/QC/eD_QC2487_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2487_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2487_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2487_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2488
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2488.ini > output/QC/eD_QC2488_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2488_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2488_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2488_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2488_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2488.ini > output/QC/eD_QC2488_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2488_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2488_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2488_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2489
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2489.ini > output/QC/eD_QC2489_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2489_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2489_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2489_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2489_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2489.ini > output/QC/eD_QC2489_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2489_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2489_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2489_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2490
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2490.ini > output/QC/eD_QC2490_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2490_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2490_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2490_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2490_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2490.ini > output/QC/eD_QC2490_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2490_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2490_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2490_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2491
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2491.ini > output/QC/eD_QC2491_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2491_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2491_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2491_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2491_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2491.ini > output/QC/eD_QC2491_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2491_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2491_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2491_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2492
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2492.ini > output/QC/eD_QC2492_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2492_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2492_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2492_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2492_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2492.ini > output/QC/eD_QC2492_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2492_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2492_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2492_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2493
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2493.ini > output/QC/eD_QC2493_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2493_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2493_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2493_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2493_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2493.ini > output/QC/eD_QC2493_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2493_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2493_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2493_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2494
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2494.ini > output/QC/eD_QC2494_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2494_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2494_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2494_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2494_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2494.ini > output/QC/eD_QC2494_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2494_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2494_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2494_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2495
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2495.ini > output/QC/eD_QC2495_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2495_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2495_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2495_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2495_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2495.ini > output/QC/eD_QC2495_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2495_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2495_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2495_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2496
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2496.ini > output/QC/eD_QC2496_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2496_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2496_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2496_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2496_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2496.ini > output/QC/eD_QC2496_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2496_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2496_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2496_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2497
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2497.ini > output/QC/eD_QC2497_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2497_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2497_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2497_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2497_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2497.ini > output/QC/eD_QC2497_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2497_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2497_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2497_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2498
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2498.ini > output/QC/eD_QC2498_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2498_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2498_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2498_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2498_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2498.ini > output/QC/eD_QC2498_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2498_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2498_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2498_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2426
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2426.ini > output/QC/eD_QC2426_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2426_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2426_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2426_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2426_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2426.ini > output/QC/eD_QC2426_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2426_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2426_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2426_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2427
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2427.ini > output/QC/eD_QC2427_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2427_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2427_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2427_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2427_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2427.ini > output/QC/eD_QC2427_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2427_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2427_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2427_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2428
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2428.ini > output/QC/eD_QC2428_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2428_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2428_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2428_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2428_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2428.ini > output/QC/eD_QC2428_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2428_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2428_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2428_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2429
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2429.ini > output/QC/eD_QC2429_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2429_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2429_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2429_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2429_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2429.ini > output/QC/eD_QC2429_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2429_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2429_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2429_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2430
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2430.ini > output/QC/eD_QC2430_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2430_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2430_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2430_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2430_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2430.ini > output/QC/eD_QC2430_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2430_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2430_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2430_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2431
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2431.ini > output/QC/eD_QC2431_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2431_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2431_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2431_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2431_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2431.ini > output/QC/eD_QC2431_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2431_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2431_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2431_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2432
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2432.ini > output/QC/eD_QC2432_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2432_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2432_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2432_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2432_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2432.ini > output/QC/eD_QC2432_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2432_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2432_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2432_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2433
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2433.ini > output/QC/eD_QC2433_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2433_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2433_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2433_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2433_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2433.ini > output/QC/eD_QC2433_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2433_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2433_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2433_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2437
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2437.ini > output/QC/eD_QC2437_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2437_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2437_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2437_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2437_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2437.ini > output/QC/eD_QC2437_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2437_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2437_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2437_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2438
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2438.ini > output/QC/eD_QC2438_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2438_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2438_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2438_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2438_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2438.ini > output/QC/eD_QC2438_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2438_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2438_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2438_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2439
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2439.ini > output/QC/eD_QC2439_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2439_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2439_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2439_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2439_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2439.ini > output/QC/eD_QC2439_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2439_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2439_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2439_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2440
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2440.ini > output/QC/eD_QC2440_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2440_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2440_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2440_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2440_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2440.ini > output/QC/eD_QC2440_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2440_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2440_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2440_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2441
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2441.ini > output/QC/eD_QC2441_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2441_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2441_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2441_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2441_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2441.ini > output/QC/eD_QC2441_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2441_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2441_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2441_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2442
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2442.ini > output/QC/eD_QC2442_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2442_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2442_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2442_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2442_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2442.ini > output/QC/eD_QC2442_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2442_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2442_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2442_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2443
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2443.ini > output/QC/eD_QC2443_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2443_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2443_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2443_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2443_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2443.ini > output/QC/eD_QC2443_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2443_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2443_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2443_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2444
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2444.ini > output/QC/eD_QC2444_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2444_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2444_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2444_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2444_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2444.ini > output/QC/eD_QC2444_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2444_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2444_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2444_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2445
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2445.ini > output/QC/eD_QC2445_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2445_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2445_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2445_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2445_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2445.ini > output/QC/eD_QC2445_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2445_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2445_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2445_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2446
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2446.ini > output/QC/eD_QC2446_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2446_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2446_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2446_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2446_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2446.ini > output/QC/eD_QC2446_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2446_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2446_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2446_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2447
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2447.ini > output/QC/eD_QC2447_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2447_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2447_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2447_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2447_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2447.ini > output/QC/eD_QC2447_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2447_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2447_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2447_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2448
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2448.ini > output/QC/eD_QC2448_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2448_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2448_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2448_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2448_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2448.ini > output/QC/eD_QC2448_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2448_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2448_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2448_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2449
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2449.ini > output/QC/eD_QC2449_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2449_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2449_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2449_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2449_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2449.ini > output/QC/eD_QC2449_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2449_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2449_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2449_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2450
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2450.ini > output/QC/eD_QC2450_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2450_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2450_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2450_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2450_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2450.ini > output/QC/eD_QC2450_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2450_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2450_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2450_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2452
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2452.ini > output/QC/eD_QC2452_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2452_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2452_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2452_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2452_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2452.ini > output/QC/eD_QC2452_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2452_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2452_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2452_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2453
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2453.ini > output/QC/eD_QC2453_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2453_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2453_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2453_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2453_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2453.ini > output/QC/eD_QC2453_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2453_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2453_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2453_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2454
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2454.ini > output/QC/eD_QC2454_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2454_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2454_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2454_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2454_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2454.ini > output/QC/eD_QC2454_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2454_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2454_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2454_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2455
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2455.ini > output/QC/eD_QC2455_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2455_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2455_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2455_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2455_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2455.ini > output/QC/eD_QC2455_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2455_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2455_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2455_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2456
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2456.ini > output/QC/eD_QC2456_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2456_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2456_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2456_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2456_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2456.ini > output/QC/eD_QC2456_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2456_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2456_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2456_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2457
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2457.ini > output/QC/eD_QC2457_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2457_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2457_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2457_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2457_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2457.ini > output/QC/eD_QC2457_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2457_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2457_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2457_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2458
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2458.ini > output/QC/eD_QC2458_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2458_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2458_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2458_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2458_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2458.ini > output/QC/eD_QC2458_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2458_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2458_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2458_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2459
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2459.ini > output/QC/eD_QC2459_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2459_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2459_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2459_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2459_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2459.ini > output/QC/eD_QC2459_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2459_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2459_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2459_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2460
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2460.ini > output/QC/eD_QC2460_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2460_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2460_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2460_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2460_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2460.ini > output/QC/eD_QC2460_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2460_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2460_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2460_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2461
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2461.ini > output/QC/eD_QC2461_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2461_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2461_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2461_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2461_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2461.ini > output/QC/eD_QC2461_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2461_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2461_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2461_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2463
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2463.ini > output/QC/eD_QC2463_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2463_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2463_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2463_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2463_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2463.ini > output/QC/eD_QC2463_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2463_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2463_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2463_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2464
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2464.ini > output/QC/eD_QC2464_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2464_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2464_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2464_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2464_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2464.ini > output/QC/eD_QC2464_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2464_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2464_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2464_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2465
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2465.ini > output/QC/eD_QC2465_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2465_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2465_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2465_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2465_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2465.ini > output/QC/eD_QC2465_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2465_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2465_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2465_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2466
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2466.ini > output/QC/eD_QC2466_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2466_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2466_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2466_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2466_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2466.ini > output/QC/eD_QC2466_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2466_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2466_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2466_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2467
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2467.ini > output/QC/eD_QC2467_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2467_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2467_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2467_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2467_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2467.ini > output/QC/eD_QC2467_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2467_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2467_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2467_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2468
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2468.ini > output/QC/eD_QC2468_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2468_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2468_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2468_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2468_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2468.ini > output/QC/eD_QC2468_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2468_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2468_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2468_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2469
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2469.ini > output/QC/eD_QC2469_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2469_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2469_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2469_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2469_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2469.ini > output/QC/eD_QC2469_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2469_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2469_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2469_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2470
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2470.ini > output/QC/eD_QC2470_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2470_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2470_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2470_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2470_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2470.ini > output/QC/eD_QC2470_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2470_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2470_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2470_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2471
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2471.ini > output/QC/eD_QC2471_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2471_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2471_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2471_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2471_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2471.ini > output/QC/eD_QC2471_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2471_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2471_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2471_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2472
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2472.ini > output/QC/eD_QC2472_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2472_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2472_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2472_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2472_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2472.ini > output/QC/eD_QC2472_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2472_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2472_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2472_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2473
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2473.ini > output/QC/eD_QC2473_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2473_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2473_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2473_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2473_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2473.ini > output/QC/eD_QC2473_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2473_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2473_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2473_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2474
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2474.ini > output/QC/eD_QC2474_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2474_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2474_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2474_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2474_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2474.ini > output/QC/eD_QC2474_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2474_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2474_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2474_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2475
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2475.ini > output/QC/eD_QC2475_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2475_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2475_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2475_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2475_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2475.ini > output/QC/eD_QC2475_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2475_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2475_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2475_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2476
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2476.ini > output/QC/eD_QC2476_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2476_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2476_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2476_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2476_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2476.ini > output/QC/eD_QC2476_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2476_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2476_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2476_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2477
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2477.ini > output/QC/eD_QC2477_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2477_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2477_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2477_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2477_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2477.ini > output/QC/eD_QC2477_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2477_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2477_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2477_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2478
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2478.ini > output/QC/eD_QC2478_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2478_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2478_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2478_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2478_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2478.ini > output/QC/eD_QC2478_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2478_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2478_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2478_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2480
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2480.ini > output/QC/eD_QC2480_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2480_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2480_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2480_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2480_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2480.ini > output/QC/eD_QC2480_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2480_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2480_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2480_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2481
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2481.ini > output/QC/eD_QC2481_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2481_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2481_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2481_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2481_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2481.ini > output/QC/eD_QC2481_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2481_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2481_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2481_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2482
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2482.ini > output/QC/eD_QC2482_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2482_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2482_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2482_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2482_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2482.ini > output/QC/eD_QC2482_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2482_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2482_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2482_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC2484
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_QC2484.ini > output/QC/eD_QC2484_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2484_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/eD_QC2484_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2484_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2484_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_QC2484.ini > output/QC/eD_QC2484_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/eD_QC2484_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/QC/eD_QC2484_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/eD_QC2484_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4718
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4718.ini > output/SK/eD_SK4718_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4718_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4718_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4718_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4718_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4718.ini > output/SK/eD_SK4718_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4718_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4718_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4718_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4701
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4701.ini > output/SK/eD_SK4701_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4701_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4701_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4701_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4701_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4701.ini > output/SK/eD_SK4701_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4701_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4701_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4701_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4702
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4702.ini > output/SK/eD_SK4702_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4702_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4702_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4702_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4702_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4702.ini > output/SK/eD_SK4702_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4702_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4702_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4702_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4703
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4703.ini > output/SK/eD_SK4703_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4703_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4703_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4703_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4703_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4703.ini > output/SK/eD_SK4703_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4703_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4703_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4703_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4704
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4704.ini > output/SK/eD_SK4704_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4704_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4704_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4704_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4704_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4704.ini > output/SK/eD_SK4704_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4704_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4704_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4704_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4705
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4705.ini > output/SK/eD_SK4705_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4705_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4705_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4705_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4705_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4705.ini > output/SK/eD_SK4705_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4705_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4705_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4705_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4706
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4706.ini > output/SK/eD_SK4706_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4706_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4706_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4706_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4706_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4706.ini > output/SK/eD_SK4706_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4706_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4706_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4706_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4707
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4707.ini > output/SK/eD_SK4707_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4707_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4707_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4707_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4707_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4707.ini > output/SK/eD_SK4707_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4707_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4707_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4707_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4708
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4708.ini > output/SK/eD_SK4708_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4708_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4708_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4708_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4708_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4708.ini > output/SK/eD_SK4708_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4708_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4708_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4708_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4709
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4709.ini > output/SK/eD_SK4709_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4709_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4709_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4709_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4709_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4709.ini > output/SK/eD_SK4709_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4709_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4709_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4709_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4710
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4710.ini > output/SK/eD_SK4710_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4710_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4710_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4710_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4710_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4710.ini > output/SK/eD_SK4710_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4710_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4710_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4710_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4711
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4711.ini > output/SK/eD_SK4711_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4711_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4711_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4711_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4711_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4711.ini > output/SK/eD_SK4711_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4711_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4711_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4711_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4712
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4712.ini > output/SK/eD_SK4712_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4712_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4712_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4712_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4712_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4712.ini > output/SK/eD_SK4712_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4712_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4712_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4712_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4713
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4713.ini > output/SK/eD_SK4713_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4713_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4713_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4713_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4713_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4713.ini > output/SK/eD_SK4713_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4713_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4713_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4713_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4714
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4714.ini > output/SK/eD_SK4714_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4714_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4714_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4714_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4714_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4714.ini > output/SK/eD_SK4714_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4714_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4714_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4714_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4715
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4715.ini > output/SK/eD_SK4715_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4715_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4715_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4715_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4715_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4715.ini > output/SK/eD_SK4715_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4715_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4715_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4715_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4716
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4716.ini > output/SK/eD_SK4716_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4716_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4716_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4716_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4716_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4716.ini > output/SK/eD_SK4716_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4716_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4716_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4716_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK4717
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_SK4717.ini > output/SK/eD_SK4717_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4717_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/eD_SK4717_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4717_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4717_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_SK4717.ini > output/SK/eD_SK4717_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/eD_SK4717_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/SK/eD_SK4717_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/eD_SK4717_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# YT6001
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_YT6001.ini > output/YT/eD_YT6001_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/YT/eD_YT6001_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/YT/eD_YT6001_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/YT/eD_YT6001_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/YT/eD_YT6001_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_YT6001.ini > output/YT/eD_YT6001_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/YT/eD_YT6001_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/YT/eD_YT6001_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/YT/eD_YT6001_src_loss_table_r1.csv;
+# =================================================================
