@@ -22,19 +22,17 @@ shut_down_ec2_instance() {
 trap "shut_down_ec2_instance" ERR
 
 
-### SETUP REGIONS
-declare -a regions=("Canada") 
-
 ### SETUP CALCULATIONS
 declare -a calcs=("b0" "r1")
 
-for region in "${regions[@]}"; do
-    calcnum="-2"
-    mkdir -p output/temp; rm -f output/temp/*
-    prov=$region
-    ### RUN RISK CALCS
-    oq engine --run input/ebRisk_b0_${region}.ini input/ebRisk_r1_${region}.ini &> output/${prov}/ebR_${region}_b0r1.log;
-    for calc in "${calcs[@]}"; do
+region="Canada"
+calcnum="-2"
+mkdir -p output/temp; rm -f output/temp/*
+prov=$region
+mkdir -p output/${prov}
+### RUN RISK CALCS
+oq engine --run input/ebRisk_b0_${region}.ini input/ebRisk_r1_${region}.ini &> output/${prov}/ebR_${region}_b0r1.log;
+for calc in "${calcs[@]}"; do
         ### EXPORTS
         oq export fullreport $calcnum -e rst -d output/temp/
         mv output/temp/report*.rst output/${prov}/ebR_${region}_report_${calc}.csv
@@ -55,7 +53,6 @@ for region in "${regions[@]}"; do
         oq export src_loss_table $calcnum -e csv -d output/temp/
         mv output/temp/src_loss_table_*.csv output/${prov}/ebR_${region}_src_loss_table_${calc}.csv;
         calcnum=$((${calcnum}+1))
-    done
 done
 
 ### AWS KILL
