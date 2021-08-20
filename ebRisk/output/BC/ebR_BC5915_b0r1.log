@@ -1,0 +1,263 @@
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_CampbellBozorgnia2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_ChiouYoungs2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2021-08-17 00:33:24 #138 INFO] root running /mnt/storage/canada-srm2/ebRisk/input/ebRisk_b0_BC5915.ini [--hc=None]
+[2021-08-17 00:33:24 #138 INFO] Using engine version 3.11.3-git29ac352f7d
+[2021-08-17 00:33:24 #138 WARNING] Using 96 cores on ip-10-70-136-127
+[2021-08-17 00:33:24 #138 INFO] Validated nationalModel.xml in 0.01 seconds
+[2021-08-17 00:33:24 #138 INFO] Checksum of the input files: 2936889068
+[2021-08-17 00:33:24 #138 INFO] Reading the risk model if present
+[2021-08-17 00:33:47 #138 INFO] Reading /mnt/storage/openquake-inputs/exposure/general-building-stock/oqBldgExp_BC5915.xml
+[2021-08-17 00:34:20 #138 INFO] Extracting the hazard sites from the site model
+[2021-08-17 00:34:25 #138 INFO] Associated 274630 assets to 20013 sites
+[2021-08-17 00:34:44 #138 INFO] Reducing risk model from 7260 to 1396 taxonomies
+[2021-08-17 00:34:47 #138 INFO] minimum_asset_loss={'contents': 0, 'nonstructural': 0, 'occupants': 0, 'structural': 0}
+[2021-08-17 00:34:47 #138 INFO] Storing 7938 aggregation keys
+[2021-08-17 00:34:50 #138 INFO] Considering 1_600 logic tree paths out of 24_576
+[2021-08-17 00:34:50 #138 INFO] Reading the source model(s) in parallel
+[2021-08-17 00:34:52 #138 INFO] read_source_model  16% [6 submitted, 0 queued]
+[2021-08-17 00:34:52 #138 INFO] read_source_model  33% [6 submitted, 0 queued]
+[2021-08-17 00:34:52 #138 INFO] read_source_model  50% [6 submitted, 0 queued]
+[2021-08-17 00:34:52 #138 INFO] read_source_model  66% [6 submitted, 0 queued]
+[2021-08-17 00:34:52 #138 INFO] read_source_model  83% [6 submitted, 0 queued]
+[2021-08-17 00:34:52 #138 INFO] read_source_model 100% [6 submitted, 0 queued]
+[2021-08-17 00:34:52 #138 INFO] Mean time per core=0s, std=0.0s, min=0s, max=0s
+[2021-08-17 00:34:52 #138 INFO] Received {'/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Harctic_simplified_collapsedRates.xml': '138.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Harctic_simplified_collapsedRates.xml': '133.09 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Rarctic_simplified_collapsedRates.xml': '132.34 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Rarctic_simplified_collapsedRates.xml': '126.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Harctic_simplified_collapsedRates.xml': '117.99 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Rarctic_simplified_collapsedRates.xml': '111.84 KB'} in 0 seconds
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2021-08-17 00:34:53 #138 INFO] There are multiple different sources with the same ID [<AreaSource SCCYA;0>, <AreaSource SCCYA;1>]
+[2021-08-17 00:34:53 #138 INFO] There are 13 groups and 196 sources with len(et_ids)=3.85
+[2021-08-17 00:34:53 #138 INFO] Checking the sources bounding box
+[2021-08-17 00:34:53 #138 ERROR] source ACM: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
+[2021-08-17 00:34:53 #138 INFO] Rupture floating factor = 1.6303030303030304
+[2021-08-17 00:34:53 #138 INFO] Rupture spinning factor = 3.278787878787879
+[2021-08-17 00:34:53 #138 INFO] gzipping the input files
+[2021-08-17 00:34:59 #138 INFO] Storing risk model
+[2021-08-17 00:35:00 #138 INFO] minimum_intensity={'default': 0.05, 'SA(0.3)': 0.02, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05}
+[2021-08-17 00:35:00 #138 INFO] Building ruptures
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Subduction IntraSlab30, 1 source(s)>
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Subduction IntraSlab55, 4 source(s)>
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Subduction Interface, 13 source(s)>
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Stable Shallow Crust, 29 source(s)>
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Stable Shallow Crust, 4 source(s)>
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Stable Shallow Crust, 6 source(s)>
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Stable Shallow Crust, 18 source(s)>
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Stable Shallow Crust, 10 source(s)>
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Stable Shallow Crust, 38 source(s)>
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Stable Shallow Crust, 14 source(s)>
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Active Shallow Crust, 57 source(s)>
+[2021-08-17 00:36:35 #138 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-08-17 00:36:38 #138 INFO] Sent 96 tasks, 159.21 MB in 0 seconds
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures   1% [98 submitted, 3 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures   2% [99 submitted, 2 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures   3% [100 submitted, 1 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures   4% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures   5% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures   6% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures   7% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures   8% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures   9% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  10% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  11% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  12% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  13% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  14% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  15% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  16% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  17% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  18% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  19% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  20% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  21% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  22% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  23% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  24% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  25% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  26% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  27% [101 submitted, 0 queued]
+[2021-08-17 00:36:39 #138 INFO] sample_ruptures  28% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  29% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  30% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  31% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  32% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  33% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  34% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  35% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  36% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  37% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  38% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  39% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  40% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  41% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  42% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  43% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  44% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  45% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  46% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  47% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  48% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  49% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  50% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  51% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  52% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  53% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  54% [101 submitted, 0 queued]
+[2021-08-17 00:36:40 #138 INFO] sample_ruptures  55% [101 submitted, 0 queued]
+[2021-08-17 00:36:44 #138 INFO] sample_ruptures  56% [101 submitted, 0 queued]
+[2021-08-17 00:36:45 #138 INFO] sample_ruptures  57% [101 submitted, 0 queued]
+[2021-08-17 00:36:48 #138 INFO] sample_ruptures  58% [101 submitted, 0 queued]
+[2021-08-17 00:36:49 #138 INFO] sample_ruptures  59% [101 submitted, 0 queued]
+[2021-08-17 00:36:50 #138 INFO] sample_ruptures  60% [101 submitted, 0 queued]
+[2021-08-17 00:37:16 #138 INFO] sample_ruptures  61% [101 submitted, 0 queued]
+[2021-08-17 00:38:45 #138 INFO] sample_ruptures  62% [101 submitted, 0 queued]
+[2021-08-17 00:38:57 #138 INFO] sample_ruptures  63% [101 submitted, 0 queued]
+[2021-08-17 00:39:03 #138 INFO] sample_ruptures  64% [101 submitted, 0 queued]
+[2021-08-17 00:39:45 #138 INFO] sample_ruptures  65% [101 submitted, 0 queued]
+[2021-08-17 00:41:06 #138 INFO] sample_ruptures  66% [101 submitted, 0 queued]
+[2021-08-17 00:41:06 #138 INFO] sample_ruptures  67% [101 submitted, 0 queued]
+[2021-08-17 00:41:23 #138 INFO] sample_ruptures  68% [101 submitted, 0 queued]
+[2021-08-17 00:42:06 #138 INFO] sample_ruptures  69% [101 submitted, 0 queued]
+[2021-08-17 00:42:23 #138 INFO] sample_ruptures  70% [101 submitted, 0 queued]
+[2021-08-17 00:42:29 #138 INFO] sample_ruptures  71% [101 submitted, 0 queued]
+[2021-08-17 00:43:02 #138 INFO] sample_ruptures  72% [101 submitted, 0 queued]
+[2021-08-17 00:44:35 #138 INFO] sample_ruptures  73% [101 submitted, 0 queued]
+[2021-08-17 00:45:31 #138 INFO] sample_ruptures  74% [101 submitted, 0 queued]
+[2021-08-17 00:45:43 #138 INFO] sample_ruptures  75% [101 submitted, 0 queued]
+[2021-08-17 00:45:45 #138 INFO] sample_ruptures  76% [101 submitted, 0 queued]
+[2021-08-17 00:46:26 #138 INFO] sample_ruptures  77% [101 submitted, 0 queued]
+[2021-08-17 00:46:32 #138 INFO] sample_ruptures  78% [101 submitted, 0 queued]
+[2021-08-17 00:47:22 #138 INFO] sample_ruptures  79% [101 submitted, 0 queued]
+[2021-08-17 00:47:37 #138 INFO] sample_ruptures  80% [101 submitted, 0 queued]
+[2021-08-17 00:49:28 #138 INFO] sample_ruptures  81% [101 submitted, 0 queued]
+[2021-08-17 00:50:20 #138 INFO] sample_ruptures  82% [101 submitted, 0 queued]
+[2021-08-17 00:51:44 #138 INFO] sample_ruptures  83% [101 submitted, 0 queued]
+[2021-08-17 00:52:45 #138 INFO] sample_ruptures  84% [101 submitted, 0 queued]
+[2021-08-17 01:01:07 #138 INFO] sample_ruptures  85% [101 submitted, 0 queued]
+[2021-08-17 01:03:12 #138 INFO] sample_ruptures  86% [101 submitted, 0 queued]
+[2021-08-17 01:08:11 #138 INFO] sample_ruptures  87% [101 submitted, 0 queued]
+[2021-08-17 01:09:02 #138 INFO] sample_ruptures  88% [101 submitted, 0 queued]
+[2021-08-17 01:10:35 #138 INFO] sample_ruptures  89% [101 submitted, 0 queued]
+[2021-08-17 01:13:27 #138 INFO] sample_ruptures  90% [101 submitted, 0 queued]
+[2021-08-17 01:14:19 #138 INFO] sample_ruptures  91% [101 submitted, 0 queued]
+[2021-08-17 01:20:38 #138 INFO] sample_ruptures  92% [101 submitted, 0 queued]
+[2021-08-17 01:24:59 #138 INFO] sample_ruptures  93% [101 submitted, 0 queued]
+[2021-08-17 01:26:30 #138 INFO] sample_ruptures  94% [101 submitted, 0 queued]
+[2021-08-17 01:28:33 #138 INFO] sample_ruptures  95% [101 submitted, 0 queued]
+[2021-08-17 01:30:06 #138 INFO] sample_ruptures  96% [101 submitted, 0 queued]
+[2021-08-17 01:33:53 #138 INFO] sample_ruptures  97% [101 submitted, 0 queued]
+[2021-08-17 01:43:42 #138 INFO] sample_ruptures  98% [101 submitted, 0 queued]
+[2021-08-17 01:47:30 #138 INFO] sample_ruptures  99% [101 submitted, 0 queued]
+[2021-08-17 01:58:32 #138 INFO] sample_ruptures 100% [101 submitted, 0 queued]
+[2021-08-17 01:58:32 #138 INFO] Mean time per core=579s, std=1089.7s, min=0s, max=4891s
+[2021-08-17 01:58:32 #138 INFO] Received {'rup_array': '7.57 GB', 'calc_times': '22.34 KB', 'eff_ruptures': '4.13 KB'} in 4914 seconds
+[2021-08-17 01:58:32 #138 INFO] There are 1600 realization(s)
+[2021-08-17 01:58:35 #138 INFO] Reordering the ruptures and storing the events
+[2021-08-17 01:59:41 #138 INFO] Associating event_id -> rlz_id for 680_666_451 events and 36_039_439 ruptures
+[2021-08-17 02:21:12 #138 INFO] Sent 210 tasks, 3.76 GB in 1193 seconds
+[2021-08-17 03:05:33 #138 INFO] Mean time per core=817s, std=684.3s, min=146s, max=3533s
+[2021-08-17 03:05:33 #138 INFO] Received {'tot': '6.34 GB'} in 2660 seconds
+[2021-08-17 03:57:38 #138 WARNING] The calculation is really big; consider setting minimum_asset_loss
+[2021-08-17 03:57:39 #138 INFO] minimum_intensity={'SA(0.3)': 0.02, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05, 'SA(0.5)': 0.05}
+[2021-08-17 03:57:39 #138 INFO] Sending 36_039_439 ruptures
+[2021-08-17 04:25:24 #138 INFO] Sent 210 tasks, 3.79 GB in 1565 seconds
+[2021-08-17 04:25:26 #138 INFO] start_ebrisk   1% [738 submitted, 0 queued]
+[2021-08-17 12:38:12 #138 INFO] start_ebrisk   2% [15939 submitted, 0 queued]
+[2021-08-17 17:53:28 #138 INFO] start_ebrisk   3% [15939 submitted, 0 queued]
+[2021-08-17 23:34:01 #138 INFO] start_ebrisk   4% [15939 submitted, 0 queued]
+[2021-08-18 04:54:28 #138 INFO] start_ebrisk   5% [15939 submitted, 0 queued]
+[2021-08-18 10:39:02 #138 INFO] start_ebrisk   6% [15939 submitted, 0 queued]
+[2021-08-18 15:45:44 #138 INFO] start_ebrisk   7% [15939 submitted, 0 queued]
+[2021-08-18 21:22:04 #138 INFO] start_ebrisk   8% [15939 submitted, 0 queued]
+[2021-08-19 03:09:25 #138 INFO] start_ebrisk   9% [15939 submitted, 0 queued]
+[2021-08-19 08:39:32 #138 INFO] start_ebrisk  10% [15939 submitted, 0 queued]
+[2021-08-19 14:17:21 #138 INFO] start_ebrisk  11% [15939 submitted, 0 queued]
+[2021-08-19 19:42:12 #138 INFO] start_ebrisk  12% [15939 submitted, 0 queued]
+[2021-08-19 21:18:00 #138 INFO] Received {'alt': '83.97 GB', 'losses_by_A': '8.02 GB', 'momenta': '2.92 GB', 'gmf_info': '115.58 MB', 'events_per_sid': '40.17 KB'} in 233556 seconds
+[2021-08-19 21:18:00 #138 CRITICAL] Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/ebrisk.py", line 228, in execute
+    smap.reduce(self.agg_dicts)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 827, in reduce
+    return self.submit_all().reduce(agg, acc)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 586, in reduce
+    for result in self:
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 575, in __iter__
+    yield from self._iter()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 536, in _iter
+    for result in self.iresults:
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 860, in _loop
+    res = next(isocket)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/zeromq.py", line 135, in __iter__
+    if self.zsocket.poll(self.timeout):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/zmq/sugar/socket.py", line 702, in poll
+    evts = dict(p.poll(timeout))
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/zmq/sugar/poll.py", line 99, in poll
+    return zmq_poll(self.sockets, timeout=timeout)
+  File "zmq/backend/cython/_poll.pyx", line 123, in zmq.backend.cython._poll.zmq_poll
+  File "zmq/backend/cython/checkrc.pxd", line 13, in zmq.backend.cython.checkrc._check_rc
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 171, in manage_signals
+    raise MasterKilled('The openquake master process was killed manually')
+openquake.engine.engine.MasterKilled: The openquake master process was killed manually
+
+[2021-08-19 21:18:02 #138 INFO] Stopping the workers
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/bin/oq", line 33, in <module>
+    sys.exit(load_entry_point('openquake.engine', 'console_scripts', 'oq')())
+  File "/home/ssm-user/src/oq-engine/openquake/commands/__main__.py", line 44, in oq
+    sap.run(commands, prog='oq')
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 225, in run
+    return _run(parser(funcdict, **parserkw), argv)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 216, in _run
+    return func(**dic)
+  File "/home/ssm-user/src/oq-engine/openquake/commands/engine.py", line 164, in main
+    run_jobs(job_inis, log_level, log_file, exports, **pars)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 407, in run_jobs
+    run_calc(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/ebrisk.py", line 228, in execute
+    smap.reduce(self.agg_dicts)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 827, in reduce
+    return self.submit_all().reduce(agg, acc)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 586, in reduce
+    for result in self:
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 575, in __iter__
+    yield from self._iter()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 536, in _iter
+    for result in self.iresults:
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 860, in _loop
+    res = next(isocket)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/zeromq.py", line 135, in __iter__
+    if self.zsocket.poll(self.timeout):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/zmq/sugar/socket.py", line 702, in poll
+    evts = dict(p.poll(timeout))
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/zmq/sugar/poll.py", line 99, in poll
+    return zmq_poll(self.sockets, timeout=timeout)
+  File "zmq/backend/cython/_poll.pyx", line 123, in zmq.backend.cython._poll.zmq_poll
+  File "zmq/backend/cython/checkrc.pxd", line 13, in zmq.backend.cython.checkrc._check_rc
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 171, in manage_signals
+    raise MasterKilled('The openquake master process was killed manually')
+openquake.engine.engine.MasterKilled: The openquake master process was killed manually
