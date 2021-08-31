@@ -34,7 +34,7 @@ for region in "${regions[@]}"; do
     mkdir -p output/temp; rm -f output/temp/*
     prov=`echo $region | cut -c1-2`
     ### RUN RISK CALCS
-    oq engine --run input/ebRisk_b0_${region}.ini input/ebRisk_r1_${region}.ini &> output/${prov}/ebR_${region}_b0r1.log; #input/ebRisk_b0_EP_${region}.ini input/ebRisk_r1_${region}.ini input/ebRisk_r1_EP_${region}.ini &> output/${prov}/ebR_${region}_b0r1.log;
+    oq engine --run input/ebRisk_b0_${region}.ini input/ebRisk_r1_${region}.ini &> output/${prov}/ebR_${region}_b0r1.log; 
     for calc in "${calcs[@]}"; do
         ### EXPORTS
         oq export fullreport $calcnum -e rst -d output/temp/
@@ -43,13 +43,11 @@ for region in "${regions[@]}"; do
             oq export realizations $calcnum -d output/temp/
             mv output/temp/realizations*.csv output/${prov}/ebR_${region}_rlz_b0.csv 
         fi
-        #if [[ ${calc} == *"_EP"* ]]; then #THIS WAS BACKWARD ANYWAYS
         oq export avg_losses-stats $calcnum -d output/temp/
         mv output/temp/avg_losses-mean*.csv output/${prov}/ebR_${region}_avg_losses-stats_${calc}.csv;
-        mv output/temp/avg_losses-quantile-0.05*.csv output/${prov}/ebR_${region}_avg_losses-q05_${calc}.csv;
-        mv output/temp/avg_losses-quantile-0.5*.csv output/${prov}/ebR_${region}_avg_losses-q50_${calc}.csv;
-        mv output/temp/avg_losses-quantile-0.95*.csv output/${prov}/ebR_${region}_avg_losses-q95_${calc}.csv;
-        #else
+#        mv output/temp/avg_losses-quantile-0.05*.csv output/${prov}/ebR_${region}_avg_losses-q05_${calc}.csv;
+#        mv output/temp/avg_losses-quantile-0.5*.csv output/${prov}/ebR_${region}_avg_losses-q50_${calc}.csv;
+#        mv output/temp/avg_losses-quantile-0.95*.csv output/${prov}/ebR_${region}_avg_losses-q95_${calc}.csv;
         oq export agg_curves-stats $calcnum -d output/temp/
         mv output/temp/agg_curves-mean*.csv output/${prov}/ebR_${region}_agg_curves-stats_${calc}.csv;
         mv output/temp/agg_curves-quantile-0.05*.csv output/${prov}/ebR_${region}_agg_curves-q05_${calc}.csv;
@@ -62,7 +60,6 @@ for region in "${regions[@]}"; do
         mv output/temp/agg_losses-quantile-0.95*.csv output/${prov}/ebR_${region}_agg_losses-q95_${calc}.csv;
         oq export src_loss_table $calcnum -d output/temp/
         mv output/temp/src_loss_table_*.csv output/${prov}/ebR_${region}_src_loss_table_${calc}.csv;
-        #fi
         calcnum=$((${calcnum}+1))
     done
 done
