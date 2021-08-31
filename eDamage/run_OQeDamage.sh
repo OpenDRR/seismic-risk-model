@@ -41,7 +41,7 @@ for region in "${regions[@]}"; do
         mv output/temp/report*.rst output/${prov}/eD_${region}_report_${calc}.csv
         if [[ ${calc} == "b0" ]]; then
             oq export realizations $calcnum -e csv -d output/temp/
-            mv output/temp/realizations*.csv output/${prov}/ebR_${region}_rlz_b0.csv 
+            mv output/temp/realizations*.csv output/${prov}/eD_${region}_rlz_b0.csv 
         fi
         oq export damages-stats $calcnum -e csv -d output/temp/
         mv output/temp/avg_damages-mean*.csv output/${prov}/eD_${region}_damages-mean_${calc}.csv;
