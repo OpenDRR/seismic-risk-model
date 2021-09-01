@@ -46,6 +46,9 @@ for region in "${regions[@]}"; do
         fi
         oq export damages-stats $calcnum -e csv -d output/temp/
         mv output/temp/avg_damages-mean*.csv output/${prov}/eD_${region}_damages-mean_${calc}.csv;
+        mv output/temp/avg_damages-quantile-0.05*.csv output/${prov}/eD_${region}_damages-q05_${calc}.csv;
+        mv output/temp/avg_damages-quantile-0.5*.csv output/${prov}/eD_${region}_damages-q50_${calc}.csv;
+        mv output/temp/avg_damages-quantile-0.95*.csv output/${prov}/eD_${region}_damages-q95_${calc}.csv;
         calcnum=$((${calcnum}+1))
     done
 done
