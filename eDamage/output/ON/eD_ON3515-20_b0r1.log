@@ -1,0 +1,96 @@
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_CampbellBozorgnia2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_ChiouYoungs2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2021-09-08 05:19:16 #156 INFO] root running /mnt/storage/canada-srm2/eDamage/input/eDamage_b0_ON3515-20.ini [--hc=None]
+[2021-09-08 05:19:16 #156 INFO] Using engine version 3.11.3-git0cccb86798
+[2021-09-08 05:19:16 #156 WARNING] Version v3.12.0 of the engine is available, but you are still using version 3.11.3-git0cccb86798
+[2021-09-08 05:19:16 #156 WARNING] Using 96 cores on ip-10-70-136-20
+[2021-09-08 05:19:16 #156 INFO] Validated nationalModel.xml in 0.01 seconds
+[2021-09-08 05:19:16 #156 INFO] Checksum of the input files: 1489067703
+[2021-09-08 05:19:16 #156 INFO] Reading the risk model if present
+[2021-09-08 05:19:19 #156 INFO] Reading /mnt/storage/openquake-inputs/exposure/general-building-stock/oqBldgExp_ON3515-20.xml
+[2021-09-08 05:19:31 #156 INFO] Extracting the hazard sites from the site model
+[2021-09-08 05:19:34 #156 INFO] Associated 91544 assets to 15203 sites
+[2021-09-08 05:19:40 #156 INFO] Reducing risk model from 4224 to 544 taxonomies
+[2021-09-08 05:19:43 #156 INFO] minimum_asset_loss={'structural': 0}
+[2021-09-08 05:19:43 #156 INFO] Considering 200 logic tree paths out of 24_576
+[2021-09-08 05:19:43 #156 INFO] Reading the source model(s) in parallel
+[2021-09-08 05:19:46 #156 INFO] read_source_model  16% [6 submitted, 0 queued]
+[2021-09-08 05:19:46 #156 INFO] read_source_model  33% [6 submitted, 0 queued]
+[2021-09-08 05:19:46 #156 INFO] read_source_model  50% [6 submitted, 0 queued]
+[2021-09-08 05:19:46 #156 INFO] read_source_model  66% [6 submitted, 0 queued]
+[2021-09-08 05:19:46 #156 INFO] read_source_model  83% [6 submitted, 0 queued]
+[2021-09-08 05:19:46 #156 INFO] read_source_model 100% [6 submitted, 0 queued]
+[2021-09-08 05:19:46 #156 INFO] Mean time per core=0s, std=0.0s, min=0s, max=0s
+[2021-09-08 05:19:46 #156 INFO] Received {'/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Harctic_simplified_collapsedRates.xml': '138.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Harctic_simplified_collapsedRates.xml': '133.09 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Rarctic_simplified_collapsedRates.xml': '132.34 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Rarctic_simplified_collapsedRates.xml': '126.71 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Harctic_simplified_collapsedRates.xml': '117.99 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Rarctic_simplified_collapsedRates.xml': '111.84 KB'} in 0 seconds
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2021-09-08 05:19:46 #156 INFO] There are multiple different sources with the same ID [<AreaSource SCCYA;0>, <AreaSource SCCYA;1>]
+[2021-09-08 05:19:46 #156 INFO] There are 13 groups and 196 sources with len(et_ids)=3.85
+[2021-09-08 05:19:46 #156 INFO] Checking the sources bounding box
+[2021-09-08 05:19:46 #156 ERROR] source ACM: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
+[2021-09-08 05:19:46 #156 INFO] Rupture floating factor = 1.6303030303030304
+[2021-09-08 05:19:46 #156 INFO] Rupture spinning factor = 3.278787878787879
+[2021-09-08 05:19:46 #156 INFO] gzipping the input files
+[2021-09-08 05:19:48 #156 INFO] Storing risk model
+[2021-09-08 05:19:49 #156 INFO] minimum_intensity={'SA(0.3)': 0.02, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05}
+[2021-09-08 05:19:49 #156 INFO] Building ruptures
+[2021-09-08 05:20:15 #156 CRITICAL] Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 295, in execute
+    self.build_events_from_sources()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 136, in build_events_from_sources
+    maxweight = sum(sg.weight for sg in self.csm.src_groups) / (
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 136, in <genexpr>
+    maxweight = sum(sg.weight for sg in self.csm.src_groups) / (
+  File "/home/ssm-user/src/oq-engine/openquake/hazardlib/sourceconverter.py", line 186, in weight
+    return sum(src.weight for src in self)
+  File "/home/ssm-user/src/oq-engine/openquake/hazardlib/sourceconverter.py", line 186, in <genexpr>
+    return sum(src.weight for src in self)
+  File "/home/ssm-user/src/oq-engine/openquake/hazardlib/source/base.py", line 62, in weight
+    self.num_ruptures = self.count_ruptures()
+  File "/home/ssm-user/src/oq-engine/openquake/hazardlib/source/area.py", line 135, in count_ruptures
+    polygon_mesh = self.polygon.discretize(self.area_discretization)
+  File "/home/ssm-user/src/oq-engine/openquake/hazardlib/geo/polygon.py", line 251, in discretize
+    x, y = self._projection(longitude, latitude)
+  File "/home/ssm-user/src/oq-engine/openquake/hazardlib/geo/utils.py", line 432, in __call__
+    numpy.sin((self.phi0 - phis) / 2.0) ** 2.0
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 175, in manage_signals
+    raise SystemExit('Terminated')
+SystemExit: Terminated
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/scenario_damage.py", line 155, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 270, in run
+    readinput.exposure = None
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 182, in manage_signals
+    raise MasterKilled(
+openquake.engine.engine.MasterKilled: The openquake master lost its controlling terminal
+
