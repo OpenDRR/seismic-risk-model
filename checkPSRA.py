@@ -48,7 +48,7 @@ losMEb = losMEb[losMEb['sauid'] == SAUID]
 losME = pd.merge(losMEb, losMEr, how='left', on='asset_id', suffixes=('_b0', '_r1'))
 losMEe = pd.merge(losME, expo, how='left', left_on='asset_id', right_on='id', suffixes=('','_expo'))
 
-losCMEb = losCMEb[losCMEb['fsauid'] == FSA]
+#losCMEb = losCMEb[losCMEb['fsauid'] == FSA]
 
 damMEb = damMEb[damMEb['sauid'] == SAUID]
 damME = pd.merge(damMEb, damMEr, how='left', on='asset_id', suffixes=('_b0', '_r1'))
