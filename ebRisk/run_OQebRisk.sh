@@ -23,8 +23,60 @@ trap "shut_down_ec2_instance" ERR
 
 
 ### SETUP REGIONS
-declare -a regions=("NB" "NL" "NS" "ON3510" "ON3515-20" "ON3530A" "ON3540" "ON3550" "ON3560-70" "ON3580" "ON3590-95" "PE" "QC2410-20" "QC2425-33" "QC2435" "QC2440" "QC2445-55" "QC2460-70" "QC2475-90") #eastern
-#declare -a regions=("AB4810-20", "AB4830", "AB4840-50", "AB4860", "AB4870-80", "BC5910", "BC5920A", "BC5920B", "BC5930", "BC5940-80", "MB4610-40", "MB4650-80", "NT", "NU", "SK4710-30", "SK4740-60", "YT") #western
+#FOR generateSRM.py:
+#ls subDividedExpoFiles | cut -c11- | awk -F'.csv' '{print $1}' | awk -F'_' '{print $0","$1}'
+#FOR HERE:
+#ls subDividedExpoFiles | cut -c11- | awk -F'.csv' '{print $1}' | awk -F'_' '{print "\""$0"\""}'
+# Put output here, omitting new lines:
+declare -a regions=("AB_T_CalgaryMetro"
+"AB_T_CalgaryOutskirts"
+"AB_T_EdmontonOuter"
+"AB_T_EdmontonWest"
+"AB_T_Northern"
+"BC_V_Capital"
+"BC_V_Coastal"
+"BC_V_FraserValley"
+"BC_V_GreaterVancouverNorth"
+"BC_V_GreaterVancouverSouth"
+"BC_V_Misc"
+"BC_V_OkanaganKootenay"
+"MB_R_Misc"
+"MB_R_Winnipeg"
+"NB_E"
+"NL_A"
+"NS_B"
+"NT_X"
+"NU_X"
+"ON_K_KingstonPembroke"
+"ON_K_Misc"
+"ON_K_OttawaRegion"
+"ON_L_BarrieRegion"
+"ON_L_HamiltonNiagara"
+"ON_L_Misc"
+"ON_L_Peel"
+"ON_M_TorontoEast"
+"ON_M_TorontoWest"
+"ON_N_LondonRegion"
+"ON_N_Misc"
+"ON_N_SarniaWindsor"
+"ON_N_Waterloo"
+"ON_P_Misc"
+"ON_P_NorthernOntario"
+"PE_C"
+"QC_G_CharlevoixSaguenay"
+"QC_G_Misc"
+"QC_G_QuebecCity"
+"QC_G_TroisRivieresWest"
+"QC_H_Misc"
+"QC_H_Montreal"
+"QC_J_EasternTownships"
+"QC_J_Gatineau"
+"QC_J_Misc"
+"QC_J_NorthWestShoreMTL"
+"QC_J_SouthEastShoreMTL"
+"SK_S_Misc"
+"SK_S_ReginaSaskatoon"
+"YT_Y") #all
 #declare -a regions=("ON3580") #ON3530B") #for testing only, omitted from list above
 
 ### SETUP CALCULATIONS

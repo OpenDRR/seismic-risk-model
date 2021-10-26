@@ -1,0 +1,155 @@
+[2021-10-26 20:33:33 #129 INFO] thobbs running /Users/thobbs/Documents/GitHub/canada-srm2/eDamage/input/eDamage_b0_YT_Y.ini [--hc=None]
+[2021-10-26 20:33:33 #129 INFO] Using engine version 3.11.3-git0cccb86798
+[2021-10-26 20:33:34 #129 WARNING] Version v3.11.4 of the engine is available, but you are still using version 3.11.3-git0cccb86798
+[2021-10-26 20:33:34 #129 WARNING] Using 16 cores on L-VAN-AC02ZW7L4MD6N.local
+[2021-10-26 20:33:34 #129 INFO] Validated nationalModel.xml in 0.01 seconds
+[2021-10-26 20:33:34 #129 INFO] Checksum of the input files: 2954583735
+[2021-10-26 20:33:34 #129 INFO] Reading the risk model if present
+[2021-10-26 20:33:36 #129 INFO] Reading /Users/thobbs/Documents/GitHub/openquake-inputs/exposure/general-building-stock/oqBldgExp_YT_Y.xml
+[2021-10-26 20:33:37 #129 INFO] Extracting the hazard sites from the site model
+[2021-10-26 20:33:38 #129 INFO] Associated 3916 assets to 647 sites
+[2021-10-26 20:33:38 #129 INFO] Reducing risk model from 4224 to 336 taxonomies
+[2021-10-26 20:33:38 #129 INFO] minimum_asset_loss={'structural': 0}
+[2021-10-26 20:33:38 #129 INFO] Considering 200 logic tree paths out of 24_576
+[2021-10-26 20:33:38 #129 INFO] Reading the source model(s) in parallel
+[2021-10-26 20:33:40 #129 INFO] read_source_model  16% [6 submitted, 0 queued]
+[2021-10-26 20:33:40 #129 INFO] read_source_model  33% [6 submitted, 0 queued]
+[2021-10-26 20:33:40 #129 INFO] read_source_model  50% [6 submitted, 0 queued]
+[2021-10-26 20:33:40 #129 INFO] read_source_model  66% [6 submitted, 0 queued]
+[2021-10-26 20:33:40 #129 INFO] read_source_model  83% [6 submitted, 0 queued]
+[2021-10-26 20:33:40 #129 INFO] read_source_model 100% [6 submitted, 0 queued]
+[2021-10-26 20:33:40 #129 INFO] Mean time per core=0s, std=0.0s, min=0s, max=0s
+[2021-10-26 20:33:40 #129 INFO] Received {'/Users/thobbs/Documents/GitHub/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Harctic_simplified_collapsedRates.xml': '138.73 KB', '/Users/thobbs/Documents/GitHub/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Harctic_simplified_collapsedRates.xml': '133.11 KB', '/Users/thobbs/Documents/GitHub/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Rarctic_simplified_collapsedRates.xml': '132.36 KB', '/Users/thobbs/Documents/GitHub/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Rarctic_simplified_collapsedRates.xml': '126.73 KB', '/Users/thobbs/Documents/GitHub/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Harctic_simplified_collapsedRates.xml': '118.01 KB', '/Users/thobbs/Documents/GitHub/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Rarctic_simplified_collapsedRates.xml': '111.85 KB'} in 1 seconds
+[2021-10-26 20:33:40 #129 INFO] There are multiple different sources with the same ID [<AreaSource SCCYA;0>, <AreaSource SCCYA;1>]
+[2021-10-26 20:33:40 #129 INFO] There are 13 groups and 196 sources with len(et_ids)=3.85
+[2021-10-26 20:33:40 #129 INFO] Checking the sources bounding box
+[2021-10-26 20:33:40 #129 ERROR] source ACM: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
+[2021-10-26 20:33:40 #129 INFO] Rupture floating factor = 1.6303030303030304
+[2021-10-26 20:33:40 #129 INFO] Rupture spinning factor = 3.278787878787879
+[2021-10-26 20:33:40 #129 INFO] gzipping the input files
+[2021-10-26 20:33:41 #129 INFO] Storing risk model
+[2021-10-26 20:33:41 #129 INFO] minimum_intensity={'SA(0.3)': 0.02, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05}
+[2021-10-26 20:33:41 #129 INFO] Building ruptures
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Subduction IntraSlab30, 1 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Subduction IntraSlab55, 4 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Subduction Interface, 13 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 29 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 4 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 6 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 18 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 10 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 38 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Stable Shallow Crust, 14 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Active Shallow Crust, 57 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2021-10-26 20:34:32 #129 INFO] Sent 16 tasks, 13.98 MB in 0 seconds
+[2021-10-26 20:34:34 #129 INFO] sample_ruptures   2% [17 submitted, 22 queued]
+[2021-10-26 20:34:34 #129 INFO] sample_ruptures   5% [18 submitted, 21 queued]
+[2021-10-26 20:34:34 #129 INFO] sample_ruptures   7% [19 submitted, 20 queued]
+[2021-10-26 20:34:34 #129 INFO] sample_ruptures  10% [20 submitted, 19 queued]
+[2021-10-26 20:34:34 #129 INFO] sample_ruptures  12% [21 submitted, 18 queued]
+[2021-10-26 20:34:34 #129 INFO] sample_ruptures  15% [22 submitted, 17 queued]
+[2021-10-26 20:34:34 #129 INFO] sample_ruptures  17% [23 submitted, 16 queued]
+[2021-10-26 20:34:47 #129 INFO] sample_ruptures  20% [24 submitted, 15 queued]
+[2021-10-26 20:34:54 #129 INFO] sample_ruptures  23% [25 submitted, 14 queued]
+[2021-10-26 20:36:01 #129 INFO] sample_ruptures  25% [26 submitted, 13 queued]
+[2021-10-26 20:37:20 #129 INFO] sample_ruptures  28% [27 submitted, 12 queued]
+[2021-10-26 20:38:04 #129 INFO] sample_ruptures  30% [28 submitted, 11 queued]
+[2021-10-26 20:38:11 #129 INFO] sample_ruptures  33% [29 submitted, 10 queued]
+[2021-10-26 20:38:11 #129 INFO] sample_ruptures  35% [30 submitted, 9 queued]
+[2021-10-26 20:38:22 #129 INFO] sample_ruptures  38% [31 submitted, 8 queued]
+[2021-10-26 20:39:28 #129 INFO] sample_ruptures  41% [32 submitted, 7 queued]
+[2021-10-26 20:39:30 #129 INFO] sample_ruptures  43% [33 submitted, 6 queued]
+[2021-10-26 20:40:07 #129 INFO] sample_ruptures  46% [34 submitted, 5 queued]
+[2021-10-26 20:40:07 #129 INFO] sample_ruptures  48% [35 submitted, 4 queued]
+[2021-10-26 20:40:07 #129 INFO] sample_ruptures  51% [36 submitted, 3 queued]
+[2021-10-26 20:40:43 #129 INFO] sample_ruptures  53% [37 submitted, 2 queued]
+[2021-10-26 20:40:59 #129 INFO] sample_ruptures  56% [38 submitted, 1 queued]
+[2021-10-26 20:41:48 #129 INFO] sample_ruptures  58% [39 submitted, 0 queued]
+[2021-10-26 20:41:51 #129 INFO] sample_ruptures  61% [39 submitted, 0 queued]
+[2021-10-26 20:42:03 #129 INFO] sample_ruptures  64% [39 submitted, 0 queued]
+[2021-10-26 20:43:07 #129 INFO] sample_ruptures  66% [39 submitted, 0 queued]
+[2021-10-26 20:47:29 #129 INFO] sample_ruptures  69% [39 submitted, 0 queued]
+[2021-10-26 20:48:16 #129 INFO] sample_ruptures  71% [39 submitted, 0 queued]
+[2021-10-26 20:49:09 #129 INFO] sample_ruptures  74% [39 submitted, 0 queued]
+[2021-10-26 20:52:22 #129 INFO] sample_ruptures  76% [39 submitted, 0 queued]
+[2021-10-26 20:54:24 #129 INFO] Received {'rup_array': '887.08 MB', 'calc_times': '7.2 KB', 'eff_ruptures': '1.3 KB'} in 1191 seconds
+[2021-10-26 20:54:25 #129 CRITICAL] Traceback (most recent call last):
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/calculators/scenario_damage.py", line 155, in pre_execute
+    super().pre_execute()
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/calculators/event_based.py", line 295, in execute
+    self.build_events_from_sources()
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/calculators/event_based.py", line 161, in build_events_from_sources
+    for dic in smap:
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/baselib/parallel.py", line 575, in __iter__
+    yield from self._iter()
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/baselib/parallel.py", line 536, in _iter
+    for result in self.iresults:
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/baselib/parallel.py", line 860, in _loop
+    res = next(isocket)
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/baselib/zeromq.py", line 135, in __iter__
+    if self.zsocket.poll(self.timeout):
+  File "/Users/thobbs/openquake/lib/python3.8/site-packages/zmq/sugar/socket.py", line 702, in poll
+    evts = dict(p.poll(timeout))
+  File "/Users/thobbs/openquake/lib/python3.8/site-packages/zmq/sugar/poll.py", line 99, in poll
+    return zmq_poll(self.sockets, timeout=timeout)
+  File "zmq/backend/cython/_poll.pyx", line 123, in zmq.backend.cython._poll.zmq_poll
+  File "zmq/backend/cython/checkrc.pxd", line 13, in zmq.backend.cython.checkrc._check_rc
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/engine/engine.py", line 171, in manage_signals
+    raise MasterKilled('The openquake master process was killed manually')
+openquake.engine.engine.MasterKilled: The openquake master process was killed manually
+
+[2021-10-26 20:54:27 #129 INFO] Stopping the workers
+Traceback (most recent call last):
+  File "/Users/thobbs/openquake/bin/oq", line 33, in <module>
+    sys.exit(load_entry_point('openquake.engine', 'console_scripts', 'oq')())
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/commands/__main__.py", line 44, in oq
+    sap.run(commands, prog='oq')
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/baselib/sap.py", line 225, in run
+    return _run(parser(funcdict, **parserkw), argv)
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/baselib/sap.py", line 216, in _run
+    return func(**dic)
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/commands/engine.py", line 164, in main
+    run_jobs(job_inis, log_level, log_file, exports, **pars)
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/engine/engine.py", line 407, in run_jobs
+    run_calc(*args)
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/calculators/scenario_damage.py", line 155, in pre_execute
+    super().pre_execute()
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/calculators/event_based.py", line 295, in execute
+    self.build_events_from_sources()
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/calculators/event_based.py", line 161, in build_events_from_sources
+    for dic in smap:
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/baselib/parallel.py", line 575, in __iter__
+    yield from self._iter()
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/baselib/parallel.py", line 536, in _iter
+    for result in self.iresults:
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/baselib/parallel.py", line 860, in _loop
+    res = next(isocket)
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/baselib/zeromq.py", line 135, in __iter__
+    if self.zsocket.poll(self.timeout):
+  File "/Users/thobbs/openquake/lib/python3.8/site-packages/zmq/sugar/socket.py", line 702, in poll
+    evts = dict(p.poll(timeout))
+  File "/Users/thobbs/openquake/lib/python3.8/site-packages/zmq/sugar/poll.py", line 99, in poll
+    return zmq_poll(self.sockets, timeout=timeout)
+  File "zmq/backend/cython/_poll.pyx", line 123, in zmq.backend.cython._poll.zmq_poll
+  File "zmq/backend/cython/checkrc.pxd", line 13, in zmq.backend.cython.checkrc._check_rc
+  File "/Users/thobbs/Documents/GitHub/oq-engine/openquake/engine/engine.py", line 171, in manage_signals
+    raise MasterKilled('The openquake master process was killed manually')
+openquake.engine.engine.MasterKilled: The openquake master process was killed manually
