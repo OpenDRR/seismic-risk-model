@@ -45874,3 +45874,2551 @@ mv output/temp/agg_losses-quantile-0.95*.csv output/YT/ebR_YT_agg_losses-q95_r1.
 oq export src_loss_table -1 -e csv -d output/temp/
 mv output/temp/src_loss_table_*.csv output/YT/ebR_YT_src_loss_table_r1.csv;
 # =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB_T_CalgaryMetro
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_AB_T_CalgaryMetro.ini > output/AB/ebR_AB_T_CalgaryMetro_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/ebR_AB_T_CalgaryMetro_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/ebR_AB_T_CalgaryMetro_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/AB/ebR_AB_T_CalgaryMetro_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_CalgaryMetro_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_CalgaryMetro_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_CalgaryMetro_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/ebR_AB_T_CalgaryMetro_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_AB_T_CalgaryMetro.ini > output/AB/ebR_AB_T_CalgaryMetro_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/ebR_AB_T_CalgaryMetro_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/AB/ebR_AB_T_CalgaryMetro_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_CalgaryMetro_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_CalgaryMetro_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_CalgaryMetro_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_CalgaryMetro_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/ebR_AB_T_CalgaryMetro_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB_T_CalgaryOutskirts
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_AB_T_CalgaryOutskirts.ini > output/AB/ebR_AB_T_CalgaryOutskirts_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/ebR_AB_T_CalgaryOutskirts_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/ebR_AB_T_CalgaryOutskirts_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/AB/ebR_AB_T_CalgaryOutskirts_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_CalgaryOutskirts_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_CalgaryOutskirts_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_CalgaryOutskirts_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/ebR_AB_T_CalgaryOutskirts_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_AB_T_CalgaryOutskirts.ini > output/AB/ebR_AB_T_CalgaryOutskirts_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/ebR_AB_T_CalgaryOutskirts_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/AB/ebR_AB_T_CalgaryOutskirts_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_CalgaryOutskirts_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_CalgaryOutskirts_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_CalgaryOutskirts_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_CalgaryOutskirts_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/ebR_AB_T_CalgaryOutskirts_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB_T_EdmontonOuter
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_AB_T_EdmontonOuter.ini > output/AB/ebR_AB_T_EdmontonOuter_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/ebR_AB_T_EdmontonOuter_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/ebR_AB_T_EdmontonOuter_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/AB/ebR_AB_T_EdmontonOuter_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_EdmontonOuter_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_EdmontonOuter_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_EdmontonOuter_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/ebR_AB_T_EdmontonOuter_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_AB_T_EdmontonOuter.ini > output/AB/ebR_AB_T_EdmontonOuter_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/ebR_AB_T_EdmontonOuter_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/AB/ebR_AB_T_EdmontonOuter_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_EdmontonOuter_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_EdmontonOuter_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_EdmontonOuter_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_EdmontonOuter_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/ebR_AB_T_EdmontonOuter_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB_T_EdmontonWest
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_AB_T_EdmontonWest.ini > output/AB/ebR_AB_T_EdmontonWest_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/ebR_AB_T_EdmontonWest_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/ebR_AB_T_EdmontonWest_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/AB/ebR_AB_T_EdmontonWest_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_EdmontonWest_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_EdmontonWest_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_EdmontonWest_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/AB/ebR_AB_T_EdmontonWest_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/AB/ebR_AB_T_EdmontonWest_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/AB/ebR_AB_T_EdmontonWest_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/AB/ebR_AB_T_EdmontonWest_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/AB/ebR_AB_T_EdmontonWest_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_EdmontonWest_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_EdmontonWest_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_EdmontonWest_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/ebR_AB_T_EdmontonWest_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_AB_T_EdmontonWest.ini > output/AB/ebR_AB_T_EdmontonWest_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/ebR_AB_T_EdmontonWest_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/AB/ebR_AB_T_EdmontonWest_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_EdmontonWest_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_EdmontonWest_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_EdmontonWest_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/AB/ebR_AB_T_EdmontonWest_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/AB/ebR_AB_T_EdmontonWest_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/AB/ebR_AB_T_EdmontonWest_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/AB/ebR_AB_T_EdmontonWest_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/AB/ebR_AB_T_EdmontonWest_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_EdmontonWest_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_EdmontonWest_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_EdmontonWest_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/ebR_AB_T_EdmontonWest_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# AB_T_Northern
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_AB_T_Northern.ini > output/AB/ebR_AB_T_Northern_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/ebR_AB_T_Northern_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/ebR_AB_T_Northern_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/AB/ebR_AB_T_Northern_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_Northern_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_Northern_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_Northern_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/AB/ebR_AB_T_Northern_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/AB/ebR_AB_T_Northern_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/AB/ebR_AB_T_Northern_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/AB/ebR_AB_T_Northern_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/AB/ebR_AB_T_Northern_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_Northern_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_Northern_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_Northern_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/ebR_AB_T_Northern_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_AB_T_Northern.ini > output/AB/ebR_AB_T_Northern_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/AB/ebR_AB_T_Northern_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/AB/ebR_AB_T_Northern_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_Northern_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_Northern_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_Northern_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/AB/ebR_AB_T_Northern_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/AB/ebR_AB_T_Northern_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/AB/ebR_AB_T_Northern_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/AB/ebR_AB_T_Northern_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/AB/ebR_AB_T_Northern_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/AB/ebR_AB_T_Northern_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/AB/ebR_AB_T_Northern_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/AB/ebR_AB_T_Northern_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/AB/ebR_AB_T_Northern_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC_V_Capital
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_BC_V_Capital.ini > output/BC/ebR_BC_V_Capital_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_Capital_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/ebR_BC_V_Capital_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_Capital_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_Capital_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_Capital_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_Capital_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_Capital_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_Capital_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_Capital_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_Capital_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_Capital_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_Capital_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_Capital_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_Capital_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_Capital_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_BC_V_Capital.ini > output/BC/ebR_BC_V_Capital_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_Capital_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_Capital_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_Capital_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_Capital_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_Capital_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_Capital_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_Capital_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_Capital_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_Capital_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_Capital_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_Capital_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_Capital_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_Capital_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_Capital_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC_V_Coastal
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_BC_V_Coastal.ini > output/BC/ebR_BC_V_Coastal_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_Coastal_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/ebR_BC_V_Coastal_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_Coastal_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_Coastal_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_Coastal_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_Coastal_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_Coastal_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_Coastal_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_Coastal_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_Coastal_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_Coastal_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_Coastal_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_Coastal_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_Coastal_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_Coastal_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_BC_V_Coastal.ini > output/BC/ebR_BC_V_Coastal_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_Coastal_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_Coastal_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_Coastal_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_Coastal_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_Coastal_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_Coastal_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_Coastal_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_Coastal_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_Coastal_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_Coastal_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_Coastal_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_Coastal_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_Coastal_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_Coastal_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC_V_FraserValley
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_BC_V_FraserValley.ini > output/BC/ebR_BC_V_FraserValley_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_FraserValley_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/ebR_BC_V_FraserValley_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_FraserValley_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_FraserValley_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_FraserValley_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_FraserValley_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_FraserValley_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_FraserValley_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_FraserValley_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_FraserValley_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_FraserValley_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_FraserValley_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_FraserValley_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_FraserValley_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_FraserValley_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_BC_V_FraserValley.ini > output/BC/ebR_BC_V_FraserValley_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_FraserValley_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_FraserValley_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_FraserValley_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_FraserValley_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_FraserValley_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_FraserValley_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_FraserValley_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_FraserValley_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_FraserValley_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_FraserValley_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_FraserValley_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_FraserValley_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_FraserValley_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_FraserValley_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC_V_GreaterVancouverNorth
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_BC_V_GreaterVancouverNorth.ini > output/BC/ebR_BC_V_GreaterVancouverNorth_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_GreaterVancouverNorth_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_BC_V_GreaterVancouverNorth.ini > output/BC/ebR_BC_V_GreaterVancouverNorth_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_GreaterVancouverNorth_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_GreaterVancouverNorth_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC_V_GreaterVancouverSouth
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_BC_V_GreaterVancouverSouth.ini > output/BC/ebR_BC_V_GreaterVancouverSouth_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_GreaterVancouverSouth_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_BC_V_GreaterVancouverSouth.ini > output/BC/ebR_BC_V_GreaterVancouverSouth_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_GreaterVancouverSouth_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_GreaterVancouverSouth_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC_V_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_BC_V_Misc.ini > output/BC/ebR_BC_V_Misc_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/ebR_BC_V_Misc_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_Misc_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_Misc_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_Misc_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_Misc_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_Misc_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_Misc_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_Misc_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_Misc_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_Misc_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_Misc_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_Misc_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_Misc_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_Misc_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_BC_V_Misc.ini > output/BC/ebR_BC_V_Misc_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_Misc_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_Misc_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_Misc_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_Misc_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_Misc_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_Misc_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_Misc_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_Misc_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_Misc_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_Misc_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_Misc_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_Misc_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_Misc_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_Misc_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC_V_OkanaganKootenay
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_BC_V_OkanaganKootenay.ini > output/BC/ebR_BC_V_OkanaganKootenay_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_OkanaganKootenay_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/ebR_BC_V_OkanaganKootenay_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_OkanaganKootenay_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_OkanaganKootenay_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_OkanaganKootenay_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_OkanaganKootenay_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_OkanaganKootenay_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_BC_V_OkanaganKootenay.ini > output/BC/ebR_BC_V_OkanaganKootenay_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/ebR_BC_V_OkanaganKootenay_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/BC/ebR_BC_V_OkanaganKootenay_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_OkanaganKootenay_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_OkanaganKootenay_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_OkanaganKootenay_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/BC/ebR_BC_V_OkanaganKootenay_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/ebR_BC_V_OkanaganKootenay_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB_R_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_MB_R_Misc.ini > output/MB/ebR_MB_R_Misc_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/ebR_MB_R_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/ebR_MB_R_Misc_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/MB/ebR_MB_R_Misc_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/MB/ebR_MB_R_Misc_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/MB/ebR_MB_R_Misc_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/MB/ebR_MB_R_Misc_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/MB/ebR_MB_R_Misc_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/MB/ebR_MB_R_Misc_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/MB/ebR_MB_R_Misc_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/MB/ebR_MB_R_Misc_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/MB/ebR_MB_R_Misc_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/MB/ebR_MB_R_Misc_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/MB/ebR_MB_R_Misc_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/MB/ebR_MB_R_Misc_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/ebR_MB_R_Misc_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_MB_R_Misc.ini > output/MB/ebR_MB_R_Misc_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/ebR_MB_R_Misc_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/MB/ebR_MB_R_Misc_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/MB/ebR_MB_R_Misc_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/MB/ebR_MB_R_Misc_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/MB/ebR_MB_R_Misc_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/MB/ebR_MB_R_Misc_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/MB/ebR_MB_R_Misc_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/MB/ebR_MB_R_Misc_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/MB/ebR_MB_R_Misc_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/MB/ebR_MB_R_Misc_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/MB/ebR_MB_R_Misc_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/MB/ebR_MB_R_Misc_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/MB/ebR_MB_R_Misc_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/ebR_MB_R_Misc_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# MB_R_Winnipeg
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_MB_R_Winnipeg.ini > output/MB/ebR_MB_R_Winnipeg_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/ebR_MB_R_Winnipeg_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/ebR_MB_R_Winnipeg_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/MB/ebR_MB_R_Winnipeg_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/MB/ebR_MB_R_Winnipeg_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/MB/ebR_MB_R_Winnipeg_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/MB/ebR_MB_R_Winnipeg_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/MB/ebR_MB_R_Winnipeg_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/MB/ebR_MB_R_Winnipeg_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/MB/ebR_MB_R_Winnipeg_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/MB/ebR_MB_R_Winnipeg_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/MB/ebR_MB_R_Winnipeg_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/MB/ebR_MB_R_Winnipeg_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/MB/ebR_MB_R_Winnipeg_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/MB/ebR_MB_R_Winnipeg_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/ebR_MB_R_Winnipeg_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_MB_R_Winnipeg.ini > output/MB/ebR_MB_R_Winnipeg_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/MB/ebR_MB_R_Winnipeg_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/MB/ebR_MB_R_Winnipeg_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/MB/ebR_MB_R_Winnipeg_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/MB/ebR_MB_R_Winnipeg_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/MB/ebR_MB_R_Winnipeg_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/MB/ebR_MB_R_Winnipeg_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/MB/ebR_MB_R_Winnipeg_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/MB/ebR_MB_R_Winnipeg_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/MB/ebR_MB_R_Winnipeg_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/MB/ebR_MB_R_Winnipeg_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/MB/ebR_MB_R_Winnipeg_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/MB/ebR_MB_R_Winnipeg_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/MB/ebR_MB_R_Winnipeg_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/MB/ebR_MB_R_Winnipeg_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NB_E
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_NB_E.ini > output/NB/ebR_NB_E_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/ebR_NB_E_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/ebR_NB_E_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/NB/ebR_NB_E_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/NB/ebR_NB_E_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/NB/ebR_NB_E_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/NB/ebR_NB_E_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/NB/ebR_NB_E_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/NB/ebR_NB_E_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/NB/ebR_NB_E_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/NB/ebR_NB_E_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/NB/ebR_NB_E_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/NB/ebR_NB_E_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/NB/ebR_NB_E_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/NB/ebR_NB_E_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/ebR_NB_E_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_NB_E.ini > output/NB/ebR_NB_E_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NB/ebR_NB_E_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/NB/ebR_NB_E_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/NB/ebR_NB_E_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/NB/ebR_NB_E_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/NB/ebR_NB_E_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/NB/ebR_NB_E_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/NB/ebR_NB_E_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/NB/ebR_NB_E_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/NB/ebR_NB_E_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/NB/ebR_NB_E_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/NB/ebR_NB_E_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/NB/ebR_NB_E_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/NB/ebR_NB_E_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NB/ebR_NB_E_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NL_A
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_NL_A.ini > output/NL/ebR_NL_A_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/ebR_NL_A_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/ebR_NL_A_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/NL/ebR_NL_A_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/NL/ebR_NL_A_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/NL/ebR_NL_A_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/NL/ebR_NL_A_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/NL/ebR_NL_A_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/NL/ebR_NL_A_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/NL/ebR_NL_A_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/NL/ebR_NL_A_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/NL/ebR_NL_A_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/NL/ebR_NL_A_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/NL/ebR_NL_A_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/NL/ebR_NL_A_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/ebR_NL_A_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_NL_A.ini > output/NL/ebR_NL_A_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NL/ebR_NL_A_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/NL/ebR_NL_A_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/NL/ebR_NL_A_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/NL/ebR_NL_A_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/NL/ebR_NL_A_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/NL/ebR_NL_A_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/NL/ebR_NL_A_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/NL/ebR_NL_A_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/NL/ebR_NL_A_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/NL/ebR_NL_A_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/NL/ebR_NL_A_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/NL/ebR_NL_A_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/NL/ebR_NL_A_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NL/ebR_NL_A_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NS_B
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_NS_B.ini > output/NS/ebR_NS_B_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/ebR_NS_B_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/ebR_NS_B_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/NS/ebR_NS_B_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/NS/ebR_NS_B_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/NS/ebR_NS_B_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/NS/ebR_NS_B_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/NS/ebR_NS_B_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/NS/ebR_NS_B_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/NS/ebR_NS_B_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/NS/ebR_NS_B_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/NS/ebR_NS_B_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/NS/ebR_NS_B_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/NS/ebR_NS_B_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/NS/ebR_NS_B_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/ebR_NS_B_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_NS_B.ini > output/NS/ebR_NS_B_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NS/ebR_NS_B_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/NS/ebR_NS_B_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/NS/ebR_NS_B_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/NS/ebR_NS_B_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/NS/ebR_NS_B_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/NS/ebR_NS_B_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/NS/ebR_NS_B_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/NS/ebR_NS_B_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/NS/ebR_NS_B_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/NS/ebR_NS_B_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/NS/ebR_NS_B_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/NS/ebR_NS_B_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/NS/ebR_NS_B_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NS/ebR_NS_B_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NT_X
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_NT_X.ini > output/NT/ebR_NT_X_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/ebR_NT_X_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/ebR_NT_X_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/NT/ebR_NT_X_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/NT/ebR_NT_X_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/NT/ebR_NT_X_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/NT/ebR_NT_X_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/NT/ebR_NT_X_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/NT/ebR_NT_X_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/NT/ebR_NT_X_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/NT/ebR_NT_X_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/NT/ebR_NT_X_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/NT/ebR_NT_X_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/NT/ebR_NT_X_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/NT/ebR_NT_X_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/ebR_NT_X_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_NT_X.ini > output/NT/ebR_NT_X_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NT/ebR_NT_X_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/NT/ebR_NT_X_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/NT/ebR_NT_X_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/NT/ebR_NT_X_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/NT/ebR_NT_X_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/NT/ebR_NT_X_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/NT/ebR_NT_X_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/NT/ebR_NT_X_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/NT/ebR_NT_X_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/NT/ebR_NT_X_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/NT/ebR_NT_X_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/NT/ebR_NT_X_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/NT/ebR_NT_X_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NT/ebR_NT_X_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# NU_X
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_NU_X.ini > output/NU/ebR_NU_X_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/ebR_NU_X_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NU/ebR_NU_X_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/NU/ebR_NU_X_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/NU/ebR_NU_X_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/NU/ebR_NU_X_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/NU/ebR_NU_X_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/NU/ebR_NU_X_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/NU/ebR_NU_X_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/NU/ebR_NU_X_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/NU/ebR_NU_X_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/NU/ebR_NU_X_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/NU/ebR_NU_X_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/NU/ebR_NU_X_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/NU/ebR_NU_X_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/ebR_NU_X_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_NU_X.ini > output/NU/ebR_NU_X_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/NU/ebR_NU_X_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/NU/ebR_NU_X_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/NU/ebR_NU_X_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/NU/ebR_NU_X_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/NU/ebR_NU_X_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/NU/ebR_NU_X_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/NU/ebR_NU_X_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/NU/ebR_NU_X_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/NU/ebR_NU_X_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/NU/ebR_NU_X_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/NU/ebR_NU_X_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/NU/ebR_NU_X_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/NU/ebR_NU_X_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/NU/ebR_NU_X_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_K_KingstonPembroke
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_K_KingstonPembroke.ini > output/ON/ebR_ON_K_KingstonPembroke_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_K_KingstonPembroke_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_K_KingstonPembroke_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_K_KingstonPembroke_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_K_KingstonPembroke_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_K_KingstonPembroke_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_K_KingstonPembroke_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_K_KingstonPembroke_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_K_KingstonPembroke.ini > output/ON/ebR_ON_K_KingstonPembroke_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_K_KingstonPembroke_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_K_KingstonPembroke_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_K_KingstonPembroke_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_K_KingstonPembroke_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_K_KingstonPembroke_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_K_KingstonPembroke_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_K_KingstonPembroke_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_K_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_K_Misc.ini > output/ON/ebR_ON_K_Misc_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_K_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_K_Misc_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_K_Misc_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_K_Misc_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_K_Misc_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_K_Misc_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_K_Misc_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_K_Misc_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_K_Misc_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_K_Misc_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_K_Misc_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_K_Misc_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_K_Misc_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_K_Misc_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_K_Misc_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_K_Misc.ini > output/ON/ebR_ON_K_Misc_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_K_Misc_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_K_Misc_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_K_Misc_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_K_Misc_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_K_Misc_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_K_Misc_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_K_Misc_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_K_Misc_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_K_Misc_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_K_Misc_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_K_Misc_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_K_Misc_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_K_Misc_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_K_Misc_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_K_OttawaRegion
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_K_OttawaRegion.ini > output/ON/ebR_ON_K_OttawaRegion_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_K_OttawaRegion_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_K_OttawaRegion_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_K_OttawaRegion_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_K_OttawaRegion_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_K_OttawaRegion_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_K_OttawaRegion_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_K_OttawaRegion_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_K_OttawaRegion_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_K_OttawaRegion_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_K_OttawaRegion_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_K_OttawaRegion_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_K_OttawaRegion_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_K_OttawaRegion_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_K_OttawaRegion_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_K_OttawaRegion_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_K_OttawaRegion.ini > output/ON/ebR_ON_K_OttawaRegion_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_K_OttawaRegion_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_K_OttawaRegion_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_K_OttawaRegion_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_K_OttawaRegion_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_K_OttawaRegion_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_K_OttawaRegion_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_K_OttawaRegion_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_K_OttawaRegion_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_K_OttawaRegion_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_K_OttawaRegion_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_K_OttawaRegion_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_K_OttawaRegion_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_K_OttawaRegion_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_K_OttawaRegion_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_L_BarrieRegion
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_L_BarrieRegion.ini > output/ON/ebR_ON_L_BarrieRegion_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_L_BarrieRegion_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_L_BarrieRegion_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_L_BarrieRegion_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_BarrieRegion_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_BarrieRegion_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_BarrieRegion_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_L_BarrieRegion_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_L_BarrieRegion_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_L_BarrieRegion_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_L_BarrieRegion_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_L_BarrieRegion_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_BarrieRegion_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_BarrieRegion_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_BarrieRegion_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_L_BarrieRegion_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_L_BarrieRegion.ini > output/ON/ebR_ON_L_BarrieRegion_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_L_BarrieRegion_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_L_BarrieRegion_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_BarrieRegion_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_BarrieRegion_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_BarrieRegion_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_L_BarrieRegion_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_L_BarrieRegion_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_L_BarrieRegion_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_L_BarrieRegion_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_L_BarrieRegion_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_BarrieRegion_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_BarrieRegion_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_BarrieRegion_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_L_BarrieRegion_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_L_HamiltonNiagara
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_L_HamiltonNiagara.ini > output/ON/ebR_ON_L_HamiltonNiagara_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_L_HamiltonNiagara_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_L_HamiltonNiagara_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_L_HamiltonNiagara_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_HamiltonNiagara_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_HamiltonNiagara_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_HamiltonNiagara_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_L_HamiltonNiagara_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_L_HamiltonNiagara.ini > output/ON/ebR_ON_L_HamiltonNiagara_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_L_HamiltonNiagara_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_L_HamiltonNiagara_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_HamiltonNiagara_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_HamiltonNiagara_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_HamiltonNiagara_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_HamiltonNiagara_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_L_HamiltonNiagara_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_L_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_L_Misc.ini > output/ON/ebR_ON_L_Misc_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_L_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_L_Misc_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_L_Misc_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_Misc_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_Misc_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_Misc_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_L_Misc_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_L_Misc_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_L_Misc_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_L_Misc_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_L_Misc_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_Misc_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_Misc_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_Misc_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_L_Misc_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_L_Misc.ini > output/ON/ebR_ON_L_Misc_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_L_Misc_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_L_Misc_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_Misc_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_Misc_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_Misc_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_L_Misc_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_L_Misc_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_L_Misc_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_L_Misc_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_L_Misc_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_Misc_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_Misc_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_Misc_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_L_Misc_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_L_Peel
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_L_Peel.ini > output/ON/ebR_ON_L_Peel_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_L_Peel_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_L_Peel_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_L_Peel_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_Peel_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_Peel_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_Peel_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_L_Peel_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_L_Peel_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_L_Peel_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_L_Peel_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_L_Peel_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_Peel_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_Peel_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_Peel_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_L_Peel_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_L_Peel.ini > output/ON/ebR_ON_L_Peel_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_L_Peel_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_L_Peel_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_Peel_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_Peel_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_Peel_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_L_Peel_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_L_Peel_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_L_Peel_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_L_Peel_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_L_Peel_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_L_Peel_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_L_Peel_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_L_Peel_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_L_Peel_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_M_TorontoEast
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_M_TorontoEast.ini > output/ON/ebR_ON_M_TorontoEast_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_M_TorontoEast_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_M_TorontoEast_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_M_TorontoEast_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_M_TorontoEast_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_M_TorontoEast_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_M_TorontoEast_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_M_TorontoEast_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_M_TorontoEast_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_M_TorontoEast_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_M_TorontoEast_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_M_TorontoEast_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_M_TorontoEast_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_M_TorontoEast_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_M_TorontoEast_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_M_TorontoEast_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_M_TorontoEast.ini > output/ON/ebR_ON_M_TorontoEast_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_M_TorontoEast_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_M_TorontoEast_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_M_TorontoEast_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_M_TorontoEast_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_M_TorontoEast_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_M_TorontoEast_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_M_TorontoEast_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_M_TorontoEast_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_M_TorontoEast_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_M_TorontoEast_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_M_TorontoEast_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_M_TorontoEast_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_M_TorontoEast_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_M_TorontoEast_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_M_TorontoWest
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_M_TorontoWest.ini > output/ON/ebR_ON_M_TorontoWest_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_M_TorontoWest_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_M_TorontoWest_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_M_TorontoWest_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_M_TorontoWest_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_M_TorontoWest_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_M_TorontoWest_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_M_TorontoWest_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_M_TorontoWest_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_M_TorontoWest_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_M_TorontoWest_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_M_TorontoWest_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_M_TorontoWest_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_M_TorontoWest_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_M_TorontoWest_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_M_TorontoWest_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_M_TorontoWest.ini > output/ON/ebR_ON_M_TorontoWest_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_M_TorontoWest_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_M_TorontoWest_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_M_TorontoWest_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_M_TorontoWest_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_M_TorontoWest_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_M_TorontoWest_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_M_TorontoWest_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_M_TorontoWest_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_M_TorontoWest_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_M_TorontoWest_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_M_TorontoWest_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_M_TorontoWest_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_M_TorontoWest_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_M_TorontoWest_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_N_LondonRegion
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_N_LondonRegion.ini > output/ON/ebR_ON_N_LondonRegion_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_N_LondonRegion_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_N_LondonRegion_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_N_LondonRegion_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_LondonRegion_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_LondonRegion_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_LondonRegion_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_N_LondonRegion_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_N_LondonRegion_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_N_LondonRegion_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_N_LondonRegion_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_N_LondonRegion_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_LondonRegion_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_LondonRegion_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_LondonRegion_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_N_LondonRegion_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_N_LondonRegion.ini > output/ON/ebR_ON_N_LondonRegion_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_N_LondonRegion_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_N_LondonRegion_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_LondonRegion_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_LondonRegion_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_LondonRegion_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_N_LondonRegion_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_N_LondonRegion_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_N_LondonRegion_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_N_LondonRegion_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_N_LondonRegion_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_LondonRegion_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_LondonRegion_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_LondonRegion_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_N_LondonRegion_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_N_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_N_Misc.ini > output/ON/ebR_ON_N_Misc_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_N_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_N_Misc_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_N_Misc_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_Misc_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_Misc_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_Misc_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_N_Misc_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_N_Misc_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_N_Misc_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_N_Misc_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_N_Misc_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_Misc_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_Misc_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_Misc_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_N_Misc_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_N_Misc.ini > output/ON/ebR_ON_N_Misc_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_N_Misc_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_N_Misc_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_Misc_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_Misc_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_Misc_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_N_Misc_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_N_Misc_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_N_Misc_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_N_Misc_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_N_Misc_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_Misc_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_Misc_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_Misc_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_N_Misc_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_N_SarniaWindsor
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_N_SarniaWindsor.ini > output/ON/ebR_ON_N_SarniaWindsor_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_N_SarniaWindsor_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_N_SarniaWindsor_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_N_SarniaWindsor_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_SarniaWindsor_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_SarniaWindsor_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_SarniaWindsor_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_N_SarniaWindsor_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_N_SarniaWindsor.ini > output/ON/ebR_ON_N_SarniaWindsor_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_N_SarniaWindsor_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_N_SarniaWindsor_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_SarniaWindsor_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_SarniaWindsor_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_SarniaWindsor_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_SarniaWindsor_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_N_SarniaWindsor_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_N_Waterloo
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_N_Waterloo.ini > output/ON/ebR_ON_N_Waterloo_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_N_Waterloo_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_N_Waterloo_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_N_Waterloo_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_Waterloo_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_Waterloo_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_Waterloo_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_N_Waterloo_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_N_Waterloo_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_N_Waterloo_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_N_Waterloo_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_N_Waterloo_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_Waterloo_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_Waterloo_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_Waterloo_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_N_Waterloo_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_N_Waterloo.ini > output/ON/ebR_ON_N_Waterloo_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_N_Waterloo_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_N_Waterloo_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_Waterloo_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_Waterloo_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_Waterloo_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_N_Waterloo_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_N_Waterloo_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_N_Waterloo_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_N_Waterloo_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_N_Waterloo_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_N_Waterloo_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_N_Waterloo_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_N_Waterloo_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_N_Waterloo_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_P_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_P_Misc.ini > output/ON/ebR_ON_P_Misc_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_P_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_P_Misc_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_P_Misc_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_P_Misc_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_P_Misc_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_P_Misc_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_P_Misc_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_P_Misc_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_P_Misc_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_P_Misc_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_P_Misc_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_P_Misc_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_P_Misc_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_P_Misc_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_P_Misc_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_P_Misc.ini > output/ON/ebR_ON_P_Misc_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_P_Misc_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_P_Misc_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_P_Misc_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_P_Misc_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_P_Misc_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_P_Misc_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_P_Misc_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_P_Misc_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_P_Misc_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_P_Misc_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_P_Misc_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_P_Misc_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_P_Misc_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_P_Misc_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# ON_P_NorthernOntario
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_ON_P_NorthernOntario.ini > output/ON/ebR_ON_P_NorthernOntario_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_P_NorthernOntario_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/ebR_ON_P_NorthernOntario_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_P_NorthernOntario_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_P_NorthernOntario_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_P_NorthernOntario_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_P_NorthernOntario_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_P_NorthernOntario_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_P_NorthernOntario_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_P_NorthernOntario_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_P_NorthernOntario_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_P_NorthernOntario_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_P_NorthernOntario_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_P_NorthernOntario_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_P_NorthernOntario_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_P_NorthernOntario_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_ON_P_NorthernOntario.ini > output/ON/ebR_ON_P_NorthernOntario_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/ON/ebR_ON_P_NorthernOntario_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/ON/ebR_ON_P_NorthernOntario_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/ON/ebR_ON_P_NorthernOntario_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/ON/ebR_ON_P_NorthernOntario_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/ON/ebR_ON_P_NorthernOntario_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/ON/ebR_ON_P_NorthernOntario_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/ON/ebR_ON_P_NorthernOntario_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/ON/ebR_ON_P_NorthernOntario_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/ON/ebR_ON_P_NorthernOntario_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/ON/ebR_ON_P_NorthernOntario_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/ON/ebR_ON_P_NorthernOntario_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/ON/ebR_ON_P_NorthernOntario_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/ON/ebR_ON_P_NorthernOntario_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/ON/ebR_ON_P_NorthernOntario_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# PE_C
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_PE_C.ini > output/PE/ebR_PE_C_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/ebR_PE_C_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/PE/ebR_PE_C_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/PE/ebR_PE_C_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/PE/ebR_PE_C_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/PE/ebR_PE_C_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/PE/ebR_PE_C_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/PE/ebR_PE_C_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/PE/ebR_PE_C_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/PE/ebR_PE_C_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/PE/ebR_PE_C_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/PE/ebR_PE_C_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/PE/ebR_PE_C_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/PE/ebR_PE_C_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/PE/ebR_PE_C_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/ebR_PE_C_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_PE_C.ini > output/PE/ebR_PE_C_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/PE/ebR_PE_C_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/PE/ebR_PE_C_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/PE/ebR_PE_C_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/PE/ebR_PE_C_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/PE/ebR_PE_C_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/PE/ebR_PE_C_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/PE/ebR_PE_C_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/PE/ebR_PE_C_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/PE/ebR_PE_C_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/PE/ebR_PE_C_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/PE/ebR_PE_C_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/PE/ebR_PE_C_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/PE/ebR_PE_C_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/PE/ebR_PE_C_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC_G_CharlevoixSaguenay
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_QC_G_CharlevoixSaguenay.ini > output/QC/ebR_QC_G_CharlevoixSaguenay_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_G_CharlevoixSaguenay_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_QC_G_CharlevoixSaguenay.ini > output/QC/ebR_QC_G_CharlevoixSaguenay_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_G_CharlevoixSaguenay_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_G_CharlevoixSaguenay_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC_G_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_QC_G_Misc.ini > output/QC/ebR_QC_G_Misc_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_G_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/ebR_QC_G_Misc_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_G_Misc_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_Misc_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_Misc_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_Misc_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_G_Misc_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_G_Misc_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_G_Misc_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_G_Misc_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_G_Misc_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_Misc_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_Misc_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_Misc_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_G_Misc_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_QC_G_Misc.ini > output/QC/ebR_QC_G_Misc_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_G_Misc_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_G_Misc_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_Misc_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_Misc_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_Misc_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_G_Misc_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_G_Misc_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_G_Misc_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_G_Misc_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_G_Misc_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_Misc_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_Misc_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_Misc_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_G_Misc_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC_G_QuebecCity
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_QC_G_QuebecCity.ini > output/QC/ebR_QC_G_QuebecCity_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_G_QuebecCity_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/ebR_QC_G_QuebecCity_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_G_QuebecCity_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_QuebecCity_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_QuebecCity_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_QuebecCity_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_G_QuebecCity_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_G_QuebecCity_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_G_QuebecCity_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_G_QuebecCity_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_G_QuebecCity_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_QuebecCity_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_QuebecCity_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_QuebecCity_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_G_QuebecCity_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_QC_G_QuebecCity.ini > output/QC/ebR_QC_G_QuebecCity_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_G_QuebecCity_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_G_QuebecCity_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_QuebecCity_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_QuebecCity_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_QuebecCity_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_G_QuebecCity_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_G_QuebecCity_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_G_QuebecCity_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_G_QuebecCity_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_G_QuebecCity_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_QuebecCity_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_QuebecCity_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_QuebecCity_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_G_QuebecCity_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC_G_TroisRivieresWest
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_QC_G_TroisRivieresWest.ini > output/QC/ebR_QC_G_TroisRivieresWest_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_G_TroisRivieresWest_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/ebR_QC_G_TroisRivieresWest_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_G_TroisRivieresWest_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_TroisRivieresWest_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_TroisRivieresWest_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_TroisRivieresWest_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_G_TroisRivieresWest_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_QC_G_TroisRivieresWest.ini > output/QC/ebR_QC_G_TroisRivieresWest_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_G_TroisRivieresWest_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_G_TroisRivieresWest_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_TroisRivieresWest_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_TroisRivieresWest_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_TroisRivieresWest_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_G_TroisRivieresWest_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_G_TroisRivieresWest_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC_H_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_QC_H_Misc.ini > output/QC/ebR_QC_H_Misc_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_H_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/ebR_QC_H_Misc_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_H_Misc_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_H_Misc_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_H_Misc_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_H_Misc_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_H_Misc_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_H_Misc_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_H_Misc_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_H_Misc_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_H_Misc_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_H_Misc_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_H_Misc_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_H_Misc_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_H_Misc_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_QC_H_Misc.ini > output/QC/ebR_QC_H_Misc_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_H_Misc_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_H_Misc_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_H_Misc_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_H_Misc_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_H_Misc_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_H_Misc_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_H_Misc_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_H_Misc_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_H_Misc_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_H_Misc_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_H_Misc_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_H_Misc_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_H_Misc_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_H_Misc_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC_H_Montreal
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_QC_H_Montreal.ini > output/QC/ebR_QC_H_Montreal_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_H_Montreal_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/ebR_QC_H_Montreal_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_H_Montreal_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_H_Montreal_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_H_Montreal_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_H_Montreal_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_H_Montreal_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_H_Montreal_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_H_Montreal_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_H_Montreal_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_H_Montreal_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_H_Montreal_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_H_Montreal_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_H_Montreal_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_H_Montreal_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_QC_H_Montreal.ini > output/QC/ebR_QC_H_Montreal_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_H_Montreal_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_H_Montreal_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_H_Montreal_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_H_Montreal_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_H_Montreal_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_H_Montreal_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_H_Montreal_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_H_Montreal_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_H_Montreal_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_H_Montreal_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_H_Montreal_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_H_Montreal_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_H_Montreal_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_H_Montreal_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC_J_EasternTownships
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_QC_J_EasternTownships.ini > output/QC/ebR_QC_J_EasternTownships_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_J_EasternTownships_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/ebR_QC_J_EasternTownships_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_J_EasternTownships_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_EasternTownships_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_EasternTownships_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_EasternTownships_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_J_EasternTownships_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_J_EasternTownships_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_J_EasternTownships_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_J_EasternTownships_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_J_EasternTownships_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_EasternTownships_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_EasternTownships_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_EasternTownships_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_J_EasternTownships_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_QC_J_EasternTownships.ini > output/QC/ebR_QC_J_EasternTownships_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_J_EasternTownships_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_J_EasternTownships_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_EasternTownships_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_EasternTownships_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_EasternTownships_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_J_EasternTownships_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_J_EasternTownships_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_J_EasternTownships_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_J_EasternTownships_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_J_EasternTownships_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_EasternTownships_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_EasternTownships_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_EasternTownships_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_J_EasternTownships_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC_J_Gatineau
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_QC_J_Gatineau.ini > output/QC/ebR_QC_J_Gatineau_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_J_Gatineau_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/ebR_QC_J_Gatineau_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_J_Gatineau_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_Gatineau_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_Gatineau_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_Gatineau_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_J_Gatineau_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_J_Gatineau_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_J_Gatineau_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_J_Gatineau_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_J_Gatineau_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_Gatineau_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_Gatineau_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_Gatineau_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_J_Gatineau_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_QC_J_Gatineau.ini > output/QC/ebR_QC_J_Gatineau_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_J_Gatineau_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_J_Gatineau_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_Gatineau_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_Gatineau_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_Gatineau_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_J_Gatineau_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_J_Gatineau_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_J_Gatineau_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_J_Gatineau_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_J_Gatineau_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_Gatineau_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_Gatineau_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_Gatineau_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_J_Gatineau_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC_J_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_QC_J_Misc.ini > output/QC/ebR_QC_J_Misc_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_J_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/ebR_QC_J_Misc_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_J_Misc_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_Misc_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_Misc_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_Misc_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_J_Misc_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_J_Misc_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_J_Misc_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_J_Misc_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_J_Misc_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_Misc_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_Misc_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_Misc_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_J_Misc_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_QC_J_Misc.ini > output/QC/ebR_QC_J_Misc_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_J_Misc_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_J_Misc_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_Misc_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_Misc_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_Misc_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_J_Misc_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_J_Misc_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_J_Misc_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_J_Misc_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_J_Misc_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_Misc_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_Misc_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_Misc_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_J_Misc_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC_J_NorthWestShoreMTL
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_QC_J_NorthWestShoreMTL.ini > output/QC/ebR_QC_J_NorthWestShoreMTL_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_J_NorthWestShoreMTL_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_QC_J_NorthWestShoreMTL.ini > output/QC/ebR_QC_J_NorthWestShoreMTL_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_J_NorthWestShoreMTL_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_J_NorthWestShoreMTL_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# QC_J_SouthEastShoreMTL
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_QC_J_SouthEastShoreMTL.ini > output/QC/ebR_QC_J_SouthEastShoreMTL_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_J_SouthEastShoreMTL_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_QC_J_SouthEastShoreMTL.ini > output/QC/ebR_QC_J_SouthEastShoreMTL_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/QC/ebR_QC_J_SouthEastShoreMTL_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/QC/ebR_QC_J_SouthEastShoreMTL_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK_S_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_SK_S_Misc.ini > output/SK/ebR_SK_S_Misc_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/ebR_SK_S_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/ebR_SK_S_Misc_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/SK/ebR_SK_S_Misc_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/SK/ebR_SK_S_Misc_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/SK/ebR_SK_S_Misc_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/SK/ebR_SK_S_Misc_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/SK/ebR_SK_S_Misc_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/SK/ebR_SK_S_Misc_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/SK/ebR_SK_S_Misc_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/SK/ebR_SK_S_Misc_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/SK/ebR_SK_S_Misc_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/SK/ebR_SK_S_Misc_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/SK/ebR_SK_S_Misc_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/SK/ebR_SK_S_Misc_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/ebR_SK_S_Misc_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_SK_S_Misc.ini > output/SK/ebR_SK_S_Misc_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/ebR_SK_S_Misc_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/SK/ebR_SK_S_Misc_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/SK/ebR_SK_S_Misc_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/SK/ebR_SK_S_Misc_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/SK/ebR_SK_S_Misc_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/SK/ebR_SK_S_Misc_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/SK/ebR_SK_S_Misc_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/SK/ebR_SK_S_Misc_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/SK/ebR_SK_S_Misc_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/SK/ebR_SK_S_Misc_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/SK/ebR_SK_S_Misc_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/SK/ebR_SK_S_Misc_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/SK/ebR_SK_S_Misc_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/ebR_SK_S_Misc_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# SK_S_ReginaSaskatoon
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_SK_S_ReginaSaskatoon.ini > output/SK/ebR_SK_S_ReginaSaskatoon_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/ebR_SK_S_ReginaSaskatoon_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/ebR_SK_S_ReginaSaskatoon_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/SK/ebR_SK_S_ReginaSaskatoon_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/SK/ebR_SK_S_ReginaSaskatoon_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/SK/ebR_SK_S_ReginaSaskatoon_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/SK/ebR_SK_S_ReginaSaskatoon_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/ebR_SK_S_ReginaSaskatoon_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_SK_S_ReginaSaskatoon.ini > output/SK/ebR_SK_S_ReginaSaskatoon_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/SK/ebR_SK_S_ReginaSaskatoon_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/SK/ebR_SK_S_ReginaSaskatoon_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/SK/ebR_SK_S_ReginaSaskatoon_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/SK/ebR_SK_S_ReginaSaskatoon_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/SK/ebR_SK_S_ReginaSaskatoon_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/SK/ebR_SK_S_ReginaSaskatoon_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/SK/ebR_SK_S_ReginaSaskatoon_src_loss_table_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# YT_Y
+# =================================================================
+# Baseline Conditions
+oq engine --run input/ebRisk_b0_YT_Y.ini > output/YT/ebR_YT_Y_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/YT/ebR_YT_Y_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/YT/ebR_YT_Y_rlz.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/YT/ebR_YT_Y_avg_losses-stats_b0.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/YT/ebR_YT_Y_avg_losses-q05_b0.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/YT/ebR_YT_Y_avg_losses-q50_b0.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/YT/ebR_YT_Y_avg_losses-q95_b0.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/YT/ebR_YT_Y_agg_curves-stats_b0.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/YT/ebR_YT_Y_agg_curves-q05_b0.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/YT/ebR_YT_Y_agg_curves-q50_b0.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/YT/ebR_YT_Y_agg_curves-q95_b0.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/YT/ebR_YT_Y_agg_losses-stats_b0.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/YT/ebR_YT_Y_agg_losses-q05_b0.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/YT/ebR_YT_Y_agg_losses-q50_b0.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/YT/ebR_YT_Y_agg_losses-q95_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/YT/ebR_YT_Y_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/ebRisk_r1_YT_Y.ini > output/YT/ebR_YT_Y_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/YT/ebR_YT_Y_report_r1.csv
+oq export avg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/avg_losses-mean*.csv output/YT/ebR_YT_Y_avg_losses-stats_r1.csv;
+mv output/temp/avg_losses-quantile-0.05*.csv output/YT/ebR_YT_Y_avg_losses-q05_r1.csv;
+mv output/temp/avg_losses-quantile-0.5*.csv output/YT/ebR_YT_Y_avg_losses-q50_r1.csv;
+mv output/temp/avg_losses-quantile-0.95*.csv output/YT/ebR_YT_Y_avg_losses-q95_r1.csv;
+oq export agg_curves-stats -1 -e csv -d output/temp/
+mv output/temp/agg_curves-mean*.csv output/YT/ebR_YT_Y_agg_curves-stats_r1.csv;
+mv output/temp/agg_curves-quantile-0.05*.csv output/YT/ebR_YT_Y_agg_curves-q05_r1.csv;
+mv output/temp/agg_curves-quantile-0.5*.csv output/YT/ebR_YT_Y_agg_curves-q50_r1.csv;
+mv output/temp/agg_curves-quantile-0.95*.csv output/YT/ebR_YT_Y_agg_curves-q95_r1.csv;
+oq export agg_losses-stats -1 -e csv -d output/temp/
+mv output/temp/agg_losses-mean*.csv output/YT/ebR_YT_Y_agg_losses-stats_r1.csv;
+mv output/temp/agg_losses-quantile-0.05*.csv output/YT/ebR_YT_Y_agg_losses-q05_r1.csv;
+mv output/temp/agg_losses-quantile-0.5*.csv output/YT/ebR_YT_Y_agg_losses-q50_r1.csv;
+mv output/temp/agg_losses-quantile-0.95*.csv output/YT/ebR_YT_Y_agg_losses-q95_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/YT/ebR_YT_Y_src_loss_table_r1.csv;
+# =================================================================

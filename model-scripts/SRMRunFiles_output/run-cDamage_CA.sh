@@ -17638,3 +17638,983 @@ mv output/temp/report_*.rst output/YT/cD_YT_report_r1.csv
 oq export damages-stats -e csv -d output/temp/
 mv output/temp/damages-mean_*.csv output/YT/cD_YT_dmg-mean_r1.csv;
 # =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# AB_T_CalgaryMetro
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_AB_T_CalgaryMetro.ini --hc 000 > output/AB/AB_T_CalgaryMetro.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/AB/cD_AB_T_CalgaryMetro_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/cD_AB_T_CalgaryMetro_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/AB/cD_AB_T_CalgaryMetro_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_AB_T_CalgaryMetro.ini --hc 000 > output/AB/AB_T_CalgaryMetro.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/AB/cD_AB_T_CalgaryMetro_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/AB/cD_AB_T_CalgaryMetro_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# AB_T_CalgaryOutskirts
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_AB_T_CalgaryOutskirts.ini --hc 000 > output/AB/AB_T_CalgaryOutskirts.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/AB/cD_AB_T_CalgaryOutskirts_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/cD_AB_T_CalgaryOutskirts_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/AB/cD_AB_T_CalgaryOutskirts_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_AB_T_CalgaryOutskirts.ini --hc 000 > output/AB/AB_T_CalgaryOutskirts.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/AB/cD_AB_T_CalgaryOutskirts_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/AB/cD_AB_T_CalgaryOutskirts_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# AB_T_EdmontonOuter
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_AB_T_EdmontonOuter.ini --hc 000 > output/AB/AB_T_EdmontonOuter.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/AB/cD_AB_T_EdmontonOuter_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/cD_AB_T_EdmontonOuter_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/AB/cD_AB_T_EdmontonOuter_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_AB_T_EdmontonOuter.ini --hc 000 > output/AB/AB_T_EdmontonOuter.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/AB/cD_AB_T_EdmontonOuter_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/AB/cD_AB_T_EdmontonOuter_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# AB_T_EdmontonWest
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_AB_T_EdmontonWest.ini --hc 000 > output/AB/AB_T_EdmontonWest.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/AB/cD_AB_T_EdmontonWest_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/cD_AB_T_EdmontonWest_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/AB/cD_AB_T_EdmontonWest_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_AB_T_EdmontonWest.ini --hc 000 > output/AB/AB_T_EdmontonWest.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/AB/cD_AB_T_EdmontonWest_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/AB/cD_AB_T_EdmontonWest_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# AB_T_Northern
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_AB_T_Northern.ini --hc 000 > output/AB/AB_T_Northern.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/AB/cD_AB_T_Northern_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/AB/cD_AB_T_Northern_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/AB/cD_AB_T_Northern_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_AB_T_Northern.ini --hc 000 > output/AB/AB_T_Northern.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/AB/cD_AB_T_Northern_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/AB/cD_AB_T_Northern_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# BC_V_Capital
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_BC_V_Capital.ini --hc 000 > output/BC/BC_V_Capital.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_Capital_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/cD_BC_V_Capital_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_Capital_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_BC_V_Capital.ini --hc 000 > output/BC/BC_V_Capital.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_Capital_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_Capital_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# BC_V_Coastal
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_BC_V_Coastal.ini --hc 000 > output/BC/BC_V_Coastal.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_Coastal_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/cD_BC_V_Coastal_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_Coastal_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_BC_V_Coastal.ini --hc 000 > output/BC/BC_V_Coastal.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_Coastal_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_Coastal_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# BC_V_FraserValley
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_BC_V_FraserValley.ini --hc 000 > output/BC/BC_V_FraserValley.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_FraserValley_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/cD_BC_V_FraserValley_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_FraserValley_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_BC_V_FraserValley.ini --hc 000 > output/BC/BC_V_FraserValley.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_FraserValley_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_FraserValley_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# BC_V_GreaterVancouverNorth
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_BC_V_GreaterVancouverNorth.ini --hc 000 > output/BC/BC_V_GreaterVancouverNorth.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_GreaterVancouverNorth_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/cD_BC_V_GreaterVancouverNorth_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_GreaterVancouverNorth_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_BC_V_GreaterVancouverNorth.ini --hc 000 > output/BC/BC_V_GreaterVancouverNorth.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_GreaterVancouverNorth_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_GreaterVancouverNorth_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# BC_V_GreaterVancouverSouth
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_BC_V_GreaterVancouverSouth.ini --hc 000 > output/BC/BC_V_GreaterVancouverSouth.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_GreaterVancouverSouth_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/cD_BC_V_GreaterVancouverSouth_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_GreaterVancouverSouth_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_BC_V_GreaterVancouverSouth.ini --hc 000 > output/BC/BC_V_GreaterVancouverSouth.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_GreaterVancouverSouth_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_GreaterVancouverSouth_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# BC_V_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_BC_V_Misc.ini --hc 000 > output/BC/BC_V_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/cD_BC_V_Misc_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_Misc_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_BC_V_Misc.ini --hc 000 > output/BC/BC_V_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_Misc_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_Misc_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# BC_V_OkanaganKootenay
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_BC_V_OkanaganKootenay.ini --hc 000 > output/BC/BC_V_OkanaganKootenay.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_OkanaganKootenay_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/cD_BC_V_OkanaganKootenay_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_OkanaganKootenay_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_BC_V_OkanaganKootenay.ini --hc 000 > output/BC/BC_V_OkanaganKootenay.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_OkanaganKootenay_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_OkanaganKootenay_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# MB_R_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_MB_R_Misc.ini --hc 000 > output/MB/MB_R_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/MB/cD_MB_R_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/cD_MB_R_Misc_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/MB/cD_MB_R_Misc_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_MB_R_Misc.ini --hc 000 > output/MB/MB_R_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/MB/cD_MB_R_Misc_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/MB/cD_MB_R_Misc_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# MB_R_Winnipeg
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_MB_R_Winnipeg.ini --hc 000 > output/MB/MB_R_Winnipeg.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/MB/cD_MB_R_Winnipeg_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/MB/cD_MB_R_Winnipeg_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/MB/cD_MB_R_Winnipeg_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_MB_R_Winnipeg.ini --hc 000 > output/MB/MB_R_Winnipeg.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/MB/cD_MB_R_Winnipeg_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/MB/cD_MB_R_Winnipeg_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# NB_E
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_NB_E.ini --hc 000 > output/NB/NB_E.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/NB/cD_NB_E_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NB/cD_NB_E_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/NB/cD_NB_E_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_NB_E.ini --hc 000 > output/NB/NB_E.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/NB/cD_NB_E_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/NB/cD_NB_E_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# NL_A
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_NL_A.ini --hc 000 > output/NL/NL_A.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/NL/cD_NL_A_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NL/cD_NL_A_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/NL/cD_NL_A_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_NL_A.ini --hc 000 > output/NL/NL_A.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/NL/cD_NL_A_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/NL/cD_NL_A_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# NS_B
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_NS_B.ini --hc 000 > output/NS/NS_B.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/NS/cD_NS_B_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NS/cD_NS_B_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/NS/cD_NS_B_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_NS_B.ini --hc 000 > output/NS/NS_B.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/NS/cD_NS_B_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/NS/cD_NS_B_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# NT_X
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_NT_X.ini --hc 000 > output/NT/NT_X.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/NT/cD_NT_X_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NT/cD_NT_X_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/NT/cD_NT_X_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_NT_X.ini --hc 000 > output/NT/NT_X.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/NT/cD_NT_X_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/NT/cD_NT_X_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# NU_X
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_NU_X.ini --hc 000 > output/NU/NU_X.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/NU/cD_NU_X_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/NU/cD_NU_X_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/NU/cD_NU_X_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_NU_X.ini --hc 000 > output/NU/NU_X.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/NU/cD_NU_X_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/NU/cD_NU_X_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_K_KingstonPembroke
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_K_KingstonPembroke.ini --hc 000 > output/ON/ON_K_KingstonPembroke.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_K_KingstonPembroke_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_K_KingstonPembroke_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_K_KingstonPembroke_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_K_KingstonPembroke.ini --hc 000 > output/ON/ON_K_KingstonPembroke.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_K_KingstonPembroke_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_K_KingstonPembroke_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_K_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_K_Misc.ini --hc 000 > output/ON/ON_K_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_K_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_K_Misc_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_K_Misc_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_K_Misc.ini --hc 000 > output/ON/ON_K_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_K_Misc_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_K_Misc_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_K_OttawaRegion
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_K_OttawaRegion.ini --hc 000 > output/ON/ON_K_OttawaRegion.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_K_OttawaRegion_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_K_OttawaRegion_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_K_OttawaRegion_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_K_OttawaRegion.ini --hc 000 > output/ON/ON_K_OttawaRegion.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_K_OttawaRegion_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_K_OttawaRegion_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_L_BarrieRegion
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_L_BarrieRegion.ini --hc 000 > output/ON/ON_L_BarrieRegion.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_L_BarrieRegion_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_L_BarrieRegion_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_L_BarrieRegion_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_L_BarrieRegion.ini --hc 000 > output/ON/ON_L_BarrieRegion.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_L_BarrieRegion_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_L_BarrieRegion_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_L_HamiltonNiagara
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_L_HamiltonNiagara.ini --hc 000 > output/ON/ON_L_HamiltonNiagara.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_L_HamiltonNiagara_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_L_HamiltonNiagara_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_L_HamiltonNiagara_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_L_HamiltonNiagara.ini --hc 000 > output/ON/ON_L_HamiltonNiagara.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_L_HamiltonNiagara_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_L_HamiltonNiagara_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_L_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_L_Misc.ini --hc 000 > output/ON/ON_L_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_L_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_L_Misc_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_L_Misc_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_L_Misc.ini --hc 000 > output/ON/ON_L_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_L_Misc_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_L_Misc_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_L_Peel
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_L_Peel.ini --hc 000 > output/ON/ON_L_Peel.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_L_Peel_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_L_Peel_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_L_Peel_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_L_Peel.ini --hc 000 > output/ON/ON_L_Peel.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_L_Peel_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_L_Peel_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_M_TorontoEast
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_M_TorontoEast.ini --hc 000 > output/ON/ON_M_TorontoEast.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_M_TorontoEast_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_M_TorontoEast_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_M_TorontoEast_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_M_TorontoEast.ini --hc 000 > output/ON/ON_M_TorontoEast.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_M_TorontoEast_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_M_TorontoEast_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_M_TorontoWest
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_M_TorontoWest.ini --hc 000 > output/ON/ON_M_TorontoWest.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_M_TorontoWest_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_M_TorontoWest_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_M_TorontoWest_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_M_TorontoWest.ini --hc 000 > output/ON/ON_M_TorontoWest.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_M_TorontoWest_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_M_TorontoWest_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_N_LondonRegion
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_N_LondonRegion.ini --hc 000 > output/ON/ON_N_LondonRegion.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_N_LondonRegion_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_N_LondonRegion_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_N_LondonRegion_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_N_LondonRegion.ini --hc 000 > output/ON/ON_N_LondonRegion.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_N_LondonRegion_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_N_LondonRegion_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_N_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_N_Misc.ini --hc 000 > output/ON/ON_N_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_N_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_N_Misc_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_N_Misc_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_N_Misc.ini --hc 000 > output/ON/ON_N_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_N_Misc_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_N_Misc_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_N_SarniaWindsor
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_N_SarniaWindsor.ini --hc 000 > output/ON/ON_N_SarniaWindsor.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_N_SarniaWindsor_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_N_SarniaWindsor_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_N_SarniaWindsor_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_N_SarniaWindsor.ini --hc 000 > output/ON/ON_N_SarniaWindsor.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_N_SarniaWindsor_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_N_SarniaWindsor_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_N_Waterloo
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_N_Waterloo.ini --hc 000 > output/ON/ON_N_Waterloo.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_N_Waterloo_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_N_Waterloo_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_N_Waterloo_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_N_Waterloo.ini --hc 000 > output/ON/ON_N_Waterloo.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_N_Waterloo_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_N_Waterloo_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_P_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_P_Misc.ini --hc 000 > output/ON/ON_P_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_P_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_P_Misc_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_P_Misc_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_P_Misc.ini --hc 000 > output/ON/ON_P_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_P_Misc_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_P_Misc_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# ON_P_NorthernOntario
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_ON_P_NorthernOntario.ini --hc 000 > output/ON/ON_P_NorthernOntario.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_P_NorthernOntario_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/ON/cD_ON_P_NorthernOntario_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_P_NorthernOntario_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_ON_P_NorthernOntario.ini --hc 000 > output/ON/ON_P_NorthernOntario.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/ON/cD_ON_P_NorthernOntario_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/ON/cD_ON_P_NorthernOntario_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# PE_C
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_PE_C.ini --hc 000 > output/PE/PE_C.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/PE/cD_PE_C_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/PE/cD_PE_C_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/PE/cD_PE_C_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_PE_C.ini --hc 000 > output/PE/PE_C.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/PE/cD_PE_C_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/PE/cD_PE_C_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# QC_G_CharlevoixSaguenay
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_QC_G_CharlevoixSaguenay.ini --hc 000 > output/QC/QC_G_CharlevoixSaguenay.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_G_CharlevoixSaguenay_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/cD_QC_G_CharlevoixSaguenay_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_G_CharlevoixSaguenay_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_QC_G_CharlevoixSaguenay.ini --hc 000 > output/QC/QC_G_CharlevoixSaguenay.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_G_CharlevoixSaguenay_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_G_CharlevoixSaguenay_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# QC_G_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_QC_G_Misc.ini --hc 000 > output/QC/QC_G_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_G_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/cD_QC_G_Misc_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_G_Misc_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_QC_G_Misc.ini --hc 000 > output/QC/QC_G_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_G_Misc_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_G_Misc_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# QC_G_QuebecCity
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_QC_G_QuebecCity.ini --hc 000 > output/QC/QC_G_QuebecCity.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_G_QuebecCity_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/cD_QC_G_QuebecCity_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_G_QuebecCity_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_QC_G_QuebecCity.ini --hc 000 > output/QC/QC_G_QuebecCity.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_G_QuebecCity_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_G_QuebecCity_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# QC_G_TroisRivieresWest
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_QC_G_TroisRivieresWest.ini --hc 000 > output/QC/QC_G_TroisRivieresWest.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_G_TroisRivieresWest_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/cD_QC_G_TroisRivieresWest_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_G_TroisRivieresWest_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_QC_G_TroisRivieresWest.ini --hc 000 > output/QC/QC_G_TroisRivieresWest.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_G_TroisRivieresWest_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_G_TroisRivieresWest_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# QC_H_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_QC_H_Misc.ini --hc 000 > output/QC/QC_H_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_H_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/cD_QC_H_Misc_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_H_Misc_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_QC_H_Misc.ini --hc 000 > output/QC/QC_H_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_H_Misc_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_H_Misc_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# QC_H_Montreal
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_QC_H_Montreal.ini --hc 000 > output/QC/QC_H_Montreal.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_H_Montreal_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/cD_QC_H_Montreal_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_H_Montreal_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_QC_H_Montreal.ini --hc 000 > output/QC/QC_H_Montreal.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_H_Montreal_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_H_Montreal_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# QC_J_EasternTownships
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_QC_J_EasternTownships.ini --hc 000 > output/QC/QC_J_EasternTownships.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_J_EasternTownships_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/cD_QC_J_EasternTownships_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_J_EasternTownships_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_QC_J_EasternTownships.ini --hc 000 > output/QC/QC_J_EasternTownships.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_J_EasternTownships_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_J_EasternTownships_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# QC_J_Gatineau
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_QC_J_Gatineau.ini --hc 000 > output/QC/QC_J_Gatineau.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_J_Gatineau_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/cD_QC_J_Gatineau_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_J_Gatineau_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_QC_J_Gatineau.ini --hc 000 > output/QC/QC_J_Gatineau.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_J_Gatineau_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_J_Gatineau_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# QC_J_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_QC_J_Misc.ini --hc 000 > output/QC/QC_J_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_J_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/cD_QC_J_Misc_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_J_Misc_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_QC_J_Misc.ini --hc 000 > output/QC/QC_J_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_J_Misc_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_J_Misc_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# QC_J_NorthWestShoreMTL
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_QC_J_NorthWestShoreMTL.ini --hc 000 > output/QC/QC_J_NorthWestShoreMTL.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_J_NorthWestShoreMTL_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/cD_QC_J_NorthWestShoreMTL_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_J_NorthWestShoreMTL_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_QC_J_NorthWestShoreMTL.ini --hc 000 > output/QC/QC_J_NorthWestShoreMTL.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_J_NorthWestShoreMTL_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_J_NorthWestShoreMTL_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# QC_J_SouthEastShoreMTL
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_QC_J_SouthEastShoreMTL.ini --hc 000 > output/QC/QC_J_SouthEastShoreMTL.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_J_SouthEastShoreMTL_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/QC/cD_QC_J_SouthEastShoreMTL_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_J_SouthEastShoreMTL_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_QC_J_SouthEastShoreMTL.ini --hc 000 > output/QC/QC_J_SouthEastShoreMTL.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/QC/cD_QC_J_SouthEastShoreMTL_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/QC/cD_QC_J_SouthEastShoreMTL_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# SK_S_Misc
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_SK_S_Misc.ini --hc 000 > output/SK/SK_S_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/SK/cD_SK_S_Misc_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/cD_SK_S_Misc_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/SK/cD_SK_S_Misc_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_SK_S_Misc.ini --hc 000 > output/SK/SK_S_Misc.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/SK/cD_SK_S_Misc_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/SK/cD_SK_S_Misc_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# SK_S_ReginaSaskatoon
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_SK_S_ReginaSaskatoon.ini --hc 000 > output/SK/SK_S_ReginaSaskatoon.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/SK/cD_SK_S_ReginaSaskatoon_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/SK/cD_SK_S_ReginaSaskatoon_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/SK/cD_SK_S_ReginaSaskatoon_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_SK_S_ReginaSaskatoon.ini --hc 000 > output/SK/SK_S_ReginaSaskatoon.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/SK/cD_SK_S_ReginaSaskatoon_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/SK/cD_SK_S_ReginaSaskatoon_dmg-mean_r1.csv;
+# =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# YT_Y
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_YT_Y.ini --hc 000 > output/YT/YT_Y.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/YT/cD_YT_Y_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/YT/cD_YT_Y_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/YT/cD_YT_Y_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_YT_Y.ini --hc 000 > output/YT/YT_Y.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/YT/cD_YT_Y_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/YT/cD_YT_Y_dmg-mean_r1.csv;
+# =================================================================
