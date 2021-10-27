@@ -219,7 +219,8 @@ def checkPoly(selectFSAs, allFSAs, firstchar):
 #                                plot(edgeBPoly['lon'], edgeBPoly['lat']) #polygon
 #                                show()
 
-
+# Save the Canada-wide expo file
+masterdf.to_csv(str(fileLoc)+'oqBldgExp_CA.csv', index=False)
 
 
 #For each P/T, start creating exposure files at the level of first character of Forward Sortation Area (FSA) if possible. If not, use analyst-supplied planning region boundaries (specified by Census Division[s] (CD[s])). If a single CD is too large, it is split using FSAs or Census Subdivisions (CSDs). Only Vancouver, Toronto, Calgary, and Edmonton cause this issue.
