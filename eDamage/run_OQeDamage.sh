@@ -76,7 +76,7 @@ declare -a regions=("AB_T_CalgaryMetro"
 "SK_S_Misc"
 "SK_S_ReginaSaskatoon"
 "YT_Y") #all
-declare -a regions=("YT_Y") #for testing only, omitted above
+#declare -a regions=("YT_Y") #for testing only, omitted above
 
 
 ### SETUP CALCULATIONS
