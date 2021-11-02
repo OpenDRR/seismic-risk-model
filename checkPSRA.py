@@ -1,6 +1,7 @@
 #!/bin/python
 
 #### Python script to check PSRA calculations
+# python checkPSRA.py > ../../../PSRACheck_SAUID48019692.txt
 
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
@@ -8,36 +9,37 @@ import numpy as np
 
 ##############################################################################
 ### Load files and select SAUID of interest
-SAUID = 12005797
-FSA = 'B3J'
+SAUID = 48019692
+FSA = 'T3Z'
 num = 11 #index of the single building (asset) to display for bldg level calcs
 roundn = 4 #set to 0
 roundr = 2
-damMEb = pd.read_csv('eDamage/output/NS/eD50_NS_damages-mean_b0.csv', skiprows=1)
-dam05b = pd.read_csv('eDamage/output/NS/eD50_NS_damages-q05_b0.csv', skiprows=1)
-dam95b = pd.read_csv('eDamage/output/NS/eD50_NS_damages-q95_b0.csv', skiprows=1)
-damMEr = pd.read_csv('eDamage/output/NS/eD50_NS_damages-mean_r1.csv', skiprows=1)
-dam05r = pd.read_csv('eDamage/output/NS/eD50_NS_damages-q05_r1.csv', skiprows=1)
-dam95r = pd.read_csv('eDamage/output/NS/eD50_NS_damages-q95_r1.csv', skiprows=1)
-damMEba = pd.read_csv('eDamage/output/NS/eD_NS_damages-mean_b0.csv', skiprows=1)
-dam05ba = pd.read_csv('eDamage/output/NS/eD_NS_damages-q05_b0.csv', skiprows=1)
-dam95ba = pd.read_csv('eDamage/output/NS/eD_NS_damages-q95_b0.csv', skiprows=1)
-damMEra = pd.read_csv('eDamage/output/NS/eD_NS_damages-mean_r1.csv', skiprows=1)
-dam05ra = pd.read_csv('eDamage/output/NS/eD_NS_damages-q05_r1.csv', skiprows=1)
-dam95ra = pd.read_csv('eDamage/output/NS/eD_NS_damages-q95_r1.csv', skiprows=1)
-losMEb = pd.read_csv('ebRisk/output/NS/ebR_NS_avg_losses-stats_b0.csv', skiprows=1)
-losMEr = pd.read_csv('ebRisk/output/NS/ebR_NS_avg_losses-stats_r1.csv', skiprows=1)
-expo = pd.read_csv('../openquake-inputs/exposure/general-building-stock/oqBldgExp_NS.csv') #from FINISHED
+region = 'T_CalgaryMetro'; PR = 'AB'
+damMEb = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-mean_b0.csv', skiprows=1)
+dam05b = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-q05_b0.csv', skiprows=1)
+dam95b = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-q95_b0.csv', skiprows=1)
+damMEr = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-mean_r1.csv', skiprows=1)
+dam05r = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-q05_r1.csv', skiprows=1)
+dam95r = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-q95_r1.csv', skiprows=1)
+#damMEba = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-mean_b0.csv', skiprows=1)
+#dam05ba = pd.read_csv('eDamage/output/NS/eD_NS_damages-q05_b0.csv', skiprows=1)
+#dam95ba = pd.read_csv('eDamage/output/NS/eD_NS_damages-q95_b0.csv', skiprows=1)
+#damMEra = pd.read_csv('eDamage/output/NS/eD_NS_damages-mean_r1.csv', skiprows=1)
+#dam05ra = pd.read_csv('eDamage/output/NS/eD_NS_damages-q05_r1.csv', skiprows=1)
+#dam95ra = pd.read_csv('eDamage/output/NS/eD_NS_damages-q95_r1.csv', skiprows=1)
+losMEb = pd.read_csv('ebRisk/output/'+PR+'/ebR_'+PR+'_'+region+'_avg_losses-stats_b0.csv', skiprows=1)
+losMEr = pd.read_csv('ebRisk/output/'+PR+'/ebR_'+PR+'_'+region+'_avg_losses-stats_r1.csv', skiprows=1)
+expo = pd.read_csv('../openquake-inputs/exposure/general-building-stock/oqBldgExp_'+PR+'.csv') #from FINISHED
 params_file = "/Users/thobbs/Documents/GitHub/earthquake-scenarios/scripts/Hazus_Consequence_Parameters.xlsx"
 
 ##############################################################################
 
 ### Testing out scripts to add to agg_curves
-name ='ebRisk/output/NS/ebR_NS_agg_curves-stats_b0.csv'
-region = [s for s in name.split('/') if 'agg_curves' in s][0].split('_')[1] #grab region from the file name
-curve_mean_b0 = pd.read_csv(name, skiprows=1) #read file in
-curve_mean_b0['e_Aggregation'] = region #add column with info about what can be aggregated, based on calc size.
-curve_mean_b0[curve_mean_b0['fsauid'] != '*total*'] #strip totals for FSA calcs
+#name ='ebRisk/output/NS/ebR_NS_agg_curves-stats_b0.csv'
+#region = [s for s in name.split('/') if 'agg_curves' in s][0].split('_')[1] #grab region from the file name
+#curve_mean_b0 = pd.read_csv(name, skiprows=1) #read file in
+#curve_mean_b0['e_Aggregation'] = region #add column with info about what can be aggregated, based on calc size.
+#curve_mean_b0[curve_mean_b0['fsauid'] != '*total*'] #strip totals for FSA calcs
 
 
 
@@ -58,13 +60,13 @@ damME = pd.merge(damME, dam95r, how='left', on='asset_id', suffixes=('', '_95r')
 damME = pd.merge(damME, dam05r, how='left', on='asset_id', suffixes=('', '_05r'))
 damMEe = pd.merge(damME, expo, how='left', left_on='asset_id', right_on='id', suffixes=('','_expo'))
 
-damMEba = damMEba[damMEba['sauid'] == SAUID]
-damMEa = pd.merge(damMEba, damMEra, how='left', on='asset_id', suffixes=('_b0', '_r1'))
-damMEa = pd.merge(damMEa, dam95ba, how='left', on='asset_id', suffixes=('', '_95b'))
-damMEa = pd.merge(damMEa, dam05ba, how='left', on='asset_id', suffixes=('', '_05b'))
-damMEa = pd.merge(damMEa, dam95ra, how='left', on='asset_id', suffixes=('', '_95r'))
-damMEa = pd.merge(damMEa, dam05ra, how='left', on='asset_id', suffixes=('', '_05r'))
-damMEea = pd.merge(damMEa, expo, how='left', left_on='asset_id', right_on='id', suffixes=('','_expo'))
+#damMEba = damMEba[damMEba['sauid'] == SAUID]
+#damMEa = pd.merge(damMEba, damMEra, how='left', on='asset_id', suffixes=('_b0', '_r1'))
+#damMEa = pd.merge(damMEa, dam95ba, how='left', on='asset_id', suffixes=('', '_95b'))
+#damMEa = pd.merge(damMEa, dam05ba, how='left', on='asset_id', suffixes=('', '_05b'))
+#damMEa = pd.merge(damMEa, dam95ra, how='left', on='asset_id', suffixes=('', '_95r'))
+#damMEa = pd.merge(damMEa, dam05ra, how='left', on='asset_id', suffixes=('', '_05r'))
+#damMEea = pd.merge(damMEa, expo, how='left', left_on='asset_id', right_on='id', suffixes=('','_expo'))
 
 ### Read collapse rates by taxonomy
 def read_collapse_rate(xlsx):
@@ -79,8 +81,8 @@ collapse_rate_df = read_params["Collapse Rates"](xlsx)
 damMEe['AssetType'] = damMEe['taxonomy'].str.split('-').str[-2]
 damMEe['CollapseRate'] = collapse_rate_df.loc[damMEe['AssetType']].values
 
-damMEea['AssetType'] = damMEea['taxonomy'].str.split('-').str[-2]
-damMEea['CollapseRate'] = collapse_rate_df.loc[damMEea['AssetType']].values
+#damMEea['AssetType'] = damMEea['taxonomy'].str.split('-').str[-2]
+#damMEea['CollapseRate'] = collapse_rate_df.loc[damMEea['AssetType']].values
 
 ##############################################################################
 ### CALCULATE PSRA INDICATORS
