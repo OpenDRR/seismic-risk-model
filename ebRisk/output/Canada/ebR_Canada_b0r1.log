@@ -1,0 +1,18 @@
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_CampbellBozorgnia2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_ChiouYoungs2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2021-11-02 17:41:35 #182 INFO] root running /mnt/storage/canada-srm2/ebRisk/input/ebRisk_b0_Canada.ini [--hc=None]
+[2021-11-02 17:41:35 #182 INFO] Using engine version 3.11.3-git0cccb86798
+[2021-11-02 17:41:35 #182 WARNING] Version v3.11.4 of the engine is available, but you are still using version 3.11.3-git0cccb86798
+[2021-11-02 17:41:35 #182 WARNING] Using 96 cores on ip-10-70-136-20
+[2021-11-02 17:41:35 #182 INFO] Validated nationalModel.xml in 0.02 seconds
+[2021-11-02 17:41:35 #182 INFO] Checksum of the input files: 514598877
+[2021-11-02 17:41:35 #182 INFO] Reading the risk model if present
+[2021-11-02 17:41:57 #182 INFO] Reading /mnt/storage/openquake-inputs/exposure/general-building-stock/oqBldgExp_CA.xml
