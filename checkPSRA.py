@@ -205,14 +205,16 @@ eAALt_Cont_r1 = losMEe['contents_r1']; print("eAALt_Cont_r1 = "+str(round(eAALt_
 print("")
 print("Affected People - baseline [bldg results for "+str(damMEe['asset_id'][num])+"]")
 eC_Fatality_b0 = np.divide(losMEe['occupants_b0'],1e-6); print("eC_Fatality_b0 = "+str(round(eC_Fatality_b0.sum(),roundn))+" ["+str(round(eC_Fatality_b0[num],roundr))+"]") #Average annual fatalities 
-eCr_Fatality_b0 = np.divide(np.divide(losMEe['occupants_b0'],1e-6),losMEe['night']); print("eCr_Fatality_b0 = "+str(round(eCr_Fatality_b0.mean(),roundr))+" ["+str(round(eCr_Fatality_b0[num],roundr))+"]") #Average annual fatality rate
+eCr_Fatality_b0 = np.divide(np.divide(losMEe['occupants_b0'],1e-6),losMEe['transit'])
+eCr_Fatality_b0.replace([np.inf, -np.inf], 0, inplace=True); print("eCr_Fatality_b0 = "+str(round(eCr_Fatality_b0.mean(),roundr))+" ["+str(round(eCr_Fatality_b0[num],roundr))+"]") #Average annual fatality rate
 
 
 #############
 print("")
 print("Affected People - retrofit [bldg results for "+str(damMEe['asset_id'][num])+"]")
 eC_Fatality_r1 = np.divide(losMEe['occupants_r1'],1e-6); print("eC_Fatality_r1 = "+str(round(eC_Fatality_r1.sum(),roundn))+" ["+str(round(eC_Fatality_r1[num],roundr))+"]") #Average annual fatalities 
-eCr_Fatality_r1 = np.divide(np.divide(losMEe['occupants_r1'],1e-6),losMEe['night']); print("eCr_Fatality_r1 = "+str(round(eCr_Fatality_r1.mean(),roundr))+" ["+str(round(eCr_Fatality_r1[num],roundr))+"]") #Average annual fatality rate
+eCr_Fatality_r1 = np.divide(np.divide(losMEe['occupants_r1'],1e-6),losMEe['transit'])
+eCr_Fatality_r1.replace([np.inf, -np.inf], 0, inplace=True); print("eCr_Fatality_r1 = "+str(round(eCr_Fatality_r1.mean(),roundr))+" ["+str(round(eCr_Fatality_r1[num],roundr))+"]") #Average annual fatality rate
 
 
 
