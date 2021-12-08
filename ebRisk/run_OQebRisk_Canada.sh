@@ -31,7 +31,7 @@ mkdir -p output/temp; rm -f output/temp/*
 prov=$region
 mkdir -p output/${prov}
 ### RUN RISK CALCS
-oq engine --run input/ebRisk_b0_${region}.ini input/ebRisk_r1_${region}.ini &> output/${prov}/ebR_${region}_b0r1.log;
+oq engine --run input/ebRisk_b0_${region}.ini input/ebRisk_r1_${region}.ini --hc 182 &> output/${prov}/ebR_${region}_b0r1.log;
 for calc in "${calcs[@]}"; do
         ### EXPORTS
         oq export fullreport $calcnum -e rst -d output/temp/

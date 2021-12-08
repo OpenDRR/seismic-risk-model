@@ -8,11 +8,58 @@
   warnings.warn(msg, ExperimentalWarning)
 /home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_ChiouYoungs2014 is experimental and may change in future versions - the user is liable for their application
   warnings.warn(msg, ExperimentalWarning)
-[2021-11-02 17:41:35 #182 INFO] root running /mnt/storage/canada-srm2/ebRisk/input/ebRisk_b0_Canada.ini [--hc=None]
-[2021-11-02 17:41:35 #182 INFO] Using engine version 3.11.3-git0cccb86798
-[2021-11-02 17:41:35 #182 WARNING] Version v3.11.4 of the engine is available, but you are still using version 3.11.3-git0cccb86798
-[2021-11-02 17:41:35 #182 WARNING] Using 96 cores on ip-10-70-136-20
-[2021-11-02 17:41:35 #182 INFO] Validated nationalModel.xml in 0.02 seconds
-[2021-11-02 17:41:35 #182 INFO] Checksum of the input files: 514598877
-[2021-11-02 17:41:35 #182 INFO] Reading the risk model if present
-[2021-11-02 17:41:57 #182 INFO] Reading /mnt/storage/openquake-inputs/exposure/general-building-stock/oqBldgExp_CA.xml
+[2021-11-12 19:10:35 #185 INFO] root running /mnt/storage/canada-srm2/ebRisk/input/ebRisk_b0_Canada.ini [--hc=182]
+[2021-11-12 19:10:35 #185 INFO] Using engine version 3.11.3-git0cccb86798
+[2021-11-12 19:10:35 #185 WARNING] Version v3.12.1 of the engine is available, but you are still using version 3.11.3-git0cccb86798
+[2021-11-12 19:10:35 #185 WARNING] Using 96 cores on ip-10-70-136-20
+[2021-11-12 19:10:35 #185 INFO] Validated nationalModel.xml in 0.01 seconds
+[2021-11-12 19:10:35 #185 INFO] Checksum of the input files: 514598877
+[2021-11-12 19:10:35 #185 INFO] Reading the risk model if present
+[2021-11-12 19:10:58 #185 INFO] Reading /mnt/storage/openquake-inputs/exposure/general-building-stock/oqBldgExp_CA.xml
+[2021-11-12 19:16:41 #185 INFO] Associated 2237515 assets to 230630 sites
+[2021-11-12 19:19:15 #185 INFO] Reducing risk model from 7260 to 1547 taxonomies
+[2021-11-12 19:19:56 #185 INFO] minimum_asset_loss={'contents': 1000.0, 'nonstructural': 1000.0, 'occupants': 5000.0, 'structural': 5000.0}
+[2021-11-12 19:19:56 #185 INFO] Storing 39 aggregation keys
+[2021-11-12 19:20:02 #185 CRITICAL] 
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/ebrisk.py", line 169, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 567, in pre_execute
+    raise ValueError(
+ValueError: The parent calculation had stats ['mean', 'quantile-0.05', 'quantile-0.5', 'quantile-0.95'] != ['mean', 'quantile-0.05', 'quantile-0.95']
+[2021-11-12 19:20:07 #185 CRITICAL] Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/ebrisk.py", line 169, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 567, in pre_execute
+    raise ValueError(
+ValueError: The parent calculation had stats ['mean', 'quantile-0.05', 'quantile-0.5', 'quantile-0.95'] != ['mean', 'quantile-0.05', 'quantile-0.95']
+
+[2021-11-12 19:20:07 #185 INFO] Stopping the workers
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/bin/oq", line 33, in <module>
+    sys.exit(load_entry_point('openquake.engine', 'console_scripts', 'oq')())
+  File "/home/ssm-user/src/oq-engine/openquake/commands/__main__.py", line 44, in oq
+    sap.run(commands, prog='oq')
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 225, in run
+    return _run(parser(funcdict, **parserkw), argv)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 216, in _run
+    return func(**dic)
+  File "/home/ssm-user/src/oq-engine/openquake/commands/engine.py", line 164, in main
+    run_jobs(job_inis, log_level, log_file, exports, **pars)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 407, in run_jobs
+    run_calc(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/ebrisk.py", line 169, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 567, in pre_execute
+    raise ValueError(
+ValueError: The parent calculation had stats ['mean', 'quantile-0.05', 'quantile-0.5', 'quantile-0.95'] != ['mean', 'quantile-0.05', 'quantile-0.95']
