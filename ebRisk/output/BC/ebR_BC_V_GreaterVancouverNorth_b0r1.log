@@ -1,0 +1,103 @@
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_CampbellBozorgnia2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_ChiouYoungs2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2021-12-27 16:07:59 #269 INFO] root running /mnt/storage/canada-srm2/ebRisk/input/ebRisk_b0_BC_V_GreaterVancouverNorth.ini [--hc=None]
+[2021-12-27 16:07:59 #269 INFO] Using engine version 3.11.3-git0cccb86798
+[2021-12-27 16:07:59 #269 WARNING] Version v3.12.1 of the engine is available, but you are still using version 3.11.3-git0cccb86798
+[2021-12-27 16:07:59 #269 WARNING] Using 96 cores on ip-10-70-136-20
+[2021-12-27 16:07:59 #269 INFO] Validated nationalModel.xml in 0.01 seconds
+[2021-12-27 16:07:59 #269 INFO] Checksum of the input files: 514598877
+[2021-12-27 16:07:59 #269 INFO] Reading the risk model if present
+[2021-12-27 16:08:06 #269 CRITICAL] Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/ebrisk.py", line 169, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 588, in pre_execute
+    self.read_inputs()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 457, in read_inputs
+    self._read_risk_data()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 714, in _read_risk_data
+    self.load_crmodel()  # must be called first
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 689, in load_crmodel
+    self.crmodel = readinput.get_crmodel(oq)
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/readinput.py", line 848, in get_crmodel
+    risklist = get_risk_functions(oqparam)
+  File "/home/ssm-user/src/oq-engine/openquake/risklib/riskmodels.py", line 129, in get_risk_functions
+    rmodel = nrml.to_python(oqparam.inputs[key])
+  File "/home/ssm-user/src/oq-engine/openquake/hazardlib/nrml.py", line 166, in to_python
+    return node_to_obj(node, fname, *args)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/general.py", line 576, in __call__
+    return self[key](obj, *args, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/risklib/read_nrml.py", line 143, in get_vulnerability_functions_05
+    vmodel[imt, vf_id] = scientific.VulnerabilityFunction(
+  File "/home/ssm-user/src/oq-engine/openquake/risklib/scientific.py", line 116, in __init__
+    self._check_vulnerability_data(
+  File "/home/ssm-user/src/oq-engine/openquake/risklib/scientific.py", line 299, in _check_vulnerability_data
+    assert_equal(imls, sorted(set(imls)))
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 171, in manage_signals
+    raise MasterKilled('The openquake master process was killed manually')
+openquake.engine.engine.MasterKilled: The openquake master process was killed manually
+
+[2021-12-27 16:08:06 #269 INFO] Stopping the workers
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/bin/oq", line 33, in <module>
+    sys.exit(load_entry_point('openquake.engine', 'console_scripts', 'oq')())
+  File "/home/ssm-user/src/oq-engine/openquake/commands/__main__.py", line 44, in oq
+    sap.run(commands, prog='oq')
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 225, in run
+    return _run(parser(funcdict, **parserkw), argv)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 216, in _run
+    return func(**dic)
+  File "/home/ssm-user/src/oq-engine/openquake/commands/engine.py", line 164, in main
+    run_jobs(job_inis, log_level, log_file, exports, **pars)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 407, in run_jobs
+    run_calc(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/ebrisk.py", line 169, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 588, in pre_execute
+    self.read_inputs()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 457, in read_inputs
+    self._read_risk_data()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 714, in _read_risk_data
+    self.load_crmodel()  # must be called first
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 689, in load_crmodel
+    self.crmodel = readinput.get_crmodel(oq)
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/readinput.py", line 848, in get_crmodel
+    risklist = get_risk_functions(oqparam)
+  File "/home/ssm-user/src/oq-engine/openquake/risklib/riskmodels.py", line 129, in get_risk_functions
+    rmodel = nrml.to_python(oqparam.inputs[key])
+  File "/home/ssm-user/src/oq-engine/openquake/hazardlib/nrml.py", line 166, in to_python
+    return node_to_obj(node, fname, *args)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/general.py", line 576, in __call__
+    return self[key](obj, *args, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/risklib/read_nrml.py", line 143, in get_vulnerability_functions_05
+    vmodel[imt, vf_id] = scientific.VulnerabilityFunction(
+  File "/home/ssm-user/src/oq-engine/openquake/risklib/scientific.py", line 116, in __init__
+    self._check_vulnerability_data(
+  File "/home/ssm-user/src/oq-engine/openquake/risklib/scientific.py", line 299, in _check_vulnerability_data
+    assert_equal(imls, sorted(set(imls)))
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 171, in manage_signals
+    raise MasterKilled('The openquake master process was killed manually')
+openquake.engine.engine.MasterKilled: The openquake master process was killed manually
