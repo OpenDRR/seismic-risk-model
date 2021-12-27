@@ -4145,3 +4145,32 @@ mv output/temp/hazard_uhs-mean* output/YT/cH_YT_uhs.csv
 # =================================================================
 # replicate for all regions 
 # =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# =================================================================
+#[province]
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cHazard_BC.ini > output/BC/cH_BC.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/cH_BC_report.rst
+oq export hcurves -1 -e csv -d output/temp/
+mv output/temp/*PGA*.csv output/BC/cH_BC_hcurves_PGA.csv
+mv output/temp/*SA*0.1*.csv output/BC/cH_BC_hcurves_Sa0p1.csv
+mv output/temp/*SA*0.2*.csv output/BC/cH_BC_hcurves_Sa0p2.csv
+mv output/temp/*SA*0.3*.csv output/BC/cH_BC_hcurves_Sa0p3.csv
+mv output/temp/*SA*0.5*.csv output/BC/cH_BC_hcurves_Sa0p5.csv
+mv output/temp/*SA*0.6*.csv output/BC/cH_BC_hcurves_Sa0p6.csv
+mv output/temp/*SA*1.0*.csv output/BC/cH_BC_hcurves_Sa1p0.csv
+mv output/temp/*SA*2.0*.csv output/BC/cH_BC_hcurves_Sa2p0.csv
+mv output/temp/*SA*5.0*.csv output/BC/cH_BC_hcurves_Sa5p0.csv
+mv output/temp/*SA*10.0*.csv output/BC/cH_BC_hcurves_Sa10p0.csv
+oq export hmaps -1 -e csv -d output/temp/ 
+mv output/temp/hazard_map-mean* output/BC/cH_BC_hmaps.csv
+oq export uhs -1 -e csv -d output/temp/ 
+mv output/temp/hazard_uhs-mean* output/BC/cH_BC_uhs.csv
+# =================================================================
+# replicate for all regions 
+# =================================================================

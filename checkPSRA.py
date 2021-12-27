@@ -9,12 +9,14 @@ import numpy as np
 
 ##############################################################################
 ### Load files and select SAUID of interest
-SAUID = 48019692
-FSA = 'T3Z'
-num = 11 #index of the single building (asset) to display for bldg level calcs
+#SAUID = 48019692; FSA = 'T3Z'; num = 11 #index of the single building (asset) to display for bldg level calcs
+#region = 'T_CalgaryMetro'; PR = 'AB'
+SAUID = 24039842; FSA = 'H9P'; num = 84
+region = 'H_Montreal'; PR = 'QC'
+
+
 roundn = 4 #set to 0
 roundr = 4 #2
-region = 'T_CalgaryMetro'; PR = 'AB'
 damMEb = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-mean_b0.csv', skiprows=1)
 dam05b = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-q05_b0.csv', skiprows=1)
 dam95b = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-q95_b0.csv', skiprows=1)
@@ -191,7 +193,7 @@ eAALt_Cont_b0 = losMEe['contents_b0']; print("eAALt_Cont_b0 = "+str(round(eAALt_
 
 #############
 print("")
-print("Economic Security - retrofit [bldg results for "+str(damMEe['asset_id'][num])+"]")
+print("Economic Security - retrofit [bldg results for "+str(losMEe['asset_id'][num])+"]")
 eAALt_Asset_r1 = losMEe['contents_r1']+losMEe['structural_r1']+losMEe['nonstructural_r1']; print("eAALt_Asset_r1 = "+str(round(eAALt_Asset_r1.sum(),roundn))+" ["+str(round(eAALt_Asset_r1[num],roundn))+"]")
 eAALm_Asset_r1 = np.divide(losMEe['contents_r1']+losMEe['structural_r1']+losMEe['nonstructural_r1'],losMEe['contents']+losMEe['structural']+losMEe['nonstructural']); print("eAALm_Asset_r1 = "+str(round(eAALm_Asset_r1.mean(),roundr))+" ["+str(round(eAALm_Asset_r1[num],roundr))+"]")
 eAALt_Bldg_r1 = losMEe['structural_r1']+losMEe['nonstructural_r1']; print("eAALt_Bldg_r1 = "+str(round(eAALt_Bldg_r1.sum(),roundn))+" ["+str(round(eAALt_Bldg_r1[num],roundn))+"]")

@@ -24204,3 +24204,29 @@ mv output/temp/avg_damages-mean*.csv output/YT/eD_YT_Y_damages-mean_r1.csv;
 oq export src_loss_table -1 -e csv -d output/temp/
 mv output/temp/src_loss_table_*.csv output/YT/eD_YT_Y_src_loss_table_r1.csv;
 # =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# =================================================================
+# BC_V_CentralIsland
+# =================================================================
+# Baseline Conditions
+oq engine --run input/eDamage_b0_BC_V_CentralIsland.ini > output/BC/eD_BC_V_CentralIsland_b0.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC_V_CentralIsland_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/eD_BC_V_CentralIsland_rlz.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC_V_CentralIsland_damages-mean_b0.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC_V_CentralIsland_src_loss_table_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/eDamage_r1_BC_V_CentralIsland.ini > output/BC/eD_BC_V_CentralIsland_r1.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report*.rst output/BC/eD_BC_V_CentralIsland_report_r1.csv
+oq export damages-stats -1 -e csv -d output/temp/
+mv output/temp/avg_damages-mean*.csv output/BC/eD_BC_V_CentralIsland_damages-mean_r1.csv;
+oq export src_loss_table -1 -e csv -d output/temp/
+mv output/temp/src_loss_table_*.csv output/BC/eD_BC_V_CentralIsland_src_loss_table_r1.csv;
+# =================================================================

@@ -18618,3 +18618,23 @@ mv output/temp/report_*.rst output/YT/cD_YT_Y_report_r1.csv
 oq export damages-stats -e csv -d output/temp/
 mv output/temp/damages-mean_*.csv output/YT/cD_YT_Y_dmg-mean_r1.csv;
 # =================================================================
+#!/bin/bash
+mkdir -p output/temp; rm -f output/temp/*
+# =================================================================
+# BC_V_CentralIsland
+# =================================================================
+# Baseline Conditions
+oq engine --run input/cDamage_b0_BC_V_CentralIsland.ini --hc 000 > output/BC/BC_V_CentralIsland.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_CentralIsland_report_b0.csv
+oq export realizations -1 -e csv -d output/temp/
+mv output/temp/realizations*.csv output/BC/cD_BC_V_CentralIsland_rlz.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_CentralIsland_dmg-mean_b0.csv;
+ # Retrofit Conditions
+oq engine --run input/cDamage_r1_BC_V_CentralIsland.ini --hc 000 > output/BC/BC_V_CentralIsland.log;
+oq export fullreport -1 -e rst -d output/temp/
+mv output/temp/report_*.rst output/BC/cD_BC_V_CentralIsland_report_r1.csv
+oq export damages-stats -e csv -d output/temp/
+mv output/temp/damages-mean_*.csv output/BC/cD_BC_V_CentralIsland_dmg-mean_r1.csv;
+# =================================================================
