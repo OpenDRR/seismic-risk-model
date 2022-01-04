@@ -9,12 +9,14 @@ import numpy as np
 
 ##############################################################################
 ### Load files and select SAUID of interest
-SAUID = 48019692
-FSA = 'T3Z'
-num = 11 #index of the single building (asset) to display for bldg level calcs
+#SAUID = 48019692; FSA = 'T3Z'; num = 11 #index of the single building (asset) to display for bldg level calcs
+#region = 'T_CalgaryMetro'; PR = 'AB'
+SAUID = 24039842; FSA = 'H9P'; num = 84
+region = 'H_Montreal'; PR = 'QC'
+
+
 roundn = 4 #set to 0
-roundr = 2
-region = 'T_CalgaryMetro'; PR = 'AB'
+roundr = 4 #2
 damMEb = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-mean_b0.csv', skiprows=1)
 dam05b = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-q05_b0.csv', skiprows=1)
 dam95b = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-q95_b0.csv', skiprows=1)
@@ -93,52 +95,88 @@ print("Damage State - baseline [bldg results for "+str(damMEe['asset_id'][num])+
 #"Rate" here is the time-averaged rate of occurrence of each damage state, multiplied by the number of buildings. 
 #eDr_None_b0 #OMITTING 'NONE' BECAUSE IT's NOT MEANINGFUL (rate of occurrence of no damage over 50 years is more than number of buildings)
 #Also going to omit total numbers because it's not as meaningful to multiply a rate by the number of buildings as it was to multiply the probability. 
+eD_Slight_b0 = damMEe['structural~slight_b0']; print("eD_Slight_b0 = "+str(round(eD_Slight_b0.sum(),roundr))+" ["+str(round(eD_Slight_b0[num],roundr))+"]")
 eDr_Slight_b0 = np.divide(damMEe['structural~slight_b0'],damMEe['number']); print("eDr_Slight_b0 = "+str(round(eDr_Slight_b0.mean(),roundr))+" ["+str(round(eDr_Slight_b0[num],roundr))+"]")
-eDr_Moderate_b0 = np.divide(damMEe['structural~moderate_b0'],damMEe['number']); print("eDr_Slight_b0 = "+str(round(eDr_Slight_b0.mean(),roundr))+" ["+str(round(eDr_Slight_b0[num],roundr))+"]")
-eDr_Extensive_b0 = np.divide(damMEe['structural~extensive_b0'],damMEe['number']); print("eDr_Slight_b0 = "+str(round(eDr_Slight_b0.mean(),roundr))+" ["+str(round(eDr_Slight_b0[num],roundr))+"]")
-eDr_Complete_b0 = np.divide(damMEe['structural~complete_b0'],damMEe['number']); print("eDr_Slight_b0 = "+str(round(eDr_Slight_b0.mean(),roundr))+" ["+str(round(eDr_Slight_b0[num],roundr))+"]")
-damMEe['Collapse_b0'] = np.multiply(np.divide(damMEe['structural~slight_b0'],damMEe['number']),damMEe['CollapseRate'])
-print("eDr_Collapse_b0 = "+str(round(damMEe['Collapse_b0'].mean(),roundr))+" ["+str(round(damMEe['Collapse_b0'][num],roundr))+"]")
+eD_Moderate_b0 = damMEe['structural~moderate_b0']; print("eD_Moderate_b0 = "+str(round(eD_Moderate_b0.sum(),roundr))+" ["+str(round(eD_Moderate_b0[num],roundr))+"]")
+eDr_Moderate_b0 = np.divide(damMEe['structural~moderate_b0'],damMEe['number']); print("eDr_Moderate_b0 = "+str(round(eDr_Moderate_b0.mean(),roundr))+" ["+str(round(eDr_Moderate_b0[num],roundr))+"]")
+eD_Extensive_b0 = damMEe['structural~extensive_b0']; print("eD_Extensive_b0 = "+str(round(eD_Extensive_b0.sum(),roundr))+" ["+str(round(eD_Extensive_b0[num],roundr))+"]")
+eDr_Extensive_b0 = np.divide(damMEe['structural~extensive_b0'],damMEe['number']); print("eDr_Extensive_b0 = "+str(round(eDr_Extensive_b0.mean(),roundr))+" ["+str(round(eDr_Extensive_b0[num],roundr))+"]")
+eD_Complete_b0 = damMEe['structural~complete_b0']; print("eD_Complete_b0 = "+str(round(eD_Complete_b0.sum(),roundr))+" ["+str(round(eD_Complete_b0[num],roundr))+"]")
+eDr_Complete_b0 = np.divide(damMEe['structural~complete_b0'],damMEe['number']); print("eDr_Complete_b0 = "+str(round(eDr_Complete_b0.mean(),roundr))+" ["+str(round(eDr_Complete_b0[num],roundr))+"]")
+damMEe['Collapse_b0'] = np.multiply(damMEe['structural~complete_b0'],damMEe['CollapseRate'])
+eD_Collapse_b0 = damMEe['Collapse_b0']; print("eD_Collapse_b0 = "+str(round(eD_Collapse_b0.sum(),roundr))+" ["+str(round(eD_Collapse_b0[num],roundr))+"]")
+print("eDr_Collapse_b0 = "+str(round(np.divide(damMEe['Collapse_b0'],damMEe['number']).mean(),roundr))+" ["+str(round(np.divide(damMEe['Collapse_b0'],damMEe['number'])[num],roundr))+"]")
+eD_Fail_Collapse_b0 = damMEe['number'][damMEe['Collapse_b0'] >= 0.01]; print("eD_Fail_Collapse_b0 = "+str(round(eD_Fail_Collapse_b0.sum(),roundn))+" ["+str(round(eD_Fail_Collapse_b0[num],roundn) if eD_Fail_Collapse_b0.sum() > 0.0 else round(0.0,roundn))+"]")
 
+eD_Slight95_b0 = damMEe['structural~slight']; print("eD_Slight95_b0 = "+str(round(eD_Slight95_b0.sum(),roundr))+" ["+str(round(eD_Slight95_b0[num],roundr))+"]")
 eDr_Slight95_b0 = np.divide(damMEe['structural~slight'],damMEe['number']); print("eDr_Slight95_b0 = "+str(round(eDr_Slight95_b0.mean(),roundr))+" ["+str(round(eDr_Slight95_b0[num],roundr))+"]")
+eD_Moderate95_b0 = damMEe['structural~moderate']; print("eD_Moderate95_b0 = "+str(round(eD_Moderate95_b0.sum(),roundr))+" ["+str(round(eD_Moderate95_b0[num],roundr))+"]")
 eDr_Moderate95_b0 = np.divide(damMEe['structural~moderate'],damMEe['number']); print("eDr_Moderate95_b0 = "+str(round(eDr_Moderate95_b0.mean(),roundr))+" ["+str(round(eDr_Moderate95_b0[num],roundr))+"]")
+eD_Extensive95_b0 = damMEe['structural~extensive']; print("eD_Extensive95_b0 = "+str(round(eD_Extensive95_b0.sum(),roundr))+" ["+str(round(eD_Extensive95_b0[num],roundr))+"]")
 eDr_Extensive95_b0 = np.divide(damMEe['structural~extensive'],damMEe['number']); print("eDr_Extensive95_b0 = "+str(round(eDr_Extensive95_b0.mean(),roundr))+" ["+str(round(eDr_Extensive95_b0[num],roundr))+"]")
+eD_Complete95_b0 = damMEe['structural~complete']; print("eD_Complete95_b0 = "+str(round(eD_Complete95_b0.sum(),roundr))+" ["+str(round(eD_Complete95_b0[num],roundr))+"]")
 eDr_Complete95_b0 = np.divide(damMEe['structural~complete'],damMEe['number']); print("eDr_Complete95_b0 = "+str(round(eDr_Complete95_b0.mean(),roundr))+" ["+str(round(eDr_Complete95_b0[num],roundr))+"]")
-damMEe['Collapse95_b0'] = np.multiply(np.divide(damMEe['structural~complete'],damMEe['number']),damMEe['CollapseRate'])
-print("eDr_Collapse95_b0 = "+str(round(damMEe['Collapse95_b0'].mean(),roundr))+" ["+str(round(damMEe['Collapse95_b0'][num],roundr))+"]")
+damMEe['Collapse95_b0'] = np.multiply(damMEe['structural~complete'],damMEe['CollapseRate'])
+eD_Collapse95_b0 = damMEe['Collapse95_b0']; print("eD_Collapse95_b0 = "+str(round(eD_Collapse95_b0.sum(),roundr))+" ["+str(round(eD_Collapse95_b0[num],roundr))+"]")
+print("eDr_Collapse95_b0 = "+str(round(np.divide(damMEe['Collapse95_b0'],damMEe['number']).mean(),roundr))+" ["+str(round(np.divide(damMEe['Collapse95_b0'],damMEe['number'])[num],roundr))+"]")
+eD_Fail_Collapse95_b0 = damMEe['number'][damMEe['Collapse95_b0'] >= 0.01]; print("eD_Fail_Collapse95_b0 = "+str(round(eD_Fail_Collapse95_b0.sum(),roundn))+" ["+str(round(eD_Fail_Collapse95_b0[num],roundn) if eD_Fail_Collapse95_b0.sum() > 0.0 else round(0.0,roundn))+"]")
 
+eD_Slight05_b0 = damMEe['structural~slight_05b']; print("eD_Slight05_b0 = "+str(round(eD_Slight05_b0.sum(),roundr))+" ["+str(round(eD_Slight05_b0[num],roundr))+"]")
 eDr_Slight05_b0 = np.divide(damMEe['structural~slight_05b'],damMEe['number']); print("eDr_Slight05_b0 = "+str(round(eDr_Slight05_b0.mean(),roundr))+" ["+str(round(eDr_Slight05_b0[num],roundr))+"]")
+eD_Moderate05_b0 = damMEe['structural~moderate_05b']; print("eD_Moderate05_b0 = "+str(round(eD_Moderate05_b0.sum(),roundr))+" ["+str(round(eD_Moderate05_b0[num],roundr))+"]")
 eDr_Moderate05_b0 = np.divide(damMEe['structural~moderate_05b'],damMEe['number']); print("eDr_Moderate05_b0 = "+str(round(eDr_Moderate05_b0.mean(),roundr))+" ["+str(round(eDr_Moderate05_b0[num],roundr))+"]")
+eD_Extensive05_b0 = damMEe['structural~extensive_05b']; print("eD_Extensive05_b0 = "+str(round(eD_Extensive05_b0.sum(),roundr))+" ["+str(round(eD_Extensive05_b0[num],roundr))+"]")
 eDr_Extensive05_b0 = np.divide(damMEe['structural~extensive_05b'],damMEe['number']); print("eDr_Extensive05_b0 = "+str(round(eDr_Extensive05_b0.mean(),roundr))+" ["+str(round(eDr_Extensive05_b0[num],roundr))+"]")
+eD_Complete05_b0 = damMEe['structural~complete_05b']; print("eD_Complete05_b0 = "+str(round(eD_Complete05_b0.sum(),roundr))+" ["+str(round(eD_Complete05_b0[num],roundr))+"]")
 eDr_Complete05_b0 = np.divide(damMEe['structural~complete_05b'],damMEe['number']); print("eDr_Complete05_b0 = "+str(round(eDr_Complete05_b0.mean(),roundr))+" ["+str(round(eDr_Complete05_b0[num],roundr))+"]")
-damMEe['Collapse05_b0'] = np.multiply(np.divide(damMEe['structural~complete_05b'],damMEe['number']),damMEe['CollapseRate'])
-print("eDr_Collapse05_b0 = "+str(round(damMEe['Collapse05_b0'].mean(),roundr))+" ["+str(round(damMEe['Collapse05_b0'][num],roundr))+"]")
+damMEe['Collapse05_b0'] = np.multiply(damMEe['structural~complete_05b'],damMEe['CollapseRate'])
+eD_Collapse05_b0 = damMEe['Collapse05_b0']; print("eD_Collapse05_b0 = "+str(round(eD_Collapse05_b0.sum(),roundr))+" ["+str(round(eD_Collapse05_b0[num],roundr))+"]")
+print("eDr_Collapse05_b0 = "+str(round(np.divide(damMEe['Collapse05_b0'],damMEe['number']).mean(),roundr))+" ["+str(round(np.divide(damMEe['Collapse05_b0'],damMEe['number'])[num],roundr))+"]")
+eD_Fail_Collapse05_b0 = damMEe['number'][damMEe['Collapse05_b0'] >= 0.01]; print("eD_Fail_Collapse05_b0 = "+str(round(eD_Fail_Collapse05_b0.sum(),roundn))+" ["+str(round(eD_Fail_Collapse05_b0[num],roundn) if eD_Fail_Collapse05_b0.sum() > 0.0 else round(0.0,roundn))+"]")
 
 ### Do we want to add annual damage rates?
 
 #############
 print("")
 print("Damage State - retrofit [bldg results for "+str(damMEe['asset_id'][num])+"]")
+eD_Slight_r1 = damMEe['structural~slight_r1']; print("eD_Slight_r1 = "+str(round(eD_Slight_r1.sum(),roundr))+" ["+str(round(eD_Slight_r1[num],roundr))+"]")
 eDr_Slight_r1 = np.divide(damMEe['structural~slight_r1'],damMEe['number']); print("eDr_Slight_r1 = "+str(round(eDr_Slight_r1.mean(),roundr))+" ["+str(round(eDr_Slight_r1[num],roundr))+"]")
-eDr_Moderate_r1 = np.divide(damMEe['structural~moderate_r1'],damMEe['number']); print("eDr_Slight_r1 = "+str(round(eDr_Slight_r1.mean(),roundr))+" ["+str(round(eDr_Slight_r1[num],roundr))+"]")
-eDr_Extensive_r1 = np.divide(damMEe['structural~extensive_r1'],damMEe['number']); print("eDr_Slight_r1 = "+str(round(eDr_Slight_r1.mean(),roundr))+" ["+str(round(eDr_Slight_r1[num],roundr))+"]")
-eDr_Complete_r1 = np.divide(damMEe['structural~complete_r1'],damMEe['number']); print("eDr_Slight_r1 = "+str(round(eDr_Slight_r1.mean(),roundr))+" ["+str(round(eDr_Slight_r1[num],roundr))+"]")
-damMEe['Collapse_r1'] = np.multiply(np.divide(damMEe['structural~slight_r1'],damMEe['number']),damMEe['CollapseRate'])
-print("eDr_Collapse_r1 = "+str(round(damMEe['Collapse_r1'].mean(),roundr))+" ["+str(round(damMEe['Collapse_r1'][num],roundr))+"]")
+eD_Moderate_r1 = damMEe['structural~moderate_r1']; print("eD_Moderate_r1 = "+str(round(eD_Moderate_r1.sum(),roundr))+" ["+str(round(eD_Moderate_r1[num],roundr))+"]")
+eDr_Moderate_r1 = np.divide(damMEe['structural~moderate_r1'],damMEe['number']); print("eDr_Moderate_r1 = "+str(round(eDr_Moderate_r1.mean(),roundr))+" ["+str(round(eDr_Moderate_r1[num],roundr))+"]")
+eD_Extensive_r1 = damMEe['structural~extensive_r1']; print("eD_Extensive_r1 = "+str(round(eD_Extensive_r1.sum(),roundr))+" ["+str(round(eD_Extensive_r1[num],roundr))+"]")
+eDr_Extensive_r1 = np.divide(damMEe['structural~extensive_r1'],damMEe['number']); print("eDr_Extensive_r1 = "+str(round(eDr_Extensive_r1.mean(),roundr))+" ["+str(round(eDr_Extensive_r1[num],roundr))+"]")
+eD_Complete_r1 = damMEe['structural~complete_r1']; print("eD_Complete_r1 = "+str(round(eD_Complete_r1.sum(),roundr))+" ["+str(round(eD_Complete_r1[num],roundr))+"]")
+eDr_Complete_r1 = np.divide(damMEe['structural~complete_r1'],damMEe['number']); print("eDr_Complete_r1 = "+str(round(eDr_Complete_r1.mean(),roundr))+" ["+str(round(eDr_Complete_r1[num],roundr))+"]")
+damMEe['Collapse_r1'] = np.multiply(damMEe['structural~complete_r1'],damMEe['CollapseRate'])
+eD_Collapse_r1 = damMEe['Collapse_r1']; print("eD_Collapse_r1 = "+str(round(eD_Collapse_r1.sum(),roundr))+" ["+str(round(eD_Collapse_r1[num],roundr))+"]")
+print("eDr_Collapse_r1 = "+str(round(np.divide(damMEe['Collapse_r1'],damMEe['number']).mean(),roundr))+" ["+str(round(np.divide(damMEe['Collapse_r1'],damMEe['number'])[num],roundr))+"]")
+eD_Fail_Collapse_r1 = damMEe['number'][damMEe['Collapse_r1'] >= 0.01]; print("eD_Fail_Collapse_r1 = "+str(round(eD_Fail_Collapse_r1.sum(),roundn))+" ["+str(round(eD_Fail_Collapse_r1[num],roundn) if eD_Fail_Collapse_r1.sum() > 0.0 else round(0.0,roundn))+"]")
 
-eDr_Slight95_r1 = np.divide(damMEe['structural~slight'],damMEe['number']); print("eDr_Slight95_r1 = "+str(round(eDr_Slight95_r1.mean(),roundr))+" ["+str(round(eDr_Slight95_r1[num],roundr))+"]")
-eDr_Moderate95_r1 = np.divide(damMEe['structural~moderate'],damMEe['number']); print("eDr_Moderate95_r1 = "+str(round(eDr_Moderate95_r1.mean(),roundr))+" ["+str(round(eDr_Moderate95_r1[num],roundr))+"]")
-eDr_Extensive95_r1 = np.divide(damMEe['structural~extensive'],damMEe['number']); print("eDr_Extensive95_r1 = "+str(round(eDr_Extensive95_r1.mean(),roundr))+" ["+str(round(eDr_Extensive95_r1[num],roundr))+"]")
-eDr_Complete95_r1 = np.divide(damMEe['structural~complete'],damMEe['number']); print("eDr_Complete95_r1 = "+str(round(eDr_Complete95_r1.mean(),roundr))+" ["+str(round(eDr_Complete95_r1[num],roundr))+"]")
-damMEe['Collapse95_r1'] = np.multiply(np.divide(damMEe['structural~complete'],damMEe['number']),damMEe['CollapseRate'])
-print("eDr_Collapse95_r1 = "+str(round(damMEe['Collapse95_r1'].mean(),roundr))+" ["+str(round(damMEe['Collapse95_r1'][num],roundr))+"]")
+eD_Slight95_r1 = damMEe['structural~slight_95r']; print("eD_Slight95_r1 = "+str(round(eD_Slight95_r1.sum(),roundr))+" ["+str(round(eD_Slight95_r1[num],roundr))+"]")
+eDr_Slight95_r1 = np.divide(damMEe['structural~slight_95r'],damMEe['number']); print("eDr_Slight95_r1 = "+str(round(eDr_Slight95_r1.mean(),roundr))+" ["+str(round(eDr_Slight95_r1[num],roundr))+"]")
+eD_Moderate95_r1 = damMEe['structural~moderate_95r']; print("eD_Moderate95_r1 = "+str(round(eD_Moderate95_r1.sum(),roundr))+" ["+str(round(eD_Moderate95_r1[num],roundr))+"]")
+eDr_Moderate95_r1 = np.divide(damMEe['structural~moderate_95r'],damMEe['number']); print("eDr_Moderate95_r1 = "+str(round(eDr_Moderate95_r1.mean(),roundr))+" ["+str(round(eDr_Moderate95_r1[num],roundr))+"]")
+eD_Extensive95_r1 = damMEe['structural~extensive_95r']; print("eD_Extensive95_r1 = "+str(round(eD_Extensive95_r1.sum(),roundr))+" ["+str(round(eD_Extensive95_r1[num],roundr))+"]")
+eDr_Extensive95_r1 = np.divide(damMEe['structural~extensive_95r'],damMEe['number']); print("eDr_Extensive95_r1 = "+str(round(eDr_Extensive95_r1.mean(),roundr))+" ["+str(round(eDr_Extensive95_r1[num],roundr))+"]")
+eD_Complete95_r1 = damMEe['structural~complete_95r']; print("eD_Complete95_r1 = "+str(round(eD_Complete95_r1.sum(),roundr))+" ["+str(round(eD_Complete95_r1[num],roundr))+"]")
+eDr_Complete95_r1 = np.divide(damMEe['structural~complete_95r'],damMEe['number']); print("eDr_Complete95_r1 = "+str(round(eDr_Complete95_r1.mean(),roundr))+" ["+str(round(eDr_Complete95_r1[num],roundr))+"]")
+damMEe['Collapse95_r1'] = np.multiply(damMEe['structural~complete_95r'],damMEe['CollapseRate'])
+eD_Collapse95_r1 = damMEe['Collapse95_r1']; print("eD_Collapse95_r1 = "+str(round(eD_Collapse95_r1.sum(),roundr))+" ["+str(round(eD_Collapse95_r1[num],roundr))+"]")
+print("eDr_Collapse95_r1 = "+str(round(np.divide(damMEe['Collapse95_r1'],damMEe['number']).mean(),roundr))+" ["+str(round(np.divide(damMEe['Collapse95_r1'],damMEe['number'])[num],roundr))+"]")
+eD_Fail_Collapse95_r1 = damMEe['number'][damMEe['Collapse95_r1'] >= 0.01]; print("eD_Fail_Collapse95_r1 = "+str(round(eD_Fail_Collapse95_r1.sum(),roundn))+" ["+str(round(eD_Fail_Collapse95_r1[num],roundn) if eD_Fail_Collapse95_r1.sum() > 0.0 else round(0.0,roundn))+"]")
 
-eDr_Slight05_r1 = np.divide(damMEe['structural~slight_05b'],damMEe['number']); print("eDr_Slight05_r1 = "+str(round(eDr_Slight05_r1.mean(),roundr))+" ["+str(round(eDr_Slight05_r1[num],roundr))+"]")
-eDr_Moderate05_r1 = np.divide(damMEe['structural~moderate_05b'],damMEe['number']); print("eDr_Moderate05_r1 = "+str(round(eDr_Moderate05_r1.mean(),roundr))+" ["+str(round(eDr_Moderate05_r1[num],roundr))+"]")
-eDr_Extensive05_r1 = np.divide(damMEe['structural~extensive_05b'],damMEe['number']); print("eDr_Extensive05_r1 = "+str(round(eDr_Extensive05_r1.mean(),roundr))+" ["+str(round(eDr_Extensive05_r1[num],roundr))+"]")
-eDr_Complete05_r1 = np.divide(damMEe['structural~complete_05b'],damMEe['number']); print("eDr_Complete05_r1 = "+str(round(eDr_Complete05_r1.mean(),roundr))+" ["+str(round(eDr_Complete05_r1[num],roundr))+"]")
-damMEe['Collapse05_r1'] = np.multiply(np.divide(damMEe['structural~complete_05b'],damMEe['number']),damMEe['CollapseRate'])
-print("eDr_Collapse05_r1 = "+str(round(damMEe['Collapse05_r1'].mean(),roundr))+" ["+str(round(damMEe['Collapse05_r1'][num],roundr))+"]")
+eD_Slight05_r1 = damMEe['structural~slight_05r']; print("eD_Slight05_r1 = "+str(round(eD_Slight05_r1.sum(),roundr))+" ["+str(round(eD_Slight05_r1[num],roundr))+"]")
+eDr_Slight05_r1 = np.divide(damMEe['structural~slight_05r'],damMEe['number']); print("eDr_Slight05_r1 = "+str(round(eDr_Slight05_r1.mean(),roundr))+" ["+str(round(eDr_Slight05_r1[num],roundr))+"]")
+eD_Moderate05_r1 = damMEe['structural~moderate_05r']; print("eD_Moderate05_r1 = "+str(round(eD_Moderate05_r1.sum(),roundr))+" ["+str(round(eD_Moderate05_r1[num],roundr))+"]")
+eDr_Moderate05_r1 = np.divide(damMEe['structural~moderate_05r'],damMEe['number']); print("eDr_Moderate05_r1 = "+str(round(eDr_Moderate05_r1.mean(),roundr))+" ["+str(round(eDr_Moderate05_r1[num],roundr))+"]")
+eD_Extensive05_r1 = damMEe['structural~extensive_05r']; print("eD_Extensive05_r1 = "+str(round(eD_Extensive05_r1.sum(),roundr))+" ["+str(round(eD_Extensive05_r1[num],roundr))+"]")
+eDr_Extensive05_r1 = np.divide(damMEe['structural~extensive_05r'],damMEe['number']); print("eDr_Extensive05_r1 = "+str(round(eDr_Extensive05_r1.mean(),roundr))+" ["+str(round(eDr_Extensive05_r1[num],roundr))+"]")
+eD_Complete05_r1 = damMEe['structural~complete_05r']; print("eD_Complete05_r1 = "+str(round(eD_Complete05_r1.sum(),roundr))+" ["+str(round(eD_Complete05_r1[num],roundr))+"]")
+eDr_Complete05_r1 = np.divide(damMEe['structural~complete_05r'],damMEe['number']); print("eDr_Complete05_r1 = "+str(round(eDr_Complete05_r1.mean(),roundr))+" ["+str(round(eDr_Complete05_r1[num],roundr))+"]")
+damMEe['Collapse05_r1'] = np.multiply(damMEe['structural~complete_05r'],damMEe['CollapseRate'])
+eD_Collapse05_r1 = damMEe['Collapse05_r1']; print("eD_Collapse05_r1 = "+str(round(eD_Collapse05_r1.sum(),roundr))+" ["+str(round(eD_Collapse05_r1[num],roundr))+"]")
+print("eDr_Collapse05_r1 = "+str(round(np.divide(damMEe['Collapse05_r1'],damMEe['number']).mean(),roundr))+" ["+str(round(np.divide(damMEe['Collapse05_r1'],damMEe['number'])[num],roundr))+"]")
+eD_Fail_Collapse05_r1 = damMEe['number'][damMEe['Collapse05_r1'] >= 0.01]; print("eD_Fail_Collapse05_r1 = "+str(round(eD_Fail_Collapse05_r1.sum(),roundn))+" ["+str(round(eD_Fail_Collapse05_r1[num],roundn) if eD_Fail_Collapse05_r1.sum() > 0.0 else round(0.0,roundn))+"]")
 
 
 #############
@@ -155,7 +193,7 @@ eAALt_Cont_b0 = losMEe['contents_b0']; print("eAALt_Cont_b0 = "+str(round(eAALt_
 
 #############
 print("")
-print("Economic Security - retrofit [bldg results for "+str(damMEe['asset_id'][num])+"]")
+print("Economic Security - retrofit [bldg results for "+str(losMEe['asset_id'][num])+"]")
 eAALt_Asset_r1 = losMEe['contents_r1']+losMEe['structural_r1']+losMEe['nonstructural_r1']; print("eAALt_Asset_r1 = "+str(round(eAALt_Asset_r1.sum(),roundn))+" ["+str(round(eAALt_Asset_r1[num],roundn))+"]")
 eAALm_Asset_r1 = np.divide(losMEe['contents_r1']+losMEe['structural_r1']+losMEe['nonstructural_r1'],losMEe['contents']+losMEe['structural']+losMEe['nonstructural']); print("eAALm_Asset_r1 = "+str(round(eAALm_Asset_r1.mean(),roundr))+" ["+str(round(eAALm_Asset_r1[num],roundr))+"]")
 eAALt_Bldg_r1 = losMEe['structural_r1']+losMEe['nonstructural_r1']; print("eAALt_Bldg_r1 = "+str(round(eAALt_Bldg_r1.sum(),roundn))+" ["+str(round(eAALt_Bldg_r1[num],roundn))+"]")
@@ -168,15 +206,17 @@ eAALt_Cont_r1 = losMEe['contents_r1']; print("eAALt_Cont_r1 = "+str(round(eAALt_
 #############
 print("")
 print("Affected People - baseline [bldg results for "+str(damMEe['asset_id'][num])+"]")
-eC_Fatality_b0 = losMEe['occupants_b0']; print("eC_Fatality_b0 = "+str(round(eC_Fatality_b0.sum(),roundn))+" ["+str(round(eC_Fatality_b0[num],roundr))+"]") #Average annual fatalities 
-eCr_Fatality_b0 = np.divide(losMEe['occupants_b0'],losMEe['number']); print("eCr_Fatality_b0 = "+str(round(eCr_Fatality_b0.mean(),roundr))+" ["+str(round(eCr_Fatality_b0[num],roundr))+"]") #Average annual fatality rate
+eC_Fatality_b0 = np.divide(losMEe['occupants_b0'],1e-6); print("eC_Fatality_b0 = "+str(round(eC_Fatality_b0.sum(),roundn))+" ["+str(round(eC_Fatality_b0[num],roundr))+"]") #Average annual fatalities 
+eCr_Fatality_b0 = np.divide(np.divide(losMEe['occupants_b0'],1e-6),losMEe['transit'])
+eCr_Fatality_b0.replace([np.inf, -np.inf], 0, inplace=True); print("eCr_Fatality_b0 = "+str(round(eCr_Fatality_b0.mean(),roundr))+" ["+str(round(eCr_Fatality_b0[num],roundr))+"]") #Average annual fatality rate
 
 
 #############
 print("")
 print("Affected People - retrofit [bldg results for "+str(damMEe['asset_id'][num])+"]")
-eC_Fatality_r1 = losMEe['occupants_r1']; print("eC_Fatality_r1 = "+str(round(eC_Fatality_r1.sum(),roundn))+" ["+str(round(eC_Fatality_r1[num],roundr))+"]") #Average annual fatalities 
-eCr_Fatality_r1 = np.divide(losMEe['occupants_r1'],losMEe['number']); print("eCr_Fatality_r1 = "+str(round(eCr_Fatality_r1.mean(),roundr))+" ["+str(round(eCr_Fatality_r1[num],roundr))+"]") #Average annual fatality rate
+eC_Fatality_r1 = np.divide(losMEe['occupants_r1'],1e-6); print("eC_Fatality_r1 = "+str(round(eC_Fatality_r1.sum(),roundn))+" ["+str(round(eC_Fatality_r1[num],roundr))+"]") #Average annual fatalities 
+eCr_Fatality_r1 = np.divide(np.divide(losMEe['occupants_r1'],1e-6),losMEe['transit'])
+eCr_Fatality_r1.replace([np.inf, -np.inf], 0, inplace=True); print("eCr_Fatality_r1 = "+str(round(eCr_Fatality_r1.mean(),roundr))+" ["+str(round(eCr_Fatality_r1[num],roundr))+"]") #Average annual fatality rate
 
 
 

@@ -1,0 +1,120 @@
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_CampbellBozorgnia2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_ChiouYoungs2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2021-12-27 16:08:23 #271 INFO] root running /mnt/storage/canada-srm2/ebRisk/input/ebRisk_b0_BC_V_GreaterVancouverSouth.ini [--hc=None]
+[2021-12-27 16:08:23 #271 INFO] Using engine version 3.11.3-git0cccb86798
+[2021-12-27 16:08:24 #271 WARNING] Version v3.12.1 of the engine is available, but you are still using version 3.11.3-git0cccb86798
+[2021-12-27 16:08:24 #271 WARNING] Using 96 cores on ip-10-70-136-20
+[2021-12-27 16:08:24 #271 INFO] Validated nationalModel.xml in 0.01 seconds
+[2021-12-27 16:08:24 #271 INFO] Checksum of the input files: 514598877
+[2021-12-27 16:08:24 #271 INFO] Reading the risk model if present
+[2021-12-27 16:08:46 #271 INFO] Reading /mnt/storage/openquake-inputs/exposure/general-building-stock/oqBldgExp_BC_V_GreaterVancouverSouth.xml
+[2021-12-27 16:08:50 #271 INFO] Extracting the hazard sites from the site model
+[2021-12-27 16:08:52 #271 INFO] Associated 30175 assets to 1209 sites
+[2021-12-27 16:08:56 #271 INFO] Reducing risk model from 7260 to 849 taxonomies
+[2021-12-27 16:08:57 #271 INFO] minimum_asset_loss={'contents': 0, 'nonstructural': 0, 'occupants': 0, 'structural': 0}
+[2021-12-27 16:08:57 #271 INFO] Storing 1078 aggregation keys
+[2021-12-27 16:08:57 #271 INFO] Considering 200 logic tree paths out of 24_576
+[2021-12-27 16:08:57 #271 INFO] Reading the source model(s) in parallel
+[2021-12-27 16:08:58 #271 INFO] Received {} in 0 seconds
+[2021-12-27 16:08:59 #271 CRITICAL] Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/ebrisk.py", line 169, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 588, in pre_execute
+    self.read_inputs()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 475, in read_inputs
+    self.csm = csm = readinput.get_composite_source_model(
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/readinput.py", line 804, in get_composite_source_model
+    csm = get_csm(oqparam, full_lt,  h5)
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/source_reader.py", line 118, in get_csm
+    smdict = parallel.Starmap(read_source_model, allargs, distribute=dist,
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 827, in reduce
+    return self.submit_all().reduce(agg, acc)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 586, in reduce
+    for result in self:
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 575, in __iter__
+    yield from self._iter()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 536, in _iter
+    for result in self.iresults:
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 860, in _loop
+    res = next(isocket)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/zeromq.py", line 135, in __iter__
+    if self.zsocket.poll(self.timeout):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/zmq/sugar/socket.py", line 702, in poll
+    evts = dict(p.poll(timeout))
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/zmq/sugar/poll.py", line 99, in poll
+    return zmq_poll(self.sockets, timeout=timeout)
+  File "zmq/backend/cython/_poll.pyx", line 123, in zmq.backend.cython._poll.zmq_poll
+  File "zmq/backend/cython/checkrc.pxd", line 13, in zmq.backend.cython.checkrc._check_rc
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 171, in manage_signals
+    raise MasterKilled('The openquake master process was killed manually')
+openquake.engine.engine.MasterKilled: The openquake master process was killed manually
+
+[2021-12-27 16:08:59 #271 INFO] Stopping the workers
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/bin/oq", line 33, in <module>
+    sys.exit(load_entry_point('openquake.engine', 'console_scripts', 'oq')())
+  File "/home/ssm-user/src/oq-engine/openquake/commands/__main__.py", line 44, in oq
+    sap.run(commands, prog='oq')
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 225, in run
+    return _run(parser(funcdict, **parserkw), argv)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 216, in _run
+    return func(**dic)
+  File "/home/ssm-user/src/oq-engine/openquake/commands/engine.py", line 164, in main
+    run_jobs(job_inis, log_level, log_file, exports, **pars)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 407, in run_jobs
+    run_calc(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/ebrisk.py", line 169, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 588, in pre_execute
+    self.read_inputs()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 475, in read_inputs
+    self.csm = csm = readinput.get_composite_source_model(
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/readinput.py", line 804, in get_composite_source_model
+    csm = get_csm(oqparam, full_lt,  h5)
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/source_reader.py", line 118, in get_csm
+    smdict = parallel.Starmap(read_source_model, allargs, distribute=dist,
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 827, in reduce
+    return self.submit_all().reduce(agg, acc)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 586, in reduce
+    for result in self:
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 575, in __iter__
+    yield from self._iter()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 536, in _iter
+    for result in self.iresults:
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 860, in _loop
+    res = next(isocket)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/zeromq.py", line 135, in __iter__
+    if self.zsocket.poll(self.timeout):
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/zmq/sugar/socket.py", line 702, in poll
+    evts = dict(p.poll(timeout))
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/zmq/sugar/poll.py", line 99, in poll
+    return zmq_poll(self.sockets, timeout=timeout)
+  File "zmq/backend/cython/_poll.pyx", line 123, in zmq.backend.cython._poll.zmq_poll
+  File "zmq/backend/cython/checkrc.pxd", line 13, in zmq.backend.cython.checkrc._check_rc
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 171, in manage_signals
+    raise MasterKilled('The openquake master process was killed manually')
+openquake.engine.engine.MasterKilled: The openquake master process was killed manually
