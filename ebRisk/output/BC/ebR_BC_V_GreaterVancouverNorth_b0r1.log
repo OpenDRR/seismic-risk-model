@@ -1,5 +1,9 @@
 /home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
   warnings.warn(msg, ExperimentalWarning)
+INFO:root:Upgrade completed in 0.0004448890686035156 seconds
+WARNING:root:DB server started with /home/ssm-user/openquake/bin/python on tcp://127.0.0.1:1908, pid 5263
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
 /home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014 is experimental and may change in future versions - the user is liable for their application
   warnings.warn(msg, ExperimentalWarning)
 /home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
@@ -8,96 +12,1041 @@
   warnings.warn(msg, ExperimentalWarning)
 /home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_ChiouYoungs2014 is experimental and may change in future versions - the user is liable for their application
   warnings.warn(msg, ExperimentalWarning)
-[2021-12-27 16:07:59 #269 INFO] root running /mnt/storage/canada-srm2/ebRisk/input/ebRisk_b0_BC_V_GreaterVancouverNorth.ini [--hc=None]
-[2021-12-27 16:07:59 #269 INFO] Using engine version 3.11.3-git0cccb86798
-[2021-12-27 16:07:59 #269 WARNING] Version v3.12.1 of the engine is available, but you are still using version 3.11.3-git0cccb86798
-[2021-12-27 16:07:59 #269 WARNING] Using 96 cores on ip-10-70-136-20
-[2021-12-27 16:07:59 #269 INFO] Validated nationalModel.xml in 0.01 seconds
-[2021-12-27 16:07:59 #269 INFO] Checksum of the input files: 514598877
-[2021-12-27 16:07:59 #269 INFO] Reading the risk model if present
-[2021-12-27 16:08:06 #269 CRITICAL] Traceback (most recent call last):
-  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
-    calc.run(exports=exports, **kw)
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
-    self.pre_execute()
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/ebrisk.py", line 169, in pre_execute
-    super().pre_execute()
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
-    calc.run(remove=False)
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
-    self.pre_execute()
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 588, in pre_execute
-    self.read_inputs()
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 457, in read_inputs
-    self._read_risk_data()
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 714, in _read_risk_data
-    self.load_crmodel()  # must be called first
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 689, in load_crmodel
-    self.crmodel = readinput.get_crmodel(oq)
-  File "/home/ssm-user/src/oq-engine/openquake/commonlib/readinput.py", line 848, in get_crmodel
-    risklist = get_risk_functions(oqparam)
-  File "/home/ssm-user/src/oq-engine/openquake/risklib/riskmodels.py", line 129, in get_risk_functions
-    rmodel = nrml.to_python(oqparam.inputs[key])
-  File "/home/ssm-user/src/oq-engine/openquake/hazardlib/nrml.py", line 166, in to_python
-    return node_to_obj(node, fname, *args)
-  File "/home/ssm-user/src/oq-engine/openquake/baselib/general.py", line 576, in __call__
-    return self[key](obj, *args, **kw)
-  File "/home/ssm-user/src/oq-engine/openquake/risklib/read_nrml.py", line 143, in get_vulnerability_functions_05
-    vmodel[imt, vf_id] = scientific.VulnerabilityFunction(
-  File "/home/ssm-user/src/oq-engine/openquake/risklib/scientific.py", line 116, in __init__
-    self._check_vulnerability_data(
-  File "/home/ssm-user/src/oq-engine/openquake/risklib/scientific.py", line 299, in _check_vulnerability_data
-    assert_equal(imls, sorted(set(imls)))
-  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 171, in manage_signals
-    raise MasterKilled('The openquake master process was killed manually')
-openquake.engine.engine.MasterKilled: The openquake master process was killed manually
-
-[2021-12-27 16:08:06 #269 INFO] Stopping the workers
-Traceback (most recent call last):
-  File "/home/ssm-user/openquake/bin/oq", line 33, in <module>
-    sys.exit(load_entry_point('openquake.engine', 'console_scripts', 'oq')())
-  File "/home/ssm-user/src/oq-engine/openquake/commands/__main__.py", line 44, in oq
-    sap.run(commands, prog='oq')
-  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 225, in run
-    return _run(parser(funcdict, **parserkw), argv)
-  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 216, in _run
-    return func(**dic)
-  File "/home/ssm-user/src/oq-engine/openquake/commands/engine.py", line 164, in main
-    run_jobs(job_inis, log_level, log_file, exports, **pars)
-  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 407, in run_jobs
-    run_calc(*args)
-  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
-    calc.run(exports=exports, **kw)
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
-    self.pre_execute()
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/ebrisk.py", line 169, in pre_execute
-    super().pre_execute()
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
-    calc.run(remove=False)
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
-    self.pre_execute()
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 588, in pre_execute
-    self.read_inputs()
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 457, in read_inputs
-    self._read_risk_data()
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 714, in _read_risk_data
-    self.load_crmodel()  # must be called first
-  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 689, in load_crmodel
-    self.crmodel = readinput.get_crmodel(oq)
-  File "/home/ssm-user/src/oq-engine/openquake/commonlib/readinput.py", line 848, in get_crmodel
-    risklist = get_risk_functions(oqparam)
-  File "/home/ssm-user/src/oq-engine/openquake/risklib/riskmodels.py", line 129, in get_risk_functions
-    rmodel = nrml.to_python(oqparam.inputs[key])
-  File "/home/ssm-user/src/oq-engine/openquake/hazardlib/nrml.py", line 166, in to_python
-    return node_to_obj(node, fname, *args)
-  File "/home/ssm-user/src/oq-engine/openquake/baselib/general.py", line 576, in __call__
-    return self[key](obj, *args, **kw)
-  File "/home/ssm-user/src/oq-engine/openquake/risklib/read_nrml.py", line 143, in get_vulnerability_functions_05
-    vmodel[imt, vf_id] = scientific.VulnerabilityFunction(
-  File "/home/ssm-user/src/oq-engine/openquake/risklib/scientific.py", line 116, in __init__
-    self._check_vulnerability_data(
-  File "/home/ssm-user/src/oq-engine/openquake/risklib/scientific.py", line 299, in _check_vulnerability_data
-    assert_equal(imls, sorted(set(imls)))
-  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 171, in manage_signals
-    raise MasterKilled('The openquake master process was killed manually')
-openquake.engine.engine.MasterKilled: The openquake master process was killed manually
+[2022-01-18 03:27:31 #294 INFO] root running /mnt/storage/canada-srm2/ebRisk/input/ebRisk_b0_BC_V_GreaterVancouverNorth.ini [--hc=None]
+[2022-01-18 03:27:31 #294 INFO] Using engine version 3.11.3-git0cccb86798
+[2022-01-18 03:27:32 #294 WARNING] Version v3.12.1 of the engine is available, but you are still using version 3.11.3-git0cccb86798
+[2022-01-18 03:27:32 #294 WARNING] Using 96 cores on ip-10-70-136-20
+[2022-01-18 03:27:32 #294 INFO] Validated nationalModel.xml in 0.02 seconds
+[2022-01-18 03:27:32 #294 INFO] Checksum of the input files: 514598877
+[2022-01-18 03:27:32 #294 INFO] Reading the risk model if present
+[2022-01-18 03:27:54 #294 INFO] Reading /mnt/storage/openquake-inputs/exposure/general-building-stock/oqBldgExp_BC_V_GreaterVancouverNorth.xml
+[2022-01-18 03:27:59 #294 INFO] Extracting the hazard sites from the site model
+[2022-01-18 03:28:01 #294 INFO] Associated 33773 assets to 1448 sites
+[2022-01-18 03:28:05 #294 INFO] Reducing risk model from 7260 to 960 taxonomies
+[2022-01-18 03:28:06 #294 INFO] minimum_asset_loss={'contents': 0, 'nonstructural': 0, 'occupants': 0, 'structural': 0}
+[2022-01-18 03:28:06 #294 INFO] Storing 1617 aggregation keys
+[2022-01-18 03:28:06 #294 INFO] Considering 200 logic tree paths out of 24_576
+[2022-01-18 03:28:06 #294 INFO] Reading the source model(s) in parallel
+[2022-01-18 03:28:08 #294 INFO] read_source_model  16% [6 submitted, 0 queued]
+[2022-01-18 03:28:08 #294 INFO] read_source_model  33% [6 submitted, 0 queued]
+[2022-01-18 03:28:08 #294 INFO] read_source_model  50% [6 submitted, 0 queued]
+[2022-01-18 03:28:08 #294 INFO] read_source_model  66% [6 submitted, 0 queued]
+[2022-01-18 03:28:08 #294 INFO] read_source_model  83% [6 submitted, 0 queued]
+[2022-01-18 03:28:09 #294 INFO] read_source_model 100% [6 submitted, 0 queued]
+[2022-01-18 03:28:09 #294 INFO] Mean time per core=0s, std=0.0s, min=0s, max=0s
+[2022-01-18 03:28:09 #294 INFO] Received {'/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Harctic_simplified_collapsedRates.xml': '157.72 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Harctic_simplified_collapsedRates.xml': '152.1 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Rarctic_simplified_collapsedRates.xml': '151.35 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Rarctic_simplified_collapsedRates.xml': '145.73 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Harctic_simplified_collapsedRates.xml': '137.01 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Rarctic_simplified_collapsedRates.xml': '130.86 KB'} in 1 seconds
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2022-01-18 03:28:09 #294 INFO] There are multiple different sources with the same ID [<AreaSource SCCYA;0>, <AreaSource SCCYA;1>]
+[2022-01-18 03:28:09 #294 INFO] There are 13 groups and 198 sources with len(et_ids)=3.87
+[2022-01-18 03:28:09 #294 INFO] Checking the sources bounding box
+[2022-01-18 03:28:09 #294 ERROR] source ACM: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
+[2022-01-18 03:28:09 #294 INFO] Rupture floating factor = 1.6303030303030304
+[2022-01-18 03:28:09 #294 INFO] Rupture spinning factor = 3.2181818181818183
+[2022-01-18 03:28:09 #294 INFO] gzipping the input files
+[2022-01-18 03:28:13 #294 INFO] Storing risk model
+[2022-01-18 03:28:14 #294 INFO] minimum_intensity={'default': 0.05, 'SA(0.3)': 0.02, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05}
+[2022-01-18 03:28:14 #294 INFO] Building ruptures
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Subduction IntraSlab30, 1 source(s)>
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Subduction IntraSlab55, 4 source(s)>
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Subduction Interface, 14 source(s)>
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Stable Shallow Crust, 29 source(s)>
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Stable Shallow Crust, 4 source(s)>
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Stable Shallow Crust, 6 source(s)>
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Stable Shallow Crust, 18 source(s)>
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Stable Shallow Crust, 10 source(s)>
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Stable Shallow Crust, 38 source(s)>
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Stable Shallow Crust, 14 source(s)>
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Active Shallow Crust, 58 source(s)>
+[2022-01-18 03:29:52 #294 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2022-01-18 03:29:53 #294 INFO] Sent 96 tasks, 69.62 MB in 0 seconds
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures   1% [98 submitted, 5 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures   2% [99 submitted, 4 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures   3% [100 submitted, 3 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures   4% [101 submitted, 2 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures   5% [102 submitted, 1 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures   6% [103 submitted, 0 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures   7% [103 submitted, 0 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures   8% [103 submitted, 0 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures   9% [103 submitted, 0 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures  10% [103 submitted, 0 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures  11% [103 submitted, 0 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures  12% [103 submitted, 0 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures  13% [103 submitted, 0 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures  14% [103 submitted, 0 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures  15% [103 submitted, 0 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures  16% [103 submitted, 0 queued]
+[2022-01-18 03:29:55 #294 INFO] sample_ruptures  17% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  18% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  19% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  20% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  21% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  22% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  23% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  24% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  25% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  26% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  27% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  28% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  29% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  30% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  31% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  32% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  33% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  34% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  35% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  36% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  37% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  38% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  39% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  40% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  41% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  42% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  43% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  44% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  45% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  46% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  47% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  48% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  49% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  50% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  51% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  52% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  53% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  54% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  55% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  56% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  57% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  58% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  59% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  60% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  61% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  62% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  63% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  64% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  65% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  66% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  67% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  68% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  69% [103 submitted, 0 queued]
+[2022-01-18 03:29:56 #294 INFO] sample_ruptures  70% [103 submitted, 0 queued]
+[2022-01-18 03:29:57 #294 INFO] sample_ruptures  71% [103 submitted, 0 queued]
+[2022-01-18 03:29:57 #294 INFO] sample_ruptures  72% [103 submitted, 0 queued]
+[2022-01-18 03:29:57 #294 INFO] sample_ruptures  73% [103 submitted, 0 queued]
+[2022-01-18 03:29:57 #294 INFO] sample_ruptures  74% [103 submitted, 0 queued]
+[2022-01-18 03:29:57 #294 INFO] sample_ruptures  75% [103 submitted, 0 queued]
+[2022-01-18 03:29:57 #294 INFO] sample_ruptures  76% [103 submitted, 0 queued]
+[2022-01-18 03:29:57 #294 INFO] sample_ruptures  77% [103 submitted, 0 queued]
+[2022-01-18 03:30:09 #294 INFO] sample_ruptures  78% [103 submitted, 0 queued]
+[2022-01-18 03:30:39 #294 INFO] sample_ruptures  79% [103 submitted, 0 queued]
+[2022-01-18 03:30:44 #294 INFO] sample_ruptures  80% [103 submitted, 0 queued]
+[2022-01-18 03:31:47 #294 INFO] sample_ruptures  81% [103 submitted, 0 queued]
+[2022-01-18 03:31:48 #294 INFO] sample_ruptures  82% [103 submitted, 0 queued]
+[2022-01-18 03:31:51 #294 INFO] sample_ruptures  83% [103 submitted, 0 queued]
+[2022-01-18 03:31:51 #294 INFO] sample_ruptures  84% [103 submitted, 0 queued]
+[2022-01-18 03:31:53 #294 INFO] sample_ruptures  85% [103 submitted, 0 queued]
+[2022-01-18 03:32:15 #294 INFO] sample_ruptures  86% [103 submitted, 0 queued]
+[2022-01-18 03:32:19 #294 INFO] sample_ruptures  87% [103 submitted, 0 queued]
+[2022-01-18 03:32:31 #294 INFO] sample_ruptures  88% [103 submitted, 0 queued]
+[2022-01-18 03:32:46 #294 INFO] sample_ruptures  89% [103 submitted, 0 queued]
+[2022-01-18 03:33:13 #294 INFO] sample_ruptures  90% [103 submitted, 0 queued]
+[2022-01-18 03:33:44 #294 INFO] sample_ruptures  91% [103 submitted, 0 queued]
+[2022-01-18 03:33:54 #294 INFO] sample_ruptures  92% [103 submitted, 0 queued]
+[2022-01-18 03:34:13 #294 INFO] sample_ruptures  93% [103 submitted, 0 queued]
+[2022-01-18 03:34:15 #294 INFO] sample_ruptures  94% [103 submitted, 0 queued]
+[2022-01-18 03:34:43 #294 INFO] sample_ruptures  95% [103 submitted, 0 queued]
+[2022-01-18 03:35:12 #294 INFO] sample_ruptures  96% [103 submitted, 0 queued]
+[2022-01-18 03:36:27 #294 INFO] sample_ruptures  97% [103 submitted, 0 queued]
+[2022-01-18 03:37:01 #294 INFO] sample_ruptures  98% [103 submitted, 0 queued]
+[2022-01-18 03:37:02 #294 INFO] sample_ruptures  99% [103 submitted, 0 queued]
+[2022-01-18 03:42:31 #294 INFO] sample_ruptures 100% [103 submitted, 0 queued]
+[2022-01-18 03:42:31 #294 INFO] Mean time per core=66s, std=134.6s, min=0s, max=756s
+[2022-01-18 03:42:31 #294 INFO] Received {'rup_array': '670.18 MB', 'calc_times': '21.43 KB', 'eff_ruptures': '4.11 KB'} in 758 seconds
+[2022-01-18 03:42:31 #294 INFO] There are 200 realization(s)
+[2022-01-18 03:42:32 #294 INFO] Reordering the ruptures and storing the events
+[2022-01-18 03:42:36 #294 INFO] Associating event_id -> rlz_id for 14_326_013 events and 2_867_826 ruptures
+[2022-01-18 03:44:11 #294 INFO] Sent 204 tasks, 306.55 MB in 88 seconds
+[2022-01-18 03:44:31 #294 INFO] Mean time per core=17s, std=10.7s, min=4s, max=39s
+[2022-01-18 03:44:31 #294 INFO] Received {'tot': '136.67 MB'} in 19 seconds
+[2022-01-18 03:45:40 #294 WARNING] The calculation is really big; consider setting minimum_asset_loss
+[2022-01-18 03:45:40 #294 INFO] minimum_intensity={'SA(0.3)': 0.02, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05, 'SA(0.5)': 0.05}
+[2022-01-18 03:45:40 #294 INFO] Sending 2_867_826 ruptures
+[2022-01-18 03:47:50 #294 INFO] Sent 204 tasks, 316.88 MB in 122 seconds
+[2022-01-18 03:47:50 #294 INFO] start_ebrisk   1% [249 submitted, 0 queued]
+[2022-01-18 03:47:55 #294 INFO] start_ebrisk   2% [249 submitted, 0 queued]
+[2022-01-18 03:49:29 #294 INFO] start_ebrisk   3% [252 submitted, 0 queued]
+[2022-01-18 03:49:32 #294 INFO] start_ebrisk   4% [252 submitted, 0 queued]
+[2022-01-18 03:49:47 #294 INFO] start_ebrisk   5% [254 submitted, 0 queued]
+[2022-01-18 03:51:22 #294 INFO] start_ebrisk   6% [257 submitted, 0 queued]
+[2022-01-18 03:53:29 #294 INFO] start_ebrisk   7% [257 submitted, 0 queued]
+[2022-01-18 03:54:07 #294 INFO] start_ebrisk   8% [257 submitted, 0 queued]
+[2022-01-18 03:54:10 #294 INFO] start_ebrisk   9% [257 submitted, 0 queued]
+[2022-01-18 03:54:27 #294 INFO] start_ebrisk  10% [257 submitted, 0 queued]
+[2022-01-18 03:54:31 #294 INFO] start_ebrisk  11% [257 submitted, 0 queued]
+[2022-01-18 03:54:41 #294 INFO] start_ebrisk  12% [261 submitted, 0 queued]
+[2022-01-18 03:54:56 #294 INFO] start_ebrisk  13% [264 submitted, 0 queued]
+[2022-01-18 03:56:06 #294 INFO] start_ebrisk  14% [267 submitted, 0 queued]
+[2022-01-18 03:56:52 #294 INFO] start_ebrisk  15% [268 submitted, 0 queued]
+[2022-01-18 03:57:13 #294 INFO] start_ebrisk  16% [268 submitted, 0 queued]
+[2022-01-18 03:58:09 #294 INFO] start_ebrisk  17% [269 submitted, 0 queued]
+[2022-01-18 03:58:59 #294 INFO] start_ebrisk  18% [269 submitted, 0 queued]
+[2022-01-18 04:00:00 #294 INFO] start_ebrisk  19% [269 submitted, 0 queued]
+[2022-01-18 04:01:33 #294 INFO] start_ebrisk  20% [270 submitted, 0 queued]
+[2022-01-18 04:02:39 #294 INFO] start_ebrisk  21% [274 submitted, 0 queued]
+[2022-01-18 04:02:57 #294 INFO] start_ebrisk  22% [276 submitted, 0 queued]
+[2022-01-18 04:04:13 #294 INFO] start_ebrisk  23% [276 submitted, 0 queued]
+[2022-01-18 04:05:17 #294 INFO] start_ebrisk  24% [276 submitted, 0 queued]
+[2022-01-18 04:05:46 #294 INFO] start_ebrisk  25% [276 submitted, 0 queued]
+[2022-01-18 04:07:40 #294 INFO] start_ebrisk  26% [276 submitted, 0 queued]
+[2022-01-18 04:10:31 #294 INFO] start_ebrisk  27% [276 submitted, 0 queued]
+[2022-01-18 04:11:45 #294 INFO] start_ebrisk  28% [276 submitted, 0 queued]
+[2022-01-18 04:17:52 #294 INFO] start_ebrisk  29% [276 submitted, 0 queued]
+[2022-01-18 04:27:14 #294 INFO] start_ebrisk  30% [280 submitted, 0 queued]
+[2022-01-18 04:32:29 #294 INFO] start_ebrisk  31% [284 submitted, 0 queued]
+[2022-01-18 04:34:21 #294 INFO] start_ebrisk  32% [287 submitted, 0 queued]
+[2022-01-18 04:39:22 #294 INFO] start_ebrisk  33% [290 submitted, 0 queued]
+[2022-01-18 04:44:00 #294 INFO] start_ebrisk  34% [293 submitted, 0 queued]
+[2022-01-18 04:45:20 #294 INFO] start_ebrisk  35% [296 submitted, 0 queued]
+[2022-01-18 04:50:18 #294 INFO] start_ebrisk  36% [300 submitted, 0 queued]
+[2022-01-18 04:53:00 #294 INFO] start_ebrisk  37% [300 submitted, 0 queued]
+[2022-01-18 04:54:09 #294 INFO] start_ebrisk  38% [300 submitted, 0 queued]
+[2022-01-18 04:56:19 #294 INFO] start_ebrisk  39% [300 submitted, 0 queued]
+[2022-01-18 04:56:43 #294 INFO] start_ebrisk  40% [300 submitted, 0 queued]
+[2022-01-18 04:58:26 #294 INFO] start_ebrisk  41% [300 submitted, 0 queued]
+[2022-01-18 05:00:48 #294 INFO] start_ebrisk  42% [300 submitted, 0 queued]
+[2022-01-18 05:04:12 #294 INFO] start_ebrisk  43% [300 submitted, 0 queued]
+[2022-01-18 05:06:09 #294 INFO] start_ebrisk  44% [300 submitted, 0 queued]
+[2022-01-18 05:08:32 #294 INFO] start_ebrisk  45% [300 submitted, 0 queued]
+[2022-01-18 05:14:07 #294 INFO] start_ebrisk  46% [300 submitted, 0 queued]
+[2022-01-18 05:19:55 #294 INFO] start_ebrisk  47% [300 submitted, 0 queued]
+[2022-01-18 05:26:28 #294 INFO] start_ebrisk  48% [300 submitted, 0 queued]
+[2022-01-18 05:29:00 #294 INFO] start_ebrisk  49% [300 submitted, 0 queued]
+[2022-01-18 05:30:49 #294 INFO] start_ebrisk  50% [300 submitted, 0 queued]
+[2022-01-18 05:34:51 #294 INFO] start_ebrisk  51% [300 submitted, 0 queued]
+[2022-01-18 05:43:20 #294 INFO] start_ebrisk  52% [300 submitted, 0 queued]
+[2022-01-18 05:53:11 #294 INFO] start_ebrisk  53% [300 submitted, 0 queued]
+[2022-01-18 05:56:24 #294 INFO] start_ebrisk  54% [300 submitted, 0 queued]
+[2022-01-18 05:56:50 #294 INFO] start_ebrisk  55% [300 submitted, 0 queued]
+[2022-01-18 06:09:11 #294 INFO] start_ebrisk  56% [300 submitted, 0 queued]
+[2022-01-18 06:57:07 #294 INFO] start_ebrisk  57% [300 submitted, 0 queued]
+[2022-01-18 07:00:37 #294 INFO] start_ebrisk  58% [300 submitted, 0 queued]
+[2022-01-18 07:03:58 #294 INFO] start_ebrisk  59% [300 submitted, 0 queued]
+[2022-01-18 07:22:21 #294 INFO] start_ebrisk  60% [300 submitted, 0 queued]
+[2022-01-18 08:21:53 #294 INFO] start_ebrisk  61% [300 submitted, 0 queued]
+[2022-01-18 08:28:31 #294 INFO] start_ebrisk  62% [300 submitted, 0 queued]
+[2022-01-18 08:30:10 #294 INFO] start_ebrisk  63% [300 submitted, 0 queued]
+[2022-01-18 08:34:03 #294 INFO] start_ebrisk  64% [300 submitted, 0 queued]
+[2022-01-18 08:36:01 #294 INFO] start_ebrisk  65% [300 submitted, 0 queued]
+[2022-01-18 08:36:22 #294 INFO] start_ebrisk  66% [300 submitted, 0 queued]
+[2022-01-18 08:37:13 #294 INFO] start_ebrisk  67% [300 submitted, 0 queued]
+[2022-01-18 08:38:52 #294 INFO] start_ebrisk  68% [300 submitted, 0 queued]
+[2022-01-18 08:41:45 #294 INFO] start_ebrisk  69% [300 submitted, 0 queued]
+[2022-01-18 08:45:25 #294 INFO] start_ebrisk  70% [300 submitted, 0 queued]
+[2022-01-18 08:48:20 #294 INFO] start_ebrisk  71% [300 submitted, 0 queued]
+[2022-01-18 09:00:08 #294 INFO] start_ebrisk  72% [300 submitted, 0 queued]
+[2022-01-18 09:02:00 #294 INFO] start_ebrisk  73% [300 submitted, 0 queued]
+[2022-01-18 09:07:10 #294 INFO] start_ebrisk  74% [300 submitted, 0 queued]
+[2022-01-18 09:17:15 #294 INFO] start_ebrisk  75% [300 submitted, 0 queued]
+[2022-01-18 09:23:28 #294 INFO] start_ebrisk  76% [300 submitted, 0 queued]
+[2022-01-18 09:30:17 #294 INFO] start_ebrisk  77% [300 submitted, 0 queued]
+[2022-01-18 09:33:44 #294 INFO] start_ebrisk  78% [300 submitted, 0 queued]
+[2022-01-18 09:36:16 #294 INFO] start_ebrisk  79% [300 submitted, 0 queued]
+[2022-01-18 09:41:34 #294 INFO] start_ebrisk  80% [300 submitted, 0 queued]
+[2022-01-18 09:45:33 #294 INFO] start_ebrisk  81% [300 submitted, 0 queued]
+[2022-01-18 10:00:39 #294 INFO] start_ebrisk  82% [300 submitted, 0 queued]
+[2022-01-18 10:06:24 #294 INFO] start_ebrisk  83% [300 submitted, 0 queued]
+[2022-01-18 10:10:41 #294 INFO] start_ebrisk  84% [300 submitted, 0 queued]
+[2022-01-18 10:19:09 #294 INFO] start_ebrisk  85% [300 submitted, 0 queued]
+[2022-01-18 10:38:48 #294 INFO] start_ebrisk  86% [300 submitted, 0 queued]
+[2022-01-18 11:02:50 #294 INFO] start_ebrisk  87% [300 submitted, 0 queued]
+[2022-01-18 11:04:49 #294 INFO] start_ebrisk  88% [300 submitted, 0 queued]
+[2022-01-18 11:08:51 #294 INFO] start_ebrisk  89% [300 submitted, 0 queued]
+[2022-01-18 11:17:04 #294 INFO] start_ebrisk  90% [300 submitted, 0 queued]
+[2022-01-18 11:20:50 #294 INFO] start_ebrisk  91% [300 submitted, 0 queued]
+[2022-01-18 12:16:36 #294 INFO] start_ebrisk  92% [300 submitted, 0 queued]
+[2022-01-18 12:41:29 #294 INFO] start_ebrisk  93% [300 submitted, 0 queued]
+[2022-01-18 12:47:08 #294 INFO] start_ebrisk  94% [300 submitted, 0 queued]
+[2022-01-18 13:54:12 #294 INFO] start_ebrisk  95% [300 submitted, 0 queued]
+[2022-01-18 14:15:14 #294 INFO] start_ebrisk  96% [300 submitted, 0 queued]
+[2022-01-18 15:05:15 #294 INFO] start_ebrisk  97% [300 submitted, 0 queued]
+[2022-01-18 15:31:04 #294 INFO] start_ebrisk  98% [300 submitted, 0 queued]
+[2022-01-18 16:13:16 #294 INFO] start_ebrisk  99% [300 submitted, 0 queued]
+[2022-01-18 16:40:37 #294 INFO] start_ebrisk 100% [300 submitted, 0 queued]
+[2022-01-18 16:40:37 #294 INFO] Mean time per core=26346s, std=8118.2s, min=17589s, max=46446s
+[2022-01-18 16:40:37 #294 INFO] Received {'alt': '35.94 GB', 'losses_by_A': '153.09 MB', 'momenta': '32.85 MB', 'gmf_info': '31.42 MB', 'events_per_sid': '6.09 KB'} in 46366 seconds
+[2022-01-18 16:40:37 #294 INFO] Produced 70.92 GB of GMFs
+[2022-01-18 16:40:37 #294 INFO] Stored 35.94 GB in the agg_loss_table
+[2022-01-18 16:40:37 #294 INFO] Building the src_loss_table
+[2022-01-18 16:49:08 #294 INFO] Sending 535.23 MB of losses
+[2022-01-18 16:49:09 #294 INFO] Sending 477.84 MB of losses
+[2022-01-18 16:49:11 #294 INFO] Sending 412.38 MB of losses
+[2022-01-18 16:49:13 #294 INFO] Sending 465.73 MB of losses
+[2022-01-18 16:49:15 #294 INFO] Sending 429.45 MB of losses
+[2022-01-18 16:49:16 #294 INFO] Sending 581.85 MB of losses
+[2022-01-18 16:49:18 #294 INFO] Sending 520.88 MB of losses
+[2022-01-18 16:49:20 #294 INFO] Sending 602.52 MB of losses
+[2022-01-18 16:49:22 #294 INFO] Sending 538.34 MB of losses
+[2022-01-18 16:49:23 #294 INFO] Sending 471.44 MB of losses
+[2022-01-18 16:49:25 #294 INFO] Sending 492.24 MB of losses
+[2022-01-18 16:49:27 #294 INFO] Sending 374.49 MB of losses
+[2022-01-18 16:49:28 #294 INFO] Sending 517.32 MB of losses
+[2022-01-18 16:49:30 #294 INFO] Sending 522.76 MB of losses
+[2022-01-18 16:49:32 #294 INFO] Sending 476.68 MB of losses
+[2022-01-18 16:49:34 #294 INFO] Sending 536.18 MB of losses
+[2022-01-18 16:49:35 #294 INFO] Sending 479.71 MB of losses
+[2022-01-18 16:49:37 #294 INFO] Sending 530.75 MB of losses
+[2022-01-18 16:49:39 #294 INFO] Sending 524.69 MB of losses
+[2022-01-18 16:49:41 #294 INFO] Sending 372.29 MB of losses
+[2022-01-18 16:49:42 #294 INFO] Sending 339.99 MB of losses
+[2022-01-18 16:49:44 #294 INFO] Sending 462.76 MB of losses
+[2022-01-18 16:49:45 #294 INFO] Sending 370.83 MB of losses
+[2022-01-18 16:49:47 #294 INFO] Sending 498.56 MB of losses
+[2022-01-18 16:49:48 #294 INFO] Sending 392.3 MB of losses
+[2022-01-18 16:49:50 #294 INFO] Sending 369.91 MB of losses
+[2022-01-18 16:49:52 #294 INFO] Sending 502.5 MB of losses
+[2022-01-18 16:49:53 #294 INFO] Sending 495.88 MB of losses
+[2022-01-18 16:49:55 #294 INFO] Sending 550.56 MB of losses
+[2022-01-18 16:49:57 #294 INFO] Sending 480.6 MB of losses
+[2022-01-18 16:49:59 #294 INFO] Sending 441.68 MB of losses
+[2022-01-18 16:50:00 #294 INFO] Sending 481.34 MB of losses
+[2022-01-18 16:50:02 #294 INFO] Sending 453.74 MB of losses
+[2022-01-18 16:50:03 #294 INFO] Sending 413.75 MB of losses
+[2022-01-18 16:50:05 #294 INFO] Sending 449.03 MB of losses
+[2022-01-18 16:50:06 #294 INFO] Sending 397.1 MB of losses
+[2022-01-18 16:50:08 #294 INFO] Sending 350.74 MB of losses
+[2022-01-18 16:50:09 #294 INFO] Sending 399.53 MB of losses
+[2022-01-18 16:50:11 #294 INFO] Sending 391.71 MB of losses
+[2022-01-18 16:50:12 #294 INFO] Sending 454.9 MB of losses
+[2022-01-18 16:50:14 #294 INFO] Sending 381.47 MB of losses
+[2022-01-18 16:50:15 #294 INFO] Sending 347.06 MB of losses
+[2022-01-18 16:50:17 #294 INFO] Sending 622.21 MB of losses
+[2022-01-18 16:50:19 #294 INFO] Sending 425.96 MB of losses
+[2022-01-18 16:50:21 #294 INFO] Sending 390.02 MB of losses
+[2022-01-18 16:50:22 #294 INFO] Sending 576.55 MB of losses
+[2022-01-18 16:50:24 #294 INFO] Sending 465.06 MB of losses
+[2022-01-18 16:50:25 #294 INFO] Sending 567.95 MB of losses
+[2022-01-18 16:50:27 #294 INFO] Sending 555.86 MB of losses
+[2022-01-18 16:50:29 #294 INFO] Sending 470.45 MB of losses
+[2022-01-18 16:50:31 #294 INFO] Sending 487.52 MB of losses
+[2022-01-18 16:50:32 #294 INFO] Sending 323.88 MB of losses
+[2022-01-18 16:50:34 #294 INFO] Sending 305.01 MB of losses
+[2022-01-18 16:50:35 #294 INFO] Sent 54 tasks, 23.98 GB in 87 seconds
+[2022-01-18 16:50:37 #294 INFO] post_risk   1% [54 submitted, 0 queued]
+[2022-01-18 16:50:37 #294 INFO] post_risk   3% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk   5% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk   7% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk   9% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  11% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  12% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  14% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  16% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  18% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  20% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  22% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  24% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  25% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  27% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  29% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  31% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  33% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  35% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  37% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  38% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  40% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  42% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  44% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  46% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  48% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  50% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  51% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  53% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  55% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  57% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  59% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  61% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  62% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  64% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  66% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  68% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  70% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  72% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  74% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  75% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  77% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  79% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  81% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  83% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  85% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  87% [54 submitted, 0 queued]
+[2022-01-18 16:50:38 #294 INFO] post_risk  88% [54 submitted, 0 queued]
+[2022-01-18 16:50:40 #294 INFO] post_risk  90% [54 submitted, 0 queued]
+[2022-01-18 16:50:42 #294 INFO] post_risk  92% [54 submitted, 0 queued]
+[2022-01-18 16:50:42 #294 INFO] post_risk  94% [54 submitted, 0 queued]
+[2022-01-18 16:50:42 #294 INFO] post_risk  96% [54 submitted, 0 queued]
+[2022-01-18 16:50:43 #294 INFO] post_risk  98% [54 submitted, 0 queued]
+[2022-01-18 16:50:44 #294 INFO] post_risk 100% [54 submitted, 0 queued]
+[2022-01-18 16:50:44 #294 INFO] Mean time per core=10s, std=1.8s, min=1s, max=13s
+[2022-01-18 16:50:44 #294 INFO] Received {'tot': '46.72 MB'} in 9 seconds
+[2022-01-18 16:52:53 #294 INFO] Total portfolio loss
+==== =============== ================= ========= =================
+loss contents        nonstructural     occupants structural       
+==== =============== ================= ========= =================
+avg  398_682_952_852 1_648_853_117_526 31_786    1_908_356_047_986
+==== =============== ================= ========= =================
+[2022-01-18 16:52:53 #294 INFO] Sanity check on agg_losses
+[2022-01-18 16:52:54 #294 INFO] Exposing the outputs to the database
+[2022-01-18 16:52:54 #294 INFO] Stored 36.88 GB on /root/oqdata/calc_294.hdf5 in 48322 seconds
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2022-01-18 16:52:55 #295 INFO] root running /mnt/storage/canada-srm2/ebRisk/input/ebRisk_r1_BC_V_GreaterVancouverNorth.ini [--hc=294]
+[2022-01-18 16:52:55 #295 INFO] Using engine version 3.11.3-git0cccb86798
+[2022-01-18 16:52:56 #295 WARNING] Version v3.12.1 of the engine is available, but you are still using version 3.11.3-git0cccb86798
+[2022-01-18 16:52:56 #295 WARNING] Using 96 cores on ip-10-70-136-20
+[2022-01-18 16:52:56 #295 INFO] Validated nationalModel.xml in 0.01 seconds
+[2022-01-18 16:52:56 #295 INFO] Checksum of the input files: 514598877
+[2022-01-18 16:52:56 #295 INFO] Reading the risk model if present
+[2022-01-18 16:53:20 #295 INFO] Reading /mnt/storage/openquake-inputs/exposure/general-building-stock/oqBldgExp_BC_V_GreaterVancouverNorth.xml
+[2022-01-18 16:53:25 #295 INFO] Associated 33773 assets to 1448 sites
+[2022-01-18 16:53:29 #295 INFO] Reducing risk model from 7260 to 554 taxonomies
+[2022-01-18 16:53:30 #295 INFO] minimum_asset_loss={'contents': 0, 'nonstructural': 0, 'occupants': 0, 'structural': 0}
+[2022-01-18 16:53:30 #295 INFO] Storing 1617 aggregation keys
+[2022-01-18 16:53:31 #295 INFO] Storing risk model
+[2022-01-18 16:53:31 #295 WARNING] The calculation is really big; consider setting minimum_asset_loss
+[2022-01-18 16:53:31 #295 INFO] minimum_intensity={'SA(0.3)': 0.02, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05, 'SA(0.5)': 0.05}
+[2022-01-18 16:53:31 #295 INFO] Sending 2_867_826 ruptures
+  id | name
+1699 | Aggregate Event Losses
+1698 | Aggregate Loss Curves Statistics
+1700 | Aggregate Losses Statistics
+1701 | Average Asset Losses Statistics
+1706 | Earthquake Ruptures
+1702 | Events
+1703 | Full Report
+1704 | Input Files
+1705 | Realizations
+1707 | Source Loss Table
+[2022-01-18 16:55:44 #295 INFO] Sent 204 tasks, 316.04 MB in 120 seconds
+[2022-01-18 16:55:44 #295 INFO] start_ebrisk   1% [249 submitted, 0 queued]
+[2022-01-18 16:55:59 #295 INFO] start_ebrisk   2% [249 submitted, 0 queued]
+[2022-01-18 16:57:21 #295 INFO] start_ebrisk   3% [251 submitted, 0 queued]
+[2022-01-18 16:57:32 #295 INFO] start_ebrisk   4% [252 submitted, 0 queued]
+[2022-01-18 16:57:41 #295 INFO] start_ebrisk   5% [252 submitted, 0 queued]
+[2022-01-18 16:59:25 #295 INFO] start_ebrisk   6% [257 submitted, 0 queued]
+[2022-01-18 17:01:30 #295 INFO] start_ebrisk   7% [257 submitted, 0 queued]
+[2022-01-18 17:02:07 #295 INFO] start_ebrisk   8% [257 submitted, 0 queued]
+[2022-01-18 17:02:10 #295 INFO] start_ebrisk   9% [257 submitted, 0 queued]
+[2022-01-18 17:02:12 #295 INFO] start_ebrisk  10% [257 submitted, 0 queued]
+[2022-01-18 17:02:20 #295 INFO] start_ebrisk  11% [258 submitted, 0 queued]
+[2022-01-18 17:02:46 #295 INFO] start_ebrisk  12% [262 submitted, 0 queued]
+[2022-01-18 17:02:59 #295 INFO] start_ebrisk  13% [264 submitted, 0 queued]
+[2022-01-18 17:03:41 #295 INFO] start_ebrisk  14% [267 submitted, 0 queued]
+[2022-01-18 17:04:39 #295 INFO] start_ebrisk  15% [268 submitted, 0 queued]
+[2022-01-18 17:05:13 #295 INFO] start_ebrisk  16% [269 submitted, 0 queued]
+[2022-01-18 17:06:10 #295 INFO] start_ebrisk  17% [269 submitted, 0 queued]
+[2022-01-18 17:06:29 #295 INFO] start_ebrisk  18% [269 submitted, 0 queued]
+[2022-01-18 17:08:05 #295 INFO] start_ebrisk  19% [269 submitted, 0 queued]
+[2022-01-18 17:09:33 #295 INFO] start_ebrisk  20% [270 submitted, 0 queued]
+[2022-01-18 17:10:28 #295 INFO] start_ebrisk  21% [273 submitted, 0 queued]
+[2022-01-18 17:10:57 #295 INFO] start_ebrisk  22% [276 submitted, 0 queued]
+[2022-01-18 17:12:14 #295 INFO] start_ebrisk  23% [276 submitted, 0 queued]
+[2022-01-18 17:13:04 #295 INFO] start_ebrisk  24% [276 submitted, 0 queued]
+[2022-01-18 17:13:49 #295 INFO] start_ebrisk  25% [276 submitted, 0 queued]
+[2022-01-18 17:15:09 #295 INFO] start_ebrisk  26% [276 submitted, 0 queued]
+[2022-01-18 17:18:18 #295 INFO] start_ebrisk  27% [276 submitted, 0 queued]
+[2022-01-18 17:18:45 #295 INFO] start_ebrisk  28% [276 submitted, 0 queued]
+[2022-01-18 17:25:59 #295 INFO] start_ebrisk  29% [278 submitted, 0 queued]
+[2022-01-18 17:36:36 #295 INFO] start_ebrisk  30% [280 submitted, 0 queued]
+[2022-01-18 17:41:14 #295 INFO] start_ebrisk  31% [284 submitted, 0 queued]
+[2022-01-18 17:43:00 #295 INFO] start_ebrisk  32% [287 submitted, 0 queued]
+[2022-01-18 17:46:52 #295 INFO] start_ebrisk  33% [290 submitted, 0 queued]
+[2022-01-18 17:52:21 #295 INFO] start_ebrisk  34% [293 submitted, 0 queued]
+[2022-01-18 17:54:35 #295 INFO] start_ebrisk  35% [296 submitted, 0 queued]
+[2022-01-18 17:58:02 #295 INFO] start_ebrisk  36% [300 submitted, 0 queued]
+[2022-01-18 18:01:10 #295 INFO] start_ebrisk  37% [300 submitted, 0 queued]
+[2022-01-18 18:02:53 #295 INFO] start_ebrisk  38% [300 submitted, 0 queued]
+[2022-01-18 18:04:26 #295 INFO] start_ebrisk  39% [300 submitted, 0 queued]
+[2022-01-18 18:05:25 #295 INFO] start_ebrisk  40% [300 submitted, 0 queued]
+[2022-01-18 18:05:59 #295 INFO] start_ebrisk  41% [300 submitted, 0 queued]
+[2022-01-18 18:08:27 #295 INFO] start_ebrisk  42% [300 submitted, 0 queued]
+[2022-01-18 18:11:23 #295 INFO] start_ebrisk  43% [300 submitted, 0 queued]
+[2022-01-18 18:14:39 #295 INFO] start_ebrisk  44% [300 submitted, 0 queued]
+[2022-01-18 18:16:36 #295 INFO] start_ebrisk  45% [300 submitted, 0 queued]
+[2022-01-18 18:22:11 #295 INFO] start_ebrisk  46% [300 submitted, 0 queued]
+[2022-01-18 18:28:13 #295 INFO] start_ebrisk  47% [300 submitted, 0 queued]
+[2022-01-18 18:34:23 #295 INFO] start_ebrisk  48% [300 submitted, 0 queued]
+[2022-01-18 18:38:04 #295 INFO] start_ebrisk  49% [300 submitted, 0 queued]
+[2022-01-18 18:38:58 #295 INFO] start_ebrisk  50% [300 submitted, 0 queued]
+[2022-01-18 18:43:14 #295 INFO] start_ebrisk  51% [300 submitted, 0 queued]
+[2022-01-18 18:52:51 #295 INFO] start_ebrisk  52% [300 submitted, 0 queued]
+[2022-01-18 19:01:13 #295 INFO] start_ebrisk  53% [300 submitted, 0 queued]
+[2022-01-18 19:03:08 #295 INFO] start_ebrisk  54% [300 submitted, 0 queued]
+[2022-01-18 19:06:07 #295 INFO] start_ebrisk  55% [300 submitted, 0 queued]
+[2022-01-18 19:13:03 #295 INFO] start_ebrisk  56% [300 submitted, 0 queued]
+[2022-01-18 20:04:14 #295 INFO] start_ebrisk  57% [300 submitted, 0 queued]
+[2022-01-18 20:06:32 #295 INFO] start_ebrisk  58% [300 submitted, 0 queued]
+[2022-01-18 20:10:54 #295 INFO] start_ebrisk  59% [300 submitted, 0 queued]
+[2022-01-18 20:26:49 #295 INFO] start_ebrisk  60% [300 submitted, 0 queued]
+[2022-01-18 21:33:36 #295 INFO] start_ebrisk  61% [300 submitted, 0 queued]
+[2022-01-18 21:36:36 #295 INFO] start_ebrisk  62% [300 submitted, 0 queued]
+[2022-01-18 21:37:28 #295 INFO] start_ebrisk  63% [300 submitted, 0 queued]
+[2022-01-18 21:40:14 #295 INFO] start_ebrisk  64% [300 submitted, 0 queued]
+[2022-01-18 21:41:06 #295 INFO] start_ebrisk  65% [300 submitted, 0 queued]
+[2022-01-18 21:43:25 #295 INFO] start_ebrisk  66% [300 submitted, 0 queued]
+[2022-01-18 21:44:25 #295 INFO] start_ebrisk  67% [300 submitted, 0 queued]
+[2022-01-18 21:45:12 #295 INFO] start_ebrisk  68% [300 submitted, 0 queued]
+[2022-01-18 21:50:46 #295 INFO] start_ebrisk  69% [300 submitted, 0 queued]
+[2022-01-18 21:56:48 #295 INFO] start_ebrisk  70% [300 submitted, 0 queued]
+[2022-01-18 21:57:49 #295 INFO] start_ebrisk  71% [300 submitted, 0 queued]
+[2022-01-18 22:05:05 #295 INFO] start_ebrisk  72% [300 submitted, 0 queued]
+[2022-01-18 22:11:10 #295 INFO] start_ebrisk  73% [300 submitted, 0 queued]
+[2022-01-18 22:16:46 #295 INFO] start_ebrisk  74% [300 submitted, 0 queued]
+[2022-01-18 22:24:13 #295 INFO] start_ebrisk  75% [300 submitted, 0 queued]
+[2022-01-18 22:31:12 #295 INFO] start_ebrisk  76% [300 submitted, 0 queued]
+[2022-01-18 22:35:38 #295 INFO] start_ebrisk  77% [300 submitted, 0 queued]
+[2022-01-18 22:36:50 #295 INFO] start_ebrisk  78% [300 submitted, 0 queued]
+[2022-01-18 22:40:56 #295 INFO] start_ebrisk  79% [300 submitted, 0 queued]
+[2022-01-18 22:53:27 #295 INFO] start_ebrisk  80% [300 submitted, 0 queued]
+[2022-01-18 22:59:31 #295 INFO] start_ebrisk  81% [300 submitted, 0 queued]
+[2022-01-18 23:10:33 #295 INFO] start_ebrisk  82% [300 submitted, 0 queued]
+[2022-01-18 23:12:41 #295 INFO] start_ebrisk  83% [300 submitted, 0 queued]
+[2022-01-18 23:19:56 #295 INFO] start_ebrisk  84% [300 submitted, 0 queued]
+[2022-01-18 23:30:34 #295 INFO] start_ebrisk  85% [300 submitted, 0 queued]
+[2022-01-18 23:40:41 #295 INFO] start_ebrisk  86% [300 submitted, 0 queued]
+[2022-01-19 00:00:04 #295 INFO] start_ebrisk  87% [300 submitted, 0 queued]
+[2022-01-19 00:02:15 #295 INFO] start_ebrisk  88% [300 submitted, 0 queued]
+[2022-01-19 00:06:23 #295 INFO] start_ebrisk  89% [300 submitted, 0 queued]
+[2022-01-19 00:14:46 #295 INFO] start_ebrisk  90% [300 submitted, 0 queued]
+[2022-01-19 00:37:04 #295 INFO] start_ebrisk  91% [300 submitted, 0 queued]
+[2022-01-19 01:21:10 #295 INFO] start_ebrisk  92% [300 submitted, 0 queued]
+[2022-01-19 01:33:10 #295 INFO] start_ebrisk  93% [300 submitted, 0 queued]
+[2022-01-19 01:47:27 #295 INFO] start_ebrisk  94% [300 submitted, 0 queued]
+[2022-01-19 02:59:18 #295 INFO] start_ebrisk  95% [300 submitted, 0 queued]
+[2022-01-19 03:13:55 #295 INFO] start_ebrisk  96% [300 submitted, 0 queued]
+[2022-01-19 03:59:14 #295 INFO] start_ebrisk  97% [300 submitted, 0 queued]
+[2022-01-19 04:23:23 #295 INFO] start_ebrisk  98% [300 submitted, 0 queued]
+[2022-01-19 05:09:15 #295 INFO] start_ebrisk  99% [300 submitted, 0 queued]
+[2022-01-19 05:26:56 #295 INFO] start_ebrisk 100% [300 submitted, 0 queued]
+[2022-01-19 05:26:56 #295 INFO] Mean time per core=26054s, std=7791.1s, min=17466s, max=45177s
+[2022-01-19 05:26:56 #295 INFO] Received {'alt': '33.76 GB', 'losses_by_A': '153.09 MB', 'momenta': '32.85 MB', 'gmf_info': '31.42 MB', 'events_per_sid': '6.09 KB'} in 45072 seconds
+[2022-01-19 05:26:57 #295 INFO] Produced 70.92 GB of GMFs
+[2022-01-19 05:26:57 #295 INFO] Stored 33.76 GB in the agg_loss_table
+[2022-01-19 05:26:57 #295 INFO] Building the src_loss_table
+[2022-01-19 05:35:24 #295 INFO] Sending 508.47 MB of losses
+[2022-01-19 05:35:26 #295 INFO] Sending 451.63 MB of losses
+[2022-01-19 05:35:28 #295 INFO] Sending 395.98 MB of losses
+[2022-01-19 05:35:29 #295 INFO] Sending 434.36 MB of losses
+[2022-01-19 05:35:31 #295 INFO] Sending 402.47 MB of losses
+[2022-01-19 05:35:33 #295 INFO] Sending 534.42 MB of losses
+[2022-01-19 05:35:35 #295 INFO] Sending 495.11 MB of losses
+[2022-01-19 05:35:37 #295 INFO] Sending 551.58 MB of losses
+[2022-01-19 05:35:39 #295 INFO] Sending 499.98 MB of losses
+[2022-01-19 05:35:40 #295 INFO] Sending 435.99 MB of losses
+[2022-01-19 05:35:42 #295 INFO] Sending 460.8 MB of losses
+[2022-01-19 05:35:44 #295 INFO] Sending 356.09 MB of losses
+[2022-01-19 05:35:45 #295 INFO] Sending 490.69 MB of losses
+[2022-01-19 05:35:47 #295 INFO] Sending 493.23 MB of losses
+[2022-01-19 05:35:49 #295 INFO] Sending 429.75 MB of losses
+[2022-01-19 05:35:50 #295 INFO] Sending 502.28 MB of losses
+[2022-01-19 05:35:52 #295 INFO] Sending 458.31 MB of losses
+[2022-01-19 05:35:54 #295 INFO] Sending 496.58 MB of losses
+[2022-01-19 05:35:55 #295 INFO] Sending 491.88 MB of losses
+[2022-01-19 05:35:57 #295 INFO] Sending 350.89 MB of losses
+[2022-01-19 05:35:58 #295 INFO] Sending 311.98 MB of losses
+[2022-01-19 05:36:00 #295 INFO] Sending 429.15 MB of losses
+[2022-01-19 05:36:02 #295 INFO] Sending 345.28 MB of losses
+[2022-01-19 05:36:04 #295 INFO] Sending 462.95 MB of losses
+[2022-01-19 05:36:05 #295 INFO] Sending 371.78 MB of losses
+[2022-01-19 05:36:07 #295 INFO] Sending 362.21 MB of losses
+[2022-01-19 05:36:08 #295 INFO] Sending 463.16 MB of losses
+[2022-01-19 05:36:10 #295 INFO] Sending 473.76 MB of losses
+[2022-01-19 05:36:11 #295 INFO] Sending 521.05 MB of losses
+[2022-01-19 05:36:13 #295 INFO] Sending 461.09 MB of losses
+[2022-01-19 05:36:15 #295 INFO] Sending 417.83 MB of losses
+[2022-01-19 05:36:17 #295 INFO] Sending 453.76 MB of losses
+[2022-01-19 05:36:19 #295 INFO] Sending 429.39 MB of losses
+[2022-01-19 05:36:20 #295 INFO] Sending 384.96 MB of losses
+[2022-01-19 05:36:22 #295 INFO] Sending 423.32 MB of losses
+[2022-01-19 05:36:23 #295 INFO] Sending 376.3 MB of losses
+[2022-01-19 05:36:25 #295 INFO] Sending 323.64 MB of losses
+[2022-01-19 05:36:26 #295 INFO] Sending 370.67 MB of losses
+[2022-01-19 05:36:28 #295 INFO] Sending 360.87 MB of losses
+[2022-01-19 05:36:30 #295 INFO] Sending 429.75 MB of losses
+[2022-01-19 05:36:32 #295 INFO] Sending 353.9 MB of losses
+[2022-01-19 05:36:33 #295 INFO] Sending 316.66 MB of losses
+[2022-01-19 05:36:35 #295 INFO] Sending 585.71 MB of losses
+[2022-01-19 05:36:37 #295 INFO] Sending 408.21 MB of losses
+[2022-01-19 05:36:38 #295 INFO] Sending 352.28 MB of losses
+[2022-01-19 05:36:40 #295 INFO] Sending 560.23 MB of losses
+[2022-01-19 05:36:42 #295 INFO] Sending 454.41 MB of losses
+[2022-01-19 05:36:43 #295 INFO] Sending 527.01 MB of losses
+[2022-01-19 05:36:45 #295 INFO] Sending 539.72 MB of losses
+[2022-01-19 05:36:47 #295 INFO] Sending 447.7 MB of losses
+[2022-01-19 05:36:48 #295 INFO] Sending 442.22 MB of losses
+[2022-01-19 05:36:50 #295 INFO] Sending 307.88 MB of losses
+[2022-01-19 05:36:51 #295 INFO] Sending 281.3 MB of losses
+[2022-01-19 05:36:53 #295 INFO] Sent 54 tasks, 22.52 GB in 89 seconds
+[2022-01-19 05:36:56 #295 INFO] post_risk   1% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk   3% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk   5% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk   7% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk   9% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  11% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  12% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  14% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  16% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  18% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  20% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  22% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  24% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  25% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  27% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  29% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  31% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  33% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  35% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  37% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  38% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  40% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  42% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  44% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  46% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  48% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  50% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  51% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  53% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  55% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  57% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  59% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  61% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  62% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  64% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  66% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  68% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  70% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  72% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  74% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  75% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  77% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  79% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  81% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  83% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  85% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  87% [54 submitted, 0 queued]
+[2022-01-19 05:36:56 #295 INFO] post_risk  88% [54 submitted, 0 queued]
+[2022-01-19 05:36:57 #295 INFO] post_risk  90% [54 submitted, 0 queued]
+[2022-01-19 05:36:58 #295 INFO] post_risk  92% [54 submitted, 0 queued]
+[2022-01-19 05:36:59 #295 INFO] post_risk  94% [54 submitted, 0 queued]
+[2022-01-19 05:36:59 #295 INFO] post_risk  96% [54 submitted, 0 queued]
+[2022-01-19 05:37:00 #295 INFO] post_risk  98% [54 submitted, 0 queued]
+[2022-01-19 05:37:00 #295 INFO] post_risk 100% [54 submitted, 0 queued]
+[2022-01-19 05:37:00 #295 INFO] Mean time per core=9s, std=1.7s, min=1s, max=12s
+[2022-01-19 05:37:01 #295 INFO] Received {'tot': '46.72 MB'} in 7 seconds
+[2022-01-19 05:39:06 #295 INFO] Total portfolio loss
+==== =============== ================= ========= =================
+loss contents        nonstructural     occupants structural       
+==== =============== ================= ========= =================
+avg  261_306_080_943 1_064_280_657_120 13_640    1_453_297_322_347
+==== =============== ================= ========= =================
+[2022-01-19 05:39:06 #295 INFO] Sanity check on agg_losses
+[2022-01-19 05:39:07 #295 INFO] Exposing the outputs to the database
+[2022-01-19 05:39:07 #295 INFO] Stored 33.93 GB on /root/oqdata/calc_295.hdf5 in 45971 seconds
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2022-01-19 05:39:08 #295 INFO] Stopping the workers
+  id | name
+1709 | Aggregate Event Losses
+1708 | Aggregate Loss Curves Statistics
+1710 | Aggregate Losses Statistics
+1711 | Average Asset Losses Statistics
+1712 | Full Report
+1713 | Realizations
+1714 | Source Loss Table

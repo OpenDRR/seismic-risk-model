@@ -14,7 +14,7 @@ USAGE: run_OQebRisk.sh
 }
 
 ### SETUP AWS KILL 
-shut_down_ec2_instance() {
+function shut_down_ec2_instance() {
     echo "Shutting down EC2 instance"
     sudo shutdown
     }
@@ -36,12 +36,14 @@ trap "shut_down_ec2_instance" ERR
 #"AB_T_Northern")
 #declare -a regions=("BC_V_Capital"
 #"BC_V_Coastal"
-declare -a regions=("BC_V_CentralIsland"
-"BC_V_FraserValley"
-"BC_V_GreaterVancouverNorth"
-"BC_V_GreaterVancouverSouth"
-"BC_V_Misc"
-"BC_V_OkanaganKootenay")
+#declare -a regions=("BC_V_CentralIsland"
+#"BC_V_FraserValley"
+#declare -a regions=("BC_V_GreaterVancouverNorth"
+#declare -a regions=("BC_V_GreaterVancouverSouth"
+#"BC_V_GreaterVancouverVancouver")
+declare -a regions=("BC_V_Misc"
+"BC_V_OkanaganKootenay"
+"BC_V_GreaterVancouverVancouver")
 #declare -a regions=("MB_R_Misc"
 #"MB_R_Winnipeg"
 #"NB_E"
@@ -89,6 +91,7 @@ for region in "${regions[@]}"; do
     mkdir -p output/temp; rm -f output/temp/*
     prov=`echo $region | cut -c1-2`
     ### RUN RISK CALCS
+    echo "running $region"
     oq engine --run input/ebRisk_b0_${region}.ini input/ebRisk_r1_${region}.ini &> output/${prov}/ebR_${region}_b0r1.log; 
     for calc in "${calcs[@]}"; do
         ### EXPORTS
@@ -120,4 +123,4 @@ for region in "${regions[@]}"; do
 done
 
 ### AWS KILL
-#shut_down_ec2_instance
+shut_down_ec2_instance
