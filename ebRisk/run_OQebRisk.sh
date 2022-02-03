@@ -39,11 +39,12 @@ trap "shut_down_ec2_instance" ERR
 #declare -a regions=("BC_V_CentralIsland"
 #"BC_V_FraserValley"
 #declare -a regions=("BC_V_GreaterVancouverNorth"
-#declare -a regions=("BC_V_GreaterVancouverSouth"
+declare -a regions=("BC_V_GreaterVancouverSouthEast"
+"BC_V_GreaterVancouverSouthWest")
 #"BC_V_GreaterVancouverVancouver")
-declare -a regions=("BC_V_Misc"
-"BC_V_OkanaganKootenay"
-"BC_V_GreaterVancouverVancouver")
+#declare -a regions=("BC_V_Misc"
+#"BC_V_OkanaganKootenay"
+#"BC_V_GreaterVancouverVancouver")
 #declare -a regions=("MB_R_Misc"
 #"MB_R_Winnipeg"
 #"NB_E"
