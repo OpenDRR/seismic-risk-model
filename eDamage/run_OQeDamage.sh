@@ -33,12 +33,14 @@ trap "shut_down_ec2_instance" ERR
 #"AB_T_EdmontonOuter"
 #"AB_T_EdmontonWest"
 #"AB_T_Northern")
-declare -a regions=("BC_V_Capital"
-"BC_V_Coastal"
-"BC_V_CentralIsland"
+#declare -a regions=("BC_V_Capital"
+#"BC_V_Coastal"
+declare -a regions=("BC_V_CentralIsland"
 "BC_V_FraserValley"
 "BC_V_GreaterVancouverNorth"
-"BC_V_GreaterVancouverSouth"
+"BC_V_GreaterVancouverSouthEast"
+"BC_V_GreaterVancouverSouthWest"
+"BC_V_GreaterVancouverVancouver"
 "BC_V_Misc"
 "BC_V_OkanaganKootenay")
 #declare -a regions=("MB_R_Misc"
