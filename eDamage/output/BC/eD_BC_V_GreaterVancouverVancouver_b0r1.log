@@ -1,0 +1,594 @@
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_CampbellBozorgnia2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_ChiouYoungs2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2022-02-11 13:41:59 #308 INFO] root running /mnt/storage/canada-srm2/eDamage/input/eDamage_b0_BC_V_GreaterVancouverVancouver.ini [--hc=None]
+[2022-02-11 13:41:59 #308 INFO] Using engine version 3.11.3-git29ac352f7d
+[2022-02-11 13:41:59 #308 WARNING] Version v3.11.5 of the engine is available, but you are still using version 3.11.3-git29ac352f7d
+[2022-02-11 13:41:59 #308 WARNING] Using 96 cores on ip-10-70-136-127
+[2022-02-11 13:41:59 #308 INFO] Validated nationalModel.xml in 0.01 seconds
+[2022-02-11 13:42:00 #308 INFO] Checksum of the input files: 514598877
+[2022-02-11 13:42:00 #308 INFO] Reading the risk model if present
+[2022-02-11 13:42:03 #308 INFO] Reading /mnt/storage/openquake-inputs/exposure/general-building-stock/oqBldgExp_BC_V_GreaterVancouverVancouver.xml
+[2022-02-11 13:42:06 #308 INFO] Extracting the hazard sites from the site model
+[2022-02-11 13:42:08 #308 INFO] Associated 28533 assets to 1025 sites
+[2022-02-11 13:42:11 #308 INFO] Reducing risk model from 4224 to 817 taxonomies
+[2022-02-11 13:42:11 #308 INFO] minimum_asset_loss={'structural': 0}
+[2022-02-11 13:42:12 #308 INFO] Considering 200 logic tree paths out of 24_576
+[2022-02-11 13:42:12 #308 INFO] Reading the source model(s) in parallel
+[2022-02-11 13:42:14 #308 INFO] read_source_model  16% [6 submitted, 0 queued]
+[2022-02-11 13:42:14 #308 INFO] read_source_model  33% [6 submitted, 0 queued]
+[2022-02-11 13:42:14 #308 INFO] read_source_model  50% [6 submitted, 0 queued]
+[2022-02-11 13:42:14 #308 INFO] read_source_model  66% [6 submitted, 0 queued]
+[2022-02-11 13:42:14 #308 INFO] read_source_model  83% [6 submitted, 0 queued]
+[2022-02-11 13:42:15 #308 INFO] read_source_model 100% [6 submitted, 0 queued]
+[2022-02-11 13:42:15 #308 INFO] Mean time per core=0s, std=0.0s, min=0s, max=0s
+[2022-02-11 13:42:15 #308 INFO] Received {'/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Harctic_simplified_collapsedRates.xml': '157.72 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Harctic_simplified_collapsedRates.xml': '152.1 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_HYeast_Rarctic_simplified_collapsedRates.xml': '151.35 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_H2east_Rarctic_simplified_collapsedRates.xml': '145.73 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Harctic_simplified_collapsedRates.xml': '137.01 KB', '/mnt/storage/CanadaSHM6/OpenQuake_model_files/sources/nationalModel/xml/simplifiedModel/WCan_R2east_Rarctic_simplified_collapsedRates.xml': '130.86 KB'} in 1 seconds
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2022-02-11 13:42:15 #308 INFO] There are multiple different sources with the same ID [<AreaSource SCCYA;0>, <AreaSource SCCYA;1>]
+[2022-02-11 13:42:15 #308 INFO] There are 13 groups and 198 sources with len(et_ids)=3.87
+[2022-02-11 13:42:15 #308 INFO] Checking the sources bounding box
+[2022-02-11 13:42:15 #308 ERROR] source ACM: The buffer of 600 km is too large, the bounding box is larger than half the globe: 219 degrees
+[2022-02-11 13:42:15 #308 INFO] Rupture floating factor = 1.6303030303030304
+[2022-02-11 13:42:15 #308 INFO] Rupture spinning factor = 3.2181818181818183
+[2022-02-11 13:42:15 #308 INFO] gzipping the input files
+[2022-02-11 13:42:17 #308 INFO] Storing risk model
+[2022-02-11 13:42:17 #308 INFO] minimum_intensity={'SA(0.3)': 0.02, 'SA(0.6)': 0.05, 'SA(1.0)': 0.05, 'SA(2.0)': 0.05}
+[2022-02-11 13:42:17 #308 INFO] Building ruptures
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Subduction IntraSlab30, 1 source(s)>
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Subduction IntraSlab55, 4 source(s)>
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Subduction Interface, 14 source(s)>
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Stable Shallow Crust, 29 source(s)>
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Stable Shallow Crust, 4 source(s)>
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Stable Shallow Crust, 6 source(s)>
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Stable Shallow Crust, 18 source(s)>
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Stable Shallow Crust, 10 source(s)>
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Stable Shallow Crust, 38 source(s)>
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Stable Shallow Crust, 14 source(s)>
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Active Shallow Crust, 58 source(s)>
+[2022-02-11 13:43:53 #308 INFO] Sending <SourceGroup Active Shallow Crust, 1 source(s)>
+[2022-02-11 13:43:55 #308 INFO] Sent 96 tasks, 67.45 MB in 0 seconds
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures   1% [98 submitted, 5 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures   2% [99 submitted, 4 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures   3% [100 submitted, 3 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures   4% [101 submitted, 2 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures   5% [102 submitted, 1 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures   6% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures   7% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures   8% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures   9% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  10% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  11% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  12% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  13% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  14% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  15% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  16% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  17% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  18% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  19% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  20% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  21% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  22% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  23% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  24% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  25% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  26% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  27% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  28% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  29% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  30% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  31% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  32% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  33% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  34% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  35% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  36% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  37% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  38% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  39% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  40% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  41% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  42% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  43% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  44% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  45% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  46% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  47% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  48% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  49% [103 submitted, 0 queued]
+[2022-02-11 13:43:57 #308 INFO] sample_ruptures  50% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  51% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  52% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  53% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  54% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  55% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  56% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  57% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  58% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  59% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  60% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  61% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  62% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  63% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  64% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  65% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  66% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  67% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  68% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  69% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  70% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  71% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  72% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  73% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  74% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  75% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  76% [103 submitted, 0 queued]
+[2022-02-11 13:43:58 #308 INFO] sample_ruptures  77% [103 submitted, 0 queued]
+[2022-02-11 13:44:10 #308 INFO] sample_ruptures  78% [103 submitted, 0 queued]
+[2022-02-11 13:44:38 #308 INFO] sample_ruptures  79% [103 submitted, 0 queued]
+[2022-02-11 13:44:43 #308 INFO] sample_ruptures  80% [103 submitted, 0 queued]
+[2022-02-11 13:45:41 #308 INFO] sample_ruptures  81% [103 submitted, 0 queued]
+[2022-02-11 13:45:44 #308 INFO] sample_ruptures  82% [103 submitted, 0 queued]
+[2022-02-11 13:45:50 #308 INFO] sample_ruptures  83% [103 submitted, 0 queued]
+[2022-02-11 13:45:54 #308 INFO] sample_ruptures  84% [103 submitted, 0 queued]
+[2022-02-11 13:45:55 #308 INFO] sample_ruptures  85% [103 submitted, 0 queued]
+[2022-02-11 13:46:16 #308 INFO] sample_ruptures  86% [103 submitted, 0 queued]
+[2022-02-11 13:46:21 #308 INFO] sample_ruptures  87% [103 submitted, 0 queued]
+[2022-02-11 13:46:35 #308 INFO] sample_ruptures  88% [103 submitted, 0 queued]
+[2022-02-11 13:46:37 #308 INFO] sample_ruptures  89% [103 submitted, 0 queued]
+[2022-02-11 13:47:14 #308 INFO] sample_ruptures  90% [103 submitted, 0 queued]
+[2022-02-11 13:47:31 #308 INFO] sample_ruptures  91% [103 submitted, 0 queued]
+[2022-02-11 13:47:45 #308 INFO] sample_ruptures  92% [103 submitted, 0 queued]
+[2022-02-11 13:48:14 #308 INFO] sample_ruptures  93% [103 submitted, 0 queued]
+[2022-02-11 13:48:22 #308 INFO] sample_ruptures  94% [103 submitted, 0 queued]
+[2022-02-11 13:48:42 #308 INFO] sample_ruptures  95% [103 submitted, 0 queued]
+[2022-02-11 13:49:14 #308 INFO] sample_ruptures  96% [103 submitted, 0 queued]
+[2022-02-11 13:49:58 #308 INFO] sample_ruptures  97% [103 submitted, 0 queued]
+[2022-02-11 13:50:31 #308 INFO] sample_ruptures  98% [103 submitted, 0 queued]
+[2022-02-11 13:50:34 #308 INFO] sample_ruptures  99% [103 submitted, 0 queued]
+[2022-02-11 13:56:46 #308 INFO] sample_ruptures 100% [103 submitted, 0 queued]
+[2022-02-11 13:56:46 #308 INFO] Mean time per core=51s, std=120.4s, min=0s, max=769s
+[2022-02-11 13:56:46 #308 INFO] Received {'rup_array': '652.72 MB', 'calc_times': '21.43 KB', 'eff_ruptures': '4.11 KB'} in 771 seconds
+[2022-02-11 13:56:46 #308 INFO] There are 200 realization(s)
+[2022-02-11 13:56:46 #308 INFO] Reordering the ruptures and storing the events
+[2022-02-11 13:56:51 #308 INFO] Associating event_id -> rlz_id for 13_982_848 events and 2_783_852 ruptures
+[2022-02-11 13:58:21 #308 INFO] Sent 204 tasks, 297.58 MB in 83 seconds
+[2022-02-11 13:58:42 #308 INFO] Mean time per core=17s, std=10.5s, min=3s, max=47s
+[2022-02-11 13:58:42 #308 INFO] Received {'tot': '133.4 MB'} in 20 seconds
+[2022-02-11 13:59:46 #308 INFO] Reading 2_783_852 ruptures
+[2022-02-11 14:01:02 #308 INFO] Sent 96 tasks, 153.3 MB in 10 seconds
+[2022-02-11 14:43:48 #308 INFO] compute_gmfs   1% [99 submitted, 105 queued]
+[2022-02-11 14:44:55 #308 INFO] compute_gmfs   2% [101 submitted, 103 queued]
+[2022-02-11 14:45:09 #308 INFO] compute_gmfs   3% [103 submitted, 101 queued]
+[2022-02-11 14:45:57 #308 INFO] compute_gmfs   4% [105 submitted, 99 queued]
+[2022-02-11 14:47:47 #308 INFO] compute_gmfs   5% [107 submitted, 97 queued]
+[2022-02-11 15:00:10 #308 INFO] compute_gmfs   6% [109 submitted, 95 queued]
+[2022-02-11 15:00:55 #308 INFO] compute_gmfs   7% [111 submitted, 93 queued]
+[2022-02-11 15:02:02 #308 INFO] compute_gmfs   8% [113 submitted, 91 queued]
+[2022-02-11 15:02:32 #308 INFO] compute_gmfs   9% [115 submitted, 89 queued]
+[2022-02-11 15:02:52 #308 INFO] compute_gmfs  10% [117 submitted, 87 queued]
+[2022-02-11 15:03:06 #308 INFO] compute_gmfs  11% [119 submitted, 85 queued]
+[2022-02-11 15:03:39 #308 INFO] compute_gmfs  12% [121 submitted, 83 queued]
+[2022-02-11 15:03:52 #308 INFO] compute_gmfs  13% [123 submitted, 81 queued]
+[2022-02-11 15:08:54 #308 INFO] compute_gmfs  14% [125 submitted, 79 queued]
+[2022-02-11 15:10:15 #308 INFO] compute_gmfs  15% [127 submitted, 77 queued]
+[2022-02-11 15:12:52 #308 INFO] compute_gmfs  16% [129 submitted, 75 queued]
+[2022-02-11 15:13:39 #308 INFO] compute_gmfs  17% [131 submitted, 73 queued]
+[2022-02-11 15:15:35 #308 INFO] compute_gmfs  18% [133 submitted, 71 queued]
+[2022-02-11 15:15:59 #308 INFO] compute_gmfs  19% [135 submitted, 69 queued]
+[2022-02-11 15:17:01 #308 INFO] compute_gmfs  20% [137 submitted, 67 queued]
+[2022-02-11 15:17:33 #308 INFO] compute_gmfs  21% [139 submitted, 65 queued]
+[2022-02-11 15:24:33 #308 INFO] compute_gmfs  22% [141 submitted, 63 queued]
+[2022-02-11 15:25:17 #308 INFO] compute_gmfs  23% [143 submitted, 61 queued]
+[2022-02-11 15:42:26 #308 INFO] compute_gmfs  24% [145 submitted, 59 queued]
+[2022-02-11 15:42:36 #308 INFO] compute_gmfs  25% [147 submitted, 57 queued]
+[2022-02-11 15:43:10 #308 INFO] compute_gmfs  26% [150 submitted, 54 queued]
+[2022-02-11 15:43:15 #308 INFO] compute_gmfs  27% [152 submitted, 52 queued]
+[2022-02-11 15:43:30 #308 INFO] compute_gmfs  28% [154 submitted, 50 queued]
+[2022-02-11 15:43:44 #308 INFO] compute_gmfs  29% [156 submitted, 48 queued]
+[2022-02-11 15:44:00 #308 INFO] compute_gmfs  30% [158 submitted, 46 queued]
+[2022-02-11 15:44:00 #308 INFO] compute_gmfs  31% [160 submitted, 44 queued]
+[2022-02-11 15:44:00 #308 INFO] compute_gmfs  32% [162 submitted, 42 queued]
+[2022-02-11 15:44:05 #308 INFO] compute_gmfs  33% [164 submitted, 40 queued]
+[2022-02-11 15:44:10 #308 INFO] compute_gmfs  34% [166 submitted, 38 queued]
+[2022-02-11 15:44:16 #308 INFO] compute_gmfs  35% [168 submitted, 36 queued]
+[2022-02-11 15:44:52 #308 INFO] compute_gmfs  36% [170 submitted, 34 queued]
+[2022-02-11 15:45:48 #308 INFO] compute_gmfs  37% [172 submitted, 32 queued]
+[2022-02-11 15:45:49 #308 INFO] compute_gmfs  38% [174 submitted, 30 queued]
+[2022-02-11 15:45:49 #308 INFO] compute_gmfs  39% [176 submitted, 28 queued]
+[2022-02-11 15:45:54 #308 INFO] compute_gmfs  40% [178 submitted, 26 queued]
+[2022-02-11 15:48:18 #308 INFO] compute_gmfs  41% [180 submitted, 24 queued]
+[2022-02-11 15:49:17 #308 INFO] Received {'gmfdata': '4.44 GB', 'sig_eps': '142.39 MB', 'times': '7.46 MB', 'hcurves': '400 B'} in 6505 seconds
+Exception ignored in: <generator object IterResult.__iter__ at 0x7f93afcfe580>
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 581, in __iter__
+    logging.info('Received %s in %d seconds', msg, time.time() - t0)
+  File "/usr/lib/python3.8/logging/__init__.py", line 2082, in info
+    root.info(msg, *args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/logs.py", line 111, in emit
+    dbcmd('log', self.job_id, datetime.utcnow(), record.levelname,
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/logs.py", line 50, in dbcmd
+    return res.get()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 397, in get
+    raise etype(msg)
+sqlite3.OperationalError: 
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 416, in new
+    val = func(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/server/db/actions.py", line 399, in log
+    db('INSERT INTO log (job_id, timestamp, level, process, message) '
+  File "/home/ssm-user/src/oq-engine/openquake/server/dbapi.py", line 335, in __call__
+    raise exc.__class__('%s: %s %s' % (exc, templ, args))
+OperationalError: database or disk is full: INSERT INTO log (job_id, timestamp, level, process, message) VALUES (?, ?, ?, ?, ?) (308, datetime.datetime(2022, 2, 11, 14, 49, 17, 248696), 'INFO', 'MainProcess/66294', "Received {'gmfdata': '4.44 GB', 'sig_eps': '142.39 MB', 'times': '7.46 MB', 'hcurves': '400 B'} in 6505 seconds")
+Exception ignored in sys.unraisablehook: <built-in function unraisablehook>
+OSError: [Errno 28] No space left on device
+[2022-02-11 15:49:17 #308 CRITICAL] 
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 336, in execute
+    acc = smap.reduce(self.agg_dicts, self.acc0())
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 827, in reduce
+    return self.submit_all().reduce(agg, acc)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 587, in reduce
+    acc = agg(acc, result)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 209, in agg_dicts
+    hdf5.extend(self.datastore[f'gmf_data/gmv_{m}'],
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/hdf5.py", line 111, in extend
+    dset[length:newlength] = array
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/h5py/_hl/dataset.py", line 708, in __setitem__
+    self.id.write(mspace, fspace, val, mtype, dxpl=self._dxpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5d.pyx", line 222, in h5py.h5d.DatasetID.write
+  File "h5py/_proxy.pyx", line 132, in h5py._proxy.dset_rw
+  File "h5py/_proxy.pyx", line 93, in h5py._proxy.H5PY_H5Dwrite
+OSError: Can't write data (file write failed: time = Fri Feb 11 15:49:17 2022
+, filename = '/root/oqdata/calc_308.hdf5', file descriptor = 13, errno = 28, error message = 'No space left on device', buf = 0xc6694ce, total write size = 1941, bytes this sub-write = 1941, bytes actually written = 18446744073709551615, offset = 2798510080)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 336, in execute
+    acc = smap.reduce(self.agg_dicts, self.acc0())
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 827, in reduce
+    return self.submit_all().reduce(agg, acc)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 587, in reduce
+    acc = agg(acc, result)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 209, in agg_dicts
+    hdf5.extend(self.datastore[f'gmf_data/gmv_{m}'],
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/hdf5.py", line 111, in extend
+    dset[length:newlength] = array
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/h5py/_hl/dataset.py", line 708, in __setitem__
+    self.id.write(mspace, fspace, val, mtype, dxpl=self._dxpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5d.pyx", line 222, in h5py.h5d.DatasetID.write
+  File "h5py/_proxy.pyx", line 132, in h5py._proxy.dset_rw
+  File "h5py/_proxy.pyx", line 93, in h5py._proxy.H5PY_H5Dwrite
+OSError: Can't write data (file write failed: time = Fri Feb 11 15:49:17 2022
+, filename = '/root/oqdata/calc_308.hdf5', file descriptor = 13, errno = 28, error message = 'No space left on device', buf = 0xc6694ce, total write size = 1941, bytes this sub-write = 1941, bytes actually written = 18446744073709551615, offset = 2798510080)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/scenario_damage.py", line 155, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 258, in run
+    logging.critical('', exc_info=True)
+  File "/usr/lib/python3.8/logging/__init__.py", line 2037, in critical
+    root.critical(msg, *args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1493, in critical
+    self._log(CRITICAL, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/logs.py", line 111, in emit
+    dbcmd('log', self.job_id, datetime.utcnow(), record.levelname,
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/logs.py", line 50, in dbcmd
+    return res.get()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 397, in get
+    raise etype(msg)
+sqlite3.OperationalError: 
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 416, in new
+    val = func(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/server/db/actions.py", line 399, in log
+    db('INSERT INTO log (job_id, timestamp, level, process, message) '
+  File "/home/ssm-user/src/oq-engine/openquake/server/dbapi.py", line 335, in __call__
+    raise exc.__class__('%s: %s %s' % (exc, templ, args))
+OperationalError: database or disk is full: INSERT INTO log (job_id, timestamp, level, process, message) VALUES (?, ?, ?, ?, ?) (308, datetime.datetime(2022, 2, 11, 14, 49, 17, 276088), 'CRITICAL', 'MainProcess/66294', '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/home/ssm-user/openquake/bin/oq", line 33, in <module>
+    sys.exit(load_entry_point('openquake.engine', 'console_scripts', 'oq')())
+  File "/home/ssm-user/src/oq-engine/openquake/commands/__main__.py", line 44, in oq
+    sap.run(commands, prog='oq')
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 225, in run
+    return _run(parser(funcdict, **parserkw), argv)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 216, in _run
+    return func(**dic)
+  File "/home/ssm-user/src/oq-engine/openquake/commands/engine.py", line 164, in main
+    run_jobs(job_inis, log_level, log_file, exports, **pars)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 407, in run_jobs
+    run_calc(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 258, in run
+    logging.critical('', exc_info=True)
+Message: ''
+Arguments: ()
+[2022-02-11 15:49:17 #308 CRITICAL] Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 336, in execute
+    acc = smap.reduce(self.agg_dicts, self.acc0())
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 827, in reduce
+    return self.submit_all().reduce(agg, acc)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 587, in reduce
+    acc = agg(acc, result)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 209, in agg_dicts
+    hdf5.extend(self.datastore[f'gmf_data/gmv_{m}'],
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/hdf5.py", line 111, in extend
+    dset[length:newlength] = array
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/h5py/_hl/dataset.py", line 708, in __setitem__
+    self.id.write(mspace, fspace, val, mtype, dxpl=self._dxpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5d.pyx", line 222, in h5py.h5d.DatasetID.write
+  File "h5py/_proxy.pyx", line 132, in h5py._proxy.dset_rw
+  File "h5py/_proxy.pyx", line 93, in h5py._proxy.H5PY_H5Dwrite
+OSError: Can't write data (file write failed: time = Fri Feb 11 15:49:17 2022
+, filename = '/root/oqdata/calc_308.hdf5', file descriptor = 13, errno = 28, error message = 'No space left on device', buf = 0xc6694ce, total write size = 1941, bytes this sub-write = 1941, bytes actually written = 18446744073709551615, offset = 2798510080)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/scenario_damage.py", line 155, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 258, in run
+    logging.critical('', exc_info=True)
+  File "/usr/lib/python3.8/logging/__init__.py", line 2037, in critical
+    root.critical(msg, *args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1493, in critical
+    self._log(CRITICAL, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/logs.py", line 111, in emit
+    dbcmd('log', self.job_id, datetime.utcnow(), record.levelname,
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/logs.py", line 50, in dbcmd
+    return res.get()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 397, in get
+    raise etype(msg)
+sqlite3.OperationalError: 
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 416, in new
+    val = func(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/server/db/actions.py", line 399, in log
+    db('INSERT INTO log (job_id, timestamp, level, process, message) '
+  File "/home/ssm-user/src/oq-engine/openquake/server/dbapi.py", line 335, in __call__
+    raise exc.__class__('%s: %s %s' % (exc, templ, args))
+OperationalError: database or disk is full: INSERT INTO log (job_id, timestamp, level, process, message) VALUES (?, ?, ?, ?, ?) (308, datetime.datetime(2022, 2, 11, 14, 49, 17, 276088), 'CRITICAL', 'MainProcess/66294', '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 258, in run
+    logging.critical('', exc_info=True)
+  File "/usr/lib/python3.8/logging/__init__.py", line 2037, in critical
+    root.critical(msg, *args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1493, in critical
+    self._log(CRITICAL, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/logs.py", line 111, in emit
+    dbcmd('log', self.job_id, datetime.utcnow(), record.levelname,
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/logs.py", line 50, in dbcmd
+    return res.get()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 397, in get
+    raise etype(msg)
+sqlite3.OperationalError: 
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 416, in new
+    val = func(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/server/db/actions.py", line 399, in log
+    db('INSERT INTO log (job_id, timestamp, level, process, message) '
+  File "/home/ssm-user/src/oq-engine/openquake/server/dbapi.py", line 335, in __call__
+    raise exc.__class__('%s: %s %s' % (exc, templ, args))
+OperationalError: database or disk is full: INSERT INTO log (job_id, timestamp, level, process, message) VALUES (?, ?, ?, ?, ?) (308, datetime.datetime(2022, 2, 11, 14, 49, 17, 616347), 'CRITICAL', 'MainProcess/66294', '')
+
+/home/ssm-user/src/oq-engine/openquake/hazardlib/gsim/base.py:347: ExperimentalWarning: CanadaSHM6_ActiveCrust_BooreEtAl2014 is experimental and may change in future versions - the user is liable for their application
+  warnings.warn(msg, ExperimentalWarning)
+[2022-02-11 15:49:18 #308 INFO] Stopping the workers
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 248, in run
+    self.result = self.execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 336, in execute
+    acc = smap.reduce(self.agg_dicts, self.acc0())
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 827, in reduce
+    return self.submit_all().reduce(agg, acc)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 587, in reduce
+    acc = agg(acc, result)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/event_based.py", line 209, in agg_dicts
+    hdf5.extend(self.datastore[f'gmf_data/gmv_{m}'],
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/hdf5.py", line 111, in extend
+    dset[length:newlength] = array
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/home/ssm-user/openquake/lib/python3.8/site-packages/h5py/_hl/dataset.py", line 708, in __setitem__
+    self.id.write(mspace, fspace, val, mtype, dxpl=self._dxpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5d.pyx", line 222, in h5py.h5d.DatasetID.write
+  File "h5py/_proxy.pyx", line 132, in h5py._proxy.dset_rw
+  File "h5py/_proxy.pyx", line 93, in h5py._proxy.H5PY_H5Dwrite
+OSError: Can't write data (file write failed: time = Fri Feb 11 15:49:17 2022
+, filename = '/root/oqdata/calc_308.hdf5', file descriptor = 13, errno = 28, error message = 'No space left on device', buf = 0xc6694ce, total write size = 1941, bytes this sub-write = 1941, bytes actually written = 18446744073709551615, offset = 2798510080)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 247, in run
+    self.pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/scenario_damage.py", line 155, in pre_execute
+    super().pre_execute()
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 581, in pre_execute
+    calc.run(remove=False)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 258, in run
+    logging.critical('', exc_info=True)
+  File "/usr/lib/python3.8/logging/__init__.py", line 2037, in critical
+    root.critical(msg, *args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1493, in critical
+    self._log(CRITICAL, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/logs.py", line 111, in emit
+    dbcmd('log', self.job_id, datetime.utcnow(), record.levelname,
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/logs.py", line 50, in dbcmd
+    return res.get()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 397, in get
+    raise etype(msg)
+sqlite3.OperationalError: 
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 416, in new
+    val = func(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/server/db/actions.py", line 399, in log
+    db('INSERT INTO log (job_id, timestamp, level, process, message) '
+  File "/home/ssm-user/src/oq-engine/openquake/server/dbapi.py", line 335, in __call__
+    raise exc.__class__('%s: %s %s' % (exc, templ, args))
+OperationalError: database or disk is full: INSERT INTO log (job_id, timestamp, level, process, message) VALUES (?, ?, ?, ?, ?) (308, datetime.datetime(2022, 2, 11, 14, 49, 17, 276088), 'CRITICAL', 'MainProcess/66294', '')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ssm-user/openquake/bin/oq", line 33, in <module>
+    sys.exit(load_entry_point('openquake.engine', 'console_scripts', 'oq')())
+  File "/home/ssm-user/src/oq-engine/openquake/commands/__main__.py", line 44, in oq
+    sap.run(commands, prog='oq')
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 225, in run
+    return _run(parser(funcdict, **parserkw), argv)
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/sap.py", line 216, in _run
+    return func(**dic)
+  File "/home/ssm-user/src/oq-engine/openquake/commands/engine.py", line 164, in main
+    run_jobs(job_inis, log_level, log_file, exports, **pars)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 407, in run_jobs
+    run_calc(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/engine/engine.py", line 263, in run_calc
+    calc.run(exports=exports, **kw)
+  File "/home/ssm-user/src/oq-engine/openquake/calculators/base.py", line 258, in run
+    logging.critical('', exc_info=True)
+  File "/usr/lib/python3.8/logging/__init__.py", line 2037, in critical
+    root.critical(msg, *args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1493, in critical
+    self._log(CRITICAL, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/logs.py", line 111, in emit
+    dbcmd('log', self.job_id, datetime.utcnow(), record.levelname,
+  File "/home/ssm-user/src/oq-engine/openquake/commonlib/logs.py", line 50, in dbcmd
+    return res.get()
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 397, in get
+    raise etype(msg)
+sqlite3.OperationalError: 
+  File "/home/ssm-user/src/oq-engine/openquake/baselib/parallel.py", line 416, in new
+    val = func(*args)
+  File "/home/ssm-user/src/oq-engine/openquake/server/db/actions.py", line 399, in log
+    db('INSERT INTO log (job_id, timestamp, level, process, message) '
+  File "/home/ssm-user/src/oq-engine/openquake/server/dbapi.py", line 335, in __call__
+    raise exc.__class__('%s: %s %s' % (exc, templ, args))
+OperationalError: database or disk is full: INSERT INTO log (job_id, timestamp, level, process, message) VALUES (?, ?, ?, ?, ?) (308, datetime.datetime(2022, 2, 11, 14, 49, 17, 616347), 'CRITICAL', 'MainProcess/66294', '')
+Traceback (most recent call last):
+  File "h5py/_objects.pyx", line 193, in h5py._objects.ObjectID.__dealloc__
+OSError: Driver write request failed (file write failed: time = Fri Feb 11 15:49:20 2022
+, filename = '/root/oqdata/calc_308.hdf5', file descriptor = 13, errno = 28, error message = 'No space left on device', buf = 0x2fe2a51, total write size = 2755, bytes this sub-write = 2755, bytes actually written = 18446744073709551615, offset = 2798538752)
+Exception ignored in: 'h5py._objects.ObjectID.__dealloc__'
+Traceback (most recent call last):
+  File "h5py/_objects.pyx", line 193, in h5py._objects.ObjectID.__dealloc__
+OSError: Driver write request failed (file write failed: time = Fri Feb 11 15:49:20 2022
+, filename = '/root/oqdata/calc_308.hdf5', file descriptor = 13, errno = 28, error message = 'No space left on device', buf = 0x2fe2a51, total write size = 2755, bytes this sub-write = 2755, bytes actually written = 18446744073709551615, offset = 2798538752)
+Traceback (most recent call last):
+  File "h5py/_objects.pyx", line 193, in h5py._objects.ObjectID.__dealloc__
+RuntimeError: Problems closing file (file write failed: time = Fri Feb 11 15:49:20 2022
+, filename = '/root/oqdata/calc_308.hdf5', file descriptor = 13, errno = 28, error message = 'No space left on device', buf = 0x2f4e5d3, total write size = 14033, bytes this sub-write = 14033, bytes actually written = 18446744073709551615, offset = 2756468736)
+Exception ignored in: 'h5py._objects.ObjectID.__dealloc__'
+Traceback (most recent call last):
+  File "h5py/_objects.pyx", line 193, in h5py._objects.ObjectID.__dealloc__
+RuntimeError: Problems closing file (file write failed: time = Fri Feb 11 15:49:20 2022
+, filename = '/root/oqdata/calc_308.hdf5', file descriptor = 13, errno = 28, error message = 'No space left on device', buf = 0x2f4e5d3, total write size = 14033, bytes this sub-write = 14033, bytes actually written = 18446744073709551615, offset = 2756468736)
