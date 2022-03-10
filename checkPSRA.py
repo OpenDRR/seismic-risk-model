@@ -106,7 +106,7 @@ eDr_Complete_b0 = np.divide(damMEe['structural~complete_b0'],damMEe['number']); 
 damMEe['Collapse_b0'] = np.multiply(damMEe['structural~complete_b0'],damMEe['CollapseRate'])
 eD_Collapse_b0 = damMEe['Collapse_b0']; print("eD_Collapse_b0 = "+str(round(eD_Collapse_b0.sum(),roundr))+" ["+str(round(eD_Collapse_b0[num],roundr))+"]")
 print("eDr_Collapse_b0 = "+str(round(np.divide(damMEe['Collapse_b0'],damMEe['number']).mean(),roundr))+" ["+str(round(np.divide(damMEe['Collapse_b0'],damMEe['number'])[num],roundr))+"]")
-eD_Fail_Collapse_b0 = damMEe['number'][damMEe['Collapse_b0'] >= 0.01]; print("eD_Fail_Collapse_b0 = "+str(round(eD_Fail_Collapse_b0.sum(),roundn))+" ["+str(round(eD_Fail_Collapse_b0[num],roundn) if eD_Fail_Collapse_b0.sum() > 0.0 else round(0.0,roundn))+"]")
+eD_Fail_Collapse_b0 = damMEe['number'][damMEe['Collapse_b0']/damMEe['number'] >= 0.01]; print("eD_Fail_Collapse_b0 = "+str(round(eD_Fail_Collapse_b0.sum(),roundn))+" ["+str(round(eD_Fail_Collapse_b0[num],roundn) if eD_Fail_Collapse_b0.sum() > 0.0 else round(0.0,roundn))+"]")
 
 eD_Slight95_b0 = damMEe['structural~slight']; print("eD_Slight95_b0 = "+str(round(eD_Slight95_b0.sum(),roundr))+" ["+str(round(eD_Slight95_b0[num],roundr))+"]")
 eDr_Slight95_b0 = np.divide(damMEe['structural~slight'],damMEe['number']); print("eDr_Slight95_b0 = "+str(round(eDr_Slight95_b0.mean(),roundr))+" ["+str(round(eDr_Slight95_b0[num],roundr))+"]")
@@ -119,7 +119,7 @@ eDr_Complete95_b0 = np.divide(damMEe['structural~complete'],damMEe['number']); p
 damMEe['Collapse95_b0'] = np.multiply(damMEe['structural~complete'],damMEe['CollapseRate'])
 eD_Collapse95_b0 = damMEe['Collapse95_b0']; print("eD_Collapse95_b0 = "+str(round(eD_Collapse95_b0.sum(),roundr))+" ["+str(round(eD_Collapse95_b0[num],roundr))+"]")
 print("eDr_Collapse95_b0 = "+str(round(np.divide(damMEe['Collapse95_b0'],damMEe['number']).mean(),roundr))+" ["+str(round(np.divide(damMEe['Collapse95_b0'],damMEe['number'])[num],roundr))+"]")
-eD_Fail_Collapse95_b0 = damMEe['number'][damMEe['Collapse95_b0'] >= 0.01]; print("eD_Fail_Collapse95_b0 = "+str(round(eD_Fail_Collapse95_b0.sum(),roundn))+" ["+str(round(eD_Fail_Collapse95_b0[num],roundn) if eD_Fail_Collapse95_b0.sum() > 0.0 else round(0.0,roundn))+"]")
+eD_Fail_Collapse95_b0 = damMEe['number'][damMEe['Collapse95_b0']/damMEe['number'] >= 0.01]; print("eD_Fail_Collapse95_b0 = "+str(round(eD_Fail_Collapse95_b0.sum(),roundn))+" ["+str(round(eD_Fail_Collapse95_b0[num],roundn) if eD_Fail_Collapse95_b0.sum() > 0.0 else round(0.0,roundn))+"]")
 
 eD_Slight05_b0 = damMEe['structural~slight_05b']; print("eD_Slight05_b0 = "+str(round(eD_Slight05_b0.sum(),roundr))+" ["+str(round(eD_Slight05_b0[num],roundr))+"]")
 eDr_Slight05_b0 = np.divide(damMEe['structural~slight_05b'],damMEe['number']); print("eDr_Slight05_b0 = "+str(round(eDr_Slight05_b0.mean(),roundr))+" ["+str(round(eDr_Slight05_b0[num],roundr))+"]")
@@ -132,7 +132,7 @@ eDr_Complete05_b0 = np.divide(damMEe['structural~complete_05b'],damMEe['number']
 damMEe['Collapse05_b0'] = np.multiply(damMEe['structural~complete_05b'],damMEe['CollapseRate'])
 eD_Collapse05_b0 = damMEe['Collapse05_b0']; print("eD_Collapse05_b0 = "+str(round(eD_Collapse05_b0.sum(),roundr))+" ["+str(round(eD_Collapse05_b0[num],roundr))+"]")
 print("eDr_Collapse05_b0 = "+str(round(np.divide(damMEe['Collapse05_b0'],damMEe['number']).mean(),roundr))+" ["+str(round(np.divide(damMEe['Collapse05_b0'],damMEe['number'])[num],roundr))+"]")
-eD_Fail_Collapse05_b0 = damMEe['number'][damMEe['Collapse05_b0'] >= 0.01]; print("eD_Fail_Collapse05_b0 = "+str(round(eD_Fail_Collapse05_b0.sum(),roundn))+" ["+str(round(eD_Fail_Collapse05_b0[num],roundn) if eD_Fail_Collapse05_b0.sum() > 0.0 else round(0.0,roundn))+"]")
+eD_Fail_Collapse05_b0 = damMEe['number'][damMEe['Collapse05_b0']/damMEe['number'] >= 0.01]; print("eD_Fail_Collapse05_b0 = "+str(round(eD_Fail_Collapse05_b0.sum(),roundn))+" ["+str(round(eD_Fail_Collapse05_b0[num],roundn) if eD_Fail_Collapse05_b0.sum() > 0.0 else round(0.0,roundn))+"]")
 
 ### Do we want to add annual damage rates?
 
@@ -150,7 +150,7 @@ eDr_Complete_r1 = np.divide(damMEe['structural~complete_r1'],damMEe['number']); 
 damMEe['Collapse_r1'] = np.multiply(damMEe['structural~complete_r1'],damMEe['CollapseRate'])
 eD_Collapse_r1 = damMEe['Collapse_r1']; print("eD_Collapse_r1 = "+str(round(eD_Collapse_r1.sum(),roundr))+" ["+str(round(eD_Collapse_r1[num],roundr))+"]")
 print("eDr_Collapse_r1 = "+str(round(np.divide(damMEe['Collapse_r1'],damMEe['number']).mean(),roundr))+" ["+str(round(np.divide(damMEe['Collapse_r1'],damMEe['number'])[num],roundr))+"]")
-eD_Fail_Collapse_r1 = damMEe['number'][damMEe['Collapse_r1'] >= 0.01]; print("eD_Fail_Collapse_r1 = "+str(round(eD_Fail_Collapse_r1.sum(),roundn))+" ["+str(round(eD_Fail_Collapse_r1[num],roundn) if eD_Fail_Collapse_r1.sum() > 0.0 else round(0.0,roundn))+"]")
+eD_Fail_Collapse_r1 = damMEe['number'][damMEe['Collapse_r1']/damMEe['number'] >= 0.01]; print("eD_Fail_Collapse_r1 = "+str(round(eD_Fail_Collapse_r1.sum(),roundn))+" ["+str(round(eD_Fail_Collapse_r1[num],roundn) if eD_Fail_Collapse_r1.sum() > 0.0 else round(0.0,roundn))+"]")
 
 eD_Slight95_r1 = damMEe['structural~slight_95r']; print("eD_Slight95_r1 = "+str(round(eD_Slight95_r1.sum(),roundr))+" ["+str(round(eD_Slight95_r1[num],roundr))+"]")
 eDr_Slight95_r1 = np.divide(damMEe['structural~slight_95r'],damMEe['number']); print("eDr_Slight95_r1 = "+str(round(eDr_Slight95_r1.mean(),roundr))+" ["+str(round(eDr_Slight95_r1[num],roundr))+"]")
@@ -163,7 +163,7 @@ eDr_Complete95_r1 = np.divide(damMEe['structural~complete_95r'],damMEe['number']
 damMEe['Collapse95_r1'] = np.multiply(damMEe['structural~complete_95r'],damMEe['CollapseRate'])
 eD_Collapse95_r1 = damMEe['Collapse95_r1']; print("eD_Collapse95_r1 = "+str(round(eD_Collapse95_r1.sum(),roundr))+" ["+str(round(eD_Collapse95_r1[num],roundr))+"]")
 print("eDr_Collapse95_r1 = "+str(round(np.divide(damMEe['Collapse95_r1'],damMEe['number']).mean(),roundr))+" ["+str(round(np.divide(damMEe['Collapse95_r1'],damMEe['number'])[num],roundr))+"]")
-eD_Fail_Collapse95_r1 = damMEe['number'][damMEe['Collapse95_r1'] >= 0.01]; print("eD_Fail_Collapse95_r1 = "+str(round(eD_Fail_Collapse95_r1.sum(),roundn))+" ["+str(round(eD_Fail_Collapse95_r1[num],roundn) if eD_Fail_Collapse95_r1.sum() > 0.0 else round(0.0,roundn))+"]")
+eD_Fail_Collapse95_r1 = damMEe['number'][damMEe['Collapse95_r1']/damMEe['number'] >= 0.01]; print("eD_Fail_Collapse95_r1 = "+str(round(eD_Fail_Collapse95_r1.sum(),roundn))+" ["+str(round(eD_Fail_Collapse95_r1[num],roundn) if eD_Fail_Collapse95_r1.sum() > 0.0 else round(0.0,roundn))+"]")
 
 eD_Slight05_r1 = damMEe['structural~slight_05r']; print("eD_Slight05_r1 = "+str(round(eD_Slight05_r1.sum(),roundr))+" ["+str(round(eD_Slight05_r1[num],roundr))+"]")
 eDr_Slight05_r1 = np.divide(damMEe['structural~slight_05r'],damMEe['number']); print("eDr_Slight05_r1 = "+str(round(eDr_Slight05_r1.mean(),roundr))+" ["+str(round(eDr_Slight05_r1[num],roundr))+"]")
@@ -176,7 +176,7 @@ eDr_Complete05_r1 = np.divide(damMEe['structural~complete_05r'],damMEe['number']
 damMEe['Collapse05_r1'] = np.multiply(damMEe['structural~complete_05r'],damMEe['CollapseRate'])
 eD_Collapse05_r1 = damMEe['Collapse05_r1']; print("eD_Collapse05_r1 = "+str(round(eD_Collapse05_r1.sum(),roundr))+" ["+str(round(eD_Collapse05_r1[num],roundr))+"]")
 print("eDr_Collapse05_r1 = "+str(round(np.divide(damMEe['Collapse05_r1'],damMEe['number']).mean(),roundr))+" ["+str(round(np.divide(damMEe['Collapse05_r1'],damMEe['number'])[num],roundr))+"]")
-eD_Fail_Collapse05_r1 = damMEe['number'][damMEe['Collapse05_r1'] >= 0.01]; print("eD_Fail_Collapse05_r1 = "+str(round(eD_Fail_Collapse05_r1.sum(),roundn))+" ["+str(round(eD_Fail_Collapse05_r1[num],roundn) if eD_Fail_Collapse05_r1.sum() > 0.0 else round(0.0,roundn))+"]")
+eD_Fail_Collapse05_r1 = damMEe['number'][damMEe['Collapse05_r1']/damMEe['number'] >= 0.01]; print("eD_Fail_Collapse05_r1 = "+str(round(eD_Fail_Collapse05_r1.sum(),roundn))+" ["+str(round(eD_Fail_Collapse05_r1[num],roundn) if eD_Fail_Collapse05_r1.sum() > 0.0 else round(0.0,roundn))+"]")
 
 
 #############
