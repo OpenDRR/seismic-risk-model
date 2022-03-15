@@ -1,3 +1,12 @@
+#!/bin/python
+# ======================================
+# SPDX-License-Identifier: Open Government Licence - Canada
+#
+# Copyright (C) 2020-2022 Government of Canada
+#
+# Main authors: Tiegan Hobbs <tiegan.hobbs@nrcan-rncan.gc.ca>
+# ======================================
+
 import pandas as pd
 import glob
 import os

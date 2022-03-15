@@ -1,4 +1,11 @@
 #!/bin/python
+# ======================================
+# SPDX-License-Identifier: Open Government Licence - Canada
+#
+# Copyright (C) 2020-2022 Government of Canada
+#
+# Main authors: Tiegan Hobbs <tiegan.hobbs@nrcan-rncan.gc.ca>
+# ======================================
 
 #### Python script to check PSRA calculations
 # python checkPSRA.py > ../../../PSRACheck_SAUID48019692.txt
@@ -23,29 +30,12 @@ dam95b = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-q95_b0.
 damMEr = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-mean_r1.csv', skiprows=1)
 dam05r = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-q05_r1.csv', skiprows=1)
 dam95r = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-q95_r1.csv', skiprows=1)
-#damMEba = pd.read_csv('eDamage/output/'+PR+'/eD_'+PR+'_'+region+'_damages-mean_b0.csv', skiprows=1)
-#dam05ba = pd.read_csv('eDamage/output/NS/eD_NS_damages-q05_b0.csv', skiprows=1)
-#dam95ba = pd.read_csv('eDamage/output/NS/eD_NS_damages-q95_b0.csv', skiprows=1)
-#damMEra = pd.read_csv('eDamage/output/NS/eD_NS_damages-mean_r1.csv', skiprows=1)
-#dam05ra = pd.read_csv('eDamage/output/NS/eD_NS_damages-q05_r1.csv', skiprows=1)
-#dam95ra = pd.read_csv('eDamage/output/NS/eD_NS_damages-q95_r1.csv', skiprows=1)
 losMEb = pd.read_csv('ebRisk/output/'+PR+'/ebR_'+PR+'_'+region+'_avg_losses-stats_b0.csv', skiprows=1)
 losMEr = pd.read_csv('ebRisk/output/'+PR+'/ebR_'+PR+'_'+region+'_avg_losses-stats_r1.csv', skiprows=1)
 expo = pd.read_csv('../openquake-inputs/exposure/general-building-stock/oqBldgExp_'+PR+'.csv') #from FINISHED
 params_file = "/Users/thobbs/Documents/GitHub/earthquake-scenarios/scripts/Hazus_Consequence_Parameters.xlsx"
 
 ##############################################################################
-
-### Testing out scripts to add to agg_curves
-#name ='ebRisk/output/NS/ebR_NS_agg_curves-stats_b0.csv'
-#region = [s for s in name.split('/') if 'agg_curves' in s][0].split('_')[1] #grab region from the file name
-#curve_mean_b0 = pd.read_csv(name, skiprows=1) #read file in
-#curve_mean_b0['e_Aggregation'] = region #add column with info about what can be aggregated, based on calc size.
-#curve_mean_b0[curve_mean_b0['fsauid'] != '*total*'] #strip totals for FSA calcs
-
-
-
-
 
 ### Merge dataframes and isolate SAUID of interest
 losMEb = losMEb[losMEb['sauid'] == SAUID]
@@ -62,13 +52,6 @@ damME = pd.merge(damME, dam95r, how='left', on='asset_id', suffixes=('', '_95r')
 damME = pd.merge(damME, dam05r, how='left', on='asset_id', suffixes=('', '_05r'))
 damMEe = pd.merge(damME, expo, how='left', left_on='asset_id', right_on='id', suffixes=('','_expo'))
 
-#damMEba = damMEba[damMEba['sauid'] == SAUID]
-#damMEa = pd.merge(damMEba, damMEra, how='left', on='asset_id', suffixes=('_b0', '_r1'))
-#damMEa = pd.merge(damMEa, dam95ba, how='left', on='asset_id', suffixes=('', '_95b'))
-#damMEa = pd.merge(damMEa, dam05ba, how='left', on='asset_id', suffixes=('', '_05b'))
-#damMEa = pd.merge(damMEa, dam95ra, how='left', on='asset_id', suffixes=('', '_95r'))
-#damMEa = pd.merge(damMEa, dam05ra, how='left', on='asset_id', suffixes=('', '_05r'))
-#damMEea = pd.merge(damMEa, expo, how='left', left_on='asset_id', right_on='id', suffixes=('','_expo'))
 
 ### Read collapse rates by taxonomy
 def read_collapse_rate(xlsx):

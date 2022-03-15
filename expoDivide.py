@@ -1,3 +1,14 @@
+#!/bin/python
+# ======================================
+# SPDX-License-Identifier: Open Government Licence - Canada
+#
+# Copyright (C) 2020-2022 Government of Canada
+#
+# Main authors: Tiegan Hobbs <tiegan.hobbs@nrcan-rncan.gc.ca>
+#               Phil LeSueur <philip.lesueur@nrcan-rncan.gc.ca>
+# ======================================
+
+
 # Python script to subdivide the national exposure inventory into pieces with fewer than ~80000 assets
 # Intended to be run from GitHub/openquake-inputs/exposure/general-building-stock
 # Please delete any old files prior to running, if you change the file naming system. Otherwise the QA/QC checks will probably fail.
@@ -504,15 +515,3 @@ if eqtest.empty:
 ### NOTE: Test using 'equals' fails because there are different data types (dtypes)
 #print('Do the new exposure files match the master file? '+str(check2.equals(master2)))
 
-
-
-##############################################################################################
-#### CODE SCRAPS #############################################################################
-#CHECK IF FSA's HAVE MULTIPLE ER's
-#for fsa in df['fsauid'].unique():
-#    check = df['eruid'][df['fsauid'] == fsa].unique()
-#    if len(check) > 1:
-#        print("FSA " + str(fsa) + " contains more than one ER:")
-#        print(check)
-#Test failed. FSA’s can span multiple ER’s, so we can’t use ER’s to split the exposure file if we wan’t to be able to aggregate at the FSA level.
-#Also tested if non-rural FSA's (V??) have more than 1 CD, they did.

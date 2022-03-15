@@ -1,7 +1,16 @@
 #!/bin/bash
+# ======================================
+# SPDX-License-Identifier: Open Government Licence - Canada
+#
+# Copyright (C) 2020-2022 Government of Canada
+#
+# Main authors: Tiegan Hobbs <tiegan.hobbs@nrcan-rncan.gc.ca>
+# ======================================
+
 # ==========================================================================
 # Script for running ebRisk calculations in the National Canadian Risk Model
 # ==========================================================================
+
 usage() {
 echo "Script for running ebRisk calculations in OpenQuake, using Canadian data. 
 You need to have created the ini files already. Written by TE Hobbs on 3 Aug 2021.
