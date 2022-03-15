@@ -2,7 +2,7 @@ name: Create release assets
 
 on:
   push:
-    branches: [action-trigger]
+    #branches: [action-trigger]
   release:
     types: [published]
   workflow_dispatch:
