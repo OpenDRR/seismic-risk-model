@@ -1,3 +1,13 @@
+#!/bin/python
+# ======================================
+# SPDX-License-Identifier: Open Government Licence - Canada
+#
+# Copyright (C) 2020-2022 Government of Canada
+#
+# Main authors: Drew Rotheram <drew.rotheram-clarke@nrcan-rncan.gc.ca>
+#               Tiegan Hobbs <tiegan.hobbs@nrcan-rncan.gc.ca>
+# ======================================
+
 #!/usr/bin/env python
 
 #Import statements
@@ -167,3 +177,4 @@ def parse_args():
 
 if __name__ == "__main__":
     main() 
+    
