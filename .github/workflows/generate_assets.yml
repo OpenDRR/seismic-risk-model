@@ -2,7 +2,7 @@ name: Create release assets
 
 on:
   push:
-    #branches: [action-trigger]
+    branches: [action-trigger]
   release:
     types: [published]
   workflow_dispatch:
@@ -21,4 +21,4 @@ jobs:
           files: 'cDamage/*.csv;cDamage/output/*/*.csv;cHazard/output/*/*.csv;eDamage/output/*/*.csv;ebRisk/output/*/*.csv'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           # To add assets to an existing release, use below line with release tag, then run action from actions page
-          release-tag: 2.0.0-alpha.1
+          #release-tag: 2.0.0-alpha.1
