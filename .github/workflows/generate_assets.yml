@@ -1,0 +1,64 @@
+name: Create release assets
+
+on:
+  push:
+    #branches: [action-trigger]
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          lfs: 'true'
+      - name: upload eDamage assets AB-PE
+        uses: AButler/upload-release-assets@v2.0
+        with:
+          files: 'eDamage/output/AB/*.csv;eDamage/output/BC/*.csv;eDamage/output/MB/*.csv;eDamage/output/NB/*.csv;eDamage/output/NL/*.csv;eDamage/output/NS/*.csv;eDamage/output/NT/*.csv;eDamage/output/NU/*.csv;eDamage/output/ON/*.csv;eDamage/output/PE/*.csv'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          # To add assets to an existing release, use below line with release tag, then push to action-trigger branch
+          release-tag: 2.0.0-alpha.1  
+      - name: Wait for 1 hour (and change)
+        run: |
+          sleep 1h 2m    
+      - name: upload eDamage (QC-YT) and cDamage
+        uses: AButler/upload-release-assets@v2.0
+        with:
+          files: 'eDamage/output/QC/*.csv;eDamage/output/SK/*.csv;eDamage/output/YT/*.csv;cDamage/*.csv;cDamage/output/*/*.csv'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          # To add assets to an existing release, use below line with release tag, then push to action-trigger branch
+          release-tag: 2.0.0-alpha.1
+      - name: Wait for 1 hour (and change)
+        run: |
+          sleep 1h 2m
+      - name: upload ebRisk assets Canada and AB-NS
+        uses: AButler/upload-release-assets@v2.0
+        with:
+          files: 'ebRisk/output/Canada/*.csv;ebRisk/output/AB/*.csv;ebRisk/output/BC/*.csv;ebRisk/output/MB/*.csv;ebRisk/output/NB/*.csv;ebRisk/output/NL/*.csv;ebRisk/output/NS/*.csv'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          # To add assets to an existing release, use below line with release tag, then push to action-trigger branch
+          release-tag: 2.0.0-alpha.1
+      - name: Wait for 1 hour (and change)
+        run: |
+          sleep 1h 2m
+      - name: upload ebRisk assets NT-PE
+        uses: AButler/upload-release-assets@v2.0
+        with:
+          files: 'ebRisk/output/NT/*.csv;ebRisk/output/NU/*.csv;ebRisk/output/ON/*.csv;ebRisk/output/PE/*.csv'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          # To add assets to an existing release, use below line with release tag, then push to action-trigger branch
+          release-tag: 2.0.0-alpha.1
+      - name: Wait for 1 hour (and change)
+        run: |
+          sleep 1h 2m
+      - name: upload ebRisk QC-YT and cHazard assets
+        uses: AButler/upload-release-assets@v2.0
+        with:
+          files: 'ebRisk/output/QC/*.csv;ebRisk/output/SK/*.csv;ebRisk/output/YT/*.csv;cHazard/output/*/*.csv'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          # To add assets to an existing release, use below line with release tag, then push to action-trigger branch
+          release-tag: 2.0.0-alpha.1
