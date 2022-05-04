@@ -1,0 +1,28 @@
+name: Create release assets from /data
+
+on:
+  push:
+    branches: [action-trigger]
+  release:
+    types: [published]
+  # To add files to existing release, run from actions tab in github, entering release tag
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Release tag"
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          lfs: 'true'
+      - name: upload assets
+        uses: AButler/upload-release-assets@v2.0
+        with:
+          files: 'data/*;data/national/*;data/province/*/*'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          release-tag: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.release_tag || '' }}
