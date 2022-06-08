@@ -34,7 +34,7 @@ for prov in provs:
         expo = str(filelocexpo)+'oqBldgExp_'+str(prov)+'_'+str(FirstChar)+'_'+str(Area)+'.csv'
         expodf = pd.read_csv(expo)
         lossdfE = lossdf.merge(expodf, left_on='asset_id', right_on='id', how='left', suffixes=['','_expo'])
-
+        
         #########################################################
         # AAL:Replacement Value #################################
         #########################################################
@@ -45,6 +45,13 @@ for prov in provs:
         if any(lossdfE['RCtoAAL']<1):
             print(lossdfE[lossdfE['RCtoAAL']<1])
             print('region is '+str(FirstChar)+'_'+str(Area))
+        
+        #AALR < 1%?
+        lossdfE['LossRatio'] = lossdfE['AAL']/lossdfE['ReplacementCost']
+        if any(lossdfE['LossRatio']>0.005):
+            print(lossdfE[lossdfE['LossRatio']>0.005])
+            print('region is '+str(FirstChar)+'_'+str(Area))
+        
 
         #########################################################
         # URM:Wood Loss Ratios ##################################
