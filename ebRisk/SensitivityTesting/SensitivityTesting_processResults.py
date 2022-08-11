@@ -9,6 +9,9 @@ import numpy as np
 ########################################## PROVIDE INPUTS HERE
 SensDir='/Users/thobbs/Documents/GitHub/canada-srm2/ebRisk/SensitivityTesting'
 ##############################################################
+### What return period?
+RP = 500
+
 
 #### IF CREATING RESULT CSV's
 results_creation = False
@@ -19,9 +22,6 @@ if results_creation == True:
     files = glob.glob(str(SensDir)+"/*"+city+"*.ini.log")
     df = pd.DataFrame(columns=range(9))
     df.columns = ('TESTLOC', 'TESTNUM', 'RUNNUM', 'NUMSES', 'NUMBRANCH', 'RS', 'MEANLOSS', 'FIVELOSS', 'NIFILOSS')
-
-    ### What return period?
-    RP = 500
 
     for log in files:
 
@@ -97,7 +97,7 @@ dfM['y_errormax'] = (dfM['NIFILOSS']/1e6)-(dfM['MEANLOSS']/1e6)
 y_errorM = [dfM['y_errormin'], dfM['y_errormax']]
 
 #### SPECIFY WHAT VARIABLE TO PLOT
-x = 1 #by Branch = 1, by SES = 2, by Effective Years = 3
+x = 2 #by Branch = 1, by SES = 2, by Effective Years = 3
 ####
 if x == 1:
     xvarM = dfM['NUMBRANCH']; xvarV = dfV['NUMBRANCH']; xlab = 'Number of Logic Tree Branch Samples'; xcode = 'Branch'
@@ -112,9 +112,9 @@ else:
 #### PLOT
 if x == 2:
     widthratio=2 
-    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, sharex='col', sharey = 'row', gridspec_kw={'width_ratios': [widthratio, 1]}, figsize=(6.3,7.3)) 
+    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, sharex='col', sharey = True, gridspec_kw={'width_ratios': [widthratio, 1]}, figsize=(6.3,7.3)) #used to be sharey = 'row'
 else:
-    fig, (ax1, ax3) = plt.subplots(2, 1, sharex=True, figsize=(6.3,7.3))
+    fig, (ax1, ax3) = plt.subplots(2, 1, sharex=True, sharey=True, figsize=(6.3,7.3))
 
 fig.suptitle('Results of Exposure Sensitivity Tests - Mean, 5%, and 95%')
 
@@ -125,17 +125,17 @@ scatter_kwargs = {"zorder":100}
 error_kwargs = {"lw":.5, "zorder":0}
 
 # Montreal Plots
-ax1.errorbar(xvarM, dfM['MEANLOSS']/1e6, yerr=y_errorM, fmt='none', ecolor=df['color'], **error_kwargs)
-ax1.scatter(xvarM, dfM['FIVELOSS']/1e6, c=df['color'], marker='x')
-ax1.scatter(xvarM, dfM['NIFILOSS']/1e6, c=df['color'], marker='x')
-ax1.scatter(xvarM, dfM['MEANLOSS']/1e6, c=df['color'], label='RS', **scatter_kwargs)
+ax1.errorbar(xvarM, dfM['MEANLOSS']/1e6, yerr=y_errorM, fmt='none', ecolor=dfM['color'], **error_kwargs)
+ax1.scatter(xvarM, dfM['FIVELOSS']/1e6, c=dfM['color'], marker='x')
+ax1.scatter(xvarM, dfM['NIFILOSS']/1e6, c=dfM['color'], marker='x')
+ax1.scatter(xvarM, dfM['MEANLOSS']/1e6, c=dfM['color'], label='RS', **scatter_kwargs)
 ax1.set_title('Montreal', loc = 'left')
 if x == 2:
     ax1.set_xlim([35000, 115000])
-    ax2.errorbar(xvarM, dfM['MEANLOSS']/1e6, yerr=y_errorM, fmt='none', ecolor=df['color'], **error_kwargs)
-    ax2.scatter(xvarM, dfM['FIVELOSS']/1e6, c=df['color'], marker='x')
-    ax2.scatter(xvarM, dfM['NIFILOSS']/1e6, c=df['color'], marker='x')
-    ax2.scatter(xvarM, dfM['MEANLOSS']/1e6, c=df['color'], label='RS', **scatter_kwargs)
+    ax2.errorbar(xvarM, dfM['MEANLOSS']/1e6, yerr=y_errorM, fmt='none', ecolor=dfM['color'], **error_kwargs)
+    ax2.scatter(xvarM, dfM['FIVELOSS']/1e6, c=dfM['color'], marker='x')
+    ax2.scatter(xvarM, dfM['NIFILOSS']/1e6, c=dfM['color'], marker='x')
+    ax2.scatter(xvarM, dfM['MEANLOSS']/1e6, c=dfM['color'], label='RS', **scatter_kwargs)
     ax2.set_xlim([480000,520000])
     ax1.spines['right'].set_visible(False)
     ax2.spines['left'].set_visible(False)
@@ -154,17 +154,17 @@ if x == 2:
     ax2.grid(True)
 
 # Vancouver Plots
-ax3.errorbar(xvarV, dfV['MEANLOSS']/1e6, yerr=y_errorV, fmt='none', ecolor=df['color'], **error_kwargs)
-ax3.scatter(xvarV, dfV['FIVELOSS']/1e6, c=df['color'], marker='x')
-ax3.scatter(xvarV, dfV['NIFILOSS']/1e6, c=df['color'], marker='x')
-ax3.scatter(xvarV, dfV['MEANLOSS']/1e6, c=df['color'], label='RS', **scatter_kwargs)
+ax3.errorbar(xvarV, dfV['MEANLOSS']/1e6, yerr=y_errorV, fmt='none', ecolor=dfV['color'], **error_kwargs)
+ax3.scatter(xvarV, dfV['FIVELOSS']/1e6, c=dfV['color'], marker='x')
+ax3.scatter(xvarV, dfV['NIFILOSS']/1e6, c=dfV['color'], marker='x')
+ax3.scatter(xvarV, dfV['MEANLOSS']/1e6, c=dfV['color'], label='RS', **scatter_kwargs)
 ax3.set_title('Vancouver', loc = 'left')
 if x == 2:
     ax3.set_xlim([35000, 115000])
-    ax4.errorbar(xvarV, dfV['MEANLOSS']/1e6, yerr=y_errorV, fmt='none', ecolor=df['color'], **error_kwargs)
-    ax4.scatter(xvarV, dfV['FIVELOSS']/1e6, c=df['color'], marker='x')
-    ax4.scatter(xvarV, dfV['NIFILOSS']/1e6, c=df['color'], marker='x')
-    ax4.scatter(xvarV, dfV['MEANLOSS']/1e6, c=df['color'], label='RS', **scatter_kwargs)
+    ax4.errorbar(xvarV, dfV['MEANLOSS']/1e6, yerr=y_errorV, fmt='none', ecolor=dfV['color'], **error_kwargs)
+    ax4.scatter(xvarV, dfV['FIVELOSS']/1e6, c=dfV['color'], marker='x')
+    ax4.scatter(xvarV, dfV['NIFILOSS']/1e6, c=dfV['color'], marker='x')
+    ax4.scatter(xvarV, dfV['MEANLOSS']/1e6, c=dfV['color'], label='RS', **scatter_kwargs)
     ax4.set_xlim([480000,520000])
     ax3.spines['right'].set_visible(False)
     ax4.spines['left'].set_visible(False)
@@ -203,7 +203,7 @@ plt.savefig('Results-by'+str(xcode)+'-v2.eps')
 ####### END OF WORK ZONE #####################################
 
 
-
+exit()
 ### below: top lines will colour results by random seed, lower lines will color by eff years.
 colors = {1:((221/255), (170/255), (51/255)), 17:((187/255), (85/255), (102/255)), 46:((0/255), (68/255), (136/255))}
 df['color'] = df['RS'].map(colors)
