@@ -17,14 +17,16 @@ breadcrumbs:
     link: "https://www.github.com/OpenDRR/"
   - title: "OpenDRR Downloads"
     link: "../downloads/en"
-  - title: "The National Seismic Risk model for Canada"
+  - title: "The Probabilistic Seismic Risk model for Canada"
 ---
 <div class="row">
   <div class="col-md-8">
-    <p><strong>The National Seismic Risk model for Canada introduces a structured framework of indicators that profile the physical, social and economic dimensions of earthquake risk at the neighborhood scale.</strong></p>
-    <p>Risk metrics include measures of building damage and collapse probability, life safety and expected ground-up losses reported as both Average Annual Loss (AAL) and Probable Maximum Loss (PML) for reference return periods.</p>
-    <p>Model outputs are used to analyze existing baseline conditions of earthquake risk, and to evaluate the potential for risk reduction through proactive investments in seismic mitigation and post-disaster recovery planning.</p>
-    <p>The models and accompanying indicator framework are designed to support implementation of the Sendai Framework for Disaster Risk Reduction at local and regional scales (United Nations, 2015: SFDRR) -- and to help build capabilities for incorporating a disaster resilience lens into ongoing emergency management, sustainable land use and financial planning initiatives in Canada.</p>
+    <p><strong>The Probabilistic Seismic Risk Model for Canada introduces a structured framework of indicators that profile the physical, social and economic dimensions of earthquake risk at the neighborhood scale.</strong></p>
+    <p>Risk metrics include measures of building damage and collapse probability, life safety and expected economic losses. An overall risk rating is also provided which aggregates the physical, social, and economic dimensions of risk. The probabilistic assessment reports information based on both the ‘total’ impact as well as the ‘percentage’ impact.</p>
+    <p>It considers only damage to buildings, and their inhabitants, from earthquake shaking, and therefore does not include damage to critical infrastructure or vehicles. Losses from secondary hazards, such as aftershocks, liquefaction, landslides, or fire following are also not currently included.</p>
+    <p>The information is provided at the approximate scale of Census dissemination areas, and is intended to support planning and emergency management activities in earthquake prone regions.</p>
+    <p>This project is run by the Geological Survey of Canada's Public Safety Geoscience Program. For inquiries related to the National Earthquake Scenario Catalogue, please contact Tiegan E. Hobbs at tiegan.hobbs@nrcan-rncan.gc.ca.</p>
+    <p>If you are looking for our end-user interface or any associated documentation, please visit <a href="www.riskprofiler.ca">www.RiskProfiler.ca</a>.</p>
     <section class="jumbotron">
       <p>All products are released under the Open Government Licence - Canada.</p>
       <p><a href="https://open.canada.ca/en/open-government-licence-canada" class="btn btn-info btn-lg" role="button">Learn more</a></p>
