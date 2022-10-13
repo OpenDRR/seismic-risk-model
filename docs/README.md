@@ -10,7 +10,7 @@ Model outputs are used to analyze existing baseline conditions of earthquake ris
 
 The models and accompanying indicator framework are designed to support implementation of the Sendai Framework for Disaster Risk Reduction at local and regional scales (United Nations, 2015: SFDRR) -- and to help build capabilities for incorporating a disaster resilience lens into ongoing emergency management, sustainable land use and financial planning initiatives in Canada.
 
-https://opendrr.github.io/canada-srm2/en
+https://opendrr.github.io/seismic-risk-model/en
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ https://opendrr.github.io/canada-srm2/en
 
 ## Roadmap
 
-See the [open issues](https://github.com/OpenDRR/canada-srm2/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/OpenDRR/seismic-risk-model/issues) for a list of proposed features (and known issues).
 
 ## License
 
@@ -57,7 +57,7 @@ Les résultats du modèle sont utilisés pour analyser les conditions de base ex
 
 Les modèles et le cadre d'indicateurs qui les accompagnent sont conçus pour soutenir la mise en œuvre du Cadre de Sendai pour la réduction des risques de catastrophe à l'échelle locale et régionale (Nations Unies, 2015 : SFDRR) -- et pour aider à renforcer les capacités d'intégration d'une optique de résilience aux catastrophes dans les initiatives en cours de gestion des urgences, d'utilisation durable des terres et de planification financière au Canada.
 
-https://opendrr.github.io/canada-srm2/fr
+https://opendrr.github.io/seismic-risk-model/fr
 
 ## Démarrage
 
@@ -70,7 +70,7 @@ https://opendrr.github.io/canada-srm2/fr
 
 ## Feuille de route
 
-Voir le [open issues](https://github.com/OpenDRR/canada-srm2/issues) pour une liste des fonctionnalités proposées (et des problèmes connus).
+Voir le [open issues](https://github.com/OpenDRR/seismic-risk-model/issues) pour une liste des fonctionnalités proposées (et des problèmes connus).
 
 ## Licence
 
