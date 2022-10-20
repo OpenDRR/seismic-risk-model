@@ -1,1 +1,1 @@
-# Classical Damage Model (CanadaSRM2)
+# Classical Damage Model (CanadaSRM1)

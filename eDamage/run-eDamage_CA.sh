@@ -1,6 +1,6 @@
 #!/bin/bash
 # =================================================================
-# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4810-20
 # =================================================================
@@ -20,7 +20,7 @@
 #mv output/AB/avg_damages-mean*.csv output/AB/eD_AB4810-20_damages-mean_r2.csv;
 #
 # =================================================================
-# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4830
 # =================================================================
@@ -40,7 +40,7 @@
 #mv output/AB/avg_damages-mean*.csv output/AB/eD_AB4830_damages-mean_r2.csv;
 #
 # =================================================================
-# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4840-50
 # =================================================================
@@ -60,7 +60,7 @@
 #mv output/AB/avg_damages-mean*.csv output/AB/eD_AB4840-50_damages-mean_r2.csv;
 #
 # =================================================================
-# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4860
 # =================================================================
@@ -80,7 +80,7 @@
 #mv output/AB/avg_damages-mean*.csv output/AB/eD_AB4860_damages-mean_r2.csv;
 #
 # =================================================================
-# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4870-80
 # =================================================================
@@ -100,7 +100,7 @@
 #mv output/AB/avg_damages-mean*.csv output/AB/eD_AB4870-80_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## BC5910
 ## =================================================================
@@ -120,7 +120,7 @@
 ## mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5910_damages-mean_r2.csv;
 #
 # =================================================================
-# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5920A
 # =================================================================
@@ -140,7 +140,7 @@ oq export avg_damages-stats -1 -e csv -d output/BC/
 mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920A_damages-mean_r1.csv
 #
 # =================================================================
-# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5920B
 # =================================================================
@@ -160,7 +160,7 @@ oq export avg_damages-stats -1 -e csv -d output/BC/
 mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #
 # =================================================================
-# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5930
 # =================================================================
@@ -180,7 +180,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 # mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5930_damages-mean_r2.csv;
 #
 # =================================================================
-# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5940-80
 # =================================================================
@@ -200,7 +200,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 # mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5940-80_damages-mean_r2.csv;
 #
 # =================================================================
-# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # MB4610-40
 # =================================================================
@@ -220,7 +220,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/MB/avg_damages-mean*.csv output/MB/eD_MB4610-40_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## MB4650-80
 ## =================================================================
@@ -240,7 +240,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/MB/avg_damages-mean*.csv output/MB/eD_MB4650-80_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## NB
 ## =================================================================
@@ -260,7 +260,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/NB/avg_damages-mean*.csv output/NB/eD_NB_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## NL
 ## =================================================================
@@ -280,7 +280,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/NL/avg_damages-mean*.csv output/NL/eD_NL_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## NS
 ## =================================================================
@@ -300,7 +300,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/NS/avg_damages-mean*.csv output/NS/eD_NS_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## NT
 ## =================================================================
@@ -320,7 +320,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/NT/avg_damages-mean*.csv output/NT/eD_NT_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## NU
 ## =================================================================
@@ -340,7 +340,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/NU/avg_damages-mean*.csv output/NU/eD_NU_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## ON3510
 ## =================================================================
@@ -360,7 +360,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/ON/avg_damages-mean*.csv output/ON/eD_ON3510_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## ON3515-20
 ## =================================================================
@@ -380,7 +380,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/ON/avg_damages-mean*.csv output/ON/eD_ON3515-20_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## ON3530A
 ## =================================================================
@@ -400,7 +400,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/ON/avg_damages-mean*.csv output/ON/eD_ON3530A_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## ON3530B
 ## =================================================================
@@ -420,7 +420,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/ON/avg_damages-mean*.csv output/ON/eD_ON3530B_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## ON3540
 ## =================================================================
@@ -440,7 +440,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/ON/avg_damages-mean*.csv output/ON/eD_ON3540_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## ON3550
 ## =================================================================
@@ -460,7 +460,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/ON/avg_damages-mean*.csv output/ON/eD_ON3550_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## ON3560-70
 ## =================================================================
@@ -480,7 +480,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/ON/avg_damages-mean*.csv output/ON/eD_ON3560-70_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## ON3580
 ## =================================================================
@@ -500,7 +500,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/ON/avg_damages-mean*.csv output/ON/eD_ON3580_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## ON3590-95
 ## =================================================================
@@ -520,7 +520,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/ON/avg_damages-mean*.csv output/ON/eD_ON3590-95_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## PE
 ## =================================================================
@@ -540,7 +540,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/PE/avg_damages-mean*.csv output/PE/eD_PE_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## QC2410-20
 ## =================================================================
@@ -560,7 +560,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/QC/avg_damages-mean*.csv output/QC/eD_QC2410-20_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## QC2425-33
 ## =================================================================
@@ -580,7 +580,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/QC/avg_damages-mean*.csv output/QC/eD_QC2425-33_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## QC2435
 ## =================================================================
@@ -600,7 +600,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/QC/avg_damages-mean*.csv output/QC/eD_QC2435_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## QC2440
 ## =================================================================
@@ -620,7 +620,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/QC/avg_damages-mean*.csv output/QC/eD_QC2440_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## QC2445-55
 ## =================================================================
@@ -640,7 +640,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/QC/avg_damages-mean*.csv output/QC/eD_QC2445-55_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## QC2460-70
 ## =================================================================
@@ -660,7 +660,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/QC/avg_damages-mean*.csv output/QC/eD_QC2460-70_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## QC2475-90
 ## =================================================================
@@ -680,7 +680,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/QC/avg_damages-mean*.csv output/QC/eD_QC2475-90_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## SK4710-30
 ## =================================================================
@@ -700,7 +700,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/SK/avg_damages-mean*.csv output/SK/eD_SK4710-30_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## SK4740-60
 ## =================================================================
@@ -720,7 +720,7 @@ mv output/BC/avg_damages-mean*.csv output/BC/eD_BC5920B_damages-mean_r1.csv
 #mv output/SK/avg_damages-mean*.csv output/SK/eD_SK4740-60_damages-mean_r2.csv;
 ##
 ## =================================================================
-## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+## Stochastic event-based damage calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 ## =================================================================
 ## YT
 ## =================================================================

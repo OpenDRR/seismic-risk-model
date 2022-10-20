@@ -1,1 +1,1 @@
-# Stochastic Event-Based Damage Model (CanadaSRM2)
+# Stochastic Event-Based Damage Model (CanadaSRM1)

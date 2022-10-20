@@ -1,6 +1,6 @@
 #!/bin/bash
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # ================================================================
 #cHazard calculation for AB1
 # =================================================================

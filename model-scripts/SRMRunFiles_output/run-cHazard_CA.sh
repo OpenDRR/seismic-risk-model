@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -30,7 +30,7 @@ mv output/temp/hazard_uhs-mean* output/AB/cH_AB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -59,7 +59,7 @@ mv output/temp/hazard_uhs-mean* output/BC/cH_BC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -88,7 +88,7 @@ mv output/temp/hazard_uhs-mean* output/MB/cH_MB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -117,7 +117,7 @@ mv output/temp/hazard_uhs-mean* output/NB/cH_NB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -146,7 +146,7 @@ mv output/temp/hazard_uhs-mean* output/NL/cH_NL_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -175,7 +175,7 @@ mv output/temp/hazard_uhs-mean* output/NS/cH_NS_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -204,7 +204,7 @@ mv output/temp/hazard_uhs-mean* output/NT/cH_NT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -233,7 +233,7 @@ mv output/temp/hazard_uhs-mean* output/NU/cH_NU_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -262,7 +262,7 @@ mv output/temp/hazard_uhs-mean* output/ON/cH_ON_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -291,7 +291,7 @@ mv output/temp/hazard_uhs-mean* output/PE/cH_PE_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -320,7 +320,7 @@ mv output/temp/hazard_uhs-mean* output/QC/cH_QC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -349,7 +349,7 @@ mv output/temp/hazard_uhs-mean* output/SK/cH_SK_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -378,7 +378,7 @@ mv output/temp/hazard_uhs-mean* output/YT/cH_YT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -407,7 +407,7 @@ mv output/temp/hazard_uhs-mean* output/AB/cH_AB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -436,7 +436,7 @@ mv output/temp/hazard_uhs-mean* output/BC/cH_BC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -465,7 +465,7 @@ mv output/temp/hazard_uhs-mean* output/MB/cH_MB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -494,7 +494,7 @@ mv output/temp/hazard_uhs-mean* output/NB/cH_NB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -523,7 +523,7 @@ mv output/temp/hazard_uhs-mean* output/NL/cH_NL_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -552,7 +552,7 @@ mv output/temp/hazard_uhs-mean* output/NS/cH_NS_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -581,7 +581,7 @@ mv output/temp/hazard_uhs-mean* output/NT/cH_NT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -610,7 +610,7 @@ mv output/temp/hazard_uhs-mean* output/NU/cH_NU_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -639,7 +639,7 @@ mv output/temp/hazard_uhs-mean* output/ON/cH_ON_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -668,7 +668,7 @@ mv output/temp/hazard_uhs-mean* output/PE/cH_PE_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -697,7 +697,7 @@ mv output/temp/hazard_uhs-mean* output/QC/cH_QC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -726,7 +726,7 @@ mv output/temp/hazard_uhs-mean* output/SK/cH_SK_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -755,7 +755,7 @@ mv output/temp/hazard_uhs-mean* output/YT/cH_YT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -784,7 +784,7 @@ mv output/temp/hazard_uhs-mean* output/AB/cH_AB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -813,7 +813,7 @@ mv output/temp/hazard_uhs-mean* output/BC/cH_BC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -842,7 +842,7 @@ mv output/temp/hazard_uhs-mean* output/MB/cH_MB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -871,7 +871,7 @@ mv output/temp/hazard_uhs-mean* output/NB/cH_NB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -900,7 +900,7 @@ mv output/temp/hazard_uhs-mean* output/NL/cH_NL_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -929,7 +929,7 @@ mv output/temp/hazard_uhs-mean* output/NS/cH_NS_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -958,7 +958,7 @@ mv output/temp/hazard_uhs-mean* output/NT/cH_NT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -987,7 +987,7 @@ mv output/temp/hazard_uhs-mean* output/NU/cH_NU_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1016,7 +1016,7 @@ mv output/temp/hazard_uhs-mean* output/ON/cH_ON_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1045,7 +1045,7 @@ mv output/temp/hazard_uhs-mean* output/PE/cH_PE_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1074,7 +1074,7 @@ mv output/temp/hazard_uhs-mean* output/QC/cH_QC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1103,7 +1103,7 @@ mv output/temp/hazard_uhs-mean* output/SK/cH_SK_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1132,7 +1132,7 @@ mv output/temp/hazard_uhs-mean* output/YT/cH_YT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1161,7 +1161,7 @@ mv output/temp/hazard_uhs-mean* output/AB/cH_AB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1190,7 +1190,7 @@ mv output/temp/hazard_uhs-mean* output/BC/cH_BC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1219,7 +1219,7 @@ mv output/temp/hazard_uhs-mean* output/MB/cH_MB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1248,7 +1248,7 @@ mv output/temp/hazard_uhs-mean* output/NB/cH_NB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1277,7 +1277,7 @@ mv output/temp/hazard_uhs-mean* output/NL/cH_NL_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1306,7 +1306,7 @@ mv output/temp/hazard_uhs-mean* output/NS/cH_NS_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1335,7 +1335,7 @@ mv output/temp/hazard_uhs-mean* output/NT/cH_NT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1364,7 +1364,7 @@ mv output/temp/hazard_uhs-mean* output/NU/cH_NU_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1393,7 +1393,7 @@ mv output/temp/hazard_uhs-mean* output/ON/cH_ON_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1422,7 +1422,7 @@ mv output/temp/hazard_uhs-mean* output/PE/cH_PE_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1451,7 +1451,7 @@ mv output/temp/hazard_uhs-mean* output/QC/cH_QC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1480,7 +1480,7 @@ mv output/temp/hazard_uhs-mean* output/SK/cH_SK_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1509,7 +1509,7 @@ mv output/temp/hazard_uhs-mean* output/YT/cH_YT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1538,7 +1538,7 @@ mv output/temp/hazard_uhs-mean* output/AB/cH_AB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1567,7 +1567,7 @@ mv output/temp/hazard_uhs-mean* output/BC/cH_BC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1596,7 +1596,7 @@ mv output/temp/hazard_uhs-mean* output/MB/cH_MB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1625,7 +1625,7 @@ mv output/temp/hazard_uhs-mean* output/NB/cH_NB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1654,7 +1654,7 @@ mv output/temp/hazard_uhs-mean* output/NL/cH_NL_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1683,7 +1683,7 @@ mv output/temp/hazard_uhs-mean* output/NS/cH_NS_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1712,7 +1712,7 @@ mv output/temp/hazard_uhs-mean* output/NT/cH_NT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1741,7 +1741,7 @@ mv output/temp/hazard_uhs-mean* output/NU/cH_NU_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1770,7 +1770,7 @@ mv output/temp/hazard_uhs-mean* output/ON/cH_ON_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1799,7 +1799,7 @@ mv output/temp/hazard_uhs-mean* output/PE/cH_PE_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1828,7 +1828,7 @@ mv output/temp/hazard_uhs-mean* output/QC/cH_QC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1857,7 +1857,7 @@ mv output/temp/hazard_uhs-mean* output/SK/cH_SK_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1886,7 +1886,7 @@ mv output/temp/hazard_uhs-mean* output/YT/cH_YT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1915,7 +1915,7 @@ mv output/temp/hazard_uhs-mean* output/AB/cH_AB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1944,7 +1944,7 @@ mv output/temp/hazard_uhs-mean* output/BC/cH_BC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -1973,7 +1973,7 @@ mv output/temp/hazard_uhs-mean* output/MB/cH_MB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2002,7 +2002,7 @@ mv output/temp/hazard_uhs-mean* output/NB/cH_NB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2031,7 +2031,7 @@ mv output/temp/hazard_uhs-mean* output/NL/cH_NL_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2060,7 +2060,7 @@ mv output/temp/hazard_uhs-mean* output/NS/cH_NS_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2089,7 +2089,7 @@ mv output/temp/hazard_uhs-mean* output/NT/cH_NT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2118,7 +2118,7 @@ mv output/temp/hazard_uhs-mean* output/NU/cH_NU_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2147,7 +2147,7 @@ mv output/temp/hazard_uhs-mean* output/ON/cH_ON_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2176,7 +2176,7 @@ mv output/temp/hazard_uhs-mean* output/PE/cH_PE_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2205,7 +2205,7 @@ mv output/temp/hazard_uhs-mean* output/QC/cH_QC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2234,7 +2234,7 @@ mv output/temp/hazard_uhs-mean* output/SK/cH_SK_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2263,7 +2263,7 @@ mv output/temp/hazard_uhs-mean* output/YT/cH_YT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2292,7 +2292,7 @@ mv output/temp/hazard_uhs-mean* output/AB/cH_AB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2321,7 +2321,7 @@ mv output/temp/hazard_uhs-mean* output/BC/cH_BC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2350,7 +2350,7 @@ mv output/temp/hazard_uhs-mean* output/MB/cH_MB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2379,7 +2379,7 @@ mv output/temp/hazard_uhs-mean* output/NB/cH_NB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2408,7 +2408,7 @@ mv output/temp/hazard_uhs-mean* output/NL/cH_NL_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2437,7 +2437,7 @@ mv output/temp/hazard_uhs-mean* output/NS/cH_NS_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2466,7 +2466,7 @@ mv output/temp/hazard_uhs-mean* output/NT/cH_NT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2495,7 +2495,7 @@ mv output/temp/hazard_uhs-mean* output/NU/cH_NU_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2524,7 +2524,7 @@ mv output/temp/hazard_uhs-mean* output/ON/cH_ON_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2553,7 +2553,7 @@ mv output/temp/hazard_uhs-mean* output/PE/cH_PE_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2582,7 +2582,7 @@ mv output/temp/hazard_uhs-mean* output/QC/cH_QC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2611,7 +2611,7 @@ mv output/temp/hazard_uhs-mean* output/SK/cH_SK_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2640,7 +2640,7 @@ mv output/temp/hazard_uhs-mean* output/YT/cH_YT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2669,7 +2669,7 @@ mv output/temp/hazard_uhs-mean* output/AB/cH_AB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2698,7 +2698,7 @@ mv output/temp/hazard_uhs-mean* output/BC/cH_BC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2727,7 +2727,7 @@ mv output/temp/hazard_uhs-mean* output/MB/cH_MB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2756,7 +2756,7 @@ mv output/temp/hazard_uhs-mean* output/NB/cH_NB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2785,7 +2785,7 @@ mv output/temp/hazard_uhs-mean* output/NL/cH_NL_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2814,7 +2814,7 @@ mv output/temp/hazard_uhs-mean* output/NS/cH_NS_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2843,7 +2843,7 @@ mv output/temp/hazard_uhs-mean* output/NT/cH_NT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2872,7 +2872,7 @@ mv output/temp/hazard_uhs-mean* output/NU/cH_NU_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2901,7 +2901,7 @@ mv output/temp/hazard_uhs-mean* output/ON/cH_ON_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2930,7 +2930,7 @@ mv output/temp/hazard_uhs-mean* output/PE/cH_PE_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2959,7 +2959,7 @@ mv output/temp/hazard_uhs-mean* output/QC/cH_QC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -2988,7 +2988,7 @@ mv output/temp/hazard_uhs-mean* output/SK/cH_SK_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3017,7 +3017,7 @@ mv output/temp/hazard_uhs-mean* output/YT/cH_YT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3046,7 +3046,7 @@ mv output/temp/hazard_uhs-mean* output/AB/cH_AB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3075,7 +3075,7 @@ mv output/temp/hazard_uhs-mean* output/BC/cH_BC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3104,7 +3104,7 @@ mv output/temp/hazard_uhs-mean* output/MB/cH_MB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3133,7 +3133,7 @@ mv output/temp/hazard_uhs-mean* output/NB/cH_NB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3162,7 +3162,7 @@ mv output/temp/hazard_uhs-mean* output/NL/cH_NL_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3191,7 +3191,7 @@ mv output/temp/hazard_uhs-mean* output/NS/cH_NS_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3220,7 +3220,7 @@ mv output/temp/hazard_uhs-mean* output/NT/cH_NT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3249,7 +3249,7 @@ mv output/temp/hazard_uhs-mean* output/NU/cH_NU_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3278,7 +3278,7 @@ mv output/temp/hazard_uhs-mean* output/ON/cH_ON_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3307,7 +3307,7 @@ mv output/temp/hazard_uhs-mean* output/PE/cH_PE_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3336,7 +3336,7 @@ mv output/temp/hazard_uhs-mean* output/QC/cH_QC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3365,7 +3365,7 @@ mv output/temp/hazard_uhs-mean* output/SK/cH_SK_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3394,7 +3394,7 @@ mv output/temp/hazard_uhs-mean* output/YT/cH_YT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3423,7 +3423,7 @@ mv output/temp/hazard_uhs-mean* output/AB/cH_AB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3452,7 +3452,7 @@ mv output/temp/hazard_uhs-mean* output/BC/cH_BC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3481,7 +3481,7 @@ mv output/temp/hazard_uhs-mean* output/MB/cH_MB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3510,7 +3510,7 @@ mv output/temp/hazard_uhs-mean* output/NB/cH_NB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3539,7 +3539,7 @@ mv output/temp/hazard_uhs-mean* output/NL/cH_NL_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3568,7 +3568,7 @@ mv output/temp/hazard_uhs-mean* output/NS/cH_NS_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3597,7 +3597,7 @@ mv output/temp/hazard_uhs-mean* output/NT/cH_NT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3626,7 +3626,7 @@ mv output/temp/hazard_uhs-mean* output/NU/cH_NU_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3655,7 +3655,7 @@ mv output/temp/hazard_uhs-mean* output/ON/cH_ON_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3684,7 +3684,7 @@ mv output/temp/hazard_uhs-mean* output/PE/cH_PE_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3713,7 +3713,7 @@ mv output/temp/hazard_uhs-mean* output/QC/cH_QC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3742,7 +3742,7 @@ mv output/temp/hazard_uhs-mean* output/SK/cH_SK_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3771,7 +3771,7 @@ mv output/temp/hazard_uhs-mean* output/YT/cH_YT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3800,7 +3800,7 @@ mv output/temp/hazard_uhs-mean* output/AB/cH_AB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3829,7 +3829,7 @@ mv output/temp/hazard_uhs-mean* output/BC/cH_BC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3858,7 +3858,7 @@ mv output/temp/hazard_uhs-mean* output/MB/cH_MB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3887,7 +3887,7 @@ mv output/temp/hazard_uhs-mean* output/NB/cH_NB_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3916,7 +3916,7 @@ mv output/temp/hazard_uhs-mean* output/NL/cH_NL_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3945,7 +3945,7 @@ mv output/temp/hazard_uhs-mean* output/NS/cH_NS_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -3974,7 +3974,7 @@ mv output/temp/hazard_uhs-mean* output/NT/cH_NT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -4003,7 +4003,7 @@ mv output/temp/hazard_uhs-mean* output/NU/cH_NU_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -4032,7 +4032,7 @@ mv output/temp/hazard_uhs-mean* output/ON/cH_ON_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -4061,7 +4061,7 @@ mv output/temp/hazard_uhs-mean* output/PE/cH_PE_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -4090,7 +4090,7 @@ mv output/temp/hazard_uhs-mean* output/QC/cH_QC_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -4119,7 +4119,7 @@ mv output/temp/hazard_uhs-mean* output/SK/cH_SK_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
@@ -4148,7 +4148,7 @@ mv output/temp/hazard_uhs-mean* output/YT/cH_YT_uhs.csv
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================

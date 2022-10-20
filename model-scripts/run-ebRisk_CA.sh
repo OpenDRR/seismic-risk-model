@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # {region}
 # =================================================================

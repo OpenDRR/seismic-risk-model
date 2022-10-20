@@ -1,1 +1,1 @@
-# Classical Hazard Model (CanadaSRM2)
+# Classical Hazard Model (CanadaSRM1)

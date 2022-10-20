@@ -1,6 +1,6 @@
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4810-20
 # =================================================================
@@ -29,7 +29,7 @@ mv output/AB/agg_losses-mean*.csv output/AB/ebR_AB4810-20_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4830
 # =================================================================
@@ -58,7 +58,7 @@ mv output/AB/agg_losses-mean*.csv output/AB/ebR_AB4830_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4840-50
 # =================================================================
@@ -87,7 +87,7 @@ mv output/AB/agg_losses-mean*.csv output/AB/ebR_AB4840-50_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4860
 # =================================================================
@@ -116,7 +116,7 @@ mv output/AB/agg_losses-mean*.csv output/AB/ebR_AB4860_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4870-80
 # =================================================================
@@ -145,7 +145,7 @@ mv output/AB/agg_losses-mean*.csv output/AB/ebR_AB4870-80_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5910
 # =================================================================
@@ -174,7 +174,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5910_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5920A1
 # =================================================================
@@ -203,7 +203,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5920A1_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5920A2
 # =================================================================
@@ -232,7 +232,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5920A2_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5920B
 # =================================================================
@@ -261,7 +261,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5920B_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5930
 # =================================================================
@@ -290,7 +290,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5930_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5940-80
 # =================================================================
@@ -319,7 +319,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5940-80_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # MB4610-40
 # =================================================================
@@ -348,7 +348,7 @@ mv output/MB/agg_losses-mean*.csv output/MB/ebR_MB4610-40_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # MB4650-80
 # =================================================================
@@ -377,7 +377,7 @@ mv output/MB/agg_losses-mean*.csv output/MB/ebR_MB4650-80_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # NB
 # =================================================================
@@ -406,7 +406,7 @@ mv output/NB/agg_losses-mean*.csv output/NB/ebR_NB_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # NL
 # =================================================================
@@ -435,7 +435,7 @@ mv output/NL/agg_losses-mean*.csv output/NL/ebR_NL_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # NS
 # =================================================================
@@ -464,7 +464,7 @@ mv output/NS/agg_losses-mean*.csv output/NS/ebR_NS_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # NT
 # =================================================================
@@ -493,7 +493,7 @@ mv output/NT/agg_losses-mean*.csv output/NT/ebR_NT_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # NU
 # =================================================================
@@ -522,7 +522,7 @@ mv output/NU/agg_losses-mean*.csv output/NU/ebR_NU_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3510
 # =================================================================
@@ -551,7 +551,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3510_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3515-20
 # =================================================================
@@ -580,7 +580,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3515-20_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3530A1
 # =================================================================
@@ -609,7 +609,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3530A1_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3530A2
 # =================================================================
@@ -638,7 +638,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3530A2_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3530B1
 # =================================================================
@@ -667,7 +667,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3530B1_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3530B2
 # =================================================================
@@ -696,7 +696,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3530B2_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3540
 # =================================================================
@@ -725,7 +725,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3540_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3550
 # =================================================================
@@ -754,7 +754,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3550_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3560-70
 # =================================================================
@@ -783,7 +783,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3560-70_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3580
 # =================================================================
@@ -812,7 +812,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3580_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3590-95
 # =================================================================
@@ -841,7 +841,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3590-95_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # PE
 # =================================================================
@@ -870,7 +870,7 @@ mv output/PE/agg_losses-mean*.csv output/PE/ebR_PE_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2410-20
 # =================================================================
@@ -899,7 +899,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2410-20_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2425-33
 # =================================================================
@@ -928,7 +928,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2425-33_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2435
 # =================================================================
@@ -957,7 +957,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2435_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2440A1
 # =================================================================
@@ -986,7 +986,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2440A1_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2440A2
 # =================================================================
@@ -1015,7 +1015,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2440A2_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2440B
 # =================================================================
@@ -1044,7 +1044,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2440B_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2445-55
 # =================================================================
@@ -1073,7 +1073,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2445-55_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2460-70
 # =================================================================
@@ -1102,7 +1102,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2460-70_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2475-90
 # =================================================================
@@ -1131,7 +1131,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2475-90_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # SK4710-30
 # =================================================================
@@ -1160,7 +1160,7 @@ mv output/SK/agg_losses-mean*.csv output/SK/ebR_SK4710-30_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # SK4740-60
 # =================================================================
@@ -1189,7 +1189,7 @@ mv output/SK/agg_losses-mean*.csv output/SK/ebR_SK4740-60_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # YT
 # =================================================================
@@ -1218,7 +1218,7 @@ mv output/YT/agg_losses-mean*.csv output/YT/ebR_YT_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4810-20
 # =================================================================
@@ -1247,7 +1247,7 @@ mv output/AB/agg_losses-mean*.csv output/AB/ebR_AB4810-20_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4830
 # =================================================================
@@ -1276,7 +1276,7 @@ mv output/AB/agg_losses-mean*.csv output/AB/ebR_AB4830_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4840-50
 # =================================================================
@@ -1305,7 +1305,7 @@ mv output/AB/agg_losses-mean*.csv output/AB/ebR_AB4840-50_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4860
 # =================================================================
@@ -1334,7 +1334,7 @@ mv output/AB/agg_losses-mean*.csv output/AB/ebR_AB4860_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # AB4870-80
 # =================================================================
@@ -1363,7 +1363,7 @@ mv output/AB/agg_losses-mean*.csv output/AB/ebR_AB4870-80_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5910
 # =================================================================
@@ -1392,7 +1392,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5910_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5920A
 # =================================================================
@@ -1421,7 +1421,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5920A_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5920A1
 # =================================================================
@@ -1450,7 +1450,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5920A1_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5920A2
 # =================================================================
@@ -1479,7 +1479,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5920A2_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5920B
 # =================================================================
@@ -1508,7 +1508,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5920B_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5930
 # =================================================================
@@ -1537,7 +1537,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5930_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # BC5940-80
 # =================================================================
@@ -1566,7 +1566,7 @@ mv output/BC/agg_losses-mean*.csv output/BC/ebR_BC5940-80_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # MB4610-40
 # =================================================================
@@ -1595,7 +1595,7 @@ mv output/MB/agg_losses-mean*.csv output/MB/ebR_MB4610-40_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # MB4650-80
 # =================================================================
@@ -1624,7 +1624,7 @@ mv output/MB/agg_losses-mean*.csv output/MB/ebR_MB4650-80_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # NB
 # =================================================================
@@ -1653,7 +1653,7 @@ mv output/NB/agg_losses-mean*.csv output/NB/ebR_NB_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # NL
 # =================================================================
@@ -1682,7 +1682,7 @@ mv output/NL/agg_losses-mean*.csv output/NL/ebR_NL_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # NS
 # =================================================================
@@ -1711,7 +1711,7 @@ mv output/NS/agg_losses-mean*.csv output/NS/ebR_NS_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # NT
 # =================================================================
@@ -1740,7 +1740,7 @@ mv output/NT/agg_losses-mean*.csv output/NT/ebR_NT_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # NU
 # =================================================================
@@ -1769,7 +1769,7 @@ mv output/NU/agg_losses-mean*.csv output/NU/ebR_NU_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3510
 # =================================================================
@@ -1798,7 +1798,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3510_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3515-20
 # =================================================================
@@ -1827,7 +1827,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3515-20_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3530A
 # =================================================================
@@ -1856,7 +1856,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3530A_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3530A1
 # =================================================================
@@ -1885,7 +1885,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3530A1_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3530A2
 # =================================================================
@@ -1914,7 +1914,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3530A2_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3530B
 # =================================================================
@@ -1943,7 +1943,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3530B_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3530B1
 # =================================================================
@@ -1972,7 +1972,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3530B1_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3530B2
 # =================================================================
@@ -2001,7 +2001,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3530B2_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3540
 # =================================================================
@@ -2030,7 +2030,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3540_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3550
 # =================================================================
@@ -2059,7 +2059,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3550_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3560-70
 # =================================================================
@@ -2088,7 +2088,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3560-70_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3580
 # =================================================================
@@ -2117,7 +2117,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3580_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # ON3590-95
 # =================================================================
@@ -2146,7 +2146,7 @@ mv output/ON/agg_losses-mean*.csv output/ON/ebR_ON3590-95_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # PE
 # =================================================================
@@ -2175,7 +2175,7 @@ mv output/PE/agg_losses-mean*.csv output/PE/ebR_PE_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2410-20
 # =================================================================
@@ -2204,7 +2204,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2410-20_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2425-33
 # =================================================================
@@ -2233,7 +2233,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2425-33_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2435
 # =================================================================
@@ -2262,7 +2262,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2435_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2440
 # =================================================================
@@ -2291,7 +2291,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2440_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2440A
 # =================================================================
@@ -2320,7 +2320,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2440A_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2440A1
 # =================================================================
@@ -2349,7 +2349,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2440A1_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2440A2
 # =================================================================
@@ -2378,7 +2378,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2440A2_agg_losses-stats_r2.csv
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2440B
 # =================================================================
@@ -2407,7 +2407,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2440B_agg_losses-stats_r2.csv;
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2445-55
 # =================================================================
@@ -2436,7 +2436,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2445-55_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2460-70
 # =================================================================
@@ -2465,7 +2465,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2460-70_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # QC2475-90
 # =================================================================
@@ -2494,7 +2494,7 @@ mv output/QC/agg_losses-mean*.csv output/QC/ebR_QC2475-90_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # SK4710-30
 # =================================================================
@@ -2523,7 +2523,7 @@ mv output/SK/agg_losses-mean*.csv output/SK/ebR_SK4710-30_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # SK4740-60
 # =================================================================
@@ -2552,7 +2552,7 @@ mv output/SK/agg_losses-mean*.csv output/SK/ebR_SK4740-60_agg_losses-stats_r2.cs
 # =================================================================
 #!/bin/bash
 # =================================================================
-# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model(CanadaSRM2)
+# Stochastic ebRisk calculation script for running the 2020 National Seismic Risk Model (CanadaSRM1)
 # =================================================================
 # YT
 # =================================================================

@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir -p output/temp; rm -f output/temp/*
 # =================================================================
-# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM2)
+# Classical hazard calculation script for Provinces & Territories of Canada (CanadaSRM1)
 # =================================================================
 #[province]
 # =================================================================
