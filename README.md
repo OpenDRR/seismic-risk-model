@@ -1,16 +1,13 @@
 # A National Seismic Risk model for Canada (CanadaSRM2)
 
-We present an earthquake risk model for Canada (CanadaSRM2) that establishes a base of evidence to both inform and empower disaster resilience planning in accordance with policy and technical implementation guidelines established as part of the Sendai Framework for Disaster Risk Reduction (United Nations, 2015). The study utilizes integrated risk assessment methods and emerging best practices of risk governance to develop a more holistic and empowering view of earthquake risk in Canada. It re-frames the risk assessment process around risk reduction strategies (planning scenarios) that have a potential to increase capabilities for recovery following a disaster event, and structures the decision making process using performance measures that highlight the value proposition for proactive investment in mitigation and adaptation.
+The Probabilistic Seismic Risk Model for Canada introduces a structured framework of indicators that profile the physical, social and economic dimensions of earthquake risk at the neighborhood scale.
 
-The model is implemented using GEM’s OpenQuake Engine (Keller & Schneider, 2014; Pagani et al., 2014; Silva et al., 2014); and available public domain information from [Canada’s National Census](https://www12.statcan.gc.ca/). It extends the scope of probabilistic seismic hazard models currently used to inform Canada’s National Building Code ([CanadaSHM6](https://github.com/OpenDRR/CanadaSHM6)) by introducing a structured framework of indicators that profile the immediate physical impacts and downstream socio-economic consequences of earthquake events at a neighborhood scale for settled areas across Canada. Indicators are aligned with the SFDRR monitoring framework and are used to both analyze existing baseline conditions of earthquake risk, and to evaluate opportunities for risk reduction through proactive investments in seismic mitigation.
+Risk metrics include measures of building damage and collapse probability, life safety and expected economic losses. An overall risk rating is also provided which aggregates the physical, social, and economic dimensions of risk. The probabilistic assessment reports information based on both the ‘total’ impact as well as the ‘percentage’ impact.
 
-## Documentation
-* Thumbnail with accompanying short description and links to the GSC OpenFile report to be published through OpenDRR GitHub. Consider including links to the OpenFile report that jump to relevant sections
-* Thumbnails with accompanying short description and links to technical documentation of the OpenQuake-engine
+It considers only damage to buildings, and their inhabitants, from earthquake shaking, and therefore does not include damage to critical infrastructure or vehicles. Losses from secondary hazards, such as aftershocks, liquefaction, landslides, or fire following are also not currently included.
 
-## Model Inputs
-* Thumbnail with accompanying short description and links to relevant oq-model-input files used to assess probabilistic seismic risk (exposure & site models)
-* Curently using git-LFS to track model outputs in .csv, .gdp and gpkg formats
+The information is provided at the approximate scale of Census dissemination areas, and is intended to support planning and emergency management activities in earthquake prone regions.
 
-## Model Outputs
-* Thumbnail with accompanying short description and links to model outputs in public repo.  These will be the data transformation views published and accessible through FGP
+This project is run by the Geological Survey of Canada's Public Safety Geoscience Program. For inquiries related to Canada's Seismic Risk Model, please contact Tiegan E. Hobbs at tiegan.hobbs@nrcan-rncan.gc.ca.
+
+If you are looking for our end-user interface or any associated documentation, please visit [www.RiskProfiler.ca](https://www.riskprofiler.ca).
