@@ -6,7 +6,7 @@ pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
   fr: [GV Gouvernement et vie politique, Services gouvernementaux]
-title: The National Seismic Risk model for Canada
+title: The Probabilistic Seismic Risk model for Canada
 lang: en
 altLangPage: ../fr
 nositesearch: true
@@ -27,7 +27,7 @@ breadcrumbs:
     <p>Risk metrics include measures of building damage and collapse probability, life safety and expected economic losses. An overall risk rating is also provided which aggregates the physical, social, and economic dimensions of risk. The probabilistic assessment reports information based on both the ‘total’ impact as well as the ‘percentage’ impact.</p>
     <p>It considers only damage to buildings, and their inhabitants, from earthquake shaking, and therefore does not include damage to critical infrastructure or vehicles. Losses from secondary hazards, such as aftershocks, liquefaction, landslides, or fire following are also not currently included.</p>
     <p>The information is provided at the approximate scale of Census dissemination areas, and is intended to support planning and emergency management activities in earthquake prone regions.</p>
-    <p>This project is run by the Geological Survey of Canada's Public Safety Geoscience Program. For inquiries related to the National Earthquake Scenario Catalogue, please contact Tiegan E. Hobbs at tiegan.hobbs@nrcan-rncan.gc.ca.</p>
+    <p>This project is run by the Geological Survey of Canada's Public Safety Geoscience Program. For inquiries related to Canada's Seismic Risk Model, please contact Tiegan E. Hobbs at tiegan.hobbs@nrcan-rncan.gc.ca.</p>
     <p>If you are looking for our end-user interface or any associated documentation, please visit <a href="www.riskprofiler.ca">www.RiskProfiler.ca</a>.</p>
     <section class="jumbotron">
       <p>{% if page.lang == 'en' %}All products are released under the Open Government Licence - Canada.{% else %}Tous les produits sont publiés sous la licence du gouvernement ouvert – Canada.{% endif %}</p>
