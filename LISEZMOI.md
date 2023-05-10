@@ -20,7 +20,7 @@ Il est possible de télécharger des fichiers individuels à partir du Web, en c
 
 ## Documentation
 
-Un rapport de dossier public de la Commission géologique du Canada contient des renseignements de base sur la façon dont ces modèles sont produits et fournit quelques exemples de sorties. Ce document se trouve auprès de [GEOSCAN](https://geoscan.nrcan.gc.ca/). Les articles de journaux à venir contiendront des renseignements supplémentaires et pourront être recherchés dans le [profil Google Scholar]] de T.E. Hobbs (https://scholar.google.ca/citations?user=0hqT-owAAAAJ&hl=en&oi=ao). 
+Un rapport de dossier public de la Commission géologique du Canada contient des renseignements de base sur la façon dont ces modèles sont produits et fournit quelques exemples de sorties. Ce document se trouve auprès de [GEOSCAN](https://geoscan.nrcan.gc.ca/). Les articles de journaux à venir contiendront des renseignements supplémentaires et pourront être recherchés dans [le profil Google Scholar](https://scholar.google.ca/citations?user=0hqT-owAAAAJ&hl=en&oi=ao) de T.E. Hobbs. 
 
 ## Note sur l’utilisation acceptable
 
