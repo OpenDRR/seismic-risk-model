@@ -1,7 +1,7 @@
 ---
 authorName: Natural Resources Canada
 authorUrl:
-dateModified: 2022-10-12
+dateModified: 2023-05-31
 pageclass: wb-prettify all-pre
 subject:
   en: [GV Government and Politics, Government services]
@@ -23,12 +23,12 @@ breadcrumbs:
 
 <div class="row">
   <div class="col-md-8">
-    <p><strong>Le modèle probabiliste de risque sismique pour le Canada présente un cadre structuré d'indicateurs qui dressent le profil des dimensions physiques, sociales et économiques du risque sismique à l'échelle du quartier.</strong></p>
-    <p>Les paramètres de risque comprennent des mesures des dommages aux bâtiments et de la probabilité d'effondrement, de la sécurité des personnes et des pertes économiques prévues. Une note de risque globale est également fournie, qui agrège les dimensions physiques, sociales et économiques du risque. L'évaluation probabiliste rapporte des informations basées à la fois sur l'impact " total " et sur l'impact " en pourcentage ".</p>
-    <p>L'évaluation probabiliste ne prend en compte que les dommages aux bâtiments et la probabilité d'effondrement.</p>
-    <p>Elle ne prend en compte que les dommages causés aux bâtiments, et à leurs habitants, par les secousses sismiques, et ne comprend donc pas les dommages causés aux infrastructures critiques ou aux véhicules. Les pertes dues à des risques secondaires, tels que les répliques sismiques, la liquéfaction, les glissements de terrain ou les incendies consécutifs, ne sont pas non plus incluses à l'heure actuelle.</p>
-    <p>Les informations sont fournies à l'échelle approximative des zones de diffusion du recensement, et sont destinées à soutenir les activités de planification et de gestion des urgences dans les régions sujettes aux tremblements de terre.</p> <p>Les informations sont fournies à l'échelle approximative des zones de diffusion du recensement.</p>
-    <p>Ce projet est géré par le programme géoscientifique de sécurité publique de la Commission géologique du Canada. Pour toute question relative au modèle de risque sismique du Canada, veuillez contacter Tiegan E. Hobbs à l'adresse tiegan.hobbs@nrcan-rncan.gc.ca.</p>
+    <p><strong>Le modèle probabiliste de risque sismique pour le Canada présente un cadre structuré d’indicateurs qui dressent le profil des dimensions physiques, sociales et économiques du risque sismique à l’échelle du quartier.</strong></p>
+    <p>Les paramètres de risque comprennent des mesures des dommages aux bâtiments et de la probabilité d’effondrement, de la sécurité des personnes et des pertes économiques prévues. Une note de risque globale est également fournie, qui agrège les dimensions physiques, sociales et économiques du risque. L’évaluation probabiliste rapporte des informations basées à la fois sur l’impact « total » et sur l’impact « en pourcentage ».</p>
+    <p>L’évaluation probabiliste ne prend en compte que les dommages aux bâtiments et la probabilité d’effondrement.</p>
+    <p>Elle ne prend en compte que les dommages causés aux bâtiments, et à leurs habitants, par les secousses sismiques, et ne comprend donc pas les dommages causés aux infrastructures critiques ou aux véhicules. Les pertes dues à des risques secondaires, tels que les répliques sismiques, la liquéfaction, les glissements de terrain ou les incendies consécutifs, ne sont pas non plus incluses à l’heure actuelle.</p>
+    <p>Les informations sont fournies à l’échelle approximative des zones de diffusion du recensement, et sont destinées à soutenir les activités de planification et de gestion des urgences dans les régions sujettes aux tremblements de terre.</p> <p>Les informations sont fournies à l’échelle approximative des zones de diffusion du recensement.</p>
+    <p>Ce projet est géré par le programme géoscientifique de sécurité publique de la Commission géologique du Canada. Pour toute question relative au modèle de risque sismique du Canada, veuillez contacter Tiegan E. Hobbs à l’adresse tiegan.hobbs@nrcan-rncan.gc.ca.</p>
     <p>Si vous recherchez notre interface utilisateur final ou toute documentation associée, veuillez consulter <a href="https://www.riskprofiler.ca">www.RiskProfiler.ca</a>.</p>
     <section class="jumbotron">
       <p>{% if page.lang == 'en' %}All products are released under the Open Government Licence - Canada.{% else %}Tous les produits sont publiés sous la licence du gouvernement ouvert – Canada.{% endif %}</p>
@@ -59,7 +59,7 @@ breadcrumbs:
       <ul class="list-group">
         <li class="list-group-item">
           {% if page.lang == 'en' %}<b>Organization name:</b><br>
-          Government of Canada;Natural Resources Canada;Lands and Minerals Sector, Geological Survey of Canada{% else %}<b>Nom de l'organisation:</b><br>
+          Government of Canada;Natural Resources Canada;Lands and Minerals Sector, Geological Survey of Canada{% else %}<b>Nom de l’organisation :</b><br>
           Gouvernement du Canada;Ressources naturelles Canada;Secteur des terres et des minéraux, Commission géologique du Canada{% endif %}
         </li>
         <li class="list-group-item">
