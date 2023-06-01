@@ -1,3 +1,5 @@
+([Français](LISEZMOI.md))
+
 # A National Seismic Risk model for Canada (CanadaSRM1)
 
 The Probabilistic Seismic Risk Model for Canada introduces a structured framework of indicators that profile the physical, social and economic dimensions of earthquake risk at the neighborhood scale.
