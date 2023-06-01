@@ -1,3 +1,5 @@
+([English](README.md))
+
 # Modèle national des aléas sismiques pour le Canada (CanadaSRM1)
 
 Le modèle probabiliste de risque sismique pour le Canada présente un cadre structuré d’indicateurs qui décrivent les dimensions physiques, sociales et économiques du risque de tremblement de terre à l’échelle du quartier.
