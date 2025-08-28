@@ -23,7 +23,7 @@ jobs:
           jekyll build
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v1.1.0
+        uses: lycheeverse/lychee-action@v2.0.2
         with:
           args: ./docs/_site/* -b https://opendrr.github.io --exclude https://opendrr.github.io/assets/fontawesome/css/all.min.css
       
